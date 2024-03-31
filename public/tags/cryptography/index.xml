@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cryptography on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/cryptography/</link>
+    <description>Recent content in Cryptography on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 25 Dec 2023 17:07:52 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is PGP/GPG?</title>
+      <link>//localhost:1313/posts/what_is_pgp_gpg/</link>
+      <pubDate>Mon, 25 Dec 2023 17:07:52 +0000</pubDate>
+      <guid>//localhost:1313/posts/what_is_pgp_gpg/</guid>
+      <description>Info In this post, I provide an example of implementing digital signatures for blog posts. While this method works, I no longer use it due to a switch in my Hugo theme for my website. What is PGP/GPG? To quote Wikipedia, &amp;ldquo;Pretty Good Privacy (PGP) is an encryption program that provides cryptographic privacy and authentication for data communication.&amp;rdquo; It is widely used for sending encrypted emails, encrypting sensitive files and digitally signing files.</description>
+    </item>
+  </channel>
+</rss>

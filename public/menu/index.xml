@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Menus on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/menu/</link>
+    <description>Recent content in Menus on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 18 Dec 2023 16:33:55 +0100</lastBuildDate>
+    <atom:link href="//localhost:1313/menu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test3</title>
+      <link>//localhost:1313/menu/test3/</link>
+      <pubDate>Mon, 18 Dec 2023 16:33:55 +0100</pubDate>
+      <guid>//localhost:1313/menu/test3/</guid>
+      <description>test jjjjj&#xA;jjkjkj k jk j kj k j</description>
+    </item>
+    <item>
+      <title>Test2</title>
+      <link>//localhost:1313/menu/test2/</link>
+      <pubDate>Mon, 18 Dec 2023 16:32:32 +0100</pubDate>
+      <guid>//localhost:1313/menu/test2/</guid>
+      <description>test 2 wonder what thid soes</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>//localhost:1313/menu/test/</link>
+      <pubDate>Mon, 18 Dec 2023 16:19:22 +0100</pubDate>
+      <guid>//localhost:1313/menu/test/</guid>
+      <description>very big test a&#xA;a a a&#xA;a a a</description>
+    </item>
+  </channel>
+</rss>

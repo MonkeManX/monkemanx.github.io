@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alignment on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/alignment/</link>
+    <description>Recent content in Alignment on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 05 Feb 2024 06:45:55 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/alignment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Training language models to follow instructions with human feedback</title>
+      <link>//localhost:1313/posts/training_language_models_to_follow_instructions/</link>
+      <pubDate>Mon, 05 Feb 2024 06:45:55 +0000</pubDate>
+      <guid>//localhost:1313/posts/training_language_models_to_follow_instructions/</guid>
+      <description>Paper Title: Training language models to follow instructions with human feedback&#xA;Link to Paper: https://arxiv.org/abs/2203.02155&#xA;Date: 4. March 2022&#xA;Paper Type: NLP, LLM, Instruction, Alignment&#xA;Short Abstract:&#xA;This paper introduces a novel technique, instruction fine-tuning, to enhance the alignment of Language Models (LLM) with user instructions. The approach utilizes reinforcement learning from human feedback (RLHF) and demonstrates its effectiveness by applying it to GPT-3.&#xA;1. Introduction Language Models (LLM) can be prompted for natural language tasks, but often, the results deviate from the given instructions.</description>
+    </item>
+    <item>
+      <title>Constitutional AI: Harmlessness from AI Feedback</title>
+      <link>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</link>
+      <pubDate>Mon, 05 Feb 2024 06:15:42 +0000</pubDate>
+      <guid>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</guid>
+      <description>Paper Title: Constitutional AI: Harmlessness from AI Feedback&#xA;Link to Paper: https://arxiv.org/abs/2212.08073&#xA;Date: 15. December 2022&#xA;Paper Type: LLM, Alignment, fine-tuning&#xA;Short Abstract:&#xA;As AI models become more advanced, the need for alignment with human goals, specifically in terms of harmlessness and helpfulness, becomes crucial. Constitutional AI presents a model aligned through a constitution, employing both supervised and RL training methodologies.&#xA;1. Introduction The authors aim to train an AI model that is both harmless and helpful, acknowledging the impracticality of manual supervision and advocating for an automated approach.</description>
+    </item>
+    <item>
+      <title>Self-Instruct: Aligning Language Models with Self-Generated Instructions</title>
+      <link>//localhost:1313/posts/self_instruct__aligning_language_models/</link>
+      <pubDate>Fri, 02 Feb 2024 11:02:28 +0000</pubDate>
+      <guid>//localhost:1313/posts/self_instruct__aligning_language_models/</guid>
+      <description>Paper Title: Self-Instruct: Aligning Language Models with Self-Generated Instructions&#xA;Link to Paper: https://arxiv.org/abs/2212.10560&#xA;Date: 20. December 2022&#xA;Paper Type: LLM, Alignment, Instruction&#xA;Short Abstract:&#xA;Language Models (LLM) that are &amp;ldquo;instruction tuned&amp;rdquo; have demonstrated excellent raw performance and adherence to instructions. However, instruction tuning typically requires substantial amounts of human-labeled data. This paper introduces Self-Instruct, a technique for instruction tuning a LLM without relying extensively on human-labeled data.&#xA;1. Introduction Recent advancements in Language Models (LLM) have significantly enhanced their performance, attributed to the use of pre-trained LLM and subsequent fine-tuning (as seen in the InstructGPT paper) on human-written instructional data (e.</description>
+    </item>
+    <item>
+      <title>Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</title>
+      <link>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</link>
+      <pubDate>Thu, 01 Feb 2024 13:16:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</guid>
+      <description>Paper Title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models&#xA;Link to Paper: https://arxiv.org/abs/2201.11903&#xA;Date: 28. January 2022&#xA;Paper Type: NLP, LLM, prompting&#xA;Short Abstract:&#xA;The paper explores the concept of Chain of Thought, a sequence of intermediate reasoning steps that significantly enhances the reasoning abilities of Large Language Models (LLMs).&#xA;1. Introduction Chain of thought is an combination of two key ideas:&#xA;Arithmetic reasoning, can benefit from using some kind of rationale which lead to the final answer.</description>
+    </item>
+  </channel>
+</rss>

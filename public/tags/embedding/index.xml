@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedding on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/embedding/</link>
+    <description>Recent content in Embedding on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Fri, 02 Feb 2024 06:45:29 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/embedding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efficient Estimation of Word Representations in Vector Space</title>
+      <link>//localhost:1313/posts/efficient_estimation_of_word_representations/</link>
+      <pubDate>Fri, 02 Feb 2024 06:45:29 +0000</pubDate>
+      <guid>//localhost:1313/posts/efficient_estimation_of_word_representations/</guid>
+      <description>Paper Title: Efficient Estimation of Word Representations in Vector Space&#xA;Link to Paper: https://arxiv.org/abs/1301.3781&#xA;Date: 16. January 2013&#xA;Paper Type: NLP, Word-Embedding&#xA;Short Abstract:&#xA;This paper introduces word2vec, a novel model architecture that facilitates the embedding of continuous vector representations of words.&#xA;1. Introduction If you have an NLP system like a LLM, you first need to train this NLP system. To train it, you need to represent the words from the text on which you want to train as continuous numerical vectors; word2vec accomplishes this.</description>
+    </item>
+  </channel>
+</rss>

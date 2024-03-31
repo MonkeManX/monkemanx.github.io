@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RL on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/rl/</link>
+    <description>Recent content in RL on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 05 Feb 2024 11:18:13 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/rl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep reinforcement learning from human preferences</title>
+      <link>//localhost:1313/posts/deep_reinforcement_learning_from_human_preferences/</link>
+      <pubDate>Mon, 05 Feb 2024 11:18:13 +0000</pubDate>
+      <guid>//localhost:1313/posts/deep_reinforcement_learning_from_human_preferences/</guid>
+      <description>Paper Title: Deep reinforcement learning from human preferences&#xA;Link to Paper: https://arxiv.org/abs/1706.03741&#xA;Date: 12. June 2017&#xA;Paper Type: RL, RLHF&#xA;Short Abstract:&#xA;This paper introduces Reinforcement Learning from Human Preferences (RLHF), a technique that enables RL agents to learn without a direct reward, relying instead on human preferences for their actions.&#xA;1. Introduction Reinforcement learning (RL) has achieved numerous successes in enabling agents to learn how to navigate and solve complex environments, especially when a well-specified reward function is available.</description>
+    </item>
+  </channel>
+</rss>

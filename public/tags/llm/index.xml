@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LLM on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/llm/</link>
+    <description>Recent content in LLM on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 05 Feb 2024 06:45:55 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Training language models to follow instructions with human feedback</title>
+      <link>//localhost:1313/posts/training_language_models_to_follow_instructions/</link>
+      <pubDate>Mon, 05 Feb 2024 06:45:55 +0000</pubDate>
+      <guid>//localhost:1313/posts/training_language_models_to_follow_instructions/</guid>
+      <description>Paper Title: Training language models to follow instructions with human feedback&#xA;Link to Paper: https://arxiv.org/abs/2203.02155&#xA;Date: 4. March 2022&#xA;Paper Type: NLP, LLM, Instruction, Alignment&#xA;Short Abstract:&#xA;This paper introduces a novel technique, instruction fine-tuning, to enhance the alignment of Language Models (LLM) with user instructions. The approach utilizes reinforcement learning from human feedback (RLHF) and demonstrates its effectiveness by applying it to GPT-3.&#xA;1. Introduction Language Models (LLM) can be prompted for natural language tasks, but often, the results deviate from the given instructions.</description>
+    </item>
+    <item>
+      <title>Constitutional AI: Harmlessness from AI Feedback</title>
+      <link>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</link>
+      <pubDate>Mon, 05 Feb 2024 06:15:42 +0000</pubDate>
+      <guid>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</guid>
+      <description>Paper Title: Constitutional AI: Harmlessness from AI Feedback&#xA;Link to Paper: https://arxiv.org/abs/2212.08073&#xA;Date: 15. December 2022&#xA;Paper Type: LLM, Alignment, fine-tuning&#xA;Short Abstract:&#xA;As AI models become more advanced, the need for alignment with human goals, specifically in terms of harmlessness and helpfulness, becomes crucial. Constitutional AI presents a model aligned through a constitution, employing both supervised and RL training methodologies.&#xA;1. Introduction The authors aim to train an AI model that is both harmless and helpful, acknowledging the impracticality of manual supervision and advocating for an automated approach.</description>
+    </item>
+    <item>
+      <title>Mathematical discoveries from program search with large language models</title>
+      <link>//localhost:1313/posts/mathematical_discoveries_from_program_search_with_llm/</link>
+      <pubDate>Sun, 04 Feb 2024 17:44:58 +0000</pubDate>
+      <guid>//localhost:1313/posts/mathematical_discoveries_from_program_search_with_llm/</guid>
+      <description>Paper Title: Mathematical discoveries from program search with large language models&#xA;Link to Paper: https://www.nature.com/articles/s41586-023-06924-6&#xA;Date: 14. December 2023&#xA;Paper Type: LLM, RL, Coding&#xA;Short Abstract:&#xA;The authors of this paper introduce FunSearch, an evolutionary algorithm using LLM with an evaluator to solve combinatoric problems and make new mathematical discoveries. This marks the first instance where novel mathematical knowledge was uncovered through the assistance of a language model.&#xA;1. Introduction Numerous NP-Problems are challenging to solve, yet they possess a polynomial evaluation algorithm.</description>
+    </item>
+    <item>
+      <title>REFINER: Reasoning Feedback on Intermediate Representations</title>
+      <link>//localhost:1313/posts/refiner/</link>
+      <pubDate>Sun, 04 Feb 2024 14:29:16 +0000</pubDate>
+      <guid>//localhost:1313/posts/refiner/</guid>
+      <description>Paper Title: REFINER: Reasoning Feedback on Intermediate Representations&#xA;Link to Paper: https://arxiv.org/abs/2304.01904&#xA;Date: 4. April 2023&#xA;Paper Type: LLM, prompting&#xA;Short Abstract:&#xA;LLMs have demonstrated remarkable performance on reasoning tasks. In this paper, the authors introduce REFINER, a framework for fine-tuning LLMs to generate explicit reasoning steps.&#xA;1. Introduction Numerous papers have highlighted the importance of generating explicit reasoning steps for improving a model&amp;rsquo;s performance and interpretability. However, these steps can be unreliable or incorrect.</description>
+    </item>
+    <item>
+      <title>Reflexion: Language Agents with Verbal Reinforcement Learning</title>
+      <link>//localhost:1313/posts/reflexion_language_agents_with_verbal_reinforcement/</link>
+      <pubDate>Sun, 04 Feb 2024 13:54:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/reflexion_language_agents_with_verbal_reinforcement/</guid>
+      <description>Paper Title: Reflexion: Language Agents with Verbal Reinforcement Learning&#xA;Link to Paper: https://arxiv.org/abs/2303.11366&#xA;Date: 20. March 2023&#xA;Paper Type: LLM, RL, Agent, prompting&#xA;Short Abstract:&#xA;LLMs have increasingly interacted with different environments (e.g., APIs, games). However, learning through Reinforcement Learning (RL) is not efficient because it requires many trial-and-error iterations. The author proposes a new technique called Reflexion, which seeks to remedy this.&#xA;1. Introduction Recent papers have shown the effectiveness of using LLMs as decision-making agents in external environments.</description>
+    </item>
+    <item>
+      <title>Self-Instruct: Aligning Language Models with Self-Generated Instructions</title>
+      <link>//localhost:1313/posts/self_instruct__aligning_language_models/</link>
+      <pubDate>Fri, 02 Feb 2024 11:02:28 +0000</pubDate>
+      <guid>//localhost:1313/posts/self_instruct__aligning_language_models/</guid>
+      <description>Paper Title: Self-Instruct: Aligning Language Models with Self-Generated Instructions&#xA;Link to Paper: https://arxiv.org/abs/2212.10560&#xA;Date: 20. December 2022&#xA;Paper Type: LLM, Alignment, Instruction&#xA;Short Abstract:&#xA;Language Models (LLM) that are &amp;ldquo;instruction tuned&amp;rdquo; have demonstrated excellent raw performance and adherence to instructions. However, instruction tuning typically requires substantial amounts of human-labeled data. This paper introduces Self-Instruct, a technique for instruction tuning a LLM without relying extensively on human-labeled data.&#xA;1. Introduction Recent advancements in Language Models (LLM) have significantly enhanced their performance, attributed to the use of pre-trained LLM and subsequent fine-tuning (as seen in the InstructGPT paper) on human-written instructional data (e.</description>
+    </item>
+    <item>
+      <title>Toolformer: Language Models Can Teach Themselves to Use Tools</title>
+      <link>//localhost:1313/posts/toolformer/</link>
+      <pubDate>Thu, 01 Feb 2024 20:56:12 +0000</pubDate>
+      <guid>//localhost:1313/posts/toolformer/</guid>
+      <description>Paper Title: Toolformer: Language Models Can Teach Themselves to Use Tools&#xA;Link to Paper: https://arxiv.org/abs/2302.04761&#xA;Date: 9. Feburary 2023&#xA;Paper Type: NLP, LLM&#xA;Short Abstract:&#xA;In this paper, the author demonstrates that Language Models (LLMs) can autonomously learn to use external tools through simple APIs. They introduce the Toolformer model, which is trained to showcase this unique ability.&#xA;1. Introduction While LLMs excel in various Natural Language Processing (NLP) tasks, they face limitations, including the inability to access real-time information, the tendency to hallucinate facts, a lack of precise mathematical skills, and a lack of awareness of temporal progression.</description>
+    </item>
+    <item>
+      <title>Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</title>
+      <link>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</link>
+      <pubDate>Thu, 01 Feb 2024 13:16:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</guid>
+      <description>Paper Title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models&#xA;Link to Paper: https://arxiv.org/abs/2201.11903&#xA;Date: 28. January 2022&#xA;Paper Type: NLP, LLM, prompting&#xA;Short Abstract:&#xA;The paper explores the concept of Chain of Thought, a sequence of intermediate reasoning steps that significantly enhances the reasoning abilities of Large Language Models (LLMs).&#xA;1. Introduction Chain of thought is an combination of two key ideas:&#xA;Arithmetic reasoning, can benefit from using some kind of rationale which lead to the final answer.</description>
+    </item>
+    <item>
+      <title>Super-NaturalInstructions: Generalization via Declarative Instructions on 1600&#43; NLP Tasks</title>
+      <link>//localhost:1313/posts/super_naturalinstructions/</link>
+      <pubDate>Thu, 01 Feb 2024 08:40:19 +0000</pubDate>
+      <guid>//localhost:1313/posts/super_naturalinstructions/</guid>
+      <description>Paper Title: Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks&#xA;Link to Paper: https://arxiv.org/abs/2204.07705&#xA;Date: 16. April 2022&#xA;Paper Type: NLP, LLM, Instruction&#xA;Short Abstract:&#xA;In this paper, the authors investigate the generalization capabilities of NLP models to unseen tasks.&#xA;It&amp;rsquo;s one of the first papers that uses instructions finetuning.&#xA;1. Introduction This paper constructs a meta-dataset called SUPER-NATURALINSTRUCTIONS, a large benchmark comprising 1616 NLP tasks along with their natural language instructions.</description>
+    </item>
+    <item>
+      <title>Mistral_7B</title>
+      <link>//localhost:1313/posts/mistral_7b/</link>
+      <pubDate>Wed, 31 Jan 2024 20:36:46 +0000</pubDate>
+      <guid>//localhost:1313/posts/mistral_7b/</guid>
+      <description>Paper Title: Mistral 7B&#xA;Link to Paper: https://arxiv.org/abs/2310.06825&#xA;Date: 10. Oct 2023&#xA;Paper Type: NLP, finetuning, LLM-training&#xA;Short Abstract:&#xA;Introduction of the &amp;ldquo;Mistral 7B&amp;rdquo; LLM model.&#xA;1. Introduction Mistral 7B deliver high performance while maintaining an efficient inference, it outperforms the previous best 13B Models on all tested benchmarks.&#xA;It does this by using grouped-query attention (GQA) and sliding window attention (SWA), GQA accelerates inference speed and SWA allows the Model to work with longer sequences.</description>
+    </item>
+  </channel>
+</rss>

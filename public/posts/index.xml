@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 05 Feb 2024 11:18:13 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep reinforcement learning from human preferences</title>
+      <link>//localhost:1313/posts/deep_reinforcement_learning_from_human_preferences/</link>
+      <pubDate>Mon, 05 Feb 2024 11:18:13 +0000</pubDate>
+      <guid>//localhost:1313/posts/deep_reinforcement_learning_from_human_preferences/</guid>
+      <description>Paper Title: Deep reinforcement learning from human preferences&#xA;Link to Paper: https://arxiv.org/abs/1706.03741&#xA;Date: 12. June 2017&#xA;Paper Type: RL, RLHF&#xA;Short Abstract:&#xA;This paper introduces Reinforcement Learning from Human Preferences (RLHF), a technique that enables RL agents to learn without a direct reward, relying instead on human preferences for their actions.&#xA;1. Introduction Reinforcement learning (RL) has achieved numerous successes in enabling agents to learn how to navigate and solve complex environments, especially when a well-specified reward function is available.</description>
+    </item>
+    <item>
+      <title>Training language models to follow instructions with human feedback</title>
+      <link>//localhost:1313/posts/training_language_models_to_follow_instructions/</link>
+      <pubDate>Mon, 05 Feb 2024 06:45:55 +0000</pubDate>
+      <guid>//localhost:1313/posts/training_language_models_to_follow_instructions/</guid>
+      <description>Paper Title: Training language models to follow instructions with human feedback&#xA;Link to Paper: https://arxiv.org/abs/2203.02155&#xA;Date: 4. March 2022&#xA;Paper Type: NLP, LLM, Instruction, Alignment&#xA;Short Abstract:&#xA;This paper introduces a novel technique, instruction fine-tuning, to enhance the alignment of Language Models (LLM) with user instructions. The approach utilizes reinforcement learning from human feedback (RLHF) and demonstrates its effectiveness by applying it to GPT-3.&#xA;1. Introduction Language Models (LLM) can be prompted for natural language tasks, but often, the results deviate from the given instructions.</description>
+    </item>
+    <item>
+      <title>Constitutional AI: Harmlessness from AI Feedback</title>
+      <link>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</link>
+      <pubDate>Mon, 05 Feb 2024 06:15:42 +0000</pubDate>
+      <guid>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</guid>
+      <description>Paper Title: Constitutional AI: Harmlessness from AI Feedback&#xA;Link to Paper: https://arxiv.org/abs/2212.08073&#xA;Date: 15. December 2022&#xA;Paper Type: LLM, Alignment, fine-tuning&#xA;Short Abstract:&#xA;As AI models become more advanced, the need for alignment with human goals, specifically in terms of harmlessness and helpfulness, becomes crucial. Constitutional AI presents a model aligned through a constitution, employing both supervised and RL training methodologies.&#xA;1. Introduction The authors aim to train an AI model that is both harmless and helpful, acknowledging the impracticality of manual supervision and advocating for an automated approach.</description>
+    </item>
+    <item>
+      <title>Mathematical discoveries from program search with large language models</title>
+      <link>//localhost:1313/posts/mathematical_discoveries_from_program_search_with_llm/</link>
+      <pubDate>Sun, 04 Feb 2024 17:44:58 +0000</pubDate>
+      <guid>//localhost:1313/posts/mathematical_discoveries_from_program_search_with_llm/</guid>
+      <description>Paper Title: Mathematical discoveries from program search with large language models&#xA;Link to Paper: https://www.nature.com/articles/s41586-023-06924-6&#xA;Date: 14. December 2023&#xA;Paper Type: LLM, RL, Coding&#xA;Short Abstract:&#xA;The authors of this paper introduce FunSearch, an evolutionary algorithm using LLM with an evaluator to solve combinatoric problems and make new mathematical discoveries. This marks the first instance where novel mathematical knowledge was uncovered through the assistance of a language model.&#xA;1. Introduction Numerous NP-Problems are challenging to solve, yet they possess a polynomial evaluation algorithm.</description>
+    </item>
+    <item>
+      <title>REFINER: Reasoning Feedback on Intermediate Representations</title>
+      <link>//localhost:1313/posts/refiner/</link>
+      <pubDate>Sun, 04 Feb 2024 14:29:16 +0000</pubDate>
+      <guid>//localhost:1313/posts/refiner/</guid>
+      <description>Paper Title: REFINER: Reasoning Feedback on Intermediate Representations&#xA;Link to Paper: https://arxiv.org/abs/2304.01904&#xA;Date: 4. April 2023&#xA;Paper Type: LLM, prompting&#xA;Short Abstract:&#xA;LLMs have demonstrated remarkable performance on reasoning tasks. In this paper, the authors introduce REFINER, a framework for fine-tuning LLMs to generate explicit reasoning steps.&#xA;1. Introduction Numerous papers have highlighted the importance of generating explicit reasoning steps for improving a model&amp;rsquo;s performance and interpretability. However, these steps can be unreliable or incorrect.</description>
+    </item>
+    <item>
+      <title>Reflexion: Language Agents with Verbal Reinforcement Learning</title>
+      <link>//localhost:1313/posts/reflexion_language_agents_with_verbal_reinforcement/</link>
+      <pubDate>Sun, 04 Feb 2024 13:54:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/reflexion_language_agents_with_verbal_reinforcement/</guid>
+      <description>Paper Title: Reflexion: Language Agents with Verbal Reinforcement Learning&#xA;Link to Paper: https://arxiv.org/abs/2303.11366&#xA;Date: 20. March 2023&#xA;Paper Type: LLM, RL, Agent, prompting&#xA;Short Abstract:&#xA;LLMs have increasingly interacted with different environments (e.g., APIs, games). However, learning through Reinforcement Learning (RL) is not efficient because it requires many trial-and-error iterations. The author proposes a new technique called Reflexion, which seeks to remedy this.&#xA;1. Introduction Recent papers have shown the effectiveness of using LLMs as decision-making agents in external environments.</description>
+    </item>
+    <item>
+      <title>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</title>
+      <link>//localhost:1313/posts/retrieval_augmented_generation/</link>
+      <pubDate>Sat, 03 Feb 2024 10:31:09 +0000</pubDate>
+      <guid>//localhost:1313/posts/retrieval_augmented_generation/</guid>
+      <description>Paper Title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks Link to Paper: https://arxiv.org/abs/2005.11401&#xA;Date: 22. May 2020&#xA;Paper Type: LLM, knowledge-retrival&#xA;Short Abstract:&#xA;Language models (LLMs) have been demonstrated to store knowledge within their parameters. However, updating the model&amp;rsquo;s knowledge requires updating these parameters. This poses challenges. To address this, the paper introduces the Retrieval-Augmented Generation (RAG) model, where knowledge is stored in a non-parametric dense vector database.&#xA;1. Introduction LLMs lack external memory, leading to difficulties in adding or removing knowledge, understanding the model&amp;rsquo;s knowledge, and generating &amp;ldquo;hallucinations.</description>
+    </item>
+    <item>
+      <title>Self-Instruct: Aligning Language Models with Self-Generated Instructions</title>
+      <link>//localhost:1313/posts/self_instruct__aligning_language_models/</link>
+      <pubDate>Fri, 02 Feb 2024 11:02:28 +0000</pubDate>
+      <guid>//localhost:1313/posts/self_instruct__aligning_language_models/</guid>
+      <description>Paper Title: Self-Instruct: Aligning Language Models with Self-Generated Instructions&#xA;Link to Paper: https://arxiv.org/abs/2212.10560&#xA;Date: 20. December 2022&#xA;Paper Type: LLM, Alignment, Instruction&#xA;Short Abstract:&#xA;Language Models (LLM) that are &amp;ldquo;instruction tuned&amp;rdquo; have demonstrated excellent raw performance and adherence to instructions. However, instruction tuning typically requires substantial amounts of human-labeled data. This paper introduces Self-Instruct, a technique for instruction tuning a LLM without relying extensively on human-labeled data.&#xA;1. Introduction Recent advancements in Language Models (LLM) have significantly enhanced their performance, attributed to the use of pre-trained LLM and subsequent fine-tuning (as seen in the InstructGPT paper) on human-written instructional data (e.</description>
+    </item>
+    <item>
+      <title>Efficient Estimation of Word Representations in Vector Space</title>
+      <link>//localhost:1313/posts/efficient_estimation_of_word_representations/</link>
+      <pubDate>Fri, 02 Feb 2024 06:45:29 +0000</pubDate>
+      <guid>//localhost:1313/posts/efficient_estimation_of_word_representations/</guid>
+      <description>Paper Title: Efficient Estimation of Word Representations in Vector Space&#xA;Link to Paper: https://arxiv.org/abs/1301.3781&#xA;Date: 16. January 2013&#xA;Paper Type: NLP, Word-Embedding&#xA;Short Abstract:&#xA;This paper introduces word2vec, a novel model architecture that facilitates the embedding of continuous vector representations of words.&#xA;1. Introduction If you have an NLP system like a LLM, you first need to train this NLP system. To train it, you need to represent the words from the text on which you want to train as continuous numerical vectors; word2vec accomplishes this.</description>
+    </item>
+    <item>
+      <title>Toolformer: Language Models Can Teach Themselves to Use Tools</title>
+      <link>//localhost:1313/posts/toolformer/</link>
+      <pubDate>Thu, 01 Feb 2024 20:56:12 +0000</pubDate>
+      <guid>//localhost:1313/posts/toolformer/</guid>
+      <description>Paper Title: Toolformer: Language Models Can Teach Themselves to Use Tools&#xA;Link to Paper: https://arxiv.org/abs/2302.04761&#xA;Date: 9. Feburary 2023&#xA;Paper Type: NLP, LLM&#xA;Short Abstract:&#xA;In this paper, the author demonstrates that Language Models (LLMs) can autonomously learn to use external tools through simple APIs. They introduce the Toolformer model, which is trained to showcase this unique ability.&#xA;1. Introduction While LLMs excel in various Natural Language Processing (NLP) tasks, they face limitations, including the inability to access real-time information, the tendency to hallucinate facts, a lack of precise mathematical skills, and a lack of awareness of temporal progression.</description>
+    </item>
+    <item>
+      <title>Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</title>
+      <link>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</link>
+      <pubDate>Thu, 01 Feb 2024 13:16:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</guid>
+      <description>Paper Title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models&#xA;Link to Paper: https://arxiv.org/abs/2201.11903&#xA;Date: 28. January 2022&#xA;Paper Type: NLP, LLM, prompting&#xA;Short Abstract:&#xA;The paper explores the concept of Chain of Thought, a sequence of intermediate reasoning steps that significantly enhances the reasoning abilities of Large Language Models (LLMs).&#xA;1. Introduction Chain of thought is an combination of two key ideas:&#xA;Arithmetic reasoning, can benefit from using some kind of rationale which lead to the final answer.</description>
+    </item>
+    <item>
+      <title>Super-NaturalInstructions: Generalization via Declarative Instructions on 1600&#43; NLP Tasks</title>
+      <link>//localhost:1313/posts/super_naturalinstructions/</link>
+      <pubDate>Thu, 01 Feb 2024 08:40:19 +0000</pubDate>
+      <guid>//localhost:1313/posts/super_naturalinstructions/</guid>
+      <description>Paper Title: Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks&#xA;Link to Paper: https://arxiv.org/abs/2204.07705&#xA;Date: 16. April 2022&#xA;Paper Type: NLP, LLM, Instruction&#xA;Short Abstract:&#xA;In this paper, the authors investigate the generalization capabilities of NLP models to unseen tasks.&#xA;It&amp;rsquo;s one of the first papers that uses instructions finetuning.&#xA;1. Introduction This paper constructs a meta-dataset called SUPER-NATURALINSTRUCTIONS, a large benchmark comprising 1616 NLP tasks along with their natural language instructions.</description>
+    </item>
+    <item>
+      <title>Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning</title>
+      <link>//localhost:1313/posts/will_we_run_out_of_data/</link>
+      <pubDate>Wed, 31 Jan 2024 20:45:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/will_we_run_out_of_data/</guid>
+      <description>Paper Title: Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning&#xA;Link to Paper: https://arxiv.org/abs/2211.04325&#xA;Date: 26. Oct 2022&#xA;Paper Type: NLP, Vision, Datasets&#xA;Short Abstract:&#xA;In this paper, the authors approximate the total amount of existing data and, based on that, analyze how long it will take before we run out of data.&#xA;1. Introduction In ML models, one important aspect of model performance is the quality and the amount of training data.</description>
+    </item>
+    <item>
+      <title>Mistral_7B</title>
+      <link>//localhost:1313/posts/mistral_7b/</link>
+      <pubDate>Wed, 31 Jan 2024 20:36:46 +0000</pubDate>
+      <guid>//localhost:1313/posts/mistral_7b/</guid>
+      <description>Paper Title: Mistral 7B&#xA;Link to Paper: https://arxiv.org/abs/2310.06825&#xA;Date: 10. Oct 2023&#xA;Paper Type: NLP, finetuning, LLM-training&#xA;Short Abstract:&#xA;Introduction of the &amp;ldquo;Mistral 7B&amp;rdquo; LLM model.&#xA;1. Introduction Mistral 7B deliver high performance while maintaining an efficient inference, it outperforms the previous best 13B Models on all tested benchmarks.&#xA;It does this by using grouped-query attention (GQA) and sliding window attention (SWA), GQA accelerates inference speed and SWA allows the Model to work with longer sequences.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 12: Outlook</title>
+      <link>//localhost:1313/posts/my_homelab_part_12_outlook/</link>
+      <pubDate>Mon, 29 Jan 2024 08:02:58 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_12_outlook/</guid>
+      <description>My Homelab Part 12: Outlook The software I have showcased in this Homelab series is just a fraction of the applications that you can host yourself on your server.&#xA;In this post, I would like to share some additional intriguing software that I plan to explore in the future, or that are generally cool projects:&#xA;Jellyfin: A media software system that allows you to manage movies, TV shows, and music, and stream them to various devices.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 11: Backup</title>
+      <link>//localhost:1313/posts/my_homelab_part_11_backup/</link>
+      <pubDate>Sat, 27 Jan 2024 11:33:02 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_11_backup/</guid>
+      <description>My Homelab Part 11: Backup It goes without saying that backups are crucial. If you aim to preserve your data for the future, proper backup practices are a necessity. The golden rule of backing up is the 3-2-1 rule, which advises having three copies of your data, on two different media, with one copy off-site.&#xA;In my case, I needed a backup solution for various types of data:&#xA;Photos: Currently stored on my phone.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 10: Vaultwarden</title>
+      <link>//localhost:1313/posts/my_homelab_part_10_vaultwarden/</link>
+      <pubDate>Thu, 25 Jan 2024 11:30:36 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_10_vaultwarden/</guid>
+      <description>My Homelab Part 9: Vaultwarden Vaultwarden is an unofficial implementation of the Bitwarden password manager. One of its primary advantages is its lower resource intensity for hosting compared to the official implementation, along with the support of a robust community.&#xA;Vaultwarden Website. Before adopting Vaultwarden, I relied on the offline password manager KeePassXC. However, it posed challenges with synchronization across multiple devices. For instance, if I altered a password on my phone, I had to transfer the entire password database to my computer to ensure synchronization.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 9: Caddy, FileServer and DuckDNS</title>
+      <link>//localhost:1313/posts/my_homelab_part_9_caddy_fileserver_and_duckdns/</link>
+      <pubDate>Tue, 23 Jan 2024 11:32:33 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_9_caddy_fileserver_and_duckdns/</guid>
+      <description>My Homelab Part 9: Caddy, FileServer and DuckDNS If you have been following this Homelab series, you probably have several services up and running, and maybe even a homepage linking to all your services.&#xA;Up to this point, however, accessing these services outside your home network was not possible, and the services lacked user-friendly, readable domain names. Instead, you had to enter the IP address of your server followed by the port of the service you wanted to access.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 8: Homepage</title>
+      <link>//localhost:1313/posts/my_homelab_part_8_homepage/</link>
+      <pubDate>Sun, 21 Jan 2024 18:30:17 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_8_homepage/</guid>
+      <description>My Homelab Part 8: Homepage If you have been following my Homelab Series so far, you probably have quite a number of services running, and perhaps you&amp;rsquo;re losing track of all your services. In that case, you might want to consider having a central page that links to all your hosted services.&#xA;Homepage is a highly customizable, fully static, fast, and modern dashboard with integration for many services. It allows users to see all running services at a glance and can be easily configured by editing a YAML file.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 7: UptimeKuma</title>
+      <link>//localhost:1313/posts/my_homelab_part_7_uptimekuma/</link>
+      <pubDate>Sat, 20 Jan 2024 18:30:47 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_7_uptimekuma/</guid>
+      <description>My Homelab Part 7: UptimeKuma Maybe at some point you have encountered a situation where, while running all your current containers, you tried accessing one of your services only to realize that the service is not available because the container exited without your knowledge?&#xA;For such Issues, it&amp;rsquo;s beneficial to have a notification system that can automatically alert you whenever a container exits or is no longer available. To address this need, I use UptimeKuma, an easy-to-use self-hosted monitoring tool.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 6: Syncthing</title>
+      <link>//localhost:1313/posts/my_homelab_part_6_syncthing/</link>
+      <pubDate>Sat, 20 Jan 2024 16:38:39 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_6_syncthing/</guid>
+      <description>My Homelab Part 6: Syncthing In this installment, I explore another valuable use case for my server - file synchronization between my various devices. This includes regular backups of the pictures taken on my phone, archiving important documents, and seamless access to notes across all devices for tasks like blogging, to-dos, projects, and university-related work. To accomplish this, I rely on the powerful capabilities of synthing a continuous file synchronization program.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 5: HomeAssistant with Zigbee2MQTT</title>
+      <link>//localhost:1313/posts/my_homelab_part_5_homeassistant_with_zigbee2mqtt/</link>
+      <pubDate>Fri, 19 Jan 2024 11:34:15 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_5_homeassistant_with_zigbee2mqtt/</guid>
+      <description>My Homelab Part 5: HomeAssistant with Zigbee2MQTT As I hinted in my initial post of this series, &amp;ldquo;My Homelab Part 0: Prologue,&amp;rdquo; my motivation for incorporating Home Assistant into my server revolves around dynamically scheduling the lights in my room. This functionality enables me to wake up gradually with softly illuminated surroundings and help me fall asleep with lights that gradually fade away. However, Home Assistant&amp;rsquo;s capabilities extend beyond light control.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 4: Wireguard VPN</title>
+      <link>//localhost:1313/posts/my_homelab_part_4_wireguard_vpn/</link>
+      <pubDate>Fri, 19 Jan 2024 11:31:55 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_4_wireguard_vpn/</guid>
+      <description>My Homelab Part 4: Wireguard VPN Sometimes I need access to my home server to work on some configuration files or check the health of the server, but not always do I have physical access to my home server. One way to still get access to my server even when I am far away is through a VPN, which allows me to connect to my home network, and from the home network, I can then SSH into my home server.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 3: Calibre</title>
+      <link>//localhost:1313/posts/my_homelab_part_3_calibre/</link>
+      <pubDate>Fri, 19 Jan 2024 11:30:23 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_3_calibre/</guid>
+      <description>My Homelab Part 3: Calibre-Web In my free time, I enjoy reading books. For a long time, I organized the books I read on physical paper notes. However, as the list grew longer and paper deteriorated over time, I realized it was impractical. To address this, I decided to switch to a digital organization strategy, and for that, I chose the software Calibre.&#xA;Calibre is a free and open-source e-book management program.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 2: DietPi</title>
+      <link>//localhost:1313/posts/my_homelab_part_2_dietpi/</link>
+      <pubDate>Fri, 19 Jan 2024 11:30:08 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_2_dietpi/</guid>
+      <description>My Homelab Part 2: DietPi Like mentioned in my last blog post in the &amp;ldquo;Homelab&amp;rdquo; series, I choose DietPi as operating system for my server. In this post I want to give a short overview on the installation process and other miscellaneous aspects related to it.&#xA;Installation Installation Guide&#xA;The installation process for DietPi may vary slightly from one computer to another, but the steps outlined below should be applicable to most setups.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 1: Introduction</title>
+      <link>//localhost:1313/posts/my_homelab_part_1_introduction/</link>
+      <pubDate>Tue, 26 Dec 2023 15:17:38 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_1_introduction/</guid>
+      <description>My Homelab Part 1: Introduction In my previous blog post in the Homelab Series, I shared how the need to maintain a regular sleep schedule led me to the idea of running my own server at home, which I affectionately call my &amp;ldquo;homelab.&amp;rdquo; The primary purpose of this homelab is to control the smart lights in my room through Home Assistant.&#xA;In this post, I want to provide an overview about the different technologies I employed for running my Homelab.</description>
+    </item>
+    <item>
+      <title>Introduction to Poetry</title>
+      <link>//localhost:1313/posts/introduction_to_poetry/</link>
+      <pubDate>Mon, 25 Dec 2023 23:45:43 +0000</pubDate>
+      <guid>//localhost:1313/posts/introduction_to_poetry/</guid>
+      <description>Introduction to Poetry Poetry has long been an mystery to me - Never understood why people like it, never understood the need for analyzing them in school and especially never understood why people treat it so highly. It always felt similar to the esoteric behavior displayed by wine snobs about what the perfect wine is. However, as my interest recently shifted to world building. I began to recognize the potential within poetry as story telling tool, realizing it could serve as integral role to craft religions and history of the world.</description>
+    </item>
+    <item>
+      <title>What is PGP/GPG?</title>
+      <link>//localhost:1313/posts/what_is_pgp_gpg/</link>
+      <pubDate>Mon, 25 Dec 2023 17:07:52 +0000</pubDate>
+      <guid>//localhost:1313/posts/what_is_pgp_gpg/</guid>
+      <description>Info In this post, I provide an example of implementing digital signatures for blog posts. While this method works, I no longer use it due to a switch in my Hugo theme for my website. What is PGP/GPG? To quote Wikipedia, &amp;ldquo;Pretty Good Privacy (PGP) is an encryption program that provides cryptographic privacy and authentication for data communication.&amp;rdquo; It is widely used for sending encrypted emails, encrypting sensitive files and digitally signing files.</description>
+    </item>
+    <item>
+      <title>Introduction to Convolutional Neural Network</title>
+      <link>//localhost:1313/posts/proseminar_cnn/</link>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/proseminar_cnn/</guid>
+      <description>Background I wrote this article back in uni as part of the seminar, &#34;Basics of Machine Learning 1 &amp; 2&#34;. As such this text only introduces some basic concepts and is limited in scope. Abstract In recent years, significant advancements have been made in the field of Machine Learning, particularly in the domain of image-related tasks. This paper aims to provide a comprehensive overview of Convolutional Neural Networks (CNNs), a powerful class of neural networks widely employed for image analysis and processing.</description>
+    </item>
+    <item>
+      <title>How did I created my website?</title>
+      <link>//localhost:1313/posts/how_did_i_created_my_website/</link>
+      <pubDate>Tue, 19 Dec 2023 20:08:14 +0000</pubDate>
+      <guid>//localhost:1313/posts/how_did_i_created_my_website/</guid>
+      <description>Info In this post, I provide examples with the PaperMod theme. While this method works, I no longer use this theme on my website. Many things in this post will also apply to other themes. How did I created my website? This post primarily serves as documentation for my website. Additionally, if someone finds something useful here, they are welcome to use it. The entire source code, including blog posts and their digital signatures, can be found on GitHub.</description>
+    </item>
+    <item>
+      <title>My Homelab Part 0: Prologue</title>
+      <link>//localhost:1313/posts/my_homelab_part_0_prologue/</link>
+      <pubDate>Sat, 16 Dec 2023 10:13:35 +0000</pubDate>
+      <guid>//localhost:1313/posts/my_homelab_part_0_prologue/</guid>
+      <description>My Homelab Part 0: Prologue Lately, maintaining a consistent sleeping schedule has posed big challenge for me. Different university courses have lead me to wake up on some days as early as 6 a.m., while on other days, I&amp;rsquo;ve found myself rising as late as 12. p.m . This irregular sleeping schedule has been quite a struggle, especially on days where I had to get up early. My body, accustomed to my late-night schedule, could never fall asleep soon enough for a well-rested morning.</description>
+    </item>
+  </channel>
+</rss>

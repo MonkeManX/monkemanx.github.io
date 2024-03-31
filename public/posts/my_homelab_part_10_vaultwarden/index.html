@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MonkeMan&#39;s Blog/posts/my_homelab_part_10_vaultwarden/</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/terminal-0.7.2.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/animate-4.1.1.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/console.css">
+    
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+       <meta property="og:title" content="My Homelab Part 10: Vaultwarden" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/my_homelab_part_10_vaultwarden/" /><meta property="article:published_time" content="2024-01-25T11:30:36+00:00" />
+
+
+
+<meta name="twitter:title" content="My Homelab Part 10: Vaultwarden"/>
+<meta name="twitter:description" content="My Homelab Part 9: Vaultwarden Vaultwarden is an unofficial implementation of the Bitwarden password manager. One of its primary advantages is its lower resource intensity for hosting compared to the official implementation, along with the support of a robust community.
+Vaultwarden Website. Before adopting Vaultwarden, I relied on the offline password manager KeePassXC. However, it posed challenges with synchronization across multiple devices. For instance, if I altered a password on my phone, I had to transfer the entire password database to my computer to ensure synchronization."/>
+
+</head>
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+          <header class="terminal-logo">
+            <div class="logo terminal-prompt">
+              
+              
+              <a href="//localhost:1313/" class="no-style site-name">MonkeMan&#39;s Blog</a>:~# 
+              <a href='//localhost:1313/posts'>posts</a>/<a href='//localhost:1313/posts/my_homelab_part_10_vaultwarden'>my_homelab_part_10_vaultwarden</a>/</div></header>
+          <nav class="terminal-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                <li><a href="//localhost:1313/" typeof="ListItem">Home</a></li>
+                
+                <li><a href="//localhost:1313/posts" typeof="ListItem">All posts</a></li>
+                
+                <li><a href="//localhost:1313/tags" typeof="ListItem">Tags</a></li>
+                
+                <li><a href="//localhost:1313/about_me" typeof="ListItem">About Me</a></li>
+                
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn fast" >
+        
+<h1>My Homelab Part 10: Vaultwarden</h1>
+
+Jan. 25, 2024
+
+
+<br/><br/>
+<h1 id="my-homelab-part-9-vaultwarden">My Homelab Part 9: Vaultwarden</h1>
+<p>Vaultwarden is an unofficial implementation of the Bitwarden password manager. One of its primary advantages is its lower resource intensity for hosting compared to the official implementation, along with the support of a robust community.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/8ddd4488bb9c1a355dc41d6b6db4898f.png">
+    <figcaption>Vaultwarden Website.</figcaption>
+</figure>
+<p>Before adopting Vaultwarden, I relied on the offline password manager KeePassXC. However, it posed challenges with synchronization across multiple devices. For instance, if I altered a password on my phone, I had to transfer the entire password database to my computer to ensure synchronization. In contrast, Vaultwarden streamlines this process by automatically synchronizing password changes across all devices.</p>
+<p>Here&rsquo;s how Vaultwarden operates: the Vaultwarden software is hosted on your server, managing and storing your passwords. Clients can access these passwords by connecting directly to your hosted Vaultwarden website, through the official Bitwarden browser extension, or via the Bitwarden app on a mobile device.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Untitled%20Diagram.drawio.png">
+    <figcaption>Explanation of Vaultwarden.</figcaption>
+</figure>
+<h2 id="installation">Installation</h2>
+<p>As with my previous blog posts, I&rsquo;ll use Docker Compose to install Vaultwarden, employing the following Docker Compose file(vaultwarden-compose.yml):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">vaultwarden</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">vaultwarden</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">vaultwarden/server:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/mnt/externalDisk/vaultwarden/:/data/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">150</span>:<span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">DOMAIN=</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">WEB_VAULT_ENABLED=true</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">ADMIN_TOKEN=XXXXX</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">SIGNUPS_ALLOWED=false</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">EMERGENCY_ACCESS_ALLOWED=true</span>
+</span></span></code></pre></div><p>It&rsquo;s crucial to note that Vaultwarden deals with sensitive information, requiring a secure connection (HTTPS). In a non-secure connection (HTTP), accessing your password vault won&rsquo;t be possible. Therefore, I highly recommend following my previous blog post, where I demonstrated how to assign a domain to your internal services for secure internet access. If you&rsquo;ve followed that guide, remember to update your Caddyfile for this new service:</p>
+<pre tabindex="0"><code>vaultwarden.{$DOMAIN} {
+    import tls
+    import header
+    
+    reverse_proxy localhost:{$VAULTWARDEN_PORT}
+}
+</code></pre><p>Additionally, starting from version <code>1.28</code> of Vaultwarden, the admin token must be <a href="https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page">hashed</a>. To do that, follow these steps:</p>
+<ol>
+<li>
+<p>Execute the command <code>docker run --rm -it vaultwarden/server /vaultwarden hash</code> to initiate a temporary Vaultwarden instance for hashing your password.</p>
+</li>
+<li>
+<p>Enter your desired password when prompted.</p>
+</li>
+<li>
+<p>After receiving the password hash, escape the dollar sign using the command:</p>
+<pre tabindex="0"><code>echo &#34;your_password&#34; | sed &#39;s#\$#\$\$#g&#39;
+</code></pre></li>
+<li>
+<p>Copy the password hash and insert it into your Docker Compose file.</p>
+</li>
+</ol>
+<p>To install Vaultwarden, proceed with these steps:</p>
+<ol>
+<li>
+<p>For the initial run, set <code>SIGNUPS_ALLOWED</code> to <code>true</code> to create an account. After registration, stop the Vaultwarden container and set this variable to <code>false</code>.</p>
+</li>
+<li>
+<p>Don&rsquo;t forget to set the <code>DOMAIN</code> in the Docker Compose file to your domain.</p>
+</li>
+<li>
+<p>After configuring these variables, start your container using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose -f vaultwarden-compose.yml up -d
+</span></span></code></pre></div></li>
+<li>
+<p>After a while, access your Vaultwarden service at <code>https://vaultwarden.Your_Domain</code>, displaying a page similar to this:</p>
+ <figure>
+     <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-20%2012-42-41.png">
+ </figure>
+</li>
+<li>
+<p>Click &ldquo;Create account,&rdquo; leading to the registration page:</p>
+ <figure>
+     <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-20%2012-43-28.png">
+ </figure>
+</li>
+<li>
+<p>After registration, stop the Vaultwarden container, disable sign ups, and restart the container using the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker ps -a
+</span></span><span style="display:flex;"><span>docker stop vaultwarden_id
+</span></span></code></pre></div></li>
+<li>
+<p>Upon restarting the container, you can log in with your registered account. To manage settings, including user accounts, access the admin page at <code>https://vaultwarden.Your_Domain/admin</code>, requiring your admin token as password.</p>
+</li>
+</ol>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://github.com/dani-garcia/vaultwarden">https://github.com/dani-garcia/vaultwarden</a></li>
+</ul>
+
+
+
+        <div class="footer">
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>
+
+    </div>
+  </body>
+</html>

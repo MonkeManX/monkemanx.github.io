@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MonkeMan&#39;s Blog/posts/my-homelab-part-7_-uptimekuma/</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/terminal-0.7.2.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/animate-4.1.1.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/console.css">
+    
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+       <meta property="og:title" content="My Homelab Part 7: UptimeKuma" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/my-homelab-part-7_-uptimekuma/" />
+
+
+<meta name="twitter:title" content="My Homelab Part 7: UptimeKuma"/>
+<meta name="twitter:description" content="tags = [&ldquo;homelab&rdquo;]
+My Homelab Part 7: UptimeKuma Maybe at some point you have encountered a situation where, while running all your current containers, you tried accessing one of your services only to realize that the service is not available because the container exited without your knowledge?
+For such Issues, it&rsquo;s beneficial to have a notification system that can automatically alert you whenever a container exits or is no longer available."/>
+
+</head>
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+          <header class="terminal-logo">
+            <div class="logo terminal-prompt">
+              
+              
+              <a href="//localhost:1313/" class="no-style site-name">MonkeMan&#39;s Blog</a>:~# 
+              <a href='//localhost:1313/posts'>posts</a>/<a href='//localhost:1313/posts/my-homelab-part-7_-uptimekuma'>my-homelab-part-7_-uptimekuma</a>/</div></header>
+          <nav class="terminal-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                <li><a href="//localhost:1313/" typeof="ListItem">Home</a></li>
+                
+                <li><a href="//localhost:1313/posts" typeof="ListItem">All posts</a></li>
+                
+                <li><a href="//localhost:1313/tags" typeof="ListItem">Tags</a></li>
+                
+                <li><a href="//localhost:1313/about_me" typeof="ListItem">About Me</a></li>
+                
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn fast" >
+        
+<h1>My Homelab Part 7: UptimeKuma</h1>
+
+Jan. 1, 0001
+
+
+<br/><br/>
+<p>tags = [&ldquo;homelab&rdquo;]</p>
+<h1 id="my-homelab-part-7-uptimekuma">My Homelab Part 7: UptimeKuma</h1>
+<p>Maybe at some point you have encountered a situation where, while running all your current containers, you tried accessing one of your services only to realize that the service is not available because the container exited without your knowledge?</p>
+<p>For such Issues, it&rsquo;s beneficial to have a notification system that can automatically alert you whenever a container exits or is no longer available.  To address this need, I use <a href="https://uptime.kuma.pet/">UptimeKuma</a>, an easy-to-use self-hosted monitoring tool. UptimeKuma can monitor uptime over means like HTTP(s)/TCP/Ping/Docker/DNS and notify you via various channels such as Telegram, Discord, Gotify, Slack, Email, and more. Additionally, it provides a user-friendly web interface for managing and adding new monitors.
+<img src="./attachments/5fb6d6ee5c143dedeeb77148ea1d2ff3.png" alt="5fb6d6ee5c143dedeeb77148ea1d2ff3.png" title="An examplery UptimeKum page."></p>
+<h2 id="installation">Installation</h2>
+<p>To install UptimeKuma, I utilized Docker Compose with the following configuration in the compose file(uptimeKuma-compose.yml):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.8&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">uptime-kuma</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">louislam/uptime-kuma:1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">uptime-kuma</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/root/uptime-kuma/:/app/data</span>
+</span></span><span style="display:flex;"><span>      -  <span style="color:#ae81ff">/var/run/docker.sock:/var/run/docker.sock</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;3001:3001&#34;</span>  <span style="color:#75715e"># &lt;Host Port&gt;:&lt;Container Port&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span></code></pre></div><p>To install and execute the container, I used the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose -f uptimeKuma-compose.yml up -d
+</span></span></code></pre></div><p>After this, the web UI becomes accessible via the URL:
+<code>http://&lt;Server_IP&gt;:UptimeKuma_Port</code></p>
+<h2 id="configuration">Configuration</h2>
+<p>When configuring UptimeKuma, the first step is to change your login data. In order to do so, navigate to <code>Settings -&gt; Security -&gt; Change Password</code>.</p>
+<p>To add a new monitor for one of your services, click the <code>add new monitor</code> button in the top right corner.
+<img src="./attachments/401ce7a076ab17b1e057480dc491e524.png" alt="401ce7a076ab17b1e057480dc491e524.png"></p>
+<p>Select the monitor type based on how UptimeKuma should monitor your service. For Instance, for monitoring a Docker container, choose <code>Docker Container</code>. The <code>Friendly Name</code> field is the display name for your monitor.</p>
+<p>Set the <code>Container Name/ID</code> to the name or ID of the Docker container you want to monitor. Retrieve this information from your Docker Compose file or using the command <code>docker ps -a</code>. Specify the <code>Docker Host</code> to indicate where UptimeKuma should listen for the Docker container.
+<img src="./attachments/9d351bececedf9211fed1b35221f2dd2.png" alt="9d351bececedf9211fed1b35221f2dd2.png"></p>
+<p>The <code>Heartbeat Interval</code> determines how often UptimeKuma checks your service. After configuring, click <code>save</code>, and the monitor will appear on the UptimeKuma web UI, checking your service periodically.</p>
+<p>To receive notifications when the status of your service changes, set up notifications by editing a service monitor and clicking <code>Setup Notification</code>.
+<img src="./attachments/350e598f2a7d1867bf9874c2c089fecd.png" alt="350e598f2a7d1867bf9874c2c089fecd.png"></p>
+<p>For Telegram notifications, follow these steps:</p>
+<ol>
+<li>Contact the Telegram Bot <a href="https://telegram.me/BotFather">BotFather</a> to create a new bot.
+<ul>
+<li>The <code>/start</code> command, will show you a guide on how to setup a bot.</li>
+<li>Alternatively, you can follow the steps below.</li>
+</ul>
+</li>
+<li>Use the <code>/newbot</code> command to create a new bot, following BotFather&rsquo;s guidance.
+<img src="./attachments/10e8ce89857027e248f9face00d46aaa.png" alt="10e8ce89857027e248f9face00d46aaa.png">
+<img src="./attachments/0ed96ca3a02e38d033c386b648c4cef4.png" alt="0ed96ca3a02e38d033c386b648c4cef4.png"></li>
+<li>After creating the bot, copy the <code>HTTP API token</code> and enter it in UptimeKuma.
+<img src="./attachments/e52b53a8a63e98281f9d9975b64c2579.png" alt="e52b53a8a63e98281f9d9975b64c2579.png"></li>
+<li>Test the configuration and save it. You can now enable Telegram notifications for all your site monitors.</li>
+</ol>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://github.com/louislam/uptime-kuma/wiki">UptimeKuma Docs</a></li>
+</ul>
+<hr>
+
+
+
+        <div class="footer">
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>
+
+    </div>
+  </body>
+</html>

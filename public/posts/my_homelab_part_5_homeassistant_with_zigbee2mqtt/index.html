@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MonkeMan&#39;s Blog/posts/my_homelab_part_5_homeassistant_with_zigbee2mqtt/</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/terminal-0.7.2.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/animate-4.1.1.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/console.css">
+    
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+       <meta property="og:title" content="My Homelab Part 5: HomeAssistant with Zigbee2MQTT" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/my_homelab_part_5_homeassistant_with_zigbee2mqtt/" /><meta property="article:published_time" content="2024-01-19T11:34:15+00:00" />
+
+
+
+<meta name="twitter:title" content="My Homelab Part 5: HomeAssistant with Zigbee2MQTT"/>
+<meta name="twitter:description" content="My Homelab Part 5: HomeAssistant with Zigbee2MQTT As I hinted in my initial post of this series, &ldquo;My Homelab Part 0: Prologue,&rdquo; my motivation for incorporating Home Assistant into my server revolves around dynamically scheduling the lights in my room. This functionality enables me to wake up gradually with softly illuminated surroundings and help me fall asleep with lights that gradually fade away. However, Home Assistant&rsquo;s capabilities extend beyond light control."/>
+
+</head>
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+          <header class="terminal-logo">
+            <div class="logo terminal-prompt">
+              
+              
+              <a href="//localhost:1313/" class="no-style site-name">MonkeMan&#39;s Blog</a>:~# 
+              <a href='//localhost:1313/posts'>posts</a>/<a href='//localhost:1313/posts/my_homelab_part_5_homeassistant_with_zigbee2mqtt'>my_homelab_part_5_homeassistant_with_zigbee2mqtt</a>/</div></header>
+          <nav class="terminal-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                <li><a href="//localhost:1313/" typeof="ListItem">Home</a></li>
+                
+                <li><a href="//localhost:1313/posts" typeof="ListItem">All posts</a></li>
+                
+                <li><a href="//localhost:1313/tags" typeof="ListItem">Tags</a></li>
+                
+                <li><a href="//localhost:1313/about_me" typeof="ListItem">About Me</a></li>
+                
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn fast" >
+        
+<h1>My Homelab Part 5: HomeAssistant with Zigbee2MQTT</h1>
+
+Jan. 19, 2024
+
+
+<br/><br/>
+<h1 id="my-homelab-part-5-homeassistant-with-zigbee2mqtt">My Homelab Part 5: HomeAssistant with Zigbee2MQTT</h1>
+<p>As I hinted in my initial post of this series, &ldquo;My Homelab Part 0: Prologue,&rdquo; my motivation for incorporating Home Assistant into my server revolves around dynamically scheduling the lights in my room. This functionality enables me to wake up gradually with softly illuminated surroundings and help me fall asleep with lights that gradually fade away. However, Home Assistant&rsquo;s capabilities extend beyond light control.</p>
+<p>Home Assistant is a free and open-source software designed for home automation. Functioning as the central control system for smart homes, it can be accessed either through an <a href="https://github.com/home-assistant/android/releases">android app</a> or a web-based interface.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/9178large.webp">
+    <figcaption><a href="https://futurehousestore.co.uk/what-is-home-assistant-and-what-it-can-do">Source</a></figcaption>
+</figure>
+<p>Smart homes integrate IoT devices, allowing them to connect to a central hub and exchange data. Examples of these devices include:</p>
+<ul>
+<li>Smart bulbs</li>
+<li>Sensors (e.g., smoke detectors, power detectors, air quality measure&rsquo;s)</li>
+<li>Smart buttons and switches</li>
+<li>Home appliances (e.g., fridge, freezer, microwave, washing machine)</li>
+<li>Home thermostat</li>
+<li>Home energy monitors</li>
+</ul>
+<p>These devices can be seamlessly connected to Home Assistant using various protocols such as Bluetooth, <a href="https://en.wikipedia.org/wiki/Zigbee">Zigbee</a>, and Z-Wave.</p>
+<p>However, not all smart devices directly interface with Home Assistant. Many IoT devices require proprietary bridges for direct communication. A viable solution to this challenge is <a href="https://www.zigbee2mqtt.io/">Zigbee2MQTT</a>.</p>
+<p>Zigbee2MQTT is a free and open-source software that enables the utilization of Zigbee devices without the need for the vendor&rsquo;s bridge or gateway. It accomplishes this by bridging events and empowering you to control Zigbee devices via <a href="https://en.wikipedia.org/wiki/MQTT">MQTT</a>.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/Screenshot%20from%202024-01-24%2011-54-22.png">
+</figure>
+<h2 id="hardware-requirements">Hardware Requirements</h2>
+<p>To connect my IoT devices to Home Assistant using the Zigbee protocol, I require an antenna capable of sending and receiving signals using this specific protocol. A comprehensive list of supported antennas can be found <a href="https://www.zigbee2mqtt.io/guide/adapters/#recommended">here</a>.
+After some consideration, I opted for the &ldquo;ITead Sonoff Zigbee 3.0 USB Dongle Plus V2 model ZBDongle-E&rdquo; adapter due to its affordability and local availability.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/4a2395f10d5e3745d06864cd0c0d3319.png">
+    <figcaption>The Sonoff Zigbee 3.0 USB Dongle Plus.</figcaption>
+</figure>
+<p>Additionally, it is <a href="https://www.zigbee2mqtt.io/advanced/zigbee/02_improve_network_range_and_stability.html">recommended</a> to use an extension cable (approximately 50cm in length) between the Zigbee adapter and the server, rather than directly connecting the adapter to the server. This precaution is taken to mitigate <a href="(https://www.unit3compliance.co.uk/2-4ghz-intra-system-or-self-platform-interference-demonstration/)">potential interference</a> from the electronics on the server that could affect the radio signals transmitted by the antenna. It&rsquo;s crucial to ensure that the USB extension cable is shielded to maintain optimal performance.</p>
+<h2 id="installing-home-assistant-and-zigbee2mqtt">Installing Home Assistant and Zigbee2MQTT</h2>
+<p>For the installation of Home Assistant and Zigbee2MQTT, I employ Docker Compose for both services. Below are the respective compose files for Home Assistant and Zigbee2MQTT:</p>
+<p>Home Assistant Compose File (HomeAssistant-compose.yml):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">homeassistant</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">homeassistant</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#e6db74">&#34;ghcr.io/home-assistant/home-assistant:stable&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/root/HomeAssistant/:/config</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/etc/localtime:/etc/localtime:ro</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/run/dbus:/run/dbus:ro</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">privileged</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">network_mode</span>: <span style="color:#ae81ff">host</span>
+</span></span></code></pre></div><p>Zigbee2MQTT Compose File (Zigbee2MQTT-compose.yml):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.8&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mqtt</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">eclipse-mosquitto:2.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;/root/MQTT/mosquitto-data:/mosquitto&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;1883:1883&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;9001:9001&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">command</span>: <span style="color:#e6db74">&#34;mosquitto -c /mosquitto-no-auth.conf&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">zigbee2mqtt</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">zigbee2mqtt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">koenkk/zigbee2mqtt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/root/MQTT/zigbee2mqtt-data:/app/data</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/root/MQTT/run/udev:/run/udev:ro</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">8888</span>:<span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">TZ=Europe/Berlin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">devices</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/dev/ttyACM0:/dev/ttyACM0</span>
+</span></span></code></pre></div><p>Ensure that you customize the compose files according to your preferences, adjusting parameters such as timezone (<code>TZ</code>), ports, or volumes.</p>
+<p>One critical aspect to check is the <code>device</code> variable in the Zigbee2MQTT compose file. After connecting your adapter to the server, the device name might differ, and you need to identify it. You can achieve this by running the following command on your server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>dmesg
+</span></span></code></pre></div><p>This will list all mounted devices on your server, scroll through the list to locate your USB adapter.</p>
+<p>Once customized, install and run Home Assistant with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose -f HomeAssistant-compose.yml up -d
+</span></span></code></pre></div><p>You should find the service at the following URL: <code>http://Server_IP:Service_Port_Number</code> after creating an account.</p>
+<p>After you have create an account your portal should look similar(without the lights and automation&rsquo;s) to this:</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-19-31.png">
+</figure>
+<p>We now need to install Zigbee2MQTT, for that create your data folder at the position specified in your compose file, navigate inside it, and download the configuration file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir zigbee2mqtt-data
+</span></span><span style="display:flex;"><span>cd zigbee2mqtt-data
+</span></span><span style="display:flex;"><span>wget https://raw.githubusercontent.com/Koenkk/zigbee2mqtt/master/data/configuration.yaml
+</span></span></code></pre></div><p>Edit the configuration file using a text editor of your choice, for example, <code>nano</code> (as explained in &ldquo;My Homelab Part 2: DietPi&rdquo;).</p>
+<p>Configure the configuration.yaml file based on the guidelines provided in <a href="https://www.zigbee2mqtt.io/guide/installation/01_linux.html#configuring">the official guide</a>.</p>
+<p>For instance, if using the Sonoff Zigbee 3.0 USB Dongle Plus, adjust the following settings:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">serial</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">adapter</span>: <span style="color:#ae81ff">ezsp</span>
+</span></span></code></pre></div><p>Correct the port name based on the information obtained earlier, and set <code>homeassistant</code> to <code>true</code>. Initially, set <code>permit_join</code> to <code>true</code> for device pairing and later consider changing it to <code>false</code> to prevent unwanted device connections.</p>
+<p>After configuring, install and run the Zigbee2MQTT service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose -f Zigbee2MQTT-compose.yml up -d
+</span></span></code></pre></div><p>The web interface should resemble the following (without devices):</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-32-44.png">
+</figure>
+<p>To display Zigbee2MQTT devices in Home Assistant, enable the MQTT integration by navigating to <code>Settings -&gt; Devices &amp; Services -&gt; Add Integration -&gt; MQTT</code>.
+If no password is set for MQTT and the same port is used, the configuration should look like this:</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-01-24%2012-35-55.png">
+</figure>
+<p>Following these steps, you should be able to see all your Zigbee2MQTT devices integrated into Home Assistant.</p>
+<h2 id="automations-in-home-assistant">Automation&rsquo;s in Home Assistant</h2>
+<p>Congratulations on successfully installing Home Assistant and Zigbee2MQTT, enabling you to control your smart devices. However, the true power of Home Assistant lies in its Automation capabilities, allowing you to define schedules and sequences of actions tailored to your preferences.</p>
+<p>For instance, you can create automations to turn off the lights when you leave your house or raise window shutters in the morning – the possibilities are virtually limitless.</p>
+<h3 id="creating-an-automation">Creating an Automation</h3>
+<p>Let&rsquo;s explore an example of a simple automation that turns on lights in the morning and off at night. To begin, navigate to <code>Settings -&gt; Automations &amp; Scenes -&gt; Automations -&gt; Create Automations</code> within the web interface.</p>
+<p>You have the option to create automations using nodes in the web interface or by defining them in YAML. You can switch between these modes by clicking the icon in the top right corner.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-43-10.png">
+</figure>
+<p>The first thing you asked it to select a <code>trigger</code>, a trigger defines when you automation should be executed this could be something as simple as a certain time or something much more complex.
+Next up is a <code>condition</code>, this is a limitation on the trigger if the condition is not met the automation will not execute, you do not need to use a condition.
+The last thing is a <code>action</code>, this defines what should happen after the trigger is triggered and the condition is met.</p>
+<p>Here&rsquo;s an example automation that gradually turns on lights in the morning:
+<style>
+   
+  details {
+    border: 2px solid #3498db;  
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f2f2f2;  
+    overflow: hidden;  
+    transition: max-height 0.5s ease-out;  
+  }
+
+   
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3498db;  
+  }
+
+   
+  .collapsible-content {
+    margin-top: 10px;
+  }
+</style>
+
+<details>
+  <summary>Click here to show it</summary>
+  <div class="collapsible-content">
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">alias</span>: <span style="color:#ae81ff">Turn Lights On, Morning, Weekdays</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#ae81ff">Turns the light on in the morning on weekdays to wake up</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">trigger</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">time</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">at</span>: <span style="color:#e6db74">&#34;06:00:00&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">condition</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">and</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">conditions</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">time</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">weekday</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">mon</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">tue</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">wed</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">thu</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">fri</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">action</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">service</span>: <span style="color:#ae81ff">light.turn_on</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transition</span>: <span style="color:#ae81ff">900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">area_id</span>: <span style="color:#ae81ff">bedroom</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">wait_for_trigger</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">sun</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">event</span>: <span style="color:#ae81ff">sunrise</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">offset</span>: <span style="color:#e6db74">&#34;+90&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">continue_on_timeout</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">service</span>: <span style="color:#ae81ff">light.turn_off</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">area_id</span>: <span style="color:#ae81ff">bedroom</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transition</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">mode</span>: <span style="color:#ae81ff">single</span>
+</span></span></code></pre></div>
+  </div>
+</details>
+</p>
+<p>This automation triggers on weekdays at 6 a.m. with a gradual transition of lights over 900 seconds. After that, the lights turn off 90 minutes after sunrise.</p>
+<h3 id="device-grouping">Device Grouping</h3>
+<p>You might have noticed the <code>area_id: bedroom</code> in the automation. This allows targeting all devices in the bedroom. To use this feature, create an area by navigating to <code>Settings -&gt; Area &amp; Zones -&gt; Create Area</code>. You can assign devices to the area under <code>Settings -&gt; Devices &amp; Services -&gt; MQTT -&gt; Devices</code>, after which you press on the device you want to assign to the created area, then you press the edit button in the top right corner and select your newly created area.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/52839f72156e311a777a462bfeee961e.png">
+</figure>
+<p>For turning off lights at night, another automation is used:
+<style>
+   
+  details {
+    border: 2px solid #3498db;  
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f2f2f2;  
+    overflow: hidden;  
+    transition: max-height 0.5s ease-out;  
+  }
+
+   
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3498db;  
+  }
+
+   
+  .collapsible-content {
+    margin-top: 10px;
+  }
+</style>
+
+<details>
+  <summary>Click here to show it</summary>
+  <div class="collapsible-content">
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">alias</span>: <span style="color:#ae81ff">Turn Lights Off, Evening, Weekdays</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#ae81ff">Turns off the light in the evening on weekdays for sleeping time.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">trigger</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">time</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">at</span>: <span style="color:#e6db74">&#34;21:15:00&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">condition</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">and</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">conditions</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">time</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">weekday</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">tue</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">wed</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">sun</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">mon</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#ae81ff">thu</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">action</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">service</span>: <span style="color:#ae81ff">light.turn_off</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transition</span>: <span style="color:#ae81ff">900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">device_id</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">4b8a1917bea51bc1c693c47ca6e744fe</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">0f50cb3c050c4759a8b2956326f6009a</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">316804d86ed3d55b22f0749a0c35df43</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">service</span>: <span style="color:#ae81ff">light.turn_on</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">entity_id</span>: []
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">device_id</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">846e13ea6a7f1a66eeeb6ce0a2ca394c</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">area_id</span>: []
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">brightness_pct</span>: <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transition</span>: <span style="color:#ae81ff">900</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">delay</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">hours</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">minutes</span>: <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">seconds</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">milliseconds</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">service</span>: <span style="color:#ae81ff">light.turn_off</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">device_id</span>: <span style="color:#ae81ff">846e13ea6a7f1a66eeeb6ce0a2ca394c</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transition</span>: <span style="color:#ae81ff">900</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">mode</span>: <span style="color:#ae81ff">single</span>
+</span></span></code></pre></div>
+  </div>
+</details>
+</p>
+<p>This automation triggers at 21:15, gradually turning off all lights besides one, over 900 seconds and turning the last light to 50% brightness. After a 30-minute delay, the last light turns off.
+If you want to use this automation make sure to change the <code>device_id</code> to the id of your lights.</p>
+<p>Feel free to adapt these automations based on your devices and preferences. The flexibility of Home Assistant&rsquo;s automation engine allows you to tailor it to your specific needs.</p>
+<hr>
+<p>Resources:</p>
+<ul>
+<li><a href="https://www.home-assistant.io/docs/">Home Assistant Documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Home_Assistant">Home Assistant Wikipedia</a></li>
+</ul>
+
+
+
+        <div class="footer">
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>
+
+    </div>
+  </body>
+</html>

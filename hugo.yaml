@@ -1,0 +1,57 @@
+baseURL: ''
+title: MonkeMan's Blog
+languageCode: "en-US"
+theme: "hugo-theme-console"
+copyright:  "©MonkeMan"
+
+permalinks:
+  tags: "/tags/:slug"  
+
+# This is for allowing latex to render on markup pages 
+# it defines how you can start a latex block.
+markup:
+  goldmark:
+    # this makes is possible to render images with html
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
+params: 
+  # This activates latex rendering on markdown pages 
+  math: true
+  # Hugo Console Theme Settings
+  # ---------------------------
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting: true
+  # Set the animation style -- https://animate.style/
+  # To disable animations, please remove or comment animationStyle parameter
+  animateStyle: "animated zoomIn fast" 
+  # for the menu 
+  navlinks:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: All posts
+      name: All posts
+      url: /posts
+      weight: 20
+    - identifier: Tags 
+      name: Tags
+      url: /tags
+      weight: 30
+    - identifier: About_me 
+      name: About Me
+      url: /about_me
+      weight: 40

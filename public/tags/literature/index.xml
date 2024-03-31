@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Literature on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/literature/</link>
+    <description>Recent content in Literature on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Mon, 25 Dec 2023 23:45:43 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/literature/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Poetry</title>
+      <link>//localhost:1313/posts/introduction_to_poetry/</link>
+      <pubDate>Mon, 25 Dec 2023 23:45:43 +0000</pubDate>
+      <guid>//localhost:1313/posts/introduction_to_poetry/</guid>
+      <description>Introduction to Poetry Poetry has long been an mystery to me - Never understood why people like it, never understood the need for analyzing them in school and especially never understood why people treat it so highly. It always felt similar to the esoteric behavior displayed by wine snobs about what the perfect wine is. However, as my interest recently shifted to world building. I began to recognize the potential within poetry as story telling tool, realizing it could serve as integral role to craft religions and history of the world.</description>
+    </item>
+  </channel>
+</rss>

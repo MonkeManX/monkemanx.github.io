@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNN on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/cnn/</link>
+    <description>Recent content in CNN on MonkeMan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/cnn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Convolutional Neural Network</title>
+      <link>//localhost:1313/posts/proseminar_cnn/</link>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/proseminar_cnn/</guid>
+      <description>Background I wrote this article back in uni as part of the seminar, &#34;Basics of Machine Learning 1 &amp; 2&#34;. As such this text only introduces some basic concepts and is limited in scope. Abstract In recent years, significant advancements have been made in the field of Machine Learning, particularly in the domain of image-related tasks. This paper aims to provide a comprehensive overview of Convolutional Neural Networks (CNNs), a powerful class of neural networks widely employed for image analysis and processing.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/deep_reinforcement_learning_from_human_preferences/</loc>
+            <lastmod>2024-02-05T11:18:13+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/</loc>
+            <lastmod>2024-02-05T11:18:13+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/paper-summary/</loc>
+            <lastmod>2024-02-05T11:18:13+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/</loc>
+            <lastmod>2024-02-05T11:18:13+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/rl/</loc>
+            <lastmod>2024-02-05T11:18:13+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/</loc>
+            <lastmod>2024-02-05T11:18:13+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/alignment/</loc>
+            <lastmod>2024-02-05T06:45:55+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/llm/</loc>
+            <lastmod>2024-02-05T06:45:55+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/training_language_models_to_follow_instructions/</loc>
+            <lastmod>2024-02-05T06:45:55+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/constitutional_ai_harmlessness_from_ai_feedback/</loc>
+            <lastmod>2024-02-05T06:15:42+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/evolutionary-algorithm/</loc>
+            <lastmod>2024-02-04T17:44:58+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/mathematical_discoveries_from_program_search_with_llm/</loc>
+            <lastmod>2024-02-04T17:44:58+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/refiner/</loc>
+            <lastmod>2024-02-04T14:29:16+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/llm-agent/</loc>
+            <lastmod>2024-02-04T13:54:38+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/reflexion_language_agents_with_verbal_reinforcement/</loc>
+            <lastmod>2024-02-04T13:54:38+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/retrieval_augmented_generation/</loc>
+            <lastmod>2024-02-03T10:31:09+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/self_instruct__aligning_language_models/</loc>
+            <lastmod>2024-02-02T11:02:28+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/efficient_estimation_of_word_representations/</loc>
+            <lastmod>2024-02-02T06:45:29+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/embedding/</loc>
+            <lastmod>2024-02-02T06:45:29+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/toolformer/</loc>
+            <lastmod>2024-02-01T20:56:12+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/chain_of_thought_prompting_elicits_reasoning_in_llms/</loc>
+            <lastmod>2024-02-01T13:16:08+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/super_naturalinstructions/</loc>
+            <lastmod>2024-02-01T08:40:19+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/datasets/</loc>
+            <lastmod>2024-01-31T20:45:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/will_we_run_out_of_data/</loc>
+            <lastmod>2024-01-31T20:45:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/mistral_7b/</loc>
+            <lastmod>2024-01-31T20:36:46+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/homelab/</loc>
+            <lastmod>2024-01-29T08:02:58+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_12_outlook/</loc>
+            <lastmod>2024-01-29T08:02:58+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_11_backup/</loc>
+            <lastmod>2024-01-27T11:33:02+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_10_vaultwarden/</loc>
+            <lastmod>2024-01-25T11:30:36+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_9_caddy_fileserver_and_duckdns/</loc>
+            <lastmod>2024-01-23T11:32:33+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_8_homepage/</loc>
+            <lastmod>2024-01-21T18:30:17+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_7_uptimekuma/</loc>
+            <lastmod>2024-01-20T18:30:47+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_6_syncthing/</loc>
+            <lastmod>2024-01-20T16:38:39+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_5_homeassistant_with_zigbee2mqtt/</loc>
+            <lastmod>2024-01-19T11:34:15+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_4_wireguard_vpn/</loc>
+            <lastmod>2024-01-19T11:31:55+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_3_calibre/</loc>
+            <lastmod>2024-01-19T11:30:23+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_2_dietpi/</loc>
+            <lastmod>2024-01-19T11:30:08+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_1_introduction/</loc>
+            <lastmod>2023-12-26T15:17:38+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/introduction_to_poetry/</loc>
+            <lastmod>2023-12-25T23:45:43+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/literature/</loc>
+            <lastmod>2023-12-25T23:45:43+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/cryptography/</loc>
+            <lastmod>2023-12-25T17:07:52+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/gpg/</loc>
+            <lastmod>2023-12-25T17:07:52+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/hugo/</loc>
+            <lastmod>2023-12-25T17:07:52+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/what_is_pgp_gpg/</loc>
+            <lastmod>2023-12-25T17:07:52+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/about_me/</loc>
+            <lastmod>2023-12-24T15:54:51+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/cnn/</loc>
+            <lastmod>2023-12-22T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/proseminar_cnn/</loc>
+            <lastmod>2023-12-22T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/how_did_i_created_my_website/</loc>
+            <lastmod>2023-12-19T20:08:14+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/website/</loc>
+            <lastmod>2023-12-19T20:08:14+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/my_homelab_part_0_prologue/</loc>
+            <lastmod>2023-12-16T10:13:35+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/sleeping/</loc>
+            <lastmod>2023-12-16T10:13:35+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/categories/</loc>
+        </url>
+        
+    
+</urlset>

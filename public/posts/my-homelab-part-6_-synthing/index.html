@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MonkeMan&#39;s Blog/posts/my-homelab-part-6_-synthing/</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/terminal-0.7.2.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/animate-4.1.1.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/console.css">
+    
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+       <meta property="og:title" content="My Homelab Part 6: Synthing" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/my-homelab-part-6_-synthing/" />
+
+
+<meta name="twitter:title" content="My Homelab Part 6: Synthing"/>
+<meta name="twitter:description" content="tags = [&ldquo;homelab&rdquo;]
+My Homelab Part 6: Synthing In this installment, I explore another valuable use case for my server - file synchronization between my various devices. This includes regular backups of the pictures taken on my phone, archiving important documents, and seamless access to notes across all devices for tasks like blogging, to-dos, projects, and university-related work. To accomplish this, I rely on the powerful capabilities of synthing a continuous file synchronization program."/>
+
+</head>
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+          <header class="terminal-logo">
+            <div class="logo terminal-prompt">
+              
+              
+              <a href="//localhost:1313/" class="no-style site-name">MonkeMan&#39;s Blog</a>:~# 
+              <a href='//localhost:1313/posts'>posts</a>/<a href='//localhost:1313/posts/my-homelab-part-6_-synthing'>my-homelab-part-6_-synthing</a>/</div></header>
+          <nav class="terminal-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                <li><a href="//localhost:1313/" typeof="ListItem">Home</a></li>
+                
+                <li><a href="//localhost:1313/posts" typeof="ListItem">All posts</a></li>
+                
+                <li><a href="//localhost:1313/tags" typeof="ListItem">Tags</a></li>
+                
+                <li><a href="//localhost:1313/about_me" typeof="ListItem">About Me</a></li>
+                
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn fast" >
+        
+<h1>My Homelab Part 6: Synthing</h1>
+
+Jan. 1, 0001
+
+
+<br/><br/>
+<p>tags = [&ldquo;homelab&rdquo;]</p>
+<h1 id="my-homelab-part-6-synthing">My Homelab Part 6: Synthing</h1>
+<p>In this installment, I explore another valuable use case for my server - file synchronization between my various devices. This includes regular backups of the pictures taken on my phone, archiving important documents, and seamless access to notes across all devices for tasks like blogging, to-dos, projects, and university-related work. To accomplish this, I rely on the powerful capabilities of <a href="https://syncthing.net/">synthing</a> a continuous file synchronization program.</p>
+<p>Syncthing operates by synchronizing files between two or more devices, akin to the functionality of OneDrive synchronization on Windows. However, instead of storing files on a cloud server, Syncthing saves them locally on my home server. The software comes equipped with a user-friendly WebUI that facilitates easy management of file synchronization and connected devices.
+<img src="./attachments/2eb72858a7d12a81c0c1280e559dac46.png" alt="2eb72858a7d12a81c0c1280e559dac46.png" title="Example Synthing Page."></p>
+<h2 id="installation">Installation</h2>
+<p>For the installation process, I utilize Docker Compose with the following configuration in the <code>synthing-compose.yml</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">syncthing</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">syncthing/syncthing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">syncthing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">hostname</span>: <span style="color:#ae81ff">my-syncthing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">PUID=1000</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">PGID=1000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/mnt/externalDisk/st-sync:/var/syncthing</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/mnt/externalDisk/media:/media</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">8384</span>:<span style="color:#ae81ff">8384</span> <span style="color:#75715e"># Web UI</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">22000</span>:<span style="color:#ae81ff">22000</span><span style="color:#ae81ff">/tcp</span> <span style="color:#75715e"># TCP file transfers</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">22000</span>:<span style="color:#ae81ff">22000</span><span style="color:#ae81ff">/udp</span> <span style="color:#75715e"># QUIC file transfers</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">21027</span>:<span style="color:#ae81ff">21027</span><span style="color:#ae81ff">/udp</span> <span style="color:#75715e"># Receive local discovery broadcasts</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span></code></pre></div><p>Remember to customize the Docker Compose file according to your preferences, particularly adjusting the <code>PUID</code> and <code>PGID</code> to match the owner ID of your Syncthing volume. To install and run the container, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose -f synthing-compose.yml up -d
+</span></span></code></pre></div><p>After installation, you can access the Syncthing WebUI using the URL: <code>http://&lt;IP_Of_Your_Server&gt;:Synthing_Port</code>.</p>
+<h2 id="configuration-and-sychronization">Configuration and Sychronization</h2>
+<p>For security, it&rsquo;s essential to set a password for the WebUI. Navigate to <code>Actions -&gt; Settings -&gt; GUI</code> and configure the GUI Authentication User and GUI Authentication Password fields.</p>
+<h3 id="synchronize-phone-with-server">Synchronize Phone with Server</h3>
+<p>To synchronize a folder between your server and phone, install the <a href="https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&amp;hl=en&amp;gl=US">official Syncthing app</a>. Add your phone as a remote device on the server by clicking the <code>add remote Device</code> button.</p>
+<p><img src="./attachments/c1e52179d9d2652b71b31f7404ec3a38.png" alt="c1e52179d9d2652b71b31f7404ec3a38.png"></p>
+<p>Insert your phone&rsquo;s device ID in the provided field (find it in the Syncthing app menu). Similarly, add your server as a device on your phone.
+<img src="./attachments/722eb6143ff5c4f1b86a8b0b92681d0f.png" alt="722eb6143ff5c4f1b86a8b0b92681d0f.png"></p>
+<p>You should also add your server as device to your phone, this works very cimilar to how you did it above.</p>
+<p>Create a synchronization target by pressing the &ldquo;+&rdquo; button, select the folder, and share it with your server.
+<img src="./attachments/38c70dd4cd4e4b8d37eaf3a806a9146b.png" alt="38c70dd4cd4e4b8d37eaf3a806a9146b.png"></p>
+<p>A popup on the server&rsquo;s Syncthing WebUI will appear, asking if you want to synchronize with the phone folder.
+<img src="./attachments/b5e2a589822c5893e97c286f000c501e.png" alt="b5e2a589822c5893e97c286f000c501e.png"></p>
+<p>That&rsquo;s it! Your phone pictures will now automatically upload to your server.</p>
+<h3 id="synchronize-computer-with-server">Synchronize Computer with Server</h3>
+<p>If you want to synchronize your Computer with your Server, you first need to install the <a href="https://syncthing.net/downloads/">synthing software</a> on your computer.</p>
+<p>And after that, just like with the phone you need to add your computer as device to the server and vice versa.
+Then you can again create a synchronization target.</p>
+<h3 id="things-to-keep-in-mind">Things to keep in mind</h3>
+<ul>
+<li>
+<p><strong>Synchronization Issues:</strong> If you are sharing a folder among devices with different operating systems and disk formats, enable the <code>ignoring Permissions</code> setting in the <code>Advanced</code> settings section of your synchronization target.
+<img src="./attachments/8608b9ca84474054aad0baac8452da6a.png" alt="8608b9ca84474054aad0baac8452da6a.png"></p>
+</li>
+<li>
+<p><strong>Battery Optimization on Phone:</strong> Disable battery optimization for the Syncthing app on your phone to prevent interference and ensure continuous synchronization.</p>
+</li>
+</ul>
+<p>For additional information, refer to the <a href="https://docs.syncthing.net/">Syncthing documentation</a>.</p>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://syncthing.net/">https://syncthing.net/</a></li>
+<li><a href="https://docs.syncthing.net/">https://docs.syncthing.net/</a></li>
+</ul>
+<hr>
+
+
+
+        <div class="footer">
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>
+
+    </div>
+  </body>
+</html>
