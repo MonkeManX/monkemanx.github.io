@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<!--
+What I do here is I check if the page is the "Tag" page and if yes 
+I ust my custom code to display the tags. 
+If not, this is for the homepage and the "all post" page I use the standard code of the theme.
+-->
+{{ if and (eq .Kind "taxonomy") (eq .Name "Tags") }}
+  <h1>Tags</h1>
+  <ul>
+  {{ range .Data.Terms.Alphabetical }}
+      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <h1>{{ .Page.Title }}</h1>
+  <br/>
+  {{ .Content }}
+  
+  <div class="posts-list">
+  {{ range sort .Data.Pages "Date" "desc" }}
+      {{ if not .Params.private }}
+          <div class="post">
+              <p>
+                  <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
+                  <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                  {{ .Summary }}
+              </p>
+          </div>
+      {{ end }}
+  {{ end }}
+  </div>
+{{ end }}
+
+
+{{ end }}
