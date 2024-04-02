@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Mon, 05 Feb 2024 11:18:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Siren’s Song in the AI Ocean:A Survey on Hallucination in Large Language Models</title>
+      <link>//localhost:1313/posts/sirens_song_llm/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/sirens_song_llm/</guid>
+      <description>Paper Title: Siren&amp;rsquo;s Song in the AI Ocean: A Survey on Hallucination in Large Language Models&#xA;Link to Paper: https://arxiv.org/abs/2309.01219&#xA;Date: 3. September 2023&#xA;Paper Type: LLM, Hallucination&#xA;Short Abstract: LLM&amp;rsquo;s often exhibit so called &amp;ldquo;Hallucination&amp;rdquo;, this paper gives an overview of the different types of Hallucination and mitigation techniques.&#xA;1. Introduction It has been observed that LLM&amp;rsquo;s often times produce outputs that while plausible, conflict with the user input, with previous context, or with factual knowledge.</description>
+    </item>
     <item>
       <title>Deep reinforcement learning from human preferences</title>
       <link>//localhost:1313/posts/deep_reinforcement_learning_from_human_preferences/</link>

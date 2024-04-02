@@ -102,10 +102,10 @@ This approach aligns with several key principles:</p>
 <h2 id="21-setting-and-goal">2.1 Setting and Goal</h2>
 <p>The RLHF agent interacts with an environment across a sequence of steps. At each step \(i\), the agent receives an observation </p>
 $$o_t \in O$$
-<p> from the environment and performs an action \(a_t \in A\) in response.</p>
-<p>In traditional RL, the agent aims to maximize a reward \(r_t \in \mathbb{R}\). In RLHF, a human overseer expresses a preference for a trajectory, which consists of multiple steps of observations and actions. The RLHF agent&rsquo;s goal is to produce a trajectory preferred by the human.</p>
+<p> from the environment and performs an action \( a_t \in A \) in response.</p>
+<p>In traditional RL, the agent aims to maximize a reward \( r_t \in \mathbb{R} \). In RLHF, a human overseer expresses a preference for a trajectory, which consists of multiple steps of observations and actions. The RLHF agent&rsquo;s goal is to produce a trajectory preferred by the human.</p>
 <h2 id="22-rlhf">2.2 RLHF</h2>
-<p>RLHF employs a deep neural network $r&rsquo;$ as a reward function estimator and a current policy $\pi$, representing a sequence of actions optimizing the reward function estimation.</p>
+<p>RLHF employs a deep neural network \( r' \) as a reward function estimator and a current policy \( \pi \), representing a sequence of actions optimizing the reward function estimation.</p>
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-05%2011-58-55.png">
 </figure>

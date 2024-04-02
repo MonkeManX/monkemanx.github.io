@@ -31,13 +31,13 @@ The authors test their method on two diverse domains: Atari games and robotics t
 
 ## 2.1 Setting and Goal
 
-The RLHF agent interacts with an environment across a sequence of steps. At each step \(i\), the agent receives an observation $$o_t \in O$$ from the environment and performs an action \(a_t \in A\) in response.
+The RLHF agent interacts with an environment across a sequence of steps. At each step \(i\), the agent receives an observation $$o_t \in O$$ from the environment and performs an action \( a_t \in A \) in response.
 
-In traditional RL, the agent aims to maximize a reward \(r_t \in \mathbb{R}\). In RLHF, a human overseer expresses a preference for a trajectory, which consists of multiple steps of observations and actions. The RLHF agent's goal is to produce a trajectory preferred by the human.
+In traditional RL, the agent aims to maximize a reward \( r_t \in \mathbb{R} \). In RLHF, a human overseer expresses a preference for a trajectory, which consists of multiple steps of observations and actions. The RLHF agent's goal is to produce a trajectory preferred by the human.
 
 ## 2.2 RLHF
 
-RLHF employs a deep neural network $r'$ as a reward function estimator and a current policy $\pi$, representing a sequence of actions optimizing the reward function estimation.
+RLHF employs a deep neural network \( r' \) as a reward function estimator and a current policy \( \pi \), representing a sequence of actions optimizing the reward function estimation.
 
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-05%2011-58-55.png">
