@@ -1,7 +1,6 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-
-{{ .PublishDate.Format "Jan. 2, 2006" }}
+{{ .PublishDate.Format "Published: Jan. 2, 2006" }}
 {{ with .Params.linkedin }}
     // <a href="{{ . }}">Linkedin</a>
 {{ end }}
@@ -9,6 +8,16 @@
     // <a href="{{ . }}">Twitter</a>
 {{ end }}
 <br/><br/>
+
+<!--
+This check if the blog post is a paper sumamry and if yes disclaims a warning.
+-->
+{{ if .Params.tags }}
+    {{ if in .Params.tags "paper-summary" }}
+      {{ partial "disclaimer_paper_summary.html" . }}
+    {{ end }}
+{{ end }}
+
 {{ .Content }}
 {{ template "_internal/disqus.html" . }}
 {{ end }}
