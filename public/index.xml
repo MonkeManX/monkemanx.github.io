@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improving Factuality and Reasoning in Language Models through Multiagent Debate</title>
+      <link>//localhost:1313/posts/multi_agent_debate_llm/</link>
+      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/multi_agent_debate_llm/</guid>
+      <description>Paper Title: Improving Factuality and Reasoning in Language Models through Multiagent Debate Link to Paper: https://arxiv.org/abs/2305.14325&#xA;Date: 23. May 2023 Paper Type: NLP, LLM, RL, LLM-Agents&#xA;Short Abstract:&#xA;This paper investigates the usage of multiple LLMs as agent that debate between each other, to improve the quality of responses and reduce hallucinations.&#xA;1. Introduction There have been done much research into how to increase the capabilities of LLMs and increase their responses in quality and accuracy.</description>
+    </item>
     <item>
       <title>Siren’s Song in the AI Ocean:A Survey on Hallucination in Large Language Models</title>
       <link>//localhost:1313/posts/sirens_song_llm/</link>
