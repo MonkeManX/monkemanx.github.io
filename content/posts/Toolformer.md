@@ -35,8 +35,8 @@ Experiments indicate that Toolformer, based on GPT-J, exhibits stronger zero-sho
 Each API that should be incorporated into the LLM need to be presentable as text sequences, this allows the integration of the API calls \(c=(a_c, i_c)\) with text, where \(a_c\) is the name of the PI, \(i_c\) the input and \(r\) the result.
 The encoding of API calls is illustrated in Figure 1.  
 
-e(c) = <API> a_c (i_c) </API>  
-e(c, r) = \<API\> a_c (i_c) \rightarrow r</API>
+e(c) = \<API\> a_c (i_c) \</API\>  
+e(c, r) = \<API\> a_c (i_c) \rightarrow r \</API\>
 
 Given a dataset of plain text, the dataset 
 is first converted into dataset with API calls, this is done in the following steps:
@@ -55,7 +55,7 @@ After filtering, the API calls are merged into the dataset, creating an augmente
     <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-01%2021-27-09.png">
 </figure>
 
-**Sampling** involves writing a prompt to encourage the LLM to annotate an example, selecting the top k candidate positions for the API calls by computing the probability of the $<API>$ token.
+**Sampling** involves writing a prompt to encourage the LLM to annotate an example, selecting the top k candidate positions for the API calls by computing the probability of the \<API\> token.
 
 **Execution** depends on the API call made, with the response required to be presentable as text.
 
@@ -63,7 +63,7 @@ To **filter the API calls**, the authors assess whether keeping the API call wou
 
 After sampling, the model is further **fine-tuned** on the augmented dataset, maintaining the original dataset apart from the inserted API calls.
 
-In **Inference**, the LLM does decoding until it hits a "$\rightarrow$" token, at which point the API call is executed and inserted in its place.
+In **Inference**, the LLM does decoding until it hits a "\(\rightarrow\)" token, at which point the API call is executed and inserted in its place.
 
 # 3. Tools
 

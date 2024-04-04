@@ -24,7 +24,6 @@ The Critic model is trained on a dataset consisting of reasoning errors and stru
     <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/Screenshot%20from%202024-02-04%2015-04-21.png">
 </figure>
 
-
 # 2. REFINER
 
 The authors of the paper use the following benchmarks to test the model's ability:
@@ -36,11 +35,9 @@ To solve these benchmarks, the authors force the model to generate intermediate 
 - **Critic:** Which generated verbal structured feedback to the intermediate reasoning steps.
 - **Generator:** Which generates the intermediate reasoning steps.
 
-
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-04%2015-12-47.png">
 </figure>
-
 
 ## 2.1 Critic Model
 
