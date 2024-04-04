@@ -17,6 +17,13 @@
       <description>Paper Title: ReAct: Synergizing Reasoning and Acting in Language Models&#xA;Link to Paper: https://arxiv.org/abs/2210.03629 Date: 6. October 2022&#xA;Paper Type: LLM, LLM-Agent&#xA;Short Abstract: They introduce the technique ReAct which allows LLMs to generate both reasoning and task-specific actions, by combining actions with language.&#xA;1. Introduction One thing that makes out human intelligence is the ability of combining task-related action with verbal language reasoning. For example we might use language to keep track of our current progress.</description>
     </item>
     <item>
+      <title>Neovim Cheat Sheet</title>
+      <link>//localhost:1313/posts/neovim_cheatsheet/</link>
+      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/neovim_cheatsheet/</guid>
+      <description>Neovim Cheat sheet This is a short cheat sheet for important keybindings in vim more specific for neovim. Capitalization is important!&#xA;Modes:&#xA;ESC, switch to normal mode. v, switch to visual mode. i or a, switch to insert mode. R, replace mode. Navigation:&#xA;arrow keys, shame on you! Movement keys, can be combined with arbitrary number h, to the left. l, to the right. j, downwards. k, upwards. Example: 10j jumps 10 lines downwards, 5k jumps 4 lines upwards.</description>
+    </item>
+    <item>
       <title>Improving Factuality and Reasoning in Language Models through Multiagent Debate</title>
       <link>//localhost:1313/posts/multi_agent_debate_llm/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>

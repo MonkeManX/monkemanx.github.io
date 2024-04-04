@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 14:29:16 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>REACT : SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS</title>
+      <link>//localhost:1313/posts/react_llm_agents/</link>
+      <pubDate>Thu, 04 Apr 2024 14:29:16 +0000</pubDate>
+      <guid>//localhost:1313/posts/react_llm_agents/</guid>
+      <description>Paper Title: ReAct: Synergizing Reasoning and Acting in Language Models&#xA;Link to Paper: https://arxiv.org/abs/2210.03629 Date: 6. October 2022&#xA;Paper Type: LLM, LLM-Agent&#xA;Short Abstract: They introduce the technique ReAct which allows LLMs to generate both reasoning and task-specific actions, by combining actions with language.&#xA;1. Introduction One thing that makes out human intelligence is the ability of combining task-related action with verbal language reasoning. For example we might use language to keep track of our current progress.</description>
+    </item>
     <item>
       <title>Improving Factuality and Reasoning in Language Models through Multiagent Debate</title>
       <link>//localhost:1313/posts/multi_agent_debate_llm/</link>
