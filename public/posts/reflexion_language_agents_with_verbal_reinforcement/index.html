@@ -117,7 +117,7 @@ LLMs have increasingly interacted with different environments (e.g., APIs, games
 <p>Recent papers have shown the effectiveness of using LLMs as decision-making agents in external environments. In these papers, LLMs generate text based on observations of the world. This generated text is then interpreted as an action of the agent and executed. The problem is that these LLM agents need to be trained, but using traditional RL would require too many trial-and-error iterations and a high amount of computational resources.</p>
 <p><em>Reflexion</em> uses verbal reinforcement to help the agent learn from its failures. For that, Reflexion converts a reward signal to verbal feedback for the agent, which the agent can then use to learn. This can be understood to be similar to how humans learn, in an iterative manner by reflecting on past mistakes.</p>
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments//Screenshot%20from%202024-02-04%2012-05-20.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-02-04%2012-05-20.png">
 </figure>
 <p>To generate this verbal feedback, the authors explore three ways:</p>
 <ol>
@@ -134,7 +134,7 @@ LLMs have increasingly interacted with different environments (e.g., APIs, games
 <li>and a <em>Self-Reflection</em> model $M_{sr}$, which generates verbal feedback.</li>
 </ul>
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-14-38.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-14-38.png">
 </figure>
 <p><strong>Actor</strong>
 The actor is built upon an LLM that is prompted to generate text and action conditioned on the observations of the environment and its memory. To generate text, they try different prompting techniques such as Chain-of-thought and ReAct. The memory component is used for in-context learning.</p>
@@ -156,7 +156,7 @@ At the first trial, the actor produces its current actions by interacting with t
 <h2 id="31-decision-making">3.1 Decision-making</h2>
 <p>AlfWorld is a text-based environment that challenges the agent to solve multiple-step tasks in an interactive environment.</p>
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-40-21.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-40-21.png">
 </figure>
 <p>Using Reflexion significantly outperforms prior methods using LLMs.</p>
 <figure>
@@ -165,13 +165,13 @@ At the first trial, the actor produces its current actions by interacting with t
 <h2 id="32-reasoning">3.2 Reasoning</h2>
 <p>HotPotQA is a Wikipedia-based dataset with question-and-answer pairs, where the agent needs to parse content over several documents to solve the questions.</p>
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-43-02.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-43-02.png">
 </figure>
 <p>Reflexion outperforms all baseline approaches.</p>
 <h2 id="33-code-generation">3.3 Code-Generation</h2>
 <p>HumanEval, MBPP, and LeetcodeHard are all code datasets where the agent is given a programming task that it needs to solve.</p>
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-45-14.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-45-14.png">
 </figure>
 <p>Reflexion outperforms all baseline accuracies.</p>
 <h1 id="5-conclusion">5. Conclusion</h1>

@@ -19,7 +19,7 @@ Recent papers have shown the effectiveness of using LLMs as decision-making agen
 *Reflexion* uses verbal reinforcement to help the agent learn from its failures. For that, Reflexion converts a reward signal to verbal feedback for the agent, which the agent can then use to learn. This can be understood to be similar to how humans learn, in an iterative manner by reflecting on past mistakes.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments//Screenshot%20from%202024-02-04%2012-05-20.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-02-04%2012-05-20.png">
 </figure>
 
 
@@ -38,7 +38,7 @@ The Reflexion model consists of the following modules:
 - and a *Self-Reflection* model $M_{sr}$, which generates verbal feedback.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-14-38.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-14-38.png">
 </figure>
 
 
@@ -69,7 +69,7 @@ The authors evaluate their Reflexion model on the following tasks and datasets:
 AlfWorld is a text-based environment that challenges the agent to solve multiple-step tasks in an interactive environment.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-40-21.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-40-21.png">
 </figure>
 
 
@@ -85,7 +85,7 @@ Using Reflexion significantly outperforms prior methods using LLMs.
 HotPotQA is a Wikipedia-based dataset with question-and-answer pairs, where the agent needs to parse content over several documents to solve the questions.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-43-02.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-43-02.png">
 </figure>
 
 
@@ -96,7 +96,7 @@ Reflexion outperforms all baseline approaches.
 HumanEval, MBPP, and LeetcodeHard are all code datasets where the agent is given a programming task that it needs to solve.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments//Screenshot%20from%202024-02-04%2012-45-14.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-04%2012-45-14.png">
 </figure>
 
 Reflexion outperforms all baseline accuracies.

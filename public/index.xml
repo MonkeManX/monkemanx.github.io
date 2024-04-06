@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Thu, 04 Apr 2024 14:29:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ReST meets ReAct: Self-Improvement for Multi-Step Reasoning LLM Agent</title>
+      <link>//localhost:1313/posts/rest_meets_react/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/rest_meets_react/</guid>
+      <description>Paper Title: REFINER: Reasoning Feedback on Intermediate Representations&#xA;Link to Paper: https://arxiv.org/abs/2312.10003&#xA;Date: 15. December 2023&#xA;Paper Type: LLM, LLM-Agent Short Abstract:&#xA;This paper introduces an LLM-Agent using the ReAct framework combined with their new technique ReST which iteratively train using RL.&#xA;1. Introduction For simple task such as question answering one can just ask the LLM and it works relative good, but for more complex tasks prompting directly isn&amp;rsquo;t good enough.</description>
+    </item>
     <item>
       <title>REACT : SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS</title>
       <link>//localhost:1313/posts/react_llm_agents/</link>
