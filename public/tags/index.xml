@@ -7,13 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2024 09:30:00 +0200</lastBuildDate>
     <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLM</title>
       <link>//localhost:1313/tags/llm/</link>
-      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Apr 2024 09:30:00 +0200</pubDate>
       <guid>//localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paper-Summary</title>
+      <link>//localhost:1313/tags/paper-summary/</link>
+      <pubDate>Sun, 14 Apr 2024 09:30:00 +0200</pubDate>
+      <guid>//localhost:1313/tags/paper-summary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robots</title>
+      <link>//localhost:1313/tags/robots/</link>
+      <pubDate>Sun, 14 Apr 2024 09:30:00 +0200</pubDate>
+      <guid>//localhost:1313/tags/robots/</guid>
       <description></description>
     </item>
     <item>
@@ -21,13 +35,6 @@
       <link>//localhost:1313/tags/llm-agent/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/llm-agent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Paper-Summary</title>
-      <link>//localhost:1313/tags/paper-summary/</link>
-      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/paper-summary/</guid>
       <description></description>
     </item>
     <item>

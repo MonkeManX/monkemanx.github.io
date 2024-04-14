@@ -1,6 +1,6 @@
 ---
 title: 'RoCo: Dialectic Multi-Robot Collaboration with Large Language Models'  
-date: 2024-04-14 09:30:00Z
+date: 2024-04-14 09:30:00+0200
 tags: ["paper-summary", "LLM", "Robots"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["paper-summary", "LLM", "Robots"]
 The goal of this paper is to improve multi-robot collaboration trough harnessing the power of LLM. For that they equip the robots with a LLM to discuss their task and form strategies. The LLMs form strategies through the generation of sub-tasks, which are then transformed to space waypoints. The space waypoints are used by motion planner to generate trajectories for the robot arms.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240414_09h39m34s_grim.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240414_09h39m34s_grim.png">
 </figure>
 
 # 1. Introduction
@@ -55,7 +55,7 @@ Furthermore they introduce *RoCoBench*, a benchmark which test the robots on 6 m
 Before, each environment interaction, the robot arms will do an round of dialog where each robot has a LLM assigned to it, which receives information and responds to it.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240414_10h07m08s_grim.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240414_10h07m08s_grim.png">
 </figure>
 
 Each agent gets the same LLM prompt structure, but with different content:
@@ -103,7 +103,7 @@ They evaluate following methods:
 - In 'Dialog w/o Feedback' failed plans are discarded and agent try again without feedback.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240414_10h27m11s_grim.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240414_10h27m11s_grim.png">
 </figure>
 
 LLM-proposed 3D waypoints show no clear benefit for picking sub-taks, but accelerate planning.
@@ -114,23 +114,22 @@ RoCo is strongly adaptable in:
 - Robot Capability: Changing of capabilities.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240414_10h36m37s_grim.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240414_10h36m37s_grim.png">
 </figure>
 
 They validate RoCo in a real World Setup, where the robot arm needs to collaborate with a human to complete the task.
 For perception they use a pre-trained object detection model, OWL-ViT, to generate scene descriptions.
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/20240414_10h36m44s_grim.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/20240414_10h36m44s_grim.png">
 </figure>
 
 # 6. Multi-Agent Reasoning Dataset 
 
 In addition to their man result, they introduce a text-based benchmark called, RoCoBench-Text, to evaluate an LLM's agent reasoning ability.
 
-
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240414_10h42m51s_grim.png">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240414_10h42m51s_grim.png">
 </figure>
 
 # 7. Conclusion 

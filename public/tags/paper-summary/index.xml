@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2024 09:30:00 +0200</lastBuildDate>
     <atom:link href="//localhost:1313/tags/paper-summary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title>
+      <link>//localhost:1313/posts/roco_robots_with_llm/</link>
+      <pubDate>Sun, 14 Apr 2024 09:30:00 +0200</pubDate>
+      <guid>//localhost:1313/posts/roco_robots_with_llm/</guid>
+      <description>Paper Title: RoCo: Dialectic Multi-Robot Collaboration with Large Language Models Link to Paper: https://arxiv.org/abs/2307.04738 Date: 10. July 2023&#xA;Paper Type: NLP, LLM, Robots&#xA;Short Abstract: The goal of this paper is to improve multi-robot collaboration trough harnessing the power of LLM. For that they equip the robots with a LLM to discuss their task and form strategies. The LLMs form strategies through the generation of sub-tasks, which are then transformed to space waypoints.</description>
+    </item>
     <item>
       <title>ReST meets ReAct: Self-Improvement for Multi-Step Reasoning LLM Agent</title>
       <link>//localhost:1313/posts/rest_meets_react/</link>
