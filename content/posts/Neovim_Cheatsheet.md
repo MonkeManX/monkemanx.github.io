@@ -86,3 +86,12 @@ Capitalization is important!
 - In visual mode `<`, intends marked lines in the *left* direction.
 - `z` + `=`, correct spelling mistake.
 
+**Telescope File Browser**
+- `<leader>` + `fb`, opens the telescope file browser.
+- `ctrl` + `f`, switches between file and folder mode.
+- In `normal` mode:
+    - `c`, create a file.
+    - `r`, rename a file.
+    - `y`, copy a file.
+    - `d`, delete a file.
+    - `g`, goes to parent folder.

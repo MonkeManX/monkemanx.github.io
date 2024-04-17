@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Sun, 14 Apr 2024 09:30:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoCodeRover: Autonomous Program Improvement</title>
+      <link>//localhost:1313/posts/autocoderover_llm_github/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/autocoderover_llm_github/</guid>
+      <description>Paper Title: AutoCodeRover: Autonomous Program Improvement&#xA;Link to Paper: https://arxiv.org/abs/2404.05427&#xA;Date: 8. April 2024&#xA;Paper Type: LLM, Code-generation Short Abstract:&#xA;LLMs have already been extensively used in easing the workload of developers. In this paper the authors proposed AutoCodeRover a framework to automatically solve GitHub issues. In this framework LLMs are combined with code search algorithm&amp;rsquo;s. They use Abstract syntax trees instead of rare files.&#xA;1. Introduction Automating software developing has for a long time been a vision of engineers.</description>
+    </item>
     <item>
       <title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title>
       <link>//localhost:1313/posts/roco_robots_with_llm/</link>
