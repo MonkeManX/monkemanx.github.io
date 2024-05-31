@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MonkeMan&#39;s Blog/posts/swe_agent_llm_software_engineering/</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/terminal-0.7.2.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/animate-4.1.1.min.css">
+    <link rel="stylesheet" href="//localhost:1313/hugo-theme-console/css/console.css">
+    
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+       <meta property="og:title" content="SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/swe_agent_llm_software_engineering/" /><meta property="article:published_time" content="2024-05-30T20:50:00+00:00" />
+
+
+
+<meta name="twitter:title" content="SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"/>
+<meta name="twitter:description" content="Paper Title: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering
+Link to Paper: https://arxiv.org/abs/2405.15793
+Date: 6. May 2024
+Paper Type: LLM, Agents, Software-Engineering
+Short Abstract:
+This paper introduces SWE-agent, which is an autonomous system that uses LLM to fix real life GitHub issues. The Agent is tested on SWE-Benchmark and achieves a success rate of 12.5%.
+1. Introduction In recent times, LLMs have become very popular tools in software development, mostly to generate small snippets of code and auto completion."/>
+
+  
+
+
+</head>
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+          <header class="terminal-logo">
+            <div class="logo terminal-prompt">
+              
+              
+              <a href="//localhost:1313/" class="no-style site-name">MonkeMan&#39;s Blog</a>:~# 
+              <a href='//localhost:1313/posts'>posts</a>/<a href='//localhost:1313/posts/swe_agent_llm_software_engineering'>swe_agent_llm_software_engineering</a>/</div></header>
+          <nav class="terminal-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                <li><a href="//localhost:1313/" typeof="ListItem">Home</a></li>
+                
+                <li><a href="//localhost:1313/posts" typeof="ListItem">All posts</a></li>
+                
+                <li><a href="//localhost:1313/tags" typeof="ListItem">Tags</a></li>
+                
+                <li><a href="//localhost:1313/about_me" typeof="ListItem">About Me</a></li>
+                
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn fast" >
+        
+<h1>SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering</h1>
+Published: May. 30, 2024
+
+
+<br/><br/>
+
+
+
+    
+      <style>
+    .warning {
+        background-color: #ffe4e1;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .warning-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #8b0000;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="warning">
+  <div class="warning-title"><p>Disclaimer</p></div>
+  <p>This is a <b>Paper-Summary</b> and as such it only represents my understanding of the paper and only the information I personally found noteworthy. I recommend reading the paper instead for the complete picture.</p>
+</div>
+
+    
+
+
+<p><strong>Paper Title:</strong> SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2405.15793">https://arxiv.org/abs/2405.15793</a><br>
+<strong>Date:</strong> 6. May 2024<br>
+<strong>Paper Type:</strong> LLM, Agents, Software-Engineering<br>
+<strong>Short Abstract:</strong><br>
+This paper introduces SWE-agent, which is an autonomous system that uses LLM to fix real life GitHub issues. The Agent is tested on SWE-Benchmark and achieves a success rate of 12.5%.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>In recent times, LLMs have become very popular tools in software development, mostly to generate small snippets of code and auto completion. In these cases the human serves as mediator between the problem and the LLM. For instance providing error messages to refine the code.
+In this paper, the authors introduce SWE-Agent which is an autonomous system, bases on a LLMN, that solves real world Software-Engineering problems.
+For that it outputs thoughts and actions(ReAct) and receives feedback from the environment based on it.</p>
+<p>The main part of the paper, is designing an <em>agent-computer interface(ACI)</em>, which they find outperforms existing interfaces such as the Linux Shell.
+The Linux-shell is not a good environment for agents, for example:</p>
+<ul>
+<li>does not provide simple commands to edit small chunks of files</li>
+<li>does not provide good feedback when invalid edits are made</li>
+</ul>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot from 2024-05-30 21-01-08.png">
+</figure>
+<p>They show when using GPT-4 Turbo that tehy have a sucess rate of 12.5% on the SWE benchmark, beating the previous SOTA of 3.8% which uses RAG system. Also, they find using their ACI the model solves 10.7% more issues than when using the Linux Shell.</p>
+<h2 id="2-the-agent-computer-interface">2. The Agent-Computer Interface</h2>
+<p>The System is an Agent, because the LLM interacts with the environment through action and receives feedback. In this system, the environment is entirely digital consisting of the GitHub repository of which the system should solve issues.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot from 2024-05-31 10-30-52.png">
+</figure>
+<p>The Agents switches between issuing command and the computer responding with feedback. The ACI specifies the available commands. Through observations they find that the following points make for an effective ACI:</p>
+<ol>
+<li>Action should be simple and easy to understand, i.e. bash commands often have many options which makes usage complicated.</li>
+<li>Action should be efficient, i.e. file navigation and efiting should use as few actions as possible.</li>
+<li>Environment feedback should be informative.</li>
+<li>Guardrails mitigate error propagation, LLMs often struggle to recover from errors.</li>
+</ol>
+<h1 id="3-designing-the-aci">3. Designing the ACI</h1>
+<p>Existing application interfaces have been designed with humans in mind e.g. vscode, vimbut may not be suited for LLMs. Furthermore humans can ignore unexpected input such as accidently outputting a binary file with tousands of lines, LLMs can&rsquo;t. Commands that suceed silently confude the LLM, because it doesn&rsquo;t get any feedback. LLMs will often expend extra action to verify the sucess of operations.</p>
+<p>To address these challanges, SWE-Agent introduces an ACI tailored towards LLMs. A well designed ACI should help the agent to recover from misstakes, understand the current state of the repository and supress any unusual lengthy programs outputs.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot from 2024-05-31 11-36-16.png">
+</figure>
+<p>The ACI is built on top of the linux shell and allows for the following actions:</p>
+<ul>
+<li>search/navigation, e.g. <code>find_file</code>, <code>search_file</code>, <code>search_dir</code>.</li>
+<li>file viewer, presents a window of at most 100 lines, the agent cant move the window through the commands <code>scroll_down</code>, <code>scroll_up</code>.</li>
+<li>file editor, the <code>edit</code> command takes three arguments: start line, end line, and the replacement text. After edits are applied, the file viewer displays the updates content.</li>
+<li>context managment, it uses informative-prompts, error messages and history to keep information.</li>
+</ul>
+<h1 id="4-experimental-setup">4. Experimental Setup</h1>
+<p><strong>Dataset</strong><br>
+The SWE-Agent is evaluated on the SWE-Benchmark which consists of 2,294 tasks from different popular python repositories.</p>
+<p><strong>Model</strong><br>
+They use GPT-4 Turbo, Claude 3 and Llama 3. Many context windows of LLMs are too small e.g. llama3.</p>
+<p><strong>Baseline</strong><br>
+They compare the SWE-Agent against non-interactive RAGs.</p>
+<h1 id="5-results">5. Results</h1>
+<p>SWE-agent with GPT-4 Turbo yields the best performance, solving 12.47% of the SWE-benchmark.</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot from 2024-05-31 11-45-10.png">
+</figure>
+<h2 id="51-analysis-of-aci">5.1 Analysis of ACI</h2>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot from 2024-05-31 11-46-52.png">
+</figure>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot from 2024-05-31 11-55-16.png">
+</figure>
+<p>When given a large number of search results, the agents tends to looks through each one, which isn&rsquo;t great. This inefficient behaviour can lead to worse performance than shell only setting(15.7% for shell only vs 12.0% for iterative search).</p>
+<p>Agents are sensitive to the number of lines shown in the editor, too few lines(30 lines, 14.3%) or too many lines(entire file, 12.7%).
+Using linting for the file viewer also improves the performance.</p>
+<h2 id="52-analysis-of-agent-behaviour">5.2 Analysis of Agent Behaviour</h2>
+<p>Interesting model behaviour:</p>
+<ul>
+<li>SWE-agents usually start the problem by attempting to reproduce the issue</li>
+<li>From turn 5 on the most frequent actions are <code>edit</code> and <code>python</code></li>
+<li>Runs that are submitted with few steps are more liekly to suceed than runs with a large number of steps.</li>
+</ul>
+<h1 id="6-discussion">6. Discussion</h1>
+<p>The authors introduced SWE-Agent an autonomous agent that aims to solve software develoment issues. For that they designed their own agent-computer-interface(aci) which they tailroed to LLMs, which was the leading cause for the sucess of SWE-Agent.</p>
+
+
+
+        <div class="footer">
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>
+
+    </div>
+  </body>
+</html>

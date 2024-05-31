@@ -1,12 +1,12 @@
 ---
-title: 'Neovim Cheat Sheet'
+title: 'Neovim Tricks'
 date: 2024-04-04 
 tags: ["neovim"]
 ---
 
 # Neovim Cheat sheet
 
-This is a short cheat sheet for important keybindings in vim more specific for neovim.
+This is a short cheat sheet for important keybindings in vim more specific for neovim. I am using [NVChad](https://nvchad.com/) as such not all keybindings are applicable to standard vim/nvim.  
 Capitalization is important!
 
 **Modes:**  
@@ -95,3 +95,20 @@ Capitalization is important!
     - `y`, copy a file.
     - `d`, delete a file.
     - `g`, goes to parent folder.
+
+# Debugging Neovim 
+
+0. Start Neovim
+1. Find the PID of neovim `:lua print(vim.fn.getpid())` or use something like `htop` or `btop`.
+2. Attach the debugger to neovim `gdb -tui -p PID nvim`, the gdb interactive prompt will appear, useful commands:
+- `n` step over the next statement 
+- `s` step into the next statement 
+- `c` continue 
+- `finish` step out of the current function 
+- `bt` to see the backtrace from current location 
+3. Reproduce the bug and check the backtrace 
+
+----
+References:
+- [Neovim Dev Tools](https://neovim.io/doc/user/dev_tools.html)
+- [NvChad Doc](https://nvchad.com/)

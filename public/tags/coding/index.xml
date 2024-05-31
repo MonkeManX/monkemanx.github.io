@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/coding/</link>
+    <description>Recent content in Coding on MonkeMan&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Thu, 30 May 2024 20:50:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering</title>
+      <link>//localhost:1313/posts/swe_agent_llm_software_engineering/</link>
+      <pubDate>Thu, 30 May 2024 20:50:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/swe_agent_llm_software_engineering/</guid>
+      <description>Paper Title: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering&#xA;Link to Paper: https://arxiv.org/abs/2405.15793&#xA;Date: 6. May 2024&#xA;Paper Type: LLM, Agents, Software-Engineering&#xA;Short Abstract:&#xA;This paper introduces SWE-agent, which is an autonomous system that uses LLM to fix real life GitHub issues. The Agent is tested on SWE-Benchmark and achieves a success rate of 12.5%.&#xA;1. Introduction In recent times, LLMs have become very popular tools in software development, mostly to generate small snippets of code and auto completion.</description>
+    </item>
+  </channel>
+</rss>

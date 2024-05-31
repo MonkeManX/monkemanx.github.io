@@ -4,17 +4,24 @@
     <title>LLM on MonkeMan&#39;s Blog</title>
     <link>//localhost:1313/tags/llm/</link>
     <description>Recent content in LLM on MonkeMan&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2024 20:50:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering</title>
+      <link>//localhost:1313/posts/swe_agent_llm_software_engineering/</link>
+      <pubDate>Thu, 30 May 2024 20:50:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/swe_agent_llm_software_engineering/</guid>
+      <description>Paper Title: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering&#xA;Link to Paper: https://arxiv.org/abs/2405.15793&#xA;Date: 6. May 2024&#xA;Paper Type: LLM, Agents, Software-Engineering&#xA;Short Abstract:&#xA;This paper introduces SWE-agent, which is an autonomous system that uses LLM to fix real life GitHub issues. The Agent is tested on SWE-Benchmark and achieves a success rate of 12.5%.&#xA;1. Introduction In recent times, LLMs have become very popular tools in software development, mostly to generate small snippets of code and auto completion.</description>
+    </item>
     <item>
       <title>AutoCodeRover: Autonomous Program Improvement</title>
       <link>//localhost:1313/posts/autocoderover_llm_github/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/autocoderover_llm_github/</guid>
-      <description>Paper Title: AutoCodeRover: Autonomous Program Improvement&#xA;Link to Paper: https://arxiv.org/abs/2404.05427&#xA;Date: 8. April 2024&#xA;Paper Type: LLM, Code-generation Short Abstract:&#xA;LLMs have already been extensively used in easing the workload of developers. In this paper the authors proposed AutoCodeRover a framework to automatically solve GitHub issues. In this framework LLMs are combined with code search algorithm&amp;rsquo;s. They use Abstract syntax trees instead of rare files.&#xA;1. Introduction Automating software developing has for a long time been a vision of engineers.</description>
+      <description>Paper Title: AutoCodeRover: Autonomous Program Improvement&#xA;Link to Paper: https://arxiv.org/abs/2404.05427&#xA;Date: 8. April 2024&#xA;Paper Type: LLM, Code-generation&#xA;Short Abstract: LLMs have already been extensively used in easing the workload of developers. In this paper the authors proposed AutoCodeRover a framework to automatically solve GitHub issues. In this framework LLMs are combined with code search algorithm&amp;rsquo;s. They use Abstract syntax trees instead of rare files.&#xA;1. Introduction Automating software developing has for a long time been a vision of engineers.</description>
     </item>
     <item>
       <title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title>

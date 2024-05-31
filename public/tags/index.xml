@@ -4,148 +4,155 @@
     <title>Tags on MonkeMan&#39;s Blog</title>
     <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on MonkeMan&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2024 20:50:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Code</title>
-      <link>//localhost:1313/tags/code/</link>
-      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/code/</guid>
+      <title>Coding</title>
+      <link>//localhost:1313/tags/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/coding/</guid>
       <description></description>
     </item>
     <item>
       <title>LLM</title>
       <link>//localhost:1313/tags/llm/</link>
-      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Paper-Summary</title>
       <link>//localhost:1313/tags/paper-summary/</link>
-      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/paper-summary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code</title>
+      <link>//localhost:1313/tags/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/code/</guid>
       <description></description>
     </item>
     <item>
       <title>Robots</title>
       <link>//localhost:1313/tags/robots/</link>
-      <pubDate>Sun, 14 Apr 2024 09:30:00 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/robots/</guid>
       <description></description>
     </item>
     <item>
       <title>LLM-Agent</title>
       <link>//localhost:1313/tags/llm-agent/</link>
-      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/llm-agent/</guid>
       <description></description>
     </item>
     <item>
       <title>Neovim</title>
       <link>//localhost:1313/tags/neovim/</link>
-      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/neovim/</guid>
       <description></description>
     </item>
     <item>
       <title>Hallucination</title>
       <link>//localhost:1313/tags/hallucination/</link>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/hallucination/</guid>
       <description></description>
     </item>
     <item>
       <title>RL</title>
       <link>//localhost:1313/tags/rl/</link>
-      <pubDate>Mon, 05 Feb 2024 11:18:13 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/rl/</guid>
       <description></description>
     </item>
     <item>
       <title>Alignment</title>
       <link>//localhost:1313/tags/alignment/</link>
-      <pubDate>Mon, 05 Feb 2024 06:45:55 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/alignment/</guid>
       <description></description>
     </item>
     <item>
       <title>Evolutionary-Algorithm</title>
       <link>//localhost:1313/tags/evolutionary-algorithm/</link>
-      <pubDate>Sun, 04 Feb 2024 17:44:58 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/evolutionary-algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Embedding</title>
       <link>//localhost:1313/tags/embedding/</link>
-      <pubDate>Fri, 02 Feb 2024 06:45:29 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/embedding/</guid>
       <description></description>
     </item>
     <item>
       <title>Datasets</title>
       <link>//localhost:1313/tags/datasets/</link>
-      <pubDate>Wed, 31 Jan 2024 20:45:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/datasets/</guid>
       <description></description>
     </item>
     <item>
       <title>Homelab</title>
       <link>//localhost:1313/tags/homelab/</link>
-      <pubDate>Mon, 29 Jan 2024 08:02:58 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/homelab/</guid>
       <description></description>
     </item>
     <item>
       <title>Literature</title>
       <link>//localhost:1313/tags/literature/</link>
-      <pubDate>Mon, 25 Dec 2023 23:45:43 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/literature/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
       <link>//localhost:1313/tags/cryptography/</link>
-      <pubDate>Mon, 25 Dec 2023 17:07:52 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>GPG</title>
       <link>//localhost:1313/tags/gpg/</link>
-      <pubDate>Mon, 25 Dec 2023 17:07:52 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/gpg/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
       <link>//localhost:1313/tags/hugo/</link>
-      <pubDate>Mon, 25 Dec 2023 17:07:52 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>CNN</title>
       <link>//localhost:1313/tags/cnn/</link>
-      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/cnn/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
       <link>//localhost:1313/tags/website/</link>
-      <pubDate>Tue, 19 Dec 2023 20:08:14 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/website/</guid>
       <description></description>
     </item>
     <item>
       <title>Sleeping</title>
       <link>//localhost:1313/tags/sleeping/</link>
-      <pubDate>Sat, 16 Dec 2023 10:13:35 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/sleeping/</guid>
       <description></description>
     </item>

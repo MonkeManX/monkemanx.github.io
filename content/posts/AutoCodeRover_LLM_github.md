@@ -4,13 +4,14 @@ date: 2024-04-17
 tags: ["paper-summary", "LLM", "Code"]
 ---
 
-**Paper Title:** AutoCodeRover: Autonomous Program Improvement  
+**Paper Title:** AutoCodeRover: Autonomous Program Improvement   
 **Link to Paper:** https://arxiv.org/abs/2404.05427   
 **Date:** 8. April 2024  
-**Paper Type:** LLM, Code-generation
-**Short Abstract:**  
-LLMs have already been extensively used in easing the workload of developers. In this paper the authors proposed AutoCodeRover a framework to automatically solve GitHub issues. In this framework LLMs are combined with code search algorithm's. They use Abstract syntax trees instead of rare files. 
-# 1. Introduction
+**Paper Type:** LLM, Code-generation  
+**Short Abstract:**    
+LLMs have already been extensively used in easing the workload of developers. In this paper the authors proposed AutoCodeRover a framework to automatically solve GitHub issues. In this framework LLMs are combined with code search algorithm's. They use Abstract syntax trees instead of rare files.
+
+# 1. Introduction  
 
 Automating software developing has for a long time been a vision of engineers. Specifically, the authors of the paper, focused on bug fixing and feature addition.
 
