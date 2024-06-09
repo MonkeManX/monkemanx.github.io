@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philosophy on MonkeMan&#39;s Blog</title>
+    <link>//localhost:1313/tags/philosophy/</link>
+    <description>Recent content in Philosophy on MonkeMan&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>©MonkeMan</copyright>
+    <lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When does something deserver moral considerations?</title>
+      <link>//localhost:1313/posts/when_does_a_something_deserve_moral_considerations/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/when_does_a_something_deserve_moral_considerations/</guid>
+      <description>Info This post is incomplete, it doesn&#39;t hold every argument or consideration for every position, just some. It would not be a controversial statement to say, that a person deserves moral consideration i.e. when doing an action involving another person one must consider the morality of the action. For example most people would agree that murdering a person is wrong, because in general we think that each person has a right to live, which gets infringed through the action of murder.</description>
+    </item>
+  </channel>
+</rss>

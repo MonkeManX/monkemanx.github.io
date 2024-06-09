@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>©MonkeMan</copyright>
-    <lastBuildDate>Thu, 30 May 2024 20:50:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When does something deserver moral considerations?</title>
+      <link>//localhost:1313/posts/when_does_a_something_deserve_moral_considerations/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/when_does_a_something_deserve_moral_considerations/</guid>
+      <description>Info This post is incomplete, it doesn&#39;t hold every argument or consideration for every position, just some. It would not be a controversial statement to say, that a person deserves moral consideration i.e. when doing an action involving another person one must consider the morality of the action. For example most people would agree that murdering a person is wrong, because in general we think that each person has a right to live, which gets infringed through the action of murder.</description>
+    </item>
     <item>
       <title>SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering</title>
       <link>//localhost:1313/posts/swe_agent_llm_software_engineering/</link>

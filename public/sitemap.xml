@@ -5,14 +5,35 @@
         
         <url>
             <loc>//localhost:1313/</loc>
-            <lastmod>2024-06-05T18:30:00+00:00</lastmod>
+            <lastmod>2024-06-05T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/philosophy/</loc>
+            <lastmod>2024-06-05T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
             <loc>//localhost:1313/posts/</loc>
-            <lastmod>2024-06-05T18:30:00+00:00</lastmod>
+            <lastmod>2024-06-05T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/tags/</loc>
+            <lastmod>2024-06-05T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>//localhost:1313/posts/when_does_a_something_deserve_moral_considerations/</loc>
+            <lastmod>2024-06-05T00:00:00+00:00</lastmod>
         </url>
         
     
@@ -40,13 +61,6 @@
         
         <url>
             <loc>//localhost:1313/posts/swe_agent_llm_software_engineering/</loc>
-            <lastmod>2024-05-30T20:50:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>//localhost:1313/tags/</loc>
             <lastmod>2024-05-30T20:50:00+00:00</lastmod>
         </url>
         
