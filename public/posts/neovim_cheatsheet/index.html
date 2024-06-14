@@ -203,16 +203,12 @@ Capitalization is important!</p>
 <ol start="0">
 <li>Start Neovim</li>
 <li>Find the PID of neovim <code>:lua print(vim.fn.getpid())</code> or use something like <code>htop</code> or <code>btop</code>.</li>
-<li>Attach the debugger to neovim <code>gdb -tui -p PID nvim</code>, the gdb interactive prompt will appear, useful commands:</li>
-</ol>
-<ul>
-<li><code>n</code> step over the next statement</li>
-<li><code>s</code> step into the next statement</li>
-<li><code>c</code> continue</li>
-<li><code>finish</code> step out of the current function</li>
-<li><code>bt</code> to see the backtrace from current location</li>
-</ul>
-<ol start="3">
+<li>Attach the debugger to neovim <code>gdb -tui -p PID nvim</code>, the gdb interactive prompt will appear, useful commands:<br>
+-<code>n</code> step over the next statement<br>
+-<code>s</code> step into the next statement<br>
+-<code>c</code> continue<br>
+-<code>finish</code> step out of the current function<br>
+-<code>bt</code> to see the backtrace from current location</li>
 <li>Reproduce the bug and check the backtrace</li>
 </ol>
 <hr>

@@ -100,12 +100,12 @@ Capitalization is important!
 
 0. Start Neovim
 1. Find the PID of neovim `:lua print(vim.fn.getpid())` or use something like `htop` or `btop`.
-2. Attach the debugger to neovim `gdb -tui -p PID nvim`, the gdb interactive prompt will appear, useful commands:
-- `n` step over the next statement 
-- `s` step into the next statement 
-- `c` continue 
-- `finish` step out of the current function 
-- `bt` to see the backtrace from current location 
+2. Attach the debugger to neovim `gdb -tui -p PID nvim`, the gdb interactive prompt will appear, useful commands:  
+    -`n` step over the next statement   
+    -`s` step into the next statement   
+    -`c` continue   
+    -`finish` step out of the current function   
+    -`bt` to see the backtrace from current location   
 3. Reproduce the bug and check the backtrace 
 
 ----

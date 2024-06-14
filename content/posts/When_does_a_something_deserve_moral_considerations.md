@@ -41,6 +41,10 @@ In most systems of law around the world, there exist a law that penalized action
 Thus, if we would define a person as beginning as a fertilized egg, and we consider that under law every person should be treated equal. 
 Wouldn't this lead to the following: A woman that has a 1 day fertilized egg inside her and exercises too hard which lead to a "miscarriages" (which she might not even know happened) should be punished under said law? No sane person, would consider imprisoning a woman because she exercised too much, which lead to the death of a 1 day fertilized egg, as just. 
 
+Some might say this is a unfair comparison to make, but is it? Let's say a parent feed their infant the wrong food and the infant died because of an allergy. Or let's say a parent made sport with the infant on the back and during the excesses, the parent landed on their back by accident killing the infant. 
+In both of these scenarios, the parent would definitively be accused of at least accidental cause of death if not murder and most likely convicted.
+So if a fertilized egg is a person, shouldn't be the same be true for the egg? If this shouldn't hold for the egg (which most people would agree should be the case) the only other possibility is that an fertilized egg is less than a person.
+
 The Arguments stated here, have more to do with practical considerations and moral intuition then with rigorous ethical theory, thus they should be taken with a grain of salt, nonetheless both factors are important when considering ethical rules. Because a very impractical or counter-intuitive rule most likely won't be followed.
 
 I want to further address the "sliding-argument", which argues that if one wants to define a fertilized egg as not a person, but a fetus as a person, there should be a morally relevant fact that differentiates them. Which I want to do in the following section.
