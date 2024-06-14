@@ -13,7 +13,7 @@
 	--error-color: #d20962;
 	--progress-bar-background: #727578;
 	--progress-bar-fill: #151515;
-	--code-bg-color: #f0f0f0;
+	--code-bg-color: #eeeeee;
 	--input-style: solid;
 	--display-h1-decoration: none
 }
@@ -168,27 +168,29 @@ code {
 
 code::after,
 code::before {
-	content: "`";
+	content: "";
 	display: inline
 }
 
 pre code::after,
 pre code::before {
-	content: ""
+	content: "```"
 }
 
 pre {
-	display: block;
+	display: flex;
 	word-break: break-all;
 	word-wrap: break-word;
 	color: var(--secondary-color);
 	background-color: var(--background-color);
-	border: 1px solid var(--secondary-color);
-	padding: var(--global-space);
+	/*border: 2px solid var(--secondary-color);*/
+	/*padding: var(--global-space);*/
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
-	white-space: -o-pre-wrap
+	white-space: -o-pre-wrap;
+  flex: 1;
+  overflow: auto;
 }
 
 pre code {
