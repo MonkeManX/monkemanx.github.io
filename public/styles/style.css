@@ -400,3 +400,12 @@ summary {
     text-align: center; /* Align text to the right */
     padding-bottom: 20px;
 }
+
+/*
+* For the lainchan Webring
+* -------
+*/
+.banners img {
+	height: 60px;
+	width: 240px;
+}
