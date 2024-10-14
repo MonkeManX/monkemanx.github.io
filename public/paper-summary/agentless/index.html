@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Agentless: Demystifying LLM-based Software Engineering Agents </h1>
+  <p class="pub-date">Published: August 24, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Agentless: Demystifying LLM-based Software Engineering Agents<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2407.01489">https://arxiv.org/abs/2407.01489</a> <br>
+<strong>Date:</strong> 1. Jurly 2024<br>
+<strong>Paper Type:</strong> LLM, Code-generation<br>
+<strong>Short Abstract:</strong>  <br>
+Recently, there have been made many advancements in the field of autonomous software development using large language models (LLMs). Most of this progress has been driven by <em>agents</em>. These agents are equipped with tools that allow them to run commands, observe the codebase, and plan future actions. However, these agents come with significant complexity. This paper poses the question: <em>Do we really need all this complexity?</em>
+<em>Agentless</em> is an approach to solving software development tasks without the use of agents. It operates in a two-phase process: identifying the buggy code and then repairing it. <em>Agentless</em> is cost-effective to execute and achieves a high score of 27% on SWE-Bench.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>For quite some time, LLMs have been the default choice for code generation, with models like GPT-4 and Claude-3.5 demonstrating high proficiency in generating code snippets. However, applying them at the codebase level for software projects—specifically to fix issues and develop new features—has not been extensively studied until recently, with the introduction of the SWE-Bench dataset. SWE-Bench is a dataset that consists of GitHub issues from popular python projects and the corresponding git patches from the pull requests that fixed those issues.</p>
+<p>Most approaches for SWE-Bench, such as SWE-Agent, Devin, or AutoCodeRover, have used an <em>agent-based</em> approach. In this context, an agent is an LLM equipped with a set of tools that allow it to iteratively interact with a project&rsquo;s codebase. These interactions include opening and reading files, editing files, navigating the codebase, and observing feedback. The agent makes multiple attempts, with each attempt consisting of several actions, each one depending on the feedback from the previous action.</p>
+<p>There are several problems with the agent-based approach:</p>
+<ul>
+<li><strong>Complex and difficult-to-use tools and APIs</strong>: Tool usage often requires the LLM-generated response to follow an exact format, which can be challenging for an LLM to achieve consistently.</li>
+<li><strong>Lack of control in planning</strong>: In an agent-based approach, the agent autonomously decides the next action based on the feedback from the previous one. However, due to the large action space, it can be easy for the LLM to become confused.</li>
+<li><strong>Limited ability to self-reflect</strong>: LLMs often struggle to differentiate between useful feedback and misleading information, which can lead them down the wrong path.</li>
+</ul>
+<p><em>Agentless</em> seeks to address these issues by eliminating the agent concept altogether. Instead, <em>Agentless</em> uses two simple phases: localization and repair. Localization works in a hierarchical manner, first identifying relevant files, then classes, and finally methods. For the repair phase, <em>Agentless</em> creates multiple candidates for software patches, checks them for syntax errors, and tests them against the existing test suite. Afterward, it ranks the patches and selects the best solution.</p>
+<h2 id="2-agentless">2. Agentless</h2>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/agentless_overview.jpg">
+</figure>
+
+
+<p><em>Agentless</em> works in the following steps:</p>
+<ol start="0">
+<li>The existing project codebase and issue description are taken as input.</li>
+<li>The codebase is transformed into a tree-like structure.</li>
+<li>The LLM is asked to rank the top N most suspicious files that need editing to solve the issue.</li>
+<li>For each selected file, the LLM is provided with a list of class and function declarations and is asked to output a list of suspicious classes.</li>
+<li>The full code for these suspicious classes and functions is then provided to the LLM.</li>
+<li>The LLM is asked to edit these locations to fix the issue based on the full code snippets.</li>
+<li>The generated software patch is filtered for syntax errors and test failures.</li>
+<li>The generated patches are ranked by the LLM, and the top one is selected as the solution.</li>
+</ol>
+<h2 id="21-localization">2.1 Localization</h2>
+<p>The codebase is structured as a tree:<br>
+&ldquo;It begins with the root folder of the repository and organizes code files or folder names. Files and folders at the same directory level are aligned vertically, and files/folders in sub-directories are indented.&rdquo;<br>
+This structure is then passed to the LLM as input for step (1).</p>
+<p>To find suspicious classes, the LLM is provided with a skeleton of the chosen files:
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/agentless_skeleton.jpg">
+</figure>
+
+
+These skeletons are all given to the LLM in a single prompt. Using this as input, the LLM is asked to provide a list of functions and classes that should be fixed.</p>
+<p>Finally, the full source code of these selected classes is given to the LLM. The LLM is then asked to identify a set of edit locations, specified by line numbers, functions, or classes.</p>
+<h2 id="22-repair">2.2 Repair</h2>
+<p>First, a context window for the identified edit locations is built. This involves using the identified line numbers and adding a few additional lines (controlled by a parameter). The LLM is then asked to create a search/replace edit in the form of a simple git diff.</p>
+<p>Multiple patches are generated by the LLM. Patches with invalid syntax or failing tests are removed. For the remaining patches, <em>Agentless</em> uses majority voting: the patch with the highest number of occurrences is selected.</p>
+<h1 id="3-experiments">3. Experiments</h1>
+<p><em>Agentless</em> was able to solve 82 out of 300 problems (27.33%). While there are techniques that achieve better results, they rely on agents and are more complicated.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/agentless_results.jpg">
+</figure>
+
+
+<h1 id="4-conclusion">4. Conclusion</h1>
+<p><em>Agentless</em> is an intriguing approach that explores a unique direction. Instead of focusing on agents, it simplifies the process, which results in competitive performance on the SWE benchmark.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

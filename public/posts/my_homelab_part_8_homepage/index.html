@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/posts/" class="active">Posts</a>
+        <a href="http://localhost:1313/paper-summary/" class="">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> My Homelab Part 8: Homepage </h1>
+  <p>Published: January 21, 2024</p>
+  <p>If you have been following my Homelab Series so far, you probably have quite a number of services running, and perhaps you&rsquo;re losing track of all your services. In that case, you might want to consider having a central page that links to all your hosted services.</p>
+<p><a href="https://github.com/gethomepage/homepage">Homepage</a> is a highly customizable, fully static, fast, and modern dashboard with integration for many services. It allows users to see all running services at a glance and can be easily configured by editing a YAML file.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/aa21552515d1f292852d17cbeda6d676.png">
+    <figcaption style="text-align:center">Example Dashboard with homepage</figcaption>
+</figure>
+
+
+<h2 id="installation">Installation</h2>
+<p>Similar to the previous blog posts, I will use Docker Compose with the following compose file(homepage-compose.yml) to install Homepage:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3.3&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">  </span><span class="nt">homepage</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">ghcr.io/gethomepage/homepage:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">homepage</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">      </span><span class="nt">PUID</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">      </span><span class="nt">PGID</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">      </span>- <span class="m">3000</span><span class="p">:</span><span class="m">3000</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">      </span>- <span class="l">/root/homepage/config:/app/config</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">      </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock:ro</span><span class="w"> </span><span class="c"># optional, for docker integrations</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span></code></pre></div><p>As always, before installing Homepage, make sure to customize the compose file to your liking. You might want to change the port, PUID/PGID, restart behavior, and the volumes.</p>
+<p>If you want to display the status of the Docker container on your central page, you need to run the container in root mode, which means removing PUID and PGID.</p>
+<p>To install homepage, follow these steps:</p>
+<ol>
+<li>Start the docker container:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker compose -f homepage-compose.yml up -d
+</span></span></code></pre></div></li>
+<li>You should be able to reach the website under: <code>http://&lt;IP_Of_Your_Server&gt;:homepage_port</code></li>
+</ol>
+<h2 id="configuration">Configuration</h2>
+<p>To learn more about configuring the dashboard, you can read the documentation in the references. I will only show my basic configuration.</p>
+<p>If you didn&rsquo;t change the volumes, all the configuration files can be found in the <code>homepage/config</code> folder. The <code>services.yaml</code> is the most important file; in there, you can change what services should be visible on the dashboard. My configuration file looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="c"># For configuration options and examples, please see:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="c"># https://gethomepage.dev/latest/configs/services</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w"></span>- <span class="nt">Services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="nt">Syncthing</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">         </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://syncthing.my_domain</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">         </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">Synchronizes your files.</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">         </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">my-docker</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">         </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l">synthing</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span>- <span class="nt">CalibreWeb</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://calibre.my_domain</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">OnlineBooks</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">        </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">my-docker</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">        </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l">claibre-web</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">    </span>- <span class="nt">UptimeKuma</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://uptime.my_domain</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">Monitors Docker Container</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">        </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">my-docker</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">        </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l">uptime-kuma</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w">    </span>- <span class="nt">Vaultwarden</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://vaultwarden.my_domain</span><span class="w">
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">Password manager</span><span class="w">
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="w">        </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">my-docker</span><span class="w">
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="w">        </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l">vaultwarden</span><span class="w">
+</span></span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="w">     </span>- <span class="nt">Media</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">31</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">https://media.monkeman.duckdns.org</span><span class="w">
+</span></span></span><span class="line"><span class="ln">32</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w">  </span><span class="l">File browser for my Photos and Videos</span><span class="w">
+</span></span></span><span class="line"><span class="ln">33</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">34</span><span class="cl"><span class="w"></span>- <span class="nt">Local Services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="w">    </span>- <span class="nt">Wireguard</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">36</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://server_ip:51821/</span><span class="w">
+</span></span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">WireguardVPN</span><span class="w">
+</span></span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="w">        </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">my-docker</span><span class="w">
+</span></span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="w">        </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l">wg-easy</span><span class="w">
+</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="ln">41</span><span class="cl"><span class="w">    </span>- <span class="nt">HomeAssistant</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">42</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://192.168.12.100:8123/</span><span class="w">
+</span></span></span><span class="line"><span class="ln">43</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">The Home Assistant</span><span class="w">
+</span></span></span><span class="line"><span class="ln">44</span><span class="cl"><span class="w">        </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">my-docker</span><span class="w">
+</span></span></span><span class="line"><span class="ln">45</span><span class="cl"><span class="w">        </span><span class="nt">container</span><span class="p">:</span><span class="w"> </span><span class="l">homeassistant</span><span class="w">
+</span></span></span><span class="line"><span class="ln">46</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">47</span><span class="cl"><span class="w"></span>- <span class="nt">External Links</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">48</span><span class="cl"><span class="w">    </span>- <span class="nt">FritzBox</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://fritz.box/</span><span class="w">
+</span></span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">My Router</span><span class="w">
+</span></span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">52</span><span class="cl"><span class="w">    </span>- <span class="nt">DuckDNS</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">53</span><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.duckdns.org/</span><span class="w">
+</span></span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">My dynamic DNS </span><span class="w">
+</span></span></span></code></pre></div><p>I use the <code>container</code> and <code>server</code> variables to show the current status of the service, where <code>container</code> is the name of the Docker container as defined in the respective compose file. To use this, your <code>docker.yaml</code> file inside your config folder needs to look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="c"># For configuration options and examples, please see:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="c"># https://gethomepage.dev/latest/configs/docker/</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w"></span><span class="c">#my-docker:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w"></span><span class="c">#  host: 127.0.0.1</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w"></span><span class="c">#  port: 2375</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w"></span><span class="nt">my-docker</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">  </span><span class="nt">socket</span><span class="p">:</span><span class="w"> </span><span class="l">/var/run/docker.sock</span><span class="w">
+</span></span></span></code></pre></div><p>There is a great number of services that have some kind of integration with Homepage; you can check this <a href="https://gethomepage.dev/latest/widgets/">list</a> out. Most code for the widget would be written in the <code>service.yaml</code> into the respective category, but some widgets need to be written into the <code>widgets.yaml</code> file.</p>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://gethomepage.dev/latest/">Homepage Docs</a></li>
+</ul>
+ 
+</div>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

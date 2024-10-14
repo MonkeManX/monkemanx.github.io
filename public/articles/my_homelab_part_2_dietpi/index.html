@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="active">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> My Homelab Part 2: DietPi </h1>
+  <p class="pub-date">Published: January 19, 2024</p>
+  
+  <p>Like mentioned in my last blog post in the &ldquo;Homelab&rdquo; series, I choose DietPi as operating system for my server.
+In this post I want to give a short overview on the installation process and other miscellaneous aspects related to it.</p>
+<h2 id="installation">Installation</h2>
+<p>Installation Guide</p>
+<p>The installation process for DietPi may vary slightly from one computer to another, but the steps outlined below should be applicable to most setups. This guide is specifically tailored for Raspberry Pi, but it can be adapted for other systems.</p>
+
+<style>
+    .warning {
+        background-color: #ffe4e1;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .warning-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #8b0000;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="warning">
+    <div class="warning-title">Warning</div>
+    <p>Ensure that your server computer is connected to the internet via Ethernet before proceeding.</p>
+</div>
+
+<ol>
+<li>
+<p><strong>Download DietPi:</strong><br>
+Visit the <a href="https://dietpi.com/#downloadinfo">official website</a> and download the DietPi image for your hardware.</p>
+</li>
+<li>
+<p><strong>Create Bootable Media:</strong><br>
+Use <a href="https://github.com/pop-os/popsicle">popsicle</a> on Linux or <a href="https://rufus.ie/en/">rufus</a> for windows to flash the image onto a USB stick or on a SD card when installing on a Raspberry Pi.</p>
+</li>
+<li>
+<p><strong>Insert Bootable Media:</strong><br>
+Insert the flashed SD card or USB stick into your server computer.</p>
+</li>
+<li>
+<p><strong>Boot Your Server Computer:</strong><br>
+For Raspberry Pi, simply wait for it to fully start.
+For other computers, access the BIOS by pressing keys like &ldquo;F1, F2, F10, F12, DEL, ESC&rdquo; during startup.
+In the BIOS, locate the &ldquo;Boot&rdquo; option and select your USB stick as the first boot option.</p>
+</li>
+</ol>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/7c7cc39ad53f15d60dd0ceed04c95322.png">
+    <figcaption style="text-align:center">"Example of an MSI BIOS/UEFI, with the boot loader option marked.</figcaption>
+</figure>
+
+
+<ol start="5">
+<li><strong>Configure DietPi via Network:</strong><br>
+Since DietPi is a headless operating system, configure it via the network using SSH.
+Open a terminal and type ssh root@DietPi (replace &ldquo;root&rdquo; with your username and &ldquo;DietPi&rdquo; with the Hostname of your server if it differs).
+If SSH doesn&rsquo;t work, use the IP address of your server computer instead (you can find it on your router&rsquo;s website).</li>
+</ol>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/2b6a04bcb492405f041c6cacf6deb07b.png">
+    <figcaption style="text-align:center">"Example of my Rasperry device appearing on my rotuers website with the IP-Address 192.168.12.100</figcaption>
+</figure>
+
+
+<p>Enter the password when prompted (default is dietpi).</p>
+
+<style>
+    .info {
+        background-color: #e6f7ff;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .info-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #000080;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="info">
+    <div class="info-title">Info</div>
+    <p>SSH(Secure Shell Protocol) is a network protocol for accessing services and computer over an unsecured network.</p>
+</div>
+
+
+<ol start="6">
+<li><strong>Installation Process:</strong><br>
+After connecting successfully, a series of installation processes will run in the terminal.</li>
+</ol>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-17-34.png">
+</figure>
+
+
+<p>You may be asked about enabling the &ldquo;DietPi Survey,&rdquo; password change, and &ldquo;serial/UART&rdquo; settings. Follow the recommended options.</p>
+<ol start="7">
+<li><strong>Post-Installation Configuration:</strong><br>
+After installation, you&rsquo;ll be in the configuration window.</li>
+</ol>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-22-40.png">
+</figure>
+
+
+<p>If you do not see this window you can type <code>dietpi-software</code> to enter it. Interesting settings are:
+If you want to use <code>scp</code> to transfer files to your server, you need to change the SSH Server to OpenSSH.
+Install Docker and Docker Compose if not already installed.</p>
+<ol start="8">
+<li><strong>Exit:</strong><br>
+After configuring, exit the interface to see a screen similar to the one below in your terminal.</li>
+</ol>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-32-29.png">
+    <figcaption style="text-align:center">Source:<a>https://github.com/adityatelange/hugo-PaperMod</a></figcaption>
+</figure>
+
+
+<p>Congratulations! You have successfully installed DietPi headlessly on your server computer.
+If you want to exit your ssh session you can press <code>strg + d</code>.</p>
+<h2 id="useful-linux-commands">Useful Linux Commands</h2>
+<p>In general If you are not sure on how a Linux command works exactly, I would recommend looking into the <a href="https://man7.org/linux/man-pages/index.html">man pages</a>.</p>
+<p>Here are some essential Linux commands that can help you perform various task&rsquo;s on your system, these are especially important when maintaining your server via ssh:</p>
+<ul>
+<li>If you type <code>ls</code> you will see all the files in the current working directory. If you type <code>ls -l</code> you will in addition see the permissions and the owner of the files.</li>
+</ul>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202024-01-19%2013-36-57.png">
+</figure>
+
+
+<ul>
+<li>To change the current working direction you can use the command <code>cd path/to/which/you/want/to/go</code>. If you enter <code>cd ..</code> you will move to the parent folder.</li>
+<li>If you want to change the permission of a file you can use the command <code>chmod permission file_name</code>, options for permission are:
+<ul>
+<li>&ldquo;r&rdquo; which stands for read</li>
+<li>&ldquo;w&rdquo; which stands for write</li>
+<li>&ldquo;x&rdquo; which stands for executable.</li>
+</ul>
+</li>
+<li>To change the owner of a file you can use the command <code>chown user_name file_name</code>.</li>
+<li>To see the current working directory you can type <code>pwd</code>:</li>
+</ul>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/Screenshot%20from%202024-01-19%2013-40-13.png">
+</figure>
+
+
+<ul>
+<li>To edit/read/create files you can use the command <code>nano file_name</code>:</li>
+</ul>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-42-29.png">
+</figure>
+
+
+<p>To save you written content you can press <code>ctrl + o</code> and then <code>enter</code>, to exit <code>nano</code> you can press <code>ctrl + x</code>.</p>
+<ul>
+<li>If you want to sent a file from your computer to the server computer you can use the following command:
+<code>scp /path/to/file/file_name root@dietpi:/path/saving/location</code>.</li>
+</ul>
+<p>Other useful commands are:</p>
+<ul>
+<li><code>sudo</code> to get admin privileges.</li>
+<li><code>rm file_name</code> to delete a file.</li>
+<li><code>mv file_name path/to/location</code> to move a file or directory.</li>
+<li><code>cp file_name path/to/location</code> to copy a file or directory.</li>
+<li><code>mkdir direcory_name</code> to create a directory.</li>
+<li><code>./file_name</code> to execute a executable file.</li>
+<li><code>htop</code> to see the current resource consumption by process.</li>
+<li><code>wget https://url</code> to download a file from the internet.</li>
+</ul>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://dietpi.com/docs">https://dietpi.com/docs</a></li>
+</ul>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Mistral_7B </h1>
+  <p class="pub-date">Published: January 31, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Mistral 7B<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2310.06825">https://arxiv.org/abs/2310.06825</a><br>
+<strong>Date:</strong> 10. Oct 2023<br>
+<strong>Paper Type:</strong> NLP, finetuning, LLM-training<br>
+<strong>Short Abstract:</strong><br>
+Introduction of the &ldquo;Mistral 7B&rdquo; LLM model.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>Mistral 7B deliver high performance while maintaining an efficient inference, it outperforms the previous best 13B Models on all tested benchmarks.</p>
+<p>It does this by using grouped-query attention (GQA) and sliding window attention (SWA), GQA accelerates inference speed and SWA allows the Model to work with longer sequences.</p>
+<p>Mistral 7B is released under the Apache 2.0 license and can be freely downloaded.</p>
+<h1 id="2-architecture">2. Architecture</h1>
+<p>In vanilla attention, every token can pay attention to every other token this means we have runtime for attention operation of $O(N^2)$. In Sliding window Attention, a given token can only pay attention to the last $k$ tokens. But because we have stacked multiple attention layers on top of each other in the model, we can implicitly attend all tokens.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-31%2020-54-37.png">
+</figure>
+
+
+<p>In the figure the y-axis is the input of model, with the beginning of the sentence at the top and the end at the bottom, the x-axis is used to indicate to which tokens the model attends to. Orange shows where attendance is not possible, and yellow where attendance is possible.
+For Instance we can see that the token &ldquo;on&rdquo; can attend to the tokens &ldquo;The&rdquo;, &ldquo;cat&rdquo;, &ldquo;sat&rdquo;, &ldquo;on&rdquo; in the vanilla model, but in the SWA model it can&rsquo;t attend the &ldquo;The&rdquo; token.
+The last image shows how in the SWA model we can still attend all tokens through the use of multiple layers.</p>
+<h1 id="3-results">3. Results</h1>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-31%2021-07-46.png">
+</figure>
+
+
+<p>In most benchmarks the Mistral 7B model outperformed the LLaMA 2 13B models. But it has to be said that at that time of the release of this paper, there were already multiple fine tuned models out there, that were a lot better than the LLaMA 2 13B models.</p>
+<p>They also trained a fine-tuned Mistral 7B model and compared it to other models with the help of the <code>llmboxing</code> website.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202024-01-31%2021-11-23.png">
+</figure>
+
+
+<h1 id="4-conclusion">4. Conclusion</h1>
+<p>This paper researched the usage of sliding window attention in LLM and found that it can allow for big performance gains in smaller LLM models, it would be interesting to see this technique further explored in new models.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

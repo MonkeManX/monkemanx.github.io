@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks </h1>
+  <p class="pub-date">Published: February 3, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2005.11401">https://arxiv.org/abs/2005.11401</a><br>
+<strong>Date:</strong> 22. May 2020<br>
+<strong>Paper Type:</strong> LLM, knowledge-retrival<br>
+<strong>Short Abstract:</strong><br>
+Language models (LLMs) have been demonstrated to store knowledge within their parameters. However, updating the model&rsquo;s knowledge requires updating these parameters. This poses challenges. To address this, the paper introduces the Retrieval-Augmented Generation (RAG) model, where knowledge is stored in a non-parametric dense vector database.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>LLMs lack external memory, leading to difficulties in adding or removing knowledge, understanding the model&rsquo;s knowledge, and generating &ldquo;hallucinations.&rdquo; Hybrid models, combining both parametric and non-parametric storage, can mitigate these issues by allowing direct access to non-parametric knowledge.</p>
+<p>The authors present the Retrieval-Augmented Generation (RAG) model, a pre-trained language model based on the seq2seq transformer BART. It incorporates a non-parametric memory, acting as a dense vector index of Wikipedia, accessible via neural retrieval. These components are trained end-to-end, where the retriever identifies documents similar to the prompt, and the found documents, along with the input prompt, are used to generate the output.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/2ac0dedaa0bcc4843293bf3a3f2f4241.png">
+</figure>
+
+
+<p>Training of the generator and retriever is performed jointly by minimizing log-likelihood using the ADAM optimizer. The document encoder remains frozen, and only the retriever&rsquo;s decoder is updated.</p>
+<h1 id="3-experiments">3. Experiments</h1>
+<p>A collection of Wikipedia pages serves as the non-parametric knowledge base for all experiments. The retriever&rsquo;s encoder computes document embeddings once.</p>
+<p>Experiments test the RAG model on four different domains:</p>
+<ul>
+<li><strong>Open-domain Question Answering(QA)</strong> through the benchmarks NaturalQuestion, TriviaQA, WebQuestions and  CuratedTree.</li>
+<li><strong>Abstractive Question Answering</strong> through the benchmark MSMARCO NLG task v2.1.</li>
+<li><strong>Jeopardy Question</strong> through the benchmark SearchQA.</li>
+<li><strong>Fact Verification</strong> through the FEVER benchmark.</li>
+</ul>
+<h1 id="4-results">4. Results</h1>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/0eace9f6bde6444aa37d8111d469817d.png">
+</figure>
+
+
+<p>RAG achieves a new state-of-the-art in Open-domain Question Answering and Jeopardy, while approaching the state-of-the-art in Abstractive Question Answering and Fact Verification.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/a84caaaab22c129be05584c571b86a19.png">
+</figure>
+
+
+<p>Additional documents enhance performance up to a certain point, beyond which further additions result in deteriorating results.</p>
+<h1 id="5-conclusion">5. Conclusion</h1>
+<p>RAG is an intriguing technique that promises to externalize a model&rsquo;s knowledge from its parameters to a non-parametric knowledge database. This is crucial for updating the model&rsquo;s knowledge.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

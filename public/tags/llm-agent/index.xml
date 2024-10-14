@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LLM-Agent on </title>
+    <link>http://localhost:1313/tags/llm-agent/</link>
+    <description>Recent content in LLM-Agent on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jul 2024 20:49:40 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/llm-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ReST meets ReAct: Self-Improvement for Multi-Step Reasoning LLM Agent</title>
+      <link>http://localhost:1313/paper-summary/rest_meets_react/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/paper-summary/rest_meets_react/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Paper Title:&lt;/strong&gt; REFINER: Reasoning Feedback on Intermediate Representations&lt;br&gt;&#xA;&lt;strong&gt;Link to Paper:&lt;/strong&gt; &lt;a href=&#34;https://arxiv.org/abs/2312.10003&#34;&gt;https://arxiv.org/abs/2312.10003&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Date:&lt;/strong&gt; 15. December 2023&lt;br&gt;&#xA;&lt;strong&gt;Paper Type:&lt;/strong&gt; LLM, LLM-Agent&lt;br&gt;&#xA;&lt;strong&gt;Short Abstract:&lt;/strong&gt;&lt;br&gt;&#xA;This paper introduces an LLM-Agent using the ReAct framework combined with their new technique ReST which iteratively train using RL.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h1&gt;&#xA;&lt;p&gt;For simple task such as question answering one can just ask the LLM and it works relative good, but for more complex tasks prompting directly isn&amp;rsquo;t good enough. Instead lately LLM-Agents have become very popular for this, which decompose the complex task into multiple smaller ones, often using external tools and APIs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Improving Factuality and Reasoning in Language Models through Multiagent Debate</title>
+      <link>http://localhost:1313/paper-summary/multi_agent_debate_llm/</link>
+      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/paper-summary/multi_agent_debate_llm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Paper Title:&lt;/strong&gt; Improving Factuality and Reasoning in Language Models through Multiagent Debate &lt;br&gt;&#xA;&lt;strong&gt;Link to Paper:&lt;/strong&gt; &lt;a href=&#34;https://arxiv.org/abs/2305.14325&#34;&gt;https://arxiv.org/abs/2305.14325&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Date:&lt;/strong&gt; 23. May 2023 &lt;br&gt;&#xA;&lt;strong&gt;Paper Type:&lt;/strong&gt; NLP, LLM, RL, LLM-Agents&lt;br&gt;&#xA;&lt;strong&gt;Short Abstract:&lt;/strong&gt;&lt;br&gt;&#xA;This paper investigates the usage of multiple LLMs as agent that debate between each other, to improve the quality of responses and reduce hallucinations.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h1&gt;&#xA;&lt;p&gt;There have been done much research into how to increase the capabilities of LLMs and increase their responses in quality and accuracy. But much of the research has focused on how to improve a single LLM or &lt;em&gt;a single mind&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reflexion: Language Agents with Verbal Reinforcement Learning</title>
+      <link>http://localhost:1313/paper-summary/reflexion_language_agents_with_verbal_reinforcement/</link>
+      <pubDate>Sun, 04 Feb 2024 13:54:38 +0000</pubDate>
+      <guid>http://localhost:1313/paper-summary/reflexion_language_agents_with_verbal_reinforcement/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Paper Title:&lt;/strong&gt; Reflexion: Language Agents with Verbal Reinforcement Learning&lt;br&gt;&#xA;&lt;strong&gt;Link to Paper:&lt;/strong&gt; &lt;a href=&#34;https://arxiv.org/abs/2303.11366&#34;&gt;https://arxiv.org/abs/2303.11366&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Date:&lt;/strong&gt; 20. March 2023&lt;br&gt;&#xA;&lt;strong&gt;Paper Type:&lt;/strong&gt; LLM, RL, Agent, prompting&lt;br&gt;&#xA;&lt;strong&gt;Short Abstract:&lt;/strong&gt;&lt;br&gt;&#xA;LLMs have increasingly interacted with different environments (e.g., APIs, games). However, learning through Reinforcement Learning (RL) is not efficient because it requires many trial-and-error iterations. The author proposes a new technique called Reflexion, which seeks to remedy this.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Recent papers have shown the effectiveness of using LLMs as decision-making agents in external environments. In these papers, LLMs generate text based on observations of the world. This generated text is then interpreted as an action of the agent and executed. The problem is that these LLM agents need to be trained, but using traditional RL would require too many trial-and-error iterations and a high amount of computational resources.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

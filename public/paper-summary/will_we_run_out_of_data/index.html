@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning </h1>
+  <p class="pub-date">Published: January 31, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2211.04325">https://arxiv.org/abs/2211.04325</a><br>
+<strong>Date:</strong> 26. Oct 2022<br>
+<strong>Paper Type:</strong> NLP, Vision, Datasets<br>
+<strong>Short Abstract:</strong><br>
+In this paper, the authors approximate the total amount of existing data and, based on that, analyze how long it will take before we run out of data.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>In ML models, one important aspect of model performance is the quality and the amount of training data. As such, it&rsquo;s important to understand how much data exists and if we are going to run out of it.</p>
+<h1 id="2-method">2. Method</h1>
+<p>To analyze the growth of training dataset sizes, they use historical data in combination with considering scaling laws of the optimal dataset size. They assume that the amount of internet users worldwide can be predicted by an S-curve over time. For simplicity&rsquo;s sake, they assume that the average production of data by users is constant over time and use a model to predict the accumulation rate of user-produced content. For high-quality data, they predict the accumulation rate based on the most common resources, e.g., Wikipedia, books, etc.</p>
+<h1 id="3-analysis">3. Analysis</h1>
+<p>Their findings show that language datasets double in size after 15.8 months, and vision datasets after 41.5 months. Furthermore, they approximate the aggregated total stock of low-quality language data to be between 6.9e13 and 7.1e16 words. For high-quality language data, they approximate the stock of data to be 9e12 words. The aggregated model shows there are between 8.11e12 and 2.3e13 images on the internet today.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/Screenshot%20from%202024-01-31%2022-00-50.png">
+</figure>
+
+
+<p>They compute that low-quality language data will be exhausted between 2030 to 2060, and high-quality data will most likely be exhausted before 2027 if current trends continue.</p>
+<h1 id="4-conclusion">4. Conclusion</h1>
+<p>If the models of the authors are correct for predcition the date of exhaustion for data, we will still have some time for lower quality, but for higher quality not. This should show clearly the need for data efficient trainings methods.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

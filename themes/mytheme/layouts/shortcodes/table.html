@@ -1,0 +1,11 @@
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 }}
+{{ $source := .Get 1 }}
+    
+{{ $old := "<table>" }}
+{{ $new := printf "<table class=\"%s\">" $class }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable | safeHTML }}
+{{ if $source }}
+    <p class="source">{{ $source }}</p>
+{{ end }}

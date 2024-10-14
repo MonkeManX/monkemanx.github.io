@@ -1,0 +1,31 @@
+<div class="complete-container">
+  <div></div>
+  <div class="p-container">
+    <pre class="poem-pre">
+      {{ .Inner | safeHTML }}
+    </pre>
+  </div>
+  <div></div>
+</div>
+
+<style>
+.complete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.p-container {
+    max-width: 600px; /* Set a maximum width */
+    width: 100%; /* Allow the container to use full available width */
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.poem-pre {
+    white-space: pre-wrap; /* Preserve spaces and line breaks */
+    text-align: left; /* Align text to the left */
+}
+</style>
+

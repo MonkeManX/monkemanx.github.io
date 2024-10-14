@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+{{ if and (eq .Kind "taxonomy") (eq .Name "Tags") }}
+  <ul class="list-ul">
+    <h1> Tags </h1>
+    {{ range .Data.Terms.Alphabetical }}
+      <li class="tags-li"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li> 
+    {{ end }}
+  </ul>
+
+{{ else if eq .Section "tangled_thoughts"}}
+
+<ul class="thought-list">
+  {{ range (.Paginator 5).Pages }}
+    <li class="thought-box">
+      <div class="thought-title">{{ .Title }}</div>
+      <div class="thought-date">{{ .Date.Format "January 2, 2006" }}</div>
+      <div class="thought-content">{{ .Content }}</div>
+    </li>
+  {{ end }}
+</ul>
+
+<div class="custom-pagination">
+  {{ template "_internal/pagination.html" . }}
+</div>
+
+{{ else if (eq .Type "poetry") }}
+  <p>Various unoriginal pieces of data, sometimes arranged to sound like they are more than they are, conjured up by my mind and transferred to 0s and 1s on the wired -- to form a minuscule thread, in a vain attempt to leave a trace; becoming part of someone else's ghost.
+More to calm myself than to elude the unavoidable fate of total data loss.</p>
+
+  <ul class="poetry-ul"> 
+    {{ partial "writings.html" . }}
+  </ul>
+{{ else }}
+  <ul class="list-ul">
+    <div class="combined-div">
+      {{ if eq .Name "Articles" }}
+        <h1> Articles </h1>
+      {{ else }}
+        <h1> Paper-Summaries </h1>
+        <p>These are Paper-Summaries and as such they only represents my understanding of the papers and only the information I personally found noteworthy. I recommend reading the papers instead for the complete picture.</p>
+{{ end }}
+
+{{ $currentYear := "" }}
+  {{ range .Pages.ByPublishDate.Reverse }}
+  {{ $postYear := .PublishDate.Format "2006" }}
+    {{ if ne $postYear $currentYear }}
+      {{ if ne $currentYear "" }}
+        </ul> <!-- Close the previous year's list -->
+      {{ end }}
+      <h2>{{ $postYear }}</h2>
+      <ul class="list-ul">
+      {{ $currentYear = $postYear }}
+    {{ end }}
+    {{ partial "list_element.html" . }}
+  {{ end }}
+      </ul> <!-- Close the last year's list -->
+    </div>
+    {{ end }}
+  </ul>
+{{ end }}
+

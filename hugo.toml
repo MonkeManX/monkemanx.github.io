@@ -1,0 +1,31 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+theme = 'mytheme'
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime"]
+
+# This is needed so, that I can render latex with the help of mathjax
+[markup.goldmark.extensions.passthrough]
+enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+  block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
+  inline = [ [ "\\(", "\\)" ] ]
+
+
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNoStart = 1
+  lineNos = true
+  lineNumbersInTable = false
+  tabWidth = 4
+  noClasses = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Siren’s Song in the AI Ocean:A Survey on Hallucination in Large Language Models </h1>
+  <p class="pub-date">Published: April 2, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Siren&rsquo;s Song in the AI Ocean: A Survey on Hallucination in Large Language Models<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2309.01219">https://arxiv.org/abs/2309.01219</a><br>
+<strong>Date:</strong> 3. September 2023<br>
+<strong>Paper Type:</strong> LLM, Hallucination<br>
+<strong>Short Abstract:</strong> <br>
+LLM&rsquo;s often exhibit so called &ldquo;Hallucination&rdquo;, this paper gives an overview of the different types of Hallucination and mitigation techniques.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>It has been observed that LLM&rsquo;s often times produce outputs that while plausible, conflict with the user input, with previous context, or with factual knowledge.
+This behavior is commonly called Hallucination, and hinder the reliability of the LLM.
+Analyzing the problem id made difficult by:</p>
+<ol>
+<li>Massive Trainings data: Makes it difficult to remove biased information</li>
+<li>Versatility of LLMs: LLMs are very general, making it hard to detect Hallucination.</li>
+<li>Generality of LLMs: Plausible output may be hallucinated.<br>
+In addition the black-box nature of finetuning and RLHF makes mitigation of Hallucination hard.</li>
+</ol>
+<p>The Paper is split up in the following sections:</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240402_17h28m55s_grim.png">
+</figure>
+
+
+<h1 id="2-definition">2. Definition</h1>
+<h2 id="21-large-language-models">2.1 Large Language Models</h2>
+<p>Before the Transformation Architecture was leading Architecture of LLMs, recurrent neural networks and n-grams models were used.
+With a shift towards transformers models have become more general purpose, for that models are self-supervised pretrained on large amount of unlabeled data and then finetuned with labeled data on specific tasks.</p>
+<p>It has been found that scaling up LLMs, both in terms of parameters and data, enables in context-learning, reasoning and instruction following.</p>
+<h2 id="22-what-is-llm-hallucination">2.2 What is LLM Hallucination</h2>
+<p>One of the biggest issue plaguing LLMs are Hallucination, which can be categorized into:</p>
+<ul>
+<li>Input-conflicting hallucination, LLMs output deviates from the user input.</li>
+<li>Context-conflicting hallucination, LLMs output conflicts with previously generated output.</li>
+<li>Fact-conflicting hallucination, LLMs output contain falsehoods.</li>
+</ul>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240402_17h43m38s_grim.png">
+</figure>
+
+
+<p>Most of the research focus of hallucination today was into <em>fact-conflicting hallucination</em>, this is due that input- and Context-conflicting hallucination are historical better studied in NLG settings.
+Fact-conflicting hallucination are hard because there is no central knowledge source.</p>
+<h3 id="23-unique-challenges-of-llms">2.3 Unique Challenges of LLMs</h3>
+<p><strong>Massive Data</strong><br>
+Much of the unlabeled data with which LLMs are trained is collected from the web which often contain fabricated or outdated data.</p>
+<p><strong>Versatility of Data</strong><br>
+LLMs are often done in a multi-domain setting with free forming text, this makes evaluation through automated testing hard.</p>
+<p><strong>Invisibility of errors</strong><br>
+LLMs may produce text that sounds plausible but has errors in it, which makes detecting errors hard.</p>
+<h1 id="3-evaluation-of-llm-hallucination">3. Evaluation of LLM Hallucination</h1>
+<p>Evaluation of hallucination because of the free form nature of LLMs is much harder than for NLG tasks.</p>
+<h2 id="31-evaluation-benchmarks">3.1 Evaluation Benchmarks</h2>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240402_17h58m59s_grim.png">
+</figure>
+
+
+<p><strong>Evaluation Format</strong>
+We mostly differentiate between <em>generating</em> statements and <em>discriminating</em> statements(See example below). In <em>Generation</em> benchmarks we evaluate hallucination similar to <em>coherency</em> or <em>fluency</em>. In <em>Discrimination</em> benchmarks, we evaluate if a LLM can differentiate between a true and a hallucinated statement.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240402_18h02m39s_grim.png">
+</figure>
+
+
+<p><strong>Task Format</strong>
+Some benchmarks use questioning-answers pairs, where the LLM is presented with a question and it needs to pick a already formulated answer. Other use task-instructions, where the LLM needs to generate responses and the factuality of these responses is evaluated. At last in task-completions, LLMs need to complete a text.</p>
+<p><strong>Construction Methods</strong>
+Most benchmarks use annotated human data. TrutthfulQA design questions to elicit false statements with a high likelihood. FActScore uses a pipeline toto transform generated output in atomic statements which can be evaluated. FACTOR uses an external LLM to generate non-factual statements and then use human to annotate them.</p>
+<h2 id="32-evaluation-metrics">3.2 Evaluation Metrics</h2>
+<p><strong>Human Evaluation</strong><br>
+TrutthfulQA and FactScore require humans for evaluation, this ensures precision. Human evaluation has the problem of being subjective and expensive.</p>
+<p><strong>Model-based automatic evaluation</strong><br>
+Several papers have used LLMs such at GPT to approximate human evaluations.</p>
+<p><strong>Rule-based automatic evaluation</strong>
+For discrimination tasks, rule based metrics such as accuracy can be used.</p>
+<h1 id="4-sources-of-llm-hallucination">4. Sources of LLM Hallucination</h1>
+<p><strong>LLMs Lack Knowledge</strong><br>
+In pretraining LLMs obtain knowledge that is then stored in the parameters of the model. If during their training the LLM didn&rsquo;t see a fact and it get asked about it, it may hallucinate. In addition LLMs are prone to amplify errors made in the dataset.</p>
+<p><strong>LLMs overestimate their capabilities</strong><br>
+Experiment have shown that LLMs can asses their own reponses on truthfulness. But for LLMs it seems that they are as confident about incorrect results as correct results.</p>
+<p><strong>Problematic Alignment</strong><br>
+After a tranformer is pretraiend and finetuned it is typically aligned through processes such as RLHF, but when LLM are trained on instruction finetuning on instruction for which their knowledge is not adequate. it will result in misalignment, which leads to hallucination.</p>
+<p><strong>Generation Strategy of LLM</strong><br>
+LLMs generate token for token, this often leads to snowballing of ealier errors, instead of correcting them.</p>
+<h1 id="5-mitigation-of-llm-hallucination">5. Mitigation of LLM Hallucination</h1>
+<h2 id="51-mitigation-during-pretraining">5.1 Mitigation during Pretraining</h2>
+<p>Most of the knowledge of a LLM comes through its pretraining, noisy data i.e. Misinformation in the data corpus could corrupt the parameter of the model which will lead to hallucination.<br>
+From that follows, one approach to mitigate hallucination is the removal of noise from the data corpus, this mean manually elimination Missinformation and outdated information. It has been shown, that this reduces hallucination.
+But this method is problematic due the sheer size of modern trainings datasets.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/20240402_19h13m46s_grim.png">
+</figure>
+
+
+<p>Therefore an <em>automatic</em> approach is needed, one example is GPT-3 which uses various cleaning methods to remove noise from their dataset.</p>
+<p>Another approach is to only use data, from reputable sources e.g. wikipedia, arxiv ect.</p>
+<h2 id="52-mitigation-during-sft">5.2 Mitigation during SFT</h2>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/20240402_19h17m23s_grim.png">
+</figure>
+
+
+<p>During supervised fine-tuning(SFT) a LLM gets trained on a small labeled dataset to elicit certain behavior from the model e.g. instruction-fine tuning, removing bias and toxicity, being more helpful.<br>
+LLMs learn through behavior cloning on how to interact with the users.</p>
+<p>SFT can increase the production of hallucination, by being to positive and confident.
+To mitigate it, it is important to built in honesty in the dataset i.e. model responds with &ldquo;I don&rsquo;t know&rdquo;(See: constitution AI).</p>
+<h2 id="53-mitigation-during-rlhf">5.3 Mitigation during RLHF</h2>
+<p>After a model is finetuned often times RLHF is used to further improve the model. RLHF consists of two steps 1) training a reward model 2) use that reward model to train the LLM using RL.</p>
+<p>Here it is important how the reward model is trained, it should respect the three H:</p>
+<ul>
+<li>Honesty</li>
+<li>Helpful</li>
+<li>Harmless
+Where honest refers to minimizing the number of hallucination. To do this synthetic hallucination data can be used to train the reward model.</li>
+</ul>
+<p>Another technique to mitigate hallucination proposed by Schulman is for the model to &ldquo;hedge&rdquo; its answers and based if it correct or not getting a reward.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/20240402_19h31m22s_grim.png">
+</figure>
+
+
+<h2 id="54-mitigating-during-inference">5.4 Mitigating during Inference</h2>
+<h3 id="541-decoding-strategies">5.4.1 Decoding Strategies</h3>
+<p>Decoding strategies can have a influence on hallucinations. So is nucleus sampling(top-p sampling) less factual than greedy decoding, this is due the randomness of nucleus sampling. A better sampling technique is <em>factual-nucleus sampling</em>.
+Other techniques which might help are:</p>
+<ul>
+<li>Chain-of-Verification, which uses plans and verification questions.</li>
+<li>Inference-Time Intervention, which puts a classifier on top of attention heads.</li>
+<li>context-aware decoding(CAD), uses contrasting ensembles for the LLM to pay more attention to the context instead of its parameters.</li>
+</ul>
+<h3 id="542-external-knowledge">5.4.2 External Knowledge</h3>
+<p>Another solution is to use a external Ressource for providing facts, this is mostly done in two steps 1) identifying the relevant information and retrieving it 2) Using this information in the response.</p>
+<p><strong>Knowledge acquisition</strong><br>
+To acquire up-to-date information from credible resources we can use one of these two methods:</p>
+<ol>
+<li>External knowledge bases: An example for this would be Wikipedia or even the entire internet.</li>
+<li>External tools: Examples would include calculator, date app, weather app, ect.</li>
+</ol>
+<p><strong>Knowledge Utilization</strong>
+After we have acquired the relevant information, we need to utilize it somehow:</p>
+<ol>
+<li>Generation Time Supplement: This would mean we concatenate them with the user input</li>
+<li>Post hoc correction: Using an auxiliary fixer after the response was generated.</li>
+</ol>
+<h3 id="543-uncertainty-of-llms">5.4.3 Uncertainty of LLMs</h3>
+<p>Displaying the uncertainty a model has can provide the user valuable feedback on how much they should trust the model. Uncertainty of the model can be estimated with:</p>
+<ul>
+<li>Logit-based estimation, calculating the token-level probability.</li>
+<li>Verbal-based estimation, directly asking the llm to express their uncertainty.</li>
+<li>Consistency-based estimation.</li>
+</ul>
+<h2 id="55-other-methods">5.5 Other Methods</h2>
+<p>Some other methods include:</p>
+<ul>
+<li>Multi agent interaction, multiple LLM propose and debate their responses.</li>
+<li>Prompt engineering, using &ldquo;smart&rdquo; prompts.</li>
+<li>Analyzing LLMs internal states, LLMs may be aware of their own falsehood use this.</li>
+<li>Human in the loop.</li>
+</ul>
+<h1 id="6-conclusion">6. Conclusion</h1>
+<p>LLMs have achieved huge success, but its important to keep hallucination in mind and doing steps to mitigate them.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<li class="list-item">
+  <div class="post-container">
+    <div class="date-container">
+      {{ if .PublishDate }}
+          <p class="date-p">{{ time.Format "Jan. 02" .PublishDate }}</p>
+      {{ end }}
+    </div>
+    
+    <div class="content-container">
+      <a class="post-title" href="{{ .RelPermalink }}">
+          {{ .Title }}
+      </a>
+
+    </div>
+  </div>
+</li>

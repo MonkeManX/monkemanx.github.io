@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/posts/" class="active">Posts</a>
+        <a href="http://localhost:1313/paper-summary/" class="">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Homelab Upgrade </h1>
+  <p>Published: August 31, 2024</p>
+  <h2 id="introduction">Introduction</h2>
+<p>For a while now I have been running a Homelab (:= A server that is running at home, often with low budget hardware, hosting several applications.) using a weak Raspberry 3b, originally I was using it to better <a href="/posts/my_homelab_part_0_prologue/">regulate my sleep schedule</a> using HomeAssistant. But over time the motivation for running my Homelab changed, I wanted to experiment more, learn about various new technologies and more philosophical I wanted to be less dependented on centralized services &ndash; Like, google drive for backups, netflix for entertainment, one drive for syncing devices and many more.</p>
+<p>And with this change of motivation my demand for my Homelab increased no longer did I want to run a single application, I wanted to run several applications all at once all containerized and virtualized, my two meager external hard drives dangling of my Rasperry Pi was not adequate anymore for my storage need, I wanted more drives and I wanted them in a
+RAID setup for redudancy and with ZFS to prevent bit rot.<br>
+Sadly, my trusted Rasberry 3b was no longer powerfull enough to fullfill my needs, so it was time to upgarde my Homelab to something more powerfull.</p>
+<p>This post is a documentation of this upgrading undertaking, first going over the acquirement of the hardware of my homelab, then the proces of choosing a operating system, and finally through the different applications that I selfhosted with it and the different technologies they interface with.</p>
+<p>This post will probably rather long, because of the sheer amount of software I decided to selfhost, so grab a cup of coffee or tea and enjoy the reading (or not since this will be a bit dry, I&rsquo;ll try to add some semi funny images).</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Love.jpg">
+</figure>
+
+
+<h2 id="the-hardware-requirements">The Hardware Requirements</h2>
+<p>Before I could think about what kind of server I wanted to buy, I first needed to know what my hardware requirements were and how important they were.
+This allowed me to balance, my nice-to-have features with the cost of including them. Also, how could I waste hours looking for the perfect server, if I didn&rsquo;t have a lengthy wishlist?</p>
+<p>I&rsquo;ve already touched on some of my server requirements in the introduction. Now, I would like to explore them in more detail. Below is a list of factors, along with related question, that shaped my final requirements:</p>
+<ul>
+<li>Size of the Computer: USFF, SFF, DT
+<ul>
+<li>How many disks fit into the case?</li>
+</ul>
+</li>
+<li>Motherboard
+<ul>
+<li>How many SATA connectors do I need?</li>
+<li>Does it support ECC?</li>
+</ul>
+</li>
+<li>Disks
+<ul>
+<li>What disk capacity do I want?</li>
+<li>Refurbished Disks vs New Disks?</li>
+<li>How many disks?</li>
+</ul>
+</li>
+<li>Processor: Intel vs Amd
+<ul>
+<li>Does it support Quick Sync Video (QSV)?</li>
+<li>Which processor generation?</li>
+<li>How many cores do I want?</li>
+<li>What is it power usage?</li>
+<li>Does the processor include an onboard graphics card?</li>
+</ul>
+</li>
+<li>RAM
+<ul>
+<li>How much RAM?</li>
+<li>Do I need ECC?</li>
+</ul>
+</li>
+<li>Power Usage</li>
+</ul>
+<h3 id="storage-requirements">Storage Requirements</h3>
+<p>Using the server as a <a href="https://en.wikipedia.org/wiki/Network-attached_storage">NAS</a> and as a media center for streaming movies and TV shows to all my devices were two key factors that prompted me to upgrade my Homelab. With the NAS demanding significant storage capacity and the media center needing a more powerful processor than the one I currently had.
+As such I will analyze the requirements of these two functionalities first.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/it_server.jpg">
+</figure>
+
+
+<p>First of for the NAS, since I want to use my homelab as a media server for movies, tv-shows, music and photos, the most important aspect to consider for the NAS aspect of my server are the storage requirements.
+The biggest bulk of required storage will come from my media server, specfically movies and tv-shows. The size of tv-shows is really hard to compare from series to series, they have different amount of seasons, different amount of episodes per season, different length per episode.
+Movies on the other side, are a lot more handy, they all have roughtly the same length, making the average file size of a movie fairly repsresentetive.
+Allowing me to estimate my required storage needs, by estimating the average file size of movie first and the extrapolate from there.</p>
+<p>So I created a table of various popular movies and their file size, by picking some well known movies and search for them on Piratebay, which reports for each torrent various statistics about it such as: used encoding, resolution, Video-Bitrate and many more.  You can see the table below:</p>
+
+
+
+
+<style>
+    .movie_data {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        font-size: 14px;
+        text-align: left;
+        background-color: #f9f9f9;
+    }
+
+    .movie_data thead {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .movie_data th, .movie_data td {
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+    }
+
+    .movie_data tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .movie_data tbody tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+        .movie_data, .movie_data thead, .movie_data tbody, .movie_data th, .movie_data td, .movie_data tr {
+            display: block;
+            width: 100%;
+        }
+
+        .movie_data tr {
+            margin-bottom: 10px;
+        }
+
+        .movie_data td {
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+        }
+
+        .movie_data td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            padding-left: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+
+     .source {
+        font-size: 1em;  
+        color: #222;       
+        text-align: center;  
+        padding-bottom: 20px;
+    }
+</style>
+
+
+
+
+<table class="movie_data">
+  <thead>
+      <tr>
+          <th style="text-align: left">Movie Name</th>
+          <th style="text-align: left">Release Year</th>
+          <th style="text-align: left">Movie Length</th>
+          <th style="text-align: left">Encoding</th>
+          <th style="text-align: left">Resolution</th>
+          <th style="text-align: left">File Size(GB)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Interstellar</td>
+          <td style="text-align: left">2014</td>
+          <td style="text-align: left">2h49m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">2.20</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Interstellar</td>
+          <td style="text-align: left">2014</td>
+          <td style="text-align: left">2h49m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">14.80</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Interstellar</td>
+          <td style="text-align: left">2014</td>
+          <td style="text-align: left">2h49m</td>
+          <td style="text-align: left">remux</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">42.71</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pulp Fiction</td>
+          <td style="text-align: left">1994</td>
+          <td style="text-align: left">2h34m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">1.40</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">The Silence of the Lambs</td>
+          <td style="text-align: left">1991</td>
+          <td style="text-align: left">1h58m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">1.50</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">The Silence of the Lambs</td>
+          <td style="text-align: left">1991</td>
+          <td style="text-align: left">1h58m</td>
+          <td style="text-align: left">remux</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">31.45</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Spirited Away</td>
+          <td style="text-align: left">2001</td>
+          <td style="text-align: left">2h4m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">7.99</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">The Departed</td>
+          <td style="text-align: left">2006</td>
+          <td style="text-align: left">2h31m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">2.00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">All Quiet on the Western Front</td>
+          <td style="text-align: left">2022</td>
+          <td style="text-align: left">2h28m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">5.29</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ad Astra</td>
+          <td style="text-align: left">2019</td>
+          <td style="text-align: left">2h3m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">5.99</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ad Astra</td>
+          <td style="text-align: left">2019</td>
+          <td style="text-align: left">2h3m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">11.37</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jojo Rabbit</td>
+          <td style="text-align: left">2019</td>
+          <td style="text-align: left">1h48m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">1.93</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jojo Rabbit</td>
+          <td style="text-align: left">2019</td>
+          <td style="text-align: left">1h48m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">6.79</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jojo Rabbit</td>
+          <td style="text-align: left">2019</td>
+          <td style="text-align: left">1h48m</td>
+          <td style="text-align: left">remux</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">48.5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Blade Runner 2049</td>
+          <td style="text-align: left">2017</td>
+          <td style="text-align: left">2h44m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">3.14</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Blade Runner 2049</td>
+          <td style="text-align: left">2017</td>
+          <td style="text-align: left">2h44m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">19.2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Blade Runner 2049</td>
+          <td style="text-align: left">2017</td>
+          <td style="text-align: left">2h44m</td>
+          <td style="text-align: left">remux</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">77.97</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ex Machina</td>
+          <td style="text-align: left">2015</td>
+          <td style="text-align: left">1h48m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">1.63</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ex Machina</td>
+          <td style="text-align: left">2015</td>
+          <td style="text-align: left">1h48m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">22.13</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">The Big Short</td>
+          <td style="text-align: left">2015</td>
+          <td style="text-align: left">2h10m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">3.28</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">The Big Short</td>
+          <td style="text-align: left">2015</td>
+          <td style="text-align: left">2h10m</td>
+          <td style="text-align: left">x264</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">3.28</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Inception</td>
+          <td style="text-align: left">2010</td>
+          <td style="text-align: left">2h28m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">2.87</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Inception</td>
+          <td style="text-align: left">2010</td>
+          <td style="text-align: left">2h28m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">8.91</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">The Dark Knight</td>
+          <td style="text-align: left">2008</td>
+          <td style="text-align: left">2h32m</td>
+          <td style="text-align: left">x265</td>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">1.87</td>
+      </tr>
+  </tbody>
+</table>
+
+
+    <p class="source">Source: Piratebay, August. 2024</p>
+
+
+<p>You can skip the following boring python code section, which calculates the average movie file size, by collapsing the section and continuing reading from afterwards it:</p>
+<style>
+   
+  details {
+    border: 2px solid #3498db;  
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f2f2f2;  
+    overflow: hidden;  
+    transition: max-height 0.5s ease-out;  
+  }
+
+   
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3498db;  
+  }
+
+   
+  .collapsible-content {
+    margin-top: 10px;
+  }
+</style>
+
+
+
+
+
+<details open>
+  <summary>Calculating the Average Movie Length</summary>
+  <style>
+    .info {
+        background-color: #e6f7ff;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .info-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #000080;  
+        font-weight: bold;  
+    }
+</style>
+<div class="info">
+    <div class="info-title">Info</div>
+    <p>For the subsequent calulcations it is important to note, that they are only rough estimates. For example we can have two times the same movie which both use the same encoding, but drastically different file size based on the quality preset choosen when the movie was encoded.
+Another example, I have seen a fair number of movies with the same resolution where they differ in encoding one using <code>x264</code> and the other one <code>x265</code> and even though <code>x265</code> is supposed the more efficient one, the file with the <code>x264</code> encoding ends up having a smaller file size (this too is the fault of the set quality preset when encoding).</p>
+</div>
+<p>I could have used an calculator to quickly crunch the numbers, but because I like doing it harder than it already is; I used python in combination with pandas, a data anlaysis libary.</p>
+<p>The first thing we do is importing the pandas libary and importing our data into python:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;movies.txt&#34;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&#34;|&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><p>Which will return in the following output:</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/homelab_jupyter_1.jpg">
+</figure>
+<p>As you can see, there are multiple issues: for one we have two weird columns titld <code>unamed: 0</code> and <code>unamed 7</code> and second our first row is also weird, we should remove both.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&#34;all&#34;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&#34;columns&#34;</span><span class="p">)</span> <span class="c1"># drops the columns </span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># drops the first column </span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><p>Which will result in the following output:</p>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/homelab_jupyter_2.jpg">
+</figure>
+<p>There are still one issue persisting, we have whitespaces in the column names and in the data fields, you can see that through the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+</span></span></code></pre></div><p>Which will return the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">Index</span><span class="p">([</span><span class="s1">&#39; Movie Name                         &#39;</span><span class="p">,</span> <span class="s1">&#39; Year &#39;</span><span class="p">,</span> <span class="s1">&#39; Movie Length &#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">       <span class="s1">&#39; Encoding &#39;</span><span class="p">,</span> <span class="s1">&#39; Resolution &#39;</span><span class="p">,</span> <span class="s1">&#39; File Size(GB) &#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>In order to remove the white-spaces we can do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="c1"># strips whitespaces from the columns </span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">dtype</span><span class="o">==</span><span class="s2">&#34;object&#34;</span> <span class="k">else</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># Remove white spaces in the dataframes</span>
+</span></span></code></pre></div><p>We have one last problem, when we execute:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></span></code></pre></div><p>We get:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="s1">&#39;&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">24</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">1</span> <span class="n">to</span> <span class="mi">24</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">6</span> <span class="n">columns</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"> <span class="c1">#   Column         Non-Null Count  Dtype </span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="o">---</span>  <span class="o">------</span>         <span class="o">--------------</span>  <span class="o">-----</span> 
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"> <span class="mi">0</span>   <span class="n">Movie</span> <span class="n">Name</span>     <span class="mi">24</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>     <span class="nb">object</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"> <span class="mi">1</span>   <span class="n">Year</span>           <span class="mi">24</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>     <span class="nb">object</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"> <span class="mi">2</span>   <span class="n">Movie</span> <span class="n">Length</span>   <span class="mi">24</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>     <span class="nb">object</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"> <span class="mi">3</span>   <span class="n">Encoding</span>       <span class="mi">24</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>     <span class="nb">object</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"> <span class="mi">4</span>   <span class="n">Resolution</span>     <span class="mi">24</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>     <span class="nb">object</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"> <span class="mi">5</span>   <span class="n">File</span> <span class="n">Size</span><span class="p">(</span><span class="n">GB</span><span class="p">)</span>  <span class="mi">24</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>     <span class="nb">object</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="n">dtypes</span><span class="p">:</span> <span class="nb">object</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">1.3</span><span class="o">+</span> <span class="n">KB</span>
+</span></span></code></pre></div><p>As we can see the the column <code>File Size(GB)</code> is from type <code>object</code>, with which we can&rsquo;t calculate, so we need to transform it into the <code>float</code> dtype:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s2">&#34;File Size(GB)&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;File Size(GB)&#34;</span><span class="p">])</span>
+</span></span></code></pre></div><p>Finally, we can calculate the average file size:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;Resolution&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;1080p&#34;</span><span class="p">][</span><span class="s2">&#34;File Size(GB)&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;Resolution&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;4K&#34;</span><span class="p">][</span><span class="s2">&#34;File Size(GB)&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;Resolution&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;4K&#34;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;Encoding&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;remux&#34;</span><span class="p">)][</span><span class="s2">&#34;File Size(GB)&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;Resolution&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;4K&#34;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;Encoding&#34;</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&#34;remux&#34;</span><span class="p">)][</span><span class="s2">&#34;File Size(GB)&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><p>Which gives us the following result:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">5.05
+</span></span><span class="line"><span class="ln">2</span><span class="cl">28.04
+</span></span><span class="line"><span class="ln">3</span><span class="cl">26.39
+</span></span><span class="line"><span class="ln">4</span><span class="cl">13.87
+</span></span></code></pre></div>
+</details>
+
+
+
+<style>
+    .info {
+        background-color: #e6f7ff;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .info-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #000080;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="info">
+    <div class="info-title">Info</div>
+    <p><strong>Remux:</strong> The data was copied without being changed e.g. from the Blueray. It is most often the highest quality, the media can be.</p>
+</div>
+
+
+<p>With the previous calculation we get the following table:</p>
+
+
+
+
+<style>
+    .movie_avg {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        font-size: 14px;
+        text-align: left;
+        background-color: #f9f9f9;
+    }
+
+    .movie_avg thead {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .movie_avg th, .movie_avg td {
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+    }
+
+    .movie_avg tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .movie_avg tbody tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+        .movie_avg, .movie_avg thead, .movie_avg tbody, .movie_avg th, .movie_avg td, .movie_avg tr {
+            display: block;
+            width: 100%;
+        }
+
+        .movie_avg tr {
+            margin-bottom: 10px;
+        }
+
+        .movie_avg td {
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+        }
+
+        .movie_avg td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            padding-left: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+
+     .source {
+        font-size: 1em;  
+        color: #222;       
+        text-align: center;  
+        padding-bottom: 20px;
+    }
+</style>
+
+
+
+
+<table class="movie_avg">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Avg. File Size(GB)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1080p</td>
+          <td style="text-align: left">5.05</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4K</td>
+          <td style="text-align: left">28.04</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4K &amp; remux</td>
+          <td style="text-align: left">26.39</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4K &amp; non remux</td>
+          <td style="text-align: left">13.87</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<p>As we can the size increase from movies with higher resolution is substantial, which makes sense since with 4K we save <code>XX</code> MISSING as many pixel as with 1080p.  And even though I didn&rsquo;t meassure it personally, with sane quality presets we can excpect <code>x265</code>to give a 30% space saving in comparsion to <code>x264</code>. Source:
+Suppose my estimates are accurate, we can thus exspect to save 198 movies with 1080p resolution or 35 4K movies per TB of disk. Since I do not have any 4k available(BETTER WORD NEEDED) devices, I can go with the former estimate.</p>
+<p>With that in mind 1TB would proably be enough for my movie meda needs, but we need to keep in mind that this isn&rsquo;t the only data I want to save on the server and that we want to leave enough room for the furture, shoud my storage need drastically increase.
+But what this estiamtes gives us is the ballpark of dimension of storage I need, not 1000TB, not 100TB, but more or less 10TB.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Titanic.jpg">
+</figure>
+
+
+<h3 id="processor-requirements">Processor Requirements</h3>
+<p>For my processor, there were three important aspects that I needed to consider:</p>
+<ul>
+<li><strong>Number of Cores</strong>: Since the processor would run in a server environment, more cores would help with concurrency.</li>
+<li><strong>Power Usage</strong>: Power costs where I live in Germany are rather expensive, so I wanted to minimize them as much as possible.</li>
+<li><strong>Integrated Graphics Card</strong>: This would help when streaming movies and TV shows from my server to a client.</li>
+<li><strong>Price</strong>: How expensive the processor is.</li>
+</ul>
+<p>I quickly decided that the processor should be from Intel. Intel processors are great for media streaming due to <a href="https://en.wikipedia.org/wiki/Intel_Quick_Sync_Video">Quick Sync Video (QSV)</a>, Intel&rsquo;s video encoding and decoding engine, which excels at handling video formats like movies. Another reason is that Intel processors come with integrated graphics cards, which QSV uses for the encoding/decoding process. Additionally, Intel’s i3 and i5 processors, particularly from the later generations, are very power efficient—perhaps not as efficient as ARM processors, but still quite close.</p>
+<p>It was also fairly easy to decide on which generation of CPU I wanted. Anything beyond the 13th generation was a no-go due to <a href="https://www.xda-developers.com/intel-13th-gen-14th-gen-crashes/">instability issues</a> with the newer models. Anything older than the 5th generation was out of the question because they don’t support QSV. The 9th generation was ideal, as it was the first to support HVEC codecs, making any generation beyond that a solid choice.</p>
+<p>An added benefit of processors from the 8th generation onwards is that the default number of cores increased from 4 to 6, which improves performance a lot for multi task workloads. The 9th generation processors use the UHD 630 as their integrated graphics chip, with the next major performance jump arriving in the 11th generation. For more details on codec support for Intel CPUs, you can refer to the <a href="https://www.intel.com/content/www/us/en/docs/onevpl/developer-reference-media-intel-hardware/1-1/overview.html#ENCODE-OVERVIEW-9TH">Media Capabilities Supported by Intel Hardware List</a>.</p>
+<p>Finally, within the Intel Core series, the i9 and i7 models were too expensive, both in terms of price and power usage, leaving me with the option of either an i3, which is more efficient but less performant, or an i5, which consumes more power but offers better performance.</p>
+<p>To recap, I am looking for an Intel i3 or i5 processor, preferably from the 9th generation, with the 11th generation as an even better option.</p>
+<h3 id="computer-size">Computer Size</h3>
+<p>A quick note on the size of the computer: I wanted a server that had enough space for my disks but was still compact enough to fit comfortably in the corner of a room. Because of this, I primarily focused on small form factor (SFF) computer cases.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/desktop_size.jpg">
+</figure>
+
+
+<h3 id="ram-requirements">RAM Requirements</h3>
+<p>Regarding RAM, there isn’t much to say—you only need as much memory as you actually use (unless you&rsquo;re doing something extreme like using <a href="https://www.truenas.com/docs/references/zfsdeduplication/">ZFS Deduplication</a>). I&rsquo;ll start with a modest amount and buy more when needed. Scalability isn’t a big concern, as most modern motherboards have four slots for RAM sticks.</p>
+<p>One thing worth mentioning is that having <a href="https://www.truenas.com/docs/references/zfsdeduplication/">ECC RAM</a> would be nice, but it’s not essential, especially for a small home setup like mine and it is rather expensive.</p>
+<h3 id="short-interlude">Short Interlude</h3>
+<p>From the decisions I’ve made so far, you’ve probably noticed that this server sounds more like a consumer desktop computer than a sleek, rack-mounted server. And that’s true, but in my defense, &ldquo;real&rdquo; servers are both expensive and power-hungry. Compared to my previous server (a Raspberry Pi 3b), this is already a significant upgrade.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/server_meme.webp">
+</figure>
+
+
+<h2 id="dr-salesman-or-how-i-learned-to-stop-waiting-for-the-perfect-deal">Dr. Salesman or: How I Learned to Stop Waiting for the Perfect Deal</h2>
+<p>Now that we are through the requirements of the server, I wanted to buy. I actually need to buy it, the first thing I considered was buying all the parts separately and building it myself. But using <a href="https://pcpartpicker.com/">pcpartpicker</a>, I came to a price of roughly 600€ which was too much. I could have bought the used individually parts, which would have saved me a lot of money, but at the same time it would increase the risk of buying something that didn&rsquo;t work or going over the budget if I don&rsquo;t track the expenses correctly.</p>
+<p>So I went with my second option, shopping for used office computers that meet my specifications. I first tried a lot of random websites, but then switched my focus entirely to <a href="https://www.ebay.com/">ebay</a>, where I ended up checking for deals every day for two weeks or so before I finally found something good and went for it. There are certain manufactors and product prand that work quite well as server, such as:</p>
+<ul>
+<li>Fujitsu Thinclients</li>
+<li>Dell Wyse</li>
+<li>Dell Optiplex</li>
+<li>HP Prodesk</li>
+</ul>
+<p>Just keep in mind that there are different version out there of each of them some are better than others. I would recommend, just looking on ebay for a while for these machines to get a feel of the prices and then when you see one cheap to get it.</p>
+<p>The only thing that I bought separately were my hard disks and later on RAM when I needed more.
+For the disks, many people recommend the site <a href="https://serverpartdeals.com/collections/manufacturer-recertified-drives">serverpartdeals</a> but through the usage of <a href="https://diskprices.com/">diskprice</a>, I ended up buying my disks from Amazon.</p>
+<p>My total prices was as follows:</p>
+<ul>
+<li>Prodesk G5 600(16GB RAM, i5-9500, 250GB SSD), 180€</li>
+<li>Kingston Furry Beast DDR4 2x32GB RAM, 120€</li>
+<li>2x Seagate Enterprise v6 10TB ST10000NM0046, 220€</li>
+</ul>
+<p>Total: 520€</p>
+<p>It turned out a bit more expensive than I would have liked, but I underestimated the prive for the RAM and hard disks.</p>
+ 
+</div>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

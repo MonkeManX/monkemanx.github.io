@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="active">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Neovim Tricks </h1>
+  <p class="pub-date">Published: April 4, 2024</p>
+  
+  <p>This is a short cheat sheet for important keybindings in vim more specific for neovim. I am using <a href="https://nvchad.com/">NVChad</a> as such not all keybindings are applicable to standard vim/nvim.<br>
+Capitalization is important!</p>
+<p><strong>Modes:</strong></p>
+<ul>
+<li><code>ESC</code>, switch to normal mode.</li>
+<li><code>v</code>, switch to visual mode.</li>
+<li><code>i</code> or <code>a</code>, switch to insert mode.</li>
+<li><code>R</code>, replace mode.</li>
+</ul>
+<p><strong>Navigation:</strong></p>
+<ul>
+<li><code>arrow keys</code>, shame on you!</li>
+<li>Movement keys, can be combined with arbitrary number
+<ul>
+<li><code>h</code>, to the left.</li>
+<li><code>l</code>, to the right.</li>
+<li><code>j</code>, downwards.</li>
+<li><code>k</code>, upwards.</li>
+<li>Example: <code>10j</code> jumps 10 lines downwards, <code>5k</code> jumps 4 lines upwards.</li>
+</ul>
+</li>
+<li><code>_</code> or <code>0</code>, beginning of the line.</li>
+<li><code>$</code>, to the end of the line.</li>
+<li><code>e</code>, one word forward.</li>
+<li><code>b</code>, one word backward.</li>
+<li><code>:NUMBER</code>, jumps to the line number.</li>
+<li><code>f</code> + <code>CHAR</code>, jumps to the <em>next</em> character matching the input char.</li>
+<li><code>F</code> + <code>CHAR</code>, jumps to the <em>previous</em> character matching the input char.</li>
+<li><code>gg</code>, moves to the <em>top</em> of the files.</li>
+<li><code>G</code>, moves to the <em>bottom</em> of the file.</li>
+<li><code>20G</code>, moves cursor to line 20.</li>
+</ul>
+<p><strong>Navigating Code:</strong></p>
+<ul>
+<li><code>%</code>, to the matching bracket.</li>
+<li><code>[</code> + <code>{</code>, jumps to <em>previous</em> curly bracket.</li>
+<li><code>]</code> + <code>}</code>, jumps to <em>next</em> curly bracket.</li>
+<li><code>]</code> + <code>m</code>, next method beginning.</li>
+<li><code>[</code> + <code>m</code>, previous method beginning.</li>
+</ul>
+<p><strong>Files:</strong></p>
+<ul>
+<li><code>:w</code>, save current file to disk.</li>
+<li><code>:wall</code>, saves all open files to disk.</li>
+<li><code>:q</code>, closes current window.</li>
+<li><code>:qall</code>, closes all windows.</li>
+<li><code>:qall!</code>, forcefully closes all windows.</li>
+<li><code>:wq</code>, saves and closes window.</li>
+</ul>
+<p><strong>Selecting:</strong></p>
+<ul>
+<li><code>v</code> + <code>i</code> + <code>p</code>, select the current paragraph.
+<ul>
+<li>can be repeated <code>vipipipip</code>.</li>
+</ul>
+</li>
+<li><code>y</code> + <code>a</code> + <code>p</code>, yanks paragraph.</li>
+</ul>
+<p><strong>Editing</strong>:</p>
+<ul>
+<li><code>d</code> + <code>POSTFIX</code>, stands for delete depends on postfix.
+<ul>
+<li><code>d</code>, deletes whole line</li>
+<li><code>$</code>, deletes from current postion up to <em>last</em> character in the line.</li>
+<li><code>_</code>, deletes from current postion up to <em>first</em> character in the line.</li>
+<li><code>e</code>, deletes next word.</li>
+<li><code>b</code>, deletes previous word.</li>
+</ul>
+</li>
+<li><code>D</code>, same as <code>d$</code>.</li>
+<li><code>u</code>, undo last change.</li>
+<li><code>STRG</code> + <code>r</code>, redoes the last change.</li>
+<li>In visual mode: <code>y</code>, copy(yank) the selected text.</li>
+<li><code>y</code> + <code>y</code>, yank current line.
+<ul>
+<li>can be paired with a number, example <code>5</code> + <code>y</code> + <code>y</code>, yanks the next 5 lines.</li>
+</ul>
+</li>
+<li><code>p</code>, paste the yanked text <em>after</em> the cursor.</li>
+<li><code>P</code>, paste the yanked text <em>before</em> the cursor.</li>
+<li><code>x</code>, deletes current character.</li>
+<li><code>c</code> + <code>c</code>, remove current line and edit it.</li>
+<li><code>&quot;</code> + <code>BUFFER</code> + <code>p</code>, chooses a clipboard buffer and then pastes it.</li>
+</ul>
+<p><strong>Search:</strong></p>
+<ul>
+<li><code>/</code>, searches for patterns forward.</li>
+<li><code>?</code>, searches for pattern backward.</li>
+<li><code>n</code>, jumps to next found pattern.</li>
+</ul>
+<p><strong>Misc:</strong></p>
+<ul>
+<li><code>vsp</code>, vertically splits screen.</li>
+<li><code>hsplit</code>, horizontal splits screen.</li>
+<li>In visual mode <code>&gt;</code>, intends marked lines in the <em>right</em> direction.</li>
+<li>In visual mode <code>&lt;</code>, intends marked lines in the <em>left</em> direction.</li>
+<li><code>z</code> + <code>=</code>, correct spelling mistake.</li>
+</ul>
+<p><strong>Telescope File Browser</strong></p>
+<ul>
+<li><code>&lt;leader&gt;</code> + <code>fb</code>, opens the telescope file browser.</li>
+<li><code>ctrl</code> + <code>f</code>, switches between file and folder mode.</li>
+<li>In <code>normal</code> mode:
+<ul>
+<li><code>c</code>, create a file.</li>
+<li><code>r</code>, rename a file.</li>
+<li><code>y</code>, copy a file.</li>
+<li><code>d</code>, delete a file.</li>
+<li><code>g</code>, goes to parent folder.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Search and Replace</strong></p>
+<ul>
+<li><code>:%s/foo/bar/gc</code>, changes all occurence of <code>foo</code> in the current file to <code>bar</code>, asks for confirmation</li>
+<li><code>:%s/foo/bar/g</code>, changes all occurence of <code>foo</code> in the current file to <code>bar</code>, doesn&rsquo;t asks for confirmation</li>
+<li><code>:%s/&lt;foo&gt;/bar/gc</code>, Changes only whole wors exactly matching <code>foo</code>.</li>
+</ul>
+<h1 id="debugging-neovim">Debugging Neovim</h1>
+<ol start="0">
+<li>Start Neovim</li>
+<li>Find the PID of neovim <code>:lua print(vim.fn.getpid())</code> or use something like <code>htop</code> or <code>btop</code>.</li>
+<li>Attach the debugger to neovim <code>gdb -tui -p PID nvim</code>, the gdb interactive prompt will appear, useful commands:<br>
+-<code>n</code> step over the next statement<br>
+-<code>s</code> step into the next statement<br>
+-<code>c</code> continue<br>
+-<code>finish</code> step out of the current function<br>
+-<code>bt</code> to see the backtrace from current location</li>
+<li>Reproduce the bug and check the backtrace</li>
+</ol>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://neovim.io/doc/user/dev_tools.html">Neovim Dev Tools</a></li>
+<li><a href="https://nvchad.com/">NvChad Doc</a></li>
+</ul>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

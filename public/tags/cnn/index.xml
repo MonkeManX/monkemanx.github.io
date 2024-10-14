@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNN on </title>
+    <link>http://localhost:1313/tags/cnn/</link>
+    <description>Recent content in CNN on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Sep 2024 20:36:11 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cnn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Convolutional Neural Network</title>
+      <link>http://localhost:1313/articles/proseminar_cnn/</link>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/proseminar_cnn/</guid>
+      <description>&lt;style&gt;&#xA;    .info {&#xA;        background-color: #e6f7ff;  &#xA;        padding: 15px;  &#xA;        border-radius: 5px;  &#xA;        margin-bottom: 15px;  &#xA;    }&#xA;&#xA;    .info-title {&#xA;        font-size: 20px;  &#xA;        margin-bottom: 10px;  &#xA;        color: #000080;  &#xA;        font-weight: bold;  &#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;div class=&#34;info&#34;&gt;&#xA;    &lt;div class=&#34;info-title&#34;&gt;Background&lt;/div&gt;&#xA;    &lt;p&gt;&lt;pre&gt;&lt;code&gt;I wrote this article back in uni as part of the seminar, &amp;quot;Basics of Machine Learning 1 &amp;amp; 2&amp;quot;. As such this text only introduces some basic concepts and is limited in scope.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;In recent years, significant advancements have been made in the field of Machine Learning, particularly in the domain of image-related tasks. This paper aims to provide a comprehensive overview of Convolutional Neural Networks (CNNs), a powerful class of neural networks widely employed for image analysis and processing. In addition to that, this paper presents a self-trained CNN model specifically designed for digit classification. The model achieves solid performance in accurately classifying hand-drawn digits. By shedding light on the inner workings of CNNs and showcasing their practical application in digit classification, I seek to encourage further research and development in this domain.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

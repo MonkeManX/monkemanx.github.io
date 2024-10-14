@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="article-content">
+  <h1> Notes from the Wired</h1>
+    <p>
+    This is a website where I write articles on various topics that interest me, carving out a bit of cyberspace for myself.<br><br>
+You shouldn't believe anything I talk about —- I use words entirely recreationally.
+    </p>
+  <h2> Most Recent </h2>
+    <div class="combined-div">
+    {{ $onHome := .IsHome }}
+     {{ range first 3 (where .Site.RegularPages "Type" "in" (slice "articles" "paper-summary" "tangled_thoughts")).ByPublishDate.Reverse }}
+        {{ partial "list_element_home.html" . }}
+      {{ end }}
+   </div>
+</div>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="article-content"> 
+  <h1> {{ .Title }} </h1>
+  <p class="pub-date">Published: {{ time.Format "January 2, 2006" .PublishDate }}</p>
+  {{ if or (eq .Title "Media") (eq .Title "Lost") (eq .Title "俳句") (eq .Title "Lain") }}
+    <p class="pub-date">Last modified: {{ .Lastmod.Format  "January 2, 2006" }}</p>
+  {{ end }}
+  {{ .Content }} 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; <!-- Unicode arrow symbol -->
+</a>
+{{ end }}

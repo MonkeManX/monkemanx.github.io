@@ -1,0 +1,13 @@
+<div class="nav-div">
+  <nav>
+        <a href="{{ .Site.BaseURL }}" class="{{ if .IsHome }}active{{ end }}">Home</a>
+        <a href="{{ .Site.BaseURL }}articles/" class="{{ if eq .Section "articles" }}active{{ end }}">Articles</a>
+        <a href="{{ .Site.BaseURL }}paper-summary/" class="{{ if eq .Section "paper-summary" }}active{{ end }}">Paper-Summaries</a>
+        <a href="{{ .Site.BaseURL }}tags/" class="{{ if eq .Section "tags" }}active{{ end }}">Tags</a>
+        <a href="{{ .Site.BaseURL }}poetry/" class="{{ if eq .Section "poetry" }}active{{ end }}">Writings</a>
+        <a href="{{ .Site.BaseURL }}tangled_thoughts/" class="{{ if eq .Section "tangled_thoughts" }}active{{ end }}">Tangled-Thoughts</a>
+        <a href="{{ .Site.BaseURL }}media/" class="{{ if eq .Title "Media" }}active{{ end }}">Media</a>
+        <a href="{{ .Site.BaseURL }}links/" class="{{ if eq .Title "The Old Wired" }}active{{ end }}">Links</a>
+        <a href="{{ .Site.BaseURL }}about/" class="{{ if eq .Title "About" }}active{{ end }}">About</a>
+  </nav>
+</div>

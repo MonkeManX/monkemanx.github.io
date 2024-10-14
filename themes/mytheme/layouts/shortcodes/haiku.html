@@ -1,0 +1,26 @@
+<div class="complete-container">
+  <div></div>
+  <div class="h-container">
+    <pre class="haiku-pre">
+      {{ .Inner | safeHTML }}
+    </pre>
+  </div>
+  <div></div>
+</div>
+
+<style>
+.complete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.h-container {
+    max-width: 600px; /* Set a maximum width */
+    width: 100%; /* Allow the container to use full available width */
+    text-align: center; /* Center the text inside the container */
+    margin: 0 20px;
+    font-size: 16px;
+}
+</style>

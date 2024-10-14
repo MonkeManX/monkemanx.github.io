@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Super-NaturalInstructions: Generalization via Declarative Instructions on 1600&#43; NLP Tasks </h1>
+  <p class="pub-date">Published: February 1, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2204.07705">https://arxiv.org/abs/2204.07705</a><br>
+<strong>Date:</strong> 16. April 2022<br>
+<strong>Paper Type:</strong> NLP, LLM, Instruction<br>
+<strong>Short Abstract:</strong><br>
+In this paper, the authors investigate the generalization capabilities of NLP models to unseen tasks.<br>
+It&rsquo;s one of the first papers that uses instructions finetuning.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>This paper constructs a meta-dataset called <strong>SUPER-NATURALINSTRUCTIONS</strong>, a large benchmark comprising 1616 NLP tasks along with their natural language instructions. Each task in the dataset is accompanied by an instruction that describes the task for the model.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments//Screenshot%20from%202024-02-01%2009-15-13.png">
+</figure>
+
+
+<p>Furthermore, they train their own transformer model called <strong>Tk-Instruct</strong>, which has 11 billion parameters and is evaluated on the SUPER-NATURALINSTRUCTIONS dataset.</p>
+<h1 id="2-super-naturalinstructions">2. SUPER-NATURALINSTRUCTIONS</h1>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/Screenshot%20from%202024-02-01%2009-14-49.png">
+</figure>
+
+
+<p>SUPER-NATURAL-INSTRUCTIONS is a meta-dataset consisting of various NLP tasks and plain language instructions that describe them.</p>
+<p>All tasks in the dataset follow the same schema:</p>
+<ul>
+<li>Definition, which defines the task in natural language.</li>
+<li>Positive example, which are input examples along with their correct output.</li>
+<li>Negative example, which are input examples along with their incorrect output..</li>
+</ul>
+<p>The model&rsquo;s mission is, given the instruction for the task, to solve the instance of the task.</p>
+<p>The benchmark was collected through a large community effort on GitHub, and quality control was conducted through automated tests and the review of GitHub pull requests.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/Screenshot%20from%202024-02-01%2009-19-06.png">
+</figure>
+
+
+<h1 id="3-t_k-instruct-model">3. T_k-INSTRUCT Model</h1>
+<p>Their model, Tk-INSTRUCT, is trained on SUPER-NATURAL-INSTRUCTIONS and based on the pre-trained T5 Models; each task is defined by a natural language instruction and some examples. The model is expected to solve these tasks based on the instruction and the examples.
+Basically they use the T5 Model as base and use their dataset to instruction fine-tune it.</p>
+<h1 id="4-benchmarks-and-results">4. Benchmarks and Results</h1>
+<p>The authors compare their Tk-Instruct model with other models such as InstructGPT.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202024-02-01%2009-23-45.png">
+</figure>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments//Screenshot%20from%202024-02-01%2009-25-10.png">
+</figure>
+
+
+<p>Overall, they find that instruction-tuning enables stronger generalization to unseen tasks. Instruction-tuned models perform better compared to their untuned LLM counterparts. Furthermore, they find that the more tasks a model observes, the better it becomes at generalization, while a large number of training instances help less.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments//Screenshot%20from%202024-02-01%2009-27-30.png">
+</figure>
+
+
+<h1 id="5-conclusion">5. Conclusion</h1>
+<p>This paper, together with InstructGPT, demonstrates the power of instruction fine-tuning and how it can significantly increase the performance of LLM on NLP tasks. Furthermore, it provides a large dataset that allows the testing of models on a broad range of tasks.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<style>
+  /* Style for the details element */
+  details {
+    border: 2px solid #3498db; /* Change border color to a noticeable color, e.g., blue */
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f2f2f2; /* Add a light background color */
+    overflow: hidden; /* Hide the content initially */
+    transition: max-height 0.5s ease-out; /* Add a transition effect */
+  }
+
+  /* Style for the summary element */
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3498db; /* Match the border color for consistency */
+  }
+
+  /* Style for the content inside the details element */
+  .collapsible-content {
+    margin-top: 10px;
+  }
+</style>
+
+
+{{ $title := .Get 0 }}
+{{ $open := .Get 1 }}
+
+<details {{ if eq $open "true" }}open{{ end }}>
+  <summary>{{ $title }}</summary>
+  {{ .Inner | markdownify }}
+</details>
+

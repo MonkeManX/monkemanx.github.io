@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> REFINER: Reasoning Feedback on Intermediate Representations </h1>
+  <p class="pub-date">Published: February 4, 2024</p>
+  
+  <p><strong>Paper Title:</strong> REFINER: Reasoning Feedback on Intermediate Representations<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2304.01904">https://arxiv.org/abs/2304.01904</a><br>
+<strong>Date:</strong> 4. April 2023<br>
+<strong>Paper Type:</strong> LLM, prompting<br>
+<strong>Short Abstract:</strong><br>
+LLMs have demonstrated remarkable performance on reasoning tasks. In this paper, the authors introduce REFINER, a framework for fine-tuning LLMs to generate explicit reasoning steps.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>Numerous papers have highlighted the importance of generating explicit reasoning steps for improving a model&rsquo;s performance and interpretability. However, these steps can be unreliable or incorrect. Typically, the approach to solve this, involves annotating new data with fixed errors and fine-tuning the model on this data, a process that demands significant computational resources and time.</p>
+<p>REFINER employs iterative specific feedback to refine the reasoning of the LLM. This is accomplished through two models: a generator that produces text and a critic that provides feedback on the intermediate reasoning steps for the generator.</p>
+<p>The Critic model is trained on a dataset consisting of reasoning errors and structured feedback on these errors, which is automatically constructed. The critic model provides feedback to the generator model during both training and inference.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-04%2015-04-21.png">
+</figure>
+
+
+<h1 id="2-refiner">2. REFINER</h1>
+<p>The authors of the paper use the following benchmarks to test the model&rsquo;s ability:</p>
+<ul>
+<li><strong>Synthetic natural language reasoning(sNLR):</strong> Given a Scenario and some synthetic rules, the models needs to deduce some fact.</li>
+<li><strong>Math word problem (MWP):</strong> Given a word problem consisitng of a context and a question, the goal is to map the problem to a mathematical expression.</li>
+<li><strong>Moral norm and action generation for moral stories (MS):</strong> Given a situation, an intention, and an immoral action. The model needs to generate the moral action.</li>
+</ul>
+<p>To solve these benchmarks, the authors force the model to generate intermediate reasoning steps using two different models:</p>
+<ul>
+<li><strong>Critic:</strong> Which generated verbal structured feedback to the intermediate reasoning steps.</li>
+<li><strong>Generator:</strong> Which generates the intermediate reasoning steps.</li>
+</ul>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-04%2015-12-47.png">
+</figure>
+
+
+<h2 id="21-critic-model">2.1 Critic Model</h2>
+<p>To train the critic models, pairs of reasoning steps and structured feedback are needed. The model is then trained in a supervised setting using cross-entropy loss.</p>
+<h2 id="22-generator-model">2.2 Generator Model</h2>
+<p>The generator is trained given a context to generate plausible reasoning steps. At each iteration, the generator produces multiple possible reasoning steps. The critic randomly selects one reasoning step and provides feedback on it, ensuring exploration of the action space. The generator is updated using cross-entropy loss.</p>
+<h1 id="3-results">3. Results</h1>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-04%2015-22-28.png">
+</figure>
+
+
+<p>The authors observe that REFINER can significantly improve the model&rsquo;s performance. Additionally, optimal feedback from the critic results in even stronger performance for REFINER.</p>
+<h1 id="4-conclusion">4. Conclusion</h1>
+<p>This paper introduces the REFINER framework to enhance the reasoning abilities of LLMs through an iterative feedback loop between two models. The evaluation conducted by the authors demonstrates promising results.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

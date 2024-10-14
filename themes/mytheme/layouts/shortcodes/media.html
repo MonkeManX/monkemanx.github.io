@@ -1,0 +1,47 @@
+{{- $img_src := index .Params 0 }}
+{{- $name := index .Params 1 }}
+{{- $link := index .Params 2}}
+{{- $desc := .Inner | string }}
+
+<div class="media">  
+  <div class="image-div">  
+    <figure>
+      <img src="{{ $img_src }}" class="media-image">
+    </figure>
+  </div>
+  <div class="inner-media">
+    {{ if ne $link "" }}
+    <b>Name:</b><a target="_blank" rel="noopener noreferrer" href="{{ $link }}">{{ $name }}</a>
+    {{ else }}
+      <b>Name:</b><p>{{ $name }}</p>
+    {{ end }}
+    <b style="margin-top: 10px;">Description:</b><p>{{ $desc }}</p>
+  </div>
+</div>
+
+<style>
+.media {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.image-div {
+    flex: 0 0 auto; /* Prevent image from growing */
+    margin-right: 0px; /* Adjust margin between image and text */
+}
+
+.media-image {
+    max-width: 100px; /* Adjust maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.inner-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-media p {
+    margin: 0; /* Remove default margin to ensure consistent spacing */
+}
+</style>

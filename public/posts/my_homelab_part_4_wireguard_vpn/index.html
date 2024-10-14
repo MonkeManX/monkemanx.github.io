@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/posts/" class="active">Posts</a>
+        <a href="http://localhost:1313/paper-summary/" class="">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> My Homelab Part 4: Wireguard VPN </h1>
+  <p>Published: January 19, 2024</p>
+  <p>Sometimes I need access to my home server to work on some configuration files or check the health of the server, but not always do I have physical access to my home server. One way to still get access to my server even when I am far away is through a VPN, which allows me to connect to my home network, and from the home network, I can then SSH into my home server.</p>
+<p><a href="https://www.wireguard.com/">Wireguard</a> is a free, open-source, modern, and fast VPN service. The other big competitor to Wireguard that I want to mention for completion&rsquo;s sake is <a href="https://openvpn.net/">OpenVPN</a>.</p>
+<p>To be more specific, I use <a href="https://github.com/wg-easy/wg-easy">wg-easy</a> for my server, which is one of the easiest ways to self-host a VPN server. Not only is wg-easy a VPN service, but it also allows you to manage your connection through a WebUI.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/aed9491cae39af755a01815eb44b0c19.png">
+</figure>
+
+
+<h2 id="installation">Installation</h2>
+<p>Just like in my previous blog post with Calibre, I will use Docker Compose to install wg-easy with the following Docker Compose file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3.8&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">  </span><span class="nt">wg-easy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">      </span><span class="c"># ⚠️ Required:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">      </span><span class="c"># Change this to your host&#39;s public address</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">      </span>- <span class="l">WG_HOST=</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">      </span><span class="c"># Optional:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">      </span>- <span class="l">PASSWORD=  </span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">weejewel/wg-easy</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">wg-easy</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">      </span>- <span class="l">/root/wg-easy:/etc/wireguard</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">      </span>- <span class="s2">&#34;51820:51820/udp&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">      </span>- <span class="s2">&#34;51821:51821/tcp&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">    </span><span class="nt">cap_add</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">      </span>- <span class="l">NET_ADMIN</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">      </span>- <span class="l">SYS_MODULE</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">    </span><span class="nt">sysctls</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">      </span>- <span class="l">net.ipv4.ip_forward=1</span><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w">      </span>- <span class="l">net.ipv4.conf.all.src_valid_mark=1</span><span class="w">
+</span></span></span></code></pre></div><p>The first thing you have to do is change the <code>WG_HOST</code> variable to the IP-Address or domain of your server and set a <code>PASSWORD</code> so that not everyone can access the Web UI. After that, you can start the Docker container with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker compose -f wg-easy-compose.yml up -d
+</span></span></code></pre></div><p>After some time, you should be able to access the website of wg-easy with the URL: <code>http://&lt;Server_IP_Address&gt;:51821</code>.</p>
+<p>There are multiple clients available cross-platform to connect to your VPN Server, including an Android/iOS app and a Windows/Linux client. To download a client, you can visit their <a href="https://www.wireguard.com/install/">Official Website</a>.</p>
+<p>To establish a VPN connection with your server, you first need to add the connection on the client. You can do that by pressing the <code>new</code> button on the wg-easy website.
+<img src="./attachments/2024-01-20_16-58.png" alt="2024-01-20_16-58.png">
+After giving your connection a name, you can either download the config file and send it to your client device or scan the QR code.</p>
+<p>There are two additional things to keep in mind when trying to connect to your VPN Server:</p>
+<ol>
+<li>If the network from which you use the VPN has the same IP range as the network from your home server, Wireguard will get confused and won&rsquo;t know where to send the internet traffic. You can fix this by using a more uncommon IP range for your home network.</li>
+<li>If you try to use the Windows Wireguard client, you might experience the issue that all the traffic gets directed towards you in a cycle, and you DoS yourself. This is a <a href="https://github.com/WireGuard/wireguard-nt/blob/master/TODO.md">known issue</a>(see &ldquo;Forwarding/WeakHostSend breaks IP_PKTINFO&rdquo;). You can disable it by:
+<ol>
+<li>Opening a powershell terminal</li>
+<li>To see the status of weakhostsend, type:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">Get-NetIPInterface <span class="p">|</span> ft interfacealias,forwarding,weakhostsend
+</span></span></code></pre></div></li>
+<li>To disable it, use the following command:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">netsh interface ipv4 <span class="nb">set</span> interface <span class="s2">&#34;Ethernet 2&#34;</span> <span class="nv">weakhostreceive</span><span class="o">=</span>disable
+</span></span></code></pre></div></li>
+<li>Do the same for the <code>forwarding</code> variable.</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://www.wireguard.com/">https://www.wireguard.com/</a></li>
+</ul>
+ 
+</div>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

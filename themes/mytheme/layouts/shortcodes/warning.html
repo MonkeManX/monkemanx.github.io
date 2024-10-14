@@ -1,0 +1,21 @@
+<!-- layouts/shortcodes/warning.html -->
+<style>
+    .warning {
+        background-color: #ffe4e1; /* Light pink background color */
+        padding: 15px; /* Padding inside the box */
+        border-radius: 5px; /* Rounded corners */
+        margin-bottom: 15px; /* Margin at the bottom for spacing */
+    }
+
+    .warning-title {
+        font-size: 20px; /* Title font size */
+        margin-bottom: 10px; /* Margin below the title */
+        color: #8b0000; /* Dark red text color */
+        font-weight: bold; /* Bold text */
+    }
+</style>
+
+<div class="warning">
+    <div class="warning-title">{{ .Get 0 | markdownify | safeHTML }}</div>
+    <p>{{ .Inner | markdownify }}</p>
+</div>

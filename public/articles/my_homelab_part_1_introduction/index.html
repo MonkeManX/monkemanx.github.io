@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="active">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> My Homelab Part 1: Introduction </h1>
+  <p class="pub-date">Published: December 26, 2023</p>
+  
+  <p>In my previous blog post in the Homelab Series, I shared how the need to maintain a regular sleep schedule led me to the idea of running my own server at home, which I affectionately call my &ldquo;homelab.&rdquo; The primary purpose of this homelab is to control the smart lights in my room through Home Assistant.</p>
+<p>In this post, I want to provide an overview about the different technologies I employed for running my Homelab.</p>
+<h2 id="hardware">Hardware</h2>
+<p>The first thing I needed for my Homelab was the Hardware, specifically a device to host services such as Home Assistant. I considered multiple options, including:</p>
+<ul>
+<li><a href="https://projects.raspberrypi.org/en/">Raspberry Pi</a>,</li>
+<li>ThinkCentre,</li>
+<li>Old Laptop,</li>
+</ul>
+<h3 id="thinkcentre">ThinkCentre</h3>
+<p>ThinkCentre is a line of business-oriented desktop computers developed by IBM and later Lenovo.</p>
+<p>ThinkCentre is a line of business-oriented desktop computers developed by IBM and later Lenovo. The reasons I considered ThinkCentre are threefold. Firstly, ThinkCentre has a compact form factor, making them easy to fit into a corner of the room. Secondly, they are cost-effective (often under 100 bucks) when purchased from marketplaces like eBay, as businesses frequently replace and sell off used units. Lastly, due to their age, they are well supported by FOSS software</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/d75367962fae83752347d1484ae650d4.png">
+    <figcaption style="text-align:center">Source:An ThinkCentre M910 tiny"</figcaption>
+</figure>
+
+
+<h3 id="old-laptop">Old Laptop</h3>
+<p>I also thought about repurposing an old laptop (approximately 10 years old) as a server, that I had lying around.
+But ultimately decided against it because of the higher power usage and the risk of the battery catching fire.</p>
+<p>If you decide to go this round, I would recommend configuring the laptop to not sleep when the lid is closed.
+If you use a Linux based system which uses systemd you can do this by following these steps:
+<style>
+   
+  details {
+    border: 2px solid #3498db;  
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f2f2f2;  
+    overflow: hidden;  
+    transition: max-height 0.5s ease-out;  
+  }
+
+   
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3498db;  
+  }
+
+   
+  .collapsible-content {
+    margin-top: 10px;
+  }
+</style>
+
+
+
+
+
+<details >
+  <summary>Disable Sleep mode on systemd devices</summary>
+  <ol>
+<li><code>sudo nano /etc/systemd/logind.conf</code></li>
+<li>Change: <code>#HandleLidSwitch=suspend #HandleLidSwitchExternalPower=suspend</code> to <code>HandleLidSwitch=ignore HandleLidSwitchExternalPower=ignore</code></li>
+</ol>
+
+</details>
+
+</p>
+
+<style>
+    .info {
+        background-color: #e6f7ff;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .info-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #000080;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="info">
+    <div class="info-title">Info</div>
+    <p>Another aspect to bear in mind, when using a laptop as server, is managing power consumption, especially if the operating system is installed with a desktop environment. Turning off the screen can help save power.</p>
+</div>
+
+
+<h3 id="rasperry-pi">Rasperry Pi</h3>
+<p>The Raspberry Pi is a mini-computer that utilizes a single-board, incorporating all necessary electronic components onto a single board. It has the advantages of <a href="https://picockpit.com/raspberry-pi/how-much-does-power-usage-cost-for-the-pi-4/">low power consumption</a>), affordability, and being entirely open-source.</p>
+
+<style>
+    .info {
+        background-color: #e6f7ff;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .info-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #000080;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="info">
+    <div class="info-title">Info</div>
+    <p>Keep in mind that the Raspberry Pi uses a CPU based on ARM architecture, and not all software is compiled for ARM.</p>
+</div>
+
+
+<p>In my case, as I had a Raspberry Pi 3 B lying around, I opted to use it as my server.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/8504911ef60b57259099581ac08b7a5c.png">
+    <figcaption style="text-align:center">An Rasperry Pi 2</figcaption>
+</figure>
+
+
+<h2 id="operating-system">Operating System</h2>
+<p>Choosing the right operating system for the server is crucial. Options include Ubuntu Server, headless Debian, or Raspbian for the Raspberry Pi.
+I decided to use <a href="https://dietpi.com/">dietpi</a>,  a minimal headless operating system that aims to reduce resource consumption by installing only the most essential services.</p>
+<p>Here&rsquo;s a resource consumption comparison between dietpi and Raspberry Pi OS:</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240330_22h24m17s_grim.png">
+    <figcaption style="text-align:center">Source:<a>https://dietpi.com/stats.html#distrostats</a></figcaption>
+</figure>
+
+
+<h2 id="docker">Docker</h2>
+<p>An essential part of my setup is <a href="https://www.docker.com/">docker</a>, a software that allows users to install other software in containers, virtually isolating them.</p>
+<p>One can think about docker as little Virtual Machines, that are way more granular. They isolate a single application/service with all their dependencies, they need to run.</p>
+<p>Why would you install a software as a container instead of running it directly bare metal?
+Docker provides several advantages:</p>
+<ul>
+<li><strong>Increased Security</strong>: Each software is containerized, ensuring that if one container is breached, the attacker only gains access to that specific container.</li>
+<li><strong>Modularity</strong>:  Docker allows for easy maintenance or replacement of a service without affecting others.</li>
+<li><strong>Easy and Fast Deployment</strong>: Software deployment is quick and straightforward through a single command.</li>
+<li><strong>Reproducibility and Portability</strong>: Docker ensures consistent behavior, even when reinstalled on different machines.</li>
+</ul>
+<h2 id="building-my-home-server">Building my Home Server</h2>
+<p>I assembled my own Home Server, incorporating the following following:</p>
+<ul>
+<li>1x Rasperry Pi 3b</li>
+<li>2x Toschiba Portable 1 TB Disks</li>
+<li>1x Sonoff Zigbee 3.0 USB Dongle Plus</li>
+<li>1x Generic Power Strip</li>
+<li>1x Generic Ethernet Splitter</li>
+<li>1x Generic Powered USB Hub</li>
+<li>1x Old Cardboard Box of a Power supply</li>
+</ul>
+<p>The Raspberry Pi serves as the main component of the entire server; it acts as the heart responsible for running all the necessary software. Additionally, I have two external hard disks connected via USB to the USB hub, which, in turn, is connected to the Raspberry Pi. One disk functions as the primary storage, while the other serves as a backup by cloning the contents of the first disk.</p>
+
+<style>
+    .info {
+        background-color: #e6f7ff;  
+        padding: 15px;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+    }
+
+    .info-title {
+        font-size: 20px;  
+        margin-bottom: 10px;  
+        color: #000080;  
+        font-weight: bold;  
+    }
+</style>
+
+<div class="info">
+    <div class="info-title">Info</div>
+    <p>Despite the Raspberry Pi having sufficient USB ports for the hard disks, it is not recommended to directly connect them to the Raspberry Pi. This precaution is due to the limited power supply of the Raspberry Pi; connecting too many devices directly may lead to power instabilities.</p>
+</div>
+
+
+<p>I&rsquo;ve also added an Ethernet splitter since my room has only one Ethernet cable, which needs to be shared with my computer. The Sonoff Zigbee 3.0 USB Dongle Plus acts as an antenna for Zigbee signals, allowing me to control my smart devices via Home Assistant.</p>
+<p>Lastly, the power strip ensures a stable power supply for the Raspberry Pi, USB hub, and Ethernet splitter. An added advantage is that turning the power strip off completely powers down the entire server.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/IMG_20240119_211642797.jpg">
+</figure>
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%;" src="/attachments/IMG_20240119_211727160.jpg">
+    <figcaption style="text-align: center;">Some Images of my Home Server"</figcaption>
+</figure>
+
+
+<p>(Don&rsquo;t judge me for the cable management -_-)</p>
+<h1 id="whats-next">What&rsquo;s Next?</h1>
+<p>In the next part of this series, I will show how I installed the Operating System and Docker to my Rasperry Pi 3 and how Docker generally works.</p>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

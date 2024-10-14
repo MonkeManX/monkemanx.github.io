@@ -1,0 +1,22 @@
+<!-- layouts/shortcodes/info.html -->
+<style>
+    .info {
+        background-color: #e6f7ff; /* Light blue background color */
+        padding: 15px; /* Padding inside the box */
+        border-radius: 5px; /* Rounded corners */
+        margin-bottom: 15px; /* Margin at the bottom for spacing */
+    }
+
+    .info-title {
+        font-size: 20px; /* Title font size */
+        margin-bottom: 10px; /* Margin below the title */
+        color: #000080; /* Blue text color for the title */
+        font-weight: bold; /* Bold text */
+    }
+</style>
+
+<div class="info">
+    <div class="info-title">{{ .Get 0 | markdownify | safeHTML }}</div>
+    <p>{{ .Inner | markdownify }}</p>
+</div>
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <a id="top"></a>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+      <title>My site</title>
+      <link rel="stylesheet" href="/styles/style.css">  
+
+      <link rel="stylesheet" href="/css/syntax.css">
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  </head>
+  <body><div class="nav-div">
+  <nav>
+        <a href="http://localhost:1313/" class="">Home</a>
+        <a href="http://localhost:1313/articles/" class="">Articles</a>
+        <a href="http://localhost:1313/paper-summary/" class="active">Paper-Summaries</a>
+        <a href="http://localhost:1313/tags/" class="">Tags</a>
+        <a href="http://localhost:1313/poetry/" class="">Writings</a>
+        <a href="http://localhost:1313/tangled_thoughts/" class="">Tangled-Thoughts</a>
+        <a href="http://localhost:1313/media/" class="">Media</a>
+        <a href="http://localhost:1313/links/" class="">Links</a>
+        <a href="http://localhost:1313/about/" class="">About</a>
+  </nav>
+</div>
+<div id="content">
+<div class="article-content"> 
+  <h1> Toolformer: Language Models Can Teach Themselves to Use Tools </h1>
+  <p class="pub-date">Published: February 1, 2024</p>
+  
+  <p><strong>Paper Title:</strong> Toolformer: Language Models Can Teach Themselves to Use Tools<br>
+<strong>Link to Paper:</strong> <a href="https://arxiv.org/abs/2302.04761">https://arxiv.org/abs/2302.04761</a><br>
+<strong>Date:</strong> 9. Feburary 2023<br>
+<strong>Paper Type:</strong> NLP, LLM<br>
+<strong>Short Abstract:</strong><br>
+In this paper, the author demonstrates that Language Models (LLMs) can autonomously learn to use external tools through simple APIs. They introduce the Toolformer model, which is trained to showcase this unique ability.</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>While LLMs excel in various Natural Language Processing (NLP) tasks, they face limitations, including the inability to access real-time information, the tendency to hallucinate facts, a lack of precise mathematical skills, and a lack of awareness of temporal progression.</p>
+<p>One promising approach to address these limitations is to empower LLMs with the capability to use external tools such as search engines, calculators, or calendars.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-01%2021-05-30.png">
+</figure>
+
+
+<p><em>Toolformer</em> is a model that learns to use tools without requiring extensive human-annotated data. It retains its generality and autonomously decides when to leverage external tools.</p>
+<p>To achieve this, the authors utilize LLMs with <em>in-context learning</em> to generate datasets from scratch based on a few human-made examples. They employ self-supervised loss to discard unhelpful data and fine-tune the LLM with the retained dataset.</p>
+<p>Experiments indicate that Toolformer, based on GPT-J, exhibits stronger zero-shot performance than GPT-3.</p>
+<h1 id="2-method">2. Method</h1>
+<p>Each API that should be incorporated into the LLM need to be presentable as text sequences, this allows the integration of the API calls \(c=(a_c, i_c)\) with text, where \(a_c\) is the name of the PI, \(i_c\) the input and \(r\) the result.
+The encoding of API calls is illustrated in Figure 1.</p>
+<p>e(c) = &lt;API&gt; a_c (i_c) &lt;/API&gt;<br>
+e(c, r) = &lt;API&gt; a_c (i_c) \rightarrow r &lt;/API&gt;</p>
+<p>Given a dataset of plain text, the dataset
+is first converted into dataset with API calls, this is done in the following steps:</p>
+<ol>
+<li>Sample large amount of potential API calls</li>
+<li>Execute these potential API calls</li>
+<li>Filter out all API calls that are not helpful</li>
+</ol>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-01%2021-05-58.png">
+</figure>
+
+
+<p>After filtering, the API calls are merged into the dataset, creating an augmented dataset for fine-tuning the LLM.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-01%2021-27-09.png">
+</figure>
+
+
+<p><strong>Sampling</strong> involves writing a prompt to encourage the LLM to annotate an example, selecting the top k candidate positions for the API calls by computing the probability of the &lt;API&gt; token.</p>
+<p><strong>Execution</strong> depends on the API call made, with the response required to be presentable as text.</p>
+<p>To <strong>filter the API calls</strong>, the authors assess whether keeping the API call would decrease the loss when used; otherwise, it is discarded.</p>
+<p>After sampling, the model is further <strong>fine-tuned</strong> on the augmented dataset, maintaining the original dataset apart from the inserted API calls.</p>
+<p>In <strong>Inference</strong>, the LLM does decoding until it hits a &ldquo;\(\rightarrow\)&rdquo; token, at which point the API call is executed and inserted in its place.</p>
+<h1 id="3-tools">3. Tools</h1>
+<p>In the paper they investigate the following tools:</p>
+<ul>
+<li><strong>Expert Question Answering System</strong></li>
+<li><strong>Calculator</strong></li>
+<li><strong>Wikipedia search</strong></li>
+<li><strong>Machine Translation System</strong></li>
+<li><strong>Calendar</strong></li>
+</ul>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/Screenshot%20from%202024-02-01%2021-38-10.png">
+</figure>
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-02-01%2021-38-48.png">
+</figure>
+
+
+<h1 id="4-experiments">4. Experiments</h1>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments//Screenshot%20from%202024-02-01%2021-40-15.png">
+</figure>
+
+
+<p>Enabling the model to make API calls more than doubles its performance in all tasks and surpasses larger models. However, Toolformer is not as effective as GPT-3, possibly due to its inability to interact seamlessly with API calls.</p>
+
+
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-02-01%2021-44-22.png">
+</figure>
+
+
+<p>Training on the augmented dataset does not lead to an increase in perplexity compared to training on the un-augmented dataset.</p>
+<h1 id="5-conclusion">5. Conclusion</h1>
+<p>It would be intriguing to further explore the limitations of Toolformer, such as:</p>
+<ul>
+<li>Ability of using API calls in a chain</li>
+<li>Allowing the LLM to interact with API calls, by iterating on them.</li>
+</ul>
+ 
+</div>
+<a href="#top" class="back-to-top-button">
+  &#9650; 
+</a>
+
+    </div><div class="footer">
+  Made with <a href="https://gohugo.io/">Hugo</a>, website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+</div>
+</body>
+</html>

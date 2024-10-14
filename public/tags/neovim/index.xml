@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neovim on </title>
+    <link>http://localhost:1313/tags/neovim/</link>
+    <description>Recent content in Neovim on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2024 18:40:31 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim Markdown Preview: Command not working</title>
+      <link>http://localhost:1313/articles/neovim_markdown_preview/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/neovim_markdown_preview/</guid>
+      <description>&lt;style&gt;&#xA;    .info {&#xA;        background-color: #e6f7ff;  &#xA;        padding: 15px;  &#xA;        border-radius: 5px;  &#xA;        margin-bottom: 15px;  &#xA;    }&#xA;&#xA;    .info-title {&#xA;        font-size: 20px;  &#xA;        margin-bottom: 10px;  &#xA;        color: #000080;  &#xA;        font-weight: bold;  &#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;div class=&#34;info&#34;&gt;&#xA;    &lt;div class=&#34;info-title&#34;&gt;Info&lt;/div&gt;&#xA;    &lt;p&gt;This post isn&amp;rsquo;t meant as an introduction to any of the topics discussed below. Instead, it&amp;rsquo;s a brief guide on how to make the Markdown-Preview plugin work.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;(Neo)vim is, for the most part, the only editor I use for all my needs -— whether it&amp;rsquo;s programming, editing configuration files, or taking notes. I write all of my notes in Markdown for several reasons: it&amp;rsquo;s widely compatible, has easy-to-understand syntax, is very readable even without rendering, and, through various flavors, allows for additional functionality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neovim Tricks</title>
+      <link>http://localhost:1313/articles/neovim_cheatsheet/</link>
+      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/neovim_cheatsheet/</guid>
+      <description>&lt;p&gt;This is a short cheat sheet for important keybindings in vim more specific for neovim. I am using &lt;a href=&#34;https://nvchad.com/&#34;&gt;NVChad&lt;/a&gt; as such not all keybindings are applicable to standard vim/nvim.&lt;br&gt;&#xA;Capitalization is important!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Modes:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;ESC&lt;/code&gt;, switch to normal mode.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;v&lt;/code&gt;, switch to visual mode.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;i&lt;/code&gt; or &lt;code&gt;a&lt;/code&gt;, switch to insert mode.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;R&lt;/code&gt;, replace mode.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Navigation:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;arrow keys&lt;/code&gt;, shame on you!&lt;/li&gt;&#xA;&lt;li&gt;Movement keys, can be combined with arbitrary number&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;h&lt;/code&gt;, to the left.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;l&lt;/code&gt;, to the right.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;j&lt;/code&gt;, downwards.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;k&lt;/code&gt;, upwards.&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;10j&lt;/code&gt; jumps 10 lines downwards, &lt;code&gt;5k&lt;/code&gt; jumps 4 lines upwards.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;_&lt;/code&gt; or &lt;code&gt;0&lt;/code&gt;, beginning of the line.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;$&lt;/code&gt;, to the end of the line.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;e&lt;/code&gt;, one word forward.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;b&lt;/code&gt;, one word backward.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;:NUMBER&lt;/code&gt;, jumps to the line number.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;f&lt;/code&gt; + &lt;code&gt;CHAR&lt;/code&gt;, jumps to the &lt;em&gt;next&lt;/em&gt; character matching the input char.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;F&lt;/code&gt; + &lt;code&gt;CHAR&lt;/code&gt;, jumps to the &lt;em&gt;previous&lt;/em&gt; character matching the input char.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;gg&lt;/code&gt;, moves to the &lt;em&gt;top&lt;/em&gt; of the files.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;G&lt;/code&gt;, moves to the &lt;em&gt;bottom&lt;/em&gt; of the file.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;20G&lt;/code&gt;, moves cursor to line 20.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Navigating Code:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

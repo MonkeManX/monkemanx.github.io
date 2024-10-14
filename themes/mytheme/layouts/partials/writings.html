@@ -1,0 +1,60 @@
+
+<div class="main-container">
+  <div class="image-container">
+    <img src="/attachments/japanese_landscape.png" class="bg-image">
+    <a href="haiku">
+      <img src=" /attachments/haiku_image_black.png" class="front-image" style="transform: translateY(-100%) scale(0.5,0.5)">
+    <a>
+  </div>
+
+  <div class="image-container">
+    <img src="/attachments/lain-wired.jpg" class="bg-image">
+    <a href="lain">
+      <img src="/attachments/lain_text.png" class="front-image" style="transform:translatey(-100%) scale(0.7,0.7)">
+    <a>
+  </div>
+  
+  <div class="image-container">
+    <img src="/attachments/horse_sea.jpg" class="bg-image" style="opacity:0.9">
+    <a href="lost">
+      <img src="/attachments/lost_text.png" class="front-image" style="transform:translatey(-100%) scale(0.7,0.7)">
+    <a>
+  </div>
+
+</div>
+
+<style>
+.main-container {
+    max-width: 60em; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.image-container {
+    border: solid 1px gray;
+    margin: 20px;
+    height: 30vh;
+    border-radius: 5px;
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+.bg-image, .front-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.bg-image {
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.front-image {
+    z-index: 2;
+}
+</style>
