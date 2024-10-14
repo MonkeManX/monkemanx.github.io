@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+      {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+      {{ end }}
       <a id="top"></a>
       <meta charset="utf-8">
       <meta name="viewport" 

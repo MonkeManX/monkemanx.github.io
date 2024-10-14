@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LLM-Agent on </title>
+    <title>LLM-Agent on MonkeMan&#39;s Blog</title>
     <link>http://localhost:1313/tags/llm-agent/</link>
-    <description>Recent content in LLM-Agent on </description>
+    <description>Recent content in LLM-Agent on MonkeMan&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jul 2024 20:49:40 +0200</lastBuildDate>
