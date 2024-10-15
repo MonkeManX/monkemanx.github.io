@@ -2,14 +2,13 @@ baseURL = 'https://monkemanx.github.io/'
 languageCode = 'en-us'
 theme = 'mytheme'
 
-title = "Notes from the Wired"
-favicon = "monke.png"
+[params]
+  title = "Notes from the Wired"
+  favicon = "monke.png"
+  rss = true
 
 [outputs]
   home = ["HTML", "RSS"]
-
-[params]
-  rss = true
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime"]

@@ -45,8 +45,7 @@ pre code { white-space: pre-wrap; }
 * For Navigation
 * ------------------------------------
 */
-
-
+/* General styling */
 nav {
   display: flex;
   align-items: center;
@@ -56,31 +55,49 @@ nav {
   padding: 0 15px;
   margin-top: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow items to wrap onto a new line */
 }
 
-
+/* Styling for active links */
 nav a.active {
-    text-decoration: underline; /* Underline active link */
+    text-decoration: underline; 
     text-decoration-thickness: 2px;
     text-decoration-color:black;
 }
 
+/* Container for navbar */
 .nav-div {
   display: flex;
   justify-content: center;
 }
 
-/*For the Elemnts inside the Navbar*/
+/* Navbar links */
 .nav-div a {
   text-decoration: none;
   margin-left: 10px;
-  color: #727578
+  color: #727578;
 }
 
+/* Hover effect for links */
 .nav-div a:hover {
   color: #4f4f54;
-  /*text-shadow: 0 0 1px black;*/
   font-weight: bold;
+}
+
+/* Media query for smartphones */
+@media (max-width: 800px) { /* Got the vlaue by testing what fits on screen*/
+  nav {
+    justify-content: flex-start; /* Align items to the left on small screens */
+  }
+
+  .nav-div {
+    flex-wrap: wrap; /* Wrap items into a second row if needed */
+    text-align: center; /* Center text in mobile view */
+  }
+
+  .nav-div a {
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
 }
 
 .back-to-top-button {
