@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neovim on MonkeMan&#39;s Blog</title>
+    <title>Neovim on Notes from the Wired</title>
     <link>http://localhost:1313/tags/neovim/</link>
-    <description>Recent content in Neovim on MonkeMan&#39;s Blog</description>
+    <description>Recent content in Neovim on Notes from the Wired</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2024 18:40:31 +0200</lastBuildDate>

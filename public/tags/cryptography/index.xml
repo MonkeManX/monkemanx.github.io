@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cryptography on MonkeMan&#39;s Blog</title>
+    <title>Cryptography on Notes from the Wired</title>
     <link>http://localhost:1313/tags/cryptography/</link>
-    <description>Recent content in Cryptography on MonkeMan&#39;s Blog</description>
+    <description>Recent content in Cryptography on Notes from the Wired</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Jun 2024 19:15:13 +0200</lastBuildDate>

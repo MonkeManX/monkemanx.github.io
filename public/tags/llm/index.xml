@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LLM on MonkeMan&#39;s Blog</title>
+    <title>LLM on Notes from the Wired</title>
     <link>http://localhost:1313/tags/llm/</link>
-    <description>Recent content in LLM on MonkeMan&#39;s Blog</description>
+    <description>Recent content in LLM on Notes from the Wired</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Sep 2024 23:03:20 +0200</lastBuildDate>

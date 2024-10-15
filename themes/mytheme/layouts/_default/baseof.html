@@ -8,7 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" 
           content="width=device-width, initial-scale=1.0">
-      <title>My site</title>
+      <title>{{ .Site.Title }}</title>
+      
+      <link rel="icon" href="{{ "monke.png" | absURL }}" sizes="64x64" type="image/png">
+      {{ with .Site.Params.favicon }}
+        <link rel="icon" href="{{ . | absURL }}" sizes="64x64" type="image/png">
+      {{ end }}
+      
       <link rel="stylesheet" href="{{ "styles/style.css" | relURL }}">  
 
       <link rel="stylesheet" href="/css/syntax.css">
