@@ -72,7 +72,7 @@ Our space is \(R = \mathbb{Z}_1 \times \mathbb{Z}_2\), we have four states \(Q =
 </figure>
 {{< /rawhtml >}}
 
-In the most simple case our turing machine works deterministic, though it can also work asynchronous or probabilistic.
+In the most simple case our cellular automata works deterministic, though it can also work asynchronous or probabilistic.
 
 **1.3.3 Definition** --
 A **neighborhood**, is a finite set \(N = \{n_1, ..., n_k\} \subset \mathbb{Z}^d\). Where \(\mathbb{Z}^d\) is not the Space \(R\). The neighborhood of a cell \(i\) is \(n(i) := n + i\), this means we can get the \(j\)-th neighbor from the cell \(\) like this \(i + n_j\).
