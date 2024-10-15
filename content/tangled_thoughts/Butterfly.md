@@ -1,6 +1,6 @@
 ---
 title: Butterfly
-date: 2024-10-15 12:00:00
+date: 2024-10-14 12:00:00
 ---
 
 "Once, Zhuang Zhou dreamed he was a butterfly, a butterfly flitting and fluttering about, happy with himself and doing as he pleased. He didn't know that he was Zhuang Zhou.  
