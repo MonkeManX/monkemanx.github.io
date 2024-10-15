@@ -37,7 +37,8 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [diskprices](https://diskprices.com/), [serverpartdeals](https://serverpartdeals.com/) - Two websites which offer good prices for hard disks.
 - [tteck promox scripts](https://tteck.github.io/Proxmox/) - Various scripts to deploy software on promox.
 - [HackTheBox Lab](https://app.hackthebox.com/home) - A website to learn pentesting.
-- [scribd downloader](https://scribd.vdownloaders.com/), [musescore downloader](https://github.com/LibreScore/dl-librescore) - Tools to download from music note sheet websites.
+- [songsterr downloader](https://www.songsterr-downloader.com/), [scribd downloader](https://scribd.vdownloaders.com/), [musescore downloader](https://github.com/LibreScore/dl-librescore) - Tools to download from music note sheet websites.
+- [GP to PDF](https://gpxtopdf.com/) - Convert Guitar Pro (`gp`) files into PDF sheet music. 
 
 ## Lainchan-Webring
 
