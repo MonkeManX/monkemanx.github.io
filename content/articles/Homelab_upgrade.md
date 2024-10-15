@@ -1,5 +1,5 @@
 ---
-title: 'Server Upgrade or Docuementation of my new Homelab'
+title: 'Server Upgrade or Documentation of my new Homelab'
 date: 2024-10-05 21:00:00
 tags: ["homelab", "proxmox", "zfs"]
 markup:
