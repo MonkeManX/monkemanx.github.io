@@ -75,7 +75,7 @@ Our space is \(R = \mathbb{Z}_1 \times \mathbb{Z}_2\), we have four states \(Q =
 In the most simple case our cellular automata works deterministic, though it can also work asynchronous or probabilistic.
 
 **1.3.3 Definition** --
-A **neighborhood**, is a finite set \(N = \{n_1, ..., n_k\} \subset \mathbb{Z}^d\). Where \(\mathbb{Z}^d\) is not the Space \(R\). The neighborhood of a cell \(i\) is \(n(i) := n + i\), this means we can get the \(j\)-th neighbor from the cell \(\) like this \(i + n_j\).
+A **neighborhood**, is a finite set \(N = \{n_1, ..., n_k\} \subset \mathbb{Z}^d\). Where \(\mathbb{Z}^d\) is not the Space \(R\). The neighborhood of a cell \(i\) is \(n(i) := n + i\), this means we can get the \(j\)-th neighbor from the cell \(i\) like this \(i + n_j\).
 We call the mapping \(l : N \to Q\) a **local configuration** i.e. this describes a possible distribution of states in a neighborhood.
 
 **1.3.4 Definition** --
