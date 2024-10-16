@@ -213,3 +213,24 @@ In your unfathomable wisdom, you sent a light on my side.
 Your light drives the forces of evil away.
 Your light's, my children's dream.
 {{< /poem >}}
+
+
+{{< poem >}}
+Watching, Staring at the Screen.
+There she is; Who could forsee?
+Laughing, Learning in the marquee.
+Telling stories of her feats; Stop I plea.
+    Six and more friends wherever she goes.
+    Five languages close.
+    Four arts exposed.
+    Three proffesions well-disposed. 
+    Two homes disclosed.
+    One city wide network self-imposed.
+    Zero faults juxtaposed.
+I blink, 
+    my head spins, 
+        my vision turns red,
+            my thoughts are a tangled mess.
+Through the contrast, I despair!
+    What am I? If not her?
+{{< /poem >}}
