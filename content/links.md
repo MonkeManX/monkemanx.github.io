@@ -39,6 +39,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [HackTheBox Lab](https://app.hackthebox.com/home) - A website to learn pentesting.
 - [songsterr downloader](https://www.songsterr-downloader.com/), [scribd downloader](https://scribd.vdownloaders.com/), [musescore downloader](https://github.com/LibreScore/dl-librescore) - Tools to download from music note sheet websites.
 - [GP to PDF](https://gpxtopdf.com/) - Convert Guitar Pro (`gp`) files into PDF sheet music. 
+- [Rateyourmusic](https://rateyourmusic.com/) - Great site to discover music for your favorite genre.
 
 ## Lainchan-Webring
 
