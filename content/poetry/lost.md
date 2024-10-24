@@ -234,3 +234,30 @@ I blink,
 Through the contrast, I despair!
     What am I? If not her?
 {{< /poem >}}
+
+
+{{< poem >}}
+I wished,
+    A brick,
+        would fall,
+            Upon my,
+Head!
+{{< /poem >}}
+
+
+{{< poem >}}
+The Socratic Fool,
+Had a task to do,
+To lift the mundane to the divine,
+O, what joy would it be?
+
+The Aquinastic Jester,
+Had a task to do,
+To tear down the divine to the mundane,
+O, how cruel would it be?
+
+The wise clown,
+Had no task to do,
+The divine is divine and the mundane is mundane,
+O, what sorrow this must be.
+{{< /poem >}}
