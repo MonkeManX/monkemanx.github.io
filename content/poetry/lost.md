@@ -261,3 +261,31 @@ Had no task to do,
 The divine is divine and the mundane is mundane,
 O, what sorrow this must be.
 {{< /poem >}}
+
+
+{{< poem >}}
+They see me standing and wink,
+I try to hide, why?
+Too Late.
+
+I am a fucking robot,
+I do things without Control,
+
+I hear laugh, I do too.
+I hear talk, I spin a tale.
+Truth mixed with lies,
+Not a delicate dance,
+But a piano key on a string, 
+Playing a tune.
+
+I am a fucking robot,
+I watch myself--
+Total loss of control.
+{{< /poem >}}
+
+
+{{< poem >}}
+I feel my mind slipping.
+Slipping to where? Maybe on a banana?
+Into Insanity.
+{{< /poem >}}
