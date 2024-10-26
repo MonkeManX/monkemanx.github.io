@@ -15,15 +15,15 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [bestweb.net](https://web.archive.org/web/20130318043835/http://users.bestweb.net/~bkoser/marnen/funstuff/email/index.html) - Only available on the Wayback-Machine, this site offers interesting finds, found in the late 90s and early 2000s in email exchanges, highlight for me is a list of haiku's dedicated to error messages.      
 - [matias.ma](https://matias.ma/nsfw/) - The conga!
 - [sftn.io](https://sftn.github.io/) - A collection of beautiful poetry inspired by computer science and the lain aesthetics.
-- [laintine](https://lainzine.org) - The website of the digital lain magazine, a magazine about technology, digital life and art, in the lain aesthetics.
+- [lainzine](https://lainzine.org) - The website of the digital lain magazine, a magazine about technology, digital life and art, in the lain aesthetics.
 - [textfiles.com](http://textfiles.com) - Offers a body of textiles mostly from the 1980s about various topics such as humour, science, politics and much more.
 - [xkcd.com](https://xkcd.com/) - Much more known than all the other sites listed her, but a classic nonetheless. This site has many comics on various topics, mostly science stuff.
 - [annas-blog](https://annas-blog.org/) - A blog by the provider of the largest online collection of books available in the world.
 - [wiby.me](http://wiby.me/), [marginalia.nu](https://www.marginalia.nu/) - Both cool search-engines that help you find other small scale interesting sites.
 - [konaka.com/lain](http://www.konaka.com/alice6/lain/index.shtml) - personally owned site by the scenario writer of "Serial Experiments Lain", has fun stuff like the lain-font used in the anime.
-- [whatbeatsrocks](https://whatbeatsrock.com) - Test yourself, what beats rock in rock, paper and scissor?
+- [whatbeatsrock](https://whatbeatsrock.com) - Test yourself, what beats rock in rock, paper and scissor?
 - [tetris](https://tetr.io/) - Play tetris online, solo and against others.
-- [realhumanbein](https://realhumanbean.net/) - Are you a real human bean?
+- [realhumanbean](https://realhumanbean.net/) - Are you a real human bean?
 - [anime dnatest](https://hardanimeshirts.com/dndtest) - How based are you? 
 - [Blue vs Green](https://ismy.blue/) - Test your differentiation of blue vs green in comparison to the population.
 - [Miracle Sort](https://pages.cs.wisc.edu/~okushi/) - My favorite sorting algorithm.
