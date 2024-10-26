@@ -104,6 +104,10 @@ Another web-serial that subverts the classical Xianxia tropes, where our protago
 
 ## Music Albums
 
+{{< media "/attachments/kagayaki.jpg" "Aratamemashite Hajimemashite Midori Desu" "https://rateyourmusic.com/release/album/%E9%AB%98%E6%9C%A8%E6%AD%A3%E5%8B%9D/%E3%81%8B%E3%81%8C%E3%82%84%E3%81%8D-kagayaki/">}}
+Kagayaki is an album by Masakatsu Takagi and another great Japanese album (Boy, do I love the japs). This time, it leans toward folk music. The coolest thing about this album is its sheer diversity: we have instrumental tracks, songs, tracks with spoken word similar to Slint, and lots of unique sounds. It’s a relaxing album, like a warm hug.
+{{< /media >}}
+
 {{< media "/attachments/midori.webp" "Aratamemashite Hajimemashite Midori Desu" "https://www.last.fm/music/Midori/Aratamemashite+Hajimemashite+Midori+Desu">}}
 I dont even know how to describe it, it is by the band "Midori", and it it is all of the following things: punk, rock, experimental, screamo, noise and jazz. Watch the live perfromance of the band it's amazing.
 {{< /media >}}
