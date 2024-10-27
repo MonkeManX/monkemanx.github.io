@@ -40,6 +40,8 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [songsterr downloader](https://www.songsterr-downloader.com/), [scribd downloader](https://scribd.vdownloaders.com/), [musescore downloader](https://github.com/LibreScore/dl-librescore) - Tools to download from music note sheet websites.
 - [GP to PDF](https://gpxtopdf.com/) - Convert Guitar Pro (`gp`) files into PDF sheet music. 
 - [Rateyourmusic](https://rateyourmusic.com/) - Great site to discover music for your favorite genre.
+- [/lit/ Wiki](https://lit.trainroll.xyz/wiki/Main_Page) - The /lit/ wiki for books and reading.
+- [Philosophy reading list](/attachments/Philosophy_Project_1.pdf) - A reading list of philsophy by /lit/.
 
 ## Lainchan-Webring
 
