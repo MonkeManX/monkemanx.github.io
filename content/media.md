@@ -25,6 +25,11 @@ It is a black comedy that satirizes the threat of nuclear destruction during the
 A little bit of representation for German movie making. It's a very chaotic movie which is a lot of fun, the main theme the movie explores is the topic of free will and how small encounters or actions can shape one's life in the most unforeseen consequences. But the movie doesn't say "You have no control of your life", instead it shows that through your own actions you can succeed.
 {{< /media >}}
 
+
+{{< media "/attachments/house_1977.jpg" "House (1977)" "https://en.wikipedia.org/wiki/House_(1977_film)" >}}
+A Japanese comedy-horror movie that’s really weird but cool. It’s about a group of high school girls who go together to a house in the countryside, where strange things start to happen.
+{{< /media >}}
+
 ## TV-Shows
 
 
