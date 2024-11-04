@@ -289,3 +289,32 @@ I feel my mind slipping.
 Slipping to where? Maybe on a banana?
 Into Insanity.
 {{< /poem >}}
+
+
+{{< poem >}}
+<b>More on Abortion, or: What Does it Mean to Have a Right? In what way does a right differ from something that isn’t a right but still feels necessary enough that we would criticize others for not providing it?</b>
+
+In Judith Thomson’s A Defense of Abortion, she argues that no one has the right to use another’s body simply to survive. For instance, just because someone has a defective heart doesn’t grant them the right to kill another person for a heart transplant. By this reasoning, a right to life does not guarantee a right to everything needed to sustain that life but rather a right not to be killed. Thomson further argues that, while it may be morally preferable to help someone in need of life-saving aid, a person is not morally obligated to provide it at their own expenses, even if society would disapprove of their refusal. This suggests that failing to help is not morally justified but in simpler words unkind or mean.
+
+Thomson implicitly differentiates between two types of moral cases:
+1. An obligation to help.
+2. No obligation to help, but encouragement to do so, with failure to help viewed unfavorably.
+
+I question whether this differentiation truly exists. Imagine the devil himself appears and offers you two choices: kill an innocent baby, or allow all of humanity to perish. The baby has a right to life, placing it in the first category. But what sense does it make to preserve the baby’s life at the cost of all humanity? The notion of “saving principles” in such a scenario—allowing the world to collapse while claiming moral purity—feels unsettlingly close to Dostoevsky’s Underground Man: “I say let the world go to hell, but I should always have my tea.”
+
+Some might find this example extreme. So let’s consider something more realistic: nuclear first strikes. Could there be cases where a nuclear first strike is morally justifiable? If an adversarial nation is on the verge of launching a devastating nuclear attack, is a preemptive strike justified? And if not, would the principle of restraint still be worth upholding in the face of annihilation? Is there any comfort in saying, “At least we stuck to our principles,” while our nation lies in ruins?
+
+Thus, I argue that the distinction between the two categories is tenuous. When stakes are high enough, everything becomes negotiable—even rights. There are no categorical rights or principles, only rules that hold as long as exceptions haven’t been identified.
+
+This argument doesn’t imply that all morally wrong acts become morally right under pressure. Rather, in extreme cases, actions like killing the baby or initiating a nuclear strike may indeed be morally justified. What is morally right, if not what we should always do and what society would universally endorse? A definition of morality that allows for exceptions fails to offer meaningful guidance.
+
+How does this relate to the abortion debate?
+
+Let’s set aside cases where the mother’s life is at risk and focus on situations where it isn’t. Thomson argues that the fetus has no right to use the mother’s body, just as a violinist has no right to use your kidney. In this framework, abortion is permissible—not morally wrong, but socially frowned upon.
+
+However, based on the reasoning above, the answer to whether the violinist has a right to your kidney (and whether abortion is justified) depends on the harm that refusing causes.
+
+So, what’s the answer? I don’t know.
+
+A few final notes: I’m not a fan of utilitarianism, though my argument here may have a utilitarian undertone. Perhaps virtue ethics could accommodate this line of thinking, but it’s debatable. The example of the devil is clearly unrealistic, yet the nuclear analogy is more grounded and addresses a real dilemma. As for abortion, I find the bodily autonomy argument less compelling and instead prefer to explore the question of personhood. I wonder, too, if there’s a strong counterargument against this “moral inflation,” where scaling up the stakes increasingly blurs ethical distinctions
+{{< /poem >}}
