@@ -66,7 +66,7 @@ This should align the security levels of WSL and Windows, preventing new `.Ident
 
 ## The "I Gave Up" Method
 
-If all else fails, just add the files to a `.gitignore` of your project.
+If all else fails, just add the fucker to the `.gitignore` of your `git` projects.
 
 ## Conclusion
 
