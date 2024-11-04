@@ -4,7 +4,7 @@ theme = 'mytheme'
 
 [params]
   title = "Notes from the Wired"
-  favicon = "monke.png"
+  favicon = "note_4371209.png"
   rss = true
 
 [outputs]
