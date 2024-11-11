@@ -6,7 +6,7 @@ tags: ["paper-summary", "LLM", "Code"]
 
 **Paper Title:** Agentless: Demystifying LLM-based Software Engineering Agents   
 **Link to Paper:** https://arxiv.org/abs/2407.01489    
-**Date:** 1. Jurly 2024   
+**Date:** 1. July 2024   
 **Paper Type:** LLM, Code-generation   
 **Short Abstract:**     
 Recently, there have been made many advancements in the field of autonomous software development using large language models (LLMs). Most of this progress has been driven by *agents*. These agents are equipped with tools that allow them to run commands, observe the codebase, and plan future actions. However, these agents come with significant complexity. This paper poses the question: *Do we really need all this complexity?*

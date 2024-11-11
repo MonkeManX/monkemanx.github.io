@@ -42,6 +42,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [Rateyourmusic](https://rateyourmusic.com/) - Great site to discover music for your favorite genre.
 - [/lit/ Wiki](https://lit.trainroll.xyz/wiki/Main_Page) - The /lit/ wiki for books and reading.
 - [Philosophy reading list](/attachments/Philosophy_Project_1.pdf) - A reading list of philsophy by /lit/.
+- [termbin](https://termbin.com/) - If you ever can't copy something (maybe because you dont have a graphical interface) use termbin to upload it and access it.
 
 ## Lainchan-Webring
 
