@@ -318,3 +318,20 @@ So, what’s the answer? I don’t know.
 
 A few final notes: I’m not a fan of utilitarianism, though my argument here may have a utilitarian undertone. Perhaps virtue ethics could accommodate this line of thinking, but it’s debatable. The example of the devil is clearly unrealistic, yet the nuclear analogy is more grounded and addresses a real dilemma. As for abortion, I find the bodily autonomy argument less compelling and instead prefer to explore the question of personhood. I wonder, too, if there’s a strong counterargument against this “moral inflation,” where scaling up the stakes increasingly blurs ethical distinctions
 {{< /poem >}}
+
+
+{{< poem >}}
+I like feeling real. I like feeling like I exist. I dislike feeling fake. I dislike non existence.
+
+Do I care much for truth? No, truth is just a relationship between me and not me, a useful tool, to be abandoned when it has no more use.
+
+I like being alone, just me and my thoughts bouncing back and forth, more me less something else. 
+I dislike being accompanied, articulated thoughts bouncing between us, more something else less me.
+But alone, I am so lonely.
+
+I am afraid of being less, I was afraid as child swearing to never stop playing with Lego, I was afraid as a teen vowing to become a cs pro, I am afraid now of how I'll loose myself next.
+
+I fear death, not for what it is, but what it stands for, non existence, the total complete erasure of all what is me. I fear not the erasure, but what is left. 
+
+Not for others sake, but for the ghost of mine.
+{{< /poem >}}

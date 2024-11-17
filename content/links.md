@@ -28,6 +28,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [Blue vs Green](https://ismy.blue/) - Test your differentiation of blue vs green in comparison to the population.
 - [Miracle Sort](https://pages.cs.wisc.edu/~okushi/) - My favorite sorting algorithm.
 - [Submarine internet cable map](https://www.submarinecablemap.com/) - Like the title says, it shows a map of all the submarine internet cable around the world.
+- [NixOs and Flakes](https://nixos-and-flakes.thiscute.world/introduction/), [Nix Lectures](https://ayats.org/blog/nix-tuto-1), [Tour of Nix](https://nixcloud.io/tour/) - Resources for getting started with Nix and NixOS.
 
 ## Tools
 
@@ -43,6 +44,12 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [/lit/ Wiki](https://lit.trainroll.xyz/wiki/Main_Page) - The /lit/ wiki for books and reading.
 - [Philosophy reading list](/attachments/Philosophy_Project_1.pdf) - A reading list of philsophy by /lit/.
 - [termbin](https://termbin.com/) - If you ever can't copy something (maybe because you dont have a graphical interface) use termbin to upload it and access it.
+
+## Things I wanna Investigate
+
+- [Ontology of Divinity](https://www.degruyter.com/document/doi/10.1515/9783111332536/html?lang=en)
+- [A divine consistency proof of mathemathics](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=d59fa64aa1249b29ff2971b089acb23c034a9870)
+- [Meshtastic](https://meshtastic.org/)
 
 ## Lainchan-Webring
 

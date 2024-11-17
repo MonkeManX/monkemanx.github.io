@@ -76,7 +76,7 @@ It seems this bug is quite old and likely won't be fixed anytime soon. Someday, 
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/bug_comic.png">
     <figcaption style="text-align:center; margin-top: 10px;">
-        The GitHub issue for this bug is quite entertaining—highly recommended.
+        The GitHub issue for this bug is quite entertaining to read, highly recommended.
     </figcaption>
 </figure>
 {{< /rawhtml >}}

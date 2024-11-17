@@ -148,3 +148,9 @@ Created by the Argentine band "Mujercitas Terror," this is a rock/post-punk albu
 {{< media "/attachments/en_el_radio.webp" "Perdidxs en el Ruido" "https://www.last.fm/music/Las+Olas+(Noispop)/Perdidxs+en+el+Ruido">}}
 Created by the Chilean band "Las Olas (Noispop)," this is a post-punk, noise-pop album. I can't speak to the lyrics, but from the sound, they are criminally underrated. The album has a length of 27 minutes and contains 10 tracks.
 {{< /media >}}
+
+## Philosophy Stuff
+
+{{< media "/attachments/free_will.jpg" "Free Will" "https://en.wikipedia.org/wiki/Free_Will_(book)">}}
+Cool book by Sam Harris, arguing that free will is an illusion.
+{{< /media >}}
