@@ -44,6 +44,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [/lit/ Wiki](https://lit.trainroll.xyz/wiki/Main_Page) - The /lit/ wiki for books and reading.
 - [Philosophy reading list](/attachments/Philosophy_Project_1.pdf) - A reading list of philsophy by /lit/.
 - [termbin](https://termbin.com/) - If you ever can't copy something (maybe because you dont have a graphical interface) use termbin to upload it and access it.
+- [Internet Standards RFC](https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard) - A collection of the most important internet protocols described in *excruciating* detail.
 
 ## Things I wanna Investigate
 

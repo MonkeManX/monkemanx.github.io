@@ -1,7 +1,7 @@
 ---
 title: 'Tearing Down the Internet'
 date: 2024-11-16
-tags: ["paper-summary", "Internet", "InfoSec"]
+tags: ["paper-summary", "Networks", "InfoSec"]
 ---
 
 **Paper Title:** Tearing Down the Internet  
