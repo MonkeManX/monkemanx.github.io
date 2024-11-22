@@ -85,3 +85,11 @@ with cotton Candy Cruise's--
 The dog barks.
 ~ The Sky
 {{< /haiku >}}
+
+
+{{< haiku >}}
+White fairy in the air!
+Swirling; My hand, her pure dress.
+A droplet remains.
+~ Snowflake
+{{< /haiku >}}

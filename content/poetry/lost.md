@@ -335,3 +335,23 @@ I fear death, not for what it is, but what it stands for, non existence, the tot
 
 Not for others sake, but for the ghost of mine.
 {{< /poem >}}
+
+
+{{< poem >}}
+My life; Day in day out.
+But there's more imminence. What is it? 
+Questions so big, it almost breaks my back.
+Surrounded; A leaf flattering in the wind.
+
+I see a train and ask myself why?
+    Why not fly?
+I see a smile and ask myself why?
+     Why not cry?
+I see an idler and ask myself why?
+    Why not explode?  
+To bits and pieces with blood everywhere.
+
+The only answer is how, But I want why!
+    Why a why?
+The I, a hypnotic cynic swirl collapsing in itself.
+{{< /poem >}}
