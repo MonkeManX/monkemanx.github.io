@@ -154,3 +154,7 @@ Created by the Chilean band "Las Olas (Noispop)," this is a post-punk, noise-pop
 {{< media "/attachments/free_will.jpg" "Free Will" "https://en.wikipedia.org/wiki/Free_Will_(book)">}}
 Cool book by Sam Harris, arguing that free will is an illusion.
 {{< /media >}}
+
+{{< media "/attachments/metaethics_an_introduction.jpg" "Metaethics: An Introduction" "https://www.amazon.de/-/en/Andrew-Fisher/dp/1844652580">}}
+A very readable introduction to metaethics, not too long, suitable even for laypeople, that covers the most important branches of the field. However, it is not a complete account, as it does not, for example, include 'response-dependence theories' or 'constructivism.
+{{< /media >}}
