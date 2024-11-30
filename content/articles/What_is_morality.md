@@ -22,7 +22,7 @@ In this article, I will attempt to provide an overview of the question *What is 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/monke_smart_cigarette_up.jpg">
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/monke_smart_cigarette.jpg">
     <figcaption style="margin-top: 10px;text-align:center">Me thinking about morality.</figcaption>
 </figure>
 {{< /rawhtml >}}
