@@ -14,6 +14,6 @@ Have a lot of stuff planned, before next semester starts.
         <source src="/attachments/burning.webm" type="video/webm">
         Your Browser does not support this embedded video.
     </video>
-    <figcaption style="font-style: italic;margin-top: 10px;">Me, burning my exercersise sheet from last seemster and tissues full of snot.</figcaption>
+    <figcaption style="font-style: italic;margin-top: 10px;">Me, burning my exercise sheets from last semester and tissues full of snot.</figcaption>
 {{< /rawhtml >}}
 
