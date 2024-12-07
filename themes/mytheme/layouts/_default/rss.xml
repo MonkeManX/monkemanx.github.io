@@ -1,3 +1,5 @@
+<!-- By: https://digitaldrummerj.me/hugo-create-rss-feed/ -->
+
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
