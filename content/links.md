@@ -30,6 +30,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [Submarine internet cable map](https://www.submarinecablemap.com/) - Like the title says, it shows a map of all the submarine internet cable around the world.
 - [NixOs and Flakes](https://nixos-and-flakes.thiscute.world/introduction/), [Nix Lectures](https://ayats.org/blog/nix-tuto-1), [Tour of Nix](https://nixcloud.io/tour/) - Resources for getting started with Nix and NixOS.
 - [Insult CS](https://www.cs.purdue.edu/homes/dec/essay.criticize.html) - How to efficently insult computer scientist.
+- [Against the Axiom Of Choice](https://siegelmaxwellc.wordpress.com/2023/09/30/why-i-am-against-the-full-axiom-of-choice/) - An argument of why mathemathican may should rely less on AoC.
 
 ## Tools
 
