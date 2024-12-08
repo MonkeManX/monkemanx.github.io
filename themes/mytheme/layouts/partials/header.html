@@ -1,5 +1,8 @@
 <div class="nav-div">
   <nav>
+      <a href="/index.xml" target="_blank" class="rss-link">
+    <img alt="RSS Icon" width="30" height="30" src="/rss-square.svg">
+  </a>
         <a href="{{ .Site.BaseURL }}" class="{{ if .IsHome }}active{{ end }}">Home</a>
         <a href="{{ .Site.BaseURL }}articles/" class="{{ if eq .Section "articles" }}active{{ end }}">Articles</a>
         <a href="{{ .Site.BaseURL }}paper-summary/" class="{{ if eq .Section "paper-summary" }}active{{ end }}">Paper-Summaries</a>

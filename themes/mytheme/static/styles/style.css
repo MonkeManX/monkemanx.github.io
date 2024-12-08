@@ -58,6 +58,10 @@ nav {
   flex-wrap: wrap; /* Allow items to wrap onto a new line */
 }
 
+.rss-link {
+  margin-right: 20px;
+}
+
 /* Styling for active links */
 nav a.active {
     text-decoration: underline; 
