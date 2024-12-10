@@ -1,5 +1,5 @@
 ---
-title: 'Family Pets and Animals'
+title: 'Family Pets/Animals'
 date: 2024-12-10
 tags: []
 ---
