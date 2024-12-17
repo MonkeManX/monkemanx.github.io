@@ -123,7 +123,7 @@ If, through [random quantum fluctuation](https://en.wikipedia.org/wiki/Boltzmann
 I would answer no to all of these questions. How consciousness or human life was created, or by whom, does not matter in the consideration of whether they should have moral rights.
 
 
-## Location and Moral Rights 
+# Location and Moral Rights 
 
 We could argue, what separates "real" people from dream people is the location or place they inhabit. This is true in a sense: dream people live in dreams, while "real" people live in the "real" physical world. But simply pointing to a difference in location is not enough to establish a moral distinction. The distinction needs to be *morally relevant*, and it clearly is not.
 
