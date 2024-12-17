@@ -6,7 +6,7 @@ tags: ["paper-summary", "Networks", "InfoSec"]
 
 **Paper Title:** Tearing Down the Internet  
 **Link to Paper:** [Read the paper](https://hal.science/hal-00344480/document)  
-**Date Published:** April 15, 2014  
+**Date Published:** 2003   
 **Paper Type:** InfoSec, Internet, Cybersecurity, Resilience, Topology  
 **Short Abstract:**  
 The internet becomes increasingly vital each day, making downtime or disruption potentially catastrophic. It is therefore important to investigate the resilience of the internet against hacker attacks. This paper explores how many nodes would need to be targeted to significantly disrupt the functionality of the internet.
