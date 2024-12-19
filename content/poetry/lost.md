@@ -355,3 +355,10 @@ The only answer is how, But I want why!
     Why a why?
 The I, a hypnotic cynic swirl collapsing in itself.
 {{< /poem >}}
+
+
+{{< poem >}}
+A masturbatory baffoon,
+  Cried out the moon,
+    He wished he was a baboon.
+{{< /poem >}}
