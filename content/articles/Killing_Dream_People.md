@@ -289,4 +289,4 @@ Looking back at the dream I had that I mentioned at the beginning, I wonder if w
 Ressources:
 - Active Inference: The Free Energy Principle in Mind, Brain, and Behavior
 - [The Connection Between Intelligence and Consciousness](https://writing.rochester.edu/celebrating/2017/NAShonorable.pdf)
-
+- [Our World just a dream](https://www.thecollector.com/arthur-schopenhauers-idealism-is-our-world-just-a-dream/)
