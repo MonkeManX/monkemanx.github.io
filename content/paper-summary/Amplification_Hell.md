@@ -6,7 +6,7 @@ tags: ["paper-summary", InfoSec"]
 
 **Paper Title:** Amplification Hell: Revisiting Network Protocols for DDoS Abuse  
 **Link to Paper:** https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/amplification-hell-revisiting-network-protocols-ddos-abuse/  
-**Date:** 22. Feburary 2022   
+**Date:** 22. Feburary 2014  
 **Paper Type:** Internet, InfoSec, Cybersecurity, Attack-Paper, DNS, DDoS, DRDoS   
 **Short Abstract:**    
 In this paper, the authors introduce *Distributed Reflective Denial-of-Service (DRDoS)* attacks, where attackers exploit open public servers to send large volumes of traffic to a target using IP spoofing. They demonstrate multiple protocols that are vulnerable to such attacks.
