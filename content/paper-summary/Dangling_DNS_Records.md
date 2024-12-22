@@ -1,7 +1,7 @@
 ---
 title: 'All Your DNS Records Point to Us'
 date: 2024-12-19
-tags: ["paper-summary", InfoSec"]
+tags: ["paper-summary", "InfoSec"]
 ---
 
 **Paper Title:** All Your DNS Records Point to Us    
