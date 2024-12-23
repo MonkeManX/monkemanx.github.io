@@ -38,6 +38,13 @@ Legion follows the story of David, a man diagnosed with schizophrenia who has sp
 {{< /media >}}
 
 
+## Anime
+
+{{< media "/attachments/Hinamatsuri.jpg" "Hinamatsuri" "https://myanimelist.net/anime/36296/Hinamatsuri" >}}
+A hilarious slice-of-life anime that is also incredibly cute. It’s about a yakuza who, through surreal circumstances, suddenly becomes the caregiver of a girl, leading to their wacky adventures.
+{{< /media >}}
+
+
 ## Books 
 
 
