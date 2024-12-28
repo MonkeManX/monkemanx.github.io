@@ -1,7 +1,7 @@
 ---
 title: 'The Meaning of Ought'
 date: 2024-12-20
-tags: ["Philosophy"]
+tags: ["Philosophy", "Morality"]
 ---
 
 

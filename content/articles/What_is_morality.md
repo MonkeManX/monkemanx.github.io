@@ -487,7 +487,7 @@ This view supports cognitivism and rejects realism, while not adhering to error 
 
 ## Constructivism/Response-dependence Theory 
 
-/
+See [My metaethical position](https://monkemanx.github.io/articles/my_metaethical_position/).
 
 
 {{< addspace height="100px" >}}
