@@ -1,7 +1,7 @@
 ---
 title: 'Identifying the Scan and Attack Infrastructures Behind Amplification DDoS Attacks'
 date: 2024-12-21
-tags: ["paper-summary", InfoSec"]
+tags: ["paper-summary", "InfoSec"]
 ---
 
 **Paper Title:** Identifying the Scan and Attack Infrastructures Behind Amplification DDoS Attacks  

@@ -1,7 +1,7 @@
 ---
 title: 'Amplification Hell: Revisiting Network Protocols for DDoS Abuse'
 date: 2024-12-20
-tags: ["paper-summary", InfoSec"]
+tags: ["paper-summary", "InfoSec"]
 ---
 
 **Paper Title:** Amplification Hell: Revisiting Network Protocols for DDoS Abuse  
