@@ -156,3 +156,9 @@ In the end, being less connected, seeking more freedom in the isolated sense, mi
     <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/the-wired-is-calling-us.jpg">
 </figure>
 {{< /rawhtml >}}
+
+
+---
+
+Resources:  
+- Free Will by Sam Harris
