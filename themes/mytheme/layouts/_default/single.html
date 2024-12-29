@@ -4,7 +4,7 @@
   
   <p class="pub-date">
   
-  {{ if or (eq .Title "Media") (eq .Title "The Old Wired") (eq .Title "Lost") (eq .Title "俳句") (eq .Title "Lain") }}
+  {{ if or (eq .Title "Media") (eq .Title "The Old Wired") (eq .Title "Lost") (eq .Title "俳句") (eq .Title "Lain") (eq .Title "About" )}}
     {{ .Lastmod.Format "January 2, 2006" }}
   {{ else }}
       {{ time.Format "January 2, 2006" .PublishDate }}

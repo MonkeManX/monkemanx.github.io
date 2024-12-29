@@ -61,7 +61,9 @@ Next, I want to go over the arguments for why I believe the metaethical framewor
 
 I think the strongest argument in favor of my position is that there are large differences in moral rules between societies. For example, in Aztec society, human sacrifice was considered a moral duty, which most Western societies would frown upon. Another example is the difference between Eastern societies like China and Japan, and more Western countries. Eastern societies place much more emphasis on collectivism, such as filial piety, while Western societies focus more on individualism, which also reflects in their moralities. Societies in the Middle East tend to place much more focus on honor. Such differences cannot easily be explained by a *realist* position.
 
-A non-cognitivist explanation also seems unlikely, because when we use moral statements, we treat them as if they are matters of truth. What is the meaning of language, if not how we use it and what we associate with it? The [Frege-Geach Problem](https://monkemanx.github.io/articles/what_is_morality/#the-frege-geach-problem), which tells us that Modus Ponens doesn’t work in non-cognitivism, is another issue that non-cognitivists face. Lastly, the Baldwin effect provides a plausible theory of why morality could develop through evolution via a constructivist process. 
+A non-cognitivist explanation also seems unlikely, because when we use moral statements, we treat them as if they are matters of truth. What is the meaning of language, if not how we use it and what we associate with it? The [Frege-Geach Problem](https://monkemanx.github.io/articles/what_is_morality/#the-frege-geach-problem), which tells us that Modus Ponens doesn’t work in non-cognitivism, is another issue that non-cognitivists face. 
+
+Furthermore, the already mentioned Baldwin effect provides a plausible theory of why morality could develop through evolution via a constructivist process. 
 
 Thus, I believe that a cognitivist, anti-realist position, like constructivism, is true.
 

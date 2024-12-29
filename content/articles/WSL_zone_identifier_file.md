@@ -1,5 +1,5 @@
 ---
-title: 'Prevent Zone.Identifier Files in WSL'
+title: "Prevent 'Zone.Identifier' Files in WSL"
 date: 2024-11-04
 tags: ["linux"]
 ---

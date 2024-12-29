@@ -120,7 +120,7 @@ If, in the future, we train a neural network on a large amount of data and it ga
 
 If, through [random quantum fluctuation](https://en.wikipedia.org/wiki/Boltzmann_brain), a fully-formed human were to appear in front of you, indistinguishable from a "normal" human in terms of external appearance, memories, and full consciousness, would it have less value just because of how it came to exist?
 
-I would answer no to all of these questions. How consciousness or human life was created, or by whom, does not matter in the consideration of whether they should have moral rights.
+I would answer, "No!", to all of these questions. How consciousness or human life was created, or by whom, does not matter in the consideration of whether they should have moral rights.
 
 
 # Location and Moral Rights 
@@ -244,13 +244,13 @@ This problem exists because we can only observe the outside of other humans but 
 
 We do have various tests that can check how conscious a being is. For example, the [mirror test](https://en.wikipedia.org/wiki/Mirror_test) can be used to test if an animal recognizes itself. But in the end, all we measure is their behavior, outward indicators, never truly piercing the veil to the inner life.
 
-The question of when something is conscious is of utmost importance if one defines a being as having value because it has the *capacity for consciousness*. For example, if a dog whimpers or yelps when hurt, we don’t know if this is simply a reaction to a stimulus, like a sunflower turning to face the sun, or if the dog has an actual subjective experience of being and pain.
+The question of when something is conscious is of utmost importance if one defines personhood as the *capacity for consciousness*. For example, if a dog whimpers or yelps when hurt, we don’t know if this is simply a reaction to a stimulus, like a sunflower turning to face the sun, or if the dog has an actual subjective experience of being and pain.
 
-Nonetheless, whether a thing is conscious or not lies at the bedrock of our moral theory. Every day, we make moral decisions based on this, even if we do not know if a thing is conscious or not. So how do we decide if a thing deserves moral consideration? Why do we believe that other humans are conscious? Or that intelligent animals, like dolphins, possess a low form of consciousness and, with that, some moral consideration?
+Nonetheless, whether a thing is conscious or not lies at the bedrock of our moral theory. Every day, we make moral decisions about people and animals, even if we do not know if a thing is conscious or not. So how do we decide if a thing deserves moral consideration? Why do we believe that other humans are conscious? Or that intelligent animals, like dolphins, possess a low form of consciousness and, with that, some moral consideration?
 
 We do it based on outward behavior. I do not have any guarantee that the reader reading this is conscious or not, but I can say that you are probably similar to me both in what we are and in our behavior. Since I know that I am conscious and we are roughly similar to each other, I can assume you are conscious or at least act like you are. The same goes for animals. We make various behavioral tests and can see that a dolphin recognizes itself in the mirror, that [dolphins may commit suicide](https://www.huffpost.com/entry/dolphin-commits-suicide_n_5491513), that [dolphins use pufferfish to get high](https://www.smithsonianmag.com/smart-news/dolphins-seem-to-use-toxic-pufferfish-to-get-high-180948219/), [dolphins cooperate with humans](https://www.mpg.de/19793111/0125-ornr-cooperation-between-dolphins-and-humans-987453-x), and many more behaviors we recognize as things we humans do. And just like with humans, we extrapolate from that that they are, to some extent, conscious.
 
-We can do the same thing regarding dream people. If in a dream I am an action hero, I can see the dream people call out in pain and fall to the ground when shot. I can talk to them, hold conversations, and so on. All of this is to say that dream people exhibit behaviors we would expect from conscious agents, and since we do not have a reliable way to investigate whether something is conscious or not, all that leaves us to decide that, is their behavior.
+We can do the same thing regarding dream people. If in a dream I am an action hero, fighting against villains, and I shoot them, I can see the dream people call out in pain and fall to the ground. I can talk to them, hold conversations, and so on. All of this is to say that dream people exhibit behaviors we would expect from conscious agents, and since we do not have a reliable way to investigate whether something is conscious or not, all that leaves us to decide that, is their behavior.
 
 Or, in other words, from the [duck test](https://en.wikipedia.org/wiki/Duck_test): If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
 
