@@ -62,6 +62,6 @@ Thus, whether the final statue—your character—becomes a beautiful masterpiec
 ---
 
 Resources:  
-- Modern Moral Philosophy
+- *Modern Moral Philosophy* by GEM Anscombe, 1958
 
 

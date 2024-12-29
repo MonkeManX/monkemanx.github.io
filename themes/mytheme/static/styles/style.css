@@ -40,6 +40,11 @@ blockquote {
 }
 pre code { white-space: pre-wrap; }
 
+.separator {
+  margin: 0 5px;
+  color: #ccc;  /* Lighter separator color */
+}
+
 
 /*
 * For Navigation

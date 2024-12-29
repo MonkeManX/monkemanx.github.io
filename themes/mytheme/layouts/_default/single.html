@@ -1,12 +1,26 @@
 {{ define "main" }}
 <div class="article-content"> 
   <h1> {{ .Title }} </h1>
-  <p class="pub-date">Published: {{ time.Format "January 2, 2006" .PublishDate }}</p>
+  
+  <p class="pub-date">
+  
   {{ if or (eq .Title "Media") (eq .Title "The Old Wired") (eq .Title "Lost") (eq .Title "俳句") (eq .Title "Lain") }}
-    <p class="pub-date">Last modified: {{ .Lastmod.Format  "January 2, 2006" }}</p>
+    {{ .Lastmod.Format "January 2, 2006" }}
+  {{ else }}
+      {{ time.Format "January 2, 2006" .PublishDate }}
   {{ end }}
-  {{ .Content }} 
-</div>
+
+  {{ if or (eq .Section "articles") (eq .Section "paper-summary") }}
+    <span class="separator">|</span>
+    {{ lang.FormatNumberCustom 0 .WordCount }} words
+    <span class="separator">|</span>
+    {{ .ReadingTime }}min read
+  {{ end }}
+</p>
+  
+  {{ .Content }}
+
+  </div>
 <a href="#top" class="back-to-top-button">
   &#9650; <!-- Unicode arrow symbol -->
 </a>

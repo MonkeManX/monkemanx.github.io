@@ -15,12 +15,19 @@ This section is a work in progress, and I will add entries to it whenever I writ
 ## Philsophy
 
 **Value Theory**  
-- [What do we value?](https://monkemanx.github.io/articles/when_does_a_something_deserve_moral_considerations/)
+- What do we *value*? A: [Capability to deploy consciousness](https://monkemanx.github.io/articles/when_does_a_something_deserve_moral_considerations/)
 
 **Ethics**  
-- [What does *ought* mean?](https://monkemanx.github.io/articles/the_meaning_of_ought/)
-- [What is morality?](https://monkemanx.github.io/articles/my_metaethical_position/)
-- How shoud one act to be moral? A: Virtue ethics
+- What does *ought* mean? [Ought as outdated concept](https://monkemanx.github.io/articles/the_meaning_of_ought/)
+- What is *morality*? A: [Constructivism](https://monkemanx.github.io/articles/my_metaethical_position/)
+- How shoud one *act* to be moral? A: Virtue ethics
+
+**Epistemology**
+- What is *knowledge*? A: [Contextualism](https://monkemanx.github.io/articles/what_is_knowledge/)
+
+**Metaphysics**
+- Do we have *free will*? A:[No](https://monkemanx.github.io/articles/about_freedom/#4-what-about-free-will)
+
 
 ## Artificial Intelligence 
 
