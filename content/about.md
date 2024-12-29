@@ -12,7 +12,7 @@ I am a Computer Science student currently studying at the *Karlsruhe Institute o
 This section provides an overview of the positions I hold on various topics. By "positions," I mean knowledge or beliefs that I consider highly likely to be true, though they are more speculative in nature rather than purely factual. 
 This section is a work in progress, and I will add entries to it whenever I write a relevant article.
 
-## Philsophy
+## Philosophy
 
 **Value Theory**  
 - What do we *value*? A: [Capability to deploy consciousness](https://monkemanx.github.io/articles/when_does_a_something_deserve_moral_considerations/)
