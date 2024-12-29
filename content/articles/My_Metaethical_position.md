@@ -5,7 +5,6 @@ tags: ["Philosophy", "Morality"]
 ---
 
 
-
 In a [recent post](https://monkemanx.github.io/articles/what_is_morality/), I discussed metaethics: what it is, the various contemporary metaethical positions that exist today, and how one can categorize them. For a short recap, metaethics is a branch of philosophy that grapples with the question *What is morality?* — i.e., the ontology, or the study of the essence, of morality. Metaethics is distinct from ethics, which addresses the question *What ought one to do?* or *What is the most moral action one can take?* Metaethics, on the other hand, seeks to understand what morality is made of.
 
 This brings me to how one can categorize metaethical positions. For a comprehensive explanation, I recommend my aforementioned article. Broadly, we can differentiate between *cognitivist* positions, which hold that moral statements are matters of truth, and *non-cognitivist* positions, which argue that moral statements are not about truth but about something else, such as emotions. 
@@ -70,3 +69,8 @@ Lastly, I want to counter some arguments against constructivism. One argument th
 
 Another problematic point for constructivism is how to handle disagreements between societies. If there are truly multiple sets of moralities that are all true, how do we resolve conflicts that arise from them? My answer is that we resolve them by showing that your moral system works in practice better than the other. If another society adopts your moral system, you can then work within the same framework and engage in moral arguments. How would one show that one moral system is superior to another? I think a good example of this is how Western liberalism, especially in America, tries to spread democracy around the world by showing other nations the benefits of adopting it.
 
+{{< rawhtml >}}
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pepe_writing.jpg">
+</figure>
+{{< /rawhtml >}}

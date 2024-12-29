@@ -59,6 +59,12 @@ I want to end with a thought from Aristotle. He suggested that every action a hu
 
 Thus, whether the final statue—your character—becomes a beautiful masterpiece or something rotten and sinister depends entirely on your virtuous or vicious actions.  
 
+{{< rawhtml >}}
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Aristotle.jpg">
+</figure>
+{{< /rawhtml >}}
+
 ---
 
 Resources:  
