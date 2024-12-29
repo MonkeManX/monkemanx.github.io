@@ -165,3 +165,7 @@ Cool book by Sam Harris, arguing that free will is an illusion.
 {{< media "/attachments/metaethics_an_introduction.jpg" "Metaethics: An Introduction" "https://www.amazon.de/-/en/Andrew-Fisher/dp/1844652580">}}
 A very readable introduction to metaethics, not too long, suitable even for laypeople, that covers the most important branches of the field. However, it is not a complete account, as it does not, for example, include 'response-dependence theories' or 'constructivism.
 {{< /media >}}
+
+{{< media "/attachments/knowledge_introduction.jpg" "Knowledge: A Very Short Introduction" "https://academic.oup.com/book/461">}}
+An introduction to epistemology and the theory of knowledge, it is roughly 150 pages long and covers topics such as rationalism, empiricism, skepticism, justified true belief, Gettier problems, and much more. It includes numerous examples, most of which are highly illustrative.
+{{< /media >}}
