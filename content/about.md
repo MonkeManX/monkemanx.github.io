@@ -15,8 +15,8 @@ This section is a work in progress, and I will add entries to it whenever I writ
 ## Philosophy
 
 **Metaphilosophy**
-- Why care about Philosophy? A: [Philosophical assumptions and better conversations](https://monkemanx.github.io/articles/metaphilosophy)
-- What is Philosophies aim? A: [Philosophy as a model](https://monkemanx.github.io/articles/metaphilosophy)
+- Why care about philosophy? A: [Philosophical assumptions and better conversations](https://monkemanx.github.io/articles/metaphilosophy)
+- What is the aim of philosophy? A: [Philosophy as a model](https://monkemanx.github.io/articles/metaphilosophy)
 
 
 **Value Theory**  
