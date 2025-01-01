@@ -14,6 +14,11 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 ## Philosophy
 
+**Metaphilosophy**
+- Why care about Philosophy? A: [Philosophical assumptions and better conversations](https://monkemanx.github.io/articles/metaphilosophy)
+- What is Philosophies aim? A: [Philosophy as a model](https://monkemanx.github.io/articles/metaphilosophy)
+
+
 **Value Theory**  
 - What do we *value*? A: [Capability to deploy consciousness](https://monkemanx.github.io/articles/when_does_a_something_deserve_moral_considerations/)
 
@@ -31,7 +36,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 ## Artificial Intelligence 
 
-**Road to AGI**  
+**Road to AGI**     
 Symbolic AI will not lead us to AGI, as it doesn't seem feasible to write enough rules to cover every possible intelligent behavior pattern. Instead, the current data-driven paradigm using deep learning, in combination with some form of reinforcement learning, will be needed. Deep learning provides the world model, while reinforcement learning allows the agent to act upon the world model and refine it, through a feedback loop, as layed out by *active inference*.
 
 {{< /details >}}
