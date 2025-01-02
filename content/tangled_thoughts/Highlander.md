@@ -1,6 +1,7 @@
 ---
 title: Highlander
 date: 2025-01-01
+tags: ["Movie"]
 ---
 
 {{< rawhtml >}}
@@ -9,5 +10,4 @@ date: 2025-01-01
 </figure>
 {{< /rawhtml >}}
 
-*Highlander (1986)* is a great movie with many action scenes and sword fights. It has some cool shots, a neat story, and is definitely not your standard action flick: 7/10.
-
+Highlander (1986): People club their heads in with swords throughout time. Some cool shots, neat story, and not your standard action flick. 7/10.
