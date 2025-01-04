@@ -34,7 +34,7 @@ A Japanese comedy-horror movie that’s really weird but cool. It’s about a gr
 
 
 {{< media "/attachments/legion_show.jpg" "Legion" "https://www.imdb.com/title/tt5114356/" >}}
-Legion follows the story of David, a man diagnosed with schizophrenia who has spent much of his life institutionalized. As the series unfolds, David starts to question if there might be more to his condition than just illness. While Legion may not be the most coherent or straightforward show (it is rather surreal at times), it stands out for its sheer creativity. Its unique storytelling, visual style, and Aubrey Plaza's amazing performance make it something truly special.
+Legion follows the story of David, a man diagnosed with schizophrenia who has spent much of his life institutionalized. As the series unfolds, David starts to question if there might be more to his condition than just illness. While Legion may not be the most coherent or straightforward show (it is rather surreal at times), it stands out for its creativity, unique storytelling, visual style, and Aubrey Plaza's performance. Later seasons are worse then the earlier ones.
 {{< /media >}}
 
 
@@ -168,4 +168,8 @@ A very readable introduction to metaethics, not too long, suitable even for layp
 
 {{< media "/attachments/knowledge_introduction.jpg" "Knowledge: A Very Short Introduction" "https://academic.oup.com/book/461">}}
 An introduction to epistemology and the theory of knowledge, it is roughly 150 pages long and covers topics such as rationalism, empiricism, skepticism, justified true belief, Gettier problems, and much more. It includes numerous examples, most of which are highly illustrative.
+{{< /media >}}
+
+{{< media "/attachments/cambridge_aristotele_ethics.jpg" "Aristotle's Nicomachean Ethics: An Introduction" "https://www.cambridge.org/de/universitypress/subjects/philosophy/classical-philosophy/aristotles-nicomachean-ethics-introduction?format=HB&isbn=9780521817424">}}
+A thorough analysis of the Nicomachean Ethics, one of the first works that attempts to lay out a philosophical theory based on first principles. At times, it felt a bit lengthy to me, and I would have preferred a more condensed version. This is because the author not only presents his interpretations of the passages but also explores alternative interpretations, weighing them against each other. The conclusion was also a bit wishy-washy. If one wants to delve deeply into Aristotle's ethics, I highly recommend it; otherwise, perhaps not as much.
 {{< /media >}}
