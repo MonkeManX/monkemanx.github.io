@@ -45,12 +45,16 @@ There are many ways to conceptualize philosophy and its purpose. My favorite app
 
 However, not all mathematical models are inherently useful. A model’s utility depends on its applicability to the real world, which is determined by empirical data. For example, mathematics can define Erdős–Rényi random graphs and prove properties about them. But only by examining real-world data can we determine whether these graphs accurately model real-world networks.
 
-Philosophy operates similarly. For example, when we ask, *What is morality?*, philosophers create models to explain it, such as emotivism, constructivism, or realism. We then test these philosophical models against our experiences and empirical evidence to evaluate how well they align with reality. In essence, philosophy aims to model aspects of reality, choosing frameworks based on how accurately they reflect the world.
 
+Philosophy operates in a way similar to natural science. For instance, when we ask questions like *What is morality?*, philosophers develop models to explain it, such as [emotivism, naturalism, or realism](https://monkemanx.github.io/articles/what_is_morality/). These models are then tested against our existing beliefs and empirical evidence to assess how well they align with reality. Just as scientific models are imperfect and prone to errors, philosophical models have their own shortcomings. Emotivism, for example, struggles with the "Frege-Geach" problem, naturalism faces challenges highlighted by the "Open Question Argument," and realism has difficulty addressing how morality, as a property of the real world, accounts for its motivational aspect. While none of these models perfectly explain morality or are free from flaws, they serve as tools to approximate the truth, much like models in natural science.
+
+This perspective is important to me because of my journey into philosophy. When I was 14, I was inspired by the incredible book Sophie's World and developed an interest in philosophy. However, over time, I became disillusioned. Philosophy started to feel frustratingly stagnant—endless open questions debated for thousands of years, with countless proposed answers, none of which ever seemed definitive. It felt as though no progress was being made. But when I started viewing these answers as models—imperfect attempts to approximate the truth from different perspectives; philosophy became much more meaningful. Each model offers a unique lens through which to view the world, helping us understand it, and ourselves. 
+
+{{< details "Verification Principle" "false" >}}
 A. J. Ayer proposed the **verification principle**, which asserts that only statements that can be verified—or falsified—are meaningful. Based on this principle, Ayer dismissed large parts of philosophy, such as metaphysics, as meaningless because they cannot be empirically tested.
 
-While I agree that falsifiability and verification are critical for meaningful theories, I disagree with outright dismissing metaphysics. Even if metaphysical theories cannot be empirically verified, they can still provide utility as models for understanding phenomena. Their value lies in offering frameworks to explore and think about questions that empirical science alone cannot fully address.
-
+While I agree that falsifiability and verification are critical for meaningful theories, I disagree with outright dismissing metaphysics. Even if metaphysical theories cannot be empirically verified (debatable?), they can still provide utility as models for understanding phenomena. Their value lies in offering frameworks to explore and think about questions that empirical science alone cannot fully address.
+{{< /details >}}
 
 
 ---
