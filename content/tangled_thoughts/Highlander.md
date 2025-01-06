@@ -10,4 +10,4 @@ tags: ["Movie"]
 </figure>
 {{< /rawhtml >}}
 
-Highlander (1986): People club their heads in with swords throughout time. Some cool shots, neat story, and not your standard action flick. 7/10.
+Highlander (1986): People club their heads in with swords throughout time. Some cool shots, neat story, and not your standard action flick. 6.5/10.

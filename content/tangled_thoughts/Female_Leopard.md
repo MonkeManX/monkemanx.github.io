@@ -1,7 +1,7 @@
 ---
 title: Female Leopard
 date: 2025-01-04
-tags: ["Movie"]
+tags: ["Movie", "Smut"]
 ---
 
 {{< rawhtml >}}
