@@ -183,6 +183,8 @@ Contra:
 - [Insensitivity of Psychology](#insensitivity-of-psychology)
 - [Moorean Shift](#moorean-shift)
 
+For more see my [newest paper summary on it](https://monkemanx.github.io/paper-summary/inventing_right_wrong/).
+
 
 {{< addspace height="100px" >}}
 
