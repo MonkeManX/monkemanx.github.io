@@ -4,12 +4,17 @@ date: 2024-12-26
 tags: ["Philosophy", "Morality"]
 ---
 
+{{< info "Info" >}}
+I've updated this article on the 13.01.2025 and added a new section where I address some updated belives.
+{{< /info >}}
 
 In a [recent post](https://monkemanx.github.io/articles/what_is_morality/), I discussed metaethics: what it is, the various contemporary metaethical positions that exist today, and how one can categorize them. For a short recap, metaethics is a branch of philosophy that grapples with the question *What is morality?* — i.e., the ontology, or the study of the essence, of morality. Metaethics is distinct from ethics, which addresses the question *What ought one to do?* or *What is the most moral action one can take?* Metaethics, on the other hand, seeks to understand what morality is made of.
 
 This brings me to how one can categorize metaethical positions. For a comprehensive explanation, I recommend my aforementioned article. Broadly, we can differentiate between *cognitivist* positions, which hold that moral statements are matters of truth, and *non-cognitivist* positions, which argue that moral statements are not about truth but about something else, such as emotions. 
 
 We can further subdivide these categories based on whether one believes that moral values are objective—that is, they exist independently of human minds. Such a stance is called *realism*. Conversely, the belief that moral values are not objective is referred to as *non-realism*. While there are additional distinctions that can be made, these are the most significant ones.
+
+# Constructivism
 
 With all of this out of the way, we can finally discuss my position on metaethics. I believe that moral statements are cognitivist, meaning they are statements of truth. However, I do not think that morality exists outside of individual minds, whether as a natural or non-natural property, which aligns with an anti-realist position. That said, I do not subscribe to total relativism, such as speaker relativism, which holds that the truth of morality depends entirely on the speaker. Instead, I believe that our morality is constructed at different levels, ranging from small structures like families to the broader society as a whole, also called Constructivism.
 
@@ -71,8 +76,44 @@ Lastly, I want to counter some arguments against constructivism. One argument th
 
 Another problematic point for constructivism is how to handle disagreements between societies. If there are truly multiple sets of moralities that are all true, how do we resolve conflicts that arise from them? My answer is that we resolve them by showing that your moral system works in practice better than the other. If another society adopts your moral system, you can then work within the same framework and engage in moral arguments. How would one show that one moral system is superior to another? I think a good example of this is how Western liberalism, especially in America, tries to spread democracy around the world by showing other nations the benefits of adopting it.
 
+# More on Constructivism
+
+In my previous section, I made the observation: *"Different groups have different moral systems."* From this, I concluded that morality cannot be objective. I want to expand on that idea further. A common response to this line of thinking is to assert that morality is not relative, but rather that one group is wrong and another is right. The argument goes that just because two groups have different moral systems, it does not necessarily mean that morality is relative.
+
+I want to counter this. In the prior section, I already mentioned that we can observe societies with radically different moral systems. The *radical* part is crucial here. If morality were objective, the question arises: how could two groups of people arrive at radically different ideas of what morality is?  
+If there were some "meta-morality" rule underlying these differences, it might explain the divergence, but moral systems vary so widely that this seems implausible. The existence of radical differences suggests a relative moral system. If morality were objective and real, we would expect it to have some observable impact on the world. And if it did, morality should, to some extent, converge over time. Claiming morality is objective while also asserting that it remains non-convergent feels like a contradiction.  
+
+One could also claim that morality is objective but has no impact on the world whatsoever. However, this seems even stranger. What is an objective property that has no effect on anything? The idea itself appears contradictory.  
+
+Another argument that strongly supports an anti-realist position is the *argument from queerness*. This argument posits that if morality were a real property, it would be very strange. Morality would need to be a property that intrinsically motivates us to act, independent of our state of mind. Furthermore, if morality were a property of things, we would need some organ or sense to detect it. Since traditional senses like sight or hearing do not detect morality, what would this mysterious organ be?
+
+
+# Fictionalism
+
+Broadly speaking, moral fictionalism is the theory that morality is an invented fiction, akin to the rules of a game or the narrative of a book. When we make moral statements, we can regard them as "true" within the context of this fiction. For example, in the game *Risk*, every player must take turns in sequence. Is this rule "true"? No, it is an invented fiction for the purpose of the game.
+
+Morality is similar. When we say, *"Murder is wrong,"* this is an assertion with truth value only within the context of the fiction of morality.
+
+There are many branches of fictionalism. For instance, **meta-fictionalism** is the thesis that, when making moral statements, the speaker is essentially asserting that, according to a particular fiction, the statement is true.  
+
+For example, *"Murder is wrong"* means, for a meta-fictionalist, something like: *"According to the morality fiction, murder is wrong."*
+
+This theory raises several questions, the first being: what is this fiction? Here, constructivist claims about morality fit neatly. Morality, as a fiction, is developed through a constructive process, shaped by mechanisms such as evolution. Why would such a fiction develop? As argued earlier in this article, morality aids group survival by fostering improved cooperation.
+
+One objection to this theory is that it seems absurd to claim that morality is just a fiction. A counterargument is that there is evolutionary and societal pressure to enforce the belief that moral statements are objectively true. If people believed morality was merely a fiction, they might act immorally. Therefore, it is in society’s best interest to pressure individuals into believing morality is objective and real.
+
+
+# My Metaethical Position
+
+I believe that when someone says, *"Murder is wrong,"* they genuinely believe murder is wrong. However, I argue that what morality actually refers to is a fiction. This fiction was created through a constructive process and is reinforced by societal pressure to ensure people perceive morality as objective and real. This enforcement helps maintain adherence to the moral fiction.
+
+
 {{< rawhtml >}}
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pepe_writing.jpg">
 </figure>
 {{< /rawhtml >}}
+
+---
+Resources:
+- "Fictionalism" Stanford Encylopedia
