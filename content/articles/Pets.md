@@ -160,7 +160,7 @@ My mom wanted chickens again. This time, the chickens weren’t bought as chicks
 
 ## Cosmo
 
-**Name:** /  
+**Name:** Cosmo  
 **Species:** Dog   
 **Notes:**  
 Our new dog. The name 'Cosmo' comes from 'cosmonaut,' referring to Russian astronauts. The dog is a stray that was rescued in Romania. Cosmos is a nervous and anxious dog, probably due to his time on the streets.
