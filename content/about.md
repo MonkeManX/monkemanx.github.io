@@ -24,7 +24,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 **Ethics**  
 - What does *ought* mean? A: [Ought as an outdated concept](https://monkemanx.github.io/articles/the_meaning_of_ought/)
-- What is *morality*? A: [Constructivism](https://monkemanx.github.io/articles/metaethical_position/)
+- What is *morality*? A: [Fictionalism with a bit constructivism](https://monkemanx.github.io/articles/metaethical_position/)
 - How shoud one *act* to be moral? A: Virtue ethics
 
 **Epistemology**
