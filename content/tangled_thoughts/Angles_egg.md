@@ -1,6 +1,6 @@
 ---
 title: Angles Egg (1985)
-date: 2025-01-13 23:00:00
+date: 2025-01-12 23:00:00
 tags: ["Movie"]
 ---
 
