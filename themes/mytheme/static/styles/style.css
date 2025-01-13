@@ -420,6 +420,61 @@ summary {
     }
 }
 
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px; /* Reduced font size */
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.data-table thead {
+    background-color: #6c757d;
+    color: white;
+}
+
+.data-table th, .data-table td {
+    padding: 4px 6px; /* Further reduced padding */
+    border: 1px solid #ddd;
+    font-size: 12px; /* Consistent font size for headers and data */
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+    .data-table, .data-table thead, .data-table tbody, .data-table th, .data-table td, .data-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .data-table tr {
+        margin-bottom: 6px; /* Reduced margin between rows */
+    }
+
+    .data-table td {
+        padding-left: 40%; /* Adjusted padding for compactness */
+        text-align: right;
+        position: relative;
+    }
+
+    .data-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 8px; /* Reduced padding for label */
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
 .source {
     font-size: 1em; /* Slightly smaller text */
     color: #222;      /* Lighter color for less emphasis */
