@@ -9,6 +9,15 @@ html, body {
   font-family: "Space Mono", Roboto, monospace;
 }
 
+/* Ensure the markers of list elements do not go into the toc */
+/* Targeting ul and ol inside #content, excluding #TableOfContents */
+#content ul:not(#TableOfContents ul),
+#content ol:not(#TableOfContents ol) {
+  list-style-position: inside; /* Ensure the markers are inside the list items */
+  position: relative; /* Ensures proper layout of nested elements */
+  display: flex;
+  flex-direction: column;
+}
 
 html {
   scroll-behavior: smooth;
@@ -490,3 +499,68 @@ summary {
 	height: 60px;
 	width: 240px;
 }
+
+/*
+* TOC
+* ------
+*
+*/
+/* Table of Contents Container */
+.toc {
+    float: left; /* Float the TOC to the left */
+    width: 200px; /* Narrower width */
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px; /* Smaller rounded corners */
+    padding: 4px; /* Reduced padding */
+    font-family: Arial, sans-serif;
+    margin: 6px 6px 6px 0; /* Reduced spacing around */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* TOC Heading */
+.toc h2 {
+    font-size: 14px; /* Smaller heading */
+    font-weight: bold;
+    margin-bottom: 4px; /* Reduced margin below heading */
+    color: #333; /* Dark text color */
+    text-align: center;
+}
+
+/* List Styles */
+.toc ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.toc ul li {
+    margin: 2px 0; /* Reduced spacing between items */
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #007BFF; /* Blue links */
+    font-size: 12px; /* Smaller font size */
+    padding: 2px 4px; /* Smaller padding for clickable area */
+    display: block;
+    border-radius: 2px; /* Slight rounding for links */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toc ul li a:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Nested Lists */
+.toc ul li ul {
+    margin-left: 10px; /* Reduced indentation for nested lists */
+    border-left: 1px solid #ddd;
+    padding-left: 4px; /* Reduced padding for nested items */
+}
+
+.toc ul li ul li {
+    margin: 2px 0; /* Tightened spacing between nested items */
+}
+
