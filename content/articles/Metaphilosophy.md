@@ -64,3 +64,4 @@ Ressources:
 - [Modern Panpsychism](https://en.wikipedia.org/wiki/Philip_Goff_(philosopher)#Panpsychism)
 - [More Logical Fallacies](https://en.wikipedia.org/wiki/List_of_fallacies)
 - [Course on Logic](https://rintintin.colorado.edu/~vancecd/phil1440/notes.html)
+- Modern Philosophy: Men of Ideas with Bryan Magee, Episode 1

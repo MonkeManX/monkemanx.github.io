@@ -35,6 +35,7 @@ Before I could think about what kind of server I wanted to buy, I first needed t
 This allowed me to balance, my nice-to-have features with the cost of including them. Also, how could I waste hours looking for the perfect server, if I didn't have a lengthy wishlist?
 
 I've already touched on some of my server requirements in the introduction. Now, I would like to explore them in more detail. Below is a list of factors, along with related question, that shaped my final requirements:
+
 - Size of the Computer: USFF, SFF, DT 
     - How many disks fit into the case?
 - Motherboard
@@ -54,6 +55,8 @@ I've already touched on some of my server requirements in the introduction. Now,
     - How much RAM?
     - Do I need ECC?
 - Power Usage 
+
+{{< addspace height="50px" >}}
 
 ### 2.1 Storage Requirements
 
