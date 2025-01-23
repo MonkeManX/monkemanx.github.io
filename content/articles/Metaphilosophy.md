@@ -50,6 +50,14 @@ Philosophy operates in a way similar to natural science. For instance, when we a
 
 This perspective is important to me because of my journey into philosophy. When I was 14, I was inspired by the incredible book Sophie's World and developed an interest in philosophy. However, over time, I became disillusioned. Philosophy started to feel frustratingly stagnant—endless open questions debated for thousands of years, with countless proposed answers, none of which ever seemed definitive. It felt as though no progress was being made. But when I started viewing these answers as models—imperfect attempts to approximate the truth from different perspectives; philosophy became much more meaningful. Each model offers a unique lens through which to view the world, helping us understand it, and ourselves. 
 
+In a nutshell, 
+
+> "If you don't bring into the light the presuppositions of your thinking, especially in moral and political spheres, then this makes you simply a prisoner of whatever the reigning orthodoxy is—it makes you a prisoner of the existing model, of the model of your age, of the model of your day."
+>
+> ~ Bryan Magee
+
+---
+
 {{< details "Verification Principle" "false" >}}
 A. J. Ayer proposed the **verification principle**, which asserts that only statements that can be verified—or falsified—are meaningful. Based on this principle, Ayer dismissed large parts of philosophy, such as metaphysics, as meaningless because they cannot be empirically tested.
 
