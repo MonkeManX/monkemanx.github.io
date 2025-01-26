@@ -2520,7 +2520,7 @@ $$
 Next, we introduce the **Lagrange function**:
 
 $$
-L(x, u, v) := f(x) + u^T g(x) + v^T (Ax - b), \quad x \in \mathbb{R}^n
+L(x, u, v) := f(x) + u^T g(x) + v^T (Ax - b), \quad x \in \mathbb{R}^n, \quad u \geq 0
 $$
 
 The dual variables \(u\) and \(v\) are called the **Lagrange multipliers**. The Lagrange function helps us transform optimization problems with equality constraints into problems without equality constraints.

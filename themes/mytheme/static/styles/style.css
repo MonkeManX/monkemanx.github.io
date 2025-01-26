@@ -11,8 +11,7 @@ html, body {
 
 /* Ensure the markers of list elements do not go into the toc */
 /* Targeting ul and ol inside #content, excluding #TableOfContents */
-#content ul:not(#TableOfContents ul, .custom-pagination ul),
-#content ol:not(#TableOfContents ol, .custom-pagination ol) {
+#content ul:not(#TableOfContents ul, .custom-pagination ul) {
   list-style-position: inside; /* Ensure the markers are inside the list items */
   position: relative; /* Ensures proper layout of nested elements */
   display: flex;
