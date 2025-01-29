@@ -1,6 +1,7 @@
 ---
 title: Laptop
 date: 2025-01-21
+tags: ["Meme"]
 ---
 
 {{< rawhtml >}}
