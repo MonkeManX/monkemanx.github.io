@@ -4,6 +4,10 @@ date: 2024-12-22
 tags: ["paper-summary", "InfoSec", "Deep Learning"]
 ---
 
+{{< warning "warning" >}}
+This paper is highly problematic and does not follow a very scientifically rigorous process. However, the idea of using packet lengths for classification is neat.
+{{< /warning >}}
+
 **Paper Title:** Detecting Tunneled Flooding Traffic via Deep Semantic Analysis of Packet Length Patterns  
 **Link to Paper:** https://dl.acm.org/doi/10.1145/3658644.3670353  
 **Date:** 09. December 2024  
