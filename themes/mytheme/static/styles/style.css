@@ -315,25 +315,60 @@ summary {
     font-size: 1em;
 }
 
+/* Ensure the nav container centers its contents */
+nav[aria-label="Page navigation"] {
+  text-align: center;
+  width: 100%;
+  /* Remove any conflicting margins or paddings if necessary */
+}
 
-.custom-pagination {
+
+
+/* Center the pagination list */
+.pagination {
+  list-style: none;
+  margin: 0 auto;   /* Auto margin on both sides to center */
+  padding: 0;
   display: flex;
-  justify-content: center; /* Center the pagination */
-  list-style: none; /* Remove bullet points */
-  padding: 0; /* Remove padding */
-  font-size: 1.1em;
+  justify-content: center;
+  font-size: 1em;
 }
 
-.custom-pagination li {
-  display: inline;
-  margin: 0 0px; /* Space between items */
+/* Individual pagination items */
+.pagination .page-item {
+  margin: 0 3px;
 }
 
-.custom-pagination a {
-  background-color: #f5f5f5; /* Light gray background */
-  padding: 5px 10px; /* Add padding */
-  border-radius: 5px; /* Rounded corners */
+/* Pagination links and spans styling */
+.pagination .page-link {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.pagination .page-link:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Active page styling */
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* Disabled item styling (for ellipses) */
+.pagination .page-item.disabled .page-link {
+  color: #aaa;
+  background-color: transparent;
+  cursor: default;
+}
+
 
 /*
 *

@@ -1,7 +1,7 @@
 ---
 title: Come Come
 date: 2025-02-02 20:00:00
-tags: ["quotes"]
+tags: ["poetry"]
 ---
 
 > Come, come, whoever you are.

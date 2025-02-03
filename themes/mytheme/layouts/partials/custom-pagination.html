@@ -1,0 +1,74 @@
+{{/* 
+  This pagination always shows the first page, last page, and a range of pages 
+  around the current page. If there’s a gap between the first (or last) and the range,
+  it displays an ellipsis.
+*/}}
+
+{{ $paginator := $.Paginator }}
+{{ $adjacent := 2 }}
+
+{{/* Calculate the start and end of the middle range */}}
+{{ $start := sub $paginator.PageNumber $adjacent }}
+{{ if lt $start 1 }}{{ $start = 1 }}{{ end }}
+
+{{ $end := add $paginator.PageNumber $adjacent }}
+{{ if gt $end $paginator.TotalPages }}{{ $end = $paginator.TotalPages }}{{ end }}
+
+<nav aria-label="Page navigation" class="w-100">
+  <ul class="pagination justify-content-center pagination-lg">
+
+
+    <!-- Previous page -->
+    {{ if $paginator.HasPrev }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Prev.URL }}" rel="prev">←</a>
+      </li>
+    {{ end }}
+
+    <!-- Always show the first page if it's not in the visible range -->
+    {{ if gt $start 1 }}
+      <li class="page-item">
+        <a class="page-link" href="{{ (index $paginator.Pagers 0).URL }}">1</a>
+      </li>
+      {{/* Only show ellipsis if there is more than one page gap */}}
+      {{ if gt $start 2 }}
+        <li class="page-item disabled">
+          <span class="page-link">…</span>
+        </li>
+      {{ end }}
+    {{ end }}
+
+    <!-- Page numbers in the middle range -->
+    {{ range $i := seq $start $end }}
+      {{/* 
+         Use (index $paginator.Pagers (sub $i 1)) because the pager slice is 0-indexed.
+      */}}
+      {{ $page := index $paginator.Pagers (sub $i 1) }}
+      <li class="page-item{{ if eq $paginator.PageNumber $i }} active{{ end }}">
+        <a class="page-link" href="{{ $page.URL }}">{{ $i }}</a>
+      </li>
+    {{ end }}
+
+    <!-- Always show the last page if it's not in the visible range -->
+    {{ if lt $end $paginator.TotalPages }}
+      {{ if lt $end (sub $paginator.TotalPages 1) }}
+        <li class="page-item disabled">
+          <span class="page-link">…</span>
+        </li>
+      {{ end }}
+      <li class="page-item">
+        <a class="page-link" href="{{ (index $paginator.Pagers (sub $paginator.TotalPages 1)).URL }}">
+          {{ $paginator.TotalPages }}
+        </a>
+      </li>
+    {{ end }}
+
+    <!-- Next page -->
+    {{ if $paginator.HasNext }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Next.URL }}" rel="next">→</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
+

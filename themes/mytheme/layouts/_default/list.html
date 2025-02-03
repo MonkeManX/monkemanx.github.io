@@ -21,7 +21,7 @@
 </ul>
 
 <div class="custom-pagination">
-  {{ template "_internal/pagination.html" . }}
+  {{partial "custom-pagination.html" .}}
 </div>
 
 {{ else if (eq .Type "poetry") }}
