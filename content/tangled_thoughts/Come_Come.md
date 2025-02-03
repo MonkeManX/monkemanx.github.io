@@ -1,9 +1,11 @@
 ---
-title: 
+title: Come Come
 date: 2025-02-02 20:00:00
 tags: ["quotes"]
 ---
 
+> Come, come, whoever you are.
+> 
 > Wonderer, worshipper, lover of leaving.
 > It doesn't matter.
 > Ours is not a caravan of despair.

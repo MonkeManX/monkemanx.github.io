@@ -1,7 +1,7 @@
 ---
-title: Epictetus 2
+title: Ocean Voyage
 date: 2025-01-28 14:00:00
-tags: ["quotes"]
+tags: ["quotes", "epictetus"]
 ---
 
 > It isn't easy to combine and reconcile the two—the carefulness of a person devoted to externals and the dignity of one who's detached—but it's not impossible. Otherwise, happiness would be impossible.
