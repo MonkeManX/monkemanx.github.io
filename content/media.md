@@ -173,3 +173,8 @@ An introduction to epistemology and the theory of knowledge, it is roughly 150 p
 {{< media "/attachments/cambridge_aristotele_ethics.jpg" "Aristotle's Nicomachean Ethics: An Introduction" "https://www.cambridge.org/de/universitypress/subjects/philosophy/classical-philosophy/aristotles-nicomachean-ethics-introduction?format=HB&isbn=9780521817424">}}
 A thorough analysis of the Nicomachean Ethics, one of the first works that attempts to lay out a philosophical theory based on first principles. At times, it felt a bit lengthy to me, and I would have preferred a more condensed version. This is because the author not only presents his interpretations of the passages but also explores alternative interpretations, weighing them against each other. The conclusion was also a bit wishy-washy. If one wants to delve deeply into Aristotle's ethics, I highly recommend it; otherwise, perhaps not as much.
 {{< /media >}}
+
+
+{{< media "/attachments/epictetus_discourses.jpg" "Epictetus: Discourses and Selected Writings" "https://www.goodreads.com/book/show/4143812-discourses-and-selected-writings">}}
+See <a href="/tangled_thoughts/epictetus6/">review here</a>.
+{{< /media >}}

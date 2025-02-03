@@ -23,7 +23,7 @@ tags: ["quotes", "epictetus"]
 >  
 > But the reward for enduring inconveniences is peace. So if this is the time for them, why not conquer your aversion? Why endure them like a donkey hit by a stick? [...]  
 >  
-> There is one road to peace and happiness: renunciation of externals; regard nothing as your own; hand over everything to fortune and the deity. ^  
+> There is one road to peace and happiness: renunciation of externals; regard nothing as your own; hand over everything to fortune and the deity. 
 >  
 > ~ Epictetus, Book IV
 

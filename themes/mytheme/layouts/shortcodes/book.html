@@ -1,0 +1,8 @@
+<div style="display: flex; align-items: center;">
+    <figure style="margin: 20px; flex: 1;">
+        <img style="width: 100%; max-width: 300px;" src="{{ .Get "image" }}" alt="Book cover">
+    </figure>
+    <p style="margin-left: 20px; flex: 2;">
+        {{ .Inner | markdownify }}
+    </p>
+</div>

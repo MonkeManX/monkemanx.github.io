@@ -87,4 +87,14 @@ If we assume that the future will always resemble the past, we rely on an assump
 
 What, then, ensures that this assumption is valid? One might suggest *skepticism* as a solution, but philosophically, this answer is unsatisfying. Thus, Hume poses this question to the public for further contemplation.  
 
+## Conclusion
 
+There are two methods for gaining knowledge. The first is **deductive reasoning**, where we start with a system of axioms and apply rules of inference, such as *modus ponens*, to definitively prove things. The second is **inductive reasoning**, where we observe nature and the universe to draw conclusions. For example, if I observe that apples always fall downward when I drop them, I conclude that objects fall when released.  
+
+Inductive reasoning alone cannot be directly applied to the world, as it only provides us with models. We still need deductive reasoning to determine whether our models are accurate, appropriate for use, and applicable in a given context. For instance, in graph theory, we can create various graph models, such as the Erdős–Rényi graph. However, deciding whether it makes sense to use such a model in the real world—say, as a representation of social media networks—requires inference. In other words, we must observe social networks and determine whether they fit the random graph model.  
+
+Thus, all applicable human knowledge ultimately relies on deductive reasoning, which provides a solid foundation. This brings us to **Hume's challenge**. David Hume argued that all inference in our world depends on the assumption of **cause and effect**. We believe that if we observe a phenomenon and formulate a natural law, that law will continue to hold in the future. For example, after repeatedly observing that objects fall when dropped, we formulated the law of gravity, assuming it will always hold.  
+
+But how do we justify this assumption? We claim that cause and effect hold true because we have inferred it from past observations: we have seen that causes lead to effects, and we believe that if we drop an apple now or a year from now, it will always fall.  
+
+Here lies the problem: **what justifies the rule of inference itself?** If our answer is "cause and effect," then what justifies *that*? Once again, we rely on inference. In other words, we attempt to justify inference as a valid method of reasoning by using inference itself—resulting in **circular reasoning**.  
