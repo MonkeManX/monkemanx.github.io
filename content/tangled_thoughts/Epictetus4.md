@@ -25,5 +25,5 @@ tags: ["quotes", "epictetus"]
 >  
 > There is one road to peace and happiness: renunciation of externals; regard nothing as your own; hand over everything to fortune and the deity. ^  
 >  
-> ~ Epictetus  
+> ~ Epictetus, Book IV
 
