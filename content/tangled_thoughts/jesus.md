@@ -7,8 +7,8 @@ tags: ["Theology"]
 Thinking about the time when a local drug lord is killed in the show *Xavier: Renegade Angel*, and just before he dies, he makes a *profession of faith* in an attempt to escape hell and go to heaven.
 
 {{< rawhtml >}}
-<figure style="text-align: center;">
-    <video style="display: block; margin-left: auto; margin-right: auto; width:80%" controls>
+<figure style="margin: 10px; text-align: center;">
+    <video style="display: block; margin-left: auto; margin-right: auto; width:100%" controls>
         <source src="/attachments/xavier_rennegade_lord_and_saviour.mp4" type="video/mp4">
         Your browser does not support this embedded video.
     </video>

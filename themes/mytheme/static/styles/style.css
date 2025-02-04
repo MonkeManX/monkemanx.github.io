@@ -297,7 +297,36 @@ summary {
     margin-bottom: 20px;
     border-radius: 8px;
     background-color: #f9f9f9;
+    position: relative;  /* Added to allow absolute positioning of tags */
 }
+
+.thought-tags {
+    position: absolute;
+    top:  48px;  /* Adjust as needed */
+    right: 25px;   /* Adjust as needed */
+}
+
+.thought-tag {
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: #DDD; /* Tag background */
+    color: #333;             /* Tag text color */
+    padding: 3px 6px;
+    margin-left: 5px;        /* Spacing between tags */
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.thought-tag a {
+    color: #333;
+    text-decoration: none;  /* Removes the underline */
+}
+
+.thought-tag a:hover {
+    color: #007BFF;
+}
+
+
 
 .thought-title {
     font-size: 1.5em;
@@ -314,6 +343,8 @@ summary {
 .thought-content {
     font-size: 1em;
 }
+
+
 
 /* Ensure the nav container centers its contents */
 nav[aria-label="Page navigation"] {

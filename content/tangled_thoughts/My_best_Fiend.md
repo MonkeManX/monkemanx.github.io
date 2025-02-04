@@ -4,11 +4,7 @@ date: 2025-01-06
 tags: ["Movie"]
 ---
 
-{{< rawhtml >}}
-<figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/My_best_friend.png">
-</figure>
-{{< /rawhtml >}}
+{{< movie image="/attachments/My_best_friend.png" >}}
 
 This is a documentary directed by Werner Herzog about his friend and actor Klaus Kinski. If you want to learn more about Klaus Kinski, this is the right movie for you. I would definitely recommend watching at least a few Klaus Kinski movies before diving into this documentary. Some of my favorite anecdotes were:  
 

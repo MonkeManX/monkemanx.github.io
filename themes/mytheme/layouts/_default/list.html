@@ -16,6 +16,13 @@
       <div class="thought-title">{{ .Title }}</div>
       <div class="thought-date">{{ .Date.Format "January 2, 2006" }}</div>
       <div class="thought-content">{{ .Content }}</div>
+      <div class="thought-tags">
+        {{ range .Params.tags }}
+          <span class="thought-tag">
+            <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+          </span>
+        {{ end }}
+      </div>
     </li>
   {{ end }}
 </ul>

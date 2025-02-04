@@ -4,11 +4,7 @@ date: 2025-01-27 21:00:00
 tags: ["Movie"]
 ---
 
-{{< rawhtml >}}
-<figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/taste_cherry.png">
-</figure>
-{{< /rawhtml >}}
+{{< movie image="/attachments/taste_cherry.png" >}}
 
 This is an Iranian movie, and the landscape and scenery are stunning—dusty, sandy hills decorated with colorful trees. In the movie, a character tells a joke that was my dad’s favorite, one he used to tell me often when I was little:
 

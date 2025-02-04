@@ -1,6 +1,7 @@
 ---
 title: Calling a Deer a Horse 
 date: 2025-01-17 18:00:00
+tags: ["politics"]
 ---
 
 Zhao Gao was a chinese politician, who died at 207 BC. There is an interesting anecdote about him 

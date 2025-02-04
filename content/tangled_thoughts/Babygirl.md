@@ -4,11 +4,7 @@ date: 2025-01-29 22:00:00
 tags: ["Movie"]
 ---
 
-{{< rawhtml >}}
-<figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/babygirl.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< movie image="/attachments/babygirl.jpg" >}}
 
 My two friends and I decided to attend a movie sneak preview, where a theater shows a random film that is currently airing, so you have no idea what the movie is until it starts.  
 
