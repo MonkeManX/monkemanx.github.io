@@ -4,7 +4,7 @@ date: 2025-01-07
 tags: ["Movie"]
 ---
 
-{{< movie image="/attachments/man_from_earth.png" >}}
+{{< thought_image image="/attachments/man_from_earth.png" >}}
 
 The protagonist reveals to a group of friends that he has been alive since ancient times, claiming to be 14,000 years old. The entire movie revolves around his friends interrogating him about his claims. While I liked the concept of the film, I feel the execution was poor. His friends mostly asked very basic questions about his life, then acted like he was a genius just because he had answers.
 

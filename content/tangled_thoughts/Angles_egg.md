@@ -4,7 +4,7 @@ date: 2025-01-12 23:00:00
 tags: ["Movie"]
 ---
 
-{{< movie image="/attachments/angle_egg.png" >}}
+{{< thought_image image="/attachments/angle_egg.png" >}}
 
 I have no idea what I just watched. If somebody knows, please send me an email. EDIT: [Nice Interpretation](https://www.youtube.com/watch?v=FFy8cn9TlZc&t=939)
 

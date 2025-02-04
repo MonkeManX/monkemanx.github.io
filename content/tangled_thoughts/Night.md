@@ -6,4 +6,4 @@ tags: ["photography"]
 
 See [Day](/tangled_thoughts/day/).
 
-{{< movie image="/attachments/night_with_corn.jpg" >}}
+{{< thought_image image="/attachments/night_with_corn.jpg" >}}

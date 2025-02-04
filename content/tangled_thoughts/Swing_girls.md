@@ -4,7 +4,7 @@ date: 2025-01-15 21:00:00
 tags: ["Movie"]
 ---
 
-{{< movie image="/attachments/swing_girls.png" >}}
+{{< thought_image image="/attachments/swing_girls.png" >}}
 
 A group of schoolgirls accidentally poisons their local brass band and has to step in as replacements. The catch? Most of them can’t play any instruments, and the few who can have instruments that don’t mix well together. So, they decide to form a [big band](https://en.wikipedia.org/wiki/Big_band) and play swing instead.  
 

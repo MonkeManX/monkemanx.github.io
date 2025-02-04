@@ -4,7 +4,7 @@ date: 2025-01-11 20:00:00
 tags: ["Movie", "Smut"]
 ---
 
-{{< movie image="/attachments/mothers_house.png" >}}
+{{< thought_image image="/attachments/mothers_house.png" >}}
 
 This movie had the worst quality ever. The sound was choppy, and there was constant background noise. It looked like someone had filmed the movie screen in a theater. And the subtitles made zero sense. Here are some highlights:
 
