@@ -1,6 +1,7 @@
 ---
 title: Sanity
 date: 2024-10-16 
+tags: ["Poetry"]
 ---
 
 Today is one of *those* days.  

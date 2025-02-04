@@ -1,7 +1,7 @@
 ---
 title: Euthyphro Dilemma
 date: 2025-01-07
-tags: ["Philosophy"]
+tags: ["Philosophy", "Theology"]
 ---
 
 1. Do the gods love good actions because they are good?  

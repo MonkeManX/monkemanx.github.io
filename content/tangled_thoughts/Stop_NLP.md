@@ -1,6 +1,7 @@
 ---
 title: Stop NLP!
 date: 2025-01-12 11:00:00
+tags: ["Meme"]
 ---
 
 {{< rawhtml >}}

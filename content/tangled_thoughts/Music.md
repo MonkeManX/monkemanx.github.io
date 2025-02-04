@@ -1,6 +1,7 @@
 ---
 title: Music
 date: 2024-10-05 00:30:00
+tags: ["Music"]
 ---
 
 I just watched the greatest live music performance I've ever seen. It was full of energy, just incredible. There were many funny moments, to name a few:

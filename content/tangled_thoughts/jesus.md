@@ -1,6 +1,7 @@
 ---
 title: Jesus
 date: 2024-10-12 10:30:00
+tags: ["Theology"]
 ---
 
 Thinking about the time when a local drug lord is killed in the show *Xavier: Renegade Angel*, and just before he dies, he makes a *profession of faith* in an attempt to escape hell and go to heaven.

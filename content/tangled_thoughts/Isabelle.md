@@ -1,6 +1,7 @@
 ---
 title: Isabelle
 date: 2024-10-24 
+tags: ["Poetry"]
 ---
 
 {{< poem>}}

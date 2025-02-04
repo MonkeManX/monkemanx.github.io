@@ -1,6 +1,7 @@
 ---
 title: Morality
 date: 2024-11-24
+tags: ["Philosophy"]
 ---
 
 **What is morality?**

@@ -1,6 +1,7 @@
 ---
 title: Leaves
 date: 2024-11-29
+tags: ["photography"]
 ---
 
 {{< rawhtml >}}
