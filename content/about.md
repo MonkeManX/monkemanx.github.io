@@ -9,15 +9,16 @@ I am a Computer Science student currently studying at the *Karlsruhe Institute o
 
 {{< details "My Positions" "false" >}}
 
-This section provides an overview of the positions I hold on various topics. By "positions," I mean knowledge or beliefs that I consider highly likely to be true, though they are more speculative in nature rather than purely factual. 
-This section is a work in progress, and I will add entries to it whenever I write a relevant article.
+This section provides an overview of my positions on various topics. By "positions," I mean knowledge or beliefs that I consider likely to be true, though they are more speculative in nature rather than purely factual.
+
+This section is a work in progress, and I will add entries to it whenever I write a relevant article. Furthermore, for most topics, I do not have time to explore every position in detail. As such, I have a strong bias towards the positions I’ve read about most thoroughly.
+
 
 ## Philosophy
 
 **Metaphilosophy**
 - Why care about philosophy? A: [Philosophical assumptions and better conversations](/articles/metaphilosophy)
 - What is the aim of philosophy? A: [Philosophy as a model](/articles/metaphilosophy)
-
 
 **Value Theory**  
 - What do we *value*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/)
@@ -31,8 +32,10 @@ This section is a work in progress, and I will add entries to it whenever I writ
 - What is *knowledge*? A: [Contextualism](/articles/what_is_knowledge/)
 
 **Metaphysics**
-- Do we have *free will*? A:[No](/articles/about_freedom/#4-what-about-free-will)
+- Do we have *free will*? A: [No](/articles/about_freedom/#4-what-about-free-will)
 
+**Aesthetics**
+- What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)
 
 ## Artificial Intelligence 
 

@@ -25,7 +25,7 @@ The last eulogy is given by **Socrates**. He argues:
 4. There are two ways to achieve self-immortalization: physical (producing offspring) and intellectual (creating enduring works, such as Homer’s poetry or Einstein’s theories).  
 5. The highest form of love is mental, abstracted from specific individuals to the appreciation of universal forms of beauty.  
 
-Socrates contends that since love is relational, it is neither inherently ugly nor beautiful, but rather an expression of the human desire to attain goodness and happiness. For Socrates, goodness and beauty are inseparable: if something is good, it is naturally beautiful. He also believes that to be happy, humans must be good, which for him means to cultivate virtues. 
+Socrates contends that since **love** is relational, it is neither inherently ugly nor beautiful, but rather an expression of the **human desire to attain goodness and happiness**. For Socrates, goodness and beauty are inseparable: if something is good, it is naturally beautiful. He also believes that to be happy, humans must be good, which for him means to cultivate virtues. 
 
 In rejecting the idea of love as the search for one's other half, Socrates defines love as the general desire for happiness. Love's ultimate purpose is "to give birth in beauty, both in body and mind," which brings humans as close as possible to immortality. This immortality can be achieved through sexual reproduction or through immortal fame gained by heroic acts or intellectual contributions, similar to the distinctions between Common and Heavenly Love mentioned earlier.  
 
