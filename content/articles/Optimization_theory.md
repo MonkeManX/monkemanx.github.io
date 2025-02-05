@@ -282,6 +282,18 @@ $$
 is called the set of *possible valid/feasible solutions*, or simply the *valid/feasible set*.
 
 
+> **Lemma** Existence of Solution   
+> 
+> Let \(K \neq \emptyset\) be *compact* and \(f : K \to \mathbb{R}\) *continuous*. Then has the the following optimization problem a global solution
+>
+> $$
+(P) \quad \min f(x) \ \ \text{on} \ \ x \in K
+$$
+
+A set is *compact*, if it is *closed* (i.e. it contains all of its limits points) and *bounded* (i.e. it has a boundary).
+
+A function is *continuous*, if the function is a single unbroken curve. A function is continious if it is a composition of continious functions.
+
 
 ### 2.2 Transformation into Canonical Form
 
@@ -2567,13 +2579,14 @@ We can apply this to the Lagrange function:
 
 > **Lemma** (Lagrange Multiplier)  
 > Let \(f, g_i\) be convex and differentiable, and the Slater condition is satisfied. Then \(x^* \in M\) is the unique solution of (P) if there exist \(u^* \in \mathbb{R}^p, u^* \geq 0, v^* \in \mathbb{R}^m\) such that
-
-$$
+> 
+> $$
 \nabla f(x^*) + \sum u_j^* \nabla g_j(x^*) + A^T v^* = 0
 $$
-and
-
-$$
+>
+>and
+>
+>$$
 u_j^* g_j(x^*) = 0, \quad j = 1, \dots, p
 $$
 
