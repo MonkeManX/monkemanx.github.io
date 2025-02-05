@@ -15,23 +15,23 @@ This section is a work in progress, and I will add entries to it whenever I writ
 ## Philosophy
 
 **Metaphilosophy**
-- Why care about philosophy? A: [Philosophical assumptions and better conversations](https://monkemanx.github.io/articles/metaphilosophy)
-- What is the aim of philosophy? A: [Philosophy as a model](https://monkemanx.github.io/articles/metaphilosophy)
+- Why care about philosophy? A: [Philosophical assumptions and better conversations](/articles/metaphilosophy)
+- What is the aim of philosophy? A: [Philosophy as a model](/articles/metaphilosophy)
 
 
 **Value Theory**  
-- What do we *value*? A: [Capability to deploy consciousness](https://monkemanx.github.io/articles/when_does_a_something_deserve_moral_considerations/)
+- What do we *value*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/)
 
 **Ethics**  
-- What does *ought* mean? A: [Ought as an outdated concept](https://monkemanx.github.io/articles/the_meaning_of_ought/)
-- What is *morality*? A: [Fictionalism with a bit constructivism](https://monkemanx.github.io/articles/metaethical_position/)
-- How shoud one *act* to be moral? A: Virtue ethics
+- What does *ought* mean? A: [Ought as an outdated concept](/articles/the_meaning_of_ought/)
+- What is *morality*? A: [Fictionalism with a bit constructivism](/articles/metaethical_position/)
+- How shoud one *act* to be moral? A: [Virtue Ethics](/articles/aristotele_virtue_ethics/)
 
 **Epistemology**
-- What is *knowledge*? A: [Contextualism](https://monkemanx.github.io/articles/what_is_knowledge/)
+- What is *knowledge*? A: [Contextualism](/articles/what_is_knowledge/)
 
 **Metaphysics**
-- Do we have *free will*? A:[No](https://monkemanx.github.io/articles/about_freedom/#4-what-about-free-will)
+- Do we have *free will*? A:[No](/articles/about_freedom/#4-what-about-free-will)
 
 
 ## Artificial Intelligence 

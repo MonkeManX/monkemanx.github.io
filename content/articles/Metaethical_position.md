@@ -5,7 +5,7 @@ tags: ["Philosophy", "Morality"]
 ---
 
 {{< info "Info" >}}
-I've updated this article on the 13.01.2025 and added a new section where I address some updated belives.
+The last time I updated this article was on 05.02.2025. Some of the content I no longer fully agree with, but the last section on **[My Metaethical Position](#my-metaethical-position)** is still accurate.
 {{< /info >}}
 
 In a [recent post](https://monkemanx.github.io/articles/what_is_morality/), I discussed metaethics: what it is, the various contemporary metaethical positions that exist today, and how one can categorize them. For a short recap, metaethics is a branch of philosophy that grapples with the question *What is morality?* — i.e., the ontology, or the study of the essence, of morality. Metaethics is distinct from ethics, which addresses the question *What ought one to do?* or *What is the most moral action one can take?* Metaethics, on the other hand, seeks to understand what morality is made of.
@@ -105,8 +105,11 @@ One objection to this theory is that it seems absurd to claim that morality is j
 
 # My Metaethical Position
 
-I believe that when someone says, *"Murder is wrong,"* they genuinely believe murder is wrong. However, I argue that what morality actually refers to is a fiction. This fiction was created through a constructive process and is reinforced by societal pressure to ensure people perceive morality as objective and real. This enforcement helps maintain adherence to the moral fiction.
+I believe that when someone says, "Murder is wrong," they genuinely believe murder is wrong. However, I argue that what morality actually refers to is a fiction. This fiction was created through a constructive process and is reinforced by societal pressure to ensure people perceive morality as objective and real. This enforcement helps maintain adherence to the moral fiction.
 
+Central to why I believe this is that when we speak about morality, we speak about "What do I owe other people?" But where should this owe come from? Why do I owe you not to kill you? Owing implies having some kind of debt toward another, but where should this debt originate? For theists, the answer is easier—God creates us with this debt. But if you are not a theist, then this explanation doesn’t work.
+
+One way this owe could arise is if we, as a society, agree to have rules imposed upon us—morality as a social contract. In this case, we say, "I owe you not to kill you because we made a contract in which I promised not to kill you." In this sense, morality is a fiction, just like laws—something we created to ensure societal flourishing and our own survival.
 
 {{< rawhtml >}}
 <figure>
