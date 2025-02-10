@@ -362,3 +362,8 @@ A masturbatory baffoon,
   Cried out the moon,
     He wished he was a baboon.
 {{< /poem >}}
+
+{{< poem >}}
+Only in Death--
+We truly rest.
+{{< /poem >}}
