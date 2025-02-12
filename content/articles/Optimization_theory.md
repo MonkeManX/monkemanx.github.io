@@ -1,7 +1,7 @@
 ---
 title: 'Optimization Theory'
 date: 2025-01-23 16:00:00
-tags: ["Math"]
+tags: ["Mathematics"]
 markup:
   tableOfContents:
     endLevel: 2

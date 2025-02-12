@@ -181,3 +181,7 @@ See <a href="/articles/symposium/">review here</a>.
 {{< media "/attachments/epictetus_discourses.jpg" "Epictetus: Discourses and Selected Writings" "https://www.goodreads.com/book/show/4143812-discourses-and-selected-writings">}}
 See <a href="/tangled_thoughts/epictetus6/">review here</a>.
 {{< /media >}}
+
+{{< media "/attachments/letters_from_stoic.jpg" "Letters from a Stoic" "https://www.goodreads.com/book/show/13065606-letters-from-a-stoic" >}}
+See <a href="/tangled_thoughts/letters_from_a_stoic/">review here</a>.
+{{< /media >}}
