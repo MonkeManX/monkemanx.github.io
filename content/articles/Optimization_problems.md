@@ -1,6 +1,6 @@
 ---
 title: 'More Optimization Problems'
-date: 2025-02-10
+date: 2025-02-12
 tags: ["Mathematics"]
 ---
 
