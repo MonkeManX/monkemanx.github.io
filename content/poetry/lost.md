@@ -367,3 +367,57 @@ A masturbatory baffoon,
 Only in Death--
 We truly rest.
 {{< /poem >}}
+
+
+{{< poem >}}
+Curling, Swirling, and Whirling. 
+Never in one place,  
+sometimes left, sometimes right,  
+across the plane—a destructive force;  
+devouring all that dares to stand.
+
+But then, on the horizon,  
+I see you,  
+    and you see me.  
+A flower blooms.  
+A desire  
+    to make the beautiful,  
+        the good,  
+mine forevermore.  
+
+Like one driven by madness,  
+the path is clear.  
+Faster and faster,  
+    the tempo increases,    
+Faster and faster,  
+    with dizzying speed,     
+Faster and faster,  
+    my heart swells,      
+Faster and faster,  
+    the world spins.   
+
+Then we meet.  
+Standstill.  
+An abrupt stop.  
+The wind is silent.
+No voice remains.
+Currents collide.
+I feel you,  
+    and you feel me.  
+Slowly;
+gradually;  
+The good unites.  
+A mutual exchange.  
+Vices are expelled.  
+Innermost selves become one.  
+More perfect. 
+More complete.  
+
+The turmoil grows fainter, 
+    its pull now softer.
+But the journey continues.
+Spinning, slowing -- seeking what's yet to be found.
+{{< /poem >}}
+
+
+
