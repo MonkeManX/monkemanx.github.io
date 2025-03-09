@@ -420,4 +420,51 @@ Spinning, slowing -- seeking what's yet to be found.
 {{< /poem >}}
 
 
+{{< poem >}}
+Lord Jesus Christ, betrayed by Judas, who died on the cross, leader of the twelve apostles, miracle worker and salvation of humanity, Son of God, have mercy on me, I am a sinner. You see all I have done, I lay it before Your feet; take it upon me. If my heart is hardened, un-harden it, please, I beg You. I give You my everything, whatever You want, I’ll drop everything. I’ll become a monk, just give me a sign. No, I am sorry for my transgression, Lord, please change my heart, change my fate, so that it will lead to You. Look inside my heart, it is open to You; if it’s not, strike me down. Please let me see a spark of divinity. If I am not worthy, I understand. Tell me what to do to become worthy. I surrender everything to You. Please tell me what to do, and I will praise Your name forever.
+{{< /poem >}}
+
+
+{{< poem >}}
+The throat dry,  
+Shivers in my stomach.  
+No focus.  
+Hands trying to be busy.  
+Nervous.  
+
+But why?  
+The stoic principle rings in my mind,  
+Only value what's in your control, and resist all else.  
+And the only thing we truly control is virtue.  
+
+For what is bodily harm, but an injury to my outer shell?  
+And why would I care about that?
+{{< /poem >}}
+
+
+{{< poem >}}
+The landscape passes by,  
+Small, scattered bushes.  
+Trees no taller than two men.  
+An ape on a city sign, sunning.  
+A brown, bare mountain on the far horizon.  
+The dirt, light brown.  
+
+Hills dotted with small trees,  
+Their trunks pressed flat like pancakes,  
+More breadth than height.  
+
+Blue, red, and green make up the flag,  
+Alternating between hill and valley.  
+Everywhere, stone— a desert of it—intersected with patches of green.  
+
+Every house sits inside a gated community,  
+Walls topped with barbed wire,  
+Cameras in place,  
+Signs warning of neighborhood watches.  
+Even solitary houses are enclosed by walls of barbed wire.  
+Above the walls, metal fences rise, sometimes with additional barbed wire.  
+
+~ Namibia
+{{< /poem >}}
 

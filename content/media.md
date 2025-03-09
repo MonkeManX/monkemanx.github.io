@@ -114,6 +114,12 @@ From the same author of Katalepsis, this time it's an amazing post-apocalyptic s
 Another web-serial that subverts the classical Xianxia tropes, where our protagonist decides against defying the heavens and pursuing cultivation for greater heights. Instead, he chooses to become a simple farmer and make the most out of his life. It's a wholesome slice-of-life story that warms one's heart.
 {{< /media >}}
 
+
+{{< media "/attachments/c4jerujfelw50c11fo23xv1u.webp" "I'm an Infinite Regressor, But I've Got Stories to Tell" "https://www.novelupdates.com/series/im-an-infinite-regressor-but-ive-got-stories-to-tell/" >}}
+See <a href="/tangled_thoughts/infinite_regressor/">review here</a>.
+{{< /media >}}
+
+
 ## Music Albums
 
 {{< media "/attachments/kagayaki.jpg" "Aratamemashite Hajimemashite Midori Desu" "https://rateyourmusic.com/release/album/%E9%AB%98%E6%9C%A8%E6%AD%A3%E5%8B%9D/%E3%81%8B%E3%81%8C%E3%82%84%E3%81%8D-kagayaki/">}}
@@ -155,6 +161,7 @@ Created by the Argentine band "Mujercitas Terror," this is a rock/post-punk albu
 {{< media "/attachments/en_el_radio.webp" "Perdidxs en el Ruido" "https://www.last.fm/music/Las+Olas+(Noispop)/Perdidxs+en+el+Ruido">}}
 Created by the Chilean band "Las Olas (Noispop)," this is a post-punk, noise-pop album. I can't speak to the lyrics, but from the sound, they are criminally underrated. The album has a length of 27 minutes and contains 10 tracks.
 {{< /media >}}
+
 
 ## Philosophy Stuff
 
