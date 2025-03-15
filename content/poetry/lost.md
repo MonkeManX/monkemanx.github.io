@@ -468,3 +468,14 @@ Above the walls, metal fences rise, sometimes with additional barbed wire.
 ~ Namibia
 {{< /poem >}}
 
+
+{{< poem >}}
+Dreamt in my nebelous state,
+The wagon moved up and down the rail,
+A wiggle -- An lightning up,
+The Universe blinks.
+A Signale for me.
+The Purview mine, mine alone.
+Staring back,
+Is it me?
+{{< /poem >}}
