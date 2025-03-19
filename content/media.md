@@ -163,32 +163,57 @@ Created by the Chilean band "Las Olas (Noispop)," this is a post-punk, noise-pop
 {{< /media >}}
 
 
+{{< media "/attachments/tamahime-jun-togawa.jpg" "戸川純 by Jun Togawa" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E7%8E%89%E5%A7%AB%E6%A7%98" >}}
+See <a href="/tangled_thoughts/tamahime_sama/">review here</a>.
+{{< /media >}}
+
+{{< media "/attachments/suki-suki-jun.jpg" "Suki-suki-daisuki" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E5%A5%BD%E3%81%8D%E5%A5%BD%E3%81%8D%E5%A4%A7%E5%A5%BD%E3%81%8D/" >}}
+See <a href="/tangled_thoughts/suki_suki_daisuki/">review here</a>.
+{{< /media >}}
+
+{{< media "/attachments/0016068366_10.jpg" "125 Rue Montmartre" "https://rateyourmusic.com/release/comp/125-rue-montmartre/discography/" >}}
+See <a href="/tangled_thoughts/125_rue_montmartre/">review here</a>.
+{{< /media >}}
+
+
+
 ## Philosophy Stuff
 
 {{< media "/attachments/free_will.jpg" "Free Will" "https://en.wikipedia.org/wiki/Free_Will_(book)">}}
 Cool book by Sam Harris, arguing that free will is an illusion.
 {{< /media >}}
 
+
 {{< media "/attachments/metaethics_an_introduction.jpg" "Metaethics: An Introduction" "https://www.amazon.de/-/en/Andrew-Fisher/dp/1844652580">}}
 A very readable introduction to metaethics, not too long, suitable even for laypeople, that covers the most important branches of the field. However, it is not a complete account, as it does not, for example, include 'response-dependence theories' or 'constructivism.
 {{< /media >}}
+
 
 {{< media "/attachments/knowledge_introduction.jpg" "Knowledge: A Very Short Introduction" "https://academic.oup.com/book/461">}}
 An introduction to epistemology and the theory of knowledge, it is roughly 150 pages long and covers topics such as rationalism, empiricism, skepticism, justified true belief, Gettier problems, and much more. It includes numerous examples, most of which are highly illustrative.
 {{< /media >}}
 
+
 {{< media "/attachments/cambridge_aristotele_ethics.jpg" "Aristotle's Nicomachean Ethics: An Introduction" "https://www.cambridge.org/de/universitypress/subjects/philosophy/classical-philosophy/aristotles-nicomachean-ethics-introduction?format=HB&isbn=9780521817424">}}
 A thorough analysis of the Nicomachean Ethics, one of the first works that attempts to lay out a philosophical theory based on first principles. At times, it felt a bit lengthy to me, and I would have preferred a more condensed version. This is because the author not only presents his interpretations of the passages but also explores alternative interpretations, weighing them against each other. The conclusion was also a bit wishy-washy. If one wants to delve deeply into Aristotle's ethics, I highly recommend it; otherwise, perhaps not as much.
 {{< /media >}}
+
 
 {{< media "/attachments/symposium.jpg" "The Symposium" "https://www.goodreads.com/book/show/81779.The_Symposium">}}
 See <a href="/articles/symposium/">review here</a>.
 {{< /media >}}
 
+
 {{< media "/attachments/epictetus_discourses.jpg" "Epictetus: Discourses and Selected Writings" "https://www.goodreads.com/book/show/4143812-discourses-and-selected-writings">}}
 See <a href="/tangled_thoughts/epictetus6/">review here</a>.
 {{< /media >}}
 
+
 {{< media "/attachments/letters_from_stoic.jpg" "Letters from a Stoic" "https://www.goodreads.com/book/show/13065606-letters-from-a-stoic" >}}
 See <a href="/tangled_thoughts/letters_from_a_stoic/">review here</a>.
+{{< /media >}}
+
+
+{{< media "/attachments/978-3-15-019641-0.jpg" "Meditation by Marcus Aurelius" "https://www.goodreads.com/book/show/30659.Meditations" >}}
+See <a href="/tangled_thoughts/aurelius8/">review here</a>.
 {{< /media >}}

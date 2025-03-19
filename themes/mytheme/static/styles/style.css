@@ -629,3 +629,77 @@ nav[aria-label="Page navigation"] {
     margin: 2px 0; /* Tightened spacing between nested items */
 }
 
+/*
+* Pinned Home 
+* --------------------------
+*/
+/* Pinned List Container */
+/* Pinned Section */
+.pinned-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pinned-box {
+    border: 2px solid #aaa;  /* Slightly stronger border */
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: #eee; /* Subtle gray for contrast */
+    position: relative;
+}
+
+/* Title */
+.pinned-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.pinned-title a {
+    color: #222;
+    text-decoration: none;
+}
+
+.pinned-title a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Date */
+.pinned-date {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Content */
+.pinned-content {
+    font-size: 1em;
+}
+
+/* Tags - Positioned at bottom */
+.pinned-tags {
+    margin-top: 10px;
+}
+
+.pinned-tag {
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: #BBB; /* Darker than thought tags */
+    color: #222;
+    padding: 4px 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.pinned-tag a {
+    color: #222;
+    text-decoration: none;
+}
+
+.pinned-tag a:hover {
+    color: #007BFF;
+}
+

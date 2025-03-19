@@ -2,15 +2,37 @@
 <div class="article-content">
   <h1> Notes from the Wired</h1>
     <p>
-    This is a website where I write articles on various topics that interest me, carving out a bit of cyberspace for myself.<br><br>
-You shouldn't believe anything I talk about —- I use words entirely recreationally.
+      This is a website where I write articles on various topics that interest me, carving out a bit of cyberspace for myself.<br><br>
+      You shouldn't believe anything I talk about — I use words entirely recreationally.
     </p>
+
+  <!--To pin something, set in the article or though in the front matter "pinned: true"-->
+  <h2> Pinned </h2>
+  <ul class="pinned-list">
+    {{ range first 1 (where .Site.RegularPages "Params.pinned" true).ByPublishDate.Reverse }}
+      <li class="pinned-box">
+        <div class="pinned-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </div>
+        <div class="pinned-date">{{ .Date.Format "January 2, 2006" }}</div>
+        <div class="pinned-content">{{ .Summary }}</div>
+
+        <div class="pinned-tags">
+          {{ range .Params.tags }}
+            <span class="pinned-tag">
+              <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+            </span>
+          {{ end }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+
   <h2> Most Recent </h2>
-    <div class="combined-div">
-    {{ $onHome := .IsHome }}
-     {{ range first 3 (where .Site.RegularPages "Type" "in" (slice "articles" "paper-summary" "tangled_thoughts")).ByPublishDate.Reverse }}
-        {{ partial "list_element_home.html" . }}
-      {{ end }}
-   </div>
+  <div class="combined-div">
+    {{ range first 3 (where .Site.RegularPages "Type" "in" (slice "articles" "paper-summary" "tangled_thoughts")).ByPublishDate.Reverse }}
+      {{ partial "list_element_home.html" . }}
+    {{ end }}
+  </div>
 </div>
-{{ end }}
+{{ end }}  
