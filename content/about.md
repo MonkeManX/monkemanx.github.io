@@ -48,8 +48,8 @@ Symbolic AI will not lead us to AGI, as it doesn't seem feasible to write enough
 
 # Contact
 
-Feel free to contact me: monkeman@cock.li   
+Feel free to contact me, I am happy about every email I receive: monkeman@cock.li   
 If you want to encrypt your email use my
 {{< rawhtml >}}
-<a download href="/monkeman_public.asc">public GPG Key</a>.
+<a download href="/monkeman_public.asc">public PGP Key</a>.
 {{</ rawhtml >}}

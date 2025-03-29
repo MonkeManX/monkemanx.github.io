@@ -3,18 +3,7 @@ title: Lost
 date: 2024-07-10
 ---
 
-Lost data, in varying states of decomposition, that doesn't belong anywhere else.
-
-{{< poem >}}
-In the bleak-midwinter,
-Where sun seems so sinter-
-And the sky splinters.
-
-I walk, I run, I sprint.
-But my head keeps squinting,
-Spinning, Singing and hinting-
-To the Dire Dark Dreaded Dream.
-{{< /poem >}}
+Lost and incomplete data, in varying states of decomposition, that doesn't belong anywhere else.
 
 {{< poem >}}
 Momentarily Together. 
@@ -103,6 +92,19 @@ I act free. Why am I here?
 And I wonder--
 If you know what it means?
 {{< /poem >}}
+
+
+{{< poem >}}
+In the bleak-midwinter,
+Where sun seems so sinter-
+And the sky splinters.
+
+I walk, I run, I sprint.
+But my head keeps squinting,
+Spinning, Singing and hinting-
+To the Dire Dark Dreaded Dream.
+{{< /poem >}}
+
 
 {{< poem >}}
 The Great irony of man is that he's always chasing his goals and dreams, providing him great pleasure. 
