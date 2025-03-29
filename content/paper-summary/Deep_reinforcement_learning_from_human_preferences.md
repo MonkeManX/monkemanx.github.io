@@ -37,7 +37,7 @@ In traditional RL, the agent aims to maximize a reward \( r_t \in \mathbb{R} \).
 
 ## 2.2 RLHF
 
-RLHF employs a deep neural network $r'$ as a reward function estimator and a current policy \( \pi \), representing a sequence of actions optimizing the reward function estimation.
+RLHF employs a deep neural network \(r' \) as a reward function estimator and a current policy \( \pi \), representing a sequence of actions optimizing the reward function estimation.
 
 {{< rawhtml >}}
 <figure>
