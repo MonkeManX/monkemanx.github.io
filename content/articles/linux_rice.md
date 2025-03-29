@@ -112,8 +112,8 @@ You can restart i3 and apply your changes using the key combination `SUPER + SHI
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/polybar1.jpg">
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/polybar2.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/polybar1.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/polybar2.jpg">
     <figcaption style="text-align:center; margin-top: 10px;"></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -157,7 +157,7 @@ format-prefix-foreground = ${colors.yellow}
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/kitty.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/kitty.jpg">
     <figcaption style="text-align:center; margin-top: 10px;"></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -250,7 +250,7 @@ color15                 #bdae93
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/thunar_gruvbox.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/thunar_gruvbox.jpg">
     <figcaption style="text-align:center; margin-top: 10px;"></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -263,7 +263,7 @@ If Thunar doesn’t change its appearance after this, it might be running as a d
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/firefox.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/firefox.jpg">
     <figcaption style="text-align:center; margin-top: 10px;"></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -276,7 +276,7 @@ The Gruvbox theme can be installed on Firefox via an [addon](https://addons.mozi
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/btop.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/btop.jpg">
     <figcaption style="text-align:center; margin-top: 10px;"></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -289,7 +289,7 @@ To change the theme in Btop, run `btop`, press `ESC`, choose `Options`, and then
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/zathura.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/zathura.jpg">
     <figcaption style="text-align:center; margin-top: 10px;"></figcaption>
 </figure>
 {{< /rawhtml >}}

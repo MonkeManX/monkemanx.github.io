@@ -30,7 +30,7 @@ You might think that all of this doesn't matter since the girl in my dream was j
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/mc_donald_dream.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/mc_donald_dream.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -279,7 +279,7 @@ Looking back at the dream I had that I mentioned at the beginning, I wonder if w
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/dream2.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/dream2.jpg">
 </figure>
 {{< /rawhtml >}}
 

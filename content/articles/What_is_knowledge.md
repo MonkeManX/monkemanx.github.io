@@ -18,7 +18,7 @@ The theory of knowledge, or epistemology, encompasses far more than this single 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/1731096649646525.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/1731096649646525.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -342,7 +342,7 @@ I find some merit in contextualism and believe it makes sense, but it doesn't pr
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/plagued_by_concepts.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/plagued_by_concepts.png">
 </figure>
 {{< /rawhtml >}}
 

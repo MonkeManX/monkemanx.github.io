@@ -1,5 +1,5 @@
 ---
-title: 'Virtue Ethis from First Principles'
+title: 'Virtue Ethics from First Principles'
 date: 2025-01-26
 tags: ["Philosophy"]
 ---

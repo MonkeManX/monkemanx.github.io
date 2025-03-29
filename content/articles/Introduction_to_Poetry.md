@@ -101,7 +101,7 @@ If a poem follows the da-DUM metric pattern we call it *iambic*, we can combine 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/iambic_pentameter.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/iambic_pentameter.jpg">
     <figcaption style="text-align:center"><a href="https://xkcd.com/79/">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}

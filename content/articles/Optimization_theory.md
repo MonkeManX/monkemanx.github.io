@@ -32,7 +32,7 @@ All of these AI models can, in a very strict sense, be considered optimization-t
 
 {{< rawhtml >}}
 <figure>
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/stop_math.png">
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/stop_math.png">
     <figcaption style="margin-top: 10px;text-align:center">
         Someone create one of these memes, but for optimization theory and send it to me.
     </figcaption>
@@ -328,7 +328,7 @@ $$
 
 {{< rawhtml >}}
 <figure>
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/cone_hull.jpg">
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/cone_hull.jpg">
 <figcaption style="margin-top: 10px; text-align:center">
     Illustration of conic hull.
 </figcaption>
@@ -349,7 +349,7 @@ $$
 
 {{< rawhtml >}}
 <figure>
-<img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/hyprplane_halfspace.jpg">
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/hyprplane_halfspace.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -377,7 +377,7 @@ The intersection of half-spaces can be either empty or unrestricted, as shown be
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/option_intersection_lines.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/option_intersection_lines.jpg">
 </figure>
     <figcaption style="margin-top: 10px;text-align:center">
         On the left, the intersection is empty. In the middle, the intersection produces a half-plane. On the right, the intersection produces a cone.
@@ -388,7 +388,7 @@ Furthermore, \(P\) can either be empty, unrestricted, or restricted, as seen bel
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/limited_vs_unlimited.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/limited_vs_unlimited.jpg">
     <figcaption style="margin-top: 10px;text-align:center">
         On the left, \(P\) is formed by the intersection of five half-spaces. On the right, \(P\) is unrestricted and formed by the intersection of four half-spaces.
     </figcaption>
@@ -399,7 +399,7 @@ The objective function can be thought of as a shear between lines \(\{ x \ | \ c
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/optimization_problem_graphical.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/optimization_problem_graphical.jpg">
     <figcaption style="margin-top: 10px;text-align:center">
         On the left, the objective function \(Z\) has a finite optimum. On the right, the objective function \(Z\) can take any arbitrary value.
     </figcaption>
@@ -410,7 +410,7 @@ Thus, we can solve a linear program graphically in two dimensions. However, this
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="/attachments/machine_occupancy_problem_graphical.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="/attachments/machine_occupancy_problem_graphical.jpg">
     <figcaption style="margin-top: 10px;text-align:center">
         This is a graphical representation of the <i>Machine Occupancy Problem</i> from the beginning of this article.
     </figcaption>
@@ -440,7 +440,7 @@ This lemma means that if we have a closed set, we can always find a hyperplane t
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/seperation_lemma.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/seperation_lemma.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -451,7 +451,7 @@ This lemma means that if we have a closed set, we can always find a hyperplane t
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/farkas_lemma.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/farkas_lemma.jpg">
     <figcaption style="margin-top: 10px;text-align:center">
         Illustration of the Farkas Lemma: the left side visualizes the first case, and the right side visualizes the second case.
     </figcaption>
@@ -704,7 +704,7 @@ The intersection of these inequalities is empty, as shown in the illustration be
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/no_feasibility.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/no_feasibility.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -747,7 +747,7 @@ The feasible set in this case consists of exactly one point, as shown in the ill
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/feasibility_one_point.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/feasibility_one_point.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -792,7 +792,7 @@ The feasibility set in this case is a line, as shown in the illustration below:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/feasibility_line.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/feasibility_line.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1200,7 +1200,7 @@ Let’s look at *directed* graphs with *metrics*. Imagine the edges as oil pipel
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/oil_transportation.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/oil_transportation.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1246,7 +1246,7 @@ In other words, to find the capacity of a cut, we sum the capacities of all edge
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/cut_flow_graph.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/cut_flow_graph.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -2387,7 +2387,7 @@ Until now, we have only seen linear optimization problems, with linear objective
 
 {{< rawhtml >}}
 <figure>
-<img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/convex_set.jpg">
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/convex_set.jpg">
 <figcaption style="margin-top: 10px; text-align:center">
     Convex and Non-Convex Set.
 </figcaption>
@@ -2418,7 +2418,7 @@ $$
 
 {{< rawhtml >}}
 <figure>
-<img style="display: block; margin-left: auto; margin-right: auto; width: 100%" src="/attachments/convex_function.jpg">
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 100%" src="/attachments/convex_function.jpg">
 <figcaption style="margin-top: 10px;text-align:center">
     An illustration of the definition of a convex function.
 </figcaption>
@@ -2614,7 +2614,7 @@ We can display the set \(M\) and its convex hull graphically:
 
 {{< rawhtml >}}
 <figure>
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/convex_hull_and_polyhedral.jpg">
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/convex_hull_and_polyhedral.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -3682,7 +3682,7 @@ A sketch of \(M\):
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/sketch_constraint_set_task.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/sketch_constraint_set_task.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -4105,7 +4105,7 @@ The most use one can get from this article is to use it as a reference for theor
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/cat_drunk.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="/attachments/cat_drunk.jpg">
 </figure>
 {{< /rawhtml >}}
 

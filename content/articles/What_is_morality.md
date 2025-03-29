@@ -22,7 +22,7 @@ In this article, I will attempt to provide an overview of the question *What is 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/monke_smart_cigarette.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/monke_smart_cigarette.jpg">
     <figcaption style="margin-top: 10px;text-align:center">Me thinking about morality.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -53,7 +53,7 @@ It’s better to think of metaethical frameworks as having various properties th
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/put_em_up.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/put_em_up.jpg">
     <figcaption style="margin-top: 10px;text-align:center">Me challenging metaethics to a fight.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -83,7 +83,7 @@ Although I don’t think flowcharts provide the most accurate picture of the met
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/metaethics_chart.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/metaethics_chart.png">
     <figcaption style="margin-top: 10px;text-align:center">Overview of common metaethical frameworks, created with <a href="https://www.drawio.com/">draw.io</a>. You can download the file <a href="/attachments/moral_chart.drawio" download>here</a>. Please feel free to send me your corrections :)</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -140,7 +140,7 @@ Contra:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/emotivism.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/emotivism.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -298,7 +298,7 @@ Contra:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/its-a-meme-about-philosophy-realist-vs-nonrealist.webp">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/its-a-meme-about-philosophy-realist-vs-nonrealist.webp">
 </figure>
 {{< /rawhtml >}}
 
@@ -340,7 +340,7 @@ Contra:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/divine_commandmend_theory.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/divine_commandmend_theory.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -400,7 +400,7 @@ Contra:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/relativism.webp">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/relativism.webp">
 </figure>
 {{< /rawhtml >}}
 

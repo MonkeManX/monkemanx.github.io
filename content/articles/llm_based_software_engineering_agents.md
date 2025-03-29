@@ -28,7 +28,7 @@ Chain-of-Thought (CoT) prompting, is a technique that dramatically improves LLMs
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/cot.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/cot.png">
             <figcaption style="text-align:center; margin-top: 10px;">
             An example of Chain-of-Thought prompting.
     </figcaption>
@@ -39,7 +39,7 @@ Chain-of-Thought (CoT) prompting, is a technique that dramatically improves LLMs
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/llm_software_engineering/toolformer.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/llm_software_engineering/toolformer.png">
         <figcaption style="text-align:center; margin-top: 10px;">Exemplary predictions of Toolformer. The
 model autonomously decides to call different APIs
 (from top to bottom: a question answering system,
@@ -75,7 +75,7 @@ LLM agents are often used for tasks that require complex reasoning or planning. 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/teaser.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/teaser.png">
         <figcaption style="text-align:center; margin-top: 10px;">
         An example of a real-life GitHub issue, along with its corresponding codebase, is provided to the LLM. The LLM then modifies files on disk to create a patch, which is applied to the codebase. The patch is tested to ensure that all tests pass.
     </figcaption>
@@ -117,7 +117,7 @@ Once the LLM has made its changes, a git diff is calculated to create a patch. D
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/pipeline-evaluation.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/pipeline-evaluation.png">
         <figcaption style="text-align:center; margin-top: 10px;">
     Evaluation Pipeline of SWE-Bench visualized using a single task instance.
     </figcaption>
@@ -142,7 +142,7 @@ Naturally, the oracle scenario is much less realistic, as a software engineer do
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/llm_software_engineering/swe_agent_overview.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/llm_software_engineering/swe_agent_overview.png">
         <figcaption style="text-align:center; margin-top: 10px;">
     Overview of SWE-Agent.
     </figcaption>
@@ -171,7 +171,7 @@ Clearly, it can be seen that SWE-Agent greatly outperforms the retrieval-based m
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/llm_software_engineering/res-swe.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/llm_software_engineering/res-swe.png">
         <figcaption style="text-align:center; margin-top: 10px;">
     Main results for *SWE-Agent* performance on the full and Lite splits of the SWE-bench test set, taken from SWE-Agent*. The models that they benchmark are the retrieval-based method, which they call RAG, an agent with a basic CLI, i.e. without an ACI, and *SWE-Agent*.
     </figcaption>
@@ -181,7 +181,7 @@ Clearly, it can be seen that SWE-Agent greatly outperforms the retrieval-based m
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/llm_software_engineering/acr.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/llm_software_engineering/acr.png">
         <figcaption style="text-align:center; margin-top: 10px;">
     Overall workflow of AutoCodeRover.
     </figcaption>
@@ -239,7 +239,7 @@ This methodology allows Agentless to outperform other agent-based techniques, ac
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/overview.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/llm_software_engineering/overview.png">
         <figcaption style="text-align:center; margin-top: 10px;">
         This graphic depicts the overall workflow of Agentless.
     </figcaption>

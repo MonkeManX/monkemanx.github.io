@@ -52,7 +52,7 @@ And that’s all the tools you’ll need for restringing a guitar.
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/guitar/guitar_strings.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/guitar/guitar_strings.jpg">
     <figcaption style="margin-top: 10px">These are the strings I used, and they’ve worked quite well for me so far. They come with an additional high <b>E</b> string, which is nice since that one tends to break the fastest, along with a beginner guitar book.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -65,7 +65,7 @@ I use a classical guitar, so the three lower strings are distinct from the three
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/guitar/guitar_with_old_strings.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/guitar/guitar_with_old_strings.jpg">
     <figcaption style="margin-top: 10px; text-align:center;">My classical guitar, which is over 10 years old, that I’ll use for restringing.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -85,11 +85,11 @@ You can see the result of my restringing process below. The knots for the higher
 {{< rawhtml >}}
 <figure style="display: flex; justify-content: center;">
     <div style="text-align: center; margin-right: 10px;">
-        <img style="width:100%;" src="/attachments/guitar/guitar_head_new_strings.jpg">
+        <img loading="lazy" style="width:100%;" src="/attachments/guitar/guitar_head_new_strings.jpg">
         <figcaption>The guitar head with the new strings.</figcaption>
     </div>
     <div style="text-align: center; margin-left: 10px;">
-        <img style="width:100%;" src="/attachments/guitar/guitar_tail_new_strings.jpg">
+        <img loading="lazy" style="width:100%;" src="/attachments/guitar/guitar_tail_new_strings.jpg">
         <figcaption>The guitar bridge with the new strings.</figcaption>
     </div>
 </figure>

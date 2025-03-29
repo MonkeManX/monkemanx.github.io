@@ -18,7 +18,7 @@ Run the command from the [PyTorch site](https://pytorch.org/get-started/locally/
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pytorch_installation.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pytorch_installation.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -38,7 +38,7 @@ First, we need to clarify the components that make up LeNet-5. Below is a visual
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/LeNet-5_architecture.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/LeNet-5_architecture.png">
     <figcaption style="margin-top: 10px; text-align:center;">Source: Wikipedia</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -47,7 +47,7 @@ First, we need to clarify the components that make up LeNet-5. Below is a visual
 {{< rawhtml >}}
 <figure style="max-width: 100%; width: 20%; float: right; margin: 0 0 1em 1em;">
     <div style="float: right; width: 100%;">
-        <img src="/attachments/LeNet-5_architecture_block_diagram.svg.png" style="width: 100%;">
+        <img loading="lazy" src="/attachments/LeNet-5_architecture_block_diagram.svg.png" style="width: 100%;">
     </div>
     <figcaption style="clear: both; text-align: center;">Source: <a href="https://en.wikipedia.org/wiki/LeNet#/media/File:LeNet-5_architecture_block_diagram.svg">Wikipedia</a></figcaption>
 </figure>
@@ -226,7 +226,7 @@ plt.imshow(sample, cmap='gray', interpolation='none')
     <div style="flex: 1;">
         {{< rawhtml >}}
         <figure>
-            <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/mnist_5.png">
+            <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/mnist_5.png">
         </figure>
         {{< /rawhtml >}}
     </div>
@@ -397,7 +397,7 @@ ax.set_title('LeNet Training')
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/lenet_loss_acc.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/lenet_loss_acc.png">
 </figure>
 {{< /rawhtml >}}
 

@@ -61,7 +61,7 @@ For my website, I choose the [PaperMod](https://github.com/adityatelange/hugo-Pa
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/114303440-bfc0ae80-9aeb-11eb-8cfa-48a4bb385a6d.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/114303440-bfc0ae80-9aeb-11eb-8cfa-48a4bb385a6d.png">
     <figcaption style="text-align:center"><a href="https://github.com/adityatelange/hugo-PaperMod">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -165,7 +165,7 @@ Finally, I adjusted the website menu by modifying the menu section. The example 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/2023-12-21_22-50.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/2023-12-21_22-50.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -197,7 +197,7 @@ The `home`  button leads back to the homepage, which shows an overview of my rec
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-58-11.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-58-11.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -205,7 +205,7 @@ The `About` button leads to a site, which describes what the website is about, t
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-58-29.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-58-29.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -213,7 +213,7 @@ The `tags` button leads to a site, where one can search for posts by tags:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-58-49.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-58-49.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -221,7 +221,7 @@ The `Archive` button leads to a site, which depicts all posted posts by time the
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-59-02.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-21%2022-59-02.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -367,7 +367,7 @@ I wanted a shortcode which would allow me to use foldable markdown box:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202023-12-23%2017-33-45.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202023-12-23%2017-33-45.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -468,13 +468,13 @@ In Hugo, adding captions to images can be achieved using custom render hooks. He
     ```sh
     {{ if .Title }}
       <figure class="latex-figure">
-        <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+        <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
         <figcaption>
             <p>{{ .Title | markdownify }}</p>
         </figcaption>
       </figure>
     {{ else }}
-      <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+      <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
     {{ end }}
     ```
 2. Now, when you add an image in your markdown, you can include a caption using the `![Alt Text](Image URL "Caption")` syntax. For example:

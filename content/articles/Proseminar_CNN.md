@@ -42,7 +42,7 @@ CNNs can learn to semantically understand images, instead of relying on handcraf
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/cnn_figures/cnn_features.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/cnn_figures/cnn_features.png">
     <figcaption>Figure 1: Feature visualization of convolutional net trained on ImageNet from [10]. Images to the left are features extracted in earlier layers, while images to the right are features extracted in later layer. We can see earlier layer look for more simple patterns while later layer look for more complex pattern. Source: Alfredo Canziani Book Deep Learning.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -68,7 +68,7 @@ Within a single convolutional layer, multiple filter/kernel can be employed, eac
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/cnn_figures/convolution_operation.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/cnn_figures/convolution_operation.png">
     <figcaption>Figure 2: Example of a convolution operation. We have an input matrix, take an input patch out of it, multiply it with the kernel matrix to get the first value of our output. To get the subsequent values, we take the next image patches and do the same process again. Source: Medium @draj0718</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -104,7 +104,7 @@ To accomplish dimension reduction, subsampling techniques can be employed. Two p
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/cnn_figures/pooling.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/cnn_figures/pooling.png">
     <figcaption>Figure 3: Demonstration of the max-pooling operation with stride 2 and filter size 2x2. We go over each image patch and take the highest value. Source: O’Reilly Media</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -125,7 +125,7 @@ The MNIST dataset is divided into 60,000 training images and 10,000 testing imag
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/cnn_figures/sample_modified_dataset.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/cnn_figures/sample_modified_dataset.png">
     <figcaption>Figure 4: Sample Data from the MNIST dataset after the preprocessing got applied, but before the color got inverted.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -137,7 +137,7 @@ For the alternative models, I applied various additional transformations to the 
 {{< rawhtml >}}
 <figure style="max-width: 100%; width: 15%; float: right; margin: 0 0 1em 1em;">
     <div style="float: right; width: 100%;">
-        <img src="/cnn_figures/main_architecture.png" style="width: 100%;" alt="Description of the image">
+        <img loading="lazy" src="/cnn_figures/main_architecture.png" style="width: 100%;" alt="Description of the image">
     </div>
     <figcaption style="clear: both; text-align: center;">Figure 5: The architecture of the Baseline Model. General Matrix multiplication (Gemm) is the same as a fully connected layer.</figcaption>
 </figure>
@@ -171,7 +171,7 @@ Furthermore, applying batch normalization [4], significantly improved the result
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/cnn_figures/loff_full.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/cnn_figures/loff_full.png">
     <figcaption>Figure 6: Following abbreviations apply RN = Applies random noise to the images in dataset while training, RC = Random cropping of the images in the dataset while training, BN = Uses Batch norm, 8f = Instead of using 16 filters for the convolutional layer it uses 8 filter.</figcaption>
 </figure>
 {{< /rawhtml >}}

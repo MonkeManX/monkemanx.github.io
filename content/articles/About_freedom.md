@@ -153,7 +153,7 @@ In the end, being less connected, seeking more freedom in the isolated sense, mi
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/the-wired-is-calling-us.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/the-wired-is-calling-us.jpg">
 </figure>
 {{< /rawhtml >}}
 

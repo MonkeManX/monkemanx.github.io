@@ -35,7 +35,7 @@ Upon the finish of the decryption process, the original message **m** sent by us
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240330_19h07m31s_grim.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/20240330_19h07m31s_grim.png">
     <figcaption style="text-align:center"><a href="https://www.varonis.com/blog/pgp-encryption">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -63,7 +63,7 @@ Here's how the algorithm works:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/20240330_19h09m39s_grim.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/20240330_19h09m39s_grim.png">
     <figcaption style="text-align:center"><a href="https://techterms.com/definition/digitalsignature">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -114,7 +114,7 @@ This lead me thinking, "What could I digitally sign?" - two application that cam
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/pgp.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/pgp.png">
     <figcaption style="text-align:center"><a href="https://xkcd.com/1181/">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -139,7 +139,7 @@ Once added your commits should appear as verified.
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-22%2012-53-07.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202023-12-22%2012-53-07.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -151,7 +151,7 @@ I decided to enhance the trustworthiness of my posts by incoperating digital sig
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202023-12-22%2014-50-54.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202023-12-22%2014-50-54.png">
 </figure>
 {{< /rawhtml >}}
 

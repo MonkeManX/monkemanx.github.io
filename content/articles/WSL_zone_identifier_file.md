@@ -22,7 +22,7 @@ If you receive a message saying that `gpedit.msc` does not exist, like this:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/gpeditmsc-error-introduction.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/gpeditmsc-error-introduction.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -54,10 +54,10 @@ Go to Control Panel -> `Network and Internet` -> `Internet Options` -> `Security
 {{< rawhtml >}}
 <div style="display: flex; justify-content: center; gap: 20px;">
     <figure>
-        <img style="display: block; margin: auto; width:80%;" src="/attachments/internet_prop_1.jpg">
+        <img loading="lazy" style="display: block; margin: auto; width:80%;" src="/attachments/internet_prop_1.jpg">
     </figure>
     <figure>
-        <img style="display: block; margin: auto; width:80%;" src="/attachments/internet_prop_2.jpg">
+        <img loading="lazy" style="display: block; margin: auto; width:80%;" src="/attachments/internet_prop_2.jpg">
     </figure>
 </div>
 {{< /rawhtml >}}
@@ -74,7 +74,7 @@ It seems this bug is quite old and likely won't be fixed anytime soon. Someday, 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/bug_comic.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/bug_comic.png">
     <figcaption style="text-align:center; margin-top: 10px;">
         The GitHub issue for this bug is quite entertaining to read, highly recommended.
     </figcaption>

@@ -61,7 +61,7 @@ Thus, whether the final statue—your character—becomes a beautiful masterpiec
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Aristotle.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Aristotle.jpg">
 </figure>
 {{< /rawhtml >}}
 

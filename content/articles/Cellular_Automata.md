@@ -20,7 +20,7 @@ For more detail, I highly recommend checking out this aweasome [Numberphile vide
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/game-of-life-loop-cropped.gif">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/game-of-life-loop-cropped.gif">
     <figcaption style="text-align:center; margin-top: 10px;">
         Animation made by Ivan Lokhov.
     </figcaption>
@@ -68,7 +68,7 @@ Our space is \(R = \mathbb{Z}_1 \times \mathbb{Z}_2\), we have four states \(Q =
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/ca_example_1.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/ca_example_1.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -84,8 +84,8 @@ The **d-dimensional Non-Neuman-Neighborhood** with radius \(r\) ist \(N_r^d = \{
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/moore_neighborhood.jpg">
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/von_neumann_neighborhood.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/moore_neighborhood.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/von_neumann_neighborhood.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         An example of the Moore and Von-Neumann Neighborhood.
     </figcaption>
@@ -144,7 +144,7 @@ The local transition function is shown below, where a cross indicates that the s
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/wireworld_transfer.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/wireworld_transfer.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -153,7 +153,7 @@ We can now use Wireworld to simulate various electrical devices by smartly choos
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/wireworld-wire.gif">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/wireworld-wire.gif">
 </figure>
 {{< /rawhtml >}}
 
@@ -161,7 +161,7 @@ It is also possible to simulate a *diode*, where a signal can flow in one direct
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/wireworld-diode.gif">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/wireworld-diode.gif">
 </figure>
 {{< /rawhtml >}}
 
@@ -169,7 +169,7 @@ A diode is interesting, but even more useful is an *OR-gate*. The construction i
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/wireworld-or.gif">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/wireworld-or.gif">
 </figure>
 {{< /rawhtml >}}
 
@@ -188,7 +188,7 @@ This means we represent a TM configuration \(c_T = (s, b, p)\) through a CA conf
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/tm_ca_config.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/tm_ca_config.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -196,7 +196,7 @@ Now we need a transition function that translates each step of the Turing machin
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/tm_ca_transfer_function.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/tm_ca_transfer_function.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -207,7 +207,7 @@ As an example, the following shows the configuration of a Turing machine for a g
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/tm_exmaple.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/tm_exmaple.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -215,7 +215,7 @@ And here is how the CA that simulates the TM would look:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/ca_example.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/ca_example.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -255,7 +255,7 @@ Often, 1-dimensional patterns are [words](https://en.wikipedia.org/wiki/Formal_l
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/pattern_irregular.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/pattern_irregular.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -300,7 +300,7 @@ If we have a *word* of length \(n = 4\), the first four cells of our cellular au
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/ca_word.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/ca_word.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -311,11 +311,11 @@ To solve this, we can simulate a finite state machine that accomplishes this. We
 {{< rawhtml >}}
 <figure style="display: flex; justify-content: center;">
     <div style="text-align: center; margin-right: 10px;">
-        <img style="width:100%;" src="/attachments/positive_example_ca.jpg" alt="Positive Example">
+        <img loading="lazy" style="width:100%;" src="/attachments/positive_example_ca.jpg" alt="Positive Example">
         <figcaption>Positive Example: Here, the word consists only of 'a's, so we accept the word.</figcaption>
     </div>
     <div style="text-align: center; margin-left: 10px;">
-        <img style="width:100%;" src="/attachments/negative_example_ca.jpg" alt="Negative Example">
+        <img loading="lazy" style="width:100%;" src="/attachments/negative_example_ca.jpg" alt="Negative Example">
         <figcaption>Negative Example: The word contains a 'b', so we reject the input word.</figcaption>
     </div>
 </figure>
@@ -327,7 +327,7 @@ The table below shows the transition function of the above cellular automaton. F
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/ca_detect_lang_transfer_fucntion.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/ca_detect_lang_transfer_fucntion.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -336,7 +336,7 @@ It is also possible to create a cellular automaton to detect all possible [palin
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_palindrome.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_palindrome.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -378,7 +378,7 @@ We choose \(R = \mathbb{Z}, N = H_1^1, Q = A \cup \{\text{Rectangle}\}\) and def
 
 {{< rawhtml >}}
 <figure style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
-    <img style="width: 100%;" src="/attachments/sorting_1d_ca.jpg">
+    <img loading="lazy" style="width: 100%;" src="/attachments/sorting_1d_ca.jpg">
     <figcaption style="margin-top: 5px; text-align: center;">
         The last line is used in all cases where the first two lines don't apply.
     </figcaption>
@@ -424,7 +424,7 @@ Below is an example calculation with the Odd-Even-Transposition Sort CA:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/odd_even_sort_ca.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/odd_even_sort_ca.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -456,7 +456,7 @@ It is possible to construct a signal with a speed corresponding to any rational 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ca_signal_constant_speed.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ca_signal_constant_speed.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -465,7 +465,7 @@ It is also possible to create signals with non-constant speeds. One such example
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_signal_parable.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_signal_parable.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -493,7 +493,7 @@ This algorithm realizes a counter through a one-dimensional CA that "walks", inc
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/ca_counter.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/ca_counter.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -521,7 +521,7 @@ The overall running time of the algorithm is \(O(3n)\).
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/ca_synchronize_balzer.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/ca_synchronize_balzer.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -544,7 +544,7 @@ Below is a sketch of the process, where the blue lines represent the freezing si
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_sychronize_arbitary_general.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_sychronize_arbitary_general.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -558,7 +558,7 @@ In the sketch below, the \(M_i\) have the shape of a sideways "L". We treat thes
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_sychronize_rectangle.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_sychronize_rectangle.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -572,7 +572,7 @@ Until now, we have only explored sorting in the 1-dimensional case. We now want 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/ca_2d_sort_arrangments.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/ca_2d_sort_arrangments.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -586,7 +586,7 @@ In phases \(2, 4, 6, ..., 2\log(m)\), we sort each *column*, moving the smaller 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/ca_shearsort_example.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/ca_shearsort_example.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         Example calculation with the Shear Sorting algorithm.
     </figcaption>
@@ -632,7 +632,7 @@ The CA *Rule 170* has the transfer function \(f(l) = l(1)\), i.e., we shift all 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_rule170_asynchronous.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_rule170_asynchronous.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -643,7 +643,7 @@ We will set the state set to \(Q' = Q \times Q \times \{0,1,2\}\), where the fir
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ca_nakamura_transfer_function.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ca_nakamura_transfer_function.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -654,7 +654,7 @@ We again look at the CA Rule 170, but this time we use the Nakamura technique to
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_nakamura_example.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_nakamura_example.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         This is only how the Nakamura technique stores the states of the CA. I didn’t include a full simulation, but it should be fairly obvious from this picture onwards.
     </figcaption>
@@ -680,7 +680,7 @@ With synchronous updating, blocks of at least two consecutive bits are conserved
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_rule_232.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_rule_232.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         This example is simulated using a synchronous CA.
     </figcaption>
@@ -692,7 +692,7 @@ A "car," marked by the state "1," moves to the right if there is an "empty stree
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_rule_184.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/ca_rule_184.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         This example is simulated using a synchronous CA.
     </figcaption>
@@ -708,7 +708,7 @@ In fact, it turns out that \(\alpha\)-asynchronous CAs are a special case of pro
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_a_to_probabillistic_ca.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/ca_a_to_probabillistic_ca.jpg">
 </figure>
 {{< /rawhtml >}}
 

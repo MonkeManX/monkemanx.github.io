@@ -25,7 +25,7 @@ This post will probably rather long, because of the sheer amount of software I d
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Love.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Love.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -65,7 +65,7 @@ As such I will analyze the requirements of these two functionalities first.
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/it_server.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/it_server.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -127,7 +127,7 @@ df.head()
 Which will return in the following output:
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/homelab_jupyter_1.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/homelab_jupyter_1.jpg">
 </figure>
 
 As you can see, there are multiple issues: for one we have two weird columns titld `unamed: 0` and `unamed 7` and second our first row is also weird, we should remove both.
@@ -139,7 +139,7 @@ df.head()
 Which will result in the following output:
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/homelab_jupyter_2.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/homelab_jupyter_2.jpg">
 </figure>
 
 There are still one issue persisting, we have whitespaces in the column names and in the data fields, you can see that through the following command:
@@ -237,7 +237,7 @@ With that in mind, 1TB should be sufficient for my movie media needs. However, i
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Titanic.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Titanic.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -266,7 +266,7 @@ A quick note on the size of the computer: I wanted a server that had enough spac
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/desktop_size.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/desktop_size.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -284,7 +284,7 @@ From the decisions I’ve made so far, you’ve probably noticed that this serve
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/server_meme.webp">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/server_meme.webp">
 </figure>
 {{< /rawhtml >}}
 
@@ -314,7 +314,7 @@ It turned out to be a bit more expensive than I initially expected, mostly becau
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/naked.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/naked.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -324,7 +324,7 @@ I thought I had taken a photo when the machine first arrived, but I didn’t, so
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/server_imgs/IMG_20240927_204550120.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/server_imgs/IMG_20240927_204550120.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -332,8 +332,8 @@ Below you can see how I installed the disks into the machine. The ProDesk 600 G5
 
 {{< rawhtml >}}
 <figure style="display: flex; justify-content: center;">
-    <img style="width: 50%;" src="/attachments/server_imgs/IMG_20240815_234023627.jpg">
-    <img style="width: 50%;" src="/attachments/server_imgs/IMG_20240815_234153914.jpg">
+    <img loading="lazy" style="width: 50%;" src="/attachments/server_imgs/IMG_20240815_234023627.jpg">
+    <img loading="lazy" style="width: 50%;" src="/attachments/server_imgs/IMG_20240815_234153914.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -356,7 +356,7 @@ However, RAID-0 also has a major disadvantage. If any of the disks in the RAID a
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/RAID_0.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/RAID_0.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -366,7 +366,7 @@ However, this setup comes with a downside: you sacrifice 50% of your storage cap
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/RAID_1.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/RAID_1.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -378,7 +378,7 @@ The disadvantage of RAID-01 is that it requires at least four disks, and like wi
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/RAID_01.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/RAID_01.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -388,7 +388,7 @@ This redundancy is achieved by using parity blocks, which are distributed across
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/RAID_5.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/RAID_5.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -429,7 +429,7 @@ Ultimately, I settled on the following setup:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/seattle.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/seattle.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -451,7 +451,7 @@ You could also get all these benefits without using Proxmox by running an operat
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/proxmox.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/proxmox.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         An example of my Proxmox setup.
     </figcaption>
@@ -469,7 +469,7 @@ When you reach the screen where you need to choose the installation destination 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_setup_select_disks.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_setup_select_disks.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -477,7 +477,7 @@ When prompted to create an account, I highly recommend using a real email (or ev
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pve-set-password.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pve-set-password.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -485,7 +485,7 @@ For the network configuration, make sure to select an IP address that is actuall
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pve-setup-network.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pve-setup-network.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -501,7 +501,7 @@ The first thing you’ll probably want to do is enable the "No-Subscription Repo
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gui-node-repositories.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gui-node-repositories.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -509,7 +509,7 @@ After you have enabled the community repository, you can update Proxmox by navig
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_update.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_update.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -519,7 +519,7 @@ Next, we want to create a ZFS pool for the four remaining disks (the two externa
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_zfs.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_zfs.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -527,7 +527,7 @@ If you are finished, this should look like this:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_zfs_overview.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_zfs_overview.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -537,7 +537,7 @@ Next, we want to check if [S.M.A.R.T. monitoring](https://en.wikipedia.org/wiki/
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_smart_values.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_smart_values.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -557,7 +557,7 @@ The first step is to download the OpenMediaVault [ISO](https://www.openmediavaul
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_upload.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_upload.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -565,7 +565,7 @@ After this you can press the big blue button with the text `Create VM` in the to
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_nas.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_nas.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -575,7 +575,7 @@ OpenMediaVault (OMV) should now be available as a web service. This means you ca
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/omv_dashboard.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/omv_dashboard.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -585,7 +585,7 @@ The first thing you should do is change the default password. Click on the perso
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/omv_file_system.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/omv_file_system.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -601,7 +601,7 @@ You should now be able to connect to your shared folder via your file manager bo
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nas_access.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nas_access.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -615,7 +615,7 @@ For the installation, I used the [Proxmox Helper Scripts by tteck](https://tteck
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_nginx_installation.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_nginx_installation.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -625,7 +625,7 @@ Similar to the OpenMediaVault virtual machine, you can double-click the new Ngin
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nginx_home.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nginx_home.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -643,7 +643,7 @@ After creating the domain, it will point to your **external IP address**. Since 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/duckdns.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/duckdns.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -657,8 +657,8 @@ Now, let’s add your first proxy. Go to `Hosts -> Proxy Hosts -> Add Proxy Host
 
 {{< rawhtml >}}
 <figure style="display: flex; justify-content: center;">
-    <img style="width: 40%;" src="/attachments/nginx_proxy_1.jpg">
-    <img style="width: 50%;" src="/attachments/nginx_proxy_2.jpg">
+    <img loading="lazy" style="width: 40%;" src="/attachments/nginx_proxy_1.jpg">
+    <img loading="lazy" style="width: 50%;" src="/attachments/nginx_proxy_2.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -725,7 +725,7 @@ The output should look similar to this:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/freshrss_docker.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/freshrss_docker.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -734,7 +734,7 @@ As with the previous services, you should be able to connect to the web service 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/freshrss_home.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/freshrss_home.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -756,7 +756,7 @@ You have now a central website from which you can read blog posts from, but mayb
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/read_you_rss.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/read_you_rss.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -770,7 +770,7 @@ To synchronize the *Read You* app with your server, go to `Settings -> Accounts 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/tandoor_example.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/tandoor_example.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -788,7 +788,7 @@ There are plenty of other dashboard services out there, such as [Dashy](https://
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/homarr.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/homarr.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -826,7 +826,7 @@ Everything runs inside a Docker container with Gluetun, which tunnels all networ
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/mediastack.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/mediastack.png">
     <figcaption style="text-align:center; margin-top: 10px;">
         Image is from <i>zerodya</i>. In my setup, I use <i>Prowlarr</i> instead of Jackett and <i>qBittorrent</i> instead of Transmission.
     </figcaption>
@@ -885,8 +885,8 @@ Since the local ZFS dataset doesn't have enough space to store all the movies, w
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/arr_stack_boot.jpg">
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nas_boot.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/arr_stack_boot.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nas_boot.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1059,7 +1059,7 @@ docker compose up -f arr-stack-compose.yaml up -d
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/500days.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/500days.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         <i>Completly unrelated, another cool movie poster.</i>
     </figcaption>
@@ -1075,8 +1075,8 @@ Jellyfin integrates smoothly with the *arr-stack*, which is responsible for the 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/jellyfin_movies.jpg">
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/jellyfin_details.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/jellyfin_movies.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/jellyfin_details.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1149,7 +1149,7 @@ Next, in Proxmox, navigate to `Datacenter -> Resource Mapping -> Add` and add yo
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ressource_mapping_ihpu.jpg" alt="Resource Mapping">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ressource_mapping_ihpu.jpg" alt="Resource Mapping">
 </figure>
 {{< /rawhtml >}}
 
@@ -1212,7 +1212,7 @@ After running the previous command, you should receive an output that looks simi
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/jellyfin_hw_test.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/jellyfin_hw_test.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1261,7 +1261,7 @@ When creating your media library, you should enable the `NFO` option, which will
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/cat7.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/cat7.jpg">
     <figcaption style="text-align:center; margin-top: 10px;">
         <i>A picture of a cat inside a server, has nothing to do Jellyfin.</i>
     </figcaption>
@@ -1277,7 +1277,7 @@ To recap, Syncthing is a synchronization service that allows you to sync files a
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/synthing.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/synthing.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1309,7 +1309,7 @@ Once the installation is complete, we can add our SMB share to the LXC container
 
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/proxmox_id.jpg">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/proxmox_id.jpg">
     </figure>
     {{< /rawhtml >}}
 
@@ -1343,7 +1343,7 @@ You should now be able to add your sync folder and syncrhonize them across devic
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/documents-smallcards-dark.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/documents-smallcards-dark.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -1367,7 +1367,7 @@ To address this, we can host our own VPN with [WG-Easy](https://github.com/wg-ea
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/wg-easy.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/wg-easy.png">
     <figcaption style="text-align:center; margin-top: 10px;">
         <i>Wg-easy dashboard.</i>
     </figcaption>
@@ -1431,7 +1431,7 @@ For more information refer to my [prior article](/articles/my_homelab_part_4_wir
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/calibre_automated.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/calibre_automated.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1439,7 +1439,7 @@ For more information refer to my [prior article](/articles/my_homelab_part_4_wir
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/audiobookshelf.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/audiobookshelf.png">
     <figcaption style="text-align:center; margin-top: 10px;">
         <i>Image is from geek-cookbook.</i>
     </figcaption>
@@ -1579,7 +1579,7 @@ In Prowlarr, you need to add Readarr as a connection. You can do this by navigat
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1589,9 +1589,9 @@ The last step is to ensure that books and audiobooks are downloaded to the corre
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_category.jpg">
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_books.jpg">
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_audiobooks.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_category.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_books.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_audiobooks.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1601,7 +1601,7 @@ To ensure books are moved to the correct folder after downloading, go to qBittor
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/qbittorent_external_programm.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/qbittorent_external_programm.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1614,7 +1614,7 @@ Now, whenever you search for a book on Prowlarr, it should automatically downloa
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/immich.webp">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/immich.webp">
     <figcaption style="text-align:center; margin-top: 10px;">
         <i>Image is from elest.io</i>
     </figcaption>
@@ -1705,7 +1705,7 @@ You might think that using a RAID system, which mirrors every disk, provides bac
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/raid_backup.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/raid_backup.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -1779,7 +1779,7 @@ This setup has worked well so far. After a month of running, my server’s backu
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/backup_usage.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/backup_usage.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1819,7 +1819,7 @@ To implement my backup strategy, follow these steps:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/30year_old_saver.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/30year_old_saver.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -1829,7 +1829,7 @@ If you, like me, live in a European country, power consumption is probably a con
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/electricity_2023_prices.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/electricity_2023_prices.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1887,7 +1887,7 @@ To send the wake-up packet, I use my smartphone with the [WakeOnLan app](https:/
 The configuration of *WakeOnLan* app should look similar to this:
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/wake_on_lan.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/wake_on_lan.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -1900,7 +1900,7 @@ Alternatively, you can use the command `ip link` and look for the device labeled
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ifcofig.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ifcofig.jpg">
 </figure>
 {{< /rawhtml >}}
 
@@ -1916,8 +1916,8 @@ At last, enjoy these last server-themed movie posters.
 
 {{< rawhtml >}}
 <figure style="display: flex; justify-content: center; gap: 10px;">
-    <img style="width: 33%;" src="/attachments/back_up.jpg">
-    <img style="width: 33%;" src="/attachments/the_ecc_buster.jpg">
-    <img style="width: 33%;" src="/attachments/Alien3.png">
+    <img loading="lazy" style="width: 33%;" src="/attachments/back_up.jpg">
+    <img loading="lazy" style="width: 33%;" src="/attachments/the_ecc_buster.jpg">
+    <img loading="lazy" style="width: 33%;" src="/attachments/Alien3.png">
 </figure>
 {{< /rawhtml >}}
