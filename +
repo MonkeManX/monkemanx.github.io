@@ -3124,7 +3124,7 @@ Are the following statements true or false? Provide a brief justification.
 
 **(a)** KKT points are candidates for which the equation \( v \nabla f(\hat{x}) + \hat{u} \nabla h(\hat{x}) = 0 \) holds.
 
-**(b)** The KKT (Karush-Kuhn-Tucker conditions) are constraint qualifications.
+**(b)** The MFC (Karush-Kuhn-Tucker conditions) are constraint qualifications.
 
 **(c)** If \( (\bar{x}, \hat{u}, v) \) is a KKT point, then either \( \hat{u}_j = 0 \) or \( f_j(\bar{x}) = 0 \).
 
@@ -4103,9 +4103,6 @@ $$
 
 
 
-{{< addspace height="200px" >}}
-
-
 ## Problems with Un-confirmed Solution
 
 Problems in this section do not have an official solution, this means the provided solution could be wrong.
@@ -4810,149 +4807,6 @@ $$
 
 
 ### Problem 53
-
-Given the optimization problem
-
-$$
-(P) \quad \min \frac{1}{2}(x - 5)^2 \ \ \text{under} \ \ x \geq 0, \ sin(x) \geq 0, \ xsin(x) = 0
-$$
-
-And the associated lagrange function 
-
-$$
-L(x, u_1, u_2, v) = \frac{1}{2} (x - 5)^2 - u_1 x - u_2 sin(x) + vx sin(x)
-$$
-
-**a)** Formulate the KKT-Conditions for (P).
-
-**b)** Determine for \(x^* = \pi\) all lagrane multiplicator \(u_1^*, u_2^*, v^*\), so that the vector \((\pi, u_1^*, u_2^*, v^*)^T\) is a KKT point of (P).
-
-**c)** Check if \(x^* = \pi\) fullfills (CQ1).
-
-**d)** Check if \(x^* = \pi\) fullfills (CQ2).
-
-
-
-{{< details "Solution a)" "false" >}}
-
-The KKT conditions are: 
-
-$$
-\begin{align}
-(1) \quad 0 &= \nabla_x L = x - 5 - u_1 - u_2 cos(x) + v sin(x) + v x cos(x) \\
-(2) \quad 0 &= - u_1 x \\
-(3) \quad 0 &= -u_2 sin(x) \\
-(4) \quad 0 &= xsin(x) \\
-(5) \quad 0 &\leq u_1, u_2 \\
-(6) \quad 0 &\leq x \\
-(7) \quad 0 &\leq sin(x)
-\end{align}
-$$
-
-{{< /details >}}
-
-
-{{< details "Solution b)" "false" >}}
-
-
-We have \(x^* = \pi\). Inserting this into (6) and (7), we see that the associated constraints are fulfilled.  
-
-Further, inserting \(x^* = \pi\) into (2), we obtain  
-
-\[
-0 = - u_1 \pi \implies u_1 = 0.
-\]  
-
-Inserting it into (3) gives  
-
-\[
-0 = - u_2 \sin(\pi) = 0.
-\]  
-
-Inserting it into (4) yields  
-
-\[
-0 = \pi \sin(\pi) = 0.
-\]  
-
-Finally, inserting \(x^* = \pi\) and \(u_1 = 0\) into (1), we get  
-
-\[
-0 = \pi - 5 - u_2 \cos(\pi) + v \sin(\pi) + v \pi \cos(\pi).
-\]  
-
-Since \(\cos(\pi) = -1\) and \(\sin(\pi) = 0\), this simplifies to  
-
-\[
-0 = \pi - 5 + u_2 - \pi v.
-\]  
-
-Solving for \(u_2\), we obtain  
-
-\[
-u_2 = - \pi + 5 + \pi v.
-\]  
-
-From (5), we get the condition  
-
-\[
-\frac{\pi - 5}{\pi} \leq v.
-\]  
-
-Thus, all points of the form  
-
-\[
-(\pi, 0, -\pi + 5 + \pi v, v^*)
-\]  
-
-are KKT points, where \(v^* \in \mathbb{R}\) and \(\frac{\pi - 5}{\pi} \leq v\).  
-
-{{< /details >}}
-
-
-{{< details "Solution c)" "false" >}}
-
-We now check if the condition (CQ1) is fulfilled. To do so, we first compute the derivative of \(h\):
-
-$$
-h'(x) = \sin(x) + x \cos(x) \quad \implies \quad h'(\pi) = - \pi
-$$
-
-The result is one-dimensional, so the rank condition is fulfilled.
-
-Next, we compute the derivative of \(g\):
-
-$$
-g_1'(x) = -1 \quad \implies \quad g_1'(\pi) = -1
-$$
-
-$$
-g_2'(x) = -\cos(x) \quad \implies \quad g_2'(\pi) = 1
-$$
-
-We now check the second part of the CQ1 condition. For this to be valid, the following inequalities must hold:
-
-$$
-g_1(\pi) + g_1'(\pi)z_1 < 0 \quad \text{and} \quad h'(\pi)z_1 = 0
-$$
-
-and
-
-$$
-g_2(\pi) + g_2'(\pi)z_2 < 0 \quad \text{and} \quad h'(\pi)z_2 = 0
-$$
-
-These are satisfied for \(z_1 = 0\), but not for \(z_2\). Therefore, condition (CQ1) is not fulfilled.
-
-{{< /details >}}
-
-
-{{< details "Solution d)" "false" >}}
-
-CQ1 is weaker than CQ2 and if the weaker version is not fullfilled than CQ2 can't be fullfilled either.
-
-{{< /details >}}
-
 
 ## Conclusion
 
