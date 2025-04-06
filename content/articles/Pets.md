@@ -1,7 +1,7 @@
 ---
 title: 'Family Pets/Animals'
 date: 2024-12-10
-tags: []
+tags: ["Random"]
 ---
 
 Recently, I had the idea to make a list of all the important animals and pets that my family has had. I’m not sure why I felt the impulse to do it; I guess it’s a form of remembrance.
