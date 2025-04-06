@@ -4,6 +4,10 @@ date: 2025-01-26
 tags: ["Philosophy"]
 ---
 
+{{< warning "Warning">}}
+I’m unhappy with some of the arguments presented here—particularly the claim that humans have a telos or function. Some of the phrasing is also problematic; for instance, where I referred to a "cognitivist perspective," I actually meant "Idealism," though even that term doesn’t quite work in its broader sense. Additionally, the structure of the text is weak. As such, the text needs to be reworked. Please keep this in mind while reading.
+{{< /warning >}}
+
 In this article, based on the book Nicomachean Ethics by Aristotle and the companion book from Cambridge, I aim to reconstruct the argument for virtue ethics from first principles—meaning from basic axioms—into a single, cohesive argument structure, which I failed to do so.
 
 The central thesis of this article is that by cultivating virtues, one attains a state of eudaimonia, a deep sense of happiness, which is equivalent to being good.
