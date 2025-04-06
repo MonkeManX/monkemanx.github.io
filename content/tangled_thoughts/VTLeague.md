@@ -10,3 +10,5 @@ Do not miss the spectacle that is the [VTLeague](https://implyingrigged.info/wik
 <iframe width="600" height="300" style="display: block; margin: auto;"
 src="https://cytu.be/r/vtleague">
 </iframe>
+
+**EDIT:** /hag/ did in fact not win, neither did /uuu/ :(
