@@ -1215,7 +1215,7 @@ K = \text{conv} \left\{ \begin{pmatrix} -1 \\ 2 \end{pmatrix}, \begin{pmatrix} 1
 V = \text{cone} \left( \begin{pmatrix} 0 \\ 2 \end{pmatrix}, \begin{pmatrix} 2 \\ 2 \end{pmatrix} \right) 
 $$
 
-**c)** Formulate the Nash Equilibrium for a Two-Person Matrix Game.Define the strategy sets for player \( P_1 \) and player \( P_2 \), as well as the expected average payoff for a payoff matrix \( A \in \mathbb{R}^{K \times N} \). When is the matrix game considered fair?
+**c)** Formulate the Nash Equilibrium for a Two-Person Matrix Game. Define the strategy sets for player \( P_1 \) and player \( P_2 \), as well as the expected average payoff for a payoff matrix \( A \in \mathbb{R}^{K \times N} \). When is the matrix game considered fair?
 
 
 {{< details "Solution a)" "false" >}}
@@ -2212,7 +2212,7 @@ The Easter Bunny has also found the following constraints:
 
 The optimization problem is to **maximize \( f(x) \) subject to these constraints**.  
 
-**(a)** Show that this problem is equivalent to a **linear optimization problem.  
+**(a)** Show that this problem is equivalent to a **linear optimization problem**.  
 
 **(b)** Formulate the **equivalent linear optimization problem in standard form**.  
 
@@ -3178,7 +3178,7 @@ Incorrect. The advantage of the convex formulation of optimization problems lies
 
 {{< details "Solution b)" "false" >}}
 
-Incorrect. Weyl's theorem first states that a finitely generated convex cone can be described as a polyhedron. This allows us to show that the set ΛΛ is polyhedral and, in particular, closed. However, the boundedness of the set cannot be proven in this way.
+Incorrect. Weyl's theorem first states that a finitely generated convex cone can be described as a polyhedron. This allows us to show that the set \(A\) is polyhedral and, in particular, closed. However, the boundedness of the set cannot be proven in this way.
 
 {{< /details >}}
 
@@ -3446,7 +3446,7 @@ False, for nonlinear (and thus unspecified) optimization problems, the optima do
 
 Are the following statements true or false? Justify briefly.
 
-(a) Every optimization problem (P) can be rewritten into an equivalent problem (P_N) in standard form.
+(a) Every optimization problem (P) can be rewritten into an equivalent problem \(P_N\) in standard form.
 
 (b) The two linear problems
 

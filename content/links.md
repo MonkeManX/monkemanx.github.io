@@ -36,6 +36,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [A brief history of the 20th century Philosophy](https://www3.nd.edu/~jspeaks/courses/2011-12/83104/)
 - [BGB Table Growth](https://bgp.potaroo.net/) - Growth of the BGP Table 1994 to Present.
 - [Free Disk Space Arch](https://www.giorgosdimtsas.net/blog/how-to-free-up-disk-space-in-arch-linux/)
+- [Simulation Clicker](https://neal.fun/stimulation-clicker/) - This is horrible.
 
 ## Tools
 
