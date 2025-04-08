@@ -4954,6 +4954,97 @@ CQ1 is weaker than CQ2 and if the weaker version is not fullfilled than CQ2 can'
 {{< /details >}}
 
 
+
+### Problem 54
+
+Are the following statement true or fals? Prove it.
+
+**a)** Every Cone is convex or finitely created.
+
+**b)** Exist for a matrix game an optimal pure strategy, so is the game fair.
+
+**c)** A cycle can only occur in the simplex-algorithm on a degenerate corner. 
+
+**d)** Is a convex optimization problem solvable over a convex set \(M\) and \(M\) has corners, so exists a solution that is a corner.
+
+**e)** Polyhedrals are always convex.
+
+**f** Is \(x\) a solution of a linear optimization problem over a polytope \(K\), so is \(x\) a corner of \(K\).
+
+**g)** The helper problem from phase 1 of the simplex-algorithm is always solvable.
+
+
+{{< details "Solution a)" "false" >}}
+
+**False**. The cone
+
+$$
+K = \{(x,y) \ | \ y \in \mathbb{R}_{\geq}, \ x \in \mathbb{N}_+\}
+$$
+
+is not convex nor finitely created.
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+**False**. Lets look at the matrix game with the following payout matrix
+
+$$
+A = 
+\begin{pmatrix}
+0 & 2 \\
+1 & 0 
+\end{pmatrix}
+$$
+
+This matrix has a pure strategy for both player but one player always gets a bigger payout then the other, thus not fair.
+
+{{< /details >}}
+
+
+{{< details "Solution c)" "false" >}}
+
+**True**. Because the corner is not degenerate, we have exactly \(m\) positive basisvariables, this means there is no case where multiple basis solution can represent the same point. This means in every step when we choose a new pivot, we also switch to a point that is different from our basis solution until now. This means wedo not go in a circle.
+
+{{< /details >}}
+
+
+{{< details "Solution d)" "false" >}}
+
+**False**. Lets look at the following optimization problem
+
+$$
+f(x) = e^x \quad M = \{ \max\{|x|,|y| \leq 1\} \}
+$$
+
+\(f\) is convex and \(M\) has corners, but the solution is not a corner.
+
+{{< /details >}}
+
+
+{{< details "Solution e)" "false" >}}
+
+**True**. Polyhedrals are always convex, because they are made up of the intersection of half-spaces, that are convex.
+
+{{< /details >}}
+
+
+{{< details "Solution f)" "false" >}}
+
+**Wrong**. It can also happen that an entrie subset of \(K\) is a solution e.g. one side of an triangle.
+
+{{< /details >}}
+
+
+{{< details "Solution g)" "false" >}}
+
+**True**. The helper problem is constructed in such a way that it always has a solution. If the restriction set from the original problem was empty then in phase 1 of the simplex-algorithm the sum of the atrifical variables will not be 0.
+
+{{< /details >}}
+
+
 ## Conclusion
 
 {{< rawhtml >}}
