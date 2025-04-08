@@ -703,3 +703,16 @@ nav[aria-label="Page navigation"] {
     color: #007BFF;
 }
 
+.read-more-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.read-more-link:hover {
+  color: #005b99;
+  text-decoration: underline;
+}

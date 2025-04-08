@@ -2,6 +2,7 @@
 title: Taste of Cherry (1997)
 date: 2025-01-27 21:00:00
 tags: ["Movie"]
+pinned: false
 ---
 
 {{< thought_image image="/attachments/taste_cherry.png" >}}

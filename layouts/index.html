@@ -15,7 +15,18 @@
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </div>
         <div class="pinned-date">{{ .Date.Format "January 2, 2006" }}</div>
-        <div class="pinned-content">{{ .Summary }}</div>
+
+        {{ if eq .Section "articles" }}
+          <div class="pinned-content">
+            {{ .Summary }}
+            <a class="read-more-link" href="{{ .RelPermalink }}">Read more</a>
+ 
+          </div>  
+        {{ else if eq .Section "tangled_thoughts"}}
+          <div class="pinned-content">
+            {{ .Content }}
+          </div>  
+        {{ end }}
 
         <div class="pinned-tags">
           {{ range .Params.tags }}

@@ -2,6 +2,7 @@
 title: 'The Gem of Africa'
 date: 2025-03-25 12:00:00
 tags: ["Random"]
+pinned: true
 ---
 
 A year ago, a friend of mine had the idea to visit Namibia—often referred to as the "Gems of Africa" because of its diversity of animals and biomes. I’m not entirely sure how he came up with the idea. Maybe it was due to the country’s connection to Germany during its colonial period, or perhaps some algorithmic push from the "machine gods" in his feed. Whatever the reason, he asked our friend group if we were up for joining him. Another friend said yes, but I couldn’t go because it overlapped with some exams I had to take at university. However, I promised him that next semester, I would choose modules that allowed me to have some free time, which would overlap with theirs.

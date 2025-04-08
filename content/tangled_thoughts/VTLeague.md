@@ -2,7 +2,7 @@
 title: 'VtLeague'
 date: 2025-03-16 19:00:00
 tags: ["Random"]
-pinned: true
+pinned: false
 ---
 
 Do not miss the spectacle that is the [VTLeague](https://implyingrigged.info/wiki//vt/_League_8). My money is on /hag/, they destroyed /vtwbg/.
