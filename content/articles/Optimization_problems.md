@@ -4634,13 +4634,13 @@ Show that a saddle point game emerges in this area. Determine the corresponding 
 Rudi is player 1 and Carla playa 2. For player 1 we optimize 
 
 $$
-\min \max_{e^Tx=1} y^TAx
+\min_x \max_{e^Ty=1} y^TAx
 $$
 
 For player 2 we optimize 
 
 $$
-\max \min_{e^Tx =1} y^T A x
+\max_y \min_{e^Tx =1} y^T A x
 $$
 
 With the payout matrix
@@ -4706,7 +4706,7 @@ The slater condition is fullfilled.
 
 **a)** Determine for all \(\gamma\), if the restriction \(g(x, y) = x^2 + \gamma x y + y^2\) is convex.
 
-**b)** Determine for the case \(\gamma = 0 \) the dual prolbme (D) for (P) and solve it.
+**b)** Determine for the case \(\gamma = 0 \) the dual problem (D) for (P) and solve it.
 
 
 {{< details "Solution a)" "false" >}}
