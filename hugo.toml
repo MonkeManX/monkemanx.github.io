@@ -24,6 +24,7 @@ enable = true
   block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
   inline = [ [ "\\(", "\\)" ], ["$", "$"] ]
 
+timeout = 60000
 
 pygmentsUseClasses = true
 pygmentsCodefences = true
