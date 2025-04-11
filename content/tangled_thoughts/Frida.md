@@ -1,5 +1,5 @@
 ---
-title: "Frida (2022)"
+title: "Frida (2002)"
 date: 2025-04-09 22:00:00
 tags: ["Movie"]
 ---
