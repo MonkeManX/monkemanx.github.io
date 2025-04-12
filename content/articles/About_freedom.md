@@ -4,7 +4,7 @@ date: 2024-11-21
 tags: ["Philosophy"]
 ---
 
-## 1. Introduction nand Premise
+## 1. Introduction and Premise
 
 How often have you heard phrases like, "I wish I were free"? Freedom is one of those concepts almost universally regarded in a positive light. It holds such significance that American culture, for instance, is arguably built upon this principle.
 
