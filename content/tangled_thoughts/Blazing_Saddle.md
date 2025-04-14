@@ -18,4 +18,4 @@ Wild West comedy with very blunt and dumb humor — but I like it.
 >  
 > ~ *Blazing Saddles*
 
-It has the same vibe as *The Naked Gun* or *Airplane!* with Leslie Nielsen — that over-the-top, absurd kind of comedy. Also… what was that ending about? 6.5/10.
+It has the same vibe as *The Naked Gun* or *Airplane!* with Leslie Nielsen — that over-the-top, absurd kind of comedy. Also… what was that ending about? 6/10.
