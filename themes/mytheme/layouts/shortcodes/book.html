@@ -1,8 +1,12 @@
+{{ $image := .Get "image" }}
+{{ $width := .Get "width" | default "300px" }}
+{{ $height := .Get "height" | default "auto" }}
+
 <div style="display: flex; align-items: center;">
     <figure style="margin: 20px; flex: 1;">
-        <img loading="lazy" style="width: 100%; max-width: 300px;" src="{{ .Get "image" }}" alt="Book cover">
+        <img loading="lazy" style="max-width: {{ $width }}; height: {{ $height }};" src="{{ $image }}" alt="Book cover">
     </figure>
-    <p style="margin-left: 20px; flex: 2;">
+    <div style="margin-left: 20px; flex: 2; white-space: pre-line;">
         {{ .Inner | markdownify }}
-    </p>
+    </div>
 </div>
