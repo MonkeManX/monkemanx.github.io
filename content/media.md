@@ -4,21 +4,12 @@ date: 2023-12-24 15:54:51Z
 created: 2023-12-18 06:24:57Z
 ---
 
-This is a selection of various media, I particularly enjoyed or found interesting enough to highlight here.
+This is a selection of various media, I most recently enjoyed or found interesting enough to highlight here.
 
 ## Movies 
 
-
 {{< media "/attachments/synnedoch_new_york.jpg" "Synecdoche in New York" "https://www.imdb.com/title/tt0383028/" >}}
 A surrealist movie with the central theme of identity, it branches out to explore various other topics such as love, living, death, and the decisions one makes or doesn't make. It's an awesome movie, though it's not easy to understand and requires active participation to be fully enjoyed.
-{{< /media >}}
-
-{{< media "/attachments/beu_is_afraid.jpg" "Beu is Afraid" "https://www.imdb.com/title/tt13521006/" >}}
-Another surrealist movie centered around Beau, like the name of the movie implies the protagonist who is afraid of everything. It explores themes of guilt, cowardice, family trauma, and the modern way of life. It's another movie I really like, though with its running time of 3 hours, it can be a bit long.
-{{< /media >}}
-
-{{< media "/attachments/doctor_strange_love.jpg" "Doctor Strangelove or: How I Learned to Stop Worrying and Love the Bomb" "https://www.imdb.com/title/tt0057012/" >}}
-It is a black comedy that satirizes the threat of nuclear destruction during the Cold War. It criticizes the dogma of mutual assured destruction. The movie is not too long and very fun, with the only potentially off-putting aspect being that it is in black and white.
 {{< /media >}}
 
 {{< media "/attachments/lola_runs.jpg" "Run Lola Run" "https://en.wikipedia.org/wiki/Run_Lola_Run" >}}
@@ -29,6 +20,27 @@ A little bit of representation for German movie making. It's a very chaotic movi
 {{< media "/attachments/house_1977.jpg" "House (1977)" "https://en.wikipedia.org/wiki/House_(1977_film)" >}}
 A Japanese comedy-horror movie that’s really weird but cool. It’s about a group of high school girls who go together to a house in the countryside, where strange things start to happen.
 {{< /media >}}
+
+
+{{< media "/attachments/frida_images.jpeg" "Frida (2002)" "https://www.imdb.com/title/tt0120679/" >}}
+See <a href="/tangled_thoughts/frida/">review here</a>.
+{{< /media >}}
+
+
+{{< details "Old" "false" "nomd" >}}
+
+{{< media "/attachments/beu_is_afraid.jpg" "Beu is Afraid" "https://www.imdb.com/title/tt13521006/" >}}
+
+Another surrealist movie centered around Beau, like the name of the movie implies the protagonist who is afraid of everything. It explores themes of guilt, cowardice, family trauma, and the modern way of life. It's another movie I really like, though with its running time of 3 hours, it can be a bit long.
+
+{{< /media >}}
+
+{{< media "/attachments/doctor_strange_love.jpg" "Doctor Strangelove or: How I Learned to Stop Worrying and Love the Bomb" "https://www.imdb.com/title/tt0057012/" >}}
+It is a black comedy that satirizes the threat of nuclear destruction during the Cold War. It criticizes the dogma of mutual assured destruction. The movie is not too long and very fun, with the only potentially off-putting aspect being that it is in black and white.
+{{< /media >}}
+
+{{< /details >}}
+
 
 ## TV-Shows
 
@@ -126,16 +138,32 @@ See <a href="/tangled_thoughts/infinite_regressor/">review here</a>.
 Kagayaki is an album by Masakatsu Takagi and another great Japanese album (Boy, do I love the japs). This time, it leans toward folk music. The coolest thing about this album is its sheer diversity: we have instrumental tracks, songs, tracks with spoken word similar to Slint, and lots of unique sounds. It’s a relaxing album, like a warm hug.
 {{< /media >}}
 
+{{< media "/attachments/tamahime-jun-togawa.jpg" "戸川純 by Jun Togawa" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E7%8E%89%E5%A7%AB%E6%A7%98" >}}
+See <a href="/tangled_thoughts/tamahime_sama/">review here</a>.
+{{< /media >}}
+
+{{< media "/attachments/suki-suki-jun.jpg" "Suki-suki-daisuki" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E5%A5%BD%E3%81%8D%E5%A5%BD%E3%81%8D%E5%A4%A7%E5%A5%BD%E3%81%8D/" >}}
+See <a href="/tangled_thoughts/suki_suki_daisuki/">review here</a>.
+{{< /media >}}
+
+{{< media "/attachments/0016068366_10.jpg" "125 Rue Montmartre" "https://rateyourmusic.com/release/comp/125-rue-montmartre/discography/" >}}
+See <a href="/tangled_thoughts/125_rue_montmartre/">review here</a>.
+{{< /media >}}
+
+
+
+{{< details "Old" "false" "nomd" >}}
+
 {{< media "/attachments/midori.webp" "Aratamemashite Hajimemashite Midori Desu" "https://www.last.fm/music/Midori/Aratamemashite+Hajimemashite+Midori+Desu">}}
 I dont even know how to describe it, it is by the band "Midori", and it it is all of the following things: punk, rock, experimental, screamo, noise and jazz. Watch the live perfromance of the band it's amazing.
 {{< /media >}}
 
-{{< media "/attachments/the_seer.jpg" "The Seer" "https://www.last.fm/music/Swans/The+Seer">}}
-Created by the band "Swans," this is a highly experimental post-rock album with a shamanistic theme. The album is quite long, with a runtime of 1 hour and 59 minutes, containing 11 tracks. The longest track has an impressive length of 32 minutes.
-{{< /media >}}
-
 {{< media "/attachments/hurtbreak_wonderland.jpg" "Hurtbreak Wonderland" "https://www.last.fm/music/World%27s+End+Girlfriend/Hurtbreak+Wonderland">}}
 Created by the Japanese musician "World's End Girlfriend," this post-rock album is more focused on ambiance. It combines classical instruments with modern elements such as breakcore, glitches, and jazz, making it rather experimental. The album has a duration of 1 hour and 10 minutes, consisting of 10 tracks.
+{{< /media >}}
+
+{{< media "/attachments/the_seer.jpg" "The Seer" "https://www.last.fm/music/Swans/The+Seer">}}
+Created by the band "Swans," this is a highly experimental post-rock album with a shamanistic theme. The album is quite long, with a runtime of 1 hour and 59 minutes, containing 11 tracks. The longest track has an impressive length of 32 minutes.
 {{< /media >}}
 
 {{< media "/attachments/otsu.jpg" "Hyouge Mono - Otsu" "https://www.last.fm/music/Cro-Magnon/Hyouge+Mono+-+Otsu">}}
@@ -162,27 +190,11 @@ Created by the Argentine band "Mujercitas Terror," this is a rock/post-punk albu
 Created by the Chilean band "Las Olas (Noispop)," this is a post-punk, noise-pop album. I can't speak to the lyrics, but from the sound, they are criminally underrated. The album has a length of 27 minutes and contains 10 tracks.
 {{< /media >}}
 
-
-{{< media "/attachments/tamahime-jun-togawa.jpg" "戸川純 by Jun Togawa" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E7%8E%89%E5%A7%AB%E6%A7%98" >}}
-See <a href="/tangled_thoughts/tamahime_sama/">review here</a>.
-{{< /media >}}
-
-{{< media "/attachments/suki-suki-jun.jpg" "Suki-suki-daisuki" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E5%A5%BD%E3%81%8D%E5%A5%BD%E3%81%8D%E5%A4%A7%E5%A5%BD%E3%81%8D/" >}}
-See <a href="/tangled_thoughts/suki_suki_daisuki/">review here</a>.
-{{< /media >}}
-
-{{< media "/attachments/0016068366_10.jpg" "125 Rue Montmartre" "https://rateyourmusic.com/release/comp/125-rue-montmartre/discography/" >}}
-See <a href="/tangled_thoughts/125_rue_montmartre/">review here</a>.
-{{< /media >}}
+{{< /details >}}
 
 
 
 ## Philosophy Stuff
-
-{{< media "/attachments/free_will.jpg" "Free Will" "https://en.wikipedia.org/wiki/Free_Will_(book)">}}
-Cool book by Sam Harris, arguing that free will is an illusion.
-{{< /media >}}
-
 
 {{< media "/attachments/metaethics_an_introduction.jpg" "Metaethics: An Introduction" "https://www.amazon.de/-/en/Andrew-Fisher/dp/1844652580">}}
 A very readable introduction to metaethics, not too long, suitable even for laypeople, that covers the most important branches of the field. However, it is not a complete account, as it does not, for example, include 'response-dependence theories' or 'constructivism.
@@ -191,11 +203,6 @@ A very readable introduction to metaethics, not too long, suitable even for layp
 
 {{< media "/attachments/knowledge_introduction.jpg" "Knowledge: A Very Short Introduction" "https://academic.oup.com/book/461">}}
 An introduction to epistemology and the theory of knowledge, it is roughly 150 pages long and covers topics such as rationalism, empiricism, skepticism, justified true belief, Gettier problems, and much more. It includes numerous examples, most of which are highly illustrative.
-{{< /media >}}
-
-
-{{< media "/attachments/cambridge_aristotele_ethics.jpg" "Aristotle's Nicomachean Ethics: An Introduction" "https://www.cambridge.org/de/universitypress/subjects/philosophy/classical-philosophy/aristotles-nicomachean-ethics-introduction?format=HB&isbn=9780521817424">}}
-A thorough analysis of the Nicomachean Ethics, one of the first works that attempts to lay out a philosophical theory based on first principles. At times, it felt a bit lengthy to me, and I would have preferred a more condensed version. This is because the author not only presents his interpretations of the passages but also explores alternative interpretations, weighing them against each other. The conclusion was also a bit wishy-washy. If one wants to delve deeply into Aristotle's ethics, I highly recommend it; otherwise, perhaps not as much.
 {{< /media >}}
 
 
@@ -209,11 +216,20 @@ See <a href="/tangled_thoughts/epictetus6/">review here</a>.
 {{< /media >}}
 
 
-{{< media "/attachments/letters_from_stoic.jpg" "Letters from a Stoic" "https://www.goodreads.com/book/show/13065606-letters-from-a-stoic" >}}
-See <a href="/tangled_thoughts/letters_from_a_stoic/">review here</a>.
+{{< media "/attachments/sophis_world.jpg" "Sophie’s World" "https://www.goodreads.com/book/show/10959.Sophie_s_World">}}
+See <a href="/tangled_thoughts/sophies_world/">review here</a>.
 {{< /media >}}
 
 
-{{< media "/attachments/978-3-15-019641-0.jpg" "Meditation by Marcus Aurelius" "https://www.goodreads.com/book/show/30659.Meditations" >}}
-See <a href="/tangled_thoughts/aurelius8/">review here</a>.
+
+{{< details "Old" "false" "nomd" >}}
+
+{{< media "/attachments/cambridge_aristotele_ethics.jpg" "Aristotle's Nicomachean Ethics: An Introduction" "https://www.cambridge.org/de/universitypress/subjects/philosophy/classical-philosophy/aristotles-nicomachean-ethics-introduction?format=HB&isbn=9780521817424">}}
+A thorough analysis of the Nicomachean Ethics, one of the first works that attempts to lay out a philosophical theory based on first principles. At times, it felt a bit lengthy to me, and I would have preferred a more condensed version. This is because the author not only presents his interpretations of the passages but also explores alternative interpretations, weighing them against each other. The conclusion was also a bit wishy-washy. If one wants to delve deeply into Aristotle's ethics, I highly recommend it; otherwise, perhaps not as much.
 {{< /media >}}
+
+{{< media "/attachments/free_will.jpg" "Free Will" "https://en.wikipedia.org/wiki/Free_Will_(book)">}}
+Cool book by Sam Harris, arguing that free will is an illusion.
+{{< /media >}}
+
+{{< /details >}}

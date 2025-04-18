@@ -26,9 +26,14 @@
 
 {{ $title := .Get 0 }}
 {{ $open := .Get 1 }}
+{{ $nomd := .Get 2 }}
 
 <details {{ if eq $open "true" }}open{{ end }}>
   <summary>{{ $title }}</summary>
-  {{ .Inner | markdownify }}
+  {{ if eq $nomd "nomd" }}
+    {{ .Inner }}
+  {{ else }}
+    {{ .Inner | markdownify }}
+  {{ end }}
 </details>
 
