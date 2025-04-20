@@ -17,14 +17,15 @@ A little bit of representation for German movie making. It's a very chaotic movi
 {{< /media >}}
 
 
-{{< media "/attachments/house_1977.jpg" "House (1977)" "https://en.wikipedia.org/wiki/House_(1977_film)" >}}
-A Japanese comedy-horror movie that’s really weird but cool. It’s about a group of high school girls who go together to a house in the countryside, where strange things start to happen.
-{{< /media >}}
-
-
 {{< media "/attachments/frida_images.jpeg" "Frida (2002)" "https://www.imdb.com/title/tt0120679/" >}}
 See <a href="/tangled_thoughts/frida/">review here</a>.
 {{< /media >}}
+
+
+{{< media "/attachments/AngelsEgg1985.jpg" "Angles Egg (1985)" "https://en.wikipedia.org/wiki/Angel%27s_Egg" >}}
+See <a href="/tangled_thoughts/angles_egg/">review here</a>.
+{{< /media >}}
+
 
 
 {{< details "Old" "false" "nomd" >}}
@@ -37,6 +38,11 @@ Another surrealist movie centered around Beau, like the name of the movie implie
 
 {{< media "/attachments/doctor_strange_love.jpg" "Doctor Strangelove or: How I Learned to Stop Worrying and Love the Bomb" "https://www.imdb.com/title/tt0057012/" >}}
 It is a black comedy that satirizes the threat of nuclear destruction during the Cold War. It criticizes the dogma of mutual assured destruction. The movie is not too long and very fun, with the only potentially off-putting aspect being that it is in black and white.
+{{< /media >}}
+
+
+{{< media "/attachments/house_1977.jpg" "House (1977)" "https://en.wikipedia.org/wiki/House_(1977_film)" >}}
+A Japanese comedy-horror movie that’s really weird but cool. It’s about a group of high school girls who go together to a house in the countryside, where strange things start to happen.
 {{< /media >}}
 
 {{< /details >}}
