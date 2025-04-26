@@ -11,7 +11,7 @@ Home Assistant is a free and open-source software designed for home automation. 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/9178large.webp">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/9178large.webp">
     <figcaption style="text-align:center"><a href="https://futurehousestore.co.uk/what-is-home-assistant-and-what-it-can-do">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -32,7 +32,7 @@ Zigbee2MQTT is a free and open-source software that enables the utilization of Z
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/Screenshot%20from%202024-01-24%2011-54-22.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments/Screenshot%20from%202024-01-24%2011-54-22.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -43,7 +43,7 @@ After some consideration, I opted for the "ITead Sonoff Zigbee 3.0 USB Dongle Pl
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/4a2395f10d5e3745d06864cd0c0d3319.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/4a2395f10d5e3745d06864cd0c0d3319.png">
     <figcaption style="text-align:center">The Sonoff Zigbee 3.0 USB Dongle Plus.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -118,7 +118,7 @@ After you have create an account your portal should look similar(without the lig
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-19-31.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-19-31.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -148,7 +148,7 @@ The web interface should resemble the following (without devices):
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-32-44.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-32-44.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -157,7 +157,7 @@ To display Zigbee2MQTT devices in Home Assistant, enable the MQTT integration by
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-01-24%2012-35-55.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Screenshot%20from%202024-01-24%2012-35-55.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -177,7 +177,7 @@ You have the option to create automations using nodes in the web interface or by
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-43-10.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-24%2012-43-10.png">
 </figure>
 {{< /rawhtml >}}
 

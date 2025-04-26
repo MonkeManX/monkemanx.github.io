@@ -13,7 +13,7 @@ To be more specific, I use [wg-easy](https://github.com/wg-easy/wg-easy) for my 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/aed9491cae39af755a01815eb44b0c19.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/aed9491cae39af755a01815eb44b0c19.png">
 </figure>
 {{< /rawhtml >}}
 

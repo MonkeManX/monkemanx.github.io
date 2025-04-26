@@ -13,7 +13,7 @@ Calibre is a free and open-source e-book management program. It supports organiz
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ca92bc5421fc394fb5a55384fe696aea.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ca92bc5421fc394fb5a55384fe696aea.png">
     <figcaption style="text-align:center">"An exemplary view of the Calibre-Web software.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -30,7 +30,7 @@ In Docker, to start a container, you typically use a long command with configura
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/0d442bad34cd850c0ca7cba6f033393e.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/0d442bad34cd850c0ca7cba6f033393e.png">
     <figcaption style="text-align:center">Example of a docker command to run a container.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -99,7 +99,7 @@ To install Calibre on your server, follow these steps:
 
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2017-59-03.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2017-59-03.png">
     </figure>
     {{< /rawhtml >}}
     Should the default login data have changed, you should be able to find them on the [image doc site](https://docs.linuxserver.io/images/docker-calibre-web/#version-tags) of calibre.
@@ -108,7 +108,7 @@ To install Calibre on your server, follow these steps:
 
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2018-01-34.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2018-01-34.png">
     </figure>
     {{< /rawhtml >}}
 
@@ -140,7 +140,7 @@ To configure ODPS for Koreader:
 
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/2024-01-20_11-54.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/2024-01-20_11-54.png">
     </figure>
     {{< /rawhtml >}}
 
@@ -148,7 +148,7 @@ To configure ODPS for Koreader:
 
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/2024-01-20_11-57.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/2024-01-20_11-57.png">
     </figure>
     {{< /rawhtml >}}
 

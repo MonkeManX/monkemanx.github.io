@@ -11,7 +11,7 @@ Syncthing operates by synchronizing files between two or more devices, akin to t
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/2eb72858a7d12a81c0c1280e559dac46.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/2eb72858a7d12a81c0c1280e559dac46.png">
     <figcaption style="text-align:center">Example Syncthing Page.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -56,7 +56,7 @@ To synchronize a folder between your server and phone, install the [official Syn
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/c1e52179d9d2652b71b31f7404ec3a38.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/c1e52179d9d2652b71b31f7404ec3a38.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -64,7 +64,7 @@ Insert your phone's device ID in the provided field (find it in the Syncthing ap
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/722eb6143ff5c4f1b86a8b0b92681d0f.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/722eb6143ff5c4f1b86a8b0b92681d0f.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -74,7 +74,7 @@ Create a synchronization target by pressing the "+" button, select the folder, a
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/38c70dd4cd4e4b8d37eaf3a806a9146b.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/38c70dd4cd4e4b8d37eaf3a806a9146b.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -82,7 +82,7 @@ Create a synchronization target by pressing the "+" button, select the folder, a
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/b5e2a589822c5893e97c286f000c501e.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/b5e2a589822c5893e97c286f000c501e.png">
     <figcaption style="text-align:center"><a href="https://futurehousestore.co.uk/what-is-home-assistant-and-what-it-can-do">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -102,7 +102,7 @@ Then you can again create a synchronization target.
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/8608b9ca84474054aad0baac8452da6a.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/8608b9ca84474054aad0baac8452da6a.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -113,4 +113,4 @@ For additional information, refer to the [Syncthing documentation](https://docs.
 ---
 References:
 - https://syncthing.net/
-- https://docs.syncthing.net/
+- https://docs.syncthing .net/

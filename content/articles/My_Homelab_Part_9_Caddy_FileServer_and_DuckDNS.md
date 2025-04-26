@@ -27,7 +27,7 @@ A reverse proxy is a service that sits in front of your internet connection, and
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Untitled%20Diagram.drawio%281%29.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Untitled%20Diagram.drawio%281%29.png">
     <figcaption style="text-align:center">Exemplary Diagramm of a Reverse Proxy.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -48,7 +48,7 @@ Here's a brief explanation of how I did it for my Raspberry Pi server:
 
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/5035ba5578f1fafeb04ce7fdcc8d4634.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/5035ba5578f1fafeb04ce7fdcc8d4634.png">
     </figure>
     {{< /rawhtml >}}
 

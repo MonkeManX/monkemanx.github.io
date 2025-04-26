@@ -34,7 +34,7 @@ In the BIOS, locate the "Boot" option and select your USB stick as the first boo
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/7c7cc39ad53f15d60dd0ceed04c95322.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/7c7cc39ad53f15d60dd0ceed04c95322.png">
     <figcaption style="text-align:center">"Example of an MSI BIOS/UEFI, with the boot loader option marked.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -46,7 +46,7 @@ If SSH doesn't work, use the IP address of your server computer instead (you can
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/2b6a04bcb492405f041c6cacf6deb07b.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/2b6a04bcb492405f041c6cacf6deb07b.png">
     <figcaption style="text-align:center">"Example of my Rasperry device appearing on my rotuers website with the IP-Address 192.168.12.100</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -62,7 +62,7 @@ After connecting successfully, a series of installation processes will run in th
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-17-34.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-17-34.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -73,7 +73,7 @@ After installation, you'll be in the configuration window.
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-22-40.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-22-40.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -86,7 +86,7 @@ After configuring, exit the interface to see a screen similar to the one below i
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-32-29.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-32-29.png">
     <figcaption style="text-align:center">Source:<a>https://github.com/adityatelange/hugo-PaperMod</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -103,7 +103,7 @@ Here are some essential Linux commands that can help you perform various task's 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202024-01-19%2013-36-57.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/Screenshot%20from%202024-01-19%2013-36-57.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -117,7 +117,7 @@ Here are some essential Linux commands that can help you perform various task's 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/Screenshot%20from%202024-01-19%2013-40-13.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/Screenshot%20from%202024-01-19%2013-40-13.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -125,7 +125,7 @@ Here are some essential Linux commands that can help you perform various task's 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-42-29.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-19%2013-42-29.png">
 </figure>
 {{< /rawhtml >}}
 

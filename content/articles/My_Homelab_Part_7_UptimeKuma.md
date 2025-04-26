@@ -11,7 +11,7 @@ For such Issues, it's beneficial to have a notification system that can automati
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/5fb6d6ee5c143dedeeb77148ea1d2ff3.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/5fb6d6ee5c143dedeeb77148ea1d2ff3.png">
     <figcaption style="text-align:center">UptimeKuma Page</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -49,7 +49,7 @@ To add a new monitor for one of your services, click the `add new monitor` butto
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/401ce7a076ab17b1e057480dc491e524.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/401ce7a076ab17b1e057480dc491e524.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -59,7 +59,7 @@ Set the `Container Name/ID` to the name or ID of the Docker container you want t
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/9d351bececedf9211fed1b35221f2dd2.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/9d351bececedf9211fed1b35221f2dd2.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -69,7 +69,7 @@ To receive notifications when the status of your service changes, set up notific
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/350e598f2a7d1867bf9874c2c089fecd.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/350e598f2a7d1867bf9874c2c089fecd.png">
 </figure>
 {{< /rawhtml >}}
 
@@ -80,19 +80,19 @@ Alternatively, you can follow the steps below.
 2. Use the `/newbot` command to create a new bot, following BotFather's guidance.
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/10e8ce89857027e248f9face00d46aaa.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/10e8ce89857027e248f9face00d46aaa.png">
 </figure>
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/0ed96ca3a02e38d033c386b648c4cef4.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/0ed96ca3a02e38d033c386b648c4cef4.png">
 </figure>
 {{< /rawhtml >}}
 3. After creating the bot, copy the `HTTP API token` and enter it in UptimeKuma.
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/e52b53a8a63e98281f9d9975b64c2579.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/e52b53a8a63e98281f9d9975b64c2579.png">
 </figure>
 {{< /rawhtml >}}
 4. Test the configuration and save it. You can now enable Telegram notifications for all your site monitors. 

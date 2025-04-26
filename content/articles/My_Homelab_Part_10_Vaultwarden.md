@@ -9,7 +9,7 @@ Vaultwarden is an unofficial implementation of the Bitwarden password manager. O
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/8ddd4488bb9c1a355dc41d6b6db4898f.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/8ddd4488bb9c1a355dc41d6b6db4898f.png">
     <figcaption>Vaultwarden Website.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -20,7 +20,7 @@ Here's how Vaultwarden operates: the Vaultwarden software is hosted on your serv
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Untitled%20Diagram.drawio.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Untitled%20Diagram.drawio.png">
     <figcaption>Explanation of Vaultwarden.</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -83,14 +83,14 @@ To install Vaultwarden, proceed with these steps:
 4. After a while, access your Vaultwarden service at `https://vaultwarden.Your_Domain`, displaying a page similar to this:  
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-20%2012-42-41.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-20%2012-42-41.png">
     </figure>
     {{< /rawhtml >}}
 
 5. Click "Create account," leading to the registration page:  
     {{< rawhtml >}}
     <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-20%2012-43-28.png">
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/Screenshot%20from%202024-01-20%2012-43-28.png">
     </figure>
     {{< /rawhtml >}}
 

@@ -58,7 +58,7 @@ That's it, and always remember, backups are crucial.
 
 {{< rawhtml >}}
 <figure style="display: block; margin-left: auto; margin-right: auto; width:80%; text-align:center">
-    <img src="/attachments/backups.png">
+    <img loading="lazy" src="/attachments/backups.png">
     <figcaption style="text-align:center"><a href="https://xkcd.com/1718/">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}

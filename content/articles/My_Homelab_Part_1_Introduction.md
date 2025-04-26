@@ -25,7 +25,7 @@ ThinkCentre is a line of business-oriented desktop computers developed by IBM an
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/d75367962fae83752347d1484ae650d4.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/d75367962fae83752347d1484ae650d4.png">
     <figcaption style="text-align:center">Source:An ThinkCentre M910 tiny"</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -58,7 +58,7 @@ In my case, as I had a Raspberry Pi 3 B lying around, I opted to use it as my se
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/8504911ef60b57259099581ac08b7a5c.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/8504911ef60b57259099581ac08b7a5c.png">
     <figcaption style="text-align:center">An Rasperry Pi 2</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -73,7 +73,7 @@ Here's a resource consumption comparison between dietpi and Raspberry Pi OS:
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240330_22h24m17s_grim.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/20240330_22h24m17s_grim.png">
     <figcaption style="text-align:center">Source:<a>https://dietpi.com/stats.html#distrostats</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -115,11 +115,11 @@ Lastly, the power strip ensures a stable power supply for the Raspberry Pi, USB 
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/IMG_20240119_211642797.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/IMG_20240119_211642797.jpg">
 </figure>
 
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%;" src="/attachments/IMG_20240119_211727160.jpg">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%;" src="/attachments/IMG_20240119_211727160.jpg">
     <figcaption style="text-align: center;">Some Images of my Home Server"</figcaption>
 </figure>
 {{< /rawhtml >}}

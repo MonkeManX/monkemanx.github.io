@@ -11,7 +11,7 @@ If you have been following my Homelab Series so far, you probably have quite a n
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/aa21552515d1f292852d17cbeda6d676.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/aa21552515d1f292852d17cbeda6d676.png">
     <figcaption style="text-align:center">Example Dashboard with homepage</figcaption>
 </figure>
 {{< /rawhtml >}}

@@ -12,7 +12,7 @@ My body, accustomed to my late-night schedule, could never fall asleep soon enou
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/insomnia.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/insomnia.png">
     <figcaption style="text-align:center"><a href="https://imgs.xkcd.com/comics/insomnia.png">Source</a></figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -105,7 +105,7 @@ In the blog entries in the series "My Homelab", I want to write about how I exac
 
 {{< rawhtml >}}
 <figure>
-    <img style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments//prosanation_comic.png">
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:40%" src="/attachments//prosanation_comic.png">
 </figure>
 {{< /rawhtml >}}
 
