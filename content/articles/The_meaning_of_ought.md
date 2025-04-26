@@ -5,7 +5,7 @@ tags: ["Philosophy", "Morality"]
 ---
 
 
-# Where Does *Ought* Come From?  
+## Where Does *Ought* Come From?  
 
 In the modern moral landscape, theories like *egoism*, *deontology*, and *utilitarianism* gain a wide array of support from Western philosophers. One central word in all of these theories is *ought*. In *rational egoism*, which tells us the most moral action is what benefits oneself the most, we say one *ought* to maximize their self-interest. In *deontological* ethics, where we are asked to follow rules, we say we *ought* to follow them. Finally, in *utilitarianism*, which tells us to maximize the benefit for all, we say we *ought* to maximize the happiness of all those affected.  
 
@@ -24,7 +24,7 @@ However, over time, Western philosophy became dominated by Judeo-Christian ways 
 In Christianity, which is based on the Jewish [Torah](https://en.wikipedia.org/wiki/Torah) full of rules and regulations, morality became a matter of following [God's commands](https://en.wikipedia.org/wiki/Divine_command_theory), laid out in rules such as the Ten Commandments. As such, when we say *ought*, what we mean is that there is a divine rule one must follow. *One ought not to kill* becomes *killing is against the divine moral law*.  
 
 
-# Contemporary Moral Philosophy  
+## Contemporary Moral Philosophy  
 
 The meaning of *ought* made sense within the Christian paradigm. However, contemporary moral philosophers have made a conscious effort to free themselves from the *"shackles of religion"*. In other words, they have attempted to reinvent moral philosophy without relying on religious axioms.  
 
@@ -37,7 +37,7 @@ The same is true of the word *ought*. We have removed *ought* from its Judeo-Chr
 Systems like *egoism* and *utilitarianism* may provide us with rules or principles to follow, but these systems are ultimately arbitrary. There is no consistent or objective way to determine which moral theory is superior to the other.  
 
 
-# Virtue Ethics  
+## Virtue Ethics  
 
 If *ought* no longer makes sense when speaking about moral claims, what other word could we use? One alternative is *need*. While *need* may not carry the same force and urgency as *ought*, it possesses other features that make it attractive.  
 
