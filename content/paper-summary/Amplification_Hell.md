@@ -12,7 +12,7 @@ tags: ["paper-summary", "InfoSec"]
 In this paper, the authors introduce *Distributed Reflective Denial-of-Service (DRDoS)* attacks, where attackers exploit open public servers to send large volumes of traffic to a target using IP spoofing. They demonstrate multiple protocols that are vulnerable to such attacks.
 
 
-# 1. Introduction
+## 1. Introduction
 
 Denial-of-Service (DoS) attacks send a large amount of traffic to a victim to disrupt their services.  
 In Distributed DoS (DDoS) attacks, multiple machines—often part of a botnet—are used to send traffic to the victim.  
@@ -26,7 +26,7 @@ Advantages of DRDoS over DDoS:
 There have already been incidents of DRDoS attacks, often involving DNS servers as amplifiers. With the increasing adoption of DNSSEC, which encrypts DNS traffic, the amplification becomes worse due to the larger DNS response sizes.
 
 
-# 2. Threat Model
+## 2. Threat Model
 
 The threat model assumes that an attacker (A) attempts to exhaust the victim's (V) bandwidth. To achieve this, DRDoS is used, where A does not send traffic directly to V but instead to systems (amplifiers) that reflect the traffic back to V.
 
@@ -37,13 +37,13 @@ The following assumptions are made about the attacker:
 
 
 
-# 3. Amplification Vulnerabilities
+## 3. Amplification Vulnerabilities
 
 In DRDoS attacks, two factors determine the impact of an attack:  
 - The chosen protocol used for the attack.  
 - The number of amplifiers available.  
 
-## 3.1 Protocol Overview  
+### 3.1 Protocol Overview  
 
 For a protocol to be exploitable, it needs to meet two characteristics:  
 1. Small requests must lead to large responses.  
@@ -54,7 +54,7 @@ As a result, TCP protocols are excluded, since the TCP handshake requires proper
 However, many UDP protocols can be abused for such attacks. The next section provides an overview of these protocols.  
 
 
-## 3.2 Amplifier Enumeration  
+### 3.2 Amplifier Enumeration  
 
 The researchers developed a tool to search for vulnerable amplifiers within a subset of all IPv4 addresses. They assume that the UDP port is standardized. Their findings indicate that the tool does not need to run for long to discover a sufficient number of amplifiable servers.  
 
@@ -65,7 +65,7 @@ The researchers developed a tool to search for vulnerable amplifiers within a su
 {{< /rawhtml >}}  
 
 
-## 3.3 Amplification Factors  
+### 3.3 Amplification Factors  
 
 The researchers define two measures to quantify how traffic is amplified:  
 - **Bandwidth Amplification Factor (BAF):** The ratio by which the bandwidth increases, measured in terms of UDP payload bytes.  
@@ -78,7 +78,7 @@ The researchers define two measures to quantify how traffic is amplified:
 {{< /rawhtml >}}  
 
 
-# 4. Real-World Observations  
+## 4. Real-World Observations  
 
 The researchers employed the following methods to observe DRDoS activity in the real world:  
 
@@ -107,7 +107,7 @@ The researchers employed the following methods to observe DRDoS activity in the 
 They identified 15 DRDoS attacks targeting subscribers of the ISP, with the largest attack reaching 711 Mbit/s.
 
 
-# 5. Countermeasures  
+## 5. Countermeasures  
 
 The following countermeasures can help mitigate DRDoS attacks:  
 
@@ -130,6 +130,6 @@ The following countermeasures can help mitigate DRDoS attacks:
    Implement packet filtering mechanisms to identify and block traffic likely originating from DRDoS attacks.  
 
 
-# 6. Conclusion
+## 6. Conclusion
 
 DRDoS is bad, do countermeasures against it!

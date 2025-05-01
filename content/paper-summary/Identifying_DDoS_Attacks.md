@@ -12,7 +12,7 @@ tags: ["paper-summary", "InfoSec"]
 Amplification DDoS attacks have become increasingly popular. In this paper, the author introduces a technique to uncover the infrastructure behind these attacks.
 
 
-# 1. Introduction  
+## 1. Introduction  
 
 In amplification attacks, an attacker spoofs the source IP address of requests sent to open Internet services like DNS, which then reflect the response packets to the victim. Thus, the attacker needs substantially fewer resources than the total reflected bandwidth.  
 
@@ -28,7 +28,7 @@ Importantly, their technique:
 - Provides a probabilistic guarantee and confidence level of accuracy.  
 
 
-# 2. Threat Model  
+## 2. Threat Model  
 
 The goal of an amplification attack is to render a system unusable by flooding the target’s network with a huge amount of traffic. To do this, an attacker uses *amplifiers*, which are internet-facing servers such as DNS or NTP.  
 
@@ -39,7 +39,7 @@ Amplification occurs because, in many cases, the response packet is much larger 
 The attacker first needs to find amplifier servers, which is done via a *scanner*. While attackers could use botnets, empirical data suggests that most often, these attacks come from a single source.  
 
 
-# 3. Dataset  
+## 3. Dataset  
 
 Their data was collected using the honeypot `AMPPOT`, which emulates a server offering UDP-based protocols vulnerable to amplification attacks.  
 
@@ -48,7 +48,7 @@ The authors use the following definition for a DDoS attack: 100 consecutive pack
 Additionally, they obtained data from the creators of `AMPPOT`, who deployed honeypots in 2014.  
 
 
-# 4. Selective Response  
+## 4. Selective Response  
 
 Nowadays, it is possible to scan the entire IPv4 address space in a reasonable amount of time from a single machine. Thus, their basic assumption is that the attacker uses one machine for the *scanning* phase.  
 
@@ -57,9 +57,9 @@ The idea is that every scanner will find a different unique subset of the deploy
 They achieve this by computing a hash over the source IP address combined with a secret hash. This hash is then used to generate a permutation of the honeypot set. The first \(N \cdot \alpha\) honeypots respond to a request, where \(N\) is the total number of honeypots and \(\alpha\) is the fraction of honeypots that should respond.  
 
 
-# 5. Attributing Attacks to Scans  
+## 5. Attributing Attacks to Scans  
 
-## 5.1 Methodology  
+### 5.1 Methodology  
 
 For every attack, they inspect the set of honeypots that were used. Empirically, over 95% of attacks use more than 4 honeypots, and 80% use at least 10 honeypots.  
 
@@ -84,7 +84,7 @@ The confidence score is calculated by determining the probability of falsely acc
 {{< /rawhtml >}}  
 
 
-## 5.2 Results 
+### 5.2 Results 
 
 Out of 1,351,852 recorded attacks, 58% could be attributed with a confidence level of 99.9% or higher, and 47% could be attributed with a confidence level of 99.999% or higher.
 
@@ -95,11 +95,11 @@ Out of 1,351,852 recorded attacks, 58% could be attributed with a confidence lev
 {{< /rawhtml >}}  
 
 
-# 6. Mapping Scan Infrastructure to Attacker Infrastructure  
+## 6. Mapping Scan Infrastructure to Attacker Infrastructure  
 
 The main question: Are the systems used to perform scans also used to carry out subsequent attacks? Do attackers reuse their scanning infrastructure to launch attacks?  
 
-## 6.1 Methodology  
+### 6.1 Methodology  
 
 Because of the spoofed IP addresses, it is difficult to determine the original packet source in amplification attacks.  
 
@@ -107,7 +107,7 @@ To address this, the authors use the time-to-live (TTL) field in packet headers.
 
 However, the authors do not have access to the sender’s initial TTL value. Instead, they observe packet traffic from multiple points in the network using their honeypots. This allows them to measure the path length between the honeypots and the packet origin. By hypothesizing that packets from the same source will have similar hop distances, they can approximate the packet origin.  
 
-### 7. Conclusion  
+## 7. Conclusion  
 
 Use this against, script kiddos!
 

@@ -264,7 +264,8 @@ The divine is divine and the mundane is mundane,
 O, what sorrow this must be.
 {{< /poem >}}
 
-
+<a name="watching">
+</a>
 {{< poem >}}
 They see me standing and wink,
 I try to hide, why?
@@ -283,6 +284,8 @@ Playing a tune.
 I am a fucking robot,
 I watch myself--
 Total loss of control.
+
+ ~ 'I see them Watching'
 {{< /poem >}}
 
 

@@ -11,7 +11,7 @@ tags: ["paper-summary", "InfoSec"]
 **Short Abstract:**    
 In this paper, the author explores how dangling DNS records (Dare) can be exploited for domain hijacking to gain full control of domains.
 
-# 1. Introduction
+## 1. Introduction
 
 The Domain Name System (DNS) is integral to the functioning of the internet. As such, it is vital to maintain trust in it by ensuring integrity and authenticity.
 
@@ -36,7 +36,7 @@ To assess the magnitude of this problem, the authors analyzed the top 1 million 
 A protocol needs to be developed to authenticate the ownership of the resources referenced by a DNS record. Additionally, DNS servers should periodically remove DNS records associated with expired domains.
 
 
-# 2. DNS Overview
+## 2. DNS Overview
 
 The interaction between a DNS server and an IP address, called DNS resolution, works as follows:
 
@@ -46,18 +46,18 @@ The interaction between a DNS server and an IP address, called DNS resolution, w
 4. The client obtains the IP address and connects to the website.  
 
 
-# 3. Dangling DNS Records
+## 3. Dangling DNS Records
 
 A DNS record is considered *dangling* if the resource specified in the `data` field is no longer in use or has been released.  
 
-### Types of Dangling DNS Records (Dare)
+### 3.1 Types of Dangling DNS Records (Dare)
 
 - **Dare-A**: Points to an IPv4 address. It becomes compromised if an attacker gains control of the IP address.  
-- **Dare-CN**: Points to a domain, functioning as an alias.  
+- **Dare-CNAME**: Points to a domain, functioning as an alias.  
 - **Dare-MX**: Responsible for email exchange. An attacker could potentially send and receive emails from the domain.  
 - **Dare-NS**: Delegates a domain to an authoritative DNS (aDNS) server.  
 
-### Risk Factors in Different Scenarios  
+### 3.2 Risk Factors in Different Scenarios  
 
 Many websites use third-party services like GoDaddy to host their domains. In typical configurations, these services host multiple domains on a single machine, sharing the same IP address. In such cases, Dare-A records are relatively safe, as adversaries cannot easily obtain a specific IP address.  
 
@@ -65,12 +65,12 @@ However, the risk is different in cloud environments, where customers can acquir
 
 Modern websites often rely on third-party services like Shopify. These services provide users with a subdomain (e.g., `alice.myshopify.com`). To use their own domain (e.g., `shop.alice.com`), users set up a CNAME record that points to the third-party domain. Frequently, users forget to remove these DNS records after discontinuing the service. For example, `shop.alice.com` might still direct traffic to `shops.shopify.com`. An attacker could then claim ownership of the abandoned subdomain and exploit it.  
 
-### Exploiting Unexpired Domains  
+### 3.3 Exploiting Expired Domains  
 
-Unexpired domains are particularly easy to exploit. An attacker only needs to check if a domain referenced in a DNS record has expired. Once identified, the attacker can register the domain and abuse it for malicious purposes.  
+Expired domains are particularly easy to exploit. An attacker only needs to check if a domain referenced in a DNS record has expired. Once identified, the attacker can register the domain and abuse it for malicious purposes.  
 
 
-# 4. Results
+## 4. Results
 
 {{< rawhtml >}}
 <figure>
@@ -87,7 +87,7 @@ Dare-A and Dare-CN constitute the majority of confirmed and potential Dares. Thi
 {{< /rawhtml >}}
 
 
-# 5. Threat Analysis  
+## 5. Threat Analysis  
 
 People often trust familiar domain names, and this trust can be exploited in various attacks:  
 - **Scamming and Phishing**: Creating a site that closely resembles the original to deceive users.  
@@ -95,7 +95,7 @@ People often trust familiar domain names, and this trust can be exploited in var
 - **Email Fraud**: Exploiting Dares to send and receive emails under the guise of a trusted domain.  
 
 
-# 6. Mitigations  
+## 6. Mitigations  
 
 Mitigation strategies include:  
 - Authenticating the IP addresses in the `data` field of DNS records.  

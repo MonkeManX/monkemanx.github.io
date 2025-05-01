@@ -12,7 +12,7 @@ tags: ["paper-summary", "Networks", "InfoSec"]
 The author introduces an attack called *CXPST*, which is a distributed denial of service (DDoS) attack targeting the control plane of the internet by leveraging the data plane.
 
 
-# 1. Introduction
+## 1. Introduction
 
 The internet consists of two main components:  
 - The *data plane*, which forwards packets to their destination.  
@@ -27,9 +27,9 @@ CXPST carefully selects the location and timing of the attack to overwhelm the c
 Simulations show that a botnet with 250,000 members is sufficient to severely disrupt the internet's control plane.
 
 
-# 2. Background
+## 2. Background
 
-## 2.1 BGP
+### 2.1 BGP
 
 The internet consists of multiple smaller networks called [autonomous systems (ASes)](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)). ASes vary widely in size and in the number of connections they have to other ASes.  
 
@@ -44,7 +44,7 @@ To determine the best route for a packet, routers exchange messages to communica
 Each border router maintains its own routing table. When a router updates its routing table due to an event—such as a network cable being severed—it informs all neighboring ASes of the change. Routers within these ASes can then propagate the update even further.
 
 
-## 2.2 BGP Stability
+### 2.2 BGP Stability
 
 Under normal circumstances, the BGP algorithm converges to a stable state, meaning all routers share consistent routing information.  
 
@@ -59,7 +59,7 @@ To mitigate these issues, several countermeasures exist:
 - *BGP graceful shutdown*: Introduces a grace period after a router becomes available again before it can share routing updates.
 
 
-## 2.3 Attacks on BGP Routers  
+### 2.3 Attacks on BGP Routers  
 
 Many attacks target BGP routers. One such attack, proposed by Zhang, Mao, and Wang (ZMV), tricks a pair of routers into disconnecting from each other. An unprivileged attacker interacts with the control plane via the data plane, exploiting the fact that they share the same physical medium.  
 
@@ -68,15 +68,15 @@ The BGP protocol uses a *hold timer* to determine whether two routers are connec
 An adversary can exploit this by flooding the data plane, causing messages from the control plane to be dropped. This results in a "digitally severed" connection between the routers.
 
 
-# 3. The CXPST Attack
+## 3. The CXPST Attack
 
-## 3.1 Attacker Model
+### 3.1 Attacker Model
 
 There are existing attacks that exploit BGP speakers to target the control plane. However, in this attack, the authors propose an alternative approach using an unprivileged adversary—i.e., the attacker does not control a BGP speaker.  
 
 Specifically, the attacker operates a botnet of a reasonable size, which they use to generate network traffic.  
 
-## 3.2 CXPST Concept  
+### 3.2 CXPST Concept  
 
 The attacker uses the ZMV attack to create instability in the control plane. This is achieved by disrupting the data plane, forcing routes to be recalculated and overwhelming the routers.  
 
@@ -96,7 +96,7 @@ For this attack to succeed:
 - The impact of existing defense mechanisms must be minimized.  
 
 
-## 3.3 Target Selection  
+### 3.3 Target Selection  
 
 To select appropriate targets, the concept of *BGP edge betweenness* can be used:  
 \[
@@ -106,7 +106,7 @@ where \( path_{st}(e) \) is the number of BGP paths between IP blocks \( s \) an
 
 The attacker can approximate this value by performing `traceroute` from bots in the botnet to other nodes in the network and aggregating the results.  
 
-### Addressing Load Balancing  
+### 3.4 Addressing Load Balancing  
 
 Load balancing can pose a challenge for the CXPST attack. To identify and exclude links with load balancing, the attacker can:  
 1. Perform `traceroute` multiple times.  
@@ -115,7 +115,7 @@ Load balancing can pose a challenge for the CXPST attack. To identify and exclud
 If changes are observed, the attacker concludes that the link is part of a load-balancing configuration and excludes it from the list of potential targets.  
 
 
-## 3.4 Attack Traffic Management  
+## 3.5 Attack Traffic Management  
 
 Using all bots in the botnet to send traffic to the target could inadvertently overload non-targeted links that transport the traffic, effectively creating additional, unintended DDoS attacks.  
 
@@ -124,7 +124,7 @@ To avoid saturating unrelated links, the following measures are employed:
 - Verify that paths do not include other links targeted by other bot sets.  
 - Send slightly more traffic than necessary as a "safety net" in case some traffic is diverted.  
 
-### Selecting Bots for the Attack  
+### 3.6 Selecting Bots for the Attack  
 
 To efficiently allocate bots:  
 1. Construct two flow networks based on `traceroute`:  
@@ -136,21 +136,21 @@ To efficiently allocate bots:
 When feasible, traffic can be routed from one bot to another to mimic legitimate traffic. This increases the likelihood of the traffic being perceived as "wanted" by the target.  
 
 
-## 3.5 Mitigating Defenses  
+## 4. Mitigating Defenses  
 
 Existing BGP defense mechanisms are generally ineffective against the CXPST attack:  
 - **Graceful restart** and **minimum route advertisement intervals** were not designed to address this type of attack.  
 - **Route damping** can mitigate the attack, but the attacker can periodically check if a link has been dampened and temporarily stop targeting it until it becomes vulnerable again.  
 
 
-# 4. Simulations  
+## 5. Simulations  
 
 To evaluate the impact of their attack, the authors conducted simulations using empirical datasets that measured parts of the internet's topology. These datasets were used to model the simulated network.  
 
 The compromised nodes in the botnet were distributed based on recent research. Botnets of various sizes were tested, including 64,000, 125,000, 250,000, and 500,000 nodes. However, after 250,000 nodes, diminishing returns were observed, making further increases less effective.  
 
 
-# 5. Results  
+## 6. Results  
 
 The authors categorized links into the following types:  
 - **Targeted links**: Links directly attacked by the botnet.  

@@ -11,7 +11,7 @@ tags: ["paper-summary", "Networks", "InfoSec"]
 **Short Abstract:**    
 The authors of this paper investigate the resilience of complex networks, such as the internet, to errors and targeted attacks. They demonstrate that this resilience is not a universal property of all distributed networks but is instead characteristic of inhomogeneous networks.
 
-# 1. Introduction
+## 1. Introduction
 
 The increasing availability of topological data from large networks has led to a better understanding of their structure and behavior.
 
@@ -29,14 +29,14 @@ This implies that, while in homogeneous graphs the degree of all nodes is roughl
 </figure>
 {{< /rawhtml >}}
 
-# 2. Graph Model
+## 2. Graph Model
 
 The authors investigate the Erdős–Rényi graph, which produces graphs with a homogeneous degree distribution—specifically, a [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution). In this model, \(N\) nodes are defined, and each pair of nodes is connected with a probability \(p\).
 
 They also study real-world networks using a scale-free model. This model operates with the following algorithm:  
 The network starts with \(m_0\) nodes. At every time step \(t\), a new node is introduced and connected to \(m\) of the existing nodes. The probability of connecting to a node \(i\) depends on its connectivity \(k_i\). In other words, the probability is given by \(\Pi = \frac{k_i}{\sum_j k_j}\), where \(\sum_j k_j\) is the total degree of the network.
 
-# 3. Metric
+## 3. Metric
 
 The connectivity of a graph can be described by its diameter \(d\), defined as the average length of the shortest path between any two nodes. A smaller \(d\) indicates shorter expected paths between nodes.
 
@@ -46,13 +46,13 @@ For example:
 
 This implies that starting from any person in such a social network, it would take about 6 steps to reach any other node.
 
-# 4. Method
+## 4. Method
 
 To evaluate the resilience of these networks, the authors analyze how the diameter \(d\) changes when a small fraction \(f\) of nodes is removed. This fraction is referred to as the error rate.
 
 Additionally, to simulate deliberate attacks, they consider scenarios where an attacker removes nodes with the highest connectivity first, continuing to select and remove nodes in decreasing order of their connectivity.
 
-# 5. Results
+## 5. Results
 
 For exponential (homogeneous) networks, the authors find that the diameter decreases at the same rate as the *error rate* \(f\).  
 
@@ -88,7 +88,7 @@ Another metric the authors use is the size of the largest cluster \(S\), measure
 </figure>
 {{< /rawhtml >}}
 
-# 6. Conclusion
+## 6. Conclusion
 
 The authors find that scale-free networks are surprisingly robust against random node failures, a property not shared by homogeneous network types. However, scale-free networks are significantly more vulnerable to targeted attacks that remove highly connected nodes.
 

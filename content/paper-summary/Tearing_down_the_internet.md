@@ -11,14 +11,14 @@ tags: ["paper-summary", "Networks", "InfoSec"]
 **Short Abstract:**  
 The internet becomes increasingly vital each day, making downtime or disruption potentially catastrophic. It is therefore important to investigate the resilience of the internet against hacker attacks. This paper explores how many nodes would need to be targeted to significantly disrupt the functionality of the internet.
 
-# 1. Introduction  
+## 1. Introduction  
 
 Between 2000 and 2001, there was a 33% increase in internet users. Sooner or later, everyone will be connected to the internet. As a result, messages like "The host is unreachable" are becoming increasingly unacceptable, with connectivity failures leading to massive profit losses for corporations.  
 
 This growing dependence makes the internet a prime target for terrorist attacks. While the internet is comprised of [many layers](https://en.wikipedia.org/wiki/OSI_model), attacks on the lower layers affect all the layers above. Therefore, the authors focus on the internet protocol (IP) layer, examining how it can be attacked and the resulting consequences.
 
 
-# 2. Previous Works  
+## 2. Previous Works  
 
 The first major study in this area was published in 2000 by Albert, who investigated the effects of random node removal. Their work involved both generated and measured graphs. They used the [autonomous system (AS)](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) level to map the structure of the World Wide Web.  
 To measure the impact of attacks, they used metrics such as:  
@@ -35,11 +35,11 @@ Many of these earlier studies produced similar results to those found in this pa
 The authors of this paper position their work as an extension of these prior studies, focusing on determining the conditions necessary to destroy the functionality of the internet.
 
 
-# 3. Internet Maps  
+## 3. Internet Maps  
 
 To study how the internet reacts to attacks, the authors needed a graph to test these attacks.
 
-## 3.1 Sources  
+### 3.1 Sources  
 
 The authors focus on IP-level maps rather than AS-level maps. The sources they used include:  
 - Router-level maps derived by merging data from:  
@@ -49,7 +49,7 @@ The authors focus on IP-level maps rather than AS-level maps. The sources they u
   - Includes IP addresses of router interfaces  
 - AS-level maps collected by *route-views*  
 
-## 3.2 Building the Map  
+### 3.2 Building the Map  
 
 The authors constructed a topological overlay that relates the router-level maps to the Autonomous System (AS)-level map.  
 
@@ -77,7 +77,7 @@ Thus, every router in the map was assigned both an IP address and an AS number.
 
 The overlay was then used to identify potential BGP routers. They found **40,316 potential BGP routers**, representing 21.4% of the topological map.
 
-## 3.3 Assessing the Accuracy of Their Constructed Map  
+### 3.3 Assessing the Accuracy of Their Constructed Map  
 
 To evaluate the accuracy of their constructed map, the authors examined the size distribution of ASes: **5,277 ASes** contained one or more routers, representing **39% of all nodes**.  
 This indicates that their map is incomplete.  
@@ -97,16 +97,16 @@ This shows a significant lack of IP links.
 {{< /rawhtml >}}  
 
 
-# 4. Attack Techniques  
+## 4. Attack Techniques  
 
-## 4.1 Limitations  
+### 4.1 Limitations  
 
 The authors identify the following limitations in their work:  
 - Their map is incomplete and flawed.  
 - Router maps produced by Mercator may include virtual IP nodes and links, as backbone service providers simulate different virtual topologies for security purposes.  
 - They measure the destruction of the network quantitatively. For example, if a popular node is disconnected, many users might complain, even though 90% of the internet is still reachable.  
 
-## 4.2 Overview  
+### 4.2 Overview  
 
 Instead of studying random node or link failures, the authors focus on targeted node removal.  
 
@@ -114,7 +114,7 @@ In a graph model, the removal of a node deletes all its adjacent links. However,
 
 The study aims to determine the most efficient way to minimize the number of nodes required to be removed to disrupt the network. The authors do not investigate how these node removals would be executed in the real world.  
 
-## 4.3 Method  
+### 4.3 Method  
 
 The authors distinguish between two attack techniques: **static** and **dynamic** attacks.  
 
@@ -137,11 +137,11 @@ In *dynamic* attacks, each node is initially assigned an importance value. After
 Dynamic methods are better than static methods at identifying and removing important nodes. However, they are slower to compute.  
 
 
-# 5. Experiments  
+## 5. Experiments  
 
 Their experiments show that static and dynamic attacks produce very similar results. In the paper, they only present results that are not too similar to avoid redundancy.  
 
-## 5.1 Metrics  
+### 5.1 Metrics  
 
 Quantifying connectivity in a network is challenging, as no single metric can capture all aspects. Some possibilities include:  
 - **Average length of the shortest path** between any two nodes:  
@@ -168,7 +168,7 @@ To compute the connected components, the authors use a modified version of **Tar
 For deeper insights into network fragmentation, they also analyze the **distribution of relative node numbers per class**—i.e., the fraction of total network nodes in each class. This metric answers questions such as:  
 *"What is the probability that a node can communicate with at most a given number of other nodes for a given percentage of node removal?"*  
 
-## 5.2 Core Robustness Behavior  
+### 5.2 Core Robustness Behavior  
 
 Figure 5 illustrates the evolution of static attacks using the degree metric and adaptive attacks using the largest connected component and degree metrics.  
 
@@ -180,17 +180,8 @@ From the figure, we observe that removing just 5% of the nodes renders the netwo
 </figure>
 {{< /rawhtml >}}
 
-## 5.3 Fragmentation of Connected Components  
 
-After removing 0.5% of the nodes, most classes contain an insignificant number of connected components. Classes 0 and 1 dominate the network structure.  
-
-{{< rawhtml >}}  
-<figure>  
-    <img style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/attac_network_cluster_size_log.png">  
-</figure>  
-{{< /rawhtml >}}  
-
-## 5.4 Distribution of Nodes  
+### 5.3 Distribution of Nodes  
 
 At 8% node removal under an adaptive attack, only Class 0 and Class 1 components remain in the network.  
 
@@ -200,7 +191,7 @@ At 8% node removal under an adaptive attack, only Class 0 and Class 1 components
 </figure>  
 {{< /rawhtml >}}  
 
-## 5.5 Destruction Level  
+### 5.4 Destruction Level  
 
 To ensure no components in the LSITT02 map contain more than 100 nodes, 4% of the nodes in the network must be removed.  
 
@@ -215,7 +206,7 @@ The authors define three levels of destruction in the table below, indicating ho
 {{< /rawhtml >}}  
 
 
-# 6. Conclusion  
+## 6. Conclusion  
 
 The authors demonstrated that removing 4% of the routers using an adaptive attack leaves the network fragmented into clusters with no more than 100 routers each. Furthermore, removing just 1.5% of the nodes reduces the size of the largest cluster in the network by half.  
 
@@ -223,7 +214,7 @@ Bringing down the internet entirely would require simultaneous attacks on hundre
 
 ---
 
-# My Own Thoughts  
+## My Own Thoughts  
 
 Bringing down the entire internet might be impossible due to the sheer number of nodes that would need to be attacked. However, the percentages scale down when applied to smaller networks.  
 

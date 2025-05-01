@@ -17,7 +17,7 @@ Distributed Denial-of-Service (DDoS) attacks are a significant problem in the wi
 
 
 
-# 1. Introduction  
+## 1. Introduction  
 
 There are many commercially available tools for DDoS protection, and many of them utilize Machine Learning (ML). However, they are unable to detect flooding through tunnels, as tunneling encrypts both packet headers and packet payloads.  
 
@@ -37,7 +37,7 @@ The Exosphere tool achieves an impressive accuracy, with an F1-score of **0.967*
 {{< /rawhtml >}}
 
 
-# 2. Threat Model  
+## 2. Threat Model  
 
 The authors assume that attackers access the victim's server through a tunnel gateway. These tunnels encrypt the original traffic, thereby preventing traditional traffic analysis.  
 
@@ -46,7 +46,7 @@ The attacker controls compromised devices outside the victim's network to genera
 Normal detection systems are typically deployed at the borders of cloud infrastructures and ISPs. However, they cannot analyze this type of traffic because it is encrypted, leaving them blind to malicious patterns.  
 
 
-# 3. Motivation  
+## 3. Motivation  
 
 The packet behavior of regular internet traffic differs significantly from that of DDoS attacks.  
 
@@ -62,7 +62,7 @@ As a result, flooding packets show a strong correlation in their lengths within 
 {{< /rawhtml >}}
 
 
-# 4. Design of Exosphere 
+## 4. Design of Exosphere 
 
 
 Their tool, **Exosphere**, consists of three distinct phases:  
@@ -84,7 +84,7 @@ Their tool, **Exosphere**, consists of three distinct phases:
 {{< /rawhtml >}}
 
 
-# 5. Experiments 
+## 5. Experiments 
 
 {{< rawhtml >}}
 <figure>
@@ -92,7 +92,7 @@ Their tool, **Exosphere**, consists of three distinct phases:
 </figure>
 {{< /rawhtml >}}
 
-# 6. Conclusion
+## 6. Conclusion
 
 Exosphere is a method capable of detecting tunneled DDoS attacks efficiently and reliably.
 
