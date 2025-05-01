@@ -1,6 +1,6 @@
 ---
 title: 'Western Philosophy Timeline'
-date: 2025-04-26 08:00:00
+date: 2025-05-01 12:00:00
 tags: ["Philosophy"]
 ---
 
