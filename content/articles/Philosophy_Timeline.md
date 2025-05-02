@@ -420,7 +420,7 @@ And if there is no God and thus no salvation, then the only serious, worthwhile 
 **Summary:**  
 Most widely known for developing the theory of *Utilitarianism*, the belief that what is moral is what maximizes happiness and minimizes suffering. In his work *On Liberty*, he argued that society should allow individuals the maximum possible freedom unless their actions harm others.
 
-Feel free to let me know if you need any more adjustments!
+
 **1889 CE [Martin Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger)**   
 **Media:** [My Dinner with Andre](/tangled_thoughts/dinner_with_andre/)  
 **Summary:**  
