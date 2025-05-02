@@ -4,7 +4,6 @@ date: 2025-03-01 16:30:00
 tags: ["Book"]
 ---
 
-
 {{< book image="/attachments/stoner_book.jpg" >}}
 
 The prose is plain and clear, really nicely written, the story itself is rather sad. In the end, you’re kind of left with this feeling of, "What did it all mean?"
