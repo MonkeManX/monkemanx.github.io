@@ -117,7 +117,7 @@ The Cynics believed that the only thing that mattered for a life well lived was 
 
 **300 BC – [Stoicism](https://en.wikipedia.org/wiki/Stoicism)**:  
 **Key Figures:** [Zeno of Citium](https://en.wikipedia.org/wiki/Zeno_of_Citium), [Chrysippus](https://en.wikipedia.org/wiki/Chrysippus), [Epictetus](https://en.wikipedia.org/wiki/Epictetus)  
-**Articles:** [Seneca on Trial: The Case of the Opulent Stoic](/paper-summary/seneca_on_trial/), [Ancient Greek Logic](/tangled_thoughts/logic/)  
+**Articles:** [Seneca on Trial: The Case of the Opulent Stoic](/paper-summary/seneca_on_trial/), [Ancient Greek Logic](/tangled_thoughts/logic/), [The Cambridge Companion to the Stoics](/tangled_thoughts/guide_of_stoicism/)    
 **Summary:**  
 Inspired by the Cynics, the Stoics also believed that *virtue* was the highest good. However, unlike the Cynics, they did not reject worldly things like wealth or power — they viewed them with indifference. Having money was fine; not having money was also fine.  
 Stoicism developed an elaborate systematic philosophy. They believed that the universe was guided by a universal reason called the [*Logos*](https://en.wikipedia.org/wiki/Logos), which consisted of an active principle acting upon a passive matter.  

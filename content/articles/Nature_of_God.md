@@ -1,7 +1,7 @@
 ---
 title: 'Nature of God'
 date: 2025-04-12
-tags: ["Philosophy"]
+tags: ["Philosophy", "Theology"]
 ---
 
 
