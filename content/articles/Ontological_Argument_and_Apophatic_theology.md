@@ -1,6 +1,6 @@
 ---
 title: 'Ontological Argument and Apophatic theology'
-date: 2025-05-04 10:00:00
+date: 2025-05-04 08:00:00
 tags: ["Philosophy", "Theology"]
 ---
 
