@@ -1,7 +1,8 @@
 ---
 title: 'Numerical Methods'
-date: 2025-04-30 09:00:00
+date: 2025-05-04 09:00:00
 tags: ["Mathematics"]
+draft: True
 ---
 
 
