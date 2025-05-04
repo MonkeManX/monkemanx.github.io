@@ -5,11 +5,8 @@ tags: ["Philosophy", "Theology"]
 ---
 
 {{< info "Info">}}
-
 This is a follow-up to the article ["Nature of God"](/articles/nature_of_god/), discussing why it makes sense to imagine God as an entity that possesses all attributes in their maximal form—and why this view is ultimately inadequate to fully describe God.
-This topic is most likely already addressed in Aquinas's *Summa Theologiae*, though I have not yet read it.
-Additionally, I have not read much in this area (the nature of the divine).
-
+The topic, of this article, is already addressed in Aquinas's *Summa Theologiae*, though I have not yet read it, so take everything with a grain of salt.
 {{< /info >}}
 
 {{< info "Info">}}
@@ -20,7 +17,7 @@ This article should be read as an intellectual thought experiment, rather than a
 Recently, I had a conversation with a friend about the ontological argument, during which I realized that I do not fully understand it. In this article, I want to explore the argument further—though in a specific direction, selectively rather than exhaustively—and show how this can lead to apophatic theology, a tradition in which one approaches the divine through negation rather than by ascribing positive attributes to it.
 
 
-## Ontological Argument
+## 1. Ontological Argument
 
 The ontological argument can be explained quite intuitively as follows:
 Imagine a thing—it could be anything: a shoe, a horse, or something else entirely. But let’s stick with the shoe for now. Now, imagine a shoe that would be *greater*—where “greater” means better in some way—than the original shoe you thought of. Perhaps this greater shoe is made of a softer, more elastic material, or maybe it has new, impressive properties or abilities, like automatically moisturizing the soles of your feet.
@@ -52,7 +49,7 @@ Could we, for example, replace “greatest being” with “all-powerful being,�
 
 Let’s examine two common criticisms of the ontological argument.
 
-### 1. The "Perfect Island" Argument
+### 1.1 The "Perfect Island" Argument
 
 This argument, originally proposed by the monk *Gaunilo of Marmoutiers*, goes as follows:
 
@@ -63,7 +60,7 @@ This argument, originally proposed by the monk *Gaunilo of Marmoutiers*, goes as
 
 Clearly, this seems absurd. Just because we imagine a perfect island doesn’t mean such an island actually exists.
 
-### 2. The "Imperfect Being" Argument
+### 1.2. The "Imperfect Being" Argument
 
 Now let’s suppose someone defines *God* not as the greatest conceivable being, but simply as an *all-powerful* (omnipotent) being—without requiring omniscience or moral perfection. This could be called the “imperfect being” argument:
 
@@ -85,7 +82,7 @@ These distinctions help show why a perfect island (which is contingent) or an im
 But then, I want to take things one step further—and argue that, in the end, these distinctions, while intellectually interesting, **don’t actually matter**.
 
 
-## Contingency vs. Necessity
+## 2. Contingency vs. Necessity
 
 Very broadly, we say a thing is **contingent** when it *could have been otherwise*—that is, it does not have to exist or could exist in a different way depending on circumstances. In contrast, a thing is **necessary** if it *could not have been otherwise*—its existence is required in all possible circumstances.
 
@@ -135,7 +132,7 @@ Would such an argument work? Would this being be necessary—or just powerful bu
 That’s what we’ll explore next.
 
 
-## Divine Simplicity
+## 3. Divine Simplicity
 
 Let us now turn our eyes toward the **Imperfect Being** argument. To recap, the argument goes as follows:
 
@@ -196,7 +193,7 @@ According to Divine Simplicity:
 There can be only one being with this nature. Any being that falls short in even one respect is not God, but something lesser. Thus, Divine Simplicity does not just preserve God’s uniqueness—it demands it.
 
 
-## Why the Two Distinctions in the Ontological Argument Do Not Matter
+## 4. Why the Two Distinctions in the Ontological Argument Do Not Matter
 
 In the previous two sections, *Contingent vs. Necessary* and *Divine Simplicity*, I have argued why it makes sense to think of the nature (ontology) of God as encompassing all properties to the maximum degree and being necessary.
 Both of these properties of God fall into the category of metaphysics. However, I believe that speaking about God in these metaphysical terms and assigning specific properties to God is erroneous. Instead, I advocate for the notion that it is *impossible* to describe God's nature.
@@ -208,7 +205,7 @@ Here are three arguments for why I hold this position, and why I instead favor t
 3. **The Limitation of God** – Assigning attributes to God inherently limits God’s power.
 
 
-### Jesus’ Perfection Argument
+### 4.1 Jesus’ Perfection Argument
 
 This argument is specifically targeted at Christians and does not apply to more general understandings of God. In the Christian worldview, we have the concept of the Trinity, which says that Jesus the Son, the Holy Spirit, and God the Father are one and the same being.
 
@@ -276,7 +273,7 @@ The answer, for a God not bound by logic, is: Yes—He can create such a stone, 
 Does this make logical sense? No—but that’s the point.
 
 
-### Kant's Notion: Noumenal vs Phenomenal
+### 4.2 Kant's Notion: Noumenal vs Phenomenal
 
 Kant differentiates between the **noumenal world** and the **phenomenal world**. The noumenal world is the world as it truly is—the pure essence and form—while the phenomenal world is how we, as humans, experience the world. But why is there this differentiation? Why don't we perceive the world as it truly is?
 
@@ -293,7 +290,7 @@ This presents a problem when considering God. There are three possibilities rega
 In none of these realms can the God be fully described using properties. We can either agree that God is indescribable, or we can adopt a more Stoic or Schopenhauerian perspective (which I plan to write more about), but in doing so, we lose the personal aspect of God.
 
 
-### Limitation of God
+### 4.3 Limitation of God
 
 Finally, I want to address why I refer to the notion of an indescribable God as **predicate-free**. [Predicates](https://en.wikipedia.org/wiki/Predicative_expression) (in formal logic) are expressions used to assign properties to an object. For example, "The sky is **blue**." While many predicates describe attributes (such as "blue"), not all do. Nevertheless, when I say God cannot be described, I mean that no direct **attributive** predicates can be assigned to Him. Why?
 
@@ -331,6 +328,6 @@ Third, and most importantly, this argument is self-defeating. By prescribing God
 Importantly, we do not say that God is **predicate-free** and then assign the property of being **predicate-free** to Him, as I did in the previous argument. Instead, we say that it doesn’t make sense to assign properties to God because that would be a category error. It’s like asking, “What is 2 + unicorn?” or “What is the color of the number 5?” These statements are nonsensical in the same way that assigning properties to God is.
 
 
-## Conclusion
+## 5. Conclusion
 
 Even under the premise of a predicate-free God, it is still possible to speak about Him. One can use analogies or engage in **apophatic theology**, where instead of prescribing positive properties to God, one states what properties God **does not** have.
