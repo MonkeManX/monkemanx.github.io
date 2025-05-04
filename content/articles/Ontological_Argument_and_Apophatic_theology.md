@@ -5,7 +5,8 @@ tags: ["Philosophy", "Theology"]
 ---
 
 {{< info "Info">}}
-This is a follow-up to the article ["Nature of God"](/articles/nature_of_god/), discussing why it makes sense to imagine God as an entity that possesses all attributes in their maximal form—and why this view is ultimately inadequate to fully describe God.
+This is a follow-up to the article ["Nature of God"](/articles/nature_of_god/), discussing why it makes sense to imagine God as an entity that possesses all attributes in their maximal form—and why this view is ultimately inadequate to fully describe God.  
+
 The topic, of this article, is already addressed in Aquinas's *Summa Theologiae*, though I have not yet read it, so take everything with a grain of salt.
 {{< /info >}}
 
