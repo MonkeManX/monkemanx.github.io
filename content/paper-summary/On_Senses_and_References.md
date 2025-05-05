@@ -1,6 +1,6 @@
 ---
 title: 'On Senses and References'
-date: 2025-05-28
+date: 2025-05-05 14:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
@@ -9,43 +9,78 @@ tags: ["paper-summary", "philosophy"]
 **Date:** 1892  
 **Paper Type:** Philosophy, Philosophy of language  
 **Short Abstract:**  
-Thematizes the problem in the pfilosophy of language, where it sometimes seems that we have two terms that have different meaning even tough they reference the same objects.
+It thematizes a problem in the philosophy of language, where it sometimes seems that we have two terms with different meanings, even though they refer to the same object.
 
-If we have the two statements \(a = a\) and \(a = b\), then the former is *a priori* true, by definition of \(=\), and doesnt seem to provide new information, menawhile the later statement provides new information and it is not trivial true.
 
-But if we now assume that both statements would be true, then they would have the same meaning, because \(a = b = a\).
-But this would be then strange, because that would mean that the meaning of \(a = b\) is that the characters of 'a' and 'b' have the same meaning.
+If we consider the two statements \(a = a\) and \(a = b\), the former is *a priori* true by definition of identity and appears to provide no new information. In contrast, the latter seems to offer new, non-trivial information and is not *a priori* obvious.
 
-thus he differentiates bewtenn sinn udn bedueutng explain what, 
+However, if we assume that both statements are true, then by transitivity, \(a = b = a\), and they would ostensibly have the same meaning, that is 'true'. But this leads to a puzzling conclusion: it would suggest that the statement \(a = b\) simply means that the names ‘a’ and ‘b’ refer to the same object—implying no informational gain. This is counterintuitive, as the identity statement \(a = b\) often conveys genuine knowledge, unlike the tautological \(a = a\).
 
-important the sinn is not paritcular a spatial component e.g. plato has the sense of teacher of arisotele, writer of rebuplic, student of socrates, and they have all different sinn, but are not spatial/perspective.
 
 {{< details "Problem Formalized" >}}
 
 1. Suppose the meaning of linguistic expressions consists solely in their referent.
-2. The expressions "the evening star" and "the morning star" have the same referent (Venus).
-3. Therefore: The expressions "the evening star" and "the morning star" have the same meaning.
-4. Two expressions that have the same meaning also make the same contribution to the meaning of sentences in which they occur.
-5. Therefore, "the evening star" makes the same contribution to the meaning of the sentence  
-(A) "The evening star is the morning star"  
-as the expression "the morning star" makes to the meaning of the sentence  
-(M) "The morning star is the morning star".
-6. The expression "· is the morning star" makes the same contribution to the meaning of sentences (A) and (M).
-7. The meaning of a sentence is fully determined by the contribution of its components.
+2. The expressions “the evening star” and “the morning star” have the same referent (Venus).
+3. Therefore, the expressions “the evening star” and “the morning star” have the same meaning.
+4. Two expressions that have the same meaning contribute equally to the meaning of any sentence in which they occur.
+5. Therefore, “the evening star” contributes the same meaning to the sentence
+   (A) *The evening star is the morning star*
+   as “the morning star” contributes to the sentence
+   (M) *The morning star is the morning star*.
+6. The expression “is the morning star” contributes equally to both (A) and (M).
+7. The meaning of a sentence is fully determined by the meanings of its components.
 8. Therefore, the sentences (A) and (M) have the same meaning.
 9. If two sentences have the same meaning, they have the same cognitive value.
-10. Therefore, the sentences (A) and (M) have the same cognitive value.
-11. However, the sentences (A) and (M) have different cognitive values: the former is informative and knowable a posteriori, the latter is uninformative and knowable a priori.
-12. Therefore, assumption (1.) is false.
+10. Therefore, sentences (A) and (M) have the same cognitive value.
+11. However, (A) and (M) clearly have different cognitive values: (A) is informative and known *a posteriori*, while (M) is uninformative and known *a priori*.
+12. Therefore, assumption (1) is false.
 
 {{< /details >}}
 
-With sinn we do not mean the inner vorstellugn davon, ebcause than language would be subjective, but language is for communciation thus we couldnt properly ommunicate thigns to each other.
 
-sinn bedueutng nowdays we clal it extensional and intensional, extensional referes to the set of object that have this property, e.g. we have lebenwesne with hearts and nieren, aber alle lebenswense die herzen habe nauch neiren udn andersrum, this means they are extensional the same, intensional(?)
+Frege distinguishes between **sense** (*Sinn*) and **reference** (*Bedeutung*) as two components that together contribute to the meaning of a word. The **reference** of a word is the actual object it refers to—for example, the word *"apple"* refers to the physical object, an apple.
 
-we can have things thav have sinn  but no bedeutung e.g. odyseus, but the opposite is not true
+The **sense**, on the other hand, is the *mode of presentation* of the object. For instance, *"apple"*, *"Apfel"*, and *"Malus pumila"* all refer to the same object (an apple), but they present that object in different ways: the first is the English term, the second the German, and the third the scientific name.
 
-one can understand the sinn as connecting the character with its refernceobject, in other word if we have a character like 'morgenstern' what conects it to the object it referneces and that is the sinn. Because if we hadnt a sinn, than we could ask ourselves how or what makes teh connect between teh character and the ferenceo bject.
+Importantly, **sense is not a spatial or physical component**. Take the example of Plato. The expressions *"teacher of Aristotle"*, *"author of the Republic"*, and *"student of Socrates"* all refer to the same individual (Plato), but they differ in sense—they present Plato in different ways. These differences are not spatial or physical.
 
-when we do deifniton we want extensional to be the same, but the intensional should be different, else we would have exatcly the same object, in a definiton thats what we trying to do to define an object by finding a more simpler intensional.
+Frege also emphasizes that **sense is not merely a subjective mental idea**. For him, the purpose of language is communication. If sense were purely subjective—i.e. just what each person associates with a word—then effective communication would be impossible. Language must therefore rely on shared senses, not private mental images.
+
+> "*With sense we do not mean a private mental image (Vorstellung), because if that were the case, language would become subjective and incapable of supporting communication.*"
+
+In modern terms, Frege’s distinction is often explained using the concepts of **intension** and **extension**:
+
+* The **extension** of a term is the set of all objects it applies to (its referents).
+* The **intension** is the concept or criteria by which we determine what falls into that set.
+
+For example, the phrases *“creature with a heart”* and *“creature with a kidney”* might refer to the same set of beings (same extension), but their intensions differ—they express different properties.
+
+It’s also important to note that **some expressions can have sense without reference**. A classic example is *"Odysseus"*. Even if Odysseus never existed, the name still has a sense—it presents a certain conception or mode of presentation—but lacks a real-world referent. The opposite is not true: we cannot have reference without sense, since the sense is what connects a name or word to its referent.
+
+You can think of **sense as the bridge** between a linguistic expression and the object it refers to. For instance, with the expression *"morning star"*, the sense is what links the word to the actual celestial object it designates (Venus). Without this mediating sense, we would be left wondering what actually connects words to the world.
+
+### The Principle of Compositionality
+
+One of Frege’s key contributions is the **Principle of Compositionality**:
+
+> *The meaning of a sentence is determined by the meanings of its parts and the way they are combined.*
+
+For example, to understand the sentence *"Hans is German"*, it is sufficient to know what *"Hans"* refers to and what *"German"* means.
+
+### Ordinary vs. Non-Ordinary Language Use
+
+Frege distinguishes between:
+
+* **Ordinary language use**, where words and sentences refer directly to objects in the world (reference).
+* **Non-ordinary (or indirect) language use**, where we speak about the *sense* of expressions rather than their referents.
+
+The Principle of Compositionality only applies to ordinary language use. In non-ordinary contexts, substituting terms with the same reference can change the meaning of a sentence.
+
+#### Examples of Non-Ordinary Language:
+
+* **Modal contexts** (e.g. necessity and possibility):
+  We cannot always substitute a necessary object with a contingent one, even if they refer to the same thing.
+* **Indirect speech** (e.g. "Hans said ‘Peter was ill’"):
+  Here we refer to the content of a statement, not just its truth conditions.
+* **Metalinguistic talk** (e.g. "The word 'apple' has five letters"):
+  We are referring to the word itself, not its referent.
