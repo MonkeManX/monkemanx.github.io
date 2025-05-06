@@ -20,8 +20,37 @@
   
   {{ .Content }}
 
-  </div>
+
+{{ if or (eq .Section "articles") (eq .Section "paper-summary") }}
+
+<div style="text-align: left;">
+ <a href="mailto:{{ $.Site.Params.Author.email }}?subject={{ urlquery (printf "Re: %s" .Page.Title) }}"
+     style="
+       display: inline-flex;
+       align-items: center;
+       padding: 8px 12px; /* Smaller padding */
+       background-color: #fff; /* White background */
+       color: #000; /* Normal black text */
+       text-decoration: none;
+       border: 1px solid #ccc; /* Light gray border */
+       font-size: 0.87em; /* Smaller font size */
+       font-weight: 500;
+       gap: 6px; /* Reduced space between icon and text */
+       transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+     "
+     onmouseover="this.style.backgroundColor='#333'; this.style.color='#fff'; this.querySelector('img').style.filter = 'invert(1)';"
+     onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'; this.querySelector('img').style.filter = 'invert(0)';">
+     <img src="/icons8-email-100.png" alt="Email Icon" style="width: 16px; height: 16px; transition: filter 0.3s;">
+     reply via email
+  </a>
+</div>
+
+{{ end }}
+
+</div>
 <a href="#top" class="back-to-top-button">
   &#9650; <!-- Unicode arrow symbol -->
 </a>
+
+
 {{ end }}

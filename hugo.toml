@@ -10,6 +10,10 @@ theme = ["mytheme", "hugo-shortcode-gallery"]
   title = "Notes from the Wired"
   favicon = "note_4371209.png"
   rss = true
+  [params.Author]
+    name = "MonkeMan"
+    email = "monkeman@cock.li"
+
 
 [outputs]
   home = ["HTML", "RSS"]
