@@ -98,7 +98,7 @@ He also founded political philosophy by presenting his vision of an ideal state.
 
 
 **384 BC – [Aristotle](https://en.wikipedia.org/wiki/Aristotle)**  
-**Articles:** [Virtue Ethics from First Principles](/articles/aristotele_virtue_ethics/)  
+**Articles:** [Virtue Ethics from First Principles](/articles/aristotele_virtue_ethics/), [Nicomachean Ethics: Action Theory](/paper-summary/nicomachean_ethics_action_theory/)  
 **Summary:**  
 Student of Plato. Aristotle was the first truly systematic philosopher, writing extensively on many subjects.  
 He disagreed with Plato's Theory of Forms, arguing that the so-called "Forms" were not independent, pre-existing realities (*a priori*), but rather constructs of human cognition.  
@@ -184,6 +184,7 @@ Augustine was also highly influenced by Neoplatonism and Platonic thought, belie
 
 
 **1225 CE — [Thomas Aquinas](https://en.wikipedia.org/wiki/Thomas_Aquinas):**  
+**Articles:**  [Ontological Argument and Apophatic theology](/articles/ontological_argument_and_apophatic_theology/)  
 **Summary:**  
 Famous for his work *Summa Theologiae*, Thomas Aquinas sought to derive Christian doctrine through natural theology—that is, not directly from sacred texts, but by observing nature. His project can be seen as "Christianizing" Aristotle: unlike Plato's influence on Augustine, where the divine was found in a realm of ideas, Aquinas, following Aristotle, looked to the natural world. Like Aristotle, Aquinas was extremely systematic in his approach.  
 
