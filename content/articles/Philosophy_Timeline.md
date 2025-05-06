@@ -4,7 +4,13 @@ date: 2025-05-01 12:00:00
 tags: ["Philosophy"]
 ---
 
-This is a timeline of the most relevant philosophers in Western philosophy. When I say Western, I mean continental Europe, parts of the Middle East, England, and later America. Disclaimer: I have not read the primary works of most philosophers on this list.
+{{< info "Info" >}}
+
+Disclaimer: I have not read the primary works of most philosophers on this list. If I have, I will list an review of their works under *articles*.
+
+{{< /info >}}
+
+This is a timeline of the most relevant philosophers in Western philosophy. When I say Western, I mean continental Europe, parts of the Middle East, England, and later America. 
 
 ## The Pre-Socratics
 
