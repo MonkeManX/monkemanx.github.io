@@ -24,7 +24,7 @@ A bit shorter than usual, but I liked this too much to banish it to [Tangled Tho
 
 ## Why am I talking about this?
 
-There’s a fascinating phenomenon emerging on the internet: artists are expressing deep frustration with artificial intelligence. Painters criticize models like **Stable Diffusion** and **DALL·E**, which can generate images in various styles at high quality. Writers and programmers similarly protest large language models (LLMs) capable of producing text, stories, and code with impressive fluency. But this reaction may point to something much bigger.
+There’s a fascinating phenomenon emerging on the internet: artists are expressing deep frustration with artificial intelligence. Painters criticize models like **Stable Diffusion** and **DALL·E**, which can generate images in various styles at high quality. Writers and programmers similarly protest large language models (LLMs) capable of producing text, stories, and code with impressive fluency (Gemini 2.5 can produce whole [applications](https://youtu.be/K0h_PS_1XiE?si=wNMGCi7z5Q3hzaqU)). But this reaction may point to something much bigger.
 
 We might be witnessing a **fourth insult to humanity**:
 
