@@ -1,4 +1,4 @@
-  ---
+---
 title: 'Is Justified True Belief Knowledge?'
 date: 2025-04-22
 tags: ["paper-summary", "philosophy"]
