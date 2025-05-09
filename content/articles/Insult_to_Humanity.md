@@ -80,7 +80,7 @@ I believe this is one of the greatest things that could have happened to us as a
 
 If humans are no longer uniquely special, then we are left with two possibilities: either *everything* is special, or *nothing* is.
 
-If everything is special, this new picture strongly supports **pantheism**—the belief that nature and God are one—as held by the Stoics, Spinoza, and, to some extent, Schopenhauer. For if everything is special, what makes everything special if not a spark of divinity embedded in all things?
+If everything is special, this new picture strongly supports [pantheism](https://en.wikipedia.org/wiki/Pantheism)—the belief that nature and God are one—as held by the Stoics, Spinoza, and, to some extent, Schopenhauer. For if everything is special, what makes everything special if not a spark of divinity embedded in all things?
 
 On the other hand, if nothing is special, then we must create our own meaning on Earth. Be it, as Nietzsche proposed, through the exercise of power; as Camus suggested, through rebellion; or as Sartre argued, by choosing a set of values and committing to them with sincerity.
 
