@@ -62,7 +62,7 @@ The ancient Greeks—particularly the Stoics—believed that the world was embed
 
 We can apply this reasoning to ourselves: what makes humans uniquely special when compared to everything else in nature? Whatever that is would point us to our *telos*. For the ancient Greeks, what made us special was *reason*—we were the only beings in nature capable of rational thought.
 
-But as we’ve seen, even this has been eroded by the rise of large language models. LLMs now regularly outperform humans in many [reasoning benchmarks](https://ai.meta.com/blog/meta-llama-3/), they are even better than us in judging [social siutations](https://www.nature.com/articles/s41598-024-79048-0).
+But as we’ve seen, even this has been eroded by the rise of large language models. LLMs now regularly outperform humans in many [reasoning benchmarks](https://ai.meta.com/blog/meta-llama-3/), they are even better than us in judging [social situations](https://www.nature.com/articles/s41598-024-79048-0).
 
 A very similar question, often asked before the rise of LLMs, was: *What differentiates humans from animals?* Common answers included **emotion**, **reason**, and **consciousness**. But none of these hold up—animals possess all of them, albeit to a lesser degree.
 
