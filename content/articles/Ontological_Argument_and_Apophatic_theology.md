@@ -329,6 +329,14 @@ Third, and most importantly, this argument is self-defeating. By prescribing God
 Importantly, we do not say that God is **predicate-free** and then assign the property of being **predicate-free** to Him, as I did in the previous argument. Instead, we say that it doesn’t make sense to assign properties to God because that would be a category error. It’s like asking, “What is 2 + unicorn?” or “What is the color of the number 5?” These statements are nonsensical in the same way that assigning properties to God is.
 
 
+> What is it, then [the One/Good]? [...]
+> 
+> In fact, it is none of the things whose source it is, yet is the sort of thing which, because **nothing can be predicated** of it, not Existence, not Substantiality, not Life, is a thing beyond them. [...]
+> 
+> For surely there is no way in which the Good can be either Intellect or fullness [a state that contains all Forms and complete knowledge], but **is prior** to Intellect and fullness. For Intellect and fullness are after it, since they have need of it to be filled and to complete their thought. And they are close to what has no needs and does not in any way need to think, but they possess true fullness and intellection, because they have it primarily. But what is before them neither needs nor possesses anything; otherwise, it would not be the Good.
+>
+> ~ Plotnius: On Nature, Contemplations, and the One
+
 ## 5. Conclusion
 
 Even under the premise of a predicate-free God, it is still possible to speak about Him. One can use analogies or engage in **apophatic theology**, where instead of prescribing positive properties to God, one states what properties God **does not** have.
