@@ -98,6 +98,7 @@ Capitalization is important!
 - `:%s/foo/bar/gc`, changes all occurence of `foo` in the current file to `bar`, asks for confirmation
 - `:%s/foo/bar/g`, changes all occurence of `foo` in the current file to `bar`, doesn't asks for confirmation
 - `:%s/<foo>/bar/gc`, Changes only whole wors exactly matching `foo`.
+- Example: `:%s/\$\([^$]*\)\$/\\(\1\\)/g``, match text enclosed in dollar signs (e.g., $some random text$) and replace it with LaTeX-style \(some random text\)`.
 
 # Debugging Neovim 
 
