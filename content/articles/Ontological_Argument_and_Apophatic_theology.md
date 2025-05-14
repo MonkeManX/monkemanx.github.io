@@ -32,7 +32,7 @@ But this leads to a surprising implication: **God exists**. Why? Because we defi
 That’s the ontological argument in a nutshell. It can be formalized as follows (among other versions):
 
 > 1. **Definition**: God is the greatest conceivable being.
-> 2. We can conceive of such a being.
+> 2. We can conceive of such a being.  
 >     2.1. If what we conceive is not the greatest yet, we can always imagine something greater.
 >     2.2. This progression of greatness must eventually converge.
 > 3. A being that exists in reality is greater than one that exists only in the imagination.
