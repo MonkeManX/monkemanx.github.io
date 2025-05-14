@@ -45,6 +45,10 @@ That only **we** could write pleasing prose and poems.
 
 > [Wrong](https://edition.cnn.com/2024/01/19/style/rie-kudan-akutagawa-prize-chatgpt/index.html).
 
+That only **we** could make anime opening sounds.
+
+> [Wrong](https://www.youtube.com/watch?v=8ef6dSvKMLQ)
+
 That only **we** could craft alluring songs and soundscapes.
 
 > [Wrong](https://decrypt.co/304164/beatles-win-first-grammy-awarded-ai-song).
