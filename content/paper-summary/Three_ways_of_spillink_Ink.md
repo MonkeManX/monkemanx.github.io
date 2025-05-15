@@ -11,8 +11,8 @@ This paper originally included a section on linguistics, examining how the words
 {{< /info >}}
 
 
-**Paper Title:** Three Ways of Spilling Ink 
-**Link to Paper:** https://www.jstor.org/stable/2183222  
+**Paper Title:** Three Ways of Spilling Ink   
+**Link to Paper:** https://www.jstor.org/stable/2183222   
 **Date:** October 1966  
 **Paper Type:** Philosophy, Action theory, Philosophy of Language  
 **Short Abstract:**    
