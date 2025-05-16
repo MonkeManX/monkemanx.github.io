@@ -478,7 +478,7 @@ Sartre’s answer: we must live authentically, both individually and in relation
 
 
 **1913 CE [Albert Camus](https://en.wikipedia.org/wiki/Albert_Camus)**   
-**Media:** [Taste of Cherry](/tangled_thoughts/taste_cherry/)  
+**Media:** [Taste of Cherry](/tangled_thoughts/taste_cherry/), [Sunset Limited](/tangled_thoughts/sunset_limited/)  
 **Summary:**  
 A French existentialist, Camus is nowadays most famous for his phrase: *"One must imagine Sisyphus happy."* 
 
