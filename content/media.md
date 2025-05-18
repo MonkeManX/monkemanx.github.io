@@ -80,6 +80,12 @@ A Russian novel, it is seperated into two parts the first part deals with the pr
 It's a collection of silly poems about cats. Fun to read.
 {{< /media >}}
 
+
+{{< media "/attachments/stoner_book.jpg" "Stoner" "https://www.goodreads.com/book/show/166997.Stoner" >}}
+See <a href="/tangled_thoughts/stoner/">review here</a>.
+{{< /media >}}
+
+
 ## Short stories/Fables 
 
 {{< media "/attachments/IHaveNoMouth.jpg" "I Have No Mouth, and I Must Scream" "https://www.goodreads.com/book/show/415459.I_Have_No_Mouth_I_Must_Scream" >}}
