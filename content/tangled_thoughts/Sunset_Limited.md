@@ -27,3 +27,7 @@ The film also touches on a Heideggerian problem: the tendency to view the world 
 One final thing I want to mention: the symbolic use of color is noteworthy. The Black man, who represents religion, theology, and Kierkegaard's leap of faith (although this only fits to a degree), is dressed in white. The white man, who represents nihilism and pessimism inspired by Schopenhauer, is dressed in black. Striking visual choice.
 
 Huge respect to the film for how it ends. **7/10.**
+
+
+**Edit:** One more thing came to mind—the religious man mentions that the only thing he truly misses about his former lifestyle is music.
+I believe there's a deeper reason for this. Listening to music one loves is often a gateway to transcendent experiences—moments that might otherwise only be accessed through religion. In this sense, this represents a kind of journey: from more earthly forms of transcendence to the divine transcendence sought through asceticism, prayer, and deep religious study.
