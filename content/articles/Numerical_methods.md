@@ -608,6 +608,10 @@ Total cost for computing all \(r_{1j}\) and updating \(A^{(1)}: 2m(n - 1)\)
 
 ## Solutions Not Checked Yet
 
+
+
+## Solutions Checked
+
 ### Task 1 (Floating-Point Numbers)
 
 We consider for a given base \( B \geq 2 \), a minimum exponent \( E^{-} \), and lengths \( M \) and \( E \), the finite set of normalized floating-point numbers \(\text{FL}\).
@@ -649,10 +653,10 @@ Determine the absolute condition number of \( f \) at the point \( x = 100 \) be
 $$
 \begin{align*}
 E^+ &= \max e \\
-&= \max \ B^- + \sum_{k=0}^{E - 1} c_k B^{k} \\
-&= B^- + (B - 1) \sum_{k=0}^{E - 1}  B^{k} \\
-&= B^- + (B-1) \frac{B^{E - 1} -1}{B -1} \\
-&= B^- + B^{E-1} - 1
+&= \max \ E^- + \sum_{k=0}^{E - 1} c_k B^{k} \\
+&= E^- + (B - 1) \sum_{k=0}^{E - 1}  B^{k} \\
+&= E^- + (B-1) \frac{B^{E - 1} -1}{B -1} \\
+&= E^- + B^{E-1} - 1
 \end{align*}
 $$
 
@@ -663,9 +667,9 @@ $$
 |m| &= |\sum_{l = 1}^{M} a_l B^{-l}| \\
 &\leq (B-1) \sum_{l = 1}^{M} B^{-l} \\
 &= (B-1) \sum_{l = 0}^{M} B^{-1} B^{-l} \\
-&= \frac{(B - 1)}{B} \frac{B^{-M} -1}{B -1} \\
-&= B^{-M} - 1 \\
-&\leq 1
+&= \frac{(B - 1)}{B} \frac{1 - B^{-M}}{1 - B^{-1}} \\
+&= 1 - B^{-M} \\
+&\le 1
 \end{align*}
 $$
 
@@ -691,17 +695,14 @@ $$
 
 {{< details "Solution b)" "false" >}}
 
-*Single Precision:*  
-- \(E^+ = -126 + 2^{8} - 1 = 129\)
-- \(maxFL = 2^{129}(1 - 2^{-23})\)
-- \(minFL_+ = 2^{-126 - 1} = 2^{-127}\)
-- \(eps = sup\frac{|x - fl(x)|}{|x|} = ?\)
 
-*Double Precision:*
-- \(E^+ = -1022 + 2^{11} - 1 = 1025\)
-- \(maxFL = 2^{1025}(1 - 2^{-52})\)
-- \(minFL_+ = 2^{-1022 -1 } = B^{-1023}\)
-- \(eps = ?\)
+{{< rawhtml >}}
+<figure>
+<img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 90%" src="/attachments/numerical_methods/nummerical_methods_task1b_tasksheet1.jpg">
+</figure>
+
+{{< /rawhtml >}}
+
 
 {{< /details >}}
 
@@ -808,7 +809,10 @@ Ax^1 = b, \quad\quad LRx^2 = b
 react to a relative perturbation of the right-hand side of 10%.
 
 
+
 {{< details "Solution a)" "false" >}}
+
+We have:
 
 $$
 A = \begin{pmatrix}
@@ -830,7 +834,6 @@ L = \begin{pmatrix}
 1 & 0 \\
 l_{21} & 1
 \end{pmatrix}, \quad
-
 U = \begin{pmatrix}
 u_{11} & u_{12} \\
 0 & u_{22}
@@ -845,7 +848,6 @@ L = \begin{pmatrix}
 1 & 0 \\
 \gamma/\alpha & 1
 \end{pmatrix}, \quad
-
 U = \begin{pmatrix}
 \alpha & \beta \\
 0 & \delta - \gamma \beta/ \alpha
@@ -854,7 +856,26 @@ $$
 
 {{< /details >}}
 
+
+
 {{< details "Solution b)" "false" >}}
+
+We have:
+
+$$
+A = \begin{pmatrix}
+\alpha & 1 \\
+ 1 & 0
+\end{pmatrix}, \quad 
+L = \begin{pmatrix}
+1 & 0 \\
+1/\alpha & 1
+\end{pmatrix}, \quad 
+R = \begin{pmatrix}
+\alpha & 1 \\
+ 0 & -1/\alpha
+\end{pmatrix}, \quad 
+$$
 
 To get the condition we caluclate 
 
@@ -862,45 +883,64 @@ $$
 cond(A) = ||A|| \cdot ||A^{-1} ||
 $$
 
+We caluclate the inverses:
+
+$$
+A^{-1} = \begin{pmatrix}
+0 & -1 \\
+-1 & -\alpha
+\end{pmatrix}, \quad 
+L^{-1} = \begin{pmatrix}
+1 & 0 \\
+-1/\alpha & 1
+\end{pmatrix}, \quad 
+R^{-1} = \begin{pmatrix}
+-1/\alpha & -1 \\
+ 0 & alpha
+\end{pmatrix}, \quad 
+$$
+
 Thus for A we get
 
 $$
-cond(A)_1 =
-cond(A)_\infty =
-cond(A)_F =
+cond(A)_1 = (1 + K)^2\quad
+cond(A)_\infty = (1 + K)^2\quad
+cond(A)_F =2 + \alpha^2 
 $$
 
 For L we get 
 
 $$
-cond(L)_1 =
-cond(L)_\infty =
-cond(L)_F =
+cond(L)_1 = (1 + 1/\alpha)^2\quad
+cond(L)_\infty = (1 + 1/\alpha)^2\quad
+cond(L)_F = 2 + 1/\alpha^2
 $$
 
 For U we get
 
 $$
-cond(U)_1 =
-cond(U)_\infty =
-cond(U)_F =
+cond(U)_1 = / \quad
+cond(U)_\infty = / \quad
+cond(U)_F = 1 +\alpha^2 + 1/\alpha^2
 $$
 
 {{< /details >}}
 
+
+
+
 {{< details "Solution c)" "false" >}}
 
-So we have 
+We have 
 
 $$
-\begin{pmatrix}
-\alpha & \beta \\
-\gamma & \delta
-\end{pmatrix}
-x^1 = 
-\begin{pmatrix}
-\b_1 \\
-\b_2
-\end{pmatrix}
+\frac{|Ax^1|}{|x^1|} \leq K(A) \frac{|Ab|}{|b|} = K(A) \frac{|Ab|}{0.1}
 $$
+
+and 
+
+$$
+\frac{|Ax^2|}{|x^2|} \leq K(L)K(R) \frac{|Ab|}{0.1}
+$$
+
 {{< /details >}}
