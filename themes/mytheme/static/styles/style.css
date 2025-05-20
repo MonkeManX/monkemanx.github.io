@@ -716,3 +716,21 @@ nav[aria-label="Page navigation"] {
   color: #005b99;
   text-decoration: underline;
 }
+
+/*
+* Shortcodes
+* -------
+*/
+.primary-text {
+  background-color: #fef3c7;
+  padding: 1em;
+  border-left: 5px solid #f59e0b;
+  margin-bottom: 1em;
+}
+
+.supporting-quote {
+  background-color: #e0f2fe;
+  padding: 1em;
+  border-left: 5px solid #3b82f6;
+  font-style: italic;
+}

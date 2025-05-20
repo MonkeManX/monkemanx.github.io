@@ -1,6 +1,6 @@
 ---
 title: 'La Düsseldorf'
-date: 2025-05-20 13:00:00
+date: 2025-05-20 12:00:00
 tags: ["Music"]
 ---
 

@@ -215,3 +215,13 @@ The fifth objection is:
 Davidson counters:
 
 1. **False dichotomy between agent and cause:** The concern stems from a false dichotomy: Either I cause my action, or something else causes it—and I’m not in control. Davidson argues this is a false choice: Not all causes require agents.
+
+----
+
+Different definition for Causes:
+
+1. In Aristoetele the Cause of an Action is the Person who Acts.
+- Problem: Then the Cause for an specific Action can be 50 years long (if the person does an action and continues to lvie for another 50 years).
+2. Hume defines Cause as "To define a cause as a thing upon which another follows, whereby to all things similar to the former, things similar to the latter follow"
+- Problem: Just because things are similar and happen after each other, does not mean that they are causal to each other.
+3. Davidson himself does not offer an definition.
