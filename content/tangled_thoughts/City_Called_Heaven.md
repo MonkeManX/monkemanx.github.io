@@ -1,0 +1,26 @@
+---
+title: 'City Called Heaven'
+date: 2025-05-19
+tags: ["Theology", "poetry"]
+---
+
+
+{{< book image="/attachments/pray.jpg" width="400px" height="auto" >}}
+I am a poor pilgrim of sorrow,
+I'm tossed in this wide world alone,
+No hope have I for tomorrow,
+I've started to make heav'n my home.
+Sometimes I am tossed and driven,
+Lord, Sometimes I don't know where to roam,
+I've heard of a city called heaven,
+I've started to make it my home.
+
+My mother has reached that pure glory,
+My father's still walkin' in sin,
+My brothers and sisters won't own me,
+Because I am tryin' to get in.
+Sometimes I am tossed and driven,
+Lord, Sometimes I don't know where to roam,
+I've heard of a city called heaven,
+I've started to make it my home.
+{{< /book >}}
