@@ -1,6 +1,6 @@
 ---
 title: 'Letter to Menoeceus'
-date: 2025-05-21
+date: 2025-05-21 10:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
