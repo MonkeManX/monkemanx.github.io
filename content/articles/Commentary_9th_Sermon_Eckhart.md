@@ -54,11 +54,15 @@ Eckhart now gives us three competing definiton of God could be. The first master
 
 The third master deifnition is more in line of the conept of the logos, like formulated with aristotele and stoics, altought the stoic concept of logos is more on the cosmic level, as such aristoteles conception is more fitting whch can be seen through
 
-> "thinking is thinking of thinking", Metaphysics 1074b34–35
+> thinking is thinking of thinking
+> 
+> ~ Metaphysics 1074b34–35
 
 The second definition is on which Eckhard wants to focus in his susbequent text, it is clearly inspired by neoplatonic thought of "The one"
 
-> "And all of these up to the Good are beautiful, but **it itself is above** Beauty and is the transcendent ruler of all that is best, all that is in the intelligible world", Ennead 1.8(51)§1.8.2.
+> And all of these up to the Good are beautiful, but **it itself is above** Beauty and is the transcendent ruler of all that is best, all that is in the intelligible world
+>
+> ~ Ennead 1.8(51)§1.8.2.
 
 In neoplaonic though, the one is identified with god and it is from which everything stems from, thus every being dependent on it, while at the same time being nesccary and not in need of anything; it overflows purely from its own abundance. Further all things seek to return to the one, because tehy yeran for it, and need it as source.
 
@@ -78,20 +82,27 @@ Eckhard states: "He is in all creatures, He is also beyond them;", What does he 
 
 Echkard belives, that God is funadmentally different to eevrything else that exist, asking question like "Wher does God exist?"(Place) or "Did God always exist?"(Time), do not make any sense, this is like asking "Is the number four blue?", what you do here is a [category error], just like a number and a color is a different cetagory so is God and time and space, thus god is beyond them.
 
-But at the same time he is also belived that God is within everything, this again harps back to the neoplatonic notion of "The One", where God is a concenctrated force, from which everthign else innamentates from, like a brunnen which overflows with water, God overflows and produces the Creation, which by coming from god is part of him, all creation has a spark of divinity by the nature of how it came into the existance, this is why he says "The soul is whole and entire...", here soul stands for the spark of divinity which is not a particular place but all.
+But at the same time he is also belived that God is within everything, this again harps back to the neoplatonic notion of "The One", where God is like a concenctrated force, from which everthign else innamentates from, like a brunnen which overflows with water, God overflows and produces the Creation, which by coming from god is part of him, all creation has a spark of divinity by the nature of how it came into the existance, this is why he says "The soul is whole and entire...", here soul stands for the spark of divinity which is not at an particular place but in evertyhing, the souls essence is individable and unconfined by space.
 
-> "How, then, do they[the intelligible world] arise out of aimple One? [...]
+> How, then, do they[the intelligible world] arise out of aimple One? [...]
 >
-> In fact, it is because there was nothing in that that all things come from it, and, in order that Being should exist, it is not Being but the gernarot of it.
+> In fact, it is because there was nothing in that that all things come from it, and, in order that Being should exist, it is not Being but the gernarot of it. [...]
 >
-> All these things are the One and not the one; they  are the one, because they are from it; they are not the One, becaue it endowed them with what they are while remaining  by itself.", Ennead 5.2(11)
+> All these things are the One and not the one; they  are the one, because they are from it; they are not the One, becaue it endowed them with what they are while remaining  by itself."
+>
+> ~ Ennead 5.2(11)
 
 Another similar notion is that of Paul Tillich, which speaks about God as the "Grund"(Ground) of being, of this which makes existance possible in the first place, he is **becoming**, that makes out of nothing something, he gives the creation the ability to resist non-being, and through that becoems part of them.
 
-> Quote tillich missing
+> The being of God is being-itself. The being of God cannot be understood as the existence of a being alongside others or above others. If God is a being, he is subject to the categories of finitude, especially to space and substance. Even if he is called the “highest being” in the sense of the “most perfect” and the “most powerful” being, this situation is not changed. [...]
+>
+>  Many confusions in the doctrine of God and many apologetic weaknesses could be avoided if God were understood first of all as being-itself or as the ground of being. [...]
+>
+>  Therefore, instead of saying that God is first of all being-itself, it is possible to say that he is the power of being in everything and above everything, the infinite power of being.
+>
+> ~ Paul Tillich, Systematic Theology, Vol 1, Part 2, Chapter 2, B3a)
 
-The section about the time should verdeutlichen, that God is also beyond time, thus applying how we normaly thin about time to him, is meaningless.
-
+Lastly, the section about the time should elucidate, that God is also beyond time, Gods act of Creation is not just a past event, but somethign eternaly present, Gods "Now" encampoesse both present, past and futrue.
 
 
 
@@ -105,9 +116,17 @@ The section about the time should verdeutlichen, that God is also beyond time, t
  How much we should love God is subject to no fixed manner; as much as we are able to—that is without manner.
 {{< /primary >}}
 
+The thought of God as "all things strive as to their ultimate goal", is classical greek doctirne echoed by thinkers like aristotele, who speaks about god a the prime mover, the first in a chain of causal events i nhis [unmoved mover argument](https://en.wikipedia.org/wiki/Unmoved_mover) and neoplatontic like plotinus, who think the souls yearns to return to the One, which is also deeply connected to Eckard notion of love for God
 
+> The soul in its nature loves God and longs to be at one with Him in the noble love of a daughter for a noble father; but coming to human birth and lured by the courtships of this sphere, she takes up with another love, a mortal, leaves her father and falls.
+> 
+> But one day coming to hate her shame, she puts away the evil of earth, once more seeks the father, and finds her peace. 
+> 
+> ~ Enneads VI, 6.9(09), §6.9.9 
 
+Eckhart not just rpeats these ideas but adapt them in a christian framing, in the line of christian theologians like St. Augustine in the book of confession
 
+> O Lord, and our heart is restless until it rests in you.
 
 
 {{< primary >}}
@@ -255,8 +274,10 @@ Rationality strips away from God the veil of goodness and grasps Him bare, where
 
 I want to edn with the following thought 
 
-> "The Poetry does not matter, what matters is what the poem points at hwat it allows us to see, feel, and most of all hear. If poetry were ever to reach its goal, fidn at what it aims at, than this would lead anihaltion of poetry.
-> The idea of decreation is imporant,  since The only way we can draw close to the thing itself, is by approaching it from negatives, by using logic of poetry of ascendation and negation, that percede, through contradiction, antitheses and paradox. 
-> Disjoint opposite, does not result in anything positive, it is rather through the continious workd of negation that word can point darkly as what surpasses them. The thing itself, can only find voice when words break.", On Mysticism: The Experience of Ectasy.
+> The Poetry does not matter, what matters is what the poem points at hwat it allows us to see, feel, and most of all hear. If poetry were ever to reach its goal, fidn at what it aims at, than this would lead anihaltion of poetry.  
+> The idea of decreation is imporant,  since The only way we can draw close to the thing itself, is by approaching it from negatives, by using logic of poetry of ascendation and negation, that percede, through contradiction, antitheses and paradox.   
+> Disjoint opposite, does not result in anything positive, it is rather through the continious workd of negation that word can point darkly as what surpasses them. The thing itself, can only find voice when words break.
+>
+> ~ On Mysticism: The Experience of Ectasy.
 
 In the end, the content of meister echkard sermon is not what really matters, what matters is what it aims at, the unintelligible connection with the divine it provides us.

@@ -132,6 +132,7 @@ God was not seen as a personal agent but as a rational force identified with nat
 
 **300 BC – [Epicureanism](https://en.wikipedia.org/wiki/Epicureanism)**:  
 **Key Figure:** [Epicurus](https://en.wikipedia.org/wiki/Epicurus)  
+**Articles:** [Letter to Menoeceus](/paper-summary/letter_to_menoeceus/), [Principal Doctrines](https://classics.mit.edu/Epicurus/princdoc.html)  
 **Summary:**  
 The Epicureans were the main opponents of the Stoics. They believed that *pleasure* was the highest good, not virtue. However, they taught that the highest pleasures were not found in indulgence, but in restraint.  
 Pleasure was understood broadly, including not just physical pleasures but also higher pleasures like friendship, art, and intellectual pursuits.  
