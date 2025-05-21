@@ -146,8 +146,13 @@ See <a href="/tangled_thoughts/infinite_regressor/">review here</a>.
 
 ## Music Albums
 
-{{< media "/attachments/kagayaki.jpg" "Aratamemashite Hajimemashite Midori Desu" "https://rateyourmusic.com/release/album/%E9%AB%98%E6%9C%A8%E6%AD%A3%E5%8B%9D/%E3%81%8B%E3%81%8C%E3%82%84%E3%81%8D-kagayaki/">}}
-Kagayaki is an album by Masakatsu Takagi and another great Japanese album (Boy, do I love the japs). This time, it leans toward folk music. The coolest thing about this album is its sheer diversity: we have instrumental tracks, songs, tracks with spoken word similar to Slint, and lots of unique sounds. It’s a relaxing album, like a warm hug.
+
+{{< media "/attachments/la-dusseldorf-la-dusseldorf.jpg" "La Düsseldorf by La Düsseldorf" "https://rateyourmusic.com/release/album/la-dusseldorf/la-dusseldorf-4/" >}}
+
+This is a Krautrock album—a genre that combines psychedelic elements with rock. The movement originated in West Germany in the 1960s and can be seen as a predecessor to punk and post-punk. *La Düsseldorf*—which is also the name of a German city—is a strong representation of this style.
+
+The first 20 minutes of the album consist of a single repeated phrase: **"Düsseldorf"**, sung over and over again. This is paired with a minimal, repetitive and rhythmic groove, hypnotizes and captivates the listener.
+
 {{< /media >}}
 
 {{< media "/attachments/tamahime-jun-togawa.jpg" "戸川純 by Jun Togawa" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E7%8E%89%E5%A7%AB%E6%A7%98" >}}
@@ -165,6 +170,11 @@ See <a href="/tangled_thoughts/125_rue_montmartre/">review here</a>.
 
 
 {{< details "Old" "false" "nomd" >}}
+
+
+{{< media "/attachments/kagayaki.jpg" "Kagayaki" "https://rateyourmusic.com/release/album/%E9%AB%98%E6%9C%A8%E6%AD%A3%E5%8B%9D/%E3%81%8B%E3%81%8C%E3%82%84%E3%81%8D-kagayaki/">}}
+Kagayaki is an album by Masakatsu Takagi and another great Japanese album (Boy, do I love the japs). This time, it leans toward folk music. The coolest thing about this album is its sheer diversity: we have instrumental tracks, songs, tracks with spoken word similar to Slint, and lots of unique sounds. It’s a relaxing album, like a warm hug.
+{{< /media >}}
 
 {{< media "/attachments/midori.webp" "Aratamemashite Hajimemashite Midori Desu" "https://www.last.fm/music/Midori/Aratamemashite+Hajimemashite+Midori+Desu">}}
 I dont even know how to describe it, it is by the band "Midori", and it it is all of the following things: punk, rock, experimental, screamo, noise and jazz. Watch the live perfromance of the band it's amazing.

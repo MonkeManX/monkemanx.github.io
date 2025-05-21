@@ -193,6 +193,7 @@ His fundamental project was integrating the newly reintroduced Greek philosophic
 
 
 **1260 CE — [Meister Eckhart](https://en.wikipedia.org/wiki/Meister_Eckhart):**  
+**Articles:** [A Commentary on the 9th Sermon of Meister Eckhart](/articles/commentary_9th_sermon_eckhart/)  
 **Summary:**  
 One of the most important Christian mystics, Meister Eckhart is most famous for his collection of sermons in which he describes his mystical experiences. He stands in stark contrast to the mainstream theory of Scholasticism of his day, as logic alone is not enough to understand God's grace. 
 
