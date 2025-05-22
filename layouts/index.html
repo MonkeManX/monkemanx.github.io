@@ -9,7 +9,7 @@
   <!--To pin something, set in the article or though in the front matter "pinned: true"-->
   <h2> Pinned </h2>
   <ul class="pinned-list">
-    {{ range first 1 (where .Site.RegularPages "Params.pinned" true).ByPublishDate.Reverse }}
+    {{ range first 2 (where .Site.RegularPages "Params.pinned" true).ByPublishDate.Reverse }}
       <li class="pinned-box">
         <div class="pinned-title">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
