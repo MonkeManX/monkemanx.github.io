@@ -127,6 +127,8 @@ The thought of God as "all things strive as to their ultimate goal", is classica
 Eckhart not just rpeats these ideas but adapt them in a christian framing, in the line of christian theologians like St. Augustine in the book of confession
 
 > O Lord, and our heart is restless until it rests in you.
+> 
+> ~ Confessions
 
 
 {{< primary >}}
@@ -143,6 +145,21 @@ Eckhart not just rpeats these ideas but adapt them in a christian framing, in th
 
 
 
+This again goes back to the notion that calling God a being is a cetrgory error, critcising theologians lik Thomas Aquinas who call **God being itself** with hsi famous saying 
+
+> ipsum esse subsistens
+> Ostensum est autem supra, cum de divina simplicitate ageretur, quod Deus est **ipsum esse per se subsistens**.  
+> (It has been shown above, when treating of the divine simplicity, that **God is being itself subsisting**.)
+>
+> ~ Summa Theologiae, Prima Pars, Question 44, Article 1
+
+By prescribing certain properties to God, we also limit his power, e.g. if we say a table is made of wood it can be mde out of stone, jus like this if we say God is a being or even being itself, then Gd is boudn by teh restriction that a being has. Antoher exmaple for a cetgrory error is "call the sun pale or black", or one that i like more is "Music is delicious", we can say music is liek a delicious meal, but msuic is not edible thus not delicous, callign it that would be category error, a meaningelss statement that does not make sense. For more on this see my article on the [Ontological Argument](/articles/ontological_argument_and_apophatic_theology/#43-limitation-of-god) where i wrote about this.
+
+The second part of this section, is that just because I cant say God is a ebing or that God is wise, does not mean I lessen him or put him down, in fact the opposite, by saying god is wise or a being, i put God in the same categroy as humans, but he is far beyond us humans, thus we cant describe god in human cocnepts.
+
+That is not to say that we cant talk about God, but just like Saint Agusutine says, whe nwe describe God using humans cocnepts like Good or Wise, what we do is not how God really is, but its more liek a metaphor that tries to approximate him just like saying "music is delicious".
+
+But eckhard thinkgs, we can only get truly nearer to God through **negative theology** by describing what God is not e.g. God is not being, he is ebyond it, God is not wise, he is beodn wise.
 
 
 
@@ -157,6 +174,44 @@ Eckhart not just rpeats these ideas but adapt them in a christian framing, in th
 {{< /primary >}}
 
 
+
+The ten modes of being are a reference to the [aristotelian categories](https://stgb.substack.com/p/aristotles-ten-categories-of-being) that got adapted by the later scholastic thinker like Aquinas
+
+> Of things said without any combination, each signifies either **substance** or **quantity** or **qualification** or a **relative** or **where** or **when** or **being-in-a-position** or **having** or **doing** or **being-affected**. To give a rough idea, examples of *substance* are man, horse; of *quantity:* four-foot, five-foot; of *qualification:* white, grammatical; of a *relative:* double, half, larger; of *where:* in the Lyceum, in the market-place; of *when:* yesterday, last-year; of *being-in-a-position:* is-lying, is-sitting; of *having:* has-shoes-on, has-armour-on; of *doing:* cutting, burning; of *being-affected:* being-cut, being-burned.
+> 
+> ~ Organon, Categories, 1b25–2a4
+
+All these categories people in the shcoalstic tradition have sued to descirbe all possible things like apples, chairs, morality or love, do not apply to God, we cant say he has them nor can we say he has them not "None of these modes touches God, yet He lacks none of them either", God is beyond them.
+
+
+When Eckhard speaks about archetype what he means are these kind of platonic ideas, which we can abstract away crom everyday objects towards soemthign more general e.g. we have all kinds of different apples but they all share the same archtepye/platonic idea of an apple. 
+
+> Well then, here are three beds: one existing in nature, which is made by God, as I think that we may say--for no one else can be the maker?
+> 
+> No.
+>
+> There is another which is the work of the carpenter?
+> 
+> Yes.
+> 
+> And the work of the painter is a third?
+> 
+> Yes.
+>
+> Beds, then, are of three kinds, and there are three artists who superintend them: God, the maker of the bed, and the painter?
+>
+> Yes, there are three of them. [...]
+>
+> God knew this, and He desired to be the real maker of a real bed, not a particular maker of a particular bed, and therefore He created a bed which is **essentially and by nature one only** [The Form].
+> 
+> ~ Republic, Book 10,  597b–598d
+
+And when he speaks about that this archetype is shared in God, what he means is tthis geenral idea of eevryday objects comes from God, the platonic ideals can be found in God.
+Further we have no hierachical differences between creatures, a gnat or ant is the same as angel to God, because it doesnt matter if ant or angel both are still part of this world, part of being, but only god is beyond that, in that sense an ant or angel are the same to him.
+
+And just like we cant prescibe modes of being to God, we cant prescibe goodness to hi, since goodness is property or predicate that arises from beings, but gos transcentds being, thsu also transcends goodness.
+
+Thus if we say God is good we insult him, for we pull him down on the level of ants and angles, saying God is good is as wrogn as saying the "sun is black".
 
 
 
@@ -173,6 +228,27 @@ Eckhart not just rpeats these ideas but adapt them in a christian framing, in th
 
 
 
+Here, Eckhart addresses a deep theological question:
+**If God is truly beyond all being and beyond all categories, including goodness, why does scripture call God “good”?**
+
+To answer this, Eckhart links goodness to **self-communication**. He argues that something is called “good” when it **gives of itself** or **interacts benevolently with others**. This makes sense when we consider the **etymology of “morality”**, which comes from the Latin *moralis*, meaning something like *pertaining to manners or conduct*—that is, how one **acts toward others**. So: if goodness is a kind of **relational behavior**, how can someone be “good” in **complete isolation**?
+
+This is why God is the **ultimate form of goodness**:
+
+**God is the most self-communicating of all.**
+All things come from Him. Everything we share or give to others ultimately has its origin in God. And unlike us, whose giving is separate from our essence (I can give without *being* the gift), **God’s essence *is* the act of giving itself**.
+
+So in this sense, we humans can **have** goodness as a quality or attribute, while **God *is* goodness itself**—*not as a moral quality, but as infinite self-giving being*.
+At first glance, this seems to **contradict** Eckhart’s earlier claim that God is beyond all categories, including goodness. But Eckhart would say: **this contradiction is not a flaw—it is the point**.
+
+There are two reasons why this contradiction is essential:
+
+1. **Mysticism thrives on paradox**. When we reach the limits of what language and logic can express, we begin to touch the divine. Only where language fails—where it breaks apart in contradiction—do we start to approach God, who is beyond all form, word, and concept.
+2. When we say **“God is goodness,”** we do not mean He fits within our usual human category of goodness. Instead, we mean **He is the source from which all real goodness flows**.
+   This is where the analogy helps:
+
+**Ice is a form of water, but water is beyond ice—it can be solid, liquid, or gas.**
+In this way, **goodness is like ice**, and **God is like water**. Goodness *emerges from* God but **does not exhaust** what God is. God is the source and ground of all goodness, without being *limited* to it.
 
 
 
@@ -182,6 +258,18 @@ Eckhart not just rpeats these ideas but adapt them in a christian framing, in th
  God, in the knowledge of Himself, knows Himself in Himself.
 {{< /primary >}}
 
+
+
+Here we we use a spatial metaphor to differentiate between two levels of undertsndaing of God:
+1. **Courtyard:** We are near the house of God, but not inside it, a superciial indirect knoweldge of God, we do not know hsi true essence.
+2. **The Temple:** We are inside Gods house, which stands for a more intimate knowledge of God
+
+The first understanding of the courtyard is how God appear to us through his **works** that is scriptue i.e. the bible and his Creation i.e nature, that which we see everyday, in short through outward experience.
+The second more intimitae understanding of God, is i nrationality, with which rationality does not mean logical argumentative sylogicstic thinking like that of anayltical philisopy, think of statements liek 1 + 1 = 2, but instead from deep contempaltion and mysticial expeirence, by switch from looking outward to the inward, think more align of the continental philosophers, insetad of harsh logical statemnt in poesm and music, in short in beauty, a truth more felt and expeirence imemditate then deduced.
+This rationaltiy is not gotten through outwards looking, but by looking inwards in solitude "remaining alone in itself" and stillness "is there in His stillness".
+
+The final sentence, is of tautological nature, i.e. s sentence that is true by definition. 
+This is not by accident, it potrays God in this complete self-referential, utterly closed to all externak grasping - paradoxical, god is alos open, because we can get clsoe to him throug this self-referential stillness in solitude.
 
 
 
@@ -194,6 +282,21 @@ Eckhart not just rpeats these ideas but adapt them in a christian framing, in th
 {{< /primary >}}
 
 
+Picking up on the theme of rationality and deep contemplation, deep inside of us in our uteermost essence - our soul, we have a spark of divinity from God, this divinity can not be "seen" through our "rgular eyes" with which we see regular objects in fornt of us like chairs, trees or other people, insetad to *see* this divinity we need to use our soul, we need to look inwards, trhough an exhaustive mediation. This divnity is hidden, quiet iwards "active more at night than day".
+This spark of divintiy goes back to the greeks such as the stoics 
+
+> God is near you, he is with you, he is within you. This is what I mean, Lucilius: a holy spirit indwells within us, one who marks our good and bad deeds, and is our guardian.
+>
+> ~ Seneca, Letter XLI: "On the God Within Us"
+
+Additional, our soul can remember, this means when we see, with see here is emant liek descibed above and not regular see, divinity we cn also recognize is as that. This reminds of platos dialogue meno, where he argues knowledge is nothign else than the soul recalling what it has forgotten
+
+> The soul, then, as being immortal, and having been born again many times, and having seen all things that exist, whether in this world or in the world below, has knowledge of them all; and it is no wonder that she should be able to call to remembrance all that she ever knew about virtue, and about everything; for as all nature is akin, and the soul has learned all things; there is no difficulty in her eliciting or as men say learning, out of a single recollection all the rest, if a man is strenuous and does not faint; for all enquiry and all learning is but recollection"
+>
+> ~ Meno, 81d
+
+But this power that echkard descbribes with remmebring goes further than simple recalls, it is pwoer to create, to reach into non-being, into possiblity, it enacts what Goed does, and thus move beyond what exists, in doing do it coems clsoer to god, who himself is beyond all what exists.
+
 
 
 {{< primary >}}
@@ -205,6 +308,12 @@ Rationality strips away from God the veil of goodness and grasps Him bare, where
 {{< /primary >}}
 
 
+
+It is a mistake to try to understand God through human notions of goodness—to “grasp Him under the veil of goodness.” When we impose our limited, human concepts on God, we inevitably fail to see Him as He truly is. This is the level of a "Pagan Master".
+
+True knowledge of God does not come from conceptual grasping or defining God according to familiar categories. Instead, it arises when we love God despite our inability to understand Him fully.
+
+Only by suspending all preconceived knowledge and concepts about God—by letting go of what we think we know—and turning inward to the depths of our own being, can we begin to encounter God in His true essence. Then we can be called a "Holy Master".
 
 
 
@@ -222,6 +331,31 @@ Rationality strips away from God the veil of goodness and grasps Him bare, where
 {{< /primary >}}
 
 
+Eckhart deifferentiates betwenen rationality and will, rationality is this deep cotemplative focus on the inenr, while will is the power of the sould that chooses and desire. Whiel rationality si abotu knowing, will is about longing.
+
+Some say the will of God is betetr than the rationality of God, because will sees things how they truly are unfiltered, while rationality sees more like how thing appear, less direct, less immediate.
+
+He uses an eye to clarify this concept, the eye represents the will that sees how thingrealyl are, while the painint of an eye or the relfection of an eye sees the world filtered through the painting or relfection.
+
+While he agrees with thi concept, he still things rationality is superior to will, because rationality “takes God bare” aphrends God in pure nakednedd, while will “takes God under the garment of goodness,” meaning it grasps God only through mediated qualities like goodness.
+
+How does this make sense? Shouldn it be exactly the opposite, being that will is unfiltered an biased, while raitonaltiy is not?
+
+For eckhard will relates to the faculatuy of love and desire, which is nesscery conencted to the cocnept of goodness, so altought we can say that will is more primtiive, as in comign before, rationality, is is still filtered thorugh the "Animal Parts" or as aristotele calls them "irrational par of soul"
+
+> That one element in the soul is irrational and one has a rational principle. [...]
+> For we praise the rational principle of the continent man and of the incontinent, and the part of their soul that has such a principle, since it urges them aright and towards the best objects; but there is found in them also another element naturally opposed to the rational principle, which fights against and resists that principle. 
+> 
+> ~ Nicomachean Ethics, Chapter 13
+
+if we try to grasp god through will we always will look at him through a lesne of desire and thus goodness, but god is beyond goodness and thus we can onyl undertsnadh im through more contemplative meassure, and even though rationality too is biased, in concemplation we have the chanche to recognize this and stripe away, shwich we do nto have with will, ebcause it is so primtive. 
+
+As metpahor, eckhard  speakf of "clothe a king on the day of his coronation in gray garments", smybolizing that calling God merley "good" is not enoug hand inappripiate.
+Only when we have striped God from the "veil of goodness", emaning onyl when we do not look at god udner human cocneption liek goodness, can we see him for how he truly is.
+
+In the mepaohor with the angles, eckhard clarifies the importance of raitonality, being of angels depends on the presence of divine rationalit, they recognize thei own being in god raitonality, thus the angles are image of the mirror, while god is the source of the image.
+Without God’s rationality, their being would vanish, just as the image disappears if the mirror falls.
+
 
 
 {{< primary >}}
@@ -236,6 +370,11 @@ Rationality strips away from God the veil of goodness and grasps Him bare, where
 
 
 
+The section begins with relapse towards the beginning of the sermon, with the quote from the book of ssirach, in which the morningstar representing the venus, becomes anow  symbol for our soul looking for God, our soul shining bright liek the morning star in midst of confusion(fog).
+
+He wants to focues on the word "quasi", highlithgint that whenever he speaks about God he does not descirbe how god truly is, but as a analogy of apprixmation, this is also tue for what he says about God.
+
+Continuing with the analogy form before, the [venus is the same as the morning star and the evening star](https://www.skyatnightmagazine.com/space-science/venus-morning-star-evening-star), (a comaprsion that is gladly used by the philosopher frege when he speaks abotu [lagnuage and their meaning](/paper-summary/on_senses_and_references/), but thats besided the point), this venus is always near the sun never going to far away, soemtimes below, osmetime above, soemtimes, before, soemtime after, but alwys near the sund. Here the sun represent god and divinity and the venus us, mroep receisely our souls, just like the venus stays near the sun, so should our soul stay near god, in otehr words Spiritual steadfastness is the key.
 
 
 
@@ -248,6 +387,16 @@ Rationality strips away from God the veil of goodness and grasps Him bare, where
 {{< /primary >}}
 
 
+The quote from sirach continues, this time we have the symbol of a moon, representing a **full** soul, the moon receives its light directly form the sun, liek a full sun that is completly open and oriented towards god.
+
+The stars that nearer to god, represent higher being, that are neared to god such as angles, compared to them ebcause we are further away even if our sould is full and irected towards gog, we loose the light of the sun faster, representing that we stray form the path from god thorugh eahy distraction, and only when we are far awy fro mthe god, we are msot powerful, this representing being far away from the mundae affairs of life and the daiyl troubles.
+Detachment being a major theme of bothe eckhart andd ealrier thineker like plotinus, both thinking that cloeness to material world weaksn the osul
+
+> In fact, purification would be leaving it [The Soul] alone and not with others [The Senses] or not looking at something else [External Things] and in consequence not having beliefs [Opinions] which are alien to it [Believing Pleasure, Pain of importance] – whatever is the nature of the beliefs or of the affections [Emtions, Desire, Fears, ect.], as has been said – and not looking at images [Fantasies froom Desire] or making affections derived from them.
+> 
+> ~ Ennead 3.6(26)§3.6.5.
+
+And all creatures have god within them, but only if one focuses on the divine, spiritual insight can be produces, like the morningstar alway hovering the sun, so should we hover god, like a morning star far above the eart and world desire.
 
 
 
@@ -265,6 +414,38 @@ Rationality strips away from God the veil of goodness and grasps Him bare, where
 
 
 
+God is often associated with the word in chrisitanity and with the logos in ancient greek hpsilosophy, both meaning the same, logos being greek for word.
+
+> In the beginning the **Word** already existed.
+>    The Word was with God,
+>    and the Word was God.
+> He existed in the beginning with God.  
+> God created everything through him,
+>    and nothing was created except through him.  
+> The Word gave life to everything that was created,
+>    and his life brought light to everyone.
+> 
+> ~ John 1:1-4
+
+
+> Of this *logos* which holds always, humans prove to be uncomprehending, both before they hear it and after hearing it for the first time. 
+> For although all things come to be in accordance with this *logos*, they are like the unexperienced experiencing words and deeds such a I explain when I distinguish each thing according to its nature and show how it is. 
+> Other men are unaware of what they do when they are awake just as they are forgetful of what they do when they are asleep.
+>
+> ~ Heraclitus, Fragment B1 
+
+This word orl ogos can be seperated into three levels:
+1. **spoke otwardly:** these are angels, humans and all other creatures they are psoken in teh sense that they are created by god.
+2. **thoigh and spoken:** thes is the imaginative world, which we cna think of that, in this sense they are spoken.
+3. **the word tha never come:** this is the eternal and unchanging world of word/logos, it does not exist in our relaity or world, but exist only in eternal unity in God "eternally within the one who speaks"., it is always in a state of "becoming" as paul tillic hwould say "ways in a state of being received".
+
+And we come clpser to good *the word that never come*, by looking inward of us through *thoughts and spoken*, because their "God's blessedness lies" and not in the outward physical things *spoken outwardly*, and we should do this inwards looking through rationality, a contemplative medivitive process.
+
+And we, our soulds hsould not be a merely servant of God, but an attribute of him, we should participate in gods own being, this reminds of other mystic that speak of a deep union with god
+
+> I saw no difference between God and our substance: but as it were all God; and yet mine understanding took that our substance is in God: that is to say, that God is God, and our substance is a creature in God.
+>
+> ~ Revelations of Divine Love, The Fourteenth Revelation, Chapter 54
 
 
 
