@@ -214,6 +214,14 @@ The problem with this line of reasoning is that we imagine God as being infinite
 
 In comparison, there is reasoning for a non-agentic God that is metaphysically much cleaner and more compact. This is the thought of creation *emanating* outward from God, thus creating our world as we know it. We can also compare it to a sun that naturally radiates outward light.
 
+> And all beings, so long as they persist, necessarily, due to the power present in them, produce from their own substantiality a real, though dependent, existent around themselves.
+> 
+> Fire produces the heat that comes from it, and snow does not only hold its coldness inside itself. Perfumes especially witness to this, for so long as they exist, something flows from them around them, the existence of which a bystander enjoys.
+> 
+> Further, all things, as soon as **they are perfected, generate**. That which is always perfect always generates something everlasting, and it generates something inferior to itself.
+>
+> ~ Enneads 5.1(10)§5.1.6.
+
 Why is that the case?
 
 We can borrow the same argument structure used for the [Ontological Argument](https://en.wikipedia.org/wiki/Ontological_argument) (which is not uncontroversial). If God were not able to produce goodness, then we could conceive of a being that has all the same attributes as God, but with the additional property of being able to produce goodness. This being would then be greater in this property, but this cannot be the case because we defined God as the greatest of all beings in all properties.
@@ -233,6 +241,26 @@ Alternatively, one can take the following as an axiom—a statement of fact, a p
 {{< /details >}}
 
 So, the answer to the question of why things exist is that God is so full of goodness that He overflows—like a barrel full of water pressing out water at the top—and this overflowing of goodness creates the world.
+
+
+{{< details "As a Response To Critique on Plato" "true" >}}
+
+The concept of God emanating outward and producing our world comes from *Neoplatonism*. It can also be seen as a response to critiques of Plato’s theory of forms.
+
+Plato’s theory of forms tells us that there are universals and particulars. Universals are abstractions from particulars—patterns or archetypes. One can imagine this with an analogy: making Christmas cookies. To make them, we take a cookie cutter and press it into dough. This gives us dough in a specific shape, and we then only need to bake it to get our cookie. In this analogy, the cookie cutter is the universal, while the many cookies we produce with it are the particulars. The universal determines the form, shape, and properties of each particular.
+
+So, for all objects in the world—for example, the many different apples—we have one universal "Form of Apple," which is unchanging and eternal, representing the perfect essence of what an apple is. Similarly, there are Forms of Goodness, Beauty, Chairs, Trees, Humans, and so on. This position is also called *Platonic realism*, which stands in contrast to *nominalism*.
+
+One problem for the realist is this: we now have all these forms, but where are they? Why do they exist? Where did they come from?
+
+Neoplatonism offers a solution to the realist’s problem: where the Forms come from and why they exist. It begins with the One, the ultimate source beyond being and thought. From the One emanates the Intellect (or Nous), which contains all the Forms—eternal archetypes of all things.
+
+The process continues as the Intellect overflows, producing the Soul and, eventually, the material world. Everything—apples, trees, humans—derives from this chain of emanation. Each thing in the world reflects the Forms within the Intellect, which in turn reflect the unity of the One.
+
+Thus, Neoplatonism explains the origin and presence of universals as part of a structured, hierarchical reality that flows from the divine source.
+
+{{< /details >}}
+
 
 You might be confused when you remember back to a prior section where I used the act of creation as a criticism towards a personal God, arguing that an all-loving God would not create things knowing that this would produce evil.
 Since the non-agentic God is still defined as the greatest being, He too should be all-loving and be effected by the same criticism.
