@@ -9,6 +9,14 @@ markup:
 Description: "This article details my homelab upgrade, in which I transitioned from a Raspberry Pi 3B to a dedicated server. I share my thought process behind selecting the new server, along with the configurations and software I installed on it."
 ---
 
+## 0. Changes 
+
+List of Changes Made of This Article:
+
+**15.10.24:** Fixed Typo.  
+**23.01.25:** Added a Spacer to the Article.  
+**23.05.25:** Added a new Section to Notification Managment.  
+
 {{< toc >}}
 
 ## 1. Introduction
@@ -56,7 +64,7 @@ I've already touched on some of my server requirements in the introduction. Now,
     - Do I need ECC?
 - Power Usage 
 
-{{< addspace height="50px" >}}
+{{< addspace height="70px" >}}
 
 ### 2.1 Storage Requirements
 
@@ -1904,7 +1912,112 @@ Alternatively, you can use the command `ip link` and look for the device labeled
 </figure>
 {{< /rawhtml >}}
 
-## 22. The End
+
+## 22. Notification with Gotify
+
+One important consideration for maintaining a secure and well-monitored Proxmox environment is setting up a notification system. This becomes especially crucial in scenarios where immediate attention is required—such as a disk failure or a backup job that didn’t complete successfully. Early alerts can help you act quickly, minimizing downtime and reducing the risk of data loss.
+
+Proxmox supports several notification methods out of the box, including email. However, I opted to use Gotify, an open-source push notification server that enables real-time alerts directly to your smartphone or other devices. It’s lightweight, easy to set up, and perfect for receiving instant updates from your Proxmox server. For example, if a scheduled backup fails in the middle of the night, Gotify can send a push notification straight to your phone, ensuring you’re aware of the issue without delay.
+
+
+1. **Deploy Gotify in an LXC Container:** Use the community script available at [Proxmox VE Community Scripts](https://community-scripts.github.io/ProxmoxVE/scripts?id=gotify) to install Gotify easily in an LXC container. The default settings usually work well, but you can customize them if needed.
+
+
+2. **Access the Gotify Web UI:** Once the container is created, the Proxmox console will display its IP address. Open a browser and go to that IP—Gotify runs on port **80** by default. You can log in using the default credentials:
+
+    * **Username:** `admin`
+    * **Password:** `admin`
+
+    Make sure to **change your password** immediately after logging in for security reasons.
+
+
+    {{< rawhtml >}}
+    <figure>
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify_login.jpg" >
+    </figure>
+    {{< /rawhtml >}}
+
+
+3. **Configure NGINX Reverse Proxy (Optional but Recommended):** For better accessibility and security, especially if you plan to access Gotify remotely, it's advisable to set up an NGINX reverse proxy. Be sure to **enable WebSocket support**, as Gotify uses WebSockets to push notifications in real-time.
+
+4. **Enable Autostart for the LXC Container:** In the Proxmox web UI, navigate to the options of the Gotify container and enable **Autostart**, so Gotify launches automatically after a host reboot.
+
+5. **Add Gotify as a Notification Target in Proxmox:**  Go to:
+
+    ```
+    Datacenter -> Notifications -> Add -> Gotify
+    ```
+
+    Here, you’ll need to enter the Gotify server URL and an access token. To generate a token:
+
+
+    {{< rawhtml >}}
+    <figure>
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify-proxmox.jpg" >
+    </figure>
+    {{< /rawhtml >}}
+
+    1. In the Gotify web UI, create a new **application**.
+    2. Copy the **access token**.
+    3. Paste it into the corresponding field in Proxmox.
+
+    {{< rawhtml >}}
+    <figure>
+        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify_apps.jpg" >
+    </figure>
+    {{< /rawhtml >}}
+
+With this Proxmox can now send system notifications to Gotify, but we are not finished yet, we now need to tell Gotify that it should send the message that it received to your phone.
+
+6. **Connect Your Mobile Device:** To receive push notifications on your phone:
+
+    1. Download the **Gotify app** from the Google Play Store (or F-Droid).
+    2. Open the app and enter your Gotify server URL along with your login credentials.
+    3. After logging in, your phone should appear as a connected client in the Gotify web interface.
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify_clients.jpg" >
+</figure>
+{{< /rawhtml >}}
+
+7. **Send a Test Notification:** To verify everything is working:
+
+    1. In Proxmox, go to `Datacenter -> Notifications`.
+    2. Select your Gotify endpoint and click the **Test** button.
+    3. You should receive the notification both in the Gotify web UI and on your phone.
+
+
+8. **Set Up Notification Filters (Optional)_** To control what types of messages you receive:
+
+    1. In Proxmox, go to `Datacenter -> Notifications`.
+    2. Scroll to the bottom and click **Add** under **Notification Matchers**.
+    3. Give your matcher a name.
+    4. Under the **Targets to Notify** tab, select your Gotify endpoint.
+    5. In the **Match Rules** tab, choose which types of notifications (e.g., backup failures, hardware issues) you want to be alerted about.
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/notfication_matcher_proxmox.jpg" >
+</figure>
+{{< /rawhtml >}}
+
+
+**Bonus Tip:** Disable the "Connected" Notification on Android. The Gotify Android app may display a persistent "Connected" notification. To remove it:
+
+1. Go to your **Android system settings**.
+2. Navigate to **Apps -> Gotify -> Notifications**.
+3. Disable the **Foreground Service Notification**.
+
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/gotify_app_notifcation_disable.jpg" >
+</figure>
+{{< /rawhtml >}}
+
+
+## 23. The End
 
 That's it, we're done. No more services to install, no more configurations left to configure, no more users and permissions to set, and especially no more documentation to write.
 
