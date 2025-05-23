@@ -257,7 +257,11 @@ Neoplatonism offers a solution to the realist’s problem: where the Forms come 
 
 The process continues as the Intellect overflows, producing the Soul and, eventually, the material world. Everything—apples, trees, humans—derives from this chain of emanation. Each thing in the world reflects the Forms within the Intellect, which in turn reflect the unity of the One.
 
-Thus, Neoplatonism explains the origin and presence of universals as part of a structured, hierarchical reality that flows from the divine source.
+Thus, Neoplatonism explains the origin and presence of universals(also called "Ideas") as part of a structured, hierarchical reality that flows from the divine source.
+
+> Often he calls Being and the Intellect "Idea", which shows that Plato understood that the Intellect comes from the Good, and the Soul comes from the Intellect.
+>
+> ~ Enneads 5.1(10)§5.1.8
 
 {{< /details >}}
 
