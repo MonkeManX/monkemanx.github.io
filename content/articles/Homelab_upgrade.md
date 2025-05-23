@@ -2016,6 +2016,7 @@ With this Proxmox can now send system notifications to Gotify, but we are not fi
 </figure>
 {{< /rawhtml >}}
 
+**Bonus Bonus Tipp:** There is also a cross platform [tray application](https://github.com/seird/gotify-tray) out there that you can install for your laptop or desktop PC, to receive notification from your gotfiy service.
 
 ## 23. The End
 
