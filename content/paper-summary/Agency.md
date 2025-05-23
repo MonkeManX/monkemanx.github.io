@@ -1,6 +1,6 @@
 ---
 title: 'Agency'
-date: 2025-05-22 14:00:00
+date: 2025-05-23 14:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
