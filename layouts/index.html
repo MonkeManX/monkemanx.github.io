@@ -16,15 +16,10 @@
         </div>
         <div class="pinned-date">{{ .Date.Format "January 2, 2006" }}</div>
 
-        {{ if eq .Section "articles" }}
-          <div class="pinned-content">          
-        
-{{- $summary := .Summary
-    | replaceRE `(?s){{<\s*warning[^>]*>}}.*?{{<\s*/\s*warning\s*>}}` ""
-    | replaceRE `(?s){{<\s*info[^>]*>}}.*?{{<\s*/\s*info\s*>}}` ""
-    | plainify
--}}
-{{ $summary }}
+       {{ if eq .Section "articles" }}
+          <div class="pinned-content">
+              
+            {{ .Summary }}
 
             <a class="read-more-link" href="{{ .RelPermalink }}">Read more</a>
  
