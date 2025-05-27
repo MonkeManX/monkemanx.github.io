@@ -1,12 +1,53 @@
-{{ $image := .Get "image" }}
-{{ $width := .Get "width" | default "300px" }}
+{{ $image  := .Get "image" }}
+{{ $width  := .Get "width"  | default "300px" }}
 {{ $height := .Get "height" | default "auto" }}
 
-<div style="display: flex; align-items: center;">
-    <figure style="margin: 20px; flex: 1;">
-        <img loading="lazy" style="max-width: {{ $width }}; height: {{ $height }};" src="{{ $image }}" alt="Book cover">
-    </figure>
-    <div style="margin-left: 20px; flex: 2; white-space: pre-line;">
-        {{ .Inner | markdownify }}
-    </div>
-</div>
+<div class="book-review">
+  <figure>
+    <img
+      loading="lazy"
+      src="{{ $image }}"
+      alt="Book cover"
+      style="max-width: {{ $width }}; height: {{ $height }};"
+    >
+  </figure>
+  <div class="review-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div> 
+
+
+<style>
+.book-review {
+  display: flex;
+  align-items: center;
+  gap: 20px;           /* space between image and text */
+  flex-wrap: wrap;     /* allow wrapping on narrow screens */
+  margin: 1.5rem 0;
+}
+
+.book-review figure {
+  flex: 1 1 200px;     /* grow/shrink, base width 200px */
+  margin: 0;           /* we handle spacing with gap */
+}
+
+.book-review figure img {
+  width: 100%;         /* fill its figure */
+  height: auto;
+}
+
+.book-review .review-content {
+  flex: 2 1 300px;     /* grow/shrink, base width 300px */
+  white-space: pre-line;
+}
+
+/* Mobile override */
+@media (max-width: 600px) {
+  .book-review {
+    flex-direction: column;  /* stack vertically */
+  }
+  .book-review .review-content {
+    margin-top: 1rem;
+  }
+}
+</style>
