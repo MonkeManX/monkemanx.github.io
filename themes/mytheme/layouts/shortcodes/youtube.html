@@ -1,0 +1,24 @@
+<div class="video-container">
+  <iframe
+    src="{{ .Get "link" }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+<style>
+.video-container {
+  width: 100%;
+  max-width: 600px; /* optional */
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  /* height will follow the 16:9 ratio automatically */
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+</style>

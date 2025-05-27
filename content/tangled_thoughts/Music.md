@@ -15,6 +15,4 @@ I just watched the greatest live music performance I've ever seen. It was full o
 
 Watch it, it's worth it!
 
-<iframe width="600" height="300" style="display: block; margin: auto;"
-src="https://youtu.be/CTl2WaT2uTc?si=mb9iyd5EmpNXWDOY">
-</iframe>
+{{< youtube link="https://youtu.be/CTl2WaT2uTc?si=mb9iyd5EmpNXWDOY" >}}
