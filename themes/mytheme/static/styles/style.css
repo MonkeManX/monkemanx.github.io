@@ -9,6 +9,15 @@ html, body {
   font-family: "Space Mono", Roboto, monospace;
 }
 
+/*
+* If an device screen is too small, than we make the image maximum width
+*/
+@media (max-width: 600px) {
+  figure {
+    width: 100% !important;
+  }
+}
+
 /* Ensure the markers of list elements do not go into the toc */
 /* Targeting ul and ol inside #content, excluding #TableOfContents */
 #content ul:not(#TableOfContents ul, .custom-pagination ul) {
@@ -300,33 +309,39 @@ summary {
     position: relative;  /* Added to allow absolute positioning of tags */
 }
 
-.thought-tags {
-    position: absolute;
-    top:  48px;  /* Adjust as needed */
-    right: 25px;   /* Adjust as needed */
+.thought-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-bottom: 0.5rem;
 }
+
+.thought-date {
+    padding-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
 
 .thought-tag {
     display: inline-block;
     text-transform: capitalize;
-    background-color: #DDD; /* Tag background */
-    color: #333;             /* Tag text color */
+    background-color: #DDD;
+    color: #333;
     padding: 3px 6px;
-    margin-left: 5px;        /* Spacing between tags */
     border-radius: 5px;
     font-size: 0.8em;
 }
 
 .thought-tag a {
     color: #333;
-    text-decoration: none;  /* Removes the underline */
+    text-decoration: none;
 }
 
 .thought-tag a:hover {
     color: #007BFF;
 }
-
-
 
 .thought-title {
     font-size: 1.5em;

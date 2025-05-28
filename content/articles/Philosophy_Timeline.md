@@ -53,15 +53,7 @@ Tried to reconcile the dispute between Parmenides and Heraclitus by saying both 
 **Summary:**  
 Developed a complete mechanistic view of the universe: everything is made of atoms and empty space. The atoms were small, indivisible particles, unchanging like Parmenides' "being." He believed there were infinitely many kinds of atoms making up all matter. This theory also beat Zeno's paradox: you can't infinitely divide the distance between the runner and the goal because there’s a smallest indivisible unit — the atom. He was the first *materialist*.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Presocratic_graph.svg">
-    <figcaption style="margin-top: 10px;text-align:center">
-        Relationship among the various pre-socratic philosophers and thinkers; red arrows indicate a relationship of opposition.
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
-
+{{< img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Presocratic_graph.svg" width="100%" figcaption="        Relationship among the various pre-socratic philosophers and thinkers; red arrows indicate a relationship of opposition." >}}
 
 
 ## Socrates and the Sophists
@@ -151,13 +143,7 @@ They differentiated between *the Nous* (God), from which everything emanates out
 The farther something is from the divine Nous, the less divinity and goodness it possesses. Matter without a soul — like stones or water — is thus the farthest from God.  
 However, humans retain a spark of the divine within them and an innate desire to return to the divine source. Through practice and discipline, one can achieve a *mystical experience* in which the soul reunites with the Nous — this was seen as the ultimate goal of life.
 
-
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="https://howtobeastoic.wordpress.com/wp-content/uploads/2017/01/img_7335.png">
-</figure>
-{{< /rawhtml >}}
-
+{{< img src="https://howtobeastoic.wordpress.com/wp-content/uploads/2017/01/img_7335.png" width="60%" >}}
 
 ## Classical Rome
 
@@ -500,13 +486,7 @@ For Camus, it is not enough to simply realize life's meaninglessness; one must a
 
 This *revolt* or *rebellion* means doing things with the full knowledge that they are ultimately pointless — doing them precisely because they are pointless, as an act of defiance. This battle against the absurd can best be fought not alone, but together with others. Through solidarity with our fellow humans — who are fighting the same battle against the absurd — we can embrace a universal revolt, one that unites all of humanity in a shared, courageous defiance.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/mabRf.jpeg">
-</figure>
-{{< /rawhtml >}}
-
-
+{{< img src="/attachments/mabRf.jpeg" width="100%" >}}
 
 
 ## Contemporary

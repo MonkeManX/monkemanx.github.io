@@ -11,6 +11,7 @@
   {{ end }}
 
   {{ if or (eq .Section "articles") (eq .Section "paper-summary") }}
+
     <span class="separator">|</span>
     {{ lang.FormatNumberCustom 0 .WordCount }} words
     <span class="separator">|</span>

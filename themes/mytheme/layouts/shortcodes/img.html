@@ -1,41 +1,27 @@
-{{/* img.html shortcode */}}
+{{/* Image shortcode with reserved space to prevent layout shift and maintain anchor targets */}}
 {{ $src := .Get "src" }}
-{{/* strip leading slash so “/attachments/cat7.jpg” → “attachments/cat7.jpg” */}}
 {{ $srcRel := (replaceRE "^/" "" $src) }}
 {{ $img := .Page.Resources.GetMatch (printf "**%s" $srcRel) }}
 
-{{/* default to no aspect-ratio if resource not found */}}
+{{ $width := .Get "width" | default "auto" }}
+{{ $height := "auto" }}
 {{ $aspect := "" }}
 {{ if $img }}
   {{ $aspect = printf "aspect-ratio: %d / %d;" $img.Width $img.Height }}
 {{ end }}
 
-<figure>
+{{ $userStyle := .Get "style" | default "" }}
+
+<figure style="display: block; margin: 0 auto; width: {{ $width }}; {{ $aspect }}">
   <img
     src="{{ if $img }}{{ $img.RelPermalink }}{{ else }}{{ $src }}{{ end }}"
     loading="lazy"
     width="{{ if $img }}{{ $img.Width }}{{ end }}"
     height="{{ if $img }}{{ $img.Height }}{{ end }}"
-    style="
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: {{ .Get "width" | default "auto" }};
-      height: auto;
-      {{ $aspect }}
-      {{ .Get "style" | safeCSS }}
-    "
-    alt="{{ .Get "alt" }}"
+    alt="{{ .Get "alt" | default "Image" }}"
+    style="display: block; width: 100%; height: 100%; object-fit: contain; {{ $userStyle }}"
   >
   {{ with .Get "figcaption" }}
-    <figcaption style="text-align:center; margin-top:10px;">{{ . | safeHTML }}</figcaption>
+    <figcaption style="text-align: center; margin-top: 0.5rem;">{{ . | safeHTML }}</figcaption>
   {{ end }}
 </figure>
-
-<style>
-@media (max-width: 600px) {
-  figure > img {
-    width: 100% !important;
-  }
-}
-</style>

@@ -9,6 +9,9 @@ markup:
 Description: "This article details my homelab upgrade, in which I transitioned from a Raspberry Pi 3B to a dedicated server. I share my thought process behind selecting the new server, along with the configurations and software I installed on it."
 ---
 
+
+{{< toc >}}
+
 ## 0. Changes 
 
 List of Changes Made of This Article:
@@ -16,8 +19,6 @@ List of Changes Made of This Article:
 **15.10.24:** Fixed Typo.  
 **23.01.25:** Added a Spacer to the Article.  
 **23.05.25:** Added a new Section to Notification Managment.  
-
-{{< toc >}}
 
 ## 1. Introduction
 
@@ -119,6 +120,7 @@ Another example, I have seen a fair number of movies with the same resolution wh
 I could have used an calculator to quickly crunch the numbers, but because I like doing it harder than it already is; I used python in combination with pandas, a data anlaysis libary.
 
 The first thing we do is importing the pandas libary and/cap importing our data into python:
+
 ```python
 import pandas as pd
 df = pd.read_csv("movies.txt", sep="|")
@@ -130,11 +132,13 @@ Which will return in the following output:
 {{< img src="/attachments/homelab_jupyter_1.jpg" width="100%" >}}
 
 As you can see, there are multiple issues: for one we have two weird columns titld `unamed: 0` and `unamed 7` and second our first row is also weird, we should remove both.
+
 ```python
 df = df.dropna(how="all", axis="columns") # drops the columns 
 df = df.drop(0) # drops the first column 
 df.head()
-````
+```
+
 Which will result in the following output:
 
 
@@ -143,18 +147,18 @@ Which will result in the following output:
 There are still one issue persisting, we have whitespaces in the column names and in the data fields, you can see that through the following command:
 
 
-````python 
+```python 
 df.columns
-````
+```
 
 Which will return the following:
 
 
-````python
+```python
 Index([' Movie Name                         ', ' Year ', ' Movie Length ',
        ' Encoding ', ' Resolution ', ' File Size(GB) '],
       dtype='object')
-````
+```
 
 In order to remove the white-spaces we can do the following:
 
@@ -308,7 +312,7 @@ I thought I had taken a photo when the machine first arrived, but I didn’t, so
 Below you can see how I installed the disks into the machine. The ProDesk 600 G5 has exactly four SATA connectors, which is just enough for the disks I needed. I had to get a bit creative with the mounting spots -— Yes, I did use duct tape to mount them.
 
 {{< rawhtml >}}
-<figure style="display: flex; justify-content: center;">
+<figure style="display: flex; justify-content: center;" height="235px">
     <img loading="lazy" style="width: 50%;" src="/attachments/server_imgs/IMG_20240815_234023627.jpg">
     <img loading="lazy" style="width: 50%;" src="/attachments/server_imgs/IMG_20240815_234153914.jpg">
 </figure>
@@ -542,7 +546,7 @@ Activate the slider for the `DNS challenge`, select DuckDns as the provider, and
 Now, let’s add your first proxy. Go to `Hosts -> Proxy Hosts -> Add Proxy Host`. Enter the domain name you want for your service. For Nginx, I recommend using just your domain name, and for Proxmox, use something like `prox.<your_domain>`. Don't forget to select the SSL certificate you created earlier, I also recommend to enable *Force SSL* and *HTTP/2 Support*.
 
 {{< rawhtml >}}
-<figure style="display: flex; justify-content: center;">
+<figure style="display: flex; justify-content: center;" height="367px">
     <img loading="lazy" style="width: 40%;" src="/attachments/nginx_proxy_1.jpg">
     <img loading="lazy" style="width: 50%;" src="/attachments/nginx_proxy_2.jpg">
 </figure>
@@ -742,7 +746,7 @@ Since the local ZFS dataset doesn't have enough space to store all the movies, w
 8. A final note is that the *arr-stack* depends on *OpenMediaVault (OMV)* already running, as it uses the Samba drives from *OMV*. Therefore, you should change the reboot order: set *arr-stack* to order 2 and *OMV* to order 1. It’s advisable to add a slight delay to allow *OMV* some time to set up before other services that depend on it start. You can do this by setting UP to, for example, 60, which means all VMs that come after it will start 60 seconds after *OpenMediaVault*.
 
 {{< rawhtml >}}
-<figure>
+<figure height="543px">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/arr_stack_boot.jpg">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nas_boot.jpg">
 </figure>
@@ -925,7 +929,7 @@ docker compose up -f arr-stack-compose.yaml up -d
 Jellyfin integrates smoothly with the *arr-stack*, which is responsible for the acquisition of media, whereas Jellyfin's role is to manage and play back the already downloaded content. This way, your entire media management workflow is streamlined: from downloading media through the *arr-stack* to consuming it through Jellyfin.
 
 {{< rawhtml >}}
-<figure>
+<figure height="653px">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/jellyfin_movies.jpg">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/jellyfin_details.jpg">
 </figure>
@@ -1390,7 +1394,7 @@ When setting up a reverse proxy for these services, ensure you enable WebSocket 
 The last step is to ensure that books and audiobooks are downloaded to the correct folders. To do this, go to Prowlarr and add two categories: `audiobookshelf` and `books`. Navigate to `Settings -> Download Clients -> qBittorrent -> Mapped Categories` and configure them accordingly.
 
 {{< rawhtml >}}
-<figure>
+<figure height="1010px">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_category.jpg">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_books.jpg">
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr_audiobooks.jpg">
@@ -1763,7 +1767,7 @@ This was the longest piece of continuous text I've ever written, and it took me 
 At last, enjoy these last server-themed movie posters.
 
 {{< rawhtml >}}
-<figure style="display: flex; justify-content: center; gap: 10px;">
+<figure style="display: flex; justify-content: center; gap: 10px;" height="387px">
     <img loading="lazy" style="width: 33%;" src="/attachments/back_up.jpg">
     <img loading="lazy" style="width: 33%;" src="/attachments/the_ecc_buster.jpg">
     <img loading="lazy" style="width: 33%;" src="/attachments/Alien3.png">
