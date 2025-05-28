@@ -1,0 +1,41 @@
+{{/* img.html shortcode */}}
+{{ $src := .Get "src" }}
+{{/* strip leading slash so “/attachments/cat7.jpg” → “attachments/cat7.jpg” */}}
+{{ $srcRel := (replaceRE "^/" "" $src) }}
+{{ $img := .Page.Resources.GetMatch (printf "**%s" $srcRel) }}
+
+{{/* default to no aspect-ratio if resource not found */}}
+{{ $aspect := "" }}
+{{ if $img }}
+  {{ $aspect = printf "aspect-ratio: %d / %d;" $img.Width $img.Height }}
+{{ end }}
+
+<figure>
+  <img
+    src="{{ if $img }}{{ $img.RelPermalink }}{{ else }}{{ $src }}{{ end }}"
+    loading="lazy"
+    width="{{ if $img }}{{ $img.Width }}{{ end }}"
+    height="{{ if $img }}{{ $img.Height }}{{ end }}"
+    style="
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: {{ .Get "width" | default "auto" }};
+      height: auto;
+      {{ $aspect }}
+      {{ .Get "style" | safeCSS }}
+    "
+    alt="{{ .Get "alt" }}"
+  >
+  {{ with .Get "figcaption" }}
+    <figcaption style="text-align:center; margin-top:10px;">{{ . | safeHTML }}</figcaption>
+  {{ end }}
+</figure>
+
+<style>
+@media (max-width: 600px) {
+  figure > img {
+    width: 100% !important;
+  }
+}
+</style>

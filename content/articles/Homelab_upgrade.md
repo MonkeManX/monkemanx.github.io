@@ -31,11 +31,8 @@ This post is a documentation of this upgrading undertaking, first going over the
 
 This post will probably rather long, because of the sheer amount of software I decided to selfhost, so grab a cup of coffee or tea and enjoy the reading (or not since this will be a bit dry, I'll try to add some semi funny images).
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Love.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/Love.jpg" width="50%" >}}
+
 
 ## 2. The Hardware Requirements
 
@@ -71,11 +68,7 @@ I've already touched on some of my server requirements in the introduction. Now,
 Using the server as a [NAS](https://en.wikipedia.org/wiki/Network-attached_storage) and as a media center for streaming movies and TV shows to all my devices were two key factors that prompted me to upgrade my Homelab. With the NAS demanding significant storage capacity and the media center needing a more powerful processor than the one I currently had. 
 As such I will analyze the requirements of these two functionalities first.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/it_server.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/it_server.jpg" width="50%" >}}
 
 First of for the NAS, since I want to use my homelab as a media server for movies, tv-shows, music and photos, the most important aspect to consider for the NAS aspect of my server are the storage requirements.
 The biggest bulk of required storage will come from my media server, specfically movies and tv-shows. The size of tv-shows is really hard to compare from series to series, they have different amount of seasons, different amount of episodes per season, different length per episode.
@@ -134,9 +127,7 @@ df.head()
 
 Which will return in the following output:
 
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/homelab_jupyter_1.jpg">
-</figure>
+{{< img src="/attachments/homelab_jupyter_1.jpg" width="100%" >}}
 
 As you can see, there are multiple issues: for one we have two weird columns titld `unamed: 0` and `unamed 7` and second our first row is also weird, we should remove both.
 ```python
@@ -146,9 +137,8 @@ df.head()
 ````
 Which will result in the following output:
 
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/homelab_jupyter_2.jpg">
-</figure>
+
+{{< img src="/attachments/homelab_jupyter_2.jpg" width="70%" >}}
 
 There are still one issue persisting, we have whitespaces in the column names and in the data fields, you can see that through the following command:
 
@@ -243,11 +233,7 @@ Assuming my estimates are accurate, this means we can store roughly 198 movies i
 
 With that in mind, 1TB should be sufficient for my movie media needs. However, it’s important to remember that movies aren't the only data I plan to store on the server. Additionally, we want to leave room for future expansion should my storage needs increase significantly. What this estimate gives me is a rough idea of the storage I need—not 1000TB or even 100TB, but more likely around 10TB.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/Titanic.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/Titanic.jpg" width="50%" >}}
 
 ### 2.2 Processor Requirements
 
@@ -272,12 +258,7 @@ To recap, I am looking for an Intel i3 or i5 processor, preferably from the 9th 
 
 A quick note on the size of the computer: I wanted a server that had enough space for my disks but was still compact enough to fit comfortably in the corner of a room. Because of this, I primarily focused on small form factor (SFF) computer cases.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/desktop_size.jpg">
-</figure>
-{{< /rawhtml >}}
-
+{{< img src="/attachments/desktop_size.jpg" width="50%" >}}
 
 ### 2.4 RAM Requirements
 
@@ -290,11 +271,7 @@ One thing worth mentioning is that having [ECC RAM](https://www.truenas.com/docs
 
 From the decisions I’ve made so far, you’ve probably noticed that this server sounds more like a consumer desktop computer than a sleek, rack-mounted server. And that’s true, but in my defense, "real" servers are both expensive and power-hungry. Compared to my previous server (a Raspberry Pi 3b), this is already a significant upgrade.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/server_meme.webp">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/server_meme.webp" width="60%" >}}
 
 ## 3. Dr. Salesman or: How I Learned to Stop Waiting for the Perfect Deal
 
@@ -320,21 +297,13 @@ Here’s a breakdown of my final costs:
 
 It turned out to be a bit more expensive than I initially expected, mostly because I underestimated the cost of RAM and hard disks.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/naked.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/naked.jpg" width="50%" >}}
 
 ## 4. A look inside the Machine
 
 I thought I had taken a photo when the machine first arrived, but I didn’t, so here’s how the computer is currently set up. On top of the computer are two hard disks that I use for regular backups. You can’t really see them in the photo, but just because they’re not visible doesn’t mean they’re not there!
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/server_imgs/IMG_20240927_204550120.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/server_imgs/IMG_20240927_204550120.jpg" width="50%" >}}
 
 Below you can see how I installed the disks into the machine. The ProDesk 600 G5 has exactly four SATA connectors, which is just enough for the disks I needed. I had to get a bit creative with the mounting spots -— Yes, I did use duct tape to mount them.
 
@@ -362,21 +331,13 @@ In **RAID-0**, also known as **striping**, multiple disks are combined into one 
 
 However, RAID-0 also has a major disadvantage. If any of the disks in the RAID array fails, the data on that disk is permanently lost, with no chance of recovery. This can be catastrophic, as the lost sectors could be part of critical data, rendering the entire dataset unusable.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/RAID_0.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/RAID_0.png" width="30%" >}}
 
 In **RAID-1**, also known as **mirroring**, two disks are synchronized so that when data is written to one disk, it is simultaneously written to the other. This ensures that at all times, you have two copies of your data. If one disk fails, the other still holds a complete copy, providing redundancy as the main benefit.
 
 However, this setup comes with a downside: you sacrifice 50% of your storage capacity for redundancy, which can be costly. For example, if you buy two 10TB hard drives for €120 each, instead of having 20TB of usable storage, you only get 10TB because the other 10TB is used for mirroring, "wasting" 120€ in the process.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/RAID_1.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/RAID_1.png" width="30%" >}}
 
 RAID-0 and RAID-1 can be combined into a setup called **RAID-01**, which provides both the redundancy of mirroring and the performance gains of striping. RAID-01 works by first striping the data across disks and then mirroring those striped sets. 
 
@@ -384,21 +345,13 @@ With RAID-01, the performance improvement is even greater than with RAID-0 becau
 
 The disadvantage of RAID-01 is that it requires at least four disks, and like with RAID-1, you lose 50% of your storage to redundancy. However, this redundancy allows one disk to fail without any data loss.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/RAID_01.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/RAID_01.png" width="50%" >}}
 
 The last RAID system I want to introduce is **RAID-5**. To use RAID-5, you need at least three disks. Like RAID-0, it uses striping to improve performance. However, RAID-5 also provides redundancy, allowing for the failure of one disk without data loss.
 
 This redundancy is achieved by using parity blocks, which are distributed across all the disks. If one disk fails, the system can use these parity blocks to reconstruct the missing data. However, after a disk failure, it may take some time to rebuild and restore full access to all data. RAID-5 is one of the most cost-efficient RAID setups, offering a good balance between performance, redundancy, and storage capacity.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/RAID_5.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/RAID_5.png" width="50%" >}}
 
 There are many more RAID systems than the ones I’ve introduced, but these are some of the most important ones, especially for my use case. You can use the [raid-calculator](https://www.raid-calculator.com/) to explore more options.
 
@@ -435,11 +388,7 @@ Ultimately, I settled on the following setup:
 - HDDs in a RAID mirror configuration with ZFS for all my data, such as movies and photos.
 - External disks in a RAID mirror configuration with ZFS for backups.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/seattle.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/seattle.jpg" width="50%" >}}
 
 
 ## 6. The Server Operating System: Proxmox
@@ -457,14 +406,7 @@ I'm glad you asked, there are numerous benefits:
 
 You could also get all these benefits without using Proxmox by running an operating system like Debian or Arch with Docker or LXC. However, Proxmox provides a convenient web-based GUI that makes managing containers much easier.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:90%" src="/attachments/proxmox.jpg">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        An example of my Proxmox setup.
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox.jpg" width="90%" figcaption=" An example of my Proxmox setup." >}}
 
 
 ### 6.1 Proxmox: Installation
@@ -475,27 +417,15 @@ Next, ramm the USB stick with all the force you can into the correct port of you
 
 When you reach the screen where you need to choose the installation destination and if you’re following the same set-up as me, select ZFS with RAID 1 and choose the two SSDs as the target disks. We’ll deal with the external disks and hard drives later.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_setup_select_disks.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_setup_select_disks.png" width="80%" >}}
 
 When prompted to create an account, I highly recommend using a real email (or even creating a separate email just for your server). This will allow you to receive regular reports on backups and alerts when something goes wrong, such as a hard disk failure.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pve-set-password.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/pve-set-password.png" width="80%" >}}
 
 For the network configuration, make sure to select an IP address that is actually free. You can check your router to see the currently occupied addresses. Your DNS server will most likely be your router, so enter its address. The netmask will probably be `255.255.255.0`, but verify this with your router to be sure.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/pve-setup-network.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/pve-setup-network.png" width="80%" >}}
 
 After the installation is complete, you can remove all peripherals and connect to your Proxmox server via the selected IP address and port 8006: `http://<selected-ip>:8006`.
 
@@ -507,47 +437,27 @@ After connecting to Proxmox via the web app, you’ll be prompted to log in. Use
 
 The first thing you’ll probably want to do is enable the "No-Subscription Repository" for updates. To do this, navigate to: `machine (pve) -> Updates -> Repositories -> Add -> No-Subscription`.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gui-node-repositories.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/gui-node-repositories.png" width="80%" >}}
 
 After you have enabled the community repository, you can update Proxmox by navigating to: `machine (pve) -> Updates -> press refresh & press upgrade`.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_update.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_update.jpg" width="80%" >}}
 
 #### 6.2.2 Creating ZFS-Pool
 
 Next, we want to create a ZFS pool for the four remaining disks (the two external ones and the two hard drives). To do this, navigate to: `machine (pve) -> Disks -> ZFS -> Create ZFS`. For the RAID level, select `Mirror`, and leave compression set to `on`. This will slightly reduce performance, but you'll save disk space. Do this once for the external drives and name the pool `backups`, then repeat this for the hard drives and name the pool `data`.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_zfs.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_zfs.jpg" width="80%" >}}
 
 If you are finished, this should look like this:
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_zfs_overview.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_zfs_overview.jpg" width="80%" >}}
 
 #### 6.2.3 Check Disks S.M.A.R.T Settings
 
 Next, we want to check if [S.M.A.R.T. monitoring](https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) is enabled and functioning. S.M.A.R.T. is a vital monitoring service that performs checks to detect the health of HDDs and SSDs, which is crucial when running a server, as disk failures can happen easily through the constant disk usage. Navigate to: `machine (pve) -> Disks` you can then select the disks and press the `Show S.M.A.R.T values` button. This should similar to this:
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_smart_values.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_smart_values.jpg" width="80%" >}}
 
 #### 6.2.4 IOMMU
 
@@ -563,39 +473,23 @@ To achieve this, I’ll use a VM running the [Openmediavault](https://www.openme
 
 The first step is to download the OpenMediaVault [ISO](https://www.openmediavault.org/download.html) to your computer. After that, you can upload it to the server by navigating to: `local -> ISO Images -> Upload`.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_upload.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_upload.jpg" width="80%" >}}
 
 After this you can press the big blue button with the text `Create VM` in the top right to create a virtual machine. For the storage choose `local` we want the VM to run on the SSDs, choose `openmediavault` as ISO image, for the hardware 1 core with 6GB RAM and 32GB disk space should be enough.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_nas.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_nas.jpg" width="80%" >}}
 
 In the Proxmox sidebar, you can now double-click on the NAS, which will open a new browser window, allowing you to access the NAS interface. You should be able to see the IP address in the terminal. Alternatively, you can copy the IP address and use proper remote access software to connect to the NAS. The default login name when connecting via ssh is `root`.
 
 OpenMediaVault (OMV) should now be available as a web service. This means you can open your browser and enter `http://<nas-ip-address>`, where you'll be greeted by a login screen. The default login credentials are `admin` as the username and `openmediavault` as the password. After logging in, you should see the OMV dashboard (your version might look slightly different).
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/omv_dashboard.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/omv_dashboard.jpg" width="80%" >}}
 
 ### 7.2 Openmediavault: Post-Installation Steps
 
 The first thing you should do is change the default password. Click on the person icon in the top right corner and select `Change Password`. Next, we want to create a filesystem that we can later use for all our data. Navigate to: `Storage -> File System -> Create`. Since we are already using ZFS for the underlying disks, be sure to choose `ext4` as the file system. You can mount the file system by pressing the play button while having selected the new file system.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/omv_file_system.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/omv_file_system.jpg" width="80%" >}}
 
 Next, we want to create a user who will be able to access the data on the file system over the network. To do this, navigate to `Users -> Create`. 
 
@@ -607,11 +501,7 @@ In the end, we need to enable the SAMBA service and add our shared folder to it,
 
 You should now be able to connect to your shared folder via your file manager both in linux and windows.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nas_access.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/nas_access.jpg" width="80%" >}}
 
 ## 8. Simplifying Your URLs with Nginx Proxy Manager
 
@@ -621,21 +511,13 @@ You should now be able to connect to your shared folder via your file manager bo
 
 For the installation, I used the [Proxmox Helper Scripts by tteck](https://tteck.github.io/Proxmox/). I installed the service on the SSD ZFS dataset. To install Nginx Proxy Manager, simply copy the helper command from the website and paste it into the terminal of your Proxmox machine (`pve`). You'll then be greeted by the *tteck* installation script, which will guide you through the installation process.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/proxmox_nginx_installation.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/proxmox_nginx_installation.jpg" width="80%" >}}
 
 Once the installation process is complete, you should see a new container under your Proxmox machine (`pve`) in the sidebar. You can click on it to view its details. In the top-right corner, you'll find options to start or shut down the container. Under the `Options` tab, you can enable the container to start automatically if you wish.
 
 Similar to the OpenMediaVault virtual machine, you can double-click the new Nginx container to connect to it. In the container's shell, use the command `hostname -I` to view its IP address. Once you have the IP, you can connect to the Nginx web service by visiting `http://<your_ip>/admin`. The default login is `admin@example.com`, with the password `changeme`. As the name suggests, make sure to change both the email and password in the Nginx settings.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/nginx_home.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/nginx_home.jpg" width="80%" >}}
 
 You can use [DuckDns](https://www.duckdns.org/) to make your service accessible via a domain name like `myverycoolserver.duckdns.org`. However, to use this with Nginx Proxy Manager, you first need to install its dependencies. You can do this by accessing the container's shell and typing: `pip install certbot_dns_duckdns`.
 
@@ -649,11 +531,7 @@ To proceed with the second option, go to DuckDns (although you can also use a pu
 
 After creating the domain, it will point to your **external IP address**. Since we only want to access the service on the local network, you’ll need to change this to the **local IP address** of your Nginx Proxy Manager. This is the same IP you used to access Nginx through your browser. For example, my local IP address follows the format `192.168.xxx.xxx`, but this may vary for you.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/duckdns.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/duckdns.jpg" width="80%" >}}
 
 We can now make Proxmox and Nginx Proxy Manager accessible through your newly created domain. If you want your service to be accessible via `https` (instead of just `http`), you can use [Let’s Encrypt](https://letsencrypt.org/), which provides free certificates for your domain using ACME challenges. Fortunately, Nginx can handle this automatically. 
 
@@ -731,20 +609,11 @@ docker ps -a
 
 The output should look similar to this:
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/freshrss_docker.jpg">
-</figure>
-{{< /rawhtml >}}
-
+{{< img src="/attachments/freshrss_docker.jpg" width="100%" >}}
 
 As with the previous services, you should be able to connect to the web service using the container's IP address and port `8080`. The URL will look like this: `http://<your_ip>:8080`. With this setup, you now have a central server for aggregating news and blog posts.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/freshrss_home.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/freshrss_home.jpg" width="80%" >}}
 
 Your site’s appearance can be customized under `Settings -> Display -> Theme`. Here, you can change the look of your RSS reader. Personally, I prefer the Nord theme, which is also what you can see in the image above.
 
@@ -762,11 +631,7 @@ You can verify if the base URL is set correctly by going to `Settings -> System 
 
 You have now a central website from which you can read blog posts from, but maybe you want to read some of RSS content offline, for that you can use client that synchronizes your read articles and favourites with your server. A full list of compatible clients can be found [here](https://github.com/FreshRSS/FreshRSS?tab=readme-ov-file#apis--native-apps). I personally use [RSSGuard](https://github.com/martinrotter/rssguard) for my windows laptop and [Read You](https://github.com/Ashinch/ReadYou/) for my phone.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/read_you_rss.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/read_you_rss.png" width="30%" >}}
 
 To allow clients to synchronize with your FreshRSS instance, you first need to enable this. Navigate to `Settings -> Authentication` and check the box for `Allow API Access`. Then, go to the `Profile` section in settings and fill in the `API password` field. This will be the password required to log in from your clients.
 
@@ -776,11 +641,7 @@ To synchronize the *Read You* app with your server, go to `Settings -> Accounts 
 
 [Tandoor](https://github.com/TandoorRecipes/recipes) is a self-hosted, free, open-source recipe manager. It allows you to create recipes, meal plans, and shopping lists, save them on your server, and make them accessible to your entire network.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/tandoor_example.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/tandoor_example.jpg" width="80%" >}}
 
 The service is easy to install, thanks to the [tteck script](https://tteck.github.io/Proxmox/#tandoor-recipes-lxc). After installation, all you need to do is create a user and a workspace, and then you can start creating recipes.
 
@@ -794,11 +655,7 @@ This is where [Homarr](https://github.com/ajnart/homarr) comes in. Homarr is a m
 
 There are plenty of other dashboard services out there, such as [Dashy](https://github.com/Lissy93/dashy), [Glance](https://github.com/glanceapp/glance), [Homepage](https://github.com/gethomepage/homepage), and many more. The exact dashboard you choose is largely a matter of personal preference, as they all function similarly. I chose Homarr because it had a [tteck script](https://tteck.github.io/Proxmox/#homarr-lxc) available, making installation easier.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/homarr.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/homarr.jpg" width="80%" >}}
 
 To add a service to Homarr, click on the *Edit Mode* button in the top-right corner. Once in edit mode, you can add new tiles by clicking the button in the top-right corner again. These tiles can be a service, a widget, or a category, which can be used to group services together.
 
@@ -832,14 +689,7 @@ As a basic overview, Jellyseerr provides a Netflix-like interface where users ca
 
 Everything runs inside a Docker container with Gluetun, which tunnels all network activity from qBittorrent through the VPN. If downloading `.torrent` files is illegal in your country, you should also route the network activity of Prowlarr, Sonarr, and Radarr through the VPN.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/mediastack.png">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        Image is from <i>zerodya</i>. In my setup, I use <i>Prowlarr</i> instead of Jackett and <i>qBittorrent</i> instead of Transmission.
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/mediastack.png" width="100%" figcaption="Image is from <i>zerodya</i>. In my setup, I use <i>Prowlarr</i> instead of Jackett and <i>qBittorrent</i> instead of Transmission." >}}
 
 ### 13.1 Installation: Torrenting Stack
 
@@ -1065,14 +915,7 @@ docker compose up -f arr-stack-compose.yaml up -d
    When trying to connect to qBittorrent, you might get an error like `app is unauthorized`. If you encounter this issue, refer to this [forum article](https://discourse.linuxserver.io/t/opening-qbittorrent-webui-via-dashboard-app-is-unauthorized-mismatched-ips/7363/3) for guidance. Following its steps should resolve the authorization problem.
 
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/500days.jpg">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        <i>Completly unrelated, another cool movie poster.</i>
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/500days.jpg" width="50%" figcaption="<i>Completly unrelated, another cool movie poster.</i>" >}}
 
 
 ## 14. Netflix like Media-Managment with Jellyfin
@@ -1155,11 +998,7 @@ Here is an example output:
 
 Next, in Proxmox, navigate to `Datacenter -> Resource Mapping -> Add` and add your GPU. It should look similar to this:
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ressource_mapping_ihpu.jpg" alt="Resource Mapping">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/ressource_mapping_ihpu.jpg" width="80%" >}}
 
 #### 14.1.3 Setting Permissions
 
@@ -1218,11 +1057,7 @@ sudo -u jellyfin /usr/lib/jellyfin-ffmpeg/ffmpeg -v verbose -init_hw_device vaap
 
 After running the previous command, you should receive an output that looks similar to this:
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/jellyfin_hw_test.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/jellyfin_hw_test.jpg" width="100%" >}}
 
 #### 14.1.5 Giving Jellyfin Access to the NAS
 
@@ -1267,14 +1102,7 @@ Since our data is on the **data** ZFS dataset, we need to connect this ZFS datas
 
 When creating your media library, you should enable the `NFO` option, which will save metadata locally. This is necessary because we didn't grant Jellyfin write access to the `media_root` directory.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/cat7.jpg">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        <i>A picture of a cat inside a server, has nothing to do Jellyfin.</i>
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/cat7.jpg" width="80%" figcaption="<i>A picture of a cat inside a server, has nothing to do Jellyfin.</i>" >}}
 
 
 ## 15. Synchronize Files Across Multiple Devices with Syncthing
@@ -1283,11 +1111,7 @@ I already talked about [Syncthing](/articles/my_homelab_part_6_syncthing/) in a 
 
 To recap, Syncthing is a synchronization service that allows you to sync files across multiple devices. I personally use it to synchronize my written notes across all my devices.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/synthing.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/synthing.jpg" width="80%" >}}
 
 ### 15.1 Syncthing: Installation
 
@@ -1315,11 +1139,7 @@ Once the installation is complete, we can add our SMB share to the LXC container
 
 6. Find the ID of your LXC container. You can check this in the Proxmox sidebar where it will be displayed next to the container's name.
 
-    {{< rawhtml >}}
-    <figure>
-        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/proxmox_id.jpg">
-    </figure>
-    {{< /rawhtml >}}
+    {{< img src="/attachments/proxmox_id.jpg" width="30%" >}}
 
 7. Now, edit the LXC configuration file by running:
     ```bash
@@ -1349,11 +1169,7 @@ You should now be able to add your sync folder and syncrhonize them across devic
 >
 > Ready to regain control over **your** documents? Download Paperless-Ngx today.Completely free and see how easy it is to take back your space and sanity.  
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:100%" src="/attachments/documents-smallcards-dark.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/documents-smallcards-dark.png" width="100%" >}}
 
 ### 16.1 Paperless-Ngx: Installation
 
@@ -1373,14 +1189,7 @@ We have installed many services, such as Tandoor, Syncthing, and Paperless-NGX, 
 
 To address this, we can host our own VPN with [WG-Easy](https://github.com/wg-easy/wg-easy), which tunnels all our network activity when we're outside our local network. I also considered using [Tailscale](https://tailscale.com/), which has a nicer and easier interface. However, their free plan only allows a limited number of users. If you’re okay with this limitation, I highly recommend Tailscale.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/wg-easy.png">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        <i>Wg-easy dashboard.</i>
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/wg-easy.png" width="60%" figcaption="<i>Wg-easy dashboard.</i>" >}}
 
 ### 17.1 Wg-easy: Installation
 
@@ -1437,22 +1246,11 @@ For more information refer to my [prior article](/articles/my_homelab_part_4_wir
 
 [Calibre-Web Automated](https://github.com/crocodilestick/Calibre-Web-Automated), which is based on [Calibre](https://calibre-ebook.com/) and [Calibre-Web](https://github.com/janeczku/calibre-web), is a book management software that allows you to read books, rate them, view their metadata, create book lists, send books to an e-reader, and enjoy many other features.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/calibre_automated.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/calibre_automated.jpg" width="80%" >}}
 
 [Audiobookshelf](https://www.audiobookshelf.org/), similar to Calibre, is an audiobook management software that offers a range of features. It allows you to organize your audiobook collection, stream audiobooks to different devices, track your listening progress, and customize metadata. Additionally, it supports multiple users, making it perfect for shared libraries.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/audiobookshelf.png">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        <i>Image is from geek-cookbook.</i>
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/audiobookshelf.png" width="80%" figcaption="<i>Image is from geek-cookbook.</i>" >}}
 
 
 In addition to both of these software, I will use [Readarr](https://github.com/Readarr/Readarr), *Prowlarr*, *gluetune*, and *qBittorrent* to create a setup similar to my *Arr-Stack. This will allow me to automatically torrent e-books and audiobooks, streamlining the process just like I do with other media.
@@ -1585,11 +1383,7 @@ For qBittorrent, the default username is *admin*, and you’ll find the password
 
 In Prowlarr, you need to add Readarr as a connection. You can do this by navigating to `Settings -> Apps -> Readarr`. Additionally, add qBittorrent as your download client. After this, you'll want to add some book trackers in Proxmox, which will automatically sync to Readarr.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/prowlarr.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/prowlarr.jpg" width="80%" >}}
 
 When setting up a reverse proxy for these services, ensure you enable WebSocket support for Audiobookshelf.
 
@@ -1607,11 +1401,7 @@ Once completed, you should see these categories on the sidebar in qBittorrent. F
 
 To ensure books are moved to the correct folder after downloading, go to qBittorrent's settings and add an external program to run when downloads are finished: `cp -r "%F" "/cwa-book-ingest"`. This will automatically copy the book to Calibre while still allowing you to seed it in qBittorrent.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/qbittorent_external_programm.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/qbittorent_external_programm.jpg" width="80%" >}}
 
 Now, whenever you search for a book on Prowlarr, it should automatically download to the correct folder and show up in both Audiobookshelf and Calibre-Web.
 
@@ -1620,14 +1410,7 @@ Now, whenever you search for a book on Prowlarr, it should automatically downloa
 
 [Immich](https://immich.app/) is an open-source image management software designed for self-hosting on local servers. It provides a user experience similar to Google Photos, offering features such as automatic photo backup, organization, sharing, and search capabilities. Immich supports a range of functionalities like facial recognition, location tagging, and album creation, a versatile tool for managing personal photos without relying on cloud-based services.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/immich.webp">
-    <figcaption style="text-align:center; margin-top: 10px;">
-        <i>Image is from elest.io</i>
-    </figcaption>
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/immich.webp" width="80%" figcaption=" <i>Image is from elest.io</i>" >}}
 
 ### 19.1 Immich: Installation
 
@@ -1711,11 +1494,7 @@ We’ve hosted various software applications, and this took considerable time an
 
 You might think that using a RAID system, which mirrors every disk, provides backup protection. However, RAID is not a backup.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/raid_backup.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/raid_backup.png" width="70%" >}}
 
 Here’s a comment that explains this well:
 > If your home server were stolen, a backup would be used to restore your data elsewhere.
@@ -1785,11 +1564,7 @@ You can explore the effects of this strategy using the [backup retention simulat
 
 This setup has worked well so far. After a month of running, my server’s backup storage is about half full.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/backup_usage.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/backup_usage.jpg" width="80%" >}}
 
 ### 20.6 Implementing My Backup Strategy
 
@@ -1825,21 +1600,13 @@ To implement my backup strategy, follow these steps:
 10. **Congratulations!**  
     You now have a working backup strategy!
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:70%" src="/attachments/30year_old_saver.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/30year_old_saver.png" width="70%" >}}
 
 ## 21. Server Power Optimization
 
 If you, like me, live in a European country, power consumption is probably a concern due to the high cost of electricity.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/electricity_2023_prices.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/electricity_2023_prices.jpg" width="80%" >}}
 
 As such, it’s essential to optimize the power consumption of your server. I used the [Shelly Plug S](https://www.shelly.com/de/products/shop/shelly-plus-plug-s-1) to measure my power usage. This power monitor plugs into your wall socket and measures the consumption of any connected device. It’s quite affordable at around 20 bucks and accurate enough for my use case.
 
@@ -1893,11 +1660,7 @@ To enable Wake-on-LAN, follow these steps:
 To send the wake-up packet, I use my smartphone with the [WakeOnLan app](https://github.com/Florianisme/WakeOnLan). 
 
 The configuration of *WakeOnLan* app should look similar to this:
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/wake_on_lan.png">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/wake_on_lan.png" width="30%" >}}
 
 You can get your server's MAC address, by running the following command after installing `net-tools` (with `apt-get install net-tools`):
 ```bash
@@ -1906,11 +1669,7 @@ ifconfig -a
 
 Alternatively, you can use the command `ip link` and look for the device labeled as `ether`. The MAC address will be listed next to it.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/ifcofig.jpg">
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/ifcofig.jpg" width="80%" >}}
 
 
 ## 22. Notification with Gotify
@@ -1931,11 +1690,7 @@ Proxmox supports several notification methods out of the box, including email. H
     Make sure to **change your password** immediately after logging in for security reasons.
 
 
-    {{< rawhtml >}}
-    <figure>
-        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify_login.jpg" >
-    </figure>
-    {{< /rawhtml >}}
+    {{< img src="/attachments/gotify_login.jpg" width="80%" >}}
 
 
 3. **Configure NGINX Reverse Proxy (Optional but Recommended):** For better accessibility and security, especially if you plan to access Gotify remotely, it's advisable to set up an NGINX reverse proxy. Be sure to **enable WebSocket support**, as Gotify uses WebSockets to push notifications in real-time.
@@ -1951,21 +1706,13 @@ Proxmox supports several notification methods out of the box, including email. H
     Here, you’ll need to enter the Gotify server URL and an access token. To generate a token:
 
 
-    {{< rawhtml >}}
-    <figure>
-        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify-proxmox.jpg" >
-    </figure>
-    {{< /rawhtml >}}
+    {{< img src="/attachments/gotify-proxmox.jpg" width="80%" >}}
 
     1. In the Gotify web UI, create a new **application**.
     2. Copy the **access token**.
     3. Paste it into the corresponding field in Proxmox.
 
-    {{< rawhtml >}}
-    <figure>
-        <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify_apps.jpg" >
-    </figure>
-    {{< /rawhtml >}}
+    {{< img src="/attachments/gotify_apps.jpg" width="80%" >}}
 
 With this Proxmox can now send system notifications to Gotify, but we are not finished yet, we now need to tell Gotify that it should send the message that it received to your phone.
 
@@ -1975,11 +1722,7 @@ With this Proxmox can now send system notifications to Gotify, but we are not fi
     2. Open the app and enter your Gotify server URL along with your login credentials.
     3. After logging in, your phone should appear as a connected client in the Gotify web interface.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/gotify_clients.jpg" >
-</figure>
-{{< /rawhtml >}}
+    {{< img src="/attachments/gotify_clients.jpg" width="80%" >}}
 
 7. **Send a Test Notification:** To verify everything is working:
 
@@ -1996,12 +1739,7 @@ With this Proxmox can now send system notifications to Gotify, but we are not fi
     4. Under the **Targets to Notify** tab, select your Gotify endpoint.
     5. In the **Match Rules** tab, choose which types of notifications (e.g., backup failures, hardware issues) you want to be alerted about.
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/notfication_matcher_proxmox.jpg" >
-</figure>
-{{< /rawhtml >}}
-
+{{< img src="/attachments/notfication_matcher_proxmox.jpg" width="80%" >}}
 
 **Bonus Tip:** Disable the "Connected" Notification on Android. The Gotify Android app may display a persistent "Connected" notification. To remove it:
 
@@ -2010,11 +1748,7 @@ With this Proxmox can now send system notifications to Gotify, but we are not fi
 3. Disable the **Foreground Service Notification**.
 
 
-{{< rawhtml >}}
-<figure>
-    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:30%" src="/attachments/gotify_app_notifcation_disable.jpg" >
-</figure>
-{{< /rawhtml >}}
+{{< img src="/attachments/gotify_app_notifcation_disable.jpg" width="30%" >}}
 
 **Bonus Bonus Tipp:** There is also a cross platform [tray application](https://github.com/seird/gotify-tray) out there that you can install for your laptop or desktop PC, to receive notification from your gotfiy service.
 
