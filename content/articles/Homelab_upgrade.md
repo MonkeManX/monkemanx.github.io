@@ -19,6 +19,7 @@ List of Changes Made of This Article:
 **15.10.24:** Fixed Typo.  
 **23.01.25:** Added a Spacer to the Article.  
 **23.05.25:** Added a new Section to Notification Managment.  
+**28.05.25:** Added a small Section for Quality Control of Radarr.
 
 ## 1. Introduction
 
@@ -887,7 +888,7 @@ You can now create the Docker container for the `arr-stack` by running:
 docker compose up -f arr-stack-compose.yaml up -d
 ```
 
-### 13.2 Common Issues:
+### 13.2 Common Issues
 
 1. **Docker Daemon Socket Permission Error**:
    If you encounter the error `permission denied while trying to connect to the docker daemon socket`, you can check the permissions of the Docker socket with the command:
@@ -920,6 +921,22 @@ docker compose up -f arr-stack-compose.yaml up -d
 
 
 {{< img src="/attachments/500days.jpg" width="50%" figcaption="<i>Completly unrelated, another cool movie poster.</i>" >}}
+
+
+## 13.3 Quality Control 
+
+Maybe you have already requested some movies using *Radarr* and have noticed that the files you are downloading are rather large—exceeding your requirements, especially if your storage is limited, like mine.
+
+The first thing you can do when requesting media is to change the quality profile. This will determine the quality of the media you download.
+
+{{< img src="/attachments/request_movie.jpg" width="70%" >}}
+
+But maybe even after you've done this, the file is still too large. For this purpose, you can change what the quality profile means. To do this, navigate to `Settings -> Quality -> Quality Definition`.
+Here you will find quality labels that a media file can have. You can use the slider to set the minimum and maximum size for each file. For example, if the media size is too big, you can decrease the slider.
+
+{{< img src="/attachments/quality_prfofile_radarr.jpg" width="70%" >}}
+
+For a more extensive elaboration on this topic, refer to the [Trash Guide](https://trash-guides.info/).
 
 
 ## 14. Netflix like Media-Managment with Jellyfin
