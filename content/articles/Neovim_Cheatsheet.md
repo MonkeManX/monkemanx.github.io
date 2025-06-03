@@ -71,6 +71,15 @@ Capitalization is important!
 - `x`, deletes current character.
 - `c` + `c`, remove current line and edit it. 
 - `"` + `BUFFER` + `p`, chooses a clipboard buffer and then pastes it.
+- If you have multiple lines and want to add in theb eginning of each line something
+    1. Move to the first character of the first line you want to change.
+    2. Press Ctrl + V to enter Visual Block Mode.
+    3. Use j or arrow keys to select the lines downward.
+    4. Press I (uppercase i).
+    5. Type -.
+    6. Press Esc.
+- `STRG` + `a`, increases a number of a string by 1.
+- `STRG` + `x`, decreases a number of a string by 1.
 
 **Search:**  
 - `/`, searches for patterns forward.
