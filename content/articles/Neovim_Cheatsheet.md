@@ -93,6 +93,7 @@ Capitalization is important!
 - In visual mode `>`, intends marked lines in the *right* direction.
 - In visual mode `<`, intends marked lines in the *left* direction.
 - `z` + `=`, correct spelling mistake.
+- `.`, repeast the last command.
 
 **Telescope File Browser**
 - `<leader>` + `fb`, opens the telescope file browser.
