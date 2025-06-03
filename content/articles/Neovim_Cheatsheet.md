@@ -31,7 +31,8 @@ Capitalization is important!
 - `gg`, moves to the *top* of the files.
 - `G`, moves to the *bottom* of the file.
 - `20G`, moves cursor to line 20.
-
+- `O`, insert a line above the cursor.
+- `o`, insert a line below the cursor.
 
 **Navigating Code:**  
 - `%`, to the matching bracket.
