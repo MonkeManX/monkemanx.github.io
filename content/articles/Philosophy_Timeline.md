@@ -109,7 +109,7 @@ This time period begins with the conquests of Alexander the Great, during which 
 
 **400 BC – [Cynicism](https://en.wikipedia.org/wiki/Cynicism_(philosophy))**:  
 **Key Figures:** [Antisthenes](https://en.wikipedia.org/wiki/Antisthenes), [Diogenes](https://en.wikipedia.org/wiki/Diogenes), [Crates of Thebes](https://en.wikipedia.org/wiki/Crates_of_Thebes)    
-**Articles:** [[Lucian], The Cynic](https://lucianofsamosata.info/wiki/doku.php?id=home:texts_and_library:dialogues:the-cynic)  
+**Articles:** [[Lucian], The Cynic](https://lucianofsamosata.info/wiki/doku.php?id=home:texts_and_library:dialogues:the-cynic), [The Cynic Philosophers: From Diogenes to Julian](http://localhost:1313/tangled_thoughts/)  
 **Summary:**  
 The Cynics believed that the only thing that mattered for a life well lived was *virtue*. Everything else — wealth, power, social status — should be rejected. In that vein, they also rejected social conventions and engaged in public displays of non-conformity, such as urination, masturbation, or even sex in public, to shock and challenge societal norms.
 

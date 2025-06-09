@@ -1,7 +1,7 @@
 ---
 title: 'The Memelord Himself'
 date: 2025-06-02 07:00:00
-tags: ["quotes", "Cynicism"]
+tags: ["quotes", "Cynicism" ]
 ---
 
 > Do as Diogenes did: he was unwell on one occasion when someone gave him a shove and put him in a headlock.
