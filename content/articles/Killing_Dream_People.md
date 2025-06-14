@@ -6,7 +6,7 @@ tags: ["Philosophy"]
 
 # Dreams, Morality, and the Value of Life
 
-A while ago, I had a rather vivid [dream](https://monkemanx.github.io/tangled_thoughts/dream/), but I will spare you the details. What was important about this dream was the presence of a dying girl. Who she was isn't crucial; what's important is the dying part. 
+A while ago, I had a rather vivid [dream](https://monkemanx.github.io/tangled_thoughts/dream/), but I will spare you the details. What was important about this dream was the presence of a dying girl. Who she was isn't crucial; what's important is the dying part.
 
 This dream led me to wonder: What is the morally relevant factor that allows for the killing of dream people, but forbids the killing of "real" people? In other words, how can I define the value of human life in such a way that it includes real people but excludes dream people? And if I can't, shouldn't we give dream people the same moral consideration as real people? And what would this entail?
 
@@ -18,7 +18,7 @@ I have already tried to address this question in a [previous article](https://mo
 
 Before we proceed, I want to clarify that when I refer to "personhood" in this article, I mean it as a shorthand for "something deserving moral consideration," but I do not intend to imply any additional connotations that come with the word "personhood."
 
-Another point that needs clarification is what I mean when I say "moral consideration." Imagine a device capable of extracting dreams and displaying them in some kind of showbox for people to watch and enjoy. Do we have a moral obligation toward the people in these dreams? For example, if the same device can also manipulate dreams, would it be morally justified to change the dream into a hellscape where the dream people eternally suffer, just for my amusement? Or am I allowed to destroy their "property"? Kill them? 
+Another point that needs clarification is what I mean when I say "moral consideration." Imagine a device capable of extracting dreams and displaying them in some kind of showbox for people to watch and enjoy. Do we have a moral obligation toward the people in these dreams? For example, if the same device can also manipulate dreams, would it be morally justified to change the dream into a hellscape where the dream people eternally suffer, just for my amusement? Or am I allowed to destroy their "property"? Kill them?
 
 If the people in the dream have intrinsic value, then the answer is obviously no. But do they have intrinsic value?
 
@@ -26,7 +26,7 @@ If a being deserves moral consideration, it means that when we, as agents, perfo
 
 It’s important to note that even if dream people do deserve moral consideration, there might still be arguments as to why certain actions (like those mentioned above) are morally permissible. For example, one could argue that dream people have [different interests](https://iep.utm.edu/animals-and-ethics/#SSH3aiii) from us, and these interests may not include their continued existence or "suffering."
 
-You might think that all of this doesn't matter since the girl in my dream was just a fiction of my imagination. To that, I have several rebuttals, which you will see later. But to begin with: Who’s to say that you are not a fiction in the dream landscape called the Universe, dreamed by a greater entity, more commonly referred to as God? 
+You might think that all of this doesn't matter since the girl in my dream was just a fiction of my imagination. To that, I have several rebuttals, which you will see later. But to begin with: Who’s to say that you are not a fiction in the dream landscape called the Universe, dreamed by a greater entity, more commonly referred to as God?
 
 {{< rawhtml >}}
 <figure>
@@ -100,7 +100,7 @@ First of all, the concept of an "own body" is not clearly defined. Where does on
 
 Similar to the "human life" argument, we can imagine scenarios where we would say a person deserves moral consideration even though they don't have their own body. For example, imagine in the future, we are able to upload minds into computers, creating [digital minds](https://en.wikipedia.org/wiki/Mind_uploading). Would we now say that just because we changed the outward form of a person, they are no longer a person? Would it be morally permissible to torture or kill these minds?
 
-Again, most people would say no—just because we change the body of a person from a biological one to a mechanical or digital one, they do not lose their rights or personhood. 
+Again, most people would say no—just because we change the body of a person from a biological one to a mechanical or digital one, they do not lose their rights or personhood.
 
 
 # Creation and Moral Rights
@@ -123,7 +123,7 @@ If, through [random quantum fluctuation](https://en.wikipedia.org/wiki/Boltzmann
 I would answer, "No!", to all of these questions. How consciousness or human life was created, or by whom, does not matter in the consideration of whether they should have moral rights.
 
 
-# Location and Moral Rights 
+# Location and Moral Rights
 
 We could argue, what separates "real" people from dream people is the location or place they inhabit. This is true in a sense: dream people live in dreams, while "real" people live in the "real" physical world. But simply pointing to a difference in location is not enough to establish a moral distinction. The distinction needs to be *morally relevant*, and it clearly is not.
 
@@ -148,7 +148,7 @@ When a dream person is physically harmed, none of these biological mechanisms ex
 
 So, how can a being that has no capacity for pain be considered worthy of moral consideration? In Peter Singer's paper, [*All Animals Are Equal*](https://monkemanx.github.io/paper-summary/all_animals_are_the_same/), he argues that the capacity to suffer is a requirement for moral consideration.
 
-First, the feeling of pain does not solely depend on special sensory neurons; it can also be triggered by electrical signals entirely within the brain (e.g., phantom pains, migraines). Second, just because a being does not experience the phenomenon of pain does not mean it cannot experience suffering. For example, a simulated human consciousness might not feel pain but could still experience emotional suffering, such as the loss of a loved one. 
+First, the feeling of pain does not solely depend on special sensory neurons; it can also be triggered by electrical signals entirely within the brain (e.g., phantom pains, migraines). Second, just because a being does not experience the phenomenon of pain does not mean it cannot experience suffering. For example, a simulated human consciousness might not feel pain but could still experience emotional suffering, such as the loss of a loved one.
 
 Lastly, it is possible that the dream person is experiencing pain, but that pain remains confined to the brain region responsible for their consciousness, rather than being transmitted to your entire brain. In other words, the pain of the dream person could be isolated from you, without you even being aware of it.
 
@@ -191,6 +191,50 @@ So when we ask the question: Are dream people conscious? We should keep in mind 
 I want to caveat this by saying that active inference is a model, so it doesn't claim to know the truth about how things are, but rather serves as a good approximation. Future evidence may show that minimizing surprise is not, in fact, what is happening in organisms.
 
 Also noteworthy is that this assumes it is even possible to simulate human consciousness in the first place. One should also be mindful that evolutionary arguments can help motivate an argument, but they shouldn't be used as the main thrust of the argument (e.g., see [why evolutionary psychology is so controversial](https://www.reddit.com/r/PhilosophyofScience/comments/1bjs6yf/why_is_evolutionary_psychology_so_controversial/)).
+
+
+
+> The human brain is divided at the level of the cerebrum (everything above the brain stem) into right and left hemispheres. [...]
+The right and left hemispheres of all vertebrate brains are connected by several nerve tracts called commissures, the function of which, we now know, is to pass information back and forth between them. [...]
+>
+> Certain people have had their forebrain commissures surgically severed. This is generally undertaken as a treatment for severe epilepsy, though other surgeries occasionally require that some of these fibers be cut. As a treatment for epilepsy, patients usually receive a callosotomy, a procedure whereby most or all of the corpus callosum is severed to prevent local storms of unregulated activity from spreading throughout the brain and producing a seizure. [...]
+>
+> Once patients recover from this surgery, they generally appear quite normal, even on neurological exam. [...] Two principal findings emerged. First, the left and right hemispheres of the brain display a high degree of functional specialization. [...]
+> The second finding was that when the forebrain commissures are cut, the hemispheres display an altogether astonishing functional independence, including separate memories, learning processes, behavioral intentions, and— it seems all but certain—centers of conscious experience. [...]
+>
+> Everything that falls in the left visual field of each eye, for instance, is projected to the right hemisphere of the brain, and everything in the right visual field is projected to the left hemisphere.
+> Thus, each hemisphere relies on intact commissures to receive information from its own side of the world. While it can rarely speak, because speech is usually confined to the left hemisphere, the right hemisphere can respond to questions by pointing to written words and objects with the left hand.
+>
+> The classic demonstration of hemispheric independence in a split-brain patient runs as follows: Show the right hemisphere a word—egg, say—by briefly flashing it in the left half of the visual field, and the subject (speaking from his language-dominant left hemisphere) will claim to have seen nothing
+at all. Ask him to reach behind a partition and select with his left hand (which is predominantly controlled by the right hemisphere) the thing that he “did not
+see,” and he will succeed in picking out an egg from among a multitude of objects.
+> Ask him to name the item he now holds in his left hand without allowing the left hemisphere to get a look at it, and he will be unable to reply. If shown the egg and asked why he selected it from among the available materials, he will probably confabulate an answer (again, with his language- dominant left hemisphere), saying something like “Oh, I picked it because I had eggs for breakfast yesterday.” [...]
+> In the acute phase after surgery, patients’ left and right hands sometimes engage in a tug-of-war over an object or sabotage each other’s work. [...]
+>
+> When the lateralization of inputs to the brain is exploited in this way, it becomes difficult to say that the person whose brain has been split is a single subject, for everything about his behavior suggests that a silent intelligence lurks in his right hemisphere, about which the articulate left hemisphere knows nothing. [...]
+>
+> Even many years after surgery, the left hemispheres of these subjects express surprise or irritation when their right hemispheres respond to an experimenter’s instructions. To ask the left hemisphere what it is like to not know what the right hemisphere is thinking is rather like asking a normal subject what it is like to not know what another person is thinking: He simply does not know what the other person is thinking (or even, perhaps, that he or she exists).
+>
+> What is most startling about the split-brain phenomenon is that we have every reason to believe that the isolated right hemisphere is independently conscious. [...]
+>
+> In a famous example, a young patient was asked what he wanted to be when he grew up: His left brain replied, “A draftsman,” while his right brain used letter cards to spell out “racing driver.”[...]
+>
+> The question of whether there is “something that it is like” to be the right hemisphere of a split-brain patient must be answered in the only way that it is ever answered in science: We can merely observe that its behavior and underlying neurology are sufficiently similar to that which we know to be
+correlated with consciousness in our own case. [...]
+>
+> The question of whether the right hemisphere is conscious is really a pseudo-mystery used to bar the door to a great one: the uncanny fact that the **human mind can be divided with a knife.**
+>
+>
+> Imagine undergoing a complete callosotomy. Like most such surgeries, you could be kept awake, because there are no pain receptors in the brain. There is also no reason to think that you would lose consciousness during the procedure, because a person can have an entire hemisphere removed (hemispherectomy) without loss of consciousness. Nor would you suffer a
+lapse in memory. After surgery, you would tend to speak in a way
+characteristic of alexithymia (the inability to describe your emotional life), and you might also demonstrate an inappropriate degree of politeness.
+Whether or not you had occasion to notice these changes in yourself, it seems all but certain that you would retain your sense of being a “self” throughout the experience.
+> Given that each hemisphere in your divided brain would have its own point of view, whereas now you appear to have only one, it is natural to wonder which side of the longitudinal fissure “you” would find yourself on once the corpus callosum was cut. Would you land on the right or on the left? It is hard to resist the uncanny demands of arithmetic here. Assuming that you were not simply extinguished and replaced by two new subjects—which seems ruled out by the fact that you would probably remain conscious throughout the procedure and retain your memories—it is tempting to conclude that your subjectivity must collapse to a single hemisphere. Once the surgery was over,
+it would be obvious that you can’t be on both sides of the great divide.[...]
+>
+> I think this riddle admits of a rather straightforward solution. Consciousness—whatever its relation to neural events—is divisible. And just as it isn’t shared between the brains of separate individuals, it need not be shared between the hemispheres of a single brain once the structures that facilitate such sharing have been cut.
+>
+> ~ Sam Harris, Waking Up
 
 
 ## Consciousness in Consciousness: Information Flow and Ownership
