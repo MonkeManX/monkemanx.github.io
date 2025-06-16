@@ -1,14 +1,14 @@
 ---
 title: 'Freedom of the Will and the Concept of a Person'
-date: 2025-05-27 13:00:00  
+date: 2025-05-27 13:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
-**Paper Title:** Freedom of the Will and the Concept of a Person  
-**Link to Paper:** https://www.jstor.org/stable/2024717  
-**Date:** January, 1971  
-**Paper Type:** Philosophy   
-**Short Abstract:**    
+**Paper Title:** Freedom of the Will and the Concept of a Person
+**Link to Paper:** https://www.jstor.org/stable/2024717
+**Date:** January, 1971
+**Paper Type:** Philosophy
+**Short Abstract:**
 Frankfurt says that freedom of the will means being able to want the desires you actually have and act on. This idea shows why freedom of the will is important, why only humans have it, and how people can still be responsible for their actions even if everything is determined.
 
 
@@ -27,7 +27,7 @@ This capacity for **reflective self-evaluation** and for forming second-order de
 
 The term **"want"** is ambiguous, saying “A wants to X” is not very informative, as this could mean many different things depending on context:
 - someone might want something unconsciously,
-- might deny they want it, 
+- might deny they want it,
 - might not act on it,
 - or might have conflicting desires
 
@@ -38,15 +38,15 @@ He then introduces the concept of the will:
 > The will is the desire (or set of desires) that actually moves a person to act.
 
 Further, he differentiates between two types of second-order desires:
-1. **Detached second-order desire:**   
+1. **Detached second-order desire:**
     A person may want to have a certain desire without wanting that desire to actually guide their actions.
     *Example:* A doctor might want to understand drug addiction better and thus wish to desire the drug—but not to act on that desire. This is a theoretical or experiential interest, not a change of will.
-2. **Committed second-order desire (or second-order volition):**  
+2. **Committed second-order desire (or second-order volition):**
     A person wants a certain desire to become their will—that is, the desire that actually determines their behavior.
     *Example:* Someone wants to want to focus on work *and* wants that desire to be effective in motivating their actions.
 
 
-## 2. The 'wanton' and the Person 
+## 2. The 'wanton' and the Person
 
 Frankfurt distinguishes between **persons** and **wantons** based on the capacity for **second-order volitions**. A **second-order desire** is a desire about a desire, and a **second-order volition** is when someone wants a particular desire to be their effective will—the one that moves them to act.
 
@@ -86,3 +86,21 @@ He also challenges the idea that **moral responsibility** depends on having a fr
 He gives the example of a **willing addict**—someone whose addiction forces them to want drugs, but who also fully embraces that desire. Their will isn’t free (they couldn’t want otherwise), but they still act **freely and responsibly**, because they identify with their desire.
 
 Finally, Frankfurt says his theory doesn’t depend on whether the universe is **deterministic** or not. It could be determined (by causes, chance, or something else) that some people have free wills and others don’t—and that’s not a contradiction.
+
+---
+
+## My Own Thoughts
+
+If, as Frankfurt argues, we as humans are responsible for our actions—even though we have no freedom of will, meaning that in every situation we could not have chosen otherwise—how can he say we are morally responsible?
+
+Because then we would be like robots or machines, following a preprogrammed plan and never deviating from it. And if, in a car factory, a manufacturing robot kills a human because the person accidentally stepped into its path, would we fault the robot? No.
+
+So what is the difference that would justify attributing moral responsibility to humans but not to robots or machines?
+
+Frankfurt's answer is that the difference lies precisely in the **second-order desires** that humans possess and robots do not.
+
+But as we also established, not all humans possess the ability to have desires about their desires—for example, infants or people with profound cognitive disabilities. How does this affect them? They are not morally responsible for their actions, and this is not a counterintuitive notion.
+
+If we look at how society—and we ourselves—treat these groups, it becomes clear: infants can't be prosecuted by law, and if someone profoundly mentally disabled stabs another person, we generally do not hold them morally accountable.
+
+Thus, our societal intuitions about who does and does not bear moral responsibility align perfectly with Frankfurt's theory.
