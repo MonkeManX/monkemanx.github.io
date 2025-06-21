@@ -12,17 +12,16 @@ This section provides an overview of my positions on various topics. By "positio
 
 This section is a work in progress, and I will add entries to it whenever I write a relevant article. Furthermore, for most topics, I do not have time to explore every position in detail. As such, I have a strong bias towards the positions I’ve read about most thoroughly.
 
-
 ## Philosophy
 
 **Metaphilosophy**
 - Why care about philosophy? A: [Philosophical assumptions and better conversations](/articles/metaphilosophy)
 - What is the aim of philosophy? A: [Philosophy as a model](/articles/metaphilosophy)
 
-**Value Theory**  
+**Value Theory**
 - What do we *value*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/)
 
-**Ethics**  
+**Ethics**
 - What does *ought* mean? A: [Ought as an outdated concept](/articles/the_meaning_of_ought/)
 - What is *morality*? A: [Fictionalism with a bit constructivism](/articles/metaethical_position/)
 - How shoud one *act* to be moral? A: [Virtue Ethics](/articles/aristotele_virtue_ethics/)
@@ -36,18 +35,20 @@ This section is a work in progress, and I will add entries to it whenever I writ
 **Aesthetics**
 - What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)
 
-## Artificial Intelligence 
+## Artificial Intelligence
 
-**Road to AGI**     
+**Road to AGI**
 Symbolic AI will not lead us to AGI, as it doesn't seem feasible to write enough rules to cover every possible intelligent behavior pattern. Instead, the current data-driven paradigm using deep learning, in combination with some form of reinforcement learning, will be needed. Deep learning provides the world model, while reinforcement learning allows the agent to act upon the world model and refine it, through a feedback loop, as layed out by *active inference*.
 
 {{< /details >}}
 
+To improve clarity and grammar, some of the texts on this site have been proofread and edited using ChatGPT.
 
 
 # Contact
 
-Feel free to contact me, I am happy about every email I receive: monkeman@cock.li   
+Feel free to contact me, I am happy about every email I receive: monkeman@cock.li
+
 If you want to encrypt your email use my
 {{< rawhtml >}}
 <a download href="/monkeman_public.asc">public PGP Key</a>.
