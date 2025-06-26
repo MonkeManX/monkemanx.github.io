@@ -4,11 +4,11 @@ date: 2025-06-20 16:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
-**Paper Title:** Rational Animals
-**Link to Paper:**  https://www.jstor.org/stable/42969807?seq=1
-**Date:** 1982
-**Paper Type:** Philosophy, Action Theory
-**Short Abstract:**
+**Paper Title:** Rational Animals  
+**Link to Paper:**  https://www.jstor.org/stable/42969807?seq=1  
+**Date:** 1982  
+**Paper Type:** Philosophy, Action Theory  
+**Short Abstract:**  
  In this paper, Davidson tries to determine the distinguishing characteristics between rational and non-rational animals. For him, the key difference lies in having *propositional attitudes*, such as belief and desire—which require language and communication as prerequisites.
 
 

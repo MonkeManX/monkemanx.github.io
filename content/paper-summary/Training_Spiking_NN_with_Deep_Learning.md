@@ -4,12 +4,12 @@ date: 2025-06-24
 tags: ["paper-summary", "Neuromorphic" ]
 ---
 
-**Paper Title:** Training Spiking Neural Network Using Lessongs from Deep Learning
-**Link to Paper:** https://arxiv.org/abs/2109.12894
-**Date:** 27. Sep 2021
-**Paper Type:** Neuromorphic-Computing, Spiking Neural Networks, Deep Learning
-**Short Abstract:**
-This paper provides an overview of training spiking neural networks (SNNs), which are networks inspired by the brain and use spikes for information propagation. It focuses particularly on how deep learning techniques can be used for SNNs.
+**Paper Title:** Training Spiking Neural Network Using Lessongs from Deep Learning  
+**Link to Paper:** https://arxiv.org/abs/2109.12894  
+**Date:** 27. Sep 2021  
+**Paper Type:** Neuromorphic-Computing, Spiking Neural Networks, Deep Learning  
+**Short Abstract:**  
+This paper provides an overview of training spiking neural networks (SNNs), which are networks inspired by the brain and use spikes for information propagation. It focuses particularly on how deep learning techniques can be used for SNNs.  
 
 {{< info "Info" >}}
 

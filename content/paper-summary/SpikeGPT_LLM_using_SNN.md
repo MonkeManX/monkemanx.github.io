@@ -4,11 +4,11 @@ date: 2025-06-25 10:00:00
 tags: ["paper-summary", "LLM", "Neuromorphic"]
 ---
 
-**Paper Title:** SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks
-**Link to Paper:** https://arxiv.org/abs/2302.13939
-**Date:**  27. Feb. 2023
-**Paper Type:** LLM, SNN, Neuromorhic
-**Short Abstract:**
+**Paper Title:** SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks    
+**Link to Paper:** https://arxiv.org/abs/2302.13939    
+**Date:**  27. Feb. 2023    
+**Paper Type:** LLM, SNN, Neuromorphic-Computing  
+**Short Abstract:**  
 This paper presents an LLM using the SNN architecture. To achieve this, the authors develop their own attention mechanism
 
 
