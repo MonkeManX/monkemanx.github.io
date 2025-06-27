@@ -4,11 +4,11 @@ date: 2023-12-01
 tags: ["paper-summary", "LLM"]
 ---
 
-**Paper Title:** Attention is All You Need
-**Link to Paper:** https://arxiv.org/abs/1706.03762
-**Date:** 12. Jun2 2017
-**Paper Type:**  LLM, Architetcure, Attention
-**Short Abstract:**
+**Paper Title:** Attention is All You Need  
+**Link to Paper:** https://arxiv.org/abs/1706.03762  
+**Date:** 12. Jun2 2017   
+**Paper Type:**  LLM, Architetcure, Attention  
+**Short Abstract:**  
 "Attention is All You Need" is a landmark paper that helped usher in the modern era of AI. It proposes the Transformer architecture, which relies on attention mechanisms to weight all the tokens in a sequence based on the current token.
 
 
