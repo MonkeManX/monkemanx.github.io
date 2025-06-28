@@ -4,11 +4,11 @@ date: 2025-05-27 13:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
-**Paper Title:** Freedom of the Will and the Concept of a Person  
-**Link to Paper:** https://www.jstor.org/stable/2024717  
-**Date:** January, 1971  
-**Paper Type:** Philosophy  
-**Short Abstract:**  
+**Paper Title:** Freedom of the Will and the Concept of a Person
+**Link to Paper:** https://www.jstor.org/stable/2024717
+**Date:** January, 1971
+**Paper Type:** Philosophy
+**Short Abstract:**
 Frankfurt says that freedom of the will means being able to want the desires you actually have and act on. This idea shows why freedom of the will is important, why only humans have it, and how people can still be responsible for their actions even if everything is determined.
 
 
@@ -104,3 +104,19 @@ But as we also established, not all humans possess the ability to have desires a
 If we look at how society—and we ourselves—treat these groups, it becomes clear: infants can't be prosecuted by law, and if someone profoundly mentally disabled stabs another person, we generally do not hold them morally accountable.
 
 Thus, our societal intuitions about who does and does not bear moral responsibility align perfectly with Frankfurt's theory.
+
+## Background or Why this is relevant?
+
+**Why does Frankfurt define the will so weirdly?**
+
+It has to do with free will. The traditional argument goes like this:
+
+1. If every act is determined by prior events and natural laws, then we couldn't have acted differently—because for us to have done so, the prior events and laws would also have had to be different, which they are not.
+2. If we couldn't have acted differently—because no act has a real alternative—then the concept of "will," as commonly understood (implying choice or freedom), seems to collapse.
+3. If there is no such thing as will, then there can be no moral responsibility, since responsibility assumes we could have chosen otherwise.
+
+Frankfurt responds to this dilemma by redefining "free will" in a way that doesn't rely on the ability to do otherwise. For him, freedom of the will is not about external alternatives but about *internal alignment*—specifically, whether our actions stem from the desires we *want* to be motivated by.
+
+He introduces the idea of **higher-order volitions**: we are free, and morally responsible, when our actions flow from desires that we endorse at a deeper level (i.e., when our first-order desires are in line with our second-order volitions). So, even in a deterministic universe, moral responsibility is preserved because it’s rooted not in alternative possibilities, but in *authenticity* and *self-governance*.
+
+By defining the will this way, Frankfurt sidesteps the classic determinism problem and reframes free will as a matter of inner coherence rather than metaphysical freedom.
