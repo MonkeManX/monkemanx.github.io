@@ -138,6 +138,12 @@ To build this mapping, we proceed as follows:
 </figure>
 {{< /rawhtml >}}
 
+One might ask: why do we need to learn the mapping from weights to physical components in the first place? Shouldn't there be a simple formula to calculate this directly?
+
+The answer is yes, for simple components — for example, in a basic crossbar structure, the mapping is straightforward and can be calculated analytically. However, for more complex components like a tanh-shaped activation function, which consists of multiple circuit elements, the mapping becomes much more complicated. In such cases, one would need to solve a system of nonlinear equations, which is computationally slow and often impractical.
+
+Therefore, using a learned approximation (surrogate model) is a more efficient and scalable solution.
+
 
 ### 3.2 Constraints
 
@@ -204,6 +210,9 @@ Both the variation-aware training and the learnable activation functions substan
 ## My Thoughts
 
 I am a bit unsure about exactly how they train the weights of the model, specifically the weights in the P-SNN circuit, which correspond to the strength of the resistors in the crossbars. My best guess is that they do it similarly to [Hardware Efficient Weight-Binarized Spiking Neural Networks](/paper-summary/harwarde_effcient_binarized_snn/), which is from the same authors.
+
+Also, when the paper refers to neuromorphic, it specifically means three things (1) Analog computation, (2) Neural network-based structure, (3) Physically implemented as a printed circuit.
+It does not imply the use of spiking neural networks (SNNs) or any other biologically inspired models. So, in this paper, the term "neuromorphic" is used in a very specific and narrow way: analog neural networks physically realized in hardware. Personally not a fan of this definition.
 
 I think variation-aware training is a good idea. However, I’m more skeptical about learnable activation functions. There is a reason why larger neural networks usually use the same activation function throughout:
 
