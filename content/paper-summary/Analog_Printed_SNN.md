@@ -13,9 +13,9 @@ It's been a while since I listened to the lecture on *Computer Organization*, wh
 
 **Paper Title:** Analog Printed Spiking Neuromorphic Circuit  
 **Link to Paper:**  https://core.ac.uk/download/pdf/596774544.pdf  
-**Date:** 2025-06-30  
+**Date:** 25. March 2024  
 **Paper Type:** Neuromorphic Computing, SNN, Printed Electronics, Circuit Design  
-**Short Abstract:**  121
+**Short Abstract:**  
 This paper introduces a novel design for an Analog Printed Spiking Neural Network (P-SNN) using printed electronics, aimed at creating a low-power and efficient neuromorphic system.
 
 
