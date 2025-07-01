@@ -41,7 +41,6 @@ Two common printing techniques are:
   * *Inorganic:* Can operate with voltages below 1V
 
 {{< rawhtml >}}
-
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width: 80%;" src="/attachments/Printable_Circuits.png">
 </figure>
@@ -60,7 +59,6 @@ A typical P-SNN neuron consists of three main components:
 * **Reset and Discharge Network**: Responsible for decaying the membrane voltage over time and resetting it after the neuron fires.
 
 {{< rawhtml >}}
-
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width: 100%;" src="/attachments/Printable_SNN_Neuron.png">
 </figure>

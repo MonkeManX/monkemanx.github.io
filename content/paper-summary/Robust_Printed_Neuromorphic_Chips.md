@@ -195,7 +195,6 @@ To model this:
 ### 4.2 Results
 
 {{< rawhtml >}}
-
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width: 100%;" src="/attachments/Neuromorhphic_chips_results.png">
 </figure>
