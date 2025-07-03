@@ -4,11 +4,11 @@ date: 2025-05-27 13:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
-**Paper Title:** Freedom of the Will and the Concept of a Person
-**Link to Paper:** https://www.jstor.org/stable/2024717
-**Date:** January, 1971
-**Paper Type:** Philosophy
-**Short Abstract:**
+**Paper Title:** Freedom of the Will and the Concept of a Person  
+**Link to Paper:** https://www.jstor.org/stable/2024717  
+**Date:** January, 1971  
+**Paper Type:** Philosophy  
+**Short Abstract:**  
 Frankfurt says that freedom of the will means being able to want the desires you actually have and act on. This idea shows why freedom of the will is important, why only humans have it, and how people can still be responsible for their actions even if everything is determined.
 
 

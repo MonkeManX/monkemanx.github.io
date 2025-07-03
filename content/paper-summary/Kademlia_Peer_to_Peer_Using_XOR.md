@@ -4,11 +4,11 @@ date: 2025-07-02 10:00:00
 tags: ["paper-summary", "Decentralized Systems"]
 ---
 
-**Paper Title:** Kademlia: A Peer-to-peer Information System Based on the XOR Metric    
-**Link to Paper:** https://dl.acm.org/doi/10.5555/646334.687801   
-**Date:** 07. March 2002   
-**Paper Type:** Netowrk, Peer-to-Peer, Architectures, Decentralized Systems, File sharing   
-**Short Abstract:**  
+**Paper Title:** Kademlia: A Peer-to-peer Information System Based on the XOR Metric
+**Link to Paper:** https://dl.acm.org/doi/10.5555/646334.687801
+**Date:** 07. March 2002
+**Paper Type:** Network, Peer-to-Peer, Architectures, Decentralized Systems, File sharing
+**Short Abstract:**
 The authors propose Kademlia, a peer-to-peer architecture that can be used for file sharing. It employs a distributed hash table with the XOR metric.
 
 
