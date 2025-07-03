@@ -12,7 +12,7 @@ tags: ["paper-summary", "philosophy"]
  In this paper, Davidson tries to determine the distinguishing characteristics between rational and non-rational animals. For him, the key difference lies in having *propositional attitudes*, such as belief and desire—which require language and communication as prerequisites.
 
 
-### 1. Propositional Attitudes
+## 1. Propositional Attitudes
 
 We think of some beings as rational and some as not—rational beings are those that act on reasons, sometimes deliberate, and imagine consequences. Rationality does not imply perfection; rational beings can make errors and act against their own best interests.
 
@@ -117,3 +117,16 @@ He concludes with:
 > Each interacts with an object, but what gives each the concept of the way things are objectively is the baseline formed between the creatures by language.
 > The fact that they share a concept of truth alone makes sense of the claim that they have beliefs, that they are able to assign objects a place in the public world.
 > The conclusion of these considerations is that rationality is a social trait. Only communicators have it.
+
+---
+
+## Some Thoughts 
+
+
+The fundamental problem in Davidson's text is that he assumes the following:
+1. To have a belief, it is necessary to understand the concept of belief.
+2. But if we include this in our definition, then to have a belief, one must already have a belief about belief.
+3. And so on—this leads to an infinite regress.
+The only way for Davidson to make sense of this is by adopting a holistic view: belief is not something that exists in isolation, but only as part of a network of interconnected beliefs. You either have the entire structure of beliefs—or you don't have belief at all.
+
+For Davidson, language is both necessary and sufficient for thought and propositional attitudes, and thought and propositional attitudes are both necessary and sufficient for rationality.
