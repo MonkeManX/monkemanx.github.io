@@ -19,7 +19,8 @@ This section is a work in progress, and I will add entries to it whenever I writ
 - What is the aim of philosophy? A: [Philosophy as a model](/articles/metaphilosophy)
 
 **Value Theory**
-- What do we *value*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/)
+- What deserves *moral consideration*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/) and [Capacity to experience Suffering](/tangled_thoughts/philosophical_ramblings_pain_conciousness_animals/)
+- What do we *value*? A: [Value arises from Subjectivity](/articles/where_the_eiffel_tower_is_is_not_obejctive/).
 
 **Ethics**
 - What does *ought* mean? A: [Ought as an outdated concept](/articles/the_meaning_of_ought/)

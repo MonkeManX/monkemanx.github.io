@@ -4,6 +4,10 @@ date: 2024-12-17
 tags: ["Philosophy"]
 ---
 
+{{< info "Info" >}}
+Addendum: [Philosophical Ramblings #07: Pain, Consciousnessand the Value of Animals](/tangled_thoughts/philosophical_ramblings_pain_conciousness_animals/)
+{{< /info >}}
+
 # Dreams, Morality, and the Value of Life
 
 A while ago, I had a rather vivid [dream](https://monkemanx.github.io/tangled_thoughts/dream/), but I will spare you the details. What was important about this dream was the presence of a dying girl. Who she was isn't crucial; what's important is the dying part.

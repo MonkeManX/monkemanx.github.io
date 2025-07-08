@@ -5,7 +5,11 @@ tags: ["Philosophy"]
 ---
 
 {{< info "Info" >}}
-This post is incomplete, it doesn't hold every argument or consideration for every position, just some. 
+This post is incomplete, it doesn't hold every argument or consideration for every position, just some.
+{{< /info >}}
+
+{{< info "Info" >}}
+Addendum: [Philosophical Ramblings #07: Pain, Consciousnessand the Value of Animals](/tangled_thoughts/philosophical_ramblings_pain_conciousness_animals/)
 {{< /info >}}
 
 It would not be a controversial statement to say, that a person deserves moral consideration i.e. when doing an action involving another person one must consider the morality of the action. For example most people would agree that murdering a person is wrong, because in general we think that each person has a right to live, which gets infringed through the action of murder.
@@ -19,17 +23,17 @@ Central to all of these questions is, what is a person? What makes something a p
 
 There are many different definitions on what a person is/when something deserves moral considerations, I want to explore some of them:
 - personhood is the potential to life and that begins at:
-    - conception 
+    - conception
     - even when the egg and sperm is separated
 - personhood is being fully conscious
 - personhood is the ability/capability of being conscious
 
-Some people have argued that being a person starts at conception i.e. the moment the sperm penetrates the egg and fertilizes it. 
-This is a position often held by people being anti-abortion or pro-life. 
+Some people have argued that being a person starts at conception i.e. the moment the sperm penetrates the egg and fertilizes it.
+This is a position often held by people being anti-abortion or pro-life.
 Besides the religious argument, I do not want to deal with here, one argument in favor of this position is the argument of a "sliding-scale". The argument goes something like this: the development of a human from conception to birth is continuous - the problem is now to draw a line in this continues development where from left from the line there is something and on the right of the line there is person, every possible line drawn would be arbitrary. If it is wrong to kill an infant but not a fetus, one should be able to point to a relevant moral fact, that differentiates these two.
 
 I want to offer some rebuttals to this idea. If every line drawn on continuous spectrum is arbitrary, why stop at conception? With the same reasoning one could argue that the potential of life is enough to consider something a person i.e. the egg and the sperm are already a person.
-To expand a bit on this, I want to use the same reasoning of the "sliding-scale" argument from before, If we should treat a fertilized egg different from an unfertilized egg, one should be able to point to a relevant moral fact, that differentiates them. 
+To expand a bit on this, I want to use the same reasoning of the "sliding-scale" argument from before, If we should treat a fertilized egg different from an unfertilized egg, one should be able to point to a relevant moral fact, that differentiates them.
 The first thing that comes to mind is that in the first case, the genetic material of the future person is already combined into one while in the latter case, the genetic material of the sperm and egg is still separated. But is this really meaningful moral differentiation?
 Let's look as the following hypothetical, if one has a duty to open a door that need two separate keys, and we have following two scenarios (1) both keys are already put in the lock (2) One key is already put in the lock and the other one is in one's pocket. Intuitively we would say just because the key in (2) is not already put in the lock, the duty still persists, so the differentiation wouldn't be morally relevant enough. Just the same we could argue the duty of protecting the life of a person should also extend to unfertilized egg and sperm.
 
@@ -37,11 +41,11 @@ I want to focus on the definition, of a fertilized egg being a person, since its
 I want to draw attention to the fact that often times fertilized eggs in a woman do not result in birth, there are many reasons for fertilized eggs to die which I do not want to explain here, but this leads to the fact that a woman can have in this definition a "miscarriage of a person" without even knowing.
 If we take the premises of (1) Harming innocent person is wrong (2) Something is a person at conception (3) There are many cases, where the fertilized eggs die, resulting in "miscarriages" (4) We should, prevent the harm of innocent person. From these premises it would follow that after a woman had sex, they should immediately be rushed to a hospital and stay there until birth and constantly be monitored to track the development off the fertilized egg, to make sure there is no chance of an accidental "miscarriages", since a accidental "miscarriage" of a 1 day fertilized egg would be treated the same as the accidental death of an adult.
 
-In most systems of law around the world, there exist a law that penalized action or non-action which lead to accidental death of a person. 
-Thus, if we would define a person as beginning as a fertilized egg, and we consider that under law every person should be treated equal. 
-Wouldn't this lead to the following: A woman that has a 1 day fertilized egg inside her and exercises too hard which lead to a "miscarriages" (which she might not even know happened) should be punished under said law? No sane person, would consider imprisoning a woman because she exercised too much, which lead to the death of a 1 day fertilized egg, as just. 
+In most systems of law around the world, there exist a law that penalized action or non-action which lead to accidental death of a person.
+Thus, if we would define a person as beginning as a fertilized egg, and we consider that under law every person should be treated equal.
+Wouldn't this lead to the following: A woman that has a 1 day fertilized egg inside her and exercises too hard which lead to a "miscarriages" (which she might not even know happened) should be punished under said law? No sane person, would consider imprisoning a woman because she exercised too much, which lead to the death of a 1 day fertilized egg, as just.
 
-Some might say this is a unfair comparison to make, but is it? Let's say a parent feed their infant the wrong food and the infant died because of an allergy. Or let's say a parent made sport with the infant on the back and during the excesses, the parent landed on their back by accident killing the infant. 
+Some might say this is a unfair comparison to make, but is it? Let's say a parent feed their infant the wrong food and the infant died because of an allergy. Or let's say a parent made sport with the infant on the back and during the excesses, the parent landed on their back by accident killing the infant.
 In both of these scenarios, the parent would definitively be accused of at least accidental cause of death if not murder and most likely convicted.
 So if a fertilized egg is a person, shouldn't be the same be true for the egg? If this shouldn't hold for the egg (which most people would agree should be the case) the only other possibility is that an fertilized egg is less than a person.
 
@@ -49,7 +53,7 @@ The Arguments stated here, have more to do with practical considerations and mor
 
 I want to further address the "sliding-argument", which argues that if one wants to define a fertilized egg as not a person, but a fetus as a person, there should be a morally relevant fact that differentiates them. Which I want to do in the following section.
 
-Another definition we could take, for what is person is, is about consciousness. The argument goes something like this: When asking what person is, the real question we ask is: What of human nature does deserve protection? We could for example look at following hypothetical scenario, let's assume we are some years into the future, and you were in a terrible accident, upon arriving in the hospital the doctor asks you a question: "We can either save your brain and put you in an artificial body, or we can save your whole body besides the brain?" It would not be controversial to say that most people would pick the first options. This tells us something, when it really matters, what we want to protect is the brain of a person. Some further things to consider are, when we decide if a person in coma should be unplugged and die the decision is made, based on the brain activity patterns. 
+Another definition we could take, for what is person is, is about consciousness. The argument goes something like this: When asking what person is, the real question we ask is: What of human nature does deserve protection? We could for example look at following hypothetical scenario, let's assume we are some years into the future, and you were in a terrible accident, upon arriving in the hospital the doctor asks you a question: "We can either save your brain and put you in an artificial body, or we can save your whole body besides the brain?" It would not be controversial to say that most people would pick the first options. This tells us something, when it really matters, what we want to protect is the brain of a person. Some further things to consider are, when we decide if a person in coma should be unplugged and die the decision is made, based on the brain activity patterns.
 We have a kind of symmetry between the state of being not born yet (not existing) and being dead (not existing). Thus, one way we could define at the beginning of a person is, by looking when we declare a person to be dead or in other word what it means to be dead.
 
 For that we can look at different scenarios and ask us if we would say in the given scenario, if we think the person is dead?
@@ -75,4 +79,3 @@ This post didn't address all arguments in full rigor such as:
 Source:
 - Judith Jarvis Thomson: A Defense of Abortion
 - Michael Tooley: Abortion and Infanticide
-
