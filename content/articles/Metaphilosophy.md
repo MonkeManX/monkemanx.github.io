@@ -16,7 +16,7 @@ Whether we realize it or not, much of our contemporary and historical understand
 
 For example, the focus on individualism in Western societies can be traced back to Aristotle and his view that personal virtue is central to happiness and of paramount importance. This emphasis is not universal, as seen in more collectivist societies in Asia, which draw inspiration from Confucian thought. In these cultures, hierarchical structures and filial piety are central, and roles and duties often take precedence over personal ambition.
 
-Rationalism, the reliance on logical inquiry as a primary tool for understanding the world, is another example. First articulated by Aristotle and later developed by thinkers like Descartes, rationalism shaped Western thought. Yet, alternative approaches exist, as evidenced by spiritual and self-realization-based frameworks prominent in Eastern traditions like Advaita Vedanta and Anekantavada.
+Rationalism, the reliance on logical inquiry as a primary tool for understanding the world, is another example. First articulated by Aristotle and later developed by thinkers like Descartes, rationalism shaped Western thought. Yet, alternative approaches exist, as evidenced by spiritual and self-realization based frameworks prominent in Eastern traditions like Advaita Vedanta and Anekantavada.
 
 Similarly, the anthropocentric view dominant in Western societies—where humans are considered the most important entities in the universe—stems from Judeo-Christian theology and Enlightenment rationalism. In contrast, many Asian cultures, influenced by Buddhist and Jain teachings, place greater value on all forms of life, emphasizing harmony and equality among creatures.
 
@@ -29,14 +29,14 @@ As a final example, consider panpsychism as proposed by Philip Goff, which posit
 
 Another significant benefit of philosophy is its ability to enhance conversations. By understanding how formal argumentation works and recognizing logical fallacies, we can avoid these pitfalls and construct sound, valid arguments. Here are some common fallacies to be mindful of:
 
-- **Continuum Fallacy**: Rejecting a definition or claim because it is not precise enough.  
-- **Is-Ought Fallacy**: Drawing conclusions about what ought to be solely based on what is. In other words, just because something is a certain way doesn’t mean it should be that way.  
-- **Slippery Slope**: Arguing that a small change will inevitably lead to a significant and undesirable outcome, and therefore, the change should not be allowed.  
-- **Appeal to Authority**: Claiming something is true simply because an authority figure says so.  
+- **Continuum Fallacy**: Rejecting a definition or claim because it is not precise enough.
+- **Is-Ought Fallacy**: Drawing conclusions about what ought to be solely based on what is. In other words, just because something is a certain way doesn’t mean it should be that way.
+- **Slippery Slope**: Arguing that a small change will inevitably lead to a significant and undesirable outcome, and therefore, the change should not be allowed.
+- **Appeal to Authority**: Claiming something is true simply because an authority figure says so.
 
 Beyond avoiding fallacies, understanding the difference between valid and sound arguments can further improve the quality of discussions. A valid argument ensures that if all the premises are true, the conclusion must also be true. A sound argument, on the other hand, is both valid and has true premises. Recognizing these distinctions helps us identify problems in reasoning and refine arguments to make them more robust.
 
-Philosophy of language also contributes to better conversations. For instance, **[contextualism]((https://monkemanx.github.io/articles/what_is_knowledge/))**—the idea that the standard of evidence required for knowledge varies by situation—helps us understand how language and meaning adapt to different contexts. This understanding ensures more precise and effective communication. 
+Philosophy of language also contributes to better conversations. For instance, **[contextualism]((https://monkemanx.github.io/articles/what_is_knowledge/))**—the idea that the standard of evidence required for knowledge varies by situation—helps us understand how language and meaning adapt to different contexts. This understanding ensures more precise and effective communication.
 
 
 # Philosophy as a Model
@@ -48,9 +48,9 @@ However, not all mathematical models are inherently useful. A model’s utility 
 
 Philosophy operates in a way similar to natural science. For instance, when we ask questions like *What is morality?*, philosophers develop models to explain it, such as [emotivism, naturalism, or realism](https://monkemanx.github.io/articles/what_is_morality/). These models are then tested against our existing beliefs and empirical evidence to assess how well they align with reality. Just as scientific models are imperfect and prone to errors, philosophical models have their own shortcomings. Emotivism, for example, struggles with the "Frege-Geach" problem, naturalism faces challenges highlighted by the "Open Question Argument," and realism has difficulty addressing how morality, as a property of the real world, accounts for its motivational aspect. While none of these models perfectly explain morality or are free from flaws, they serve as tools to approximate the truth, much like models in natural science.
 
-This perspective is important to me because of my journey into philosophy. When I was 14, I was inspired by the incredible book Sophie's World and developed an interest in philosophy. However, over time, I became disillusioned. Philosophy started to feel frustratingly stagnant—endless open questions debated for thousands of years, with countless proposed answers, none of which ever seemed definitive. It felt as though no progress was being made. But when I started viewing these answers as models—imperfect attempts to approximate the truth from different perspectives; philosophy became much more meaningful. Each model offers a unique lens through which to view the world, helping us understand it, and ourselves. 
+This perspective is important to me because of my journey into philosophy. When I was 14, I was inspired by the incredible book Sophie's World and developed an interest in philosophy. However, over time, I became disillusioned. Philosophy started to feel frustratingly stagnant—endless open questions debated for thousands of years, with countless proposed answers, none of which ever seemed definitive. It felt as though no progress was being made. But when I started viewing these answers as models—imperfect attempts to approximate the truth from different perspectives; philosophy became much more meaningful. Each model offers a unique lens through which to view the world, helping us understand it, and ourselves.
 
-In a nutshell, 
+In a nutshell,
 
 > "If you don't bring into the light the presuppositions of your thinking, especially in moral and political spheres, then this makes you simply a prisoner of whatever the reigning orthodoxy is—it makes you a prisoner of the existing model, of the model of your age, of the model of your day."
 >

@@ -25,7 +25,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 **Ethics**
 - What does *ought* mean? A: [Ought as an outdated concept](/articles/the_meaning_of_ought/)
 - What is *morality*? A: [Fictionalism with a bit constructivism](/articles/metaethical_position/)
-- How shoud one *act* to be moral? A: [Virtue Ethics](/articles/aristotele_virtue_ethics/)
+- How should one *act* to be moral? A: [Virtue Ethics](/articles/aristotele_virtue_ethics/)
 
 **Epistemology**
 - What is *knowledge*? A: [Contextualism](/articles/what_is_knowledge/)
@@ -35,6 +35,12 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 **Aesthetics**
 - What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)
+
+**Theology**
+- Is there an *agentic* God? A: [No](/articles/nature_of_god/)
+- Is there an *non-agentic* God? A: [Maybe, as the precondition of Being](/paper-summary/ground_of_being/)
+- *Euthyphro dilemma*: Did God came first or Logic and Goodness? A: [God](/articles/commentary_9th_sermon_eckhart/)
+- How do we *talk* about God? A: [We can't](/articles/ontological_argument_and_apophatic_theology/)
 
 ## Artificial Intelligence
 

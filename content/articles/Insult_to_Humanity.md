@@ -6,7 +6,7 @@ tags: ["Philosophy"]
 
 {{< info "Info" >}}
 
-A bit shorter than usual, but I liked this too much to banish it to [Tangled Thoughts](/tangled_thoughts/), where no one—including me—would ever see it again.
+A bit shorter than usual, but I liked this too much to banish it to [Tangled Thoughts](/tangled_thoughts/), where no one, including me, would ever see it again.
 
 {{< /info >}}
 
@@ -28,10 +28,10 @@ There’s a fascinating phenomenon emerging on the internet: artists are express
 
 We might be witnessing a **fourth insult to humanity**:
 
-4. **Computational Insult:** The realization that many abilities once thought to be uniquely human—such as creativity, strategy, and language—can now be replicated by machines. Think of **AlphaGo**, **GPT-4**, **Claude**, and **Stable Diffusion**.
+4. **Computational Insult:** The realization that many abilities once thought to be uniquely human—such as creativity, strategy, and language can now be replicated by machines. Think of **AlphaGo**, **GPT-4**, **Claude**, and **Stable Diffusion**.
 
 
-This could explain the intense emotional reaction. With each of the historical insults, humanity’s privileged position in the cosmos has been diminished. But until recently, we still believed we were *uniquely creative*. 
+This could explain the intense emotional reaction. With each of the historical insults, humanity’s privileged position in the cosmos has been diminished. But until recently, we still believed we were *uniquely creative*.
 
 That only **we** could make brilliant Go moves.
 
@@ -55,14 +55,14 @@ That only **we** could craft alluring songs and soundscapes.
 
 And so on. Better examples are emerging every day.
 
-This last bastion of human ingenuity—our creative spirit—has been shaken. In combination with the ongoing secularization and meaning crisis, this has lit the fuse on a barrel of black powder—a psychological explosion of anguish, denial, and resistance.
+This last bastion of human ingenuity, our creative spirit, has been shaken. In combination with the ongoing secularization and meaning crisis, this has lit the fuse on a barrel of black powder, a psychological explosion of anguish, denial, and resistance.
 
 
 ## What Is a Human?
 
 The fundamental question before us is none other than: **"What is a human?"** And how does this relate to **meaning**?
 
-The ancient Greeks—particularly the Stoics—believed that the world was embedded with a *telos*, a purpose or reason for being. By examining what made one thing unique compared to another, one could discover its *telos*, and through that, its meaning. For example, what makes a fisherman uniquely special? It is that he fishes. Thus, the job, goal, *telos*, and meaning of a fisherman is to fish. Similarly, a construction worker's *telos* is to build.
+The ancient Greeks, particularly the Stoics, believed that the world was embedded with a *telos*, a purpose or reason for being. By examining what made one thing unique compared to another, one could discover its *telos*, and through that, its meaning. For example, what makes a fisherman uniquely special? It is that he fishes. Thus, the job, goal, *telos*, and meaning of a fisherman is to fish. Similarly, a construction worker's *telos* is to build.
 
 We can apply this reasoning to ourselves: what makes humans uniquely special when compared to everything else in nature? Whatever that is would point us to our *telos*. For the ancient Greeks, what made us special was *reason*—we were the only beings in nature capable of rational thought.
 
@@ -72,7 +72,7 @@ A very similar question, often asked before the rise of LLMs, was: *What differe
 
 So what is left?
 
-Before the emergence of artificial intelligence models, the go-to answer was **language**. No other animal can convey abstract concepts as we do. Sure, some animals can communicate simple messages like “Look there! Danger!”—but the ability to abstract and share that abstraction is what drove the success of the human species.
+Before the emergence of artificial intelligence models, the go-to answer was **language**. No other animal can convey abstract concepts as we do. Sure, some animals can communicate simple messages like “Look there! Danger!”, but the ability to abstract and share that abstraction is what drove the success of the human species.
 
 Yet this too has now been challenged. LLMs have become so skilled in conversation that the **Turing Test** is no longer taken seriously as a measure of consciousness or intelligence—because machines are now [regularly passing it](https://arxiv.org/abs/2503.23674).
 
@@ -84,12 +84,10 @@ I believe this is one of the greatest things that could have happened to us as a
 
 If humans are no longer uniquely special, then we are left with two possibilities: either *everything* is special, or *nothing* is.
 
-If everything is special, this new picture strongly supports [pantheism](https://en.wikipedia.org/wiki/Pantheism)—the belief that nature and God are one—as held by the Stoics, Spinoza, and, to some extent, Schopenhauer. For if everything is special, what makes everything special if not a spark of divinity embedded in all things?
+If everything is special, this new picture strongly supports [pantheism](https://en.wikipedia.org/wiki/Pantheism), the belief that nature and God are one, as held by the Stoics, Spinoza, and, to some extent, Schopenhauer. For if everything is special, what makes everything special if not a spark of divinity embedded in all things?
 
 On the other hand, if nothing is special, then we must create our own meaning on Earth. Be it, as Nietzsche proposed, through the exercise of power; as Camus suggested, through rebellion; or as Sartre argued, by choosing a set of values and committing to them with sincerity.
 
-But this decision, as Kierkegaard described, between everything or nothing—between faith or reason, a world filled with mystery or one governed by logic, the divine or the mundane, Jerusalem or Athens, comfort in the bosom of Mother Nature or in the precision of mathematics and science—is **criterialess**. There is no guiding principle, no objective signpost to lead the way. It is a choice that must be made **axiomatically**, and each of us must make it. There is no way around it. Even not choosing is, in itself, a choice.
+But this decision, as Kierkegaard described, between everything or nothing, between faith or reason, a world filled with mystery or one governed by logic, the divine or the mundane, Jerusalem or Athens, comfort in the bosom of Mother Nature or in the precision of mathematics and science, is **criterialess**. There is no guiding principle, no objective signpost to lead the way. It is a choice that must be made **axiomatically**, and each of us must make it. There is no way around it. Even not choosing is, in itself, a choice.
 
-**So choose—and choose wisely.**
-
-
+**So choose, and choose wisely.**

@@ -4,17 +4,12 @@ date: 2025-01-26
 tags: [ "Philosophy" ]
 ---
 
-{{< warning "Warning">}} I’m unhappy with some of the arguments presented
-here—particularly the claim that humans have a telos or function. Some of the
-phrasing is also problematic; for instance, where I referred to a "cognitivist
-perspective," I actually meant "Idealism," though even that term doesn’t quite
-work in its broader sense. Additionally, the structure of the text is weak. As
-such, the text needs to be reworked. Please keep this in mind while reading. {{<
+{{< warning "Warning">}} I’m unhappy with this article. As such, the text needs to be reworked. Please keep this in mind while reading. {{<
 /warning >}}
 
 In this article, based on the book Nicomachean Ethics by Aristotle and the
 companion book from Cambridge, I aim to reconstruct the argument for virtue
-ethics from first principles—meaning from basic axioms—into a single, cohesive
+ethics from first principles, meaning from basic axioms, into a single, cohesive
 argument structure, which I failed to do so.
 
 The central thesis of this article is that by cultivating virtues, one attains a
@@ -27,7 +22,7 @@ The first step is to establish some definitions that will be used in the
 argument that follows.
 
 **Motivational Observation:** Every method of production and every type of
-inquiry—similarly, every action and purpose—seems to aim at some good.
+inquiry, similarly, every action and purpose, seems to aim at some good.
 
 **Definition of "good":** We define "good" as "that which is aimed at"; to be
 good is to be a goal.
@@ -41,7 +36,7 @@ good is to be a goal.
 **Definition of "better":** When X and Y are goals, and X is for the sake of Y,
 then Y is better than X.
 
-- For instance, a carpenter will build a better house than a non-carpenter. Why?
+- For instance, a carpenter will build a better house than a non, carpenter. Why?
   Because while building the house, the carpenter performs actions and movements
   _for the sake of the house_. They understand the effects of their actions and
   choose them accordingly. It is because their actions are guided by the goal of
@@ -82,13 +77,13 @@ However, from a cognitive perspective, this statement holds significant
 validity.
 
 All actions we take, including our engagement in disciplines, are carried out
-and interpreted by us as humans. Fundamentally, humans are goal-seeking agents,
+and interpreted by us as humans. Fundamentally, humans are goal, seeking agents,
 as understood in the framework of reinforcement learning. Every action we
 perform has an underlying goal, no matter how trivial it may seem.
 
 You might think that you do something "randomly" or "without a goal," but this
-is, by definition, impossible. Every action—even one performed in protest to
-disprove this point—would still have the goal of protest.
+is, by definition, impossible. Every action, even one performed in protest to
+disprove this point, would still have the goal of protest.
 
 Even reflexes and habits are not performed without a goal; their goals may
 simply be less immediate or direct. For example, the fight-or-flight response
@@ -153,7 +148,7 @@ With these qualifications in place, we can begin the argument.
 Step (i) has already been addressed in the previous section. Aristotle assumes
 that everything has a function. However, if one remains unconvinced, this idea
 can also be approached through a cognitive perspective. Humans naturally
-perceive functions to make sense of the world—for example:
+perceive functions to make sense of the world, for example:
 
 - The function of a plant is to grow.
 - The function of a cook is to prepare food.
@@ -191,8 +186,8 @@ _"This excellent coffee maker brews a great cup of coffee because it has the
 We can further specify this by analyzing the job of a coffee maker as _sending
 very hot water through ground coffee,_ which consists of several steps, each of
 which can be done well or poorly. If the coffee maker performs a particular step
-very well—such as filtering the water effectively or grinding the coffee beans
-consistently—then we can say it possesses a virtue related to that step.
+very well, such as filtering the water effectively or grinding the coffee beans
+consistently, then we can say it possesses a virtue related to that step.
 
 However, not every physical part of the coffee maker contributes to its virtue.
 For example:
