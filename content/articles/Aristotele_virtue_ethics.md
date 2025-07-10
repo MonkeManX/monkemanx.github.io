@@ -4,8 +4,9 @@ date: 2025-01-26
 tags: [ "Philosophy" ]
 ---
 
-{{< warning "Warning">}} I’m unhappy with this article. As such, the text needs to be reworked. Please keep this in mind while reading. {{<
-/warning >}}
+{{< warning "Warning">}}
+I’m unhappy with this article. As such, the text needs to be reworked. Please keep this in mind while reading.
+{{< /warning >}}
 
 In this article, based on the book Nicomachean Ethics by Aristotle and the
 companion book from Cambridge, I aim to reconstruct the argument for virtue
