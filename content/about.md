@@ -25,7 +25,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 **Ethics**
 - What does *ought* mean? A: [Ought as an outdated concept](/articles/the_meaning_of_ought/)
 - What is *morality*? A: [Fictionalism with a bit constructivism](/articles/metaethical_position/)
-- How should one *act* to be moral? A: [Virtue Ethics](/articles/aristotele_virtue_ethics/)
+- How should one *life* i.e. *act*? A: [Virtue Ethics](/tangled_thoughts/philosophical_rambling_what_to_value/)
 
 **Epistemology**
 - What is *knowledge*? A: [Contextualism](/articles/what_is_knowledge/)
@@ -33,6 +33,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 **Metaphysics**
 - Do we have *free will*? A: [No](/articles/about_freedom/#4-what-about-free-will)
 - Do *Categories/Universalis* exist? A: No, I am a [Fictionalist](/articles/metaethical_position/#fictionalism) Nominalist.
+- What is the *self*? A: [There is no self](/tangled_thoughts/philosophical_ramblings_what_is_self/)
 
 **Aesthetics**
 - What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)
