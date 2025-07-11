@@ -32,6 +32,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 **Metaphysics**
 - Do we have *free will*? A: [No](/articles/about_freedom/#4-what-about-free-will)
+- Do *Categories/Universalis* exist? A: No, I am a [Fictionalist](/articles/metaethical_position/#fictionalism) Nominalist.
 
 **Aesthetics**
 - What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)
