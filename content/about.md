@@ -32,7 +32,6 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 **Metaphysics**
 - Do we have *free will*? A: [No](/articles/about_freedom/#4-what-about-free-will)
-- Do *Categories/Universalis* exist? A: No, I am a [Fictionalist](/articles/metaethical_position/#fictionalism) Nominalist.
 - What is the *self*? A: [There is no self](/tangled_thoughts/philosophical_ramblings_what_is_self/)
 
 **Aesthetics**
