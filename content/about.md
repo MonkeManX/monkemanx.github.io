@@ -25,7 +25,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 **Ethics**
 - What does *ought* mean? A: [Ought as an outdated concept](/articles/the_meaning_of_ought/)
 - What is *morality*? A: [Fictionalism with a bit constructivism](/articles/metaethical_position/)
-- How should one *life* i.e. *act*? A: [Virtue Ethics](/tangled_thoughts/philosophical_rambling_what_to_value/)
+- How should one *life* i.e. *act*? A: [Virtue Ethics](/articles/how_to_live/)
 
 **Epistemology**
 - What is *knowledge*? A: [Contextualism](/articles/what_is_knowledge/)
