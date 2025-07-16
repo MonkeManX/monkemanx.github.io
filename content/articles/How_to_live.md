@@ -104,57 +104,142 @@ This leads to a deeper implication: the only thing that should be valued is *int
 
 ## 2. From Valuing Intentions to Valuing Virtue
 
-So far, the argument has led us to the conclusion that we should value intentions, the inner motivation behind our actions, rather than external things like money, power, in short outcomes or actions in itself. But this alone doesn’t yet tell us *how* we should react to things.
+So far, the argument has led us to the conclusion that we should value intentions, the inner motivation behind our actions, rather than external things like money, power, or even outcomes and actions themselves. This inner focus offers us a kind of sovereignty: intentions are the only part of the moral equation fully within our control.
 
-For example, suppose a friend asks to borrow some money. One possible reaction would be to respond virtuously: with kindness, honesty, and generosity. But another response might be selfish or spiteful: for instance, saying, “No, I don’t want to help you. I’m keeping my money because I’m greedy or don’t like you.”
+But this alone doesn’t yet tell us how we should form or act on those intentions. After all, simply valuing intentions doesn't answer whether those intentions should be kind or cruel, generous or selfish, noble or spiteful.
 
-Both responses still involve valuing intentions over outcomes. So why should we prefer *virtuous* intentions over *vicious* ones?
+For example, suppose a friend asks to borrow some money. One possible reaction would be to respond virtuously, with kindness, honesty, and generosity. But another response might be selfish or spiteful: for instance, saying, “No, I don’t want to help you. I’m keeping my money because I’m greedy or don’t like you.”
+
+Both responses still involve valuing intentions over outcomes. The greedy person isn't making a utilitarian calculation about consequences; they're acting based on an internal disposition, just as much as the generous person is.
+
+So the question becomes: why should we prefer virtuous intentions over vicious ones?
 
 Here’s the next step in the argument.
 
-### 2.1 Virtuous Values Are Easier to Adopt and Sustain
 
-As we discussed earlier, **long-range voluntary belief change** is possible, we can slowly reshape what we believe or value by deliberately exposing ourselves to certain ideas, communities, or habits. However, this doesn’t work for all beliefs. Some beliefs are more difficult to adopt, especially if they contradict how we’re fundamentally structured as human beings.
+### 2.1. Vice is Inseparable from External Valuation
 
-For instance, you likely can’t make yourself believe that the floor under you doesn’t exist, even if you tried very hard. Your sensory perception and bodily structure make that belief nearly impossible to sustain.
-
-I think something similar applies to values. It seems far easier, to train ourselves to *value virtue* than to value *vice*. Why?
-
-Because our society, language, and shared practices already support and reinforce virtue. Being honest, kind, courageous, fair, these are consistently seen as admirable. Vice, on the other hand, is more often socially discouraged and harder to sustain without conflict, shame, or isolation.
-
-So if we want to adopt a value system that is deeply rooted, sustainable, and resilient, then *virtue aligns better with our human condition*, our “mode of existence,” as Heidegger might say. Vice doesn’t.
-
-### 2.2. Vice is Inseparable from External Valuation
-
-There’s another reason to prefer virtue over vice: it’s nearly impossible to be *vicious* without also valuing external outcomes, which contradicts our earlier conclusion that only intentions should be valued.
+The first reason to prefer virtue over vice: it’s nearly impossible to be *vicious* without also valuing external outcomes, which contradicts our earlier conclusion that only intentions should be valued.
 
 Let’s revisit the example where a friend asks to borrow money, and you say, “No, I don’t want to, I’m a selfish person.” On the surface, this seems like an intentional act, but it’s tied to valuing something external, in this case, the money. You're keeping the money because you view it as more important than helping your friend. That means you’re not just valuing intention; you’re implicitly placing value on an outcome, namely the possession of wealth.
 
 The same goes for other forms of vice. Suppose someone refuses to help their grandmother move groceries because they’re “lazy” or “don’t feel like it.” Again, even that reaction is based on valuing something external, comfort, time, or personal mood. All of these are outcomes, not intentions in the pure sense.
 
-Vice, in this way, depends on valuing things we’ve already agreed are unstable and outside of our control. So if we want to consistently value only what is within our control, that is our intentions, then we must also shape those intentions toward virtue rather than vice.
+Hence, vice depends on valuing outcomes, which contradicts our foundational claim that only intentions should be valued.
+So if we want to consistently value only what is within our control, that is our intentions, then we must also shape those intentions toward virtue rather than vice.
+
+### 2.2 Virtue as Part of Human Nature
+
+Before we can present the second argument for why virtue is preferable to vice, we need to establish a few premises.
 
 
-### 2.3. The Spectrum Between Virtue and Vice
+#### 2.2.1 Why Value Consistency?
 
-So far, we’ve treated reactions as if they were strictly either virtuous or vicious. But a natural question arises: why must it be a binary choice? Why can’t someone react in a way that is neither virtuous nor vicious, something neutral or somewhere in between?
+The first guiding intuition is this: it's better to value in a consistent and stable way rather than in a chaotic and constantly shifting manner. That is, instead of valuing generosity one day and stinginess the next, one should adopt a stable orientation.
 
-My response is this: by how virtue and vice is defined, every action or reaction necessarily lies somewhere on a [spectrum between the two](/articles/aristotele_virtue_ethics/). It’s not possible to have a reaction that is completely devoid of either virtuous or vicious characteristics, because these traits reflect the underlying motivations and values guiding the action, i.e. the character of the person acting.
+To clarify: this doesn’t mean one should never change their mind. Some environmental factors justify changing one's response, say if your friend asks you for money to buy food versus money to buy a gun to harm others. But all things being equal, if the situation is functionally the same, our values should not shift randomly.
 
-For example, helping a friend might be motivated partly by genuine kindness (virtue), but also by feelings of obligation or self-interest (vice). This mixture is common and natural, showing that virtue and vice are not binary absolutes but exist in degrees.
+Why adopt this principle of consistency?
 
-So while perfectly virtuous action might be rare, the closer our reactions align with virtue, that is with genuine internally grounded values, the more consistently we will live well
+1. Simplicity: [Occam’s Razor](https://en.wikipedia.org/wiki/Occam%27s_razor) suggests that, all else equal, we should prefer simpler systems. It's easier to adopt a clear, static rule than a complex, dynamic one that changes with every situation.
+2. Habit formation: Humans are creatures of habit. If we consistently act on a stable principle, we develop habits and habits make moral behavior exponentially easier. Just as a bodybuilder gets better results by repeating a solid routine rather than reinventing the workout every day, so too do we become more virtuous by applying a stable ethical orientation.
+
+
+#### 2.2.2 Virtue as a Characteristic of Every Action
+
+The next point is definitional: every action and reaction we perform lies somewhere on a [scale between virtue and vice](/articles/aristotele_virtue_ethics/). This is because virtue, by classical definitions such as Aristotle’s, is the golden mean between two extremes, and vice lies at the extremes.
+
+For instance, suppose a friend asks to borrow money. Your options lie on a spectrum: stinginess on one end, reckless extravagance on the other. Virtue lies in the balanced middle, in choosing wisely based on reason and context. Similarly, if someone asks you afterward how you felt about helping your friend, you again have a spectrum: you might brag about your generosity (pride), downplay it with self-pity, or respond truthfully with modesty. You cannot escape this scale, every reaction lies somewhere on it.
+
+
+{{< img src="/attachments/Aristotle_mean.png" width="70%" >}}
+
+
+The exact names or labels for virtues and vices may differ across cultures and people, but the structural reality remains: we always act within a spectrum where extremes tend to become vice, and the mean approximates virtue.
+
+
+#### 2.2.3 Choosing the Golden Mean
+
+With the two previous points in mind, that (1) every action lies on a scale of virtue/vice and (2) consistent habits are easier to maintain, we now face the question: Where on this scale should we position ourselves?
+
+The obvious answer might seem to be: “choose the virtuous mean,” since we tend to associate virtue with goodness. But we can't just accept this at face value, the entire article has been about building from first principles, not presupposed conclusions.
+
+So why choose the virtuous middle and not one of the extremes?
+
+In short: because virtue is more in line with human nature, or as Heidegger might say, with our mode of being. Practicing virtue aligns with our nature and requires less existential friction than pursuing extremes of vice, which demand more internal conflict and are less sustainable.
+
+A clarification: just because something goes “against” human nature doesn’t make it morally wrong (e.g., opening a beer with a knife instead of a bottle opener isn’t “immoral,” just inefficient). But since we’ve already chosen to value intentions and since that valuation is free for us to define, we should value in such a way that makes practising the intentions the most easiest for us, that is by aligning them with our being.
+
+
+#### 2.2.4  Human Nature and the Core of Morality
+
+When I say virtue aligns with our mode of existence, I mean that just by being thrown in the world as humans ([Geworfenheit](https://en.wikipedia.org/wiki/Heideggerian_terminology#Geworfenheit)): as beings who live, speak and act in the world, certain moral intuitions are [built into our condition](/paper-summary/do_animals_have_beliefs/). Think of what philosopher Donald Davidson called a [network of beliefs](/paper-summary/rational_animals/): we exist embedded in shared language, practices, and expectations. Whether morality was “invented” or not is irrelevant, it is [disclosed](https://en.wikipedia.org/wiki/Heideggerian_terminology#Disclosure) to us through our [being-in-the-world](https://en.wikipedia.org/wiki/Heideggerian_terminology#Being-in-the-world).
+
+C.S. Lewis makes this point vividly:
+
+> “Think of a country where people were admired for running away in battle, or where a man felt proud of double-crossing those who were kindest to him... You might just as well try to imagine a country where two and two made five... They have always agreed that you ought not to put yourself first.”
+> — *Mere Christianity*
+
+Now, I am not claiming there’s an eternal moral law floating in the cosmos, nor that morality is just a cultural invention. Rather, I believe that certain core moral propositions arise naturally from our mode of being. These are not immutable laws, but deeply embedded conditions of human existence, like existing in time or needing communication.
+
+This morality exists in layers, like a matryoshka doll:
+
+* **Innermost core**: basic moral intuitions we cannot shake off just by being conscious, social creatures.
+* **Next layer**: the specific shape those morals take for humans.
+* **Next**: social and cultural interpretations.
+* **Outermost**: our individual, subjective experience.
+
+This layered view helps us understand why morality can evolve without becoming meaningless, and how different societies can have genuinely different, yet valid moral frameworks, all arising from different ways of being-in-the-world.
+
+Now, consider how we actually *change* our values or beliefs. As we discussed earlier, **long-range voluntary belief change** is possible: we can slowly reshape what we believe or value by deliberately exposing ourselves to certain ideas, communities, or habits. However, this doesn’t work for all beliefs. Some are nearly impossible to adopt if they contradict how we are fundamentally structured as human beings.
+
+For instance, you likely can’t make yourself believe the floor beneath you doesn’t exist, no matter how hard you try. Your sensory experience and bodily structure make such a belief unsustainable.
+
+The same seems true for values. It’s far easier to train ourselves to *value virtue* than to value *vice*. Why?
+
+Because society, language, and shared practice already reinforce virtue. Traits like honesty, kindness, courage, and fairness are consistently admired. Vice, on the other hand, is more often discouraged, and harder to sustain without conflict, shame, or isolation.
+
+So if we want a value system that is sustainable, and resilient, then *virtue aligns better with our human condition*, or our “mode of existence,” as Heidegger might say. Vice doesn’t. You can try to train yourself into valuing cruelty, betrayal, or greed, but it will be an uphill battle, one that goes against our embedded moral intuitions and social nature.
+
+Thus, the more deeply a value harmonizes with our existential structure, the easier it is to believe, embody, and sustain over time. This gives virtue not only moral weight but practical viability.
+
+
+### 2.3  An Honest Subjective Leap
+
+This entire argument, from valuing intention to valuing virtuous intention, remains a subjective leap. It is not logically necessary; rather, it is an existential choice. One could imagine a person who is consistently malevolent, someone who finds it “easier” to act in selfish or destructive ways. But even then, I would urge such a person to make the leap: to deliberately train themselves toward virtue, as one might train the tastebuds to enjoy spinach despite disliking it.
+
+We choose virtue, not because it is metaphysically mandated, but because it is more deeply human.
+
 
 
 ## 3. Objections and Responses
 
-### 3.1. How can we speak about control in a fully detemrisntic world?
+### 3.1 Clarifying the Role of Externals
+
+One potential confusion must be cleared up. Earlier, I said we should value intentions because they’re independent of external things. But now I seem to say that depending on environmental factors, like your friend's motivations, might change how we react. Isn’t that relying on externals again?
+
+No. The difference lies in how the external world is used.
+
+When we value external goods like money, success, or power, our happiness becomes unstable, we may or may not acquire these goods, and so our well-being is constantly threatened. But when we value intentions, we retain sovereignty. External factors merely provide the context in which we act, not the source of value.
+
+For instance:
+
+    One day, your friend asks for money to pay rent — you judge lending it as virtuous.
+
+    Another day, he wants money to buy a gun and commit harm — you judge withholding it as virtuous.
+
+In both cases, you are practicing virtue. You are not reacting based on what you get from the world, but on how you choose to respond to it, based on a stable ethical orientation.
+
+
+### 3.2. How can we speak about control in a fully detemrisntic world?
 
 One clarification I want to make is about what I mean when I say that virtue is “in our control.”
 
 I don’t mean control in the classical metaphysical sense, as in being free to choose otherwise in a given moment. I personally believe the world is [fully deterministic](/articles/about_freedom/#4-what-about-free-will): every reaction we have is the result of our prior experiences, our current state, and our knowledge. Given the same inputs, we would always act the same way.
 
 So when I say that we are “in control” of virtue, I mean something more specific, control in the sense that philosopher [Harry Frankfurt describes it through the concept of second-order volitions](/paper-summary/freedom_of_will_concept_of_person/). To illustrate: imagine someone wants to assassinate the president, but unbeknownst to them, a chip is implanted in their brain that would force them to kill the president if they ever decided *not* to. If this person kills the president *because they want to*, and not because they are forced, then this reflects their true will. According to Frankfurt, this kind of control, where our higher-order desires align with our actions, is the control I mean.
+This kind of definition of will or control is explicitly what Heidegger means by [Authenticity](https://en.wikipedia.org/wiki/Authenticity_%28philosophy%29): the degree to which a person's actions are congruent with their values and desires, despite external pressures toward social conformity.
+
 
 Similarly, if someone truly understands the argument I’ve laid out in this article, that intentions (how we react) are the only thing fully within our sphere, and everything external (outcomes, wealth, success) depends partly on luck, then this understanding becomes part of the causal structure shaping their reactions. In other words, knowing this deeply, leads one to live virtuously.
 
@@ -163,7 +248,7 @@ But if instead, you value external things like outcomes or material success, no 
 So, when I say virtue is in our control, I mean this: virtue depends entirely on how we react to things, and if we understand this clearly, the life we live depends entirely on ourselves. That is what true control means in this context.
 
 
-### 3.2. A Response to the Utilitarian Objection
+### 3.3. A Response to the Utilitarian Objection
 
 One objection to the position, of virtue as "life's goal", might come from a utilitarian. They might argue: “But acting virtuously often *leads* to better outcomes! Doesn’t that make outcomes still important?”
 
