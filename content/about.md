@@ -62,6 +62,11 @@ This section notes believes that I do not longer hold and why.
 * Is there an *agentic/non-agentic* God?
   * Old: [No, agentic God](/articles/nature_of_god/), [Maybe, non-agentic God](/paper-summary/ground_of_being/)
   * New: I believe that God is beyond all categories, including logic—and that also includes being beyond the category of being agentic. See C.S. Lewis, *Mere Christianity*.
+* Does the concept of *Trinity* make sense?
+  * Old: [No](/articles/ontological_argument_and_apophatic_theology/#41-jesus-perfection-argument)
+  * New: The Trinity is not an analytical concept, but a synthesis of the experience of God in Jesus as God Himself, and of oneself as the Holy Spirit. God, being beyond categories, also transcends being a single identity in the usual sense. See C.S. Lewis, *Mere Christianity*.
+
+
 
 {{< /details >}}
 
