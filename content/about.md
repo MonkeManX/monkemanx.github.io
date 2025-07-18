@@ -38,8 +38,6 @@ This section is a work in progress, and I will add entries to it whenever I writ
 - What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)
 
 **Theology**
-- Is there an *agentic* God? A: [No](/articles/nature_of_god/)
-- Is there an *non-agentic* God? A: [Maybe, as the precondition of Being](/paper-summary/ground_of_being/)
 - *Euthyphro dilemma*: Did God came first or Logic and Goodness? A: [God](/articles/commentary_9th_sermon_eckhart/)
 - How do we *talk* about God? A: [We can't](/articles/ontological_argument_and_apophatic_theology/)
 
@@ -49,6 +47,25 @@ This section is a work in progress, and I will add entries to it whenever I writ
 Symbolic AI will not lead us to AGI, as it doesn't seem feasible to write enough rules to cover every possible intelligent behavior pattern. Instead, the current data-driven paradigm using deep learning, in combination with some form of reinforcement learning, will be needed. Deep learning provides the world model, while reinforcement learning allows the agent to act upon the world model and refine it, through a feedback loop, as layed out by *active inference*.
 
 {{< /details >}}
+
+
+{{< details "History of Believes" "false" >}}
+
+This section notes believes that I do not longer hold and why.
+
+## Philosophy
+
+
+* Do *Categories/Universals* exist?
+  * Old: No, I am a [Fictionalist](/articles/metaethical_position/#fictionalism) Nominalist.
+  * New: Ontically, they exist. Ontologically, I am not sure. See Heidegger.
+* Is there an *agentic/non-agentic* God?
+  * Old: [No, agentic God](/articles/nature_of_god/), [Maybe, non-agentic God](/paper-summary/ground_of_being/)
+  * New: I believe that God is beyond all categories, including logic—and that also includes being beyond the category of being agentic. See C.S. Lewis, *Mere Christianity*.
+
+{{< /details >}}
+
+
 
 To improve clarity and grammar, some of the texts on this site have been proofread and edited using ChatGPT.
 
