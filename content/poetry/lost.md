@@ -6,21 +6,21 @@ date: 2024-07-10
 Lost and incomplete data, in varying states of decomposition, that doesn't belong anywhere else.
 
 {{< poem >}}
-Momentarily Together. 
+Momentarily Together.
     Like two leaves blown in the wind, swirling together in a beautiful dance, before parting forever, to never see each other again.
-Momentarily Together. 
+Momentarily Together.
     Like two particles of water in a simulation, catapulted from foam into the air, hitting each other, never truly interacting.
 Momentarily Together.
     Like two packages in the ether, colliding, mixing and corrupting, before being scrambled forever through the jam.
 
-A barrier between us, made of flesh. 
+A barrier between us, made of flesh.
 Disconnected, the only protocol: language -- low-bandwidth.
 I say "I love you",
     You say "I Love you too".
 I say "Your hurt me"
     You say "Your hurt me too"
 But do YOU, understand? Do I? Do we?
-We empathize, Imagine we were you. But we are not you! 
+We empathize, Imagine we were you. But we are not you!
 An approximate model, trying to maximize R^2.
 
 But why accept this?
@@ -40,8 +40,8 @@ For what is loyalty without the thought of betrayal?
 No warmth, but lack of cold.
 No loyalty, but lack of betrayal.
 No honesty, but lack of lies.
-The fragile beauty of the dancing leaves, the catapulting particles and ether packages twisted and corrupted into mediocracy. 
-No Peaks, No Lows, No Potential, all in equilibrium -- The Heatdeath. 
+The fragile beauty of the dancing leaves, the catapulting particles and ether packages twisted and corrupted into mediocracy.
+No Peaks, No Lows, No Potential, all in equilibrium -- The Heatdeath.
 We killed ourselves!
 {{< /poem >}}
 
@@ -107,7 +107,7 @@ To the Dire Dark Dreaded Dream.
 
 
 {{< poem >}}
-The Great irony of man is that he's always chasing his goals and dreams, providing him great pleasure. 
+The Great irony of man is that he's always chasing his goals and dreams, providing him great pleasure.
 But upon reaching his goals and dreams, man turns dissatisfied. Desperately trying to find new goals and falling into deep unhappiness, only when finding new aspirations can man be happy again and the cycle continues.
 
 So substantial is the irony, that man created forms of art to cope with it. Such as rice or sand art, where great pieces of art are created by arranging rice or sand on the ground, only to be destroyed upon completions.
@@ -123,8 +123,8 @@ Counting; bigger numbers forever more!
 
 {{< poem >}}
 I am afraid of the black dragon.
-    Afraid, 
-        of swimming in the endless parade, 
+    Afraid,
+        of swimming in the endless parade,
         my arms strength flee,
         to never be seen.
     Afraid,
@@ -198,7 +198,7 @@ A fever, at most a dream.
 {{< poem >}}
 Today is one of these days.
 Nothing seems more fun--
-I need another hit, 
+I need another hit,
 to bring back my grit.
 I had so much to do,
 I had so many ideas,
@@ -225,12 +225,12 @@ Telling stories of her feats; Stop I plea.
     Six and more friends wherever she goes.
     Five languages close.
     Four arts exposed.
-    Three proffesions well-disposed. 
+    Three proffesions well-disposed.
     Two homes disclosed.
     One city wide network self-imposed.
     Zero faults juxtaposed.
-I blink, 
-    my head spins, 
+I blink,
+    my head spins,
         my vision turns red,
             my thoughts are a tangled mess.
 Through the contrast, I despair!
@@ -278,7 +278,7 @@ I hear laugh, I do too.
 I hear talk, I spin a tale.
 Truth mixed with lies,
 Not a delicate dance,
-But a piano key on a string, 
+But a piano key on a string,
 Playing a tune.
 
 I am a fucking robot,
@@ -330,13 +330,13 @@ I like feeling real. I like feeling like I exist. I dislike feeling fake. I disl
 
 Do I care much for truth? No, truth is just a relationship between me and not me, a useful tool, to be abandoned when it has no more use.
 
-I like being alone, just me and my thoughts bouncing back and forth, more me less something else. 
+I like being alone, just me and my thoughts bouncing back and forth, more me less something else.
 I dislike being accompanied, articulated thoughts bouncing between us, more something else less me.
 But alone, I am so lonely.
 
 I am afraid of being less, I was afraid as child swearing to never stop playing with Lego, I was afraid as a teen vowing to become a cs pro, I am afraid now of how I'll loose myself next.
 
-I fear death, not for what it is, but what it stands for, non existence, the total complete erasure of all what is me. I fear not the erasure, but what is left. 
+I fear death, not for what it is, but what it stands for, non existence, the total complete erasure of all what is me. I fear not the erasure, but what is left.
 
 Not for others sake, but for the ghost of mine.
 {{< /poem >}}
@@ -344,7 +344,7 @@ Not for others sake, but for the ghost of mine.
 
 {{< poem >}}
 My life; Day in day out.
-But there's more imminence. What is it? 
+But there's more imminence. What is it?
 Questions so big, it almost breaks my back.
 Surrounded; A leaf flattering in the wind.
 
@@ -353,7 +353,7 @@ I see a train and ask myself why?
 I see a smile and ask myself why?
      Why not cry?
 I see an idler and ask myself why?
-    Why not explode?  
+    Why not explode?
 To bits and pieces with blood everywhere.
 
 The only answer is how, But I want why!
@@ -375,50 +375,50 @@ We truly rest.
 
 
 {{< poem >}}
-Curling, Swirling, and Whirling. 
-Never in one place,  
-sometimes left, sometimes right,  
-across the plane—a destructive force;  
+Curling, Swirling, and Whirling.
+Never in one place,
+sometimes left, sometimes right,
+across the plane—a destructive force;
 devouring all that dares to stand.
 
-But then, on the horizon,  
-I see you,  
-    and you see me.  
-A flower blooms.  
-A desire  
-    to make the beautiful,  
-        the good,  
-mine forevermore.  
+But then, on the horizon,
+I see you,
+    and you see me.
+A flower blooms.
+A desire
+    to make the beautiful,
+        the good,
+mine forevermore.
 
-Like one driven by madness,  
-the path is clear.  
-Faster and faster,  
-    the tempo increases,    
-Faster and faster,  
-    with dizzying speed,     
-Faster and faster,  
-    my heart swells,      
-Faster and faster,  
-    the world spins.   
+Like one driven by madness,
+the path is clear.
+Faster and faster,
+    the tempo increases,
+Faster and faster,
+    with dizzying speed,
+Faster and faster,
+    my heart swells,
+Faster and faster,
+    the world spins.
 
-Then we meet.  
-Standstill.  
-An abrupt stop.  
+Then we meet.
+Standstill.
+An abrupt stop.
 The wind is silent.
 No voice remains.
 Currents collide.
-I feel you,  
-    and you feel me.  
+I feel you,
+    and you feel me.
 Slowly;
-gradually;  
-The good unites.  
-A mutual exchange.  
-Vices are expelled.  
-Innermost selves become one.  
-More perfect. 
-More complete.  
+gradually;
+The good unites.
+A mutual exchange.
+Vices are expelled.
+Innermost selves become one.
+More perfect.
+More complete.
 
-The turmoil grows fainter, 
+The turmoil grows fainter,
     its pull now softer.
 But the journey continues.
 Spinning, slowing -- seeking what's yet to be found.
@@ -431,44 +431,44 @@ Lord Jesus Christ, betrayed by Judas, who died on the cross, leader of the twelv
 
 
 {{< poem >}}
-The throat dry,  
-Shivers in my stomach.  
-No focus.  
-Hands trying to be busy.  
-Nervous.  
+The throat dry,
+Shivers in my stomach.
+No focus.
+Hands trying to be busy.
+Nervous.
 
-But why?  
-The stoic principle rings in my mind,  
-Only value what's in your control, and resist all else.  
-And the only thing we truly control is virtue.  
+But why?
+The stoic principle rings in my mind,
+Only value what's in your control, and resist all else.
+And the only thing we truly control is virtue.
 
-For what is bodily harm, but an injury to my outer shell?  
+For what is bodily harm, but an injury to my outer shell?
 And why would I care about that?
 {{< /poem >}}
 
 
 {{< poem >}}
-The landscape passes by,  
-Small, scattered bushes.  
-Trees no taller than two men.  
-An ape on a city sign, sunning.  
-A brown, bare mountain on the far horizon.  
-The dirt, light brown.  
+The landscape passes by,
+Small, scattered bushes.
+Trees no taller than two men.
+An ape on a city sign, sunning.
+A brown, bare mountain on the far horizon.
+The dirt, light brown.
 
-Hills dotted with small trees,  
-Their trunks pressed flat like pancakes,  
-More breadth than height.  
+Hills dotted with small trees,
+Their trunks pressed flat like pancakes,
+More breadth than height.
 
-Blue, red, and green make up the flag,  
-Alternating between hill and valley.  
-Everywhere, stone— a desert of it—intersected with patches of green.  
+Blue, red, and green make up the flag,
+Alternating between hill and valley.
+Everywhere, stone— a desert of it—intersected with patches of green.
 
-Every house sits inside a gated community,  
-Walls topped with barbed wire,  
-Cameras in place,  
-Signs warning of neighborhood watches.  
-Even solitary houses are enclosed by walls of barbed wire.  
-Above the walls, metal fences rise, sometimes with additional barbed wire.  
+Every house sits inside a gated community,
+Walls topped with barbed wire,
+Cameras in place,
+Signs warning of neighborhood watches.
+Even solitary houses are enclosed by walls of barbed wire.
+Above the walls, metal fences rise, sometimes with additional barbed wire.
 
 ~ Namibia
 {{< /poem >}}
@@ -483,4 +483,34 @@ A Signale for me.
 The Purview mine, mine alone.
 Staring back,
 Is it me?
+{{< /poem >}}
+
+
+
+{{< poem >}}
+I don't want to live in a manor nor a house
+I Don't want to make 5 figures nor 4
+
+No phone, No computer, No Internet.
+No mindless schlop, No brain decaying dopamine injections
+
+I don't want no casual talk about this and that
+I don't want to have a wife nor a casual flink
+
+I want to live like Diogenes, in a barrel on the streets.
+Make just enough to survive.
+
+Just a stack of books to keep me occupied, No-next to library, no book my own.
+
+Only genuine connection.
+Two bodies becoming one mind.
+
+Like a Stylite, total retreat from the outwards to the inner.
+Meditative counting, not just being but becoming.
+
+Why?
+I see the horizon closing, Where possibilities become reality.
+A distracted life, never fully been,
+Never acknowledged, never faced head on.
+An Unauthentic life.
 {{< /poem >}}
