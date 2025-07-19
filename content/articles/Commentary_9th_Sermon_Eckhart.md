@@ -394,7 +394,7 @@ In other words, **spiritual steadfastness**: the soul’s constant nearness to G
 
 
 {{< primary >}}
- He \[the text\] continues: “Like the full moon in its days.” The moon exercises dominion over all moist nature. The moon is never as close to the sun as when it is full and receives its light directly from the sun. However, because it is closer to the earth than any other star, it has two disadvantages: it is pale and spotted, and it loses its light. It is never as strong as when it is farthest from the earth, for then it causes the sea to ebb the most; the more it wanes, the less it can do this.
+ He continues: “Like the full moon in its days.” The moon exercises dominion over all moist nature. The moon is never as close to the sun as when it is full and receives its light directly from the sun. However, because it is closer to the earth than any other star, it has two disadvantages: it is pale and spotted, and it loses its light. It is never as strong as when it is farthest from the earth, for then it causes the sea to ebb the most; the more it wanes, the less it can do this.
 
  The more the soul is elevated above earthly things, the more powerful it is. Whoever recognized nothing but creatures would never think of a sermon, for every creature is full of God and is a book.
 
