@@ -1,7 +1,7 @@
 ---
 title: "Mere Christianity"
 date: 2025-07-19 10:00:00
-tags: ["Book"]
+tags: ["Book", "C.S Lewis"]
 ---
 
 {{< book image="/attachments/mere_chrisitanity.jpg" >}}
