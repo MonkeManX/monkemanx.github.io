@@ -514,3 +514,42 @@ A distracted life, never fully been,
 Never acknowledged, never faced head on.
 An Unauthentic life.
 {{< /poem >}}
+
+
+{{< poem >}}
+Four eyes one sight,
+Four ears one sound,
+Two hearts one feeling,
+Two mouths one voice,
+Two brains one reason,
+The flesh has become one.
+A merging of purpose, directed, focused at the divine.
+{{< /poem >}}
+
+
+{{< poem >}}
+Grounded and Pounded,
+I am pancake pressed on the grass,
+The buzzing bees bring the sugar,
+A single crow a piece of butter,
+And from the trees in the sky, schwanken from left to right,
+I see flows the syrup, a sound delight.
+
+~ The grandparents garden
+{{< /poem >}}
+
+
+{{< poem >}}
+I heard the heart is leaky and needs to be constantly filled, as the passage of time forces the leak of all value.
+This is thought stemming the outer world.
+But the outer world does not feel real enough, it is not enough, I won't fill my heart with this fakeness, the meaningless shatter, the mundaneness.
+I know value depends on Dasein, the meaning emergent not discovered.
+But it is just, not enough.
+
+Don't dwell on it, I tell myself.
+This thought leads to a disconnection with the outer world, an indifference towards it.
+Which is not necessarily bad in itself, but if the outer world is the only thing, then there is nothing left, nothing at all.
+And I wonder if my inner world has enough? Enough to care?
+There is a tiny Glimmer in it, a world beyond the outer and the inner, but it shines dim.
+Can I see it properly? clear?
+{{< /poem >}}
