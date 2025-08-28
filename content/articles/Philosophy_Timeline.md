@@ -17,40 +17,40 @@ This is a timeline of the most relevant philosophers in Western philosophy. When
 This philosophical era is called "pre-Socratic" because of the importance of Socrates in Western philosophy, often thought of as a starting point for philosophy. All philosophers before him are included in this era.
 
 
-**626 BC – [Thales](https://de.wikipedia.org/wiki/Thales)**
-**Summary:**
+**626 BC – [Thales](https://de.wikipedia.org/wiki/Thales)**<br>
+**Summary:**<br>
 Theorized that the ultimate substance of which everything is made is *water* — this idea is called [monism](https://en.wikipedia.org/wiki/Monism). He was the first to reject myths and legends, seeking natural explanations behind events, and is often considered the inventor of philosophy. Stories say he was the first to create [options](https://en.wikipedia.org/wiki/Option_(finance)) and [futures](https://en.wikipedia.org/wiki/Futures_contract) by buying up all the olive presses in town and renting them out.
 
-**610 BC – [Anaximander](https://de.wikipedia.org/wiki/Anaximander)**
-**Summary:**
+**610 BC – [Anaximander](https://de.wikipedia.org/wiki/Anaximander)**<br>
+**Summary:**<br>
 Student of Thales. He believed that the first humans lived inside the belly of a fish, where they grew up until they were self-sufficient and then cut their way out. He also thought that multiple worlds existed, created by the so-called *infinite* (*Apeiron*).
 
-**570 BC – [Anaximenes](https://en.wikipedia.org/wiki/Anaximenes_of_Miletus)**
-**Summary:**
+**570 BC – [Anaximenes](https://en.wikipedia.org/wiki/Anaximenes_of_Miletus)** <br>
+**Summary:**<br>
 Student of Anaximander. He believed that the ultimate substance of everything was *air*. He thought water was just condensed air, and if condensed even further, it would become earth.
 
-**570 BC – [Pythagoras](https://en.wikipedia.org/wiki/Pythagoras)**
-**Summary:**
+**570 BC – [Pythagoras](https://en.wikipedia.org/wiki/Pythagoras)**<br>
+**Summary:**<br>
 Student of Anaximander. He believed the universe is made up of a combination of units — pure forms of matter — and these units are *numbers*. He was the first to describe himself as a *philosopher* (a lover of wisdom). He is also famous for his belief in reincarnation, and thus thought it immoral to eat animals, as they could be the reincarnation of a human.
 
-**540 BC – [Parmenides](https://en.wikipedia.org/wiki/Parmenides)**
-**Summary:**
+**540 BC – [Parmenides](https://en.wikipedia.org/wiki/Parmenides)**<br>
+**Summary:**<br>
 Believed that everything has always existed: "from nothing comes nothing, and from something, nothing can come." His big claim was that there is no real *change* — all of reality is one. He was the first to argue that reasoning is superior to the senses, bringing *deductive reasoning* into philosophy.
 
-**540 BC – [Heraclitus](https://en.wikipedia.org/wiki/Heraclitus)**
-**Summary:**
+**540 BC – [Heraclitus](https://en.wikipedia.org/wiki/Heraclitus)**<br>
+**Summary:**<br>
 Believed that everything in the universe is governed by the *logos*, a universal cosmic law, which he identified with *change*: "everything is in a constant state of flux." That’s why one can't step into the *same* river twice. He also believed that everything is shaped by opposites: "Day and night are just two sides of the same coin."
 
-**490 BC – [Zeno of Elea](https://en.wikipedia.org/wiki/Zeno_of_Elea)**
-**Summary:**
+**490 BC – [Zeno of Elea](https://en.wikipedia.org/wiki/Zeno_of_Elea)**<br>
+**Summary:**<br>
 Student of Parmenides. Most famous for his paradoxes, designed to prove that there is no *change*. For example: How can a runner ever reach a goal if he must first reach the halfway point, then halfway of the halfway, and so on? (Not to be confused with *Zeno of Citium*, founder of Stoicism.)
 
-**490 BC – [Empedocles](https://en.wikipedia.org/wiki/Empedocles)**
-**Summary:**
+**490 BC – [Empedocles](https://en.wikipedia.org/wiki/Empedocles)**<br>
+**Summary:**<br>
 Tried to reconcile the dispute between Parmenides and Heraclitus by saying both were right. He believed everything is made up of *earth, air, fire, and water*, which are fundamental and unchanging, but by combining these elements, change appears — birth and death are just human conceptions. He was the first to differentiate between *force* and *substance*.
 
-**460 BC – [Democritus](https://en.wikipedia.org/wiki/Democritus)**
-**Summary:**
+**460 BC – [Democritus](https://en.wikipedia.org/wiki/Democritus)**<br>
+**Summary:**<br>
 Developed a complete mechanistic view of the universe: everything is made of atoms and empty space. The atoms were small, indivisible particles, unchanging like Parmenides' "being." He believed there were infinitely many kinds of atoms making up all matter. This theory also beat Zeno's paradox: you can't infinitely divide the distance between the runner and the goal because there’s a smallest indivisible unit — the atom. He was the first *materialist*.
 
 {{< img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Presocratic_graph.svg" width="100%" figcaption="        Relationship among the various pre-socratic philosophers and thinkers; red arrows indicate a relationship of opposition." >}}
@@ -60,15 +60,15 @@ Developed a complete mechanistic view of the universe: everything is made of ato
 
 These are all philosophers who lived around Socrates' time or shortly after and were directly influenced by him.
 
-**470 BC – [Socrates](https://en.wikipedia.org/wiki/Socrates)**
-**Summary:**
+**470 BC – [Socrates](https://en.wikipedia.org/wiki/Socrates)**<br>
+**Summary:**<br>
 Socrates was famous for his *Socratic method*, in which he questioned various people on the street about philosophical matters, first appearing ignorant, then pointing out contradictions in their positions. It was said that he left people either angry because he made them feel stupid, or angry because he wouldn’t leave them alone. One philosopher put it like this: "Socrates was the first to bring philosophy down from the heavens and place it into homes and cities." In the end, he made so many people angry that they put him on trial and sentenced him to death.
 He was one of the first philosophers to ask, *What is the good life?* His answer: to gain peace of mind through living virtuously. He disputed the Sophists' claim that morals are relative and instead believed that morals were objective. He thought the only way to live a virtuous life was by knowing what virtues are through rigorous investigation: *"The unexamined life is not worth living."*
 Socrates also didn’t believe in evil; he thought humans were simply misguided or missing knowledge. Thus: *"There is only good — knowledge — and one evil — ignorance."*
 
 
-**470 BC – [The Sophists](https://en.wikipedia.org/wiki/Sophist)**
-**Summary:**
+**470 BC – [The Sophists](https://en.wikipedia.org/wiki/Sophist)**<br>
+**Summary:**<br>
 Sophists were teachers who taught anything for the right price: rhetoric, music, mathematics, and more. They became important because of the need to win battles in court, but the Sophists didn’t teach *true* knowledge. Instead, they taught how to win arguments through rhetoric.
 They were skeptics, refusing to accept claims just because reason seemed to support them; instead, they demanded hard proof, which for them was human experience. They rejected abstract ideas like those from Democritus or Empedocles.
 The Sophists believed that the experience of all people is equally valid, meaning they embraced moral relativism: *"Man is the measure of all things."*
@@ -76,9 +76,9 @@ The Sophists believed that the experience of all people is equally valid, meanin
 Sophists would say they didn’t teach people *more true* knowledge but *more useful* knowledge.
 
 
-**430 BC – [Plato](https://en.wikipedia.org/wiki/Plato)**
-**Articles:** [What is Love?](/articles/symposium/), [Euthyphro Dilemma](/tangled_thoughts/euthyphro_dillema/)
-**Summary:**
+**430 BC – [Plato](https://en.wikipedia.org/wiki/Plato)**<br>
+**Articles:** [What is Love?](/articles/symposium/), [Euthyphro Dilemma](/tangled_thoughts/euthyphro_dillema/)<br>
+**Summary:**<br>
 Student of Socrates. He founded the first philosophical academy, which, in some form, survived for around 900 years.
 Like Empedocles and Democritus, Plato thought that everything in the sensory world is in constant flux, but that there is still something infinite and unchangeable. For Plato, this unchanging reality was the *Forms* — leading to his famous *Theory of Forms*.
 According to this theory, behind the world we experience with our senses exists another world: the *world of Forms*. While the sensory world is imperfect, the world of Forms is perfect and contains the *patterns* and *archetypes* of all things.
@@ -89,9 +89,9 @@ Humans seek immortality either through their children or through achieving lasti
 He also founded political philosophy by presenting his vision of an ideal state.
 
 
-**384 BC – [Aristotle](https://en.wikipedia.org/wiki/Aristotle)**
-**Articles:** [Virtue Ethics from First Principles](/articles/aristotele_virtue_ethics/), [Nicomachean Ethics: Action Theory](/paper-summary/nicomachean_ethics_action_theory/)
-**Summary:**
+**384 BC – [Aristotle](https://en.wikipedia.org/wiki/Aristotle)**<br>
+**Articles:** [Virtue Ethics from First Principles](/articles/aristotele_virtue_ethics/), [Nicomachean Ethics: Action Theory](/paper-summary/nicomachean_ethics_action_theory/)<br>
+**Summary:**<br>
 Student of Plato. Aristotle was the first truly systematic philosopher, writing extensively on many subjects.
 He disagreed with Plato's Theory of Forms, arguing that the so-called "Forms" were not independent, pre-existing realities (*a priori*), but rather constructs of human cognition.
 While Plato believed nature is merely a reflection of true reality (the Forms), Aristotle believed that Forms and ideas are human reflections *of* nature. As a result, he focused much more on everyday life than Plato did.
@@ -107,37 +107,37 @@ He also developed *virtue ethics*, believing that living a virtuous life is livi
 This time period begins with the conquests of Alexander the Great, during which Athens lost its leading position. During this era, Greek culture and language became dominant across all major kingdoms — Syria, Egypt, and Macedonia.
 
 
-**400 BC – [Cynicism](https://en.wikipedia.org/wiki/Cynicism_(philosophy))**:
-**Key Figures:** [Antisthenes](https://en.wikipedia.org/wiki/Antisthenes), [Diogenes](https://en.wikipedia.org/wiki/Diogenes), [Crates of Thebes](https://en.wikipedia.org/wiki/Crates_of_Thebes)
-**Articles:** [[Lucian], The Cynic](https://lucianofsamosata.info/wiki/doku.php?id=home:texts_and_library:dialogues:the-cynic), [The Cynic Philosophers: From Diogenes to Julian](http://localhost:1313/tangled_thoughts/)
+**400 BC – [Cynicism](https://en.wikipedia.org/wiki/Cynicism_(philosophy))**:<br>
+**Key Figures:** [Antisthenes](https://en.wikipedia.org/wiki/Antisthenes), [Diogenes](https://en.wikipedia.org/wiki/Diogenes), [Crates of Thebes](https://en.wikipedia.org/wiki/Crates_of_Thebes)<br>
+**Articles:** [[Lucian], The Cynic](https://lucianofsamosata.info/wiki/doku.php?id=home:texts_and_library:dialogues:the-cynic), [The Cynic Philosophers: From Diogenes to Julian](http://localhost:1313/tangled_thoughts/)<br>
 **Summary:**
 The Cynics believed that the only thing that mattered for a life well lived was *virtue*. Everything else — wealth, power, social status — should be rejected. In that vein, they also rejected social conventions and engaged in public displays of non-conformity, such as urination, masturbation, or even sex in public, to shock and challenge societal norms.
 
 
 
-**300 BC – [Stoicism](https://en.wikipedia.org/wiki/Stoicism)**:
-**Key Figures:** [Zeno of Citium](https://en.wikipedia.org/wiki/Zeno_of_Citium), [Chrysippus](https://en.wikipedia.org/wiki/Chrysippus), [Epictetus](https://en.wikipedia.org/wiki/Epictetus)
-**Articles:** [Seneca on Trial: The Case of the Opulent Stoic](/paper-summary/seneca_on_trial/), [Ancient Greek Logic](/tangled_thoughts/logic/), [The Cambridge Companion to the Stoics](/tangled_thoughts/guide_of_stoicism/)
-**Summary:**
+**300 BC – [Stoicism](https://en.wikipedia.org/wiki/Stoicism)**:<br>
+**Key Figures:** [Zeno of Citium](https://en.wikipedia.org/wiki/Zeno_of_Citium), [Chrysippus](https://en.wikipedia.org/wiki/Chrysippus), [Epictetus](https://en.wikipedia.org/wiki/Epictetus)<br>
+**Articles:** [Seneca on Trial: The Case of the Opulent Stoic](/paper-summary/seneca_on_trial/), [Ancient Greek Logic](/tangled_thoughts/logic/), [The Cambridge Companion to the Stoics](/tangled_thoughts/guide_of_stoicism/)<br>
+**Summary:**<br>
 Inspired by the Cynics, the Stoics also believed that *virtue* was the highest good. However, unlike the Cynics, they did not reject worldly things like wealth or power — they viewed them with indifference. Having money was fine; not having money was also fine.
 Stoicism developed an elaborate systematic philosophy. They believed that the universe was guided by a universal reason called the [*Logos*](https://en.wikipedia.org/wiki/Logos), which consisted of an active principle acting upon a passive matter.
 God was not seen as a personal agent but as a rational force identified with nature and the universe itself. Everything that happens — death, disease, change — follows the will of this divine Logos. Thus, humans should learn to accept their fate calmly and live in accordance with nature. For example, if one falls ill, one should not whimper but accept it serenely.
 
 
-**300 BC – [Epicureanism](https://en.wikipedia.org/wiki/Epicureanism)**:
-**Key Figure:** [Epicurus](https://en.wikipedia.org/wiki/Epicurus)
-**Articles:** [Letter to Menoeceus](/paper-summary/letter_to_menoeceus/), [Principal Doctrines](https://classics.mit.edu/Epicurus/princdoc.html), [Letter to Herodotus](/paper-summary/letter_to_herodotus/)
-**Summary:**
+**300 BC – [Epicureanism](https://en.wikipedia.org/wiki/Epicureanism)**:<br>
+**Key Figure:** [Epicurus](https://en.wikipedia.org/wiki/Epicurus)<br>
+**Articles:** [Letter to Menoeceus](/paper-summary/letter_to_menoeceus/), [Principal Doctrines](https://classics.mit.edu/Epicurus/princdoc.html), [Letter to Herodotus](/paper-summary/letter_to_herodotus/)<br>
+**Summary:**<br>
 The Epicureans were the main opponents of the Stoics. They believed that *pleasure* was the highest good, not virtue. However, they taught that the highest pleasures were not found in indulgence, but in restraint.
 Pleasure was understood broadly, including not just physical pleasures but also higher pleasures like friendship, art, and intellectual pursuits.
 On death, Epicurus famously said: *"Death is nothing to us, since when we are, death has not come, and when death has come, we are not."*
 They believed in the existence of gods, but thought that the gods had no concern for the material world — they existed apart from human affairs.
 
 
-**270 BC – [Neoplatonism](https://en.wikipedia.org/wiki/Neoplatonism)**:
-**Key Figures:** [Plotinus](https://en.wikipedia.org/wiki/Plotinus), [Porphyry](https://en.wikipedia.org/wiki/Porphyry_of_Tyre)
-**Articles:** [Nature of God](/articles/nature_of_god/)
-**Summary:**
+**270 BC – [Neoplatonism](https://en.wikipedia.org/wiki/Neoplatonism)**:<br>
+**Key Figures:** [Plotinus](https://en.wikipedia.org/wiki/Plotinus), [Porphyry](https://en.wikipedia.org/wiki/Porphyry_of_Tyre)<br>
+**Articles:** [Nature of God](/articles/nature_of_god/)<br>
+**Summary:**<br>
 Neoplatonism built upon Plato’s theory of Forms, the Stoic idea of Logos, and mystical elements from the East.
 They differentiated between *the Nous* (God), from which everything emanates outward, producing first the *realm of Forms*, then nature and all matter.
 The farther something is from the divine Nous, the less divinity and goodness it possesses. Matter without a soul — like stones or water — is thus the farthest from God.
@@ -147,8 +147,8 @@ However, humans retain a spark of the divine within them and an innate desire to
 
 ## Classical Rome
 
-**0 BC – [Jesus](https://en.wikipedia.org/wiki/Jesus)**
-**Summary:**
+**0 BC – [Jesus](https://en.wikipedia.org/wiki/Jesus)**<br>
+**Summary:**<br>
 Founder of Christianity. Jesus introduced two major developments in theology:
 1. The shift from *polytheism* (the belief in multiple gods) to *monotheism* (the belief in a singular God), which brought many philosophical advantages. For example, the concept of one ultimate unmoved mover.
 2. In the Greek tradition, the world was seen as something that could be explored through reason, and faith wasn’t highly emphasized. In contrast, Christianity introduced the view that God is fundamentally mysterious and cannot be fully understood by human reason. As such, *faith* became a virtue to strive for.
@@ -161,8 +161,9 @@ Christianity also brought a new worldview. The Greek tradition held a *cyclical*
 
 The medieval age began with the fall of the Roman Empire and was deeply shaped by Christianity.
 
-**350 CE — [Augustine of Hippo](https://en.wikipedia.org/wiki/Augustine_of_Hippo):**
-**Summary:**
+**350 CE — [Augustine of Hippo](https://en.wikipedia.org/wiki/Augustine_of_Hippo):**<br>
+**Media:** [KPop Demon Hunter](/tangled_thoughts/kpop_demon_hunter/)<br>
+**Summary:**<br>
 One of the most famous Christian theologians, Augustine, in his book *Confessions*, described a proto-archetypical story of a sinner's journey toward redemption through Christianity. He also wrote extensively against what he deemed Christian heresies, two of the most important being Manichaeism and Pelagianism.
 
 Manichaeism believed that, besides the Christian God, there was another god responsible for all the evil in the world. Augustine argued this belief was problematic because it removed human agency—people could always blame their wrongdoings on the evil god, making it morally fatalistic.
@@ -172,17 +173,17 @@ Pelagianism, on the other hand, believed humans could achieve perfection and gra
 Augustine was also highly influenced by Neoplatonism and Platonic thought, believing that the theory of forms existed within the mind of God, and that evil is simply the absence of good.
 
 
-**1225 CE — [Thomas Aquinas](https://en.wikipedia.org/wiki/Thomas_Aquinas):**
-**Articles:**  [Ontological Argument and Apophatic theology](/articles/ontological_argument_and_apophatic_theology/)
-**Summary:**
+**1225 CE — [Thomas Aquinas](https://en.wikipedia.org/wiki/Thomas_Aquinas):**<br>
+**Articles:**  [Ontological Argument and Apophatic theology](/articles/ontological_argument_and_apophatic_theology/)<br>
+**Summary:**<br>
 Famous for his work *Summa Theologiae*, Thomas Aquinas sought to derive Christian doctrine through natural theology—that is, not directly from sacred texts, but by observing nature. His project can be seen as "Christianizing" Aristotle: unlike Plato's influence on Augustine, where the divine was found in a realm of ideas, Aquinas, following Aristotle, looked to the natural world. Like Aristotle, Aquinas was extremely systematic in his approach.
 
 His fundamental project was integrating the newly reintroduced Greek philosophical texts—especially Aristotle’s works, which had been preserved and transmitted through Arabic scholars—into a Christian framework, making them compatible with Christian theology.
 
 
-**1260 CE — [Meister Eckhart](https://en.wikipedia.org/wiki/Meister_Eckhart):**
-**Articles:** [A Commentary on the 9th Sermon of Meister Eckhart](/articles/commentary_9th_sermon_eckhart/)
-**Summary:**
+**1260 CE — [Meister Eckhart](https://en.wikipedia.org/wiki/Meister_Eckhart):**<br>
+**Articles:** [A Commentary on the 9th Sermon of Meister Eckhart](/articles/commentary_9th_sermon_eckhart/)<br>
+**Summary:**<br>
 One of the most important Christian mystics, Meister Eckhart is most famous for his collection of sermons in which he describes his mystical experiences. He stands in stark contrast to the mainstream theory of Scholasticism of his day, as logic alone is not enough to understand God's grace.
 
 Central to his sermons is the idea that Eckhart speaks from the viewpoint of God, arguing that only when we step outside of time, space, and even logic can we gesture towards God.
@@ -201,29 +202,29 @@ The big problem, with mystics, is that it’s hard to discern what they are trul
 
 The Renaissance and Age of Enlightenment, spanning roughly from 1400 to 1700.
 
-**1483 CE – [Martin Luther](https://en.wikipedia.org/wiki/Martin_Luther)**
-**Summary:**
+**1483 CE – [Martin Luther](https://en.wikipedia.org/wiki/Martin_Luther)**<br>
+**Summary:**<br>
 Founder of the Protestant movement. Luther wanted to distance himself from Christian doctrine because he saw the Church as misusing its power and going against scripture by selling indulgences. He sought to return to the origins found in the New Testament, emphasizing that the Church was no longer necessary to receive God's grace. Instead, personal connection to God took precedence. His motto was *"grace by faith and scripture alone."*
 One can think of Luther's ideas as a radicalization of Saint Augustine's thoughts on human depravity — that humans can only await God's grace. He rejected the scholastic tradition, such as the work of Thomas Aquinas, criticizing their attempts to reconcile Aristotelian reason with religion. For Luther, "reason was the devil’s whore."
 Luther shifted Christian doctrine from a focus on works to an incorruptible faith: salvation came not through actions, but through a change in the soul infused by God. It was no longer necessary to go to a priest to receive salvation; instead, he introduced the concept of the *priesthood of all believers*.
 Through this doctrine, Luther was the first to move away from the corporate and communal identity of people toward a more individualistic one. This paved the way for later Enlightenment thinkers, shifting moral responsibility from the group to the individual — a trajectory that eventually led to the modern concept of human rights. Luther stands as a bridge between the medieval scholastic static-self and the modern idea of the rights of man.
 
-**1599 CE – [Thomas Hobbes](https://en.wikipedia.org/wiki/Thomas_Hobbes)**
-**Articles:** [Selected Chapters of Hobbes' *Leviathan*](/paper-summary/leviathan/)
-**Summary:**
+**1599 CE – [Thomas Hobbes](https://en.wikipedia.org/wiki/Thomas_Hobbes)**<br>
+**Articles:** [Selected Chapters of Hobbes' *Leviathan*](/paper-summary/leviathan/)<br>
+**Summary:**<br>
 Most famous for writing *Leviathan*, in which he argues about the nature of government and society. Hobbes believed the natural state of humanity is chaos — a *"war of all against all."* Only through the establishment of an absolute sovereign, to whom all power is transferred, can peace and order be maintained.
 
 
-**1596 CE – [René Descartes](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)**
-**Summary:**
+**1596 CE – [René Descartes](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)**<br>
+**Summary:**<br>
 The most famous of the Rationalists, Descartes believed that knowledge is gained through reason. He was the first systematic philosopher of the Enlightenment era to incorporate the Renaissance's new image of humanity into a coherent system addressing all major philosophical questions of his time.
 A major contribution of Descartes was his theory about the relationship between the body and the soul. He argued for a strict separation between them — a view known as *dualism*.
 Another key idea was his radical skepticism: the only certainty he could find was that he existed — *"Cogito, ergo sum"* (*"I think, therefore I am"*). From this starting point, he reasoned that the idea of a perfect being (*a priori*) must come from God, and thus God must exist.
 Building on this, Descartes concluded that experiences we perceive clearly and directly must also be real — because a benevolent God would not deceive us.
 
 
-**1632 CE – [Baruch Spinoza](https://en.wikipedia.org/wiki/Baruch_Spinoza)**
-**Summary:**
+**1632 CE – [Baruch Spinoza](https://en.wikipedia.org/wiki/Baruch_Spinoza)**<br>
+**Summary:**<br>
 Another prominent Rationalist, Spinoza advocated for a critical reading of the Bible, taking into account the historical context of its creation.
 He rejected Descartes' dualism, proposing instead a *monist* philosophy: that there is only one substance, which he identified with both nature and God — a view known as *pantheism*, inspired by Stoic thought.
 Spinoza's most important work focused on ethics. He argued that everything that exists is either *cogitatio* (thought) or *extensio* (extension) — the two modes (*modi*) of existence.
@@ -232,23 +233,23 @@ However, Spinoza's God was not a personal deity, but more akin to a force or nat
 Because humans do not control their bodies or their thoughts, he argued, we lack free will. Everything happens out of necessity. Therefore, Spinoza advised viewing the world *sub specie aeternitatis* — *from the perspective of eternity*.
 
 
-**1632 CE [John Locke](https://en.wikipedia.org/wiki/John_Locke)**
-**Summary:**
+**1632 CE [John Locke](https://en.wikipedia.org/wiki/John_Locke)**<br>
+**Summary:**<br>
 Locke was the first empiricist, believing that we can gain knowledge only through our senses and experiences. As such, he rejected the notion of *a priori* knowledge. His most important work was *An Essay Concerning Human Understanding*, in which he describes how all thoughts and imagination are reflections of our sensory experiences. Prior to receiving sensory input, he claimed, the mind is like a blank piece of paper.
 Based on our senses, we develop simple *sense ideas*, and through thinking and reflection on these ideas, more complex *reflection ideas* are created — these are made by piecing together simpler ideas.
 Furthermore, Locke differentiated between *primary qualities* and *secondary qualities*: primary qualities include form, weight, movement, and number, while secondary qualities include things like sweetness, sourness, and colors such as green or red. Locke believed that people could generally agree on primary qualities, but not on secondary qualities, as they differ from animal to animal and from human to human.
 Despite his empiricism, Locke did hold some rationalist views, believing that *natural laws*, foundational ethical principles, and the knowledge of God's existence are innate to every human being.
 
 
-**1685 CE [George Berkeley](https://en.wikipedia.org/wiki/George_Berkeley)**
-**Summary:**
+**1685 CE [George Berkeley](https://en.wikipedia.org/wiki/George_Berkeley)**<br>
+**Summary:**<br>
 Berkeley was the third major empiricist, alongside Locke and Hume, and at the same time one of the earliest idealists. He believed that everything we can know comes through our senses, and that the world is exactly as we perceive it. However, he argued that what we sense is not made of matter or substance but of the will of God — in other words, reality is made of spirit.
 God is intimately present within our consciousness and calls forth all the ideas and sensory experiences we have. Nature itself, in Berkeley’s view, is an expression of God, who is the sole cause of all existence.
 
 
-**1711 CE [David Hume](https://en.wikipedia.org/wiki/David_Hume)**
-**Articles:** [An Enquiry Concerning Human Understanding and Other Writings: Sceptical doubts](/paper-summary/enquiry_human_understanding/), [David Hume and Empiricism](/tangled_thoughts/hume/)
-**Summary:**
+**1711 CE [David Hume](https://en.wikipedia.org/wiki/David_Hume)**<br>
+**Articles:** [An Enquiry Concerning Human Understanding and Other Writings: Sceptical doubts](/paper-summary/enquiry_human_understanding/), [David Hume and Empiricism](/tangled_thoughts/hume/)<br>
+**Summary:**<br>
 Probably the greatest empiricist. Like Locke, he believed in *composite ideas*, arguing, for example, that things like angels do not exist independently but are combinations of simpler ideas like *man* and *wings*.
 Hume was very radical in his criticism of *metaphysical* and *religious* works, famously writing:
 > "If we take in our hand any volume of divinity or school metaphysics, for instance, let us ask, 'Does it contain any abstract reasoning concerning quantity or number? No. Does it contain any experimental reasoning concerning matter of fact and existence? No.' Commit it then to the flames: for it can contain nothing but sophistry and illusion."
@@ -262,9 +263,9 @@ Through these ideas, Hume undermined the Enlightenment project of reconciling fa
 
 
 
-**1724 CE [Immanuel Kant](https://en.wikipedia.org/wiki/Immanuel_Kant)**
-**Media:** [No Country for Old Men](/tangled_thoughts/no_country_old_man/)
-**Summary:**
+**1724 CE [Immanuel Kant](https://en.wikipedia.org/wiki/Immanuel_Kant)**<br>
+**Media:** [No Country for Old Men](/tangled_thoughts/no_country_old_man/)<br>
+**Summary:**<br>
 Coming after the era of empiricism and rationalism, one of Kant’s major projects was to resolve the dispute between the two camps. He argued that both reason and sensory experience are crucial for gaining knowledge of the world.
 Kant agreed with the empiricists that all knowledge originates in sensory experience, but he also argued that certain structures in our reason shape how we experience the world. He compared this to wearing colored sunglasses: the world itself remains the same, but the sunglasses (reason’s structures) tint everything we perceive.
 One such innate structure, according to Kant, is that we perceive everything within *time and space*. Thus, *time and space* are not properties of the external world but of human consciousness. This means consciousness is not passive but actively shapes our experience.
@@ -277,8 +278,8 @@ Kant believed that only when humans freely choose to follow moral laws do they t
 Importantly, Kant extended the Categorical Imperative beyond individuals to groups — families, clans, and nations — leading to ideas like the *League of Nations*, founded with Kantian moral principles in mind.
 
 
-**1770 CE [Georg Wilhelm Friedrich Hegel](https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel)** –
-**Summary:**
+**1770 CE [Georg Wilhelm Friedrich Hegel](https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel)**<br>
+**Summary:**<br>
 A German Romantic idealist philosopher. Central to Hegel’s thought is the notion of the *world soul* or *world spirit* (*Weltgeist*), which he understood as the sum of all human spirits and consciousnesses. Only humans, according to Hegel, possess spirit, and when he speaks of spirit, he means the life of humanity — our thoughts, our culture, our history.
 Hegel rejected Kant’s idea of *das Ding an sich* ("the thing-in-itself"). For Hegel, all truth is subjective; all knowledge is human knowledge. The only truth is that which we experience through our subjective spirit. In other words, if, as Kant said, there is no way for us to experience the "thing-in-itself," perhaps it does not even exist?
 However, this leads to a danger: if only individual subjective experience exists, it could result in idealistic solipsism — the belief that only one’s own mind truly exists and everything else is a construction of the mind.
@@ -338,8 +339,8 @@ A short, semi-accurate exercise to apply Hegel's method of dialectics to the his
 
 
 
-**1788 CE [Arthur Schopenhauer](https://en.wikipedia.org/wiki/Arthur_Schopenhauer)**
-**Summary:**
+**1788 CE [Arthur Schopenhauer](https://en.wikipedia.org/wiki/Arthur_Schopenhauer)**<br>
+**Summary:**<br>
 For most of his life, Schopenhauer was almost completely disregarded. He only gained recognition later, primarily for his masterpiece *The World as Will and Representation*. All his later writings were aimed at expanding and deepening this central work.
 
 Although his philosophy follows in the tradition of Kant and Western thought, Schopenhauer was also deeply familiar with Eastern traditions such as Hinduism and Buddhism, which heavily influenced him. He was also an impressive system-builder in his own right.
@@ -371,9 +372,9 @@ The philosophers most influenced by Schopenhauer include Nietzsche, Freud, and W
 
 The Modern Age, spanning roughly from 1800 to 1950.
 
-**1813 CE [Søren Kierkegaard](https://de.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard)**
-**Media:** [Angels Egg 1985](/tangled_thoughts/angles_egg/)
-**Summary:**
+**1813 CE [Søren Kierkegaard](https://de.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard)**<br>
+**Media:** [Angels Egg (1985)](/tangled_thoughts/angles_egg/)<br>
+**Summary:**<br>
 A Christian existential philosopher and partly Romantic. Kierkegaard was less concerned with this world, as most Romantics were, and more focused on the next world — the world of God. Passion, for him, was not for its own sake, but for God and faith. He responded to the Enlightenment's failure to reconcile faith and reason by choosing faith. A strong critic of European culture, particularly what he called "Sunday Christianity," Kierkegaard believed that true Christianity cannot be turned on and off; its message is so powerful that it must permeate one's whole life. Faith for him was like water and fire with reason — incompatible. He didn’t consider objective truth or reason to be very important. Instead, he focused on the truth of how one should live. For Kierkegaard, living well was the most important thing.
 
 A critic of Hegel, Kierkegaard was deeply individualistic, in contrast to Hegel’s emphasis on the communal. He thought Hegel stole away human agency, making people mere products of history. For him, the individual’s existence and life were central, and philosophy should not dwell on metaphysical speculations. Our time on earth is short, and we should focus on living well and finding subjective truths.
@@ -388,15 +389,15 @@ He divided life into three stages:
 Kierkegaard believed that one must choose between a life of religious faith or secular skepticism and reason — they cannot mix, and there is no objective standard for making this choice. This existential decision shapes the rest of one’s life.
 
 
-**1818 CE [Karl Marx](https://en.wikipedia.org/wiki/Karl_Marx)**
-**Summary:**
+**1818 CE [Karl Marx](https://en.wikipedia.org/wiki/Karl_Marx)**<br>
+**Summary:**<br>
 Marx’s starting point was Hegel, but he diverged from Hegel’s idealism into a more practical, political philosophy. He can be described as a historical materialist, arguing that the material conditions of life shape human reasoning. Marx agreed with Hegel’s dialectical method, but instead of the spiritual development of society (as Hegel thought), he argued that the material conditions — the *basis* of society — determine its spiritual and intellectual life — the *superstructure*. The *basis* consists of the economic forces, particularly the ownership of production, which determines the political and ideological structure of society.
 
 Marx believed the ruling class, who controls the means of production, also controls the moral framework of society. There is no eternal natural law, and all of history is a *history of class struggle*, where those who control the means of production dominate society. Marx’s theory of capitalism predicted that the system would eventually collapse. As capitalists reinvest in production, creating more efficient factories, fewer workers would be needed, leading to a classless society where everyone owns the means of production, thus resulting in communism.
 
 
-**1844 CE [Friedrich Nietzsche](https://en.wikipedia.org/wiki/Friedrich_Nietzsche)**
-**Summary:**
+**1844 CE [Friedrich Nietzsche](https://en.wikipedia.org/wiki/Friedrich_Nietzsche)**<br>
+**Summary:**<br>
 Existentialist thinkers differ greatly: when Kierkegaard asks the question of faith versus reason and chooses faith, Nietzsche chooses reason. Nietzsche is amoral; for him, morality is an impediment to the superior man. Instead, Nietzsche focuses on power. He wants to replace religion with art. One can compare Nietzsche to a seismograph—he could sense the beginnings of an intellectual earthquake that would later disrupt academia greatly. He did not create this earthquake, but he was able to foresee the implications of Western thought and the crisis the West entered after Darwin.
 
 This earthquake Nietzsche detects can be encapsulated in the sentence: "God is dead, God remains dead, and we have killed him." Nietzsche did not kill God; rather, the development of Western culture and science—shifting from a mysterious, mythological interpretation of the world to a more sophisticated, naturalistic, and scientific outlook—did.
@@ -413,14 +414,14 @@ Here Nietzsche says the natural motive of all living things, including humans, i
 And if there is no God and thus no salvation, then the only serious, worthwhile thing left is art—an attempt at worldly salvation.
 
 
-**1870 CE [John Stuart Mill](https://en.wikipedia.org/wiki/John_Stuart_Mill)**
-**Summary:**
+**1870 CE [John Stuart Mill](https://en.wikipedia.org/wiki/John_Stuart_Mill)**<br>
+**Summary:**<br>
 Most widely known for developing the theory of *Utilitarianism*, the belief that what is moral is what maximizes happiness and minimizes suffering. In his work *On Liberty*, he argued that society should allow individuals the maximum possible freedom unless their actions harm others.
 
 
-**1889 CE [Martin Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger)**
-**Media:** [My Dinner with Andre](/tangled_thoughts/dinner_with_andre/)
-**Articles:** [The Eiffel Tower is NOT in Paris!](articles/where_the_eiffel_tower_is_is_not_obejctive/)
+**1889 CE [Martin Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger)**<br>
+**Media:** [My Dinner with Andre](/tangled_thoughts/dinner_with_andre/)<br>
+**Articles:** [The Eiffel Tower is NOT in Paris!](articles/where_the_eiffel_tower_is_is_not_obejctive/)<br>
 **Summary:**
 Although Heidegger himself was not an existentialist, existentialism can be seen as a child of his philosophy. He borrowed concepts from Kierkegaard but reformulated them in a unique way. Heidegger’s greatest work, *Being and Time*, focuses on the fundamental question: what does "being" mean? Instead of looking outward at the external world, he approached the problem by turning inward, focusing on human experience.
 
@@ -443,9 +444,9 @@ This creates a sense of guilt: a debt to ourselves that can never fully be repai
 Thus, Heidegger suggests: it is not *what* you do that matters most, but *how* you do it — with authenticity, facing Being and mortality honestly, rather than evading them.
 
 
-**1905 CE [Jean-Paul Sartre](https://en.wikipedia.org/wiki/Jean-Paul_Sartre)**
-**Media:** [Synecdoche, New York](/tangled_thoughts/synedoche_new_york/)
-**Summary:**
+**1905 CE [Jean-Paul Sartre](https://en.wikipedia.org/wiki/Jean-Paul_Sartre)**<br>
+**Media:** [Synecdoche, New York](/tangled_thoughts/synedoche_new_york/)<br>
+**Summary:**<br>
 A French existentialist philosopher, Jean-Paul Sartre centered much of his work around a fundamental question: why is it that even when we are housed, fed, and comfortable, we still manage to feel dissatisfied with life?
 
 Sartre argues that inanimate objects are complete — they simply exist. They have no need for progress or aspiration; they are what they are. However, humans are different: we are *beings-for-itself*. We can not only think about what is but also about what could be, what might be, and what ought to be. As conscious agents, we can make decisions. Sartre calls this ability to imagine and move toward possibilities — things that are *not yet* — *nothingness*.
@@ -468,9 +469,9 @@ Sartre’s answer: we must live authentically, both individually and in relation
 
 
 
-**1913 CE [Albert Camus](https://en.wikipedia.org/wiki/Albert_Camus)**
-**Media:** [Taste of Cherry](/tangled_thoughts/taste_cherry/), [Sunset Limited](/tangled_thoughts/sunset_limited/)
-**Summary:**
+**1913 CE [Albert Camus](https://en.wikipedia.org/wiki/Albert_Camus)**<br>
+**Media:** [Taste of Cherry](/tangled_thoughts/taste_cherry/), [Sunset Limited](/tangled_thoughts/sunset_limited/)<br>
+**Summary:**<br>
 A French existentialist, Camus is nowadays most famous for his phrase: *"One must imagine Sisyphus happy."*
 
 Unlike earlier existentialists, Camus begins his worldview with the assumption that life is meaningless and uncaring, and instead focuses on how to deal with it. Existential philosophers before him, such as Kierkegaard, often tacitly assumed that life had inherent meaning, and that an existential crisis was merely the temporary loss or forgetting of that meaning. In other words, they were concerned with rediscovering life's objective, transcendent value.
@@ -494,22 +495,22 @@ This *revolt* or *rebellion* means doing things with the full knowledge that the
 
 As defined, starting after the end of World War 2 or after the end of time of the major existentialist.
 
-**1919 CE [G. E. M. Anscombe](https://en.wikipedia.org/wiki/G._E._M._Anscombe)**
-**Articles:** [The Meaning of Ought](/articles/the_meaning_of_ought/)
-**Summary:**
+**1919 CE [G. E. M. Anscombe](https://en.wikipedia.org/wiki/G._E._M._Anscombe)**<br>
+**Articles:** [The Meaning of Ought](/articles/the_meaning_of_ought/)<br>
+**Summary:**<br>
 Student of Wittgenstein, she was best known for her influential paper 'Modern Moral Philosophy,' in which she criticized modern moral theories like utilitarianism and Kantianism, and advocated for a return to virtue ethics. She was also known for her work 'Intention,' which laid the foundation for modern philosophy of action.
 
 
-**1921 CE [John Rawls](https://en.wikipedia.org/wiki/John_Rawls)**
-**Summary:**
+**1921 CE [John Rawls](https://en.wikipedia.org/wiki/John_Rawls)**<br>
+**Summary:**<br>
 Famous for his theory of justice, Rawls argued that a just society would be one where individuals could determine the structure of society and its laws, but with the trick that, once the rules are set, individuals would not know their position in society (e.g., whether they would be male or female, rich or poor, a worker or a capital owner). This "veil of ignorance" would produce a just society, as people would design a system that protects the most vulnerable because they wouldn't know if they would be among them.
 
 
 
 ## Less Relevant Philosopher
 
-**1646 CE [Gottfried Wilhelm Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)**
-**Summary:**
+**1646 CE [Gottfried Wilhelm Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)**<br>
+**Summary:**<br>
 Gottfried Wilhelm *Leibniz* tackled the problem of evil by famously arguing that our world is *“the best of all possible worlds.”* He believed that, although suffering and imperfection exist, they are part of a greater harmonious whole that only a divine, omniscient being (God) could have conceived — a world that balances all possible goods and evils better than any alternative.
 
 Leibniz also formulated the *principle of the identity of indiscernibles*, which states that if two entities share all the same properties, then they are not two entities but one and the same. There can be no true duplicates in reality.
@@ -526,9 +527,9 @@ Instead of interacting, *monads follow a “pre-established harmony”* — a ki
 This model allowed Leibniz to preserve both scientific determinism and theological order, while avoiding materialism.
 
 
-**1806 CE [Max Stirner](https://en.wikipedia.org/wiki/Max_Stirner)**
-**Media:** [Rope](/tangled_thoughts/rope/)
-**Summary:**
+**1806 CE [Max Stirner](https://en.wikipedia.org/wiki/Max_Stirner)**<br>
+**Media:** [Rope](/tangled_thoughts/rope/)<br>
+**Summary:**<br>
 Max Stirner is a German philosopher. His central thesis—and what he is most famous for—comes from his work *The Ego and Its Own*, where he presents the concept of egoism: "each human being should only care about themselves."
 
 Stirner outlines a three-stage progression in the development of human values, which he believes culminates in egoism. The first stage he calls "realism." This refers to individuals concerned with real-world objects and the fulfillment of their own appetites—essentially the mindset of young children. He believes ancient Greece exemplified this stage, as people there were focused on using their minds to influence the world. A prime example, he claims, are the Sophists, with Socrates being the exception. This could be challenged, for instance, by pointing out that Stoics in ancient Greece were more concerned with universal values than with the material world.
