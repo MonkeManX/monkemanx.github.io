@@ -6,4 +6,4 @@ tags: ["Anime"]
 
 {{< thought_image image="/attachments/devil-may-cry-netflix-anime.png" >}}
 
-The story is meh. What matters is Dante stylish killing demons. Though the CGI at some points is noticeably bad. 7/10.
+The story is meh. What matters is Dante stylish killing demons. Though the CGI at some points is noticeably bad. 6/10.
