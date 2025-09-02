@@ -1,124 +1,314 @@
 ---
 title: 'Scotland Trip'
 date: 2025-08-25 12:00:00
-tags: ["Random"]
-draft: True
+tags: ["Travel"]
 ---
 
 
-The following is a travel journal, in which I describe mz trip on scotland. Before I start it, I want to give a philosophical motivation for traveling. First I think the following words of [28th letetr from senneca](https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_28) are important
+The following is a travel journal in which I describe my trip to Scotland. Before I start, I want to give a philosophical motivation for traveling, feel free to skip this if you are not interested.
 
->  What pleasure is there in seeing new lands? Or in surveying cities and spots of interest? All your bustle is useless.
->  Do you ask why such flight does not help you? It is because you flee along with yourself. You must lay aside the burdens of the mind; until you do this, no place will satisfy you.
 
-One shouldn ot simple travel because there are prbolems at home or one is depressed and looks for a distraction, because for a while one might forget the problems, but sooner or later thez will slip through and one becoems unahppy for exmaple see day4 optimiyation theorz https://monkemanx.github.io/articles/namibia/.
-But i would go even fartehr than that, not only do i think that traveling with the goal is invalid, but also like mentioned "What pleasure is there in seeing new land?" there is no intresnsic goodness to experiencen either new ones, nor old ones in itself, insteasd experiences are instrumential this means thez are onlz good for the purpose of second intrinsic good. What is this second intrensic good? If zou have read mz previous article (https://monkemanx.github.io/articles/how_to_live/) thjen zou wikll know that in ther I rpopose virtue to be the onlz good, as such new expeircnes are onlz good as far as thez help to veleop and nourish virtue. How can thez do that? First I didnt travel to scotland with the primarz goal of sightseeing i.e. new ep iernces but on behest of a friend who invited me, thus it was **friendly** of accepting the invitation and giving compa sionship to him, second this was mz first trip alone outside of another counrtz as such it devlops **braveness**, third i do have a problem with sitting too much in mz room all daz in another words I have a proviclitz to the vice of **layiness** doing something leads away fro mthat to the virtue of **industriousness** which has the added beenfit of the providing me more oppornuintieis to practise virtue bz being more in the world.
+{{< details "Philosophical Reasoning" "true" >}}
 
-A while ago a firend of mine i have known for a almost 10 zears online, invited me to visit him in scotland, starting point for this invitation came when i talekd to him how i wnaetd to trz shrooms for the frist tiem but i was bit nervousd about it anmd had no trip sitter and he offer4ed to be one fro me, so I accepted the invite with the thought that we could also hang out in person and I could do a big of sightseeing the citz he lvies in that is edinburgh and mazbe scotland mroe at large.
-Since he didnt reallz hacve anz strict appointment or stuff he had to do for a while and me neither, I checked what the cheapest direct flight was from stuttgart to edinburgh, I landed on the eurowing flight company most of their flight costed like almsot 300 bucks but I found one which just would go on the 30th of julz just a few days afetr he invited me for just 60bucks and back o nthe 8th of august for another 60 bucks, so i bookd them, and just a few days later without anz real planing, besides mz goal of hanging otu with him and doing some sightseeing mz flight started to edinburgh.
+I think the following words from [Seneca’s 28th letter](/Moral_letters_to_Lucilius/Letter_28) are important:
+
+> What pleasure is there in seeing new lands? Or in surveying cities and spots of interest? All your bustle is useless.
+> Do you ask why such flight does not help you? It is because you flee along with yourself. You must lay aside the burdens of the mind; until you do this, no place will satisfy you.
+
+One should not simply travel because there are problems at home, or because one is depressed and looking for distraction. For a while one might forget the problems, but sooner or later they slip through and one becomes unhappy again. (For example, see my reflections in [Day 4: Optimization Theory](/articles/namibia/)) in my Namibia Travel log.
+
+But I would go even further than Seneca. Not only do I think that traveling with such a goal is invalid, but also as he writes, *“What pleasure is there in seeing new land?”*, there is no intrinsic goodness in experiencing either new or familiar things in themselves. Experiences are instrumental: they are good only insofar as they serve a higher intrinsic good.
+
+What is this higher good? If you have read my previous article ([How to Live](/articles/how_to_live/)), then you know that I propose **virtue** as the only intrinsic good. As such, new experiences are only good insofar as they help us develop and nourish virtue.
+
+How can they do this? First, I didn’t travel to Scotland with sightseeing as my primary goal, but rather at the behest of a friend who invited me. Accepting the invitation and offering companionship was thus an act of **friendship**. Second, this was my first trip alone outside my home country, which developed **courage**. Third, I have a tendency to spend too much time sitting in my room, in other words, I’m prone to the vice of **laziness**. Traveling helps counter that vice, cultivating the virtue of **industriousness**, which in turn gives me more opportunities to practice virtue by being active in the world.
+
+{{< /details >}}
+
+
+A while ago, a friend of mine, someone I’ve known online for almost ten years, invited me to visit him in Scotland. The starting point for this invitation came when I told him I wanted to try mushrooms for the first time, but I was nervous and had no trip, sitter. He offered to be one for me. So, I accepted the invitation with the thought that we could hang out in person, and that I could also do a bit of sightseeing in his city, Edinburgh, and perhaps in Scotland more broadly.
+
+Since he didn’t have any strict appointments for a while, and I didn’t either, I looked up the cheapest direct flights from Stuttgart to Edinburgh. Most flights with Eurowings were around 300 euros, but I found one on July 30th, just a few days after his invitation, for only 60 euros, with the return flight on August 8th also 60 euros. So I booked them, and just a few days later, without much planning beyond my goal of spending time with him and doing some sightseeing, I was on my way to Edinburgh.
 
 
 ## Day 1: The Flight
 
-Earlz in the morning of the 30th of julz I made mz waz from my small hometown to Stuttgart where the appointment was lcoated, for that I uses public transport, namelz bus and train, this is especialz practiable, because of the recentlz iontroducded deustchßbahn ticket, which is a ticket that cost roughlt 50 bucks per motnhs and allows zou to use all public transport like train or busses in the hwole of germanz, besdies high speed trains.
+Early in the morning of July 30th I made my way from my small hometown to Stuttgart, where my flight was departing. For that I used public transport. This is especially practical thanks to the recently introduced *Deutschlandticket*, which costs roughly 50 euros per month and allows you to use almost all public transport in Germany (trains, buses, trams), with the exception of high-speed trains.
 
-During trainride I was in a particualr mood, the main reason whz I wrote 1 wrote the article https://monkemanx.github.io/articles/how_to_live/ and more broadlz whz I becamse interested in philosophz in the first palce, is that I struggle with the meaning of lfie or shalli saz its meaningless, manz people when faced with such a question turn to god or trz to lvie a distracted life to nto face the qeustion again, but that was not good enough for e , I wantedt he meaning of mz life to be more gouredned thsu i staretd mz philsoophcial inquirz that ??? in the a rticvle how to lvie (tough this philosophical szstem is not zet complete, i still want to build in paul tillichs account of Grund, Nietsche overcoming of resilence and the budhist account of desire), and altough I do belive mz argument in this article to be sound and in a interlecctrucal level I do belivei n it, that does not mean that the emotions nesccearliz keep pace, in other words sometimes the emtoional realitz does not track or correspond to the itnerlecutal relaitz, we often itnerlecctual know that there is no rewason to be afraid about our particular fear zet we still do. That is not to saz that its impossible to align them, the frist thing of overcoming anz problem is interlecctual recongiying that it is a problem and then emtion can follow foot, to overcoem the fear of spdiers we frist need to make it clear to our reasons that this fear is not valid (at least here where i lvie, in australia this might be a valdi fear), and hopefullz i we belvie long enough in it the eemotion wil lfollow foot. Whz do I explai nall this? the reaosn i was feelign particular this morning, was because of exactlz this even tough i interleecctual know that all meaning and value is subejctive (see https://monkemanx.github.io/articles/where_the_eiffel_tower_is_is_not_obejctive/) and that i choose virtue, i couldnt help but feel the menaingless of the objectßsubject world. I think the following word from the book ääää that i bz cahcnhe read ehile on the train ride sum it up ratehr well
+During the train ride I found myself in a particular mood. The main reason why I wrote [my article *How to Live*](https://monkemanx.github.io/articles/how_to_live/), and more broadly why I became interested in philosophy in the first place, is that I struggle with the meaning of life, or rather its aapparent lack of it. Many people, when faced with such a question, turn to God, or they try to live a distracted life so as not to face the question again. But that was not good enough for me. I wanted the meaning of my life to be more grounded.
+
+Thus, I began my philosophical inquiry, which I outlined in that article (though the system is not yet complete, I still want to build on Paul Tillich’s account of *Grund*, Nietzsche’s overcoming of *ressentiment*, and the Buddhist account of desire). And although I believe my argument in that article is sound, and on an intellectual level I hold to it, emotions do not always keep pace with reason. In other words, sometimes the emotional reality does not correspond to the intellectual reality.
+
+We all know this: we may rationally understand there is no reason to fear something, yet still we feel fear. That doesn’t mean it’s impossible to align thought and feeling. The first step in overcoming any problem is recognizing it intellectually, and then waiting for emotion to follow. For example, to overcome the fear of spiders we first have to reason that, at least here in germany, the fear is not valid (in Australia, of course, it might be a different story). With time, hopefully, the emotion follows.
+
+Why do I explain all this? The reason I was in such a mood that morning was precisely because of this gap between intellect and feeling. Even though I know intellectually that all meaning and value are subjective (see my article [Where the Eiffel Tower Is Is Not Objective](/articles/where_the_eiffel_tower_is_is_not_obejctive/)), and that I myself choose [virtue as the good](/articles/how_to_live/), I couldn’t help but *feel* the meaningless of the object–subject world.
+
+I think the following words from a book I happened to be reading on the train sum it up well:
+
 
 {{< poem >}}
-
 The human heart is like a bowl with a little crack in the bottom, so that water is always leaking out.
 And you have to keep pouring more and more in, to try and make up for it.
-That no matter what you do in life, you're always losing things, either explicitly or in abstract.
+That no matter what you do in life, you're always losing things, either explicitly or in the abstract.
 And the only way to make up for it is to keep adding new things to make up for it.
 Because if you're not careful...
-You won't be able to keep it up, and before you know it, you'll have nothing at all. A
-nd then you'll be out of luck for good.
-
+You won't be able to keep it up, and before you know it, you'll have nothing at all.
+And then you'll be out of luck for good.
 {{< /poem >}}
 
-But enough brooding over this abck to the trip, I arrived at the airport, the flgith got delazed bz and hour and then I was up i nteh air, I had a reallz good nap, and 2hours later which thanks to he nape feltm roel ike 30minutes I was in edinbrugh.
-Here mz friednf was alreadz waiting with a car in park place, and thanbsk to mz delaz he waited like an horu i ncar park palce, which made up a fee of 35punds, just for parking, crayz isnt it?
-On the ride he tol me about the uk age rtestriciton to adult ocntent on the web https://www.independent.co.uk/tech/uk-porn-age-verification-b2795354.html, that recentlz went into pwoer, it is not justp ornographic sites that are hit bz it, but also discord channels, zou need to sent them a pciture of zor id to overcoem this, but zzou can also just use a vpn. When I arrived at this home it wasl erady afternoonm, we ordered some pizza qand played soem video game (dying lgiht susprisngly fun game) and tha5t was the daz.
+
+But enough brooding, back to the trip. I arrived at the airport, the flight was delayed by an hour, and then I was up in the air. I had a really good nap and two hours later, which thanks to the nap felt more like thirty minutes, I was in Edinburgh.
 
 
-## Day 2
-
-The place I was staying at was in the suburbs of edinburgh, with a bus station a minute away which could take you directly to the center of the thirty withhin 30 minutes. Altough this might sound a lot, this is thanks to how many bus stops the city have, I bet the same drive with a car would have not taken longer than 10 to 15 minutes.
-Coming from germany the public transport, particular the busses are in some way better and in some way worse, better is just the shear amount of bus station in the city you are never more than 5 minutes away from on, and its not like on my vllage where a bus arrives eevr half an horu or so, no they arrive minutely, often you have at theb uss station a queu of up to three 3 busses back to back, it is also aweasome that many buss station have a digital display on them that shows when the next busses to arrive are due (we really should have this in germany), and it is also realyl ncie how you can just pay by tapping your debit card, no question asked, this brings me to bad things which is foremorst the bad interopoility between different buss andd train companies, here in germany we have the duestche bahn ticket that cost like 50 bucks a month with which you can drive as much as you want (as long as its not on the very fast rtaons(ICE)), with every buss, trai nand tram, thsi intepobility is not there in scotland, eevry company does it different there is not even a unified app that shows yo uall possible routes, i found google maps worked best, in germany we nromally have one travel app for all publi transport.
-
-But enough of the public transport, in the morning me and my friend make our way to the inncer city to check out scotlands national museum, which is free not need to pay an entrance fee, fro mthe concept i think this is very cool, if a museum is the national one of the country than i think it makes sense that all people of the country should be able to enjoy it, no matter how poor or rich, tough i feel it would have been fair for foreigner to pay, also this leads to the msueum be very full you dont have some quietness instead it more of hustling and bustling, to the museum itself it has all kinds of exhibits from technology and sicence, to the progression of the land of scotland through time, to all kidns of animals,you can also get on top of them sueum where you have a ncie view on the city.
-
-After my friend and I split up, because eh had other thigns attend to and I continued to explore the inner city, most importantly I walked along the royal mile, which is a historious city that leads up tp the famous edinburgh castle, it has many seitengasse nthat you can go in and explore, the street was als opacked with people, I did not mention it yet but the motnth of Agusut in which  i wen to edinburgh is famous for its street festival called "the frigne" where artist from all over the orld come to perform, many in mroe officals halls and theathres, but some also on the street, as scch edinburgh was especially busy. I did not went into edinburgh castle itself, as I have heard its ratehr expensive, lognwait time and not that special, also i wasnt myself that curious as i ve seen enough castles living in germany i.e. wattburg. I did visit the St. Giles cathedral, very beautiful place, it has few exhibits in there that tell about the religious fight of protestanism vs cathocism, at the time whilem sot of scotlandp opulation was protestant the king/queen of cothland was cathlotic as such there was a geenreal fear in the popualtion that they might be forces back to cathlocithism and as such there where bucnh of fights around it.
-
-For the last point on my iternary, i made my way to arthsu seat which is a hill/mountain just out of edinburgh, hiking it up there takes like 30 minutes up and then another 30 down. From up there you have a nice view on the city, tough this too is very popular place to walk so many people are there. On my way p there I saw some kind of wildchicken, that was neat. Besides that I chilledu p there for a while, before making my way home.
-
-## Day 3
-
-In the morning I again headed out to the inner city to sightsee the thigns I couldnt on th previous day, my friend wasnt feeling well so I went by myself. My first stop was the cottish parliament that Iis open to pblic, before you can go in tough you have to go through a security check, architectural is is a very nice building in the foyeyer they have a bunch of exhibits relating to the construcitng of the building, like some models of it, they also have some exhibits rleating to democracy and voting, like when women where allowed to vote when scotlnad got his own parliament and so on. You can also go into the pariament itself and chek out the senators aruign with each other, sadly when I was there, there was nothing goind on on and it was just empty, still cool to look at.
-
-The next thign on my plan, was to visit the palace of hoolyroodhouse, hwich is palace of the crown that due this day is still in use, I tought this would be a good laternative fof the dinburgh castle a little less crowded, while you go through the paclace room by room you have an audio guide which tells you things about the room, honestly many of the commentary i found unesscary, there where two cool events that got narrated for mthe audio guide i wish i could have heard more, the first is the palace has a room full of paintings of all the kings of scotland, these painting where contracted by one of the kings t bolster is hown legitamte as such the paintings are not hisorical accuracte but more like imaginery version of how the kingsm ight have looked like, most strikenly all of them have a hwk nose which was added extra by the painter to make the past kings more similar in apperance to the current king and thus make the hawk nose of the king a featrue that indicated kingness, on one occasion the palace was trumed by a bunch of doldier who fought n there  and to this day you can still see on some of the pianints traces of swoard cuts, the second cool event was of the death of one of the queens of scotland that got murdered in that palace and to this day it is said if one looks closely enough in one of the corner of the palace you can see blood sllaters when she got murdered. In addition to the palace, it has a agrden you can walk trhoguh it(honestly i am not a fan of it, ive seen far betetr garden) and a small ruins of a chruch that was one used for catchloics but with the decline of cathclosim in soctland the chrch went into ruins. Overall I wold only recommend to check out the paalce if one is inetrested in the crown.
-
-As a philyosophy buff myself, I coudlnt pass up the chanche to visit the grave of the famous philosopher David Hume, he is most famous for standing in theb ig fight ofp hilosophy between empriciism an rationlism on the side of empircism, heres a  paper fpr m him if you want  to read it, Before coming to edinburgh i didnt even know he was buried there, but when i checked for sightseing places i came across carlton graveyard which i nfact is the rstplace of david hume. Findint eh palce took me way longer than i exspected, due the carlton gravyard beeing split up between a old one and a new one and if you look on google ,aüs you get guided to the old carlton gravyard which still had a very cool vibe, i must iagine it being very scary at night. i recommend on google maps chekcign for davi hume grave directly instead of carlton graveyard this will lead you to the correct place, i must have wandered aroudn for 2-3 horus just lookign for the place.
-
-Next to the carlton graveyard is also the carlton hill, which has a way better view on edinburh than arthurs seat, from up there one can go down the david hume walk named so, becuse davidh ume used to walk there and was a major propoenent for keeping the hill in its natureal nature form, so that thep eople of edinbrugh can enjoy it. But going down the david hume walk was was one of the reason why it took so long finding his grave.
-
-Down there, is also a bookshop that is very unqiue i can recommedn exloring.
+{{< img src="/attachments/scotland/eurowing.jpg" width="100%" >}}
 
 
-Before coming to my item on myp lane for the today, i ahd to do a quick stop i nthe local supermarket to get some food, all I can say the german bread is so much better its insane, the bread there was som kidn of evry fluffy white sweet milk bread. Looking for a place to eat my final destiny was the royal btoanic garden, which has all kinds of plants trees and flowers, not only indigiouneous to soctland but from all around the world, for emaple they have a place for chiense plants, on on info sign i could also read that they regualryl send people acorss the world to find unqiue plants andb ring them to the royal garden, tought the versailty of plants is cool, because of that the garden lacks a cohesive vision as such I didnt find theg arden particular pretty, in other words i have seen betetr botanic garden, maybe it just that i was missing amoutn of shear flwoers, like in the bundesgartenshow.
+My friend was already waiting with his car in the parking lot. Unfortunately, because of the delay he ended up waiting about an hour, which cost him 35 pounds in parking fees, crazy isn’t it?
+
+On the ride, he told me about the new UK age-restriction law on adult content ([see here](https://www.independent.co.uk/tech/uk-porn-age-verification-b2795354.html)). It doesn’t just affect pornographic sites, but also things like Discord channels. You now need to send in a picture of your ID to get access, or just use a VPN.
+
+When I arrived at his home it was already afternoon. We ordered some pizza and watched soem anime, and that was the day.
 
 
-## Day 4
-
-Walkign acorss teh city the preivous tow day my body ached, as such idecied for the foruth day to be a break day, I just chilled with my friend and played some video games, namely far cry and dying light, both i have never palyed before, i must say iam asoutned how good dying light is for being nearly 15 years old.
-
-In the evening, my friends om invited us to come with her and her firends to the frankenstein pub, fammous for thes ame named theme, and a frankenstei nthat walk down the stairs to the pub at a particular time every day or so. They had downstairs karaoke we partake, everyone was doing their traditional karaoke son, to my friend decided to mix i up and do heavy metall song, lol. I also got two times told my hair was great, at this time I had grown ot my hair since a few motnhs and basically a very struppeliger afro.
+{{< img src="/attachments/scotland/IMG_20250730_185504551.jpg" width="100%" >}}
 
 
-## Day 5
 
-One reason for visitng my friend in the first place was that I wanetd to try pyscchedlics but needed a tripsitte and he offered to be one, thus on this day i decided to take some shrooms mor precisely penis envy (funny name). For the motivation of it it comes from philosophical curisotiy, if reader has rfollowed mymore philosophcial wriitngs for time, must have noticed that I more and more value authenthic subejctive experience as opposed to objectivism, this has both to do with the heiddergian notion of dasein that I find is by its very nature gorunded in subjectivism and the more buddhist and paul tillich notion subjectivity as the ground of being, in short i wanetd to expiernce what sam harris calls non-duality, where the watcher and the watchee melt to one, the subject and object becoem one, there is no feeling of a person inside the bdoy who look at the world otuside extenral from oenself, a filte between, insetad it is one. Proably expressed best through the idiom *imagien yourself without head* as sam harris explains
+## Day 2: Edinburgh
 
->
+The place I was staying in was in the suburbs of Edinburgh, with a bus station just a minute away that could take you directly to the city center in about 30 minutes. Although that might sound long, it’s mostly because of how many bus stops there are in the city. I bet the same drive by car would have taken no longer than 10–15 minutes.
 
-Tough not much happened I got an upset tummy, and after two times redosing it was too late thta i dint want to risk to take a even higher dose, as I tend to becme anxious in the dark. Touh I got really good pyschedleic soundtrack of it for mmy friend
+Coming from Germany, I found the public transport in Edinburgh, especially the buses, both better and worse in different ways. Better, because of the sheer number of bus stops: you’re never more than five minutes away from one. And unlike my village, where a bus comes maybe every half hour, here they arrive almost constantly. Often there’s even a queue of up to three buses back-to-back at a station. I also really liked how many bus stops have digital displays showing when the next buses are due (we should definitely have this everywhere in Germany), and how easy it is to just pay by tapping your debit card—no questions asked.
 
-Tough honestly i myself am mroe of ichiko aoba fan like
-
-live music
-
-or
-
-music on the rock
-
-I do stil lwant to try soem pyschedlcics next time i will proably try osmethign mroe pure i.e. LSD but that is the story for another time.
-
-## Day 6-7
-
-Not much to tell, we both got sik, proably from the frankenstein pub we visited tw oday prior, I was soem kind of codl or flue, we both chilled teh tiemsm ostlyy in our beds, I watched the LOTM anime, very beautiful and read the manhwa monsetr child, love the story, also small ending spoiler, but i want to merge into a small little pshere and live forever happily after in there, henosis.
+On the other hand, what was worse is the lack of interoperability between different bus and train companies. In Germany we have the *Deutschlandticket*, which costs about 50 euros a month and lets you travel as much as you want (as long as it’s not on the very fast trains, the ICE) across all buses, trams, and regional trains. In Scotland, there’s no such unified ticket, every company does things differently, and there isn’t even a single app that shows you all possible routes. I found Google Maps worked best. In Germany, it’s normal to have one central travel app for all public transport.
 
 
-## Day 8
-
-Even touhg I am still stick, besided edinbrugh i have not seen much of scotland, so i wanetd to atleast get out one mroe and chekout theh ighlands, i first thought about goin to the isle of sky but then rejcetd ti wfor being too far away instead i decided to visit pitlochry which is a small town in them idst of highland which i could use to epxlore th highlands at least a bit, thus early i nthe mornign i took the bus like always to the inenr city of edinburhg fro mwhich my plan was to obook a inter link city bus to pitlochry, tough this didnt work out i tried it twoice andb oth times eve notugh i booked a ticked the bus didnt stop, each ticket cost like 50 bucks so that sucke. I then decided to isnetad take teh trai nwhich worked so well, lesson dont take the bus take the rain.
-
-The first thing I did was to grab soem lunch, and sicne I nevr had fish and chips I decied to try it since it is iconc for united kingdom, tough hoenstly i feel its highly overrated, it is crispy but it taste like all firend stuff, its rather bland.
-
-Then I explored soem of pitlochry, it has a very ncie chruch, is home to distiliarties, had an enroumoud damn with soem fish strairs, a theathre and is in geenral a beautiful city.
-
-I also checked out the neighbouring forrest which has a short walk that includes a waterfall, kinda neat, honestly i like my german forrest more, tough it is a short walk that i can recommend.
-
-For my palce to stay i booked a backapcking hotel, which costes liek 30 bucks for a night, i was supposed to be i na room with 6 beds where one another person booked, but they iddnt hsow up, so i had teh 6 bed room all for myself, also what a a straneg coindience ther wifi password was "i lvoe magic mushrooms". For dinner, i had schüseelf full of grapes as i wasnt that hungry.
-
-## Day 9
-
-The plan for that day was to hike on the Ben Vrackie mountain, it took me a total of maybe 6 hours going up and down, part of the reaso nwhy it took so long is that i had no car to drive to the car pak place for them outnai nso i neede t owalk to it which extened thej ounreyy of a t least an hour in addition i was still sick from the days earlier. Tough i can tell you the landscape is beautiful, finaly it felt like somethign i oculd have not seen in germany, the entire the mountain is dunked into a puple hue, then at the foot you have a beautifl little lake. Hghhly recommend it, its also not hard for a mountain climb compared to others, i'll let thei mages speak the rest.
+{{< video_thought video="/attachments/scotland/VID_20250807_190337993.mp4" >}}
 
 
-After I came bak down from the moutnain I ate lunh and bought some souveniros for my parents, namely hadnmade soeap and a scarf from woll fro mscotland, than it was time to take the train abck to edinbruh.
+But enough about transport. In the morning my friend and I went to the city center to check out Scotland’s National Museum. Entrance was free, which I think is a very cool idea. If it’s the *national* museum, then it makes sense that everyone in the country, rich or poor, can enjoy it. That said, I felt it would have been fair if foreigners had to pay. Free entry also means the museum is very full, so you don’t get much quietness, but instead a bustling atmosphere.
+
+The museum itself is huge and varied, with exhibits ranging from technology and science, to the history of Scotland, to collections of animals. You can also go up to the roof, which offers a great view of the city.
 
 
-## Day 10
+{{< gallery2
+    globalMatch="/scotland/museum/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="none"
+    embedPreview=false
+    loadJQuery=true
+>}}
 
-At around 10 i nthe morning mz friend and I took a bus to airport, which took more than a hour and had 50 stops, before edinbrugh i have never driven in a bus before that stops eevrz two minute. We said our goodbzes and he left, and naturally the flight got delzaed and let me tell you the airprot in stuttgart is so much mroe betetr than in edinburgh, it is bigger, cleaner when going to the temrinal you are nto forvced to walk through doyens of shops blastign sales msuic, and zes i mean through shops and the temrinal itself is not s ooverfilles that peopel are squeeying shoudler to shoulder.
-just like mz previous flight it was relaxing and i finallz got to finish the book introducito nto heiddeegr. I landed in stuttgar t sucesfullz and afetr another few hour I was home and fell exhausted in mz bed and not soon afcter darkbess overcame me.
+
+Afterwards my friend and I split up, he had other things to attend to, and I continued exploring the inner city. Most importantly, I walked along the Royal Mile, the historic street that leads up to the famous Edinburgh Castle. The Royal Mile has many little side alleys to wander into and explore. The street was packed with people, and for good reason: I visited in August, the month of the *Fringe Festival*. Artists from all over the world come to perform, many in official halls and theaters, but also plenty right on the streets. Edinburgh was especially busy because of it.
+
+
+{{< gallery2
+    globalMatch="/scotland/royal-mile/*"
+    rowHeight="200"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="none"
+    embedPreview=false
+    loadJQuery=true
+>}}
+
+
+I didn’t go into the castle itself, since I had heard it was expensive, had long wait times and wasn’t all that special. Besides, I wasn’t that curious, I’ve seen plenty of castles in Germany, like the Wartburg. Instead, I visited St. Giles’ Cathedral, which is a very beautiful place. Inside, there are a few exhibits about the religious conflicts between Protestantism and Catholicism. At the time, most of Scotland’s population was Protestant, but the monarch was Catholic. This created a general fear among the people that they might be forced back into Catholicism, leading to much conflict.
+
+
+{{< img src="/attachments/scotland/IMG_20250731_165120553.jpg" width="100%" >}}
+
+
+For the last point on my itinerary, I made my way to Arthur’s Seat, a hill just outside of Edinburgh. Hiking up takes about 30 minutes, and another 30 to come back down. From the top you get a wonderful view of the city, though it’s also a very popular place, so you’ll never be alone. On my way up I even saw some kind of wild chicken, which was neat. I chilled up there for a while before making my way back home.
+
+
+{{< img src="/attachments/scotland/IMG_20250731_175436462.jpg" width="100%" >}}
+
+
+## Day 3: Edinburgh
+
+In the morning I again headed into the city to see the things I hadn’t managed the previous day. My friend wasn’t feeling well, so I went by myself.
+
+My first stop was the Scottish Parliament, which is open to the public. Before going in you have to go through a security check. Architecturally it’s a very nice building. In the foyer there are exhibits about the construction of the parliament, including some models of it, as well as exhibits relating to democracy and voting, for example, when women were first allowed to vote, and when Scotland got its own parliament. You can also go into the parliament chamber itself and watch the senators arguing with each other. Sadly, when I was there nothing was happening, and the chamber was empty. Still, it was cool to see.
+
+Next on my list was the Palace of Holyroodhouse, the official royal palace in Scotland, still in use today. I thought it would be a good alternative to Edinburgh Castle, maybe less crowded. As you walk through the palace room by room you get an audio guide. Honestly, much of the commentary I found unnecessary, but there were two stories that really stood out.
+
+
+{{< img src="/attachments/scotland/IMG_20250801_114011354.jpg" width="100%" >}}
+
+
+The first was about the room full of paintings of Scottish kings. These paintings were commissioned by one of the kings to bolster his own legitimacy. They are not historically accurate but more like imagined versions of what the kings might have looked like. Strikingly, all of them were painted with a hawk nose, added deliberately by the painter so that the past kings resembled the current king, making the hawk nose itself a symbol of “kingliness.” At one point soldiers stormed the palace and fought inside; to this day you can still see sword cuts on some of the paintings.
+
+The second story was about a queen of Scotland who was murdered in the palace. Legend says that if you look closely enough in one corner of a room you can still see the bloodstains.
+
+The palace also has a garden you can walk through (honestly, I wasn’t impressed, I’ve seen better gardens) and the ruins of a church that was once Catholic. With the decline of Catholicism in Scotland, the church fell into disuse and ruin. Overall, I would only recommend the palace if one is particularly interested in the monarchy.
+
+
+{{< img src="/attachments/scotland/IMG_20250801_124325703.jpg" width="100%" >}}
+
+
+As a philosophy buff, I couldn’t pass up the chance to visit the grave of David Hume. He is most famous for standing on the side of empiricism in the great philosophical fight between empiricism and rationalism. (Here’s [a paper from him](/paper-summary/enquiry_human_understanding/) if you want to read.) Before coming to Edinburgh I didn’t even know he was buried there, but while searching for sightseeing spots I came across Calton Cemetery, which is in fact Hume’s resting place.
+
+
+{{< img src="/attachments/scotland/IMG_20250801_134951693.jpg" width="100%" >}}
+
+
+Finding the grave took me much longer than expected, because the Calton burial grounds are split between “Old” and “New” cemeteries. If you just look up “Calton graveyard” on Google Maps you’ll get sent to the old one. It has a very cool atmosphere (I can imagine it being quite spooky at night), but Hume isn’t buried there. I recommend searching directly for “David Hume grave” instead, as this will guide you to the right place. I must have wandered around for two or three hours before finding it.
+
+
+{{< img src="/attachments/scotland/IMG_20250801_150327427.jpg" width="100%" >}}
+
+
+Next to Calton Cemetery is also Calton Hill, which in my opinion offers a better view of Edinburgh than Arthur’s Seat. From the top, you can walk down the “David Hume Walk,” named after him because he used to stroll there regularly and advocated keeping the hill in its natural form so the people of Edinburgh could enjoy it. Ironically, walking down that path was one of the reasons it took me so long to find his grave.
+
+Down there, I also came across a very unique bookshop that I can highly recommend exploring.
+
+Before moving on to the final stop on my itinerary, I did a quick supermarket run to get some food. All I can say is: German bread is so much better. It’s insane. The bread I found was some kind of fluffy, sweet milk bread—more like cake than bread.
+
+For the final destination of the day I went to the Royal Botanic Garden. It has all kinds of plants, trees, and flowers, not only native to Scotland but from all around the world. For example, there’s an area for Chinese plants. One of the information signs explained that the garden regularly sends people abroad to find unique plants to bring back to Edinburgh.
+
+
+{{< gallery2
+    globalMatch="/scotland/botanic-garden/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="none"
+    embedPreview=false
+    loadJQuery=true
+>}}
+
+
+Although the variety is impressive, I found the garden lacked a cohesive vision. Because of that, I didn’t find it particularly beautiful, just interesting. In other words, I’ve seen better botanical gardens. Maybe it’s just that I was missing the sheer abundance of flowers, like at the *Bundesgartenschau* in Germany.
+
+
+## Day 4: Break Day
+
+After walking across the city the previous two days, my body ached. So I decided that the fourth day would be a rest day. I just chilled with my friend and played some video games, namely *Far Cry* and *Dying Light*, both of which I had never played before. I must say, I was astonished at how good *Dying Light* is, considering it’s nearly 15 years old.
+
+In the evening, my friend’s mom invited us to join her and her friends at the Frankenstein Pub, famous for its theme and for the Frankenstein figure that walks down the stairs into the pub at a certain time each day. Downstairs they had karaoke, and we joined in. Most people were doing the usual karaoke classics, but my friend decided to mix it up with a heavy metal song, lol.
+
+I also got complimented on my hair twice that night. At the time I had been growing it out for a few months, so I basically had a very scruffy afro.
+
+
+{{< img src="/attachments/scotland/IMG_20250802_233937968.jpg" width="100%" >}}
+
+
+## Day 5: Drugs
+
+One of the main reasons for visiting my friend in the first place was that I wanted to try psychedelics but needed a tripsitter, and he offered to be one. So on this day I decided to take some shrooms, more precisely *Penis Envy* (funny name).
+
+My motivation came from philosophical curiosity. If you’ve followed my more philosophical writings, you’ve probably noticed that I’ve come to value authentic subjective experience more and more, as opposed to objectivism. This has to do with the Heideggerian notion of *Dasein*, which I find to be grounded in subjectivity by its very nature, and also with Buddhist and Paul Tillich, inspired notions of subjectivity as the ground of being.
+
+In short, I wanted to experience what Sam Harris calls *non-duality*, where the watcher and the watched dissolve into one, subject and object merge, and there is no longer the sense of a person inside the body looking out at a world external to oneself. Perhaps it’s best expressed through the idiom Harris sometimes uses: *imagine yourself without a head*.
+
+> As you gaze at the world around you, take a moment to look for your
+> head. This may seem like a bizarre instruction. You might think, “Of
+> course, I can’t see my head. What’s so interesting about that?” Not so
+> fast. Simply look at the world, or at other people, and attempt to turn
+> your attention in the direction of where you know your head to be.
+> For instance, if you are having a conversation with another person,
+> see if you can let your attention travel in the direction of the other
+> person’s gaze. He is looking at your face—and you cannot see your
+> face. The only face present, from your point of view, belongs to the
+> other person. But looking for yourself in this way can precipitate a
+> sudden change in perspective, of the sort Harding describes.
+> Some people find it easier to trigger this shift in a slightly different
+> way: As you are looking out at the world, simply imagine that you
+> have no head.
+> Whichever method you choose, don’t struggle with this exercise.
+> It is not a matter of going deep within or of producing some
+> extraordinary experience. The view of headlessness is right on the
+> surface of consciousness and can be glimpsed the moment you
+> attempt to turn about. Pay attention to how the world appears in the
+> first instant, not after a protracted effort. Either you will see it
+> immediately or you won’t see it at all. And the resulting glimpse of
+> open awareness will last only a moment or two before thoughts
+> intervene. Simply repeat this glimpse, again and again, in as relaxed a
+> way as possible, as you go about your day.
+
+In the end, not much happened. I got an upset stomach, and after redosing twice it was already too late in the day to risk a higher dose—especially since I tend to get anxious in the dark. Still, my friend and I ended up with a really good psychedelic soundtrack out of the experience.
+
+{{< youtube link="https://www.youtube.com/watch?v=oyJSV9nnt10" >}}
+
+Personally though, I’m more of an Ichiko Aoba fan, especially her live music and her work on *The First Rock*.
+
+{{< youtube link="https://www.youtube.com/watch?v=SB7PKTQR6TU" >}}
+{{< youtube link="https://www.youtube.com/watch?v=OZXH9iXqFbI" >}}
+
+I do still want to try psychedelics again—next time probably something more “pure,” like LSD. But that is a story for another time.
+
+
+## Day 6-7: Sick
+
+Not much to tell this day. We both got sick, probably from the Frankenstein pub we had visited two days earlier. It felt like some kind of cold or flu. We spent most of the time just chilling in our beds.
+
+I watched the [LOTM](https://en.wikipedia.org/wiki/Lord_of_Mysteries) anime, which is really beautiful, and read the manhwa *Monster Child*. I love the story, also small ending spoiler, but I just want to merge into a little sphere and live happily forever inside it. *Henosis.*
+
+
+## Day 8: Pittlochry
+
+Even though I was still sick, I hadn’t seen much of Scotland beyond Edinburgh, so I wanted to get out one more time and explore the Highlands. At first I considered going to the Isle of Skye, but decided it was too far away. Instead, I chose Pitlochry, a small town in the middle of the Highlands, which would allow me to explore the region a bit.
+
+Early in the morning I took the bus, as usual, into the center of Edinburgh. My plan was to catch an intercity bus to Pitlochry. That didn’t work out, twice I tried and both times even though I had booked tickets (which cost about 50 pounds each), the bus didn’t stop for me. Lesson learned: don’t take the bus, take the train! That worked perfectly.
+
+
+{{< img src="/attachments/scotland/IMG_20250806_125619882.jpg" width="100%" >}}
+
+
+The first thing I did upon arriving was grab some lunch. Since I had never had fish and chips before, I decided to try it, it’s iconic in the United Kingdom. Honestly, I found it highly overrated: crispy, yes, but it tastes like all fried food and is rather bland.
+
+I then explored Pitlochry itself. The town has a very nice church, several distilleries, a huge dam with fish ladders, a theatre, and is generally very beautiful. I also checked out the neighboring forest, which has a short walk that includes a waterfall. Kinda neat, though I personally prefer my German forests, but it’s a short walk I would still recommend.
+
+For my place to stay, I booked a backpacker hotel that cost about 30 pounds a night. I was supposed to share a six-bed room with another guest, but they didn’t show up, so I had the whole room to myself. A funny coincidence: the Wi-Fi password was *“I love magic mushrooms.”*
+
+For dinner, I wasn’t very hungry, so I had a small plate full of grapes.
+
+
+{{< gallery2
+    globalMatch="/scotland/pitlochry/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="none"
+    embedPreview=false
+    loadJQuery=true
+>}}
+
+
+## Day 9: Hiking Ben Vrackie
+
+The plan for the day was to hike Ben Vrackie. The whole trip up and down took about six hours. Part of the reason it took so long was that I didn’t have a car to drive to the trailhead, so I had to walk to it, which added at least an extra hour. On top of that, I was still sick from the previous days.
+
+That said, the landscape was absolutely beautiful. Finally, I felt like I was seeing something I couldn’t find in Germany. The mountain itself is bathed in a purple hue, and at the foot there’s a lovely little lake. I highly recommend it. Compared to other mountain climbs, it’s not particularly hard. I’ll let the images speak for the rest.
+
+After coming back down, I had lunch and bought some souvenirs for my parent: handmade soap and a wool scarf from Scotland. Then it was time to take the train back to Edinburgh.
+
+
+{{< gallery2
+    globalMatch="/scotland/ben-vrackie/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="none"
+    embedPreview=false
+    loadJQuery=true
+>}}
+
+
+
+## Day 10: Flight
+
+Around 10 in the morning, my friend and I took a bus to the airport. It took over an hour and had around fifty stops. Before this trip, I had never been on a bus that stopped every two minutes and had so many stops.
+
+We said our goodbyes, and of course, the flight got delayed. Let me tell you: the airport in Stuttgart is much better than Edinburgh’s. It’s bigger, cleaner, and when walking to the terminal you’re not forced through dozens of shops blasting sales music. The terminal itself isn’t overcrowded, so you don’t have to squeeze shoulder to shoulder with other travelers.
+
+Just like my previous flight, it was relaxing and I finally got to finish the book *Introduction to Heidegger*. I landed in Stuttgart successfully, and after a few more hours I was home, collapsing exhausted into my bed. Darkness soon overcame me, and I slept deeply.

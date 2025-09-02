@@ -1,7 +1,7 @@
 ---
 title: 'The Gem of Africa'
 date: 2025-03-25 12:00:00
-tags: ["Random"]
+tags: ["Travel"]
 pinned: true
 ---
 
@@ -13,16 +13,16 @@ So, my plan was to move one major exam to my final semester, which would also be
 
 Back to Namibia. The plan was to rent a car and drive in a big circle around the country, checking out all the important sights along the way. We decided to rent an automatic 4x4. Our selection criteria were simple: cheap, reliable, and with a rooftop tent for safety, as Namibia is famous for its wildlife. For food, we stocked the car’s included mini-fridge with cans and bought some [game meat](https://en.wikipedia.org/wiki/Game_(hunting)) from a local butcher. We also bought water in bulk (about 40 liters, calculating 5 liters per person per day), as it’s not safe to drink in most places. We spent most nights at rented campsites, where we could grill the game meat and canned food in the evening. For dinner, we often had bread and cheese. When we were in a city, we took the opportunity to stay in a hotel and eat at a restaurant.
 
-Before the trip, we had some preparations to do, the most important being a visit to the travel medicine consultation. These can be found in major cities, such as [Karlsruhe](https://www.landkreis-karlsruhe.de/Service-Verwaltung/Themen-Projekte/Gesundheit/Reisemedizinische-Sprechstunde/), and they’ll tell you what you need to know about medical precautions. For example, they recommended vaccinations like rabies, typhus, hepatitis A, tetanus, whooping cough, and diphtheria. Some of these cost money, but my health insurance reimbursed me for the ones that did. 
+Before the trip, we had some preparations to do, the most important being a visit to the travel medicine consultation. These can be found in major cities, such as [Karlsruhe](https://www.landkreis-karlsruhe.de/Service-Verwaltung/Themen-Projekte/Gesundheit/Reisemedizinische-Sprechstunde/), and they’ll tell you what you need to know about medical precautions. For example, they recommended vaccinations like rabies, typhus, hepatitis A, tetanus, whooping cough, and diphtheria. Some of these cost money, but my health insurance reimbursed me for the ones that did.
 
 We also bought the meat in advance, rented the car, and booked accommodation for the busier spots, like the Etosha National Park and the city of Swakopmund. It’s important to note that we traveled in the off-season. While this made many things cheaper and less crowded, it also meant fewer animals to see. This is because, in the off-season, there’s a lot of rain, which spreads the animals out. In the peak season, it’s drier, so the animals gather around the waterholes, making it easier to see them—you just have to wait at the waterhole for them to come.
 
 
 ## Day 0: The Flight
 
-Our plane took off in the evening, flying directly from Frankfurt to Windhoek, the capital city of Namibia, taking approximately 10 hours. We arrived a bit early, giving us enough time to grab something to eat and, of course, enjoy a beer. 
+Our plane took off in the evening, flying directly from Frankfurt to Windhoek, the capital city of Namibia, taking approximately 10 hours. We arrived a bit early, giving us enough time to grab something to eat and, of course, enjoy a beer.
 
-The plane wasn’t large; it could host maybe a hundred people. As this was my first flight, I was a bit nervous, and the turbulence—though not major—didn't help. To make matters worse, I got the worst seat possible, right in the middle. To my left were my two friends, and to my right was a stranger. This meant that, if I wanted to stand up, I had to either ask the person next to me or get both of my friends to stand up. Before the in-flight meal, this wasn’t much of a problem, but afterward, both my friends and the stranger quickly fell asleep, leaving me to deal with the rest of the night. I spent it trying to suppress the urge to pee and debating whether to wake someone up to use the toilet. I do have a weak bladder, so I barely slept—only about an hour—which would catch up with me the next day. 
+The plane wasn’t large; it could host maybe a hundred people. As this was my first flight, I was a bit nervous, and the turbulence—though not major—didn't help. To make matters worse, I got the worst seat possible, right in the middle. To my left were my two friends, and to my right was a stranger. This meant that, if I wanted to stand up, I had to either ask the person next to me or get both of my friends to stand up. Before the in-flight meal, this wasn’t much of a problem, but afterward, both my friends and the stranger quickly fell asleep, leaving me to deal with the rest of the night. I spent it trying to suppress the urge to pee and debating whether to wake someone up to use the toilet. I do have a weak bladder, so I barely slept—only about an hour—which would catch up with me the next day.
 
 Aside from that, the flight was rather uneventful, and we arrived safely the following morning.
 
@@ -53,7 +53,7 @@ An interesting note about the airport: first, it was crawling with some kind of 
 
 The first thing we did was exchange some money for Namibian dollars and buy some water. Here’s a funny thing: there were two local money exchanges right next to each other, with one offering a better rate than the other. How does that work? The company from which we rented the jeep had sent someone to pick us up from the airport, which is a common practice for car rental companies in Namibia. After all, how are you supposed to get to your car otherwise? They don’t have public transportation, and the airport is over an hour’s drive from the next major city, Windhoek. So, we and a bunch of other travelers got onto a bus, which drove us toward the rental company. The bus was speeding down the road, which we later learned is more the norm than the exception. While zipping across the landscape, we took in our first views of Namibia’s scenery, all while the bus driver blasted some kind of African music—lots of dynamic drums. The coolest thing I saw (though I didn't manage to take a photo) was a monkey sitting on top of a city sign, eating some kind of fruit.
 
-As we entered a more urban environment, it became clear that this is a low-trust society. Every so often, you could spot a neighborhood watch sign. Every property was walled in, often with metal spikes or barbed wire on top of the walls—no ordinary barbed wire, but the NATO-style wire with sharp metal blades instead of spikes. 
+As we entered a more urban environment, it became clear that this is a low-trust society. Every so often, you could spot a neighborhood watch sign. Every property was walled in, often with metal spikes or barbed wire on top of the walls—no ordinary barbed wire, but the NATO-style wire with sharp metal blades instead of spikes.
 
 After arriving at the rental company, we were given a safety briefing, signed some papers, and our journey could finally begin.
 
@@ -70,7 +70,7 @@ But first, we needed to stock up on supplies, so we went to a supermarket called
 
 After we finished our shopping, there were five people helping us: one sales associate, two packing our items into bags, and another helping to bring the bags to our car (totally over the top). At that time, we weren’t sure how much to tip, so my friend just handed them a 50 Namibian dollar note. Later, we learned you’re supposed to tip about 5 Namibian dollars. We still had some missing items to buy, so we went to the bazaar, where we picked up SIM cards (10€ for 20GB) and a bunch of water (50 liters). You should calculate about 5 liters per person per day, as the water in Namibia is generally not safe to drink—though it can be used for washing or when boiled.
 
-I have to say, driving in the city is a nightmare, and our nerves were on edge. Remember, I was running on fumes with just an hour of sleep, and on top of that, it was a new car, new traffic rules, and an unfamiliar traffic culture. In retrospect, what we did was crazy. The rental company didn’t really explain the traffic rules, and we didn’t bother to look them up. So, we drove through the city without knowing any of the rules. For example, at a 4-way intersection, there are 12 traffic lights—three for each direction. When we arrived at our first 4-way, we had no idea which light to follow, and unfortunately, there wasn’t even a car in front of us that we could follow. So, we just winged it, which included driving in the middle of the intersection, waiting for cars to pass by, and then making our turn, still in the middle of the intersection. 
+I have to say, driving in the city is a nightmare, and our nerves were on edge. Remember, I was running on fumes with just an hour of sleep, and on top of that, it was a new car, new traffic rules, and an unfamiliar traffic culture. In retrospect, what we did was crazy. The rental company didn’t really explain the traffic rules, and we didn’t bother to look them up. So, we drove through the city without knowing any of the rules. For example, at a 4-way intersection, there are 12 traffic lights—three for each direction. When we arrived at our first 4-way, we had no idea which light to follow, and unfortunately, there wasn’t even a car in front of us that we could follow. So, we just winged it, which included driving in the middle of the intersection, waiting for cars to pass by, and then making our turn, still in the middle of the intersection.
 
 Naturally, there was a bit of yelling on all sides. The friend who was driving in the city vowed never to drive there again. In general, the traffic rules are strange (at least how I understood them): cars on the main road always have the right of way. Unlike in Germany, you don’t look at the traffic light on your street, but at the light on the opposite street. Each direction has a light for driving straight, one for left turns, and one for right turns. There’s also no "priority to the right" rule. Instead, the vehicle that reaches the intersection first has the right of way, and if that doesn’t work, drivers use eye contact and hand gestures. This leads, as you can imagine, to nerve-wracking traffic behavior in the city.
 
@@ -123,28 +123,28 @@ When driving off major highways, the amount of traffic is incredibly low. Later,
 
 Driving on the D1275, the number of butterflies was incredible. They were constantly flying in front of the car, fluttering away when we got too close, and some of them inevitably slammed into the windshield with a loud thud. One reason we chose this route was because it passed through the Spreetshoogte Mountain Pass, which I highly recommend. The views are spectacular, and the drive itself is quite interesting.
 
-{{< gallery2 
-    globalMatch="/namibia/mountain_pass/*" 
-    rowHeight="150" 
-    margins="5" 
-    thumbnailResizeOptions="600x600 q90 Lanczos" 
+{{< gallery2
+    globalMatch="/namibia/mountain_pass/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
     showExif=true
     previewType="none"
     embedPreview=false
-    loadJQuery=true 
+    loadJQuery=true
 >}}
 
 After encountering the C14, we drove to a small village called "Solitaire." As you can guess by the name, the village is quite desolate, with only a few buildings in the middle of nowhere. However, it’s famous for two things: its McGregor apple pie and its collection of broken, rusty old cars, giving it a vibe straight out of a video game.
 
-{{< gallery2 
-    globalMatch="/namibia/solitaire/*" 
-    rowHeight="150" 
-    margins="5" 
-    thumbnailResizeOptions="600x600 q90 Lanczos" 
+{{< gallery2
+    globalMatch="/namibia/solitaire/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
     showExif=true
     previewType="none"
-    embedPreview=false 
-    loadJQuery=true 
+    embedPreview=false
+    loadJQuery=true
 >}}
 
 When we got on the C19 road, it was the first time I drove the car—before that, my friends had been driving. It took me a while to get used to it since I had never driven an automatic car before. But after a while, it basically drove itself. The roads were in pretty good condition, and we drove for tens of kilometers without turning. We blasted some music, for which we had started collecting songs a year prior specifically for a Namibia road trip playlist. During the 2 hours I drove, I saw five cars (I counted).
@@ -157,7 +157,7 @@ When we got on the C19 road, it was the first time I drove the car—before that
 {{< /rawhtml >}}
 
 
-We arrived at "Little Sossus" (haha, “Sus”), a campsite that consisted of several lots with concrete cubicles where we could go to the toilet, shower, and grill. However, there were no beds, so we slept in tents on top of our jeep. 
+We arrived at "Little Sossus" (haha, “Sus”), a campsite that consisted of several lots with concrete cubicles where we could go to the toilet, shower, and grill. However, there were no beds, so we slept in tents on top of our jeep.
 
 {{< rawhtml >}}
 <figure>
@@ -245,15 +245,15 @@ Climbing Big Daddy can take an hour or two, depending on how fast you are. Impor
 Reaching the top, the view is phenomenal. The way down is much quicker—if you’re daring enough to run straight down, it only takes about 5 minutes. Running down takes you straight into Deadvlei, a white clay pan famous for its dead trees, which are nearly 700 years old and have not decomposed due to the dry climate.
 
 
-{{< gallery2 
-    globalMatch="/namibia/dune/*" 
-    rowHeight="150" 
-    margins="5" 
-    thumbnailResizeOptions="600x600 q90 Lanczos" 
+{{< gallery2
+    globalMatch="/namibia/dune/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
     showExif=true
     previewType="none"
-    embedPreview=false 
-    loadJQuery=true 
+    embedPreview=false
+    loadJQuery=true
 >}}
 
 
@@ -397,9 +397,9 @@ It was time to continue our journey, so we packed up and said goodbye to Swakopm
 </figure>
 {{< /rawhtml >}}
 
-The day before, the kayaking guide had warned us about the gravel roads due to the rain, but we completely forgot his advice. While driving, we came across a closed gate, which is common in Namibia as protection against wild animals. From what we heard, when you encounter a gate like this, you should leave it as you found it—so we closed it after going through. 
+The day before, the kayaking guide had warned us about the gravel roads due to the rain, but we completely forgot his advice. While driving, we came across a closed gate, which is common in Namibia as protection against wild animals. From what we heard, when you encounter a gate like this, you should leave it as you found it—so we closed it after going through.
 
-Soon after, a man came out of his house, walking toward us and shouting. We weren’t sure what he wanted, so we waited for him to approach. He introduced himself as a local and began telling us how poor he was and how hard he had worked as a miner. We weren’t sure what he was expecting from us, but we offered some coins, which he declined. Just then, another car drove through the gate, distracting him long enough for us to quickly drive away. 
+Soon after, a man came out of his house, walking toward us and shouting. We weren’t sure what he wanted, so we waited for him to approach. He introduced himself as a local and began telling us how poor he was and how hard he had worked as a miner. We weren’t sure what he was expecting from us, but we offered some coins, which he declined. Just then, another car drove through the gate, distracting him long enough for us to quickly drive away.
 
 The road was muddy, but we kept going. As you might expect, we got stuck. We tried maneuvering the car, but it wouldn’t budge. We got out to assess the situation, and sure enough, the car was stuck in the mud. I used the shovel to dig around the tires, but we couldn’t get it free. Thankfully, another car that just had driven past us was occupied by tourists from South Africa. They had traction boards—these are boards that can be placed under tires to give them more grip. Further the local helped us dig, and once the car was free, the South African tourists used the boards to pull us out of the mud. Afterward, we thanked them, and as we re-inflated the tires, the local man—who had helped—started telling us his life story.
 
@@ -499,7 +499,7 @@ On a happier note, we spotted some Chacma baboons by the roadside. They looked s
 ## Day 9-11: Etosha
 
 > *All the menageries in the world turned loose would not compare to the sight I saw that day.*
-> 
+>
 > ~ G. McKiernan 1876, about Etosha
 
 This was arguably the highlight of the trip, the [Etosha National Park](https://www.etoshanationalpark.org) and also one of the main reasons people visit Namibia. It's famous for the abundant wildlife, and geographically, the park is centered around a vast salt pan, with the rest of the park surrounding it.
@@ -521,15 +521,15 @@ We also saw our first animal from the [Big Five](https://www.namibiaexperience.c
 On our way to Namutoni, we encountered various animals, including ostriches, zebras, and giraffes. Upon arrival at Namutoni, we were relieved to find that the water and power were working, and we could stay there. The campsite features a restaurant, a tourist shop, and an illuminated waterhole where we could sit and watch for animals. Unfortunately, nothing came by during our visit.
 
 
-{{< gallery2 
-    globalMatch="/namibia/etosha/*" 
-    rowHeight="150" 
-    margins="5" 
-    thumbnailResizeOptions="600x600 q90 Lanczos" 
+{{< gallery2
+    globalMatch="/namibia/etosha/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
     showExif=true
     previewType="none"
-    embedPreview=false 
-    loadJQuery=true 
+    embedPreview=false
+    loadJQuery=true
 >}}
 
 We also explored the campsite, which has a notable structure—Fort Namutoni, a fort built in the early 1900s by the Germans during their colonial rule. The fort was destroyed after locals attacked it. It was restored in the 1950s and now serves as a lodge and viewpoint for visitors.
@@ -540,15 +540,15 @@ A key tip for Etosha is to start driving early in the morning and take a break a
 
 In the afternoon of the second day. We saw our second Big Five animal—a herd of elephants crossing the road right in front of us. It was an incredible sight!
 
-{{< gallery2 
-    globalMatch="/namibia/etosha2/*" 
-    rowHeight="150" 
-    margins="5" 
-    thumbnailResizeOptions="600x600 q90 Lanczos" 
+{{< gallery2
+    globalMatch="/namibia/etosha2/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
     showExif=true
     previewType="none"
-    embedPreview=false 
-    loadJQuery=true 
+    embedPreview=false
+    loadJQuery=true
 >}}
 
 Not long after, it started raining heavily. The rain was so intense, visibility was reduced to only 10 meters in front of the car. At one point, a kudu suddenly jumped in front of us, and we narrowly avoided hitting it.
@@ -557,15 +557,15 @@ When we returned to the campsite, it was basically underwater due to the rain. W
 
 On our third and final day in Etosha, we got up early once again and started driving around, hoping to spot a few more animals before we left, which we did, on exiting nation cal we saw a rhinoceros with babies. Unfortunately, we didn’t manage to see any lions or leopards, which were probably located further west from Okaukuejo, an area we didn’t get to explore. However, we were still happy with the variety of animals we’d seen. Reflecting back to the second day of our trip when a German tourist warned us that they themselves hadn’t seen any Big Five animals during their three day visit, we came away pretty good.
 
-{{< gallery2 
-    globalMatch="/namibia/etosha3/*" 
-    rowHeight="150" 
-    margins="5" 
-    thumbnailResizeOptions="600x600 q90 Lanczos" 
+{{< gallery2
+    globalMatch="/namibia/etosha3/*"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
     showExif=true
     previewType="none"
-    embedPreview=false 
-    loadJQuery=true 
+    embedPreview=false
+    loadJQuery=true
 >}}
 
 Our stop for the third day was the [Sachsenheim Guest Farm](https://www.sachsenheimguestfarm.com/). Their main business is farming, but they also offer accommodations as a side job. The farm had an excellent all-you-can-eat buffet, with German-style food and unlimited drinks.
@@ -610,9 +610,9 @@ Originally, we had planned to eat at a lodge for dinner, but when we arrived, we
 
 ## Day 14: On Our Way Back
 
-This was the last day of our trip. We made sure the car was clean, packed up all our belongings, and drove back to Windhoek. Before heading there, we made a detour to Okahandja to visit the famous wood market. It's filled with local stands selling all kinds of wooden crafts, and we picked up some carved animals that we had seen in Etosha as souvenirs. 
+This was the last day of our trip. We made sure the car was clean, packed up all our belongings, and drove back to Windhoek. Before heading there, we made a detour to Okahandja to visit the famous wood market. It's filled with local stands selling all kinds of wooden crafts, and we picked up some carved animals that we had seen in Etosha as souvenirs.
 
-However, I will say the vibe at the market was a bit strange. As soon as we entered, we were swarmed by around 10 different vendors, all trying to sell us something. We picked the first stand and went there, there aren’t any fixed prices, and instead, everything is negotiable. The vendors will try to take advantage of you, and bargaining is a must. After picking out four wood pieces, the seller took us to a corner of the shop and wrote the price in the sand, probably so that the other shopkeepers couldn’t hear and undercut him. He started with a price of 4500 Namibian dollars (about 220€), and we countered with 450 Namibian dollars. In the end, we showed him that we only had 700 Namibian dollars on us, and he reluctantly accepted, though he took the 5€ piece we had as well. 
+However, I will say the vibe at the market was a bit strange. As soon as we entered, we were swarmed by around 10 different vendors, all trying to sell us something. We picked the first stand and went there, there aren’t any fixed prices, and instead, everything is negotiable. The vendors will try to take advantage of you, and bargaining is a must. After picking out four wood pieces, the seller took us to a corner of the shop and wrote the price in the sand, probably so that the other shopkeepers couldn’t hear and undercut him. He started with a price of 4500 Namibian dollars (about 220€), and we countered with 450 Namibian dollars. In the end, we showed him that we only had 700 Namibian dollars on us, and he reluctantly accepted, though he took the 5€ piece we had as well.
 
 If you decide to visit, I'd recommend being cautious: don’t take too much money with you and try to bring another person for safety.
 
@@ -629,4 +629,3 @@ In Windhoek, we finally checked off something we had missed on the first day: vi
 The last thing we did in Windhoek was visit Christ Church, one of the city’s characteristic landmarks. Unfortunately, it was closed when we arrived, but it looked swell from the outside. It was amusing to see that the church's bulletin board was very German, with something along the lines of, "We invite visitors to our weekly coffee party, where Pastor... will say a few words," a very German thing.
 
 With that done, we drove to the car rental business to return the car. They didn’t find any issues with it, and shortly after, they drove us to the airport. We were about to fly back on the last plane to Frankfurt, but funny enough, the flight also coincided with Namibia's National Floorball Team heading to the 2025 Olympics. So we shared our flight with them.
-
