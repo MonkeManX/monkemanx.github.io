@@ -1,6 +1,6 @@
 ---
 title: 'Numerical Methods for Computer Scientist'
-date: 2025-07-15 09:00:00
+date: 2025-09-09 09:00:00
 tags: ["Mathematics"]
 draft: True
 ---
@@ -1619,26 +1619,330 @@ b) That the Gauß-Seidel-Method diverges for \(A\)
 
 {{< info "Info" >}}
 
-**Jacobi-Method:**
-1. Choose \(x^0\) and \(\epsilon > 0 \), set \(k := 0\)
-2. If \(|Ax - b|_2 \le \epsilon\) then Stop
-3. Calculate
-$$
-x_m^{k+1} = (b_m - \sum A[m,n]x_n^k)/A[m,m]
-$$
-4. Set \(k := k +1\) go to step 2
+To do lienar iteration with the **jacobi method**
 
+1. decompose our matrix \(A\) into
+$$
+A = L + D + R
+$$
+2. Calculate the inverse \(B = D^{-1}\) of the diagonal matrix.
+3. The Iteration matrix is then \(C = I - BA\)
+4. We Repeat step 3.
+5. We calculate the Eigenvalue using \(det(\lambda I - C)\)
+
+Importantly our method converges if \(C = ||I_N - BA|| < 1\).
 
 {{< /info >}}
+
+We first cauclate thei nvers of the diaognal matrix
+
+$$
+B = D^{-1} =
+\begin{pmatrix}
+1/2 & 0 & 0 \\
+0 & 1/2 & 0 \\
+0 & 0 & 1/2
+\end{pmatrix}
+$$
+
+We can use this to do the first step
+
+$$
+c_1 = I_3 - BA = I_3 - \frac{1}{2}A =
+\begin{pmatrix}
+0 & -1/2 & -2 \\
+-1/2 & 0 & 2 \\
+-2 & -2 & 0
+\end{pmatrix}
+$$
+
+We determien the eigenvvalues
+
+$$
+det(\lambda I_3 - C_1) det(
+\begin{pmatrix}
+\lambda & 1/2 & 2 \\
+1/2 & \lambda & -2 \\
+2 & 2 & \lambda
+\end{pmatrix}
+) =
+\lambda^3 - 2 + 2 - \lambda(1/4 + 4 - 4) =
+\lambda(\lambda^2 - 1/4) =
+\lambda(\lambda - 1/2)(\lambda + 1/2)
+$$
+
+Thus the eigenvalues are \(\lambda_1 = 0, \lambda_2 = -1/2, \lambda_3 = 1/2\).
+
+Further \(p(c_1) = ||C_1|| = 1_2 < 1\), thus jacobi sentence converges.
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+
+{{< info "Info" >}}
+
+To do lienar iteration with the **Gauß-Seidel method**
+
+1. decompose our matrix \(A\) into
+$$
+A = L + D + R
+$$
+2. Calculate the inverse \(B = (L + D)^{-1}\).
+3. The Iteration matrix is then \(C = I - BA\)
+4. We Repeat step 3.
+5. We calculate the Eigenvalue using \(det(\lambda I - C)\)
+
+Importantly our method converges if \(C = ||I_N - BA|| < 1\).
+
+{{< /info >}}
+
+We calculate first
+
+$$
+B = (L + D)^{-1} =
+\begin{pmatrix}
+2 & 0 & 0 \\
+1 & 2 & 0 \\
+4 & 4 & 2
+\end{pmatrix}^{-1} =
+\begin{pmatrix}
+1/2 & 0 & 0 \\
+-1/4 & 1/2 & 0 \\
+-1/2 & -1 & 1/2
+\end{pmatrix}^{-1}
+$$
+
+Hence
+
+$$
+C_2 = I_3 - BA =
+\begin{pmatrix}
+0 & -1/2 & -2 \\
+0 & 1/4 & 3 \\
+0 & 1/2 & -2
+\end{pmatrix}
+$$
+
+We claculate the eigenvalues
+
+$$
+det(\lambda I_3 - C_2) =
+det(\begin{pmatrix}
+\lambda & 1/2 & 2 \\
+0 & \lambda-1/4 & -3 \\
+0 & -1/2 & \lambda+2
+\end{pmatrix}) =
+\lambda
+det(
+\begin{pmatrix}
+\lambda - 1/4 & -3 \\
+-1/2 & \lamda + 2
+\end{pmatrix} =
+\lambda((\lambda - 1/2)(\lambda + 2) - 3/2) =
+\lambda(\lambda^2 + 7/4\lambda -2)
+)
+$$
+
+We know that 2 eigenvalues exist with
+
+$$
+(\lambda - \lambda_1)(\lambda - \lambda_2) = lambda^2 + 7/4\lambda -2
+$$
+
+And
+
+$$
+... + \lambda_1\lambda_2 = ... -2
+$$
+
+Hence \(|\lambda_1| > 1\) or \(|\lambda_2| > 1\).
+
+Thus \(p(C_2) = |C_2| > 1\). It can diverge
+
+{{< /details >}}
+
+
+### Problem 15: CG-Method
+
+Given the linear system of equations:
+
+$$
+\begin{pmatrix}
+1 & 0 & 1 \\
+0 & 2 & 0 \\
+1 & 0 & 3
+\end{pmatrix}
+\mathbf{x} =
+\begin{pmatrix}
+4 \\
+4 \\
+4
+\end{pmatrix}
+$$
+
+a) Determine the exact solution $\mathbf{x}^* \in \mathbb{R}^3$ of the linear system of equations.
+
+b) Calculate 3 steps of the **CG-method** for the linear system of equations. Choose the starting vector $\mathbf{x}^0 = (0, 0, 0)^T$ and use the identity as a preconditioner.
+
+
+{{< details "Solution a)" "false" >}}
+
+We can see from the matrix that \(2x_2 = 4 \iff x_2 = 2\).
+
+We can subtract teh first equation from the second and get
+
+$$
+2x_3 = 0 \iff x_3 = 0
+$$
+
+Inserting this in the first equation we gwet \(x_1 = 4\).
 
 
 {{< /details >}}
 
 
 {{< details "Solution b)" "false" >}}
+
+{{< info "Info" >}}
+
+To use the **CG-Method** we use the energy norm
+
+$$
+||x||_A = \sqrt{x^Tx}
+$$
+
+its scalaproduct is
+
+$$
+<x,y>_A = x^TAy
+$$
+
+The matrix A needs to be **symmetrical** and **positiv definit**. We can then proceed as following
+
+1. choose \(x_0 \in \mathbb{R}^n\). Calculate
+$$
+r^0 = b -Ax^0
+$$
+$$
+w^0 = Br^0
+$$
+$$
+p_0 = (w^0)r^0
+$$
+and set \(d^1 := w^0, \ k := 0\).
+
+2. If \(p_k \leq \epsilon\) then stop else continue
+3. Set \(k := k +1\) and calculate
+$$
+\begin{align*}
+u^k &= Ad^k \\
+\alpha_k &= p_k -1 /(u^k)^T d^k \\
+x^k &= x^{k+1} + \alpha_k d^k \\
+r^k &= r^{k-1} - \alpha_k d^k \\
+w^k &= Br^k \\
+p_k &= (w^k)^Tr^k \\
+d^{k+1} = w^k + p_k/p_k-1 d_k
+\end{align*}
+$$
+5. Go to Step 2
+
+Whereby \(B\) is an invertierable matrix called the **precondition** to solve \(Ax =b\) with \(BAx = Bb\), where B should be choosen so that \(BA\) condisiton is small.
+
+{{< /info >}}
+
+Because \(B = I_3\) we get \(w^k = r^k\), further
+
+1. $$
+\begin{align*}
+r^0 &= b -Ax^0 = b  \\
+p_0 &= (w^0)r^0 = |r_0|^2_2 = 48 > 0 \\
+d^k = r^0
+\end{align*}
+$$
+
+2. $$
+\begin{align*}
+u^1 &= (8 \ 8 \ 16)^T \\
+\alpha_1 &= 3/8 \\
+x^1 = (1 \ 1 \ -2) \\
+p_1 = 6 \\
+d_2 = (4/2 \ 3/2 \ -3/2)^T  \\
+\end{align*}
+$$
+
+This continues for two steps. After which it stops because of \(p_0 = 0\).
+
 {{< /details >}}
 
 
+
+### Problem 16: Newton-Method
+
+Given the non-linear system of equations:
+
+$$
+\mathbf{F}(\mathbf{x}) = \begin{pmatrix}
+\exp(x_1^2) - \exp(x_2^2) + x_1x_2 - e \\
+x_1x_2
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+0
+\end{pmatrix}
+$$
+
+a) Determine all exact solutions of this system of equations.
+
+b) Perform the first iteration step of the **Newton's method** for the starting values, if possible:
+
+$$\mathbf{x}^0 = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \quad \text{and} \quad \mathbf{x}^0 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$$
+
+c) Justify why the fixed-point iteration
+
+$$\mathbf{x}^{k+1} = \mathbf{x}^k - B \cdot \mathbf{F}(\mathbf{x})$$
+
+with the matrix
+
+$$
+B = \begin{pmatrix}
+\frac{1}{2\pi} & 0 \\
+0 & 1
+\end{pmatrix}
+$$
+
+**locally converges linearly**.
+
+
+{{< details "Solution a)" "false" >}}
+
+From \(x_1x_2 = 0\) follows \(x_1 = 0\) or \(x_2 = 0\).
+
+**Case 1: \(x_1 = 0\)**
+
+$$
+-exp(x_2^2) + 1 - e = 0 \iff -exp(x_2^2) = e - 1
+$$
+
+Has no solution since \(-exp(x_2^2) < 0 \) and \(e - 1 > 0\).
+
+
+**Case 2: \(x_2 = 0\)**
+
+$$
+exp(x_1^2) = e + 1 \iff \pm \sqrt{ln(e + 1)}
+$$
+
+Hence
+
+$$
+x \in \{(\sqrt{ln(e + 1)}, 0), \ (-\sqrt{ln(e + 1)}, 0)\}
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
 
 {{< info "Info" >}}
 
@@ -1656,4 +1960,702 @@ $$
 
 this is called **simplified newton method**.
 
+The method is locally linear convergent if
+
+$$
+p(C) = p(I - BF'(x^*)) < 1
+$$
+
 {{< /info >}}
+
+We first calculate the derivatice
+
+$$
+DF(x) =
+\begin{pmatrix}
+2x_1 exp(x_1^2) + x_2 & x_1 - 2x_2 exp(x_1)^2 \\
+x_2 & x_1
+\end{pmatrix}
+$$
+
+For \(x^0 = (0 \ 0 )^T\) is
+
+$$
+DF(x) =
+\begin{pmatrix}
+0 & 0 \\
+0 & 0
+\end{pmatrix}
+$$
+
+Hence the newton method is not defined.
+
+
+For \(x^0 = (1 \ 1 )^T\) is
+
+$$
+DF(x^0) =
+\begin{pmatrix}
+2e + 1 & 1-2e \\
+1 & 1
+\end{pmatrix}
+$$
+
+and
+
+$$
+-F(x^0) =
+\begin{pmatrix}
+e-1 \\
+-1
+\end{pmatrix}
+$$
+
+Thus
+
+$$
+\begin{align*}
+&(I) \quad (2e+1)x_1 (1-2e)x_2 = e - 1 \\
+&(II) \quad x_1 + x_2 = - 1
+\end{align*}
+$$
+
+We solve this by \((I) - (II)\):
+
+$$
+(I') \quad x_1 - x_2 = 1/2
+$$
+
+and \(I' + (II)\) results in \(x_1 = -1/4, \ x_2 = -3/4\).
+
+Hence
+
+$$
+x^1 = x^0 + d^0 = (1 \ 1)^T + (-1/4 \ -3/4)^T = (3/4 \ 1/4)^T
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution c)" "false" >}}
+
+We need to show \(p(C)=p(I - BDF(x^*)) < 1\).
+
+From (a) we know that the solution is \(x^* = \sqrt{ln(e+1)} \ 0\)^T.
+
+Hence
+
+$$
+C = I_2 - B \cdot DF(x^*)  = I_2 -
+\begin{pmatrix}
+\sqrt{ln(e + 2)}(e+1) & \sqrt{ln(e +1)/2 \pi} \\
+0 & \sqrt{ln(e+1)}
+\end{pmatrix} =
+\begin{pmatrix}
+(\pie - \sqrt{ln(e+2)}(e+1))/\pie & * \\
+0 & 1 - \sqrt{ln(e+1)}
+\end{pmatrix} \
+$$
+
+Thus
+
+$$
+p(C) \approx |(\pie - 1.15 - 3.7)/\pie| < 1
+$$
+
+{{< /details >}}
+
+
+### Problem 17: Polynomial interpolation
+
+a) Given the support points $\xi_0 < \dots < \xi_N$ and the values $f_0, \dots, f_N$. The corresponding **Lagrange interpolation problem** (cf. script) is:
+
+Determine a polynomial $P \in \mathbb{P}_N$ with
+
+$$P(\xi_n) = f_n, \quad n=0, \dots, N.$$
+
+Show that the solution to this interpolation problem is **unique**.
+
+
+{{< details "Solution a)" "false" >}}
+
+Assume: it exist \(P,Q \in \mathbb{P}_N\) which solves \(P(\xi) = f_n\) with \(P \neq Q\).
+
+Then \(P-Q \in \mathbb{P}_N\) and \(P(\xi) - Q(\xi) = 0\).
+
+\(P - Q\) hat maximal N-roots in the complex numbers.
+
+But \(\xi_n\) for \(n=0,...,N\) are roots of \(P-Q\), these are N+1 roots, contraddiction.
+
+Hence \(P = Q\), there is only on poylnomial.
+
+{{< /details >}}
+
+## Problem 18: Schema of Neville
+
+Given the table of values:
+
+$$
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+n & 0 & 1 & 2 & 3 \\
+\hline
+\xi_n & -1 & 0 & 1 & 3 \\
+\hline
+f_n & 8 & 3 & 4 & 8 \\
+\hline
+\end{array}
+$$
+
+a) Determine the **interpolation polynomial** \(p \in \mathbb{P}_3\) with \(p(\xi_n) = f_n\) for \(n=0, 1, 2, 3\) in **Newton form**.
+
+b) Extend the interpolation polynomial by including \((\xi_4, f_4) = (2, 1)\).
+
+
+{{< details "Solution a)" "false" >}}
+
+{{< info "Info" >}}
+
+To calculate the **newton poylnomial**
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/attachments/numerical_methods/recursive_newton.png">
+</figure>
+{{< /rawhtml >}}
+
+The main diagonal are the coefficients of the newton polynomial.
+
+
+{{< /info >}}
+
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 100%" src="/attachments/numerical_methods/numerical_method_polynomialinterpolation.png">
+</figure>
+{{< /rawhtml >}}
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 100%" src="/attachments/numerical_methods/polynomial_interpolation_2.png">
+</figure>
+{{< /rawhtml >}}
+
+{{< /details >}}
+
+
+## Problem 19: Fast Cubic Spline
+
+Given the nodes \(\xi_0 = -1, \xi_1 = 0\) and \(\xi_2 = 1\) on the interval \([-1, 1]\). Consider the function
+
+$$
+f(t) = \begin{cases}
+(t+1) + (t+1)^3 & \text{for } -1 \le t \le 0 \\
+4 + (t-1) + (t-1)^3 & \text{for } 0 < t \le 1.
+\end{cases}
+$$
+
+a) Justify which properties of a **cubic spline with natural boundary conditions** the function \(f\) fulfills and which it does not.
+
+b) Change the function \(f\) on the subinterval \((0, 1]\) so that \(f\) fulfills all properties of a cubic spline with natural boundary conditions.
+*Hint: The function \(f\) does not need to fulfill any interpolating properties.*
+
+
+{{< details "Solution a)" "false" >}}
+
+First calculate the derivatives
+
+$$
+\begin{align*}
+f_1'(t) &= 1 +3(t+1)^2  \\
+f_1''(t) &= 6(t+1) \\
+f_2'(t) &= 1+ 3(t-1)^2 \\
+f_2''(t) &= 6(t-1) \\
+\end{align*}
+$$
+
+Properties
+
+$$
+(i) f_1, f_2 \in \mathbb{P}_3
+$$
+
+$$
+(ii) Smoothness:
+f_1(0) = 2 = f_2(0)
+f_1'(0) = 4 = f_2'(0)
+f_1'(0) = 6 \neq -6 = f_2''(0)
+$$
+
+$$
+(iii) Natural:
+f_1''(-1) = 0
+f_2''(1) = 0
+$$
+
+Thus \(f\) fulfills all properties besides continuity in the second derivative in \(t=0\).
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+For (a) following applies:
+
+$$
+\begin{align*}
+(I) f_2(0) &= 2 \\
+(I) f_2'(0) &= 4 \\
+(I) f_2''(0) &= 6 \quad f_2''(1) = 0
+\end{align*}
+$$
+
+From (III) follows \(f_2''(t) = 6\).
+
+$$
+f_2'(t) = -(1-t)^2 + c
+$$
+
+with (II) follows: \(f_2'(0) = -3(1 - 0)^2\).
+
+with (II) follows: \(f_2'(0)\ = -3(1-0)^2 + c =^! u\)
+
+follows \(c=7\), hence \(f_2'(0)\ = -3(1-0)^2 + 7\).
+
+In total we have \(f_2(t) = (1-t)^3 +7t + 1\).
+
+{{< /details >}}
+
+
+## Problem 20: Determining of Weights
+
+Determine the weights \(\omega_0, \omega_1, \omega_2\) for \(\xi_0 = -\frac{h}{2}, \xi_1 = 0\) and \(\xi_2 = \frac{h}{2}\), such that
+
+$$
+\int_{-h}^h P(t) \,dt = \sum_{n=0}^2 \omega_n P(\xi_n)
+$$
+
+is exact for polynomials \(P \in \mathbb{P}_2\).
+
+
+
+{{< details "Solution" "false" >}}
+
+The basis of \(\mathbb{P}_2\) is \(\{1, x, x^2\}\). Hence the condition of the task is fullfileld when its fullfileld for the basis.
+
+We get the following conditions
+
+$$
+\begin{align}
+\int 1 dt &= [t]^{h}_{-h} = 2h =^{?} \sum w_n 1(\xi_n) = w_0 + w_1 + w_2 \\
+\int t dt &= [\frac{1}{2}t^2]^{h}_{-h} = 0 =^{?} \sum w_n t(\xi_n) = -\frac{h}{2} w_0 + \frac{h}{2}w_2\\
+\int t^2 dt &= [t]^{h}_{-h} = \frac{2}{3}h^3 =^{?} \sum w_n t^2(\xi_n) = \frac{h^2}{4}w_0 + \frac{h^2}{4}w_2\\
+\end{align}
+$$
+
+From (2) follows \(w_0 = w_2\). In (3) we thus get \(\frac{h^2}{2}w_0 = \frac{2}{3}h^3\), from this follows \(w_0 = \frac{4}{3}h = w_2\). In (1) we have \(\frac{8}{3}h + w_2 = 2h\) from this follows \(w_1 = -\frac{2}{3}h\).
+
+{{< /details >}}
+
+
+## Problem 21: Composite (left-sided) rectangle rule
+
+Given is \(f \in C^1[a,b]\), as well as the equidistant nodes for \(n = 0, \dots, N\)
+$$\xi_n = a + nh \quad \text{and} \quad h = (b-a)/N.$$
+
+The composite (left-sided) rectangle rule is defined by
+
+$$
+Q(f) = \sum_{n=1}^N h f(\xi_{n-1}).
+$$
+
+Show the error estimate
+
+$$ \left| \int_a^b f(t) \,dt - Q(f) \right| \leq \frac{b-a}{2} h \sup_{t \in [a,b]} |f'(t)|.$$
+
+
+{{< details "Solution" "false" >}}
+
+From \([\xi_{n-1}, \xi_{n}]\) follows fro mthe taylor series development
+
+$$
+f(t) = f(\xi_{n-1})t + f(t_1)f(t - \xi_{n-1})
+$$
+
+We continue
+
+$$
+\begin{align*}
+\int f(t)dt - Q(f) &= \int_a^b f(t)dt - \sum^N h f(\xi_{n-1}) \\
+&= \sum^N (\int_{\xi_{n-1}}^{\xi_n} f(t)dt - h f(\xi_{n-1})) \\
+&= \sum^N (\int_{\xi_{n-1}}^{\xi_n} f(\xi_{n-1})t + f(t_1)f(t - \xi_{n-1})dt - hf(\xi_{n-1})) \\
+&= \sum^N ([tf(\xi_{n-1})]^{\xi_n}_{\xi_{n-1}} + f(\hat{t}_n) [(t - \xi_{n-1})^2 \cdot \frac{1}{2}]^{\xi_n}_{\xi_{n-1}}) \\
+&= \sum^N f'(\hat{t}_n) \frac{1}{2}(\xi_n - \xi_{n-1})^2 \\
+&\leq \frac{h}{2} sup |f'(t)| \sum^N \frac{b- a}{N} \\
+&= \frac{b-a}{2}h sup |f'(t)|
+\end{align*}
+$$
+
+{{< /details >}}
+
+
+## Problem 22: Floating Numbers
+
+Given a base \(B \geq 2\), a minimal exponent \(e_{min} \in \mathbb{Z}\) and lengths \(L_m, L_e \in \mathbb{N}\).
+
+(a) Formulate the definition of the set \(FL_+\) of normalized positive floating-point numbers for the given quantities.
+
+(b) Determine \(\max FL_+\) and \(\min FL_+\).
+
+(c) Let \(x \in FL_+\) and let \(y \in FL_+\) be a floating-point number directly adjacent to \(x\). Show that
+$$2 \text{ eps } B^{-1} < \frac{|x-y|}{|x|} \leq 2 \text{ eps},$$
+where eps is the machine epsilon.
+
+(d) State the advantage of choosing \(B = 2\) with regard to the representation of floating-point numbers and formulate estimates analogous to (c), if this advantage is implemented.
+
+
+{{< details "Solution a)" "false" >}}
+
+$$
+FL_+ = \left\{ B^e \sum_{l=1}^{l_m} a_l B^{-l} \;\Bigg|\;
+e = e_{\min} + \sum_{l=0}^{L_e-1} c_l B^l,\;
+a_1 \neq 0,\; c_l \in \{0, \dots, B-1\} \right\}
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+$$
+maxFL_+ = B^{e_{max}} (1- B^{-L_m}) = B^{e_{min} + (B-1) \frac{1 - B^{L_e - 1}}{1 - B}} (1 - B^{-L_m}) = (1 - B^{-L_m})B^{e_{{min} + B^{L_e - 1}}}
+$$
+
+$$
+minFL_+ = B^{-1}B^{e_{min}} = B^{e_{min} - 1}
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+First
+
+$$
+2 eps B^{-1} = 2 \frac{B^{1-L_m}}{2} B^{-1} = B^{1-L_m}B^{-1} = B^{-L_m}
+$$
+
+Next
+
+$$
+2 eps = \frac{B^{1 - L_m}}{2} = B^{1-L_m}
+$$
+
+And let \(x = mB^e\) than is \(y = (m \pm B^{-L_m})B^e\) thus
+
+$$
+\frac{|x -y|}{|x|} = \frac{|mB^e - (m \pm B^{-L_m})B^e|}{mB^e} = \frac{B^{-L_m}}{m}
+$$
+
+With that we have the inequality.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+In the case of \(B = 2\) we don't need to save \(a_1 = 1\). Thus we have an extra bit that we can use for the floating number. Hence the adjucent number \(y = (m \pm B^{-L_m + 1})B^e\).
+
+Then
+
+$$
+2 eps = \frac{B^{1 - L_m+1}}{2} = B^{L_m} = eps
+$$
+
+And
+
+$$
+2 eps B^{-1} = 2 \frac{B^{1-L_m+1}}{2} B^{-1} = B^{1-L_m+1}B^{-1} = B^{-L_m + 1}
+$$
+
+{{< /details >}}
+
+
+## Problem 23: Interpolation Polynomials
+
+Given the table of values:
+
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+n & 0 & 1 & 2 & 3 \\
+\hline
+x_n & -1 & 2 & 4 & 5 \\
+\hline
+f_n & 3 & -3 & 63 & 99 \\
+\hline
+\end{array}
+$$
+
+(a) Determine the corresponding interpolation polynomial in Newton form.
+
+(b) We add the point \((x_4, f_4) = (0, 59)\) to the nodes above. Determine the corresponding interpolation polynomial.
+
+(c) Let \(p \in \mathbb{P}_N\) be the interpolation polynomial for a continuous function \(f: [a, b] \to \mathbb{R}\) at the pairwise distinct nodes \(x_0, \dots, x_N \in [a, b]\). Let also \(q \in \mathbb{P}_N\) be arbitrary.
+
+(i) First show that
+$$\max_{x \in [a,b]} |q(x) - p(x)| \leq \Lambda_N \max_{x \in [a,b]} |q(x) - f(x)|.$$
+Give \(\Lambda_N\) explicitly.
+
+(ii) Then show that
+$$\max_{x \in [a,b]} |f(x) - p(x)| \leq (1 + \Lambda_N) \max_{x \in [a,b]} |q(x) - f(x)|.$$
+
+(iii) Briefly discuss the statement of the estimate in (ii). In doing so, refer to two different classes of nodes from the lecture for \(N \approx 20\).
+
+
+{{< details "Solution a)" "false" >}}
+
+We have
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/numerical_methods/newtonpolynomial_task_23_a.png">
+</figure>
+{{< /rawhtml >}}
+
+Thus the newton interpolation polynomial is
+
+$$
+p_{0,3}(t) = 3 − 2(t + 1) + 7(t + 1)(t − 2) − (t + 1)(t − 2)(t − 4)
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+We have
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/numerical_methods/newtonpolynomial_task_23_b.png">
+</figure>
+{{< /rawhtml >}}
+
+Thus the newton interpolation polynomial is
+
+$$
+p_{0,4}(t) = p_{0,3}  2(t + 1)(t − 2)(t − 4)(t − 5)
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution c)" "false" >}}
+
+(i)
+Because p is the polynomial interpolation of f, which means it has the same roots. We have
+
+$$
+p(x) = \sum^N p(x_n) L_n(x) = \sum^N f(x_n) L_n(x)
+$$
+
+and
+
+$$
+q(x) = \sum^N q(x) L_n(x)
+$$
+
+Hence
+
+$$
+\begin{align*}
+\max |q(x) - p(x)| &= \max |\sum^N q(x_n) L_n(x) - \sum^N f(x_n) L_n(x)| \\
+&\leq \max \sum |q(x_n)- f(x_n)| |L_n(x)|\\
+&\leq \max \sum |L_n(x)| \max_{x \in x_n} |q(x)- f(x)| \\
+&\leq \max \Lambda_N |q(x) - f(x)|
+\end{align*}
+$$
+
+(ii)
+We can do
+
+$$
+|f (x) − p(x)| = |f (x) − q(x)| + |q(x) − p(x)|
+$$
+
+And now we can use (i)
+
+$$
+\max|f (x)−p(x)| \leq \max |f (x)−q(x)| + \max |q(x)−p(x)| \leq (1+Λ N ) \max |f (x)−q(x)|.
+$$
+
+(iii)
+This formula tells us, how good our interpolation polynomial is, the maximum is \((1 + \Lambda_N)\), where \(\Lambda_N\) is the lebesgue constant.
+
+If we choose aquidistant roots, so is the lebesgue constant very big and the approximation is not useful. For Tschebyscheff roots, the lesbesgue constant is near its minima 1, and we get a useful approximation.
+
+{{< /details >}}
+
+
+## Problem 24: Quadrature Formulas
+
+Let \((b_k, c_k)_{k=1,\dots,s}\) be a quadrature formula of order \(p\).
+
+(a) Formulate the definition of the order as given in the lecture.
+
+(b) Show that if \(p \geq s\), the weights are uniquely determined by the nodes. Give an explicit representation of the weights.
+
+(c) Let \(p \geq s, m \geq 1\) and \(M(x) = (x-c_1) \cdots (x-c_s)\). Show that the order is exactly \(s+m\), if
+$$\int_0^1 M(x) g(x) dx = 0$$
+for all polynomials \(g \in \mathbb{P}_{m-1}\), but not for one of degree \(m\).
+*Hint: Use a representation without proof that could be justified by polynomial division or the Euclidean division algorithm.*
+
+(d) Give the maximum order of the quadrature formula. Justify your answer with the help of subproblem (c).
+
+
+{{< details "Solution a)" "false" >}}
+
+A a quadrature formula \((b_k, c_k)\) has the order \(p\) if for all polynomials from degree \(\leq p-1\) the integral can be calculated exactly, whereby \(p\) is maximal.
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+The lagrange Polynomial \(L_n\) arre determinted through the knots \(c_1, .., c_s\). For the order \(p \geq s\), follows with \(L_j(c_k) = \delta_{jk}\)
+
+$$
+\int_0^1 L_j(x) dx = \sum^s b_k L_j(ck) = b_j
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+Let \(f \in \mathbb{P}_{s + m - 1}\) be arbitrarily. Then exist a polynomial \(g \in \mathbb{P}_{m-1}\) and \(r \in \mathbb{P}_{s-1}\) with \(f = Mg + r\) because of polynomial division.
+
+And
+
+$$
+\int f(x) dx = \int M(g)g(x) fx + \int r(x) dx
+$$
+
+and the same for their interpolation
+
+$$
+\sum b_k f(c_k) = \sum b_k M(c_k)g(c_k) + \su b_k r_k(c_k)
+$$
+
+And because \(p \geq s\) the last summands of both formulas are the same. Hence the polynomical inteprolcation calculates the exact integral.
+
+Fro mthis follows that the order is exactly then \(m +s\) when
+
+$$
+\int M(x)g(x) dx = 0
+$$
+
+for all polynomials of order \(\leqm-1\), but not for ones of order \(m\).
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+The maximum order we can have is \(2s\) because that would mean that we have \(g = M\) and then
+
+$$
+\int M(x)g(x) dx = \int M(x)^2 dx > 0
+$$
+
+{{< /details >}}
+
+
+
+## Problem 25: Matrices
+
+
+{{< details "Solution a)" "false" >}}
+
+We have \(||A|| = \sup  \frac{||Ax||}{||x||} = \max ||Ax||\). Hence
+
+$$
+||AB|| = \max ||ABx|| \leq \max ||A|| ||Bx|| = ||A|| \max ||Bx|| = ||A||||B||
+$$
+
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+We have
+
+$$
+1 = ||I_n|| = ||A^{-1}A|| \leq ||A^{-1}||||A|| = cond(A)
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution c)" "false" >}}
+
+Because \(Ax=b\) we can rwrite
+
+$$
+x - \hat{x} = A^{-1}b - A^{-1}\hat{b}
+$$
+
+Thus
+
+$$
+||x- \hat{x}|| = ||A^{-1}(b - \hat{b})|| \leq ||A^{-1}||||b - \hat{b}||
+$$
+
+And with that
+
+$$
+\frac{||x - \hat{x}||}{||x||} \leq \frac{||A^{-1}||||b - \hat{b}||}{||x||} = \frac{||b||||A^{-1}||||b - \hat{b}||}{||x||||b||} = \frac{||b||||A^{-1}||}{||x||}\frac{||b - \hat{b}||}{||b||} \leq ||A||||A^{-1}|| \frac{||b - \hat{b}||}{||b||}
+$$
+
+For this approximation to be useful the error of \(|| \frac{||b - \hat{b}||/||b||\) needs to be small.
+
+If our condition number is small this approximation guarantees, that small errors in \(b\) lead to small innacuracies from \(x\).
+Is the condition number nig, so can even a small error lead to a big error in our solution, but it doesnt have to be, because the right side of the approximation is so loose.
+
+{{< /details >}}
+
+
+{{< details "Solution d)" "false" >}}
+
+Because \(e \neq 0\), is \(ee^T\) a Matrix with rang 1. Hence 0 is a eigenvalue with the multiplicity of \(N-1\).
+
+Next, \(Kern(ee^T) = \orth \span{e}\).
+
+In addition we have the eigenvalue \(N > 0\) because \(ee^Te = e^Tee = Ne\). With that we have the spectrum.
+
+Next with \(ev^Tve^T = ||v||_2^2ee^T\) we get
+
+$$
+||ve^T||_2 = \sqrt{\max{\lambda \in ev^Tve^T}} = ||v||_2 \sqrt{\max{\lambda \in ee^T}} = ||v||_2 \sqrt{N}
+$$
+
+{{< /details >}}
+
+
+
+## Problem 26: CG-Algorithm
+
+
+{{< details "Solution a)" "false" >}}
+
+We have \(\phi(x) = \frac{1}{2}x^TAx - x^Tb\), which gets minimized by the CG-Algorithm.
+
+A necessary condition for the minima \(x^*\) is that \(\phi(x^*) = (Ax^* -b)^T = 0^T\). This condition is because of \(\phi''(x) = A\) symmetrical and positiv deifnit also sufficient.
+
+Hence is \(x^*\) then the minima from \(\phi\), if \(x^*\) solves the LGS \(Ax = b\).
+
+{{< /details >}}
