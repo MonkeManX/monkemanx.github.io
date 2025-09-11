@@ -2068,9 +2068,9 @@ $$
 
 ### Problem 17: Polynomial interpolation
 
-a) Given the support points $\xi_0 < \dots < \xi_N$ and the values $f_0, \dots, f_N$. The corresponding **Lagrange interpolation problem** (cf. script) is:
+a) Given the support points \(\xi_0 < \dots < \xi_N\) and the values \(f_0, \dots, f_N\). The corresponding **Lagrange interpolation problem** (cf. script) is:
 
-Determine a polynomial $P \in \mathbb{P}_N$ with
+Determine a polynomial \(P \in \mathbb{P}_N\) with
 
 $$P(\xi_n) = f_n, \quad n=0, \dots, N.$$
 
@@ -2548,18 +2548,18 @@ $$
 and the same for their interpolation
 
 $$
-\sum b_k f(c_k) = \sum b_k M(c_k)g(c_k) + \su b_k r_k(c_k)
+\sum b_k f(c_k) = \sum b_k M(c_k)g(c_k) + \sum b_k r_k(c_k)
 $$
 
-And because \(p \geq s\) the last summands of both formulas are the same. Hence the polynomical inteprolcation calculates the exact integral.
+And because \(p \geq s\) the last summands of both formulas are the same. Hence the polynomial inteprolcation calculates the exact integral.
 
-Fro mthis follows that the order is exactly then \(m +s\) when
+From this follows that the order is exactly then \(m +s\) when
 
 $$
 \int M(x)g(x) dx = 0
 $$
 
-for all polynomials of order \(\leqm-1\), but not for ones of order \(m\).
+for all polynomials of order \(\leq m-1\), but not for ones of order \(m\).
 
 {{< /details >}}
 
@@ -2577,6 +2577,17 @@ $$
 
 ## Problem 25: Matrices
 
+Let \(A, B \in \mathbb{R}^{N \times N}\) and \(\|\cdot\|\) be an arbitrary norm on \(\mathbb{R}^N\).
+
+(a) For the corresponding matrix norm, show the submultiplicativity \(\|AB\| \leq \|A\| \|B\|\).
+
+(b) Let \(A\) be regular. Show that \(\text{cond}(A) \geq 1\).
+
+(c) Let \(A\) be regular, \(\mathbf{b}, \tilde{\mathbf{b}} \in \mathbb{R}^N\) and \(\mathbf{x}, \tilde{\mathbf{x}} \in \mathbb{R}^N\) with \(A\mathbf{x} = \mathbf{b}\) and \(A\tilde{\mathbf{x}} = \tilde{\mathbf{b}}\). Show that
+$$\frac{\|\mathbf{x} - \tilde{\mathbf{x}}\|}{\|\mathbf{x}\|} \leq \text{cond}(A) \frac{\|\mathbf{b} - \tilde{\mathbf{b}}\|}{\|\mathbf{b}\|}$$
+and briefly discuss the estimate.
+
+(d) Let \(\mathbf{v} \in \mathbb{R}^N\) be arbitrary and let \(\mathbf{e} \in \mathbb{R}^N\) be the vector consisting of all ones. Determine the spectrum of \(\mathbf{e}\mathbf{e}^T\) and the value \(\|\mathbf{v}\mathbf{e}^T\|_2\).
 
 {{< details "Solution a)" "false" >}}
 
@@ -2649,13 +2660,536 @@ $$
 
 ## Problem 26: CG-Algorithm
 
+Let \(A\) be a symmetrical positive definite matrix and \(x^*\) be the solution of the LGS \(Ax = b\).
 
-{{< details "Solution a)" "false" >}}
+What is the function \(\phi\), that the CG_Algorithm minimizes? What is the connection to the LGS \(Ax =b\)?
+
+{{< details "Solution" "false" >}}
 
 We have \(\phi(x) = \frac{1}{2}x^TAx - x^Tb\), which gets minimized by the CG-Algorithm.
 
 A necessary condition for the minima \(x^*\) is that \(\phi(x^*) = (Ax^* -b)^T = 0^T\). This condition is because of \(\phi''(x) = A\) symmetrical and positiv deifnit also sufficient.
 
 Hence is \(x^*\) then the minima from \(\phi\), if \(x^*\) solves the LGS \(Ax = b\).
+
+{{< /details >}}
+
+
+## Problem 27: LR- and Cholesky-Decomposition
+
+(a) Solve \(Ly = b\) by forward substitution for
+$$L = \begin{pmatrix} 2 & 0 & 0 \\ -2 & -1 & 0 \\ 3 & 2 & 1 \end{pmatrix}, \quad b = \begin{pmatrix} 4 \\ -3 \\ 6 \end{pmatrix}.$$
+
+(b) State the conditions on a matrix \(A \in \mathbb{R}^{N \times N}\) under which a Cholesky decomposition exists, and in the case \(N=3\), derive three formulas for the entries of the Cholesky factor \(L \in \mathbb{R}^{3 \times 3}\) of such a matrix. It is not necessary to express all coefficients of \(L\) solely in terms of coefficients of \(A\), as long as you consider the order of the calculations.
+
+(c) Let \(A \in \mathbb{R}^{M \times N}\), \(M \geq N\) and \(b \in \mathbb{R}^M\).
+(i) Give the normal equation for the least squares problem \(\min_{x \in \mathbb{R}^N} \|Ax - b\|_2^2\).
+
+(ii) Name an additional condition on \(A\) such that the normal equation could be solved by a Cholesky decomposition, and determine the effort (with respect to \(M\) and \(N\)) of the Cholesky decomposition for the normal equation.
+
+(iii) Name an iterative method to solve the normal equation under the condition from (ii) and determine the main effort of one step of the method for the normal equation (with respect to \(M\) and \(N\)).
+
+
+{{< details "Solution a)" "false" >}}
+
+We have
+
+$$
+\begin{align*}
+2y_1 = 4 &\implies y_1 = 2 \\
+-2 \cdot 2 -y_2 = -3 &\implies y_2 = -1 \\
+3 \cdot 2 + 2 \cdot (-1) + 1 y_3 = 6 &\implies y_3 =2
+\end{align*}
+$$
+
+Hence
+
+$$
+y = (2 \ -1 \ 2)^T
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+A choleky decomposition exists if and only if, the matrix **symmetrical** and **positive definite**(spd).
+
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix} =
+\begin{pmatrix}
+l_{11} & 0 & 0 \\
+l_{21} & l_{22} & 0 \\
+l_{31} & l_{32} & l_{33}
+\end{pmatrix} \cdot
+\begin{pmatrix}
+l_{11} & l_{21} & l_{31} \\
+0 & l_{22} & l_{32} \\
+0 & 0 & l_{33}
+\end{pmatrix} =
+\begin{pmatrix}
+l_{11}^2 & l_{21}l_{11} & l_{31}l_{11} \\
+l_{21}l_{11} & l_{22}^2 + l_{21}^2 & l_{21}l_{31} + l_{22}l_{32} \\
+l_{31}l_{11} & l_{21}l_{31} + l_{22}l_{32} & l_{33}^2 + l_{32}^2 + l_{31}^2
+\end{pmatrix}
+$$
+
+Hence
+
+$$
+\begin{align*}
+l_{11} &= \sqrt{a_{11}} \\
+l_{21} &= a_{21}/\sqrt{a_{11}} \\
+l_{31} &= a_{31}/\sqrt{a_{11}} \\
+&...
+\end{align*}
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+(i)
+\(A^TAx = A^Tb\)
+
+(ii)
+Is the rang of \(A\) maximal so is \(A^TA\) symmetrical and positive definite and can thus be sovles using the cholesky decomposition.
+
+The cholesky deocmpositon needs \(1/2 MN^2\) operation, but because \(N=M\) and it is symmetrcial, we need \(1/6 N^3\) operations.
+
+(iii)
+Another algorithm we can use to solve the normal equation is the CG-Algorithm.
+We need to do 2 matrix-vector products, as such we need to do \(2NM\) operations.
+
+{{< /details >}}
+
+
+## Problem 28: CG-Algorithm
+
+Complete the following content (a) to (i).
+
+The cg-method is used to solve linear systems of equations of the form \(Ax=b\) with \(A \in \mathbb{R}^{N \times N}\). The necessary conditions for the matrix \(A\) to be able to apply the cg-method are \((a)\) ______. Instead of solving the linear system directly, the following functional \(\Phi(x) = \) \((b)\)______ is minimized. The main idea is to solve iteratively one-dimensional minimization problems: Let \(x^k \in \mathbb{R}^N\) and the \((c)\)______ \(d^k \in \mathbb{R}^N \setminus \{0\}\) be given, then \(\alpha_k\) is calculated such that \(\varphi(\alpha) = \Phi(x^k + \alpha d^k)\) is minimal. A sufficient condition for the determination of \(\alpha_k\) is \((d)\)______. The new approximation \(x^{k+1}\) is then calculated by \((e)\)______. Theoretically, the cg-method provides the exact solution after \((f)\)______ steps. The main effort of the cg-method lies in the calculation of \((g)\)______. By \((h)\)______ the number of steps and thus the total effort can be reduced. The cg-method is particularly well suited for very large and/or \((i)\)______ matrices.
+
+
+{{< details "Solution" "false" >}}
+
+(a)
+symmetrical and positive definite
+
+(b)
+\( \phi = 1/2x^Txx^Tb \)
+
+(c)
+Search direction
+
+(d)
+(\\phi'(\alpha_k) = 0\)
+
+(e)
+\(x^{k+1} = x^k + \alpha_kd^k\)
+
+(f)
+N
+
+(g)
+\(Ad^k\) them atrix vector product
+
+(h)
+Preconditioning
+
+(i)
+sparse
+
+{{< /details >}}
+
+
+## Problem 29: Machine accuracy
+
+Explain the course of the graph in the plot, which was generated by evaluating the function \(\frac{(1+x)-1}{x}\) for \(0 < x \leq 10^{-15}\) with a machine precision of \(\text{eps} \approx 2.2 \cdot 10^{-16}\), by giving the exact reasoning:
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="/attachments/numerical_methods/ws_1718_task3_graph.png">
+</figure>
+{{< /rawhtml >}}
+
+
+(a) for the constant value equal to 0 at the far left of the graph,
+
+(b) for the first jump of the graph from 0 to 2,
+
+(c) and for the behavior of the function between the first two jumps.
+
+(d) Additionally, state the function values at the second jump. Justify briefly.
+
+
+{{< details "Solution a)" "false" >}}
+
+The graph goes until \(1.1 \cdot 10^{-16}\) which is exactly \(eps/2\), as such we round down from \(1 +x\) to \(1\) as such we have \(0/x = 0\).
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+After \(1.1 \cdot 10^{-16}\) we are above \(eps/2\) as such we round up, from \(1 + x\) to \(1 + eps\). Hence \(1 + eps -1/eps/2 = eps/eps/2 = 2\).
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+The next section in the graph is between \(eps/2\) and \(3eps/2\), in this section \(1 + x\) is constant and bigger than zero.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+When we reach \(3eps/2\) we have the same effect as in (a), but instead we get \(eps/3/2eps = 2/3\).
+
+{{< /details >}}
+
+
+## Problem 30: QR-Decomposition
+
+Given a QR decomposition of the matrix \(A\).
+$$
+Q = \frac{1}{15}
+\begin{pmatrix} 5 & -2 & -14 \\ 10 & 11 & 2 \\ 10 & -10 & 5
+\end{pmatrix},
+\quad R =
+\begin{pmatrix} 3 & 1 \\ 0 & -5 \\ 0 & 0
+\end{pmatrix},
+\quad A =
+\begin{pmatrix} 1 & 1 \\ 2 & -3 \\ 2 & 4
+\end{pmatrix}0
+.$$
+
+It holds that \(A=QR\), where you can use the fact that \(Q\) is an orthogonal matrix.
+
+(a) Using the given decomposition, explain which of the overdetermined systems \(Ax=b\) and \(Ax=\tilde{b}\) are solvable, where
+
+$$(i) \quad b =
+\begin{pmatrix} 0 \\ -5 \\ 2
+\end{pmatrix}, \quad (ii)
+\quad \tilde{b} =
+\begin{pmatrix} 0 \\ -5 \\ 4
+\end{pmatrix}.
+$$
+
+(b) In both cases, use the QR decomposition to calculate the solutions to the corresponding least squares problems.
+
+(c) Calculate the residuals for these solutions.
+
+
+{{< details "Solution a)" "false" >}}
+
+We have \(Ax = b \iff QRx = b \iff Rx = Q^Tb\).
+
+(i)
+$$
+Q^Tb = \frac{1}{15}
+\begin{pmatrix} 5 & -2 & -14 \\ 10 & 11 & 2 \\ 10 & -10 & 5
+\end{pmatrix}
+\begin{pmatrix} 0 \\ -5 \\ 2
+\end{pmatrix} =
+\frac{1}{15}
+\begin{pmatrix} -30 \\ -75 \\ 0
+\end{pmatrix} =
+\begin{pmatrix} -2 \\ -5 \\ 0
+\end{pmatrix}
+$$
+
+Thus we have the LGS
+
+$$
+\left(
+\begin{array}{cc|c}
+3 & 1 & -2 \\
+0 & -5 & -5 \\
+0 & 0 & 0
+\end{array}
+\right)
+$$
+
+which has a solution with \(x=(-1 \ 1 )^T\).
+
+(ii)
+$$
+Q^T\tilde{b} = \frac{1}{15}
+\begin{pmatrix} 5 & -2 & -14 \\ 10 & 11 & 2 \\ 10 & -10 & 5
+\end{pmatrix}
+\begin{pmatrix} 0 \\ -5 \\ 4
+\end{pmatrix} =
+\frac{1}{15}
+\begin{pmatrix} -10 \\ -95 \\ 10
+\end{pmatrix} =
+\frac{1}{3}
+\begin{pmatrix} -2 \\ -19 \\ 0
+\end{pmatrix}
+$$
+
+This is not solvable because the last entry is not \(0\), and in the LGS we have has a \(0\) there.
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+See (a) for \(b\) the solution is \(x = (-1, 1)^T\).
+
+For \(\tilde{b}\), the LGS might not be solvable but we can solve the corresponding least square problem. For that we solve
+
+$$
+\left(
+\begin{array}{cc|c}
+3 & 1 & -2/3 \\
+0 & -5 & -19/3 \\
+0 & 0 & 0
+\end{array}
+\right)
+$$
+
+which is \(x^* = (-29/45, \ 19/15)^T\).
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+The residium for \(b\) is \(Ax -b = Q(Rx - Q^Tb) = 0\)
+
+The residium for \(\tilde{b}\) is
+
+$$
+Ax - \tilde{b} = Q(R\tilde{x} - Q^T)\tilde{b} = \frac{2}{9} (2 \ -2 \ 1)^T
+$$
+
+{{< /details >}}
+
+
+## Problem 31: Splines
+
+(a) Let nodes \(a = x_0 < \dots < x_N = b\) and corresponding values \(y_0, \dots, y_N \in \mathbb{R}\) be given. Give the definition of a natural interpolating cubic spline for \((x_0, y_0), \dots, (x_N, y_N)\).
+
+(b) Determine \(\alpha, \beta, \gamma \in \mathbb{R}\) such that the function \(s: [0, 2] \to \mathbb{R}\) defined by
+$$s(x) = \begin{cases} -x^3 + 8x + \alpha, & 0 \leq x \leq 1, \\ \beta x^3 + \gamma x^2 + 14x - 1, & 1 < x \leq 2 \end{cases}$$
+is a cubic spline for \(x_0=0, x_1=1\) and \(x_2=2\).
+
+(c) Decide whether this spline is a periodic spline. Justify your answer briefly.
+
+
+{{< details "Solution a)" "false" >}}
+
+A natural interpolation cubic splines fulfills the following conditions:
+
+$$
+\begin{align*}
+&(i) s{[x_n, x_{n+1}]} \in \mathbb{P}_3\\\
+&(ii) s \in C^2[0,2]\\
+&(iii) s(x_n) = y_n \forall x \in \{0,...,N-1\}\\
+&(iv) s''(x_0) = s''(x_N) = 0
+\end{align*}
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We first calculate the derivatives
+
+$$
+S'(x) =
+\begin{cases}
+-3x^2 + 8 \\
+3\beta x^2 + \gamma x + 14
+\end{cases}
+$$
+
+and
+
+$$
+S''(x) =
+\begin{cases}
+-6x \\
+6\beta x + \gamma
+\end{cases}
+$$
+
+We get the conditions
+
+$$
+\begin{align*}
+S_{[0,1]}(1) &= S_{[1,2]}(1) \\
+S'_{[0,1]}(1) &= S'_{[1,2]}(1) \\
+S''_{[0,1]}(1) &= S''_{[1,2]}(1) \\
+\end{align*}
+$$
+
+Hence
+
+$$
+\begin{align*}
+7+ \alpha &= \beta + \gamma + 13 \\
+5 &= 3\beta + 2 \gamma + 14 \\
+-6 &= 6 \beta + 2\gamma
+\end{align*}
+$$
+
+From this we get the LGS
+
+$$
+\left(
+\begin{array}{ccc|c}
+1 & -1 & -1 & 6 \\
+0 & -3 & -2 & 9 \\
+0 &  6 &  2 & -6
+\end{array}
+\right)
+$$
+
+The solution of it, is \(\alpha=1, \beta=1, \gamma=-6\).
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+A Spline is periodic if and only if \(s'(a) = s'(b) \land s''(a) = s''(b)\) is fulfilled.
+
+$$
+S(0) = 1 \neq 11 = S(2)
+$$
+
+{{< /details >}}
+
+## Problem 32:  Quadraturformula
+
+(a) Let a quadrature formula with nodes \(c_k\) and weights \(b_k\), for \(k=1, \dots, s\), be given.
+(i) Give the definition of the order \(p\) of a quadrature formula.
+(ii) Name the order conditions for a quadrature formula of order 2.
+(iii) Give the order that a quadrature formula with \(s\) nodes can have at most.
+
+(b) How many nodes are necessary for polynomial interpolation to uniquely determine a polynomial of degree \(N\)? Briefly justify why this interpolation polynomial is unique.
+
+(c) Give the formula for the nodes of Chebyshev interpolation on the interval \([-1, 1]\). Briefly explain what advantages this choice offers over an equidistant one.
+
+(d) Let \(p\) be a polynomial of degree \(N \ge 1\) in \(\mathbb{R}^d\). State how the graph \(\Gamma_p\) of \(p\) can be interpreted as a polynomial of degree \(N\) in \(\mathbb{R}^{d+1}\), and explain what the control points of \(p\) are.
+
+(e) A point of intersection of the circle \(x^2 + y^2 = 2\) and the hyperbola \(x^2 - y^2 = 1\) is to be calculated numerically.
+(i) Give the formulation of the problem so that the Newton method can be applied to it.
+(ii) Calculate the first iterate for this problem with a starting value of \((1, -1)^T\).
+
+
+{{< details "Solution a)" "false" >}}
+
+(i)
+A quadrature formula has exactly order \(p\) if and only if the integral of the interpolation polynomial is exactly the solution for all polynomials with degree less than \(p-1\), whereby \(p\) is the maximum.
+
+(ii)
+The general quadratur formula order condition is
+$$
+\frac{1}{q} = \sum_{k=1}^s b_k c_k^{q-1}
+$$
+a formula has the order p if this condition is fulfilled for p but not for \(q = p +1\).
+
+This means we have the following two coniditons
+$$
+\begin{align*}
+1 &= \sum^s b_k \\
+1/2 &= \sum^s b_kc_k \\
+1/3 &\neq \sum b_k c_k^2
+\end{align*}
+$$
+
+(iii)
+The maximum is \(2s\), because then \(\int M(x)g(x) = \int M(x)^2 \neq 0\).
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+To determine a polynomial of degree \(N\) exactly we need \(N+1\) roots, because of the fundamental lemma of algebra.
+If we had two different polynomials \(p,q\), then \(p-q\) has \(N+1\) roots and the polynomial degree \(N\), but this is only true for the zero polynomial, hence the polynomials need to be the same, Contradiction. Thus we have only one polynomial.
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+The roots are
+
+$$
+x_n = \cos(\frac{2n + 1}{2N +2}\pi)
+$$
+
+The advantage is we have fewer oscillations and the condition is better in comparison to equidistant roots.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+$$
+\Gamma_p(x) = (0 \ v_0)^T + (1 \ v_1)^Tx + ... + (0 \ v_n)x^N
+$$
+
+The control points are the coefficients of \(p\) of the berstein polynomial \(p(x) = \sum_{n=0}^{N} b_n B_n^N(x)\).
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+(i)
+The newton method solves zero point problems, thus \(F(x, y) := (x^2 + y^2 - 2, x^2 - y² -1)^T = 0\)
+
+(ii)
+To calculate the first iteration \(x^1 = x^0 + \delta x\) we need to solve the LGS
+
+$$
+\delta x = -F'(1, -1)^{-1}F(-1, 1)^T
+$$
+
+The Jacobi Matrix of this is
+
+$$
+F'(x,y)=
+\begin{pmatrix}
+2x & 2y \\
+2x & -2y
+\end{pmatrix}
+$$
+
+We need to check this at the point \(x_0\)
+
+$$
+F'(1,-1)=
+\begin{pmatrix}
+2 & -2 \\
+2 & 2
+\end{pmatrix}
+$$
+
+Thus
+
+$$
+\delta  x =
+\frac{1}{4}
+\begin{pmatrix}
+1 & 1 \\
+-1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+0  \\
+-1
+\end{pmatrix} =
+\frac{1}{4}
+\begin{pmatrix}
+1  \\
+-1
+\end{pmatrix}
+$$
+
+Hence
+
+$$
+x^1 = (\frac{5}{4}, - \frac{3}{4})
+$$
 
 {{< /details >}}
