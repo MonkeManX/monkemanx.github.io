@@ -3061,6 +3061,7 @@ $$
 
 {{< /details >}}
 
+
 ## Problem 32:  Quadraturformula
 
 (a) Let a quadrature formula with nodes \(c_k\) and weights \(b_k\), for \(k=1, \dots, s\), be given.
@@ -3190,6 +3191,725 @@ Hence
 
 $$
 x^1 = (\frac{5}{4}, - \frac{3}{4})
+$$
+
+{{< /details >}}
+
+
+## Problem 33: LR and QR-decomposition
+
+Given the linear system of equations \(Mx = \mathbf{b}\) with a regular matrix
+$$
+M = \begin{pmatrix} A & B \\ 0 & C \end{pmatrix} \in \mathbb{R}^{(N+K)\times(N+K)}, \quad \mathbf{b} = \begin{pmatrix} \mathbf{b}^1 \\ \mathbf{b}^2 \end{pmatrix} \in \mathbb{R}^{N+K},
+$$
+where \(A \in \mathbb{R}^{N \times N}, B \in \mathbb{R}^{N \times K}, C \in \mathbb{R}^{K \times K}, \mathbf{b}^1 \in \mathbb{R}^N\) and \(\mathbf{b}^2 \in \mathbb{R}^K\).
+
+An \(LR\)-decomposition \(PA = LR_A\) of \(A\) and a \(QR\)-decomposition \(C = QR_C\) of \(C\) are already known. The matrices \(A\), \(B\), and \(C\) are assumed to be full.
+
+(a) State how many operations were necessary for the computation of the \(LR\)- and \(QR\)-decompositions, respectively.
+
+(b) Explain how you can efficiently solve the system of equations \(Mx = \mathbf{b}\) using these two decompositions.
+
+(c) Determine the computational cost for solving \(Mx = \mathbf{b}\) without the decompositions, by stating the cost for each sub-step.
+
+(d) Explain the procedure for the linear system of equations \(M^T\mathbf{x} = \mathbf{b}\) by cleverly using both decompositions. The computational cost is not requested here.
+
+
+{{< details "Solution a)" "false" >}}
+
+For LR-Decomposition we need \(1/3 N^3\) operation. For QR-Decomposition we need \(2/3MN^2=2/3K^3\) operation.
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+This means
+
+$$
+Ax_1 + Bx_2 = b_1 \iff Ax_1 = b_1 - Bx_2
+$$
+
+and
+
+$$
+Cx_2 = b_2
+$$
+
+Hence
+
+1. Solve \(Q c = b_2 \iff c = Q^Tb_2\)
+2. Solve \(R x_2 = c\) using backward substitution
+3. Solve \(Rc = P(b_a - Bx_2)\) forward substitution
+4. Solve \(L x_1 = c\) backwards substitution
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+1. \(K^2\) operations
+2. \(1/2 K^2\) operations
+3. \(0 + N+NK\) operations
+4. \(1/2N^2\) operations
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+We now have
+
+$$
+M^T = \begin{pmatrix} A^T & 0 \\ B^T & C^T \end{pmatrix}
+$$
+
+Hence
+
+$$
+(i) \quad Ax_1 = b_1
+$$
+
+and
+
+$$
+(ii) \quad Bx_1 + Cx_2 = b_2  \iff Cx_2 = b_2 - Bx_1
+$$
+
+We can solve it using
+
+$$
+PA = LR \iff A^T = R_A^TL^T
+$$
+
+and
+
+$$
+C = QR \iff C^T = R_c^TQ^T
+$$
+
+Then solve (i) using the first decomposition and (ii) using the second decompsotion.
+
+{{< /details >}}
+
+
+## Problem 34: Newton Method and Floating Numbers
+
+The goal is to approximate \(\sqrt{a}\) for \(a > 1\).
+
+(a) State the function \(f: \mathbb{R} \to \mathbb{R}\) proposed in the lecture and the corresponding Newton's method to approximately determine \(\sqrt{a}\).
+
+(b) Create a sketch and illustrate in it that with the starting value \(x_0 = 1\), it follows that \(x_1 > \sqrt{a}\), where \(x_1\) denotes the first Newton iterate.
+
+(c) Use the concrete representation of floating-point numbers in the IEEE Double-Precision standard to justify that one must ultimately only be able to calculate square roots of numbers from the interval \((1, 4)\).
+
+(d) We want to use a computer in the IEEE Double-Precision standard to calculate the expression \(\sqrt{x^2 + y^2}\) for \(x = \mathrm{fl}(\pi \cdot 10^{160})\) and \(y = \mathrm{fl}(e \cdot 10^{150})\). Explain which problem will arise with a naive calculation and how the problem can be remedied. Additionally, determine the value that the computer calculates with the remedied variant.
+
+*Hint: \(\sqrt{x^2 + y^2} = \sqrt{x^2(1 + \frac{y^2}{x^2})} = |x|\sqrt{1 + \frac{y^2}{x^2}}\) might be helpful.*
+
+
+{{< details "Solution a)" "false" >}}
+
+The newton-method works as follows:
+
+$$
+x^{k+1} = x^k + d^k
+$$
+
+with
+
+$$
+f'(x)d^k = -f(x)
+$$
+
+we repeat this until \(||d^k|| < \epsilon\).
+
+And where \(f(x) = x^2 - a\) and \(f'(x)=x\)
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+{{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/numerical_methods/newton_method_example_tangent.png">
+</figure>
+{{< /rawhtml >}}
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+In IEEE we have \(a = (1+m)2^e\) with \(0 \leq m \le 1\).
+
+If \(e\) is even, then \(a = (1+m)2^2k\), hence \(\sqrt{a} = \sqrt{(1+m)}2^k\), where \(m' \in (1, 2)\)
+
+If \(e\) is uneven, then \(a = (1+m)2^{2k+1}\), hence \(\sqrt{a} = \sqrt{(1+m)}2^{(2k+1)/2} = \sqrt{2(2+m)}2^{(2k)/2}\) where \(m' \in (2,4)\)
+
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+Because of \(x^2 = \pi^2 \cdot 10^{320} >  10^{308}\) we have an overflow.
+
+We can use the hint and \(\sqrt{x^2 +y^2} = x \sqrt{1 + \frac{y}{x}}^2\). Here we have no overflow, because
+
+$$
+0 \le (y/x)^2 \le e^2/\pi^2 10^{-20} \le eps/2
+$$
+
+{{< /details >}}
+
+
+
+## Problem 35: Matrices and Norms
+
+(a) Prove \(\|A\|_{\infty} = \max_{n=1,\dots,N} \sum_{m=1}^N |a_{nm}|\) for \(A \in \mathbb{R}^{N \times N}\).
+
+(b) Show that \(\mathrm{cond}_2(Q) = 1\) for every orthogonal matrix \(Q \in \mathbb{R}^{N \times N}\).
+
+(c) Let \(\mathbf{e} \in \mathbb{R}^N\) be the vector consisting of all ones. Show that \(\|\mathbf{v}\mathbf{e}^\top\|_1 = \|\mathbf{v}\|_1\) for every vector \(\mathbf{v} \in \mathbb{R}^N\).
+
+(d) Let \(A \in \mathbb{R}^{N \times N}\) be regular, \(\|\cdot\|\) a norm on \(\mathbb{R}^N\) with the corresponding induced matrix norm \(\|\cdot\|\), and \(\mathbf{x} \in \mathbb{R}^N\). Let \(\tilde{\mathbf{x}}\) be a perturbation of \(\mathbf{x}\).
+Derive an upper bound for the relative error of the product \(A\mathbf{x}\) as a function of the relative perturbation in \(\mathbf{x}\) (\(A\) remains unperturbed), by proving and then using \(\|\mathbf{x}\| \le \|A^{-1}\| \|A\mathbf{x}\|\).
+
+
+{{< details "Solution a)" "false" >}}
+
+$$
+||A||_\infty = \max_{||x|| = 1} ||Ax||_{\infty}
+$$
+
+Further
+
+$$
+||Ax||_{\infty} = \max_{n=1,...,N} |\sum a_{nm}x_m| \leq \max_{n=1,...,N} \sum |a_{nm}| |x_m|
+$$
+
+where \(||x_m||_\infty = 1\).
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We have
+
+$$
+||Q||_2 = \max_{||x||_2 = 1\} ||Qx||_2 = 1
+$$
+
+Hence
+
+$$
+cond_2(Q) = ||Q||_2 ||Q^T||_2 = ||Q||_2^2 = 1
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+$$
+||ve^T||_1 = max \sum |a_nm| = \sum |v_n| = ||v||_1
+$$
+
+{{< /details >}}
+
+
+
+
+## Problem 36: Quadrature formulas
+
+Let a quadrature formula \((b_k, c_k)_{k=1,\ldots,s}\) be given.
+
+(a) Formulate the definition of the order \(p\) of a quadrature formula.
+
+(b) Give the Lagrange polynomial \(L_j\) for the nodes \(c_1 < \dots < c_s\).
+
+*Hint: \(f\) is called point-symmetric if \(f(-x) = -f(x)\) for \(x \in [-1, 1]\).*
+
+(c) Give a symmetric quadrature formula of your choice.
+
+
+{{< details "Solution a)" "false" >}}
+
+A quadraturformel has the order \(p\) then, when it can **exactly** integrate for all polynomial with degree \(\leq p-1\) and where \(p\) is maximal.
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+$$
+L_j = \prod \frac{x - c_k}{c_j - c_k}
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+Trapezrule \((a-b)(f(a)-f(b))/2\).
+
+{{< /details >}}
+
+
+
+## Problem 37: Short Questions
+
+(a) Given are the points \((t_n, y_n)\), \(n = 1, 2, 3, 4\), with
+$$\begin{array}{c|cccc} t_n & 0 & 1 & 2 & 3 \\ \hline y_n & -2 & -1 & 0 & 2 \end{array}.$$
+A quadratic function \(g(t) = \alpha + \beta t + \gamma t^2\), \(\alpha, \beta, \gamma \in \mathbb{R}\), is sought, such that \(\sum_{n=1}^4 |g(t_n) - y_n|^2\) is minimized.
+Formulate the corresponding linear least squares problem and give the general form of the corresponding normal equations.
+
+(b) Determine the Householder transformation \(Q\) that is free from cancellation errors, such that \(QAQ = \begin{pmatrix} * & * & * \\ * & * & * \\ 0 & * & * \end{pmatrix}\) holds for
+$$A = \begin{pmatrix} 1 & -1 & 2 \\ 3 & 0 & 1 \\ 4 & 1 & 0 \end{pmatrix}.$$
+Briefly explain why the \(*\)-structure is achieved this way.
+
+(c) Let \(s: [a, b] \to \mathbb{R}\) be a cubic interpolating spline for the support points \((x_n, y_n)\), \(n = 0, \ldots, N\), with \(s'(a) = s'(b) = 0\). Formulate the definition of the Lagrange splines \(l_n\) for \(n = 0, \ldots, N\) and represent \(s\) using these.
+
+(d) Give a class of matrices for which the singular values correspond to the eigenvalues. Justify your answer briefly.
+
+
+{{< details "Solution a)" "false" >}}
+
+Linear least quare problem:
+
+$$
+min ||A(\alpha \ \ \beta \ \ \gamma)^T - b||_2
+$$
+
+with
+
+$$
+b = (-2 \ \ -1 \ \ 0 \ \ 2)^T
+$$
+
+and
+
+$$
+A =
+\begin{pmatrix}
+1 & 0 & 0 \\
+1 & 1 & 1 \\
+1 & 2 & 4 \\
+1 & 3 & 9
+\end{pmatrix}
+$$
+
+Normalequations:
+
+$$
+A^TAx = A^Tb
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We do a householder transformation
+
+$$
+\hat{Q} = I_2 - 2\hat{w}\hat{w}^T
+$$
+
+and
+
+$$
+\hat{w} = (3 \ \ 4)^T + 5 (1 \ \ 0)^T/||(8 \ \ 4)||_2 = 1/\sqrt{80}(8 \ \ 4)^T
+$$
+
+With \(w = (0 \ \ \hat{w})\) and
+
+$$
+Q = I_3 - ww^T =
+\begin{pmatrix}
+1 & 0 \\
+0 & \hat{Q}
+\end{pmatrix}
+$$
+
+And because \(Qe^1 = e^1\) we have \(QAQ\) as in the task.
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+\(l_n\) is a cubic interpolation spline with the rotos \((x_n, y_n)\) with \(l_n'(a) = l_n(b) = 0\).
+
+And: \(s_n(x) = \sum y_n l_n(x_)\)
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+The identity matrix because its eigenvaleus are 1 and the square root of 1 is 1.
+
+**Better Alternative:** All spd Matrices, because \(\lambda\) EV from A \(\iff\) \(\lambda^2\) EV from \(A^TA\) \(\iff\) \(\lambda = \sqrt{\lambda^2}\) Singular value from \(A\).
+
+{{< /details >}}
+
+
+## Problem 38: Cholesky
+
+Let \(A \in \mathbb{R}^{N \times N}\) be a symmetric positive definite matrix.
+
+(a) Explain how and with what computational cost \(\det(A)\) can be calculated efficiently.
+
+For given vectors \(\mathbf{u}, \mathbf{v}, \mathbf{b} \in \mathbb{R}^N\) and \(d, c \in \mathbb{R}\), we now consider the linear system of equations (sought are \(\mathbf{x} \in \mathbb{R}^N\) and \(y \in \mathbb{R}\))
+$$\begin{pmatrix} A & \mathbf{u} \\ \mathbf{v}^\top & d \end{pmatrix} \begin{pmatrix} \mathbf{x} \\ y \end{pmatrix} = \begin{pmatrix} \mathbf{b} \\ c \end{pmatrix} \quad (1)$$
+with unknown solution \(\mathbf{x}^* \in \mathbb{R}^N\) and \(y^* \in \mathbb{R}\), where a Cholesky decomposition of matrix \(A\) is known.
+
+(b) First, derive an explicit formula for \(y^*\) independent of \(\mathbf{x}^*\) under the assumption \(d - \mathbf{v}^\top A^{-1} \mathbf{u} \neq 0\).
+
+(c) Explain how and with what computational cost \(y^*\) can be calculated numerically efficiently.
+
+(d) Investigate under what conditions the matrix in (1) is symmetric and positive definite, using the Cholesky decomposition of \(A\).
+
+
+
+{{< details "Solution a)" "false" >}}
+
+Since the matrix is spd we can do a cholesky decomposition in \(A = LL^T\) with \(det(A) = det(L)det(L^T)\) cholesky takes \(1/6N^2\) operations and we can calculate the determinant by \(\prod l_{nn}\).
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We have
+
+$$
+Ax + uy = b \iff x = A^{-1}(b - uy)
+$$
+
+and
+
+$$
+v^Tx + dy = c \iff v^TA^{-1}b - v^TA^{-1}uy + dy = c
+$$
+
+Hence
+
+$$
+y = \frac{c - v^TA^{-1}b}{d - v^TA^{-1}u}
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+The expensive part to calculate is \(v^TA^{-1}\), we thus want to calculate this efficiently by using the cholesky decomposition.
+For this we define \(\hat{v} = v^TA^{-1}\) then \(v^TA^{-1} = v^TA^{-1} \iff A^Tv^TA^{-1} = v \iff A^T\hat{v} = v\). Then we can solve as follows
+
+1. \(L^ \hat{\hat{v}} = v\) forward substitution
+2. \(L^T \hat{v} = \hat{\hat{v}}\) backward substitution
+3. Calculate Scalarproduct of \(\hat{v}^Tb\) and \(\hat{v}^Tu\)
+
+This takes in total \(N^2 + 2N\) operations.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+Symmetry:
+
+$$
+\begin{pmatrix}
+A & \mathbf{u} \\
+\mathbf{v}^\top & d
+\end{pmatrix}^T =
+\begin{pmatrix}
+A^T & \mathbf{v} \\
+\mathbf{u}^T & d
+\end{pmatrix}
+$$
+
+This means the matrix is then symmetrical if \(v = u\).
+
+Positive definite:
+
+The matrix is exactly then positive definite if a cholesky decomposition exists.
+
+{{< /details >}}
+
+
+## Problem 39: Interpolation polynomial
+
+(a) Let the support points \((x_0, f_0), \ldots, (x_N, f_N)\) be given. Formulate the definition of the interpolation polynomial and prove that such a polynomial exists.
+
+(b) Determine the interpolation polynomial in Newton form for the support points \((1, 16)\), \((3, 4)\) and \((5, 8)\), explicitly stating the Newton polynomials.
+
+
+{{< details "Solution a)" "false" >}}
+
+Let \(p\) be the interpolation polynomial then the following needs to apply:
+1. \(p_{|x_{n-1};x_{n}} \in P\)
+2. \(p(x_n) = y_n\)
+
+We can display it using the lagrange base
+
+$$
+p(x) = \sum f_n L_n
+$$
+
+the lagrange polynomial fulfills \(L_n(x_{nm}) = \delta_{nm}\)
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We get the polynomial
+
+$$
+p(x) = 16 - 6(x - 1) + 2(x-1)(x-3)
+$$
+
+{{< /details >}}
+
+
+## Problem 40: Householder Transformations
+
+Let \(Q \in \mathbb{R}^{N \times N}\) be a Householder transformation.
+
+(a) Show that \(Q \in \mathbb{R}^{N \times N}\) is orthogonal.
+
+(b) Explain how and with what computational cost \(Q\mathbf{y}\) for \(\mathbf{y} \in \mathbb{R}^N\) is calculated.
+
+Now let \(A \in \mathbb{R}^{N \times N}\) with maximal rank.
+
+(c) Give a Householder transformation \(Q_1\) such that the first column of \(\tilde{A} := Q_1A\) is a multiple of \(\mathbf{e}^1\).
+
+(d) Explain how a Householder transformation \(P_1\) can be used to reflect the **first row** of \(\tilde{A}\) onto a vector of the structure \((* \ * \ * \ \ldots \ 0)\) without changing the first column of \(\tilde{A}\). Also, give the structure of the Householder vector.
+
+(e) By continuing the process described in sub-tasks (c) and (d), \(A\) can be transformed by Householder transformations into the form
+$$B = \begin{pmatrix} * & * & & & \\ * & * & * & & \\ & * & * & * & \\ & & \ddots & \ddots & \ddots \\ & & & * & * \end{pmatrix} \in \mathbb{R}^{N \times N}$$
+(all entries in \(B\) not marked with a \( * \) are zero).
+Express \(B\) in terms of these transformations and \(A\).
+
+{{< details "Solution a)" "false" >}}
+
+$$
+QQ^T = (I - 2ww^T)(I-2ww^T)^T = (I - 2ww^T)(I - 2ww^T) = I^2 - 4ww^T + 4ww^Tww^T = I - 4ww^T + 4ww^T = I
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We never calculate the householder matrix \(Q\), instead we clauclate the househodler vector \(Qy = (I-2ww^T)y\), which takes \(2N\) operations, which consists of one scala product, one difference of vector and one vector vector product.
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+The householder transformation is
+
+$$
+w = \frac{a - \theta v}{||a - \theta v||}
+$$
+
+with
+
+$$
+\theta =
+\begin{cases}
+-||v||_2, \quad v_1 > 0\\
+||v||_2, \quad else \\
+\end{cases}
+$$
+
+where \(a_1\) is the fist column of \(A\) and \(v = e^1\).
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+Why would you ask this :'(
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+We get
+
+$$
+B = QAP = Q_{N-1} \cdot ... \cdot Q_1 A P_1 \cdot ... \cdot P_{N-2}
+$$
+
+{{< /details >}}
+
+
+## Problem 41: QR
+
+To approximately calculate the eigenvalues of a matrix \(A \in \mathbb{R}^{N \times N}\), we got to know the \(QR\)-algorithm. In this, the matrix \(A\) is first brought into Hessenberg form \(H = Q^T A Q\) by \(\boxed{\text{(a)}}\) many Householder transformations. For this, \(\boxed{\text{(b)}}\) operations are generally necessary. We understand an operation as \(\boxed{\text{(c)}}\). If the original matrix \(A\) is symmetric, then \(H\) is a \(\boxed{\text{(d)}}\) matrix.
+
+The \(QR\)-decomposition with a shift \(\mu\) can be used to improve convergence. In one step of the algorithm, the \(QR\)-decomposition of \(\boxed{\text{(e)}}\) is calculated, and with it the matrix \(\bar{H} = \boxed{\text{(f)}}\). If the matrix \(H\) is irreducible and the shift \(\mu\) is an eigenvalue of \(H\), then \((e^N)^T \bar{H} = \boxed{\text{(g)}}\). If we specifically choose the shift \(\mu = h_{NN}\), then quadratic convergence generally occurs, and in the symmetric case, cubic convergence. Quadratic convergence means that from \(\boxed{\text{(h)}}\) the representation \(\bar{h}_{N,N-1} = \boxed{\text{(i)}}\) follows. If quadratic convergence is present, the number of correct decimal places of \(\mu\) as an approximation of the eigenvalue approximately \(\boxed{\text{(j)}}\).
+
+{{< details "Solution" "false" >}}
+
+(a)
+N-2
+
+(b)
+O(N^3)
+
+(c)
+Addition + multiplication
+
+(d)
+Tridiagonalmatrix
+
+(e)
+\(H - \mu I_N= QR\)
+
+(f)
+\(H = RQ + \mu I_N\)
+
+(g)
+\((0,...,0,\mu)^T\)
+
+(h)
+/
+
+(i)
+/
+
+(j)
+doubling
+
+{{< /details >}}
+
+
+## Problem 42: Quadratur formula
+
+We consider quadrature formulas with weights and nodes \((b_k, c_k)_{k=1,\ldots,s}\), where the nodes are pairwise distinct.
+
+(a) Define the Lagrange polynomials \(L_j, j = 1, \ldots, s\), for the nodes \(c_1, \ldots, c_s\) and state their degree.
+
+(b) Prove the implication: If the weights of the quadrature formula are given by
+$$b_j = \int_0^1 L_j(x)dx, \quad j = 1, \ldots, s,$$
+then it has order \(p \ge s\).
+
+(e) Approximate \(\int_1^5 \cos(x-3)dx\) with the quadrature formula, which is given by \(b_1 = b_2 = \frac{1}{2}\) and \(c_1 = 1/4, c_2 = 3/4\).
+
+{{< details "Solution a)" "false" >}}
+
+$$
+L_n = \Prod_{j \neq k} \frac{x - c_j}{c_j - c_k}
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+A quadrature formula has then order p if it integrates all polynomial with degree \(\leq p-1\) exactly where p is maximal.
+
+We can then write our quadrature formula as
+
+$$
+f(x) = \sum f(c_k)L_k(x)
+$$
+
+Hence
+
+$$
+\int f(x) dx = \sum f(c_k) \int L_k(x) = \sum b_k f(c_k)
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution e)" "false" >}}
+
+$$
+Q(f) = (b -a) \sum b_k f(a + c_k(b-a)) = 4 cos(1)
+$$
+
+{{< /details >}}
+
+
+
+## Problem 43: Short questions
+
+(a) We consider the approximations \(\pi_n = \frac{n}{2} g_{2n}\) of \(\pi\) for \(n = 6, 12, 24, \ldots\), where we calculate \(g_{2n} = \sqrt{2 - \sqrt{4 - g_n^2}}\) with the starting value \(g_6 = 1\). The calculation is implemented in double-precision format of the IEEE standard.
+
+Formulate a conjecture as to whether the sequence of calculated approximations \(\pi_6, \pi_{12}, \pi_{24}, \ldots\) will converge to \(\pi\). Justify your conjecture and, if necessary, suggest an alternative calculation for \(g_{2n}\).
+
+(b) Formulate Newton's method for the approximate solution of \(\mathbf{f}(\mathbf{x}) = \mathbf{0}\) with a \(C^1\)-function \(\mathbf{f}: \mathbb{R}^N \to \mathbb{R}^N\) and briefly discuss the computational cost of this method compared to the simplified Newton's method.
+
+(c) Formulate the fixed-point iteration of a general linear iteration and give the preconditioner \(B\) specifically for the Jacobi and Gauss-Seidel methods. Define the quantities that appear.
+
+(d) Calculate \(\|\mathbf{x}\|_A\) for \(A = \mathrm{diag}(11, 11, 13) + \mathbf{e}\mathbf{e}^\top\) and \(\mathbf{x} = (1 \ -1 \ 1)^\top\), where \(\mathbf{e} = (1 \ 1 \ 1)^\top\) holds.
+
+
+{{< details "Solution a)" "false" >}}
+
+One can see that \(g_{n} \to 0\) for \( n \to \infty\)
+
+Because of that the inner root over times goes towards 4. Because of that subtracts two values which have enarly the identical norm i.e. 2 -2.
+
+Hence we have a problem, the significant digits of the mantisse are destroyed while the lesser important ones which are subject to rounding errors dominate.
+
+A better formula would be \(g_{2n} = \frac{g_n}{\sqrt{2 + \sqrt{4 - g_n^2}}}\)
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+$$
+x^{k+1} = x^k + d^k
+$$
+
+and
+
+$$
+f'(x)d_k ) = - f(x)
+$$
+
+In the simple newton method we instead do
+
+$$
+Ad^k = -f(x^k)
+$$
+
+where \(A \approx f'(x_0)\).
+
+In the simple newton method we only need calculate once the derivative i.e. the jacobi matrix and we only need once to decompose it. We still need to solve every step a LGS. But it only converges locally linearly isnetad of quardtaic.
+
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+$$
+x^{k+1} = x^k + d^k
+$$
+
+with
+
+$$
+Bc^k = r^k
+$$
+
+and
+
+$$
+r^{k+1} = r^k - Ac^k
+$$
+
+until \(r_k \le eps ||b||\).
+
+Where \(A = L + D + R\) in Jacobi \(B = D\) in Gauß-Seidel \(B = L + D\).
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+$$
+||x||_A^2 = x^TAx = x^TDx + x^Tee^Tx = 36
+$$
+
+Hence
+
+$$
+||x||_A = \sqrt{36} = 6
 $$
 
 {{< /details >}}
