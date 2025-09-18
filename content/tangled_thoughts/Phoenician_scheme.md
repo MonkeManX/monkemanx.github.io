@@ -26,15 +26,21 @@ Another interesting interpretation, beside the biblical one, is the Stoic one: i
 Some of my favorite quotes from the movie:
 
 > Businessman sits in helicopter with freedom fighter:
+>
 > Leader of Freedom fighter: “Religion is a sign of the oppressed creature. It’s a protest against suffering.”
+>
 > Nun: “I agree. You are not an atheist?”
+>
 > Leader of Freedom fighter:  “Of course I am. Some of my colleagues, however, only claim to be.”
+>
 > (Camera pans over to the freedom fighter praying in front of a Catholic shrine.)
 
 He asks the Catholic priest to cover some of his debt.
 
 > Priest: “His holiness refuses to cover any of it.”
+>
 > Zsa-Zsa Korda: “I know Felix. He is stubborn. We’ll need to sweeten the pot. Tell him I offer nine more souls.”
+>
 > (Camera pans over to his nine adopted sons praying.)
 
 But the greatest quote is, and always will be, just before he gets attacked by an assassin he has employed dozens of times:
@@ -44,5 +50,7 @@ But the greatest quote is, and always will be, just before he gets attacked by a
 And
 
 > Zsa-Zsa Korda: "Help yourself to a hand grenade."
+>
 > Uncle Nurbar: “You are very kind, but I have my own.”
+>
 > (He pulls out a hand grenade from his pocket and throws it up one time while spinning like a tennis ball before catching it again.)
