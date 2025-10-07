@@ -4244,8 +4244,181 @@ $$
 {{< /details >}}
 
 
+## Problem 50: Short Answers
 
-{{< addspace height="50px" >}}
+a) We consider the norm \(\lVert \cdot \rVert_p\) on \(\mathbb{R}^{N \times N}\) for \(p \in [1, \infty]\). Give the definition for the condition number \(\kappa_p(A)\) and show that \(\kappa_p(A) \ge 1\).
+
+b) Given
+
+$$A = \begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix}$$
+
+State the conditions for \(\alpha, \beta, \gamma, \delta \in \mathbb{R}\) such that \(A\) possesses an **LR-decomposition (without pivoting)**. Determine the LR-decomposition in the case of its existence.
+
+c) Given a continuously differentiable function \(F: \mathbb{R}^N \to \mathbb{R}^N\). We consider the nonlinear system of equations \(F(x) = 0\) in \(\mathbb{R}^N\). Formulate one step of the **Newton iteration** and briefly discuss the efficient calculation of the **Newton correction**.
+
+d) Given the expression:
+
+$$\sqrt{x^2 + 1} - x \quad \text{for } x \gg 1.$$
+
+Explain and fix the problem when evaluating the expression.
+
+e) Name one **advantage** and one **disadvantage** of the **LR-decomposition** compared to the **Cholesky decomposition**.
+
+f) Iterative computation of eigenvalues:
+
+(i) Explain how the output of the **inverse iteration (with shift)** and the **QR-iteration (with shift)** differ after successful execution.
+
+(ii) State how in the inverse iteration one obtains the **same sequence of shifts \(\mu_k\)** as in the QR-iteration.
+
+
+{{< details "Solution a)" "false" >}}
+
+For regular matrices we have
+
+$$
+K_p(A) = ||A||_p ||A^{-1}||_p
+$$
+
+Next we show that \(K_p(A) \geq 1\)
+
+$$
+K_p(A) = ||A||_p ||A^{-1}||_p \geq ||AA^{-1}||_p = ||I_n||_p = 1
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+A LR-decomposition has the following structure
+
+$$
+L =
+\begin{pmatrix}
+1 & 0 \\
+l_{11} & 1
+\end{pmatrix}, \quad
+R =
+\begin{pmatrix}
+r_{11} & r_{12} \\
+0 & r_{22}
+\end{pmatrix}
+$$
+
+In our case \(r_{11} = \alpha, \ r_{12} = \beta, \ r_{22} = \delta - l_{21}\beta\) and from this follows the last element \(l_{21} = \frac{\gamma}{\alpha}\).
+
+Hence
+
+$$
+L =
+\begin{pmatrix}
+1 & 0 \\
+\frac{\gamma}{\alpha} & 1
+\end{pmatrix}, \quad
+R =
+\begin{pmatrix}
+\alpha & \beta \\
+0 & \delta - l_{21}\beta
+\end{pmatrix}
+$$
+
+And such a LR-decomposition exist if and only if main minors are ivnertible/regular, this is then the case when the determinant is non zero. Hence
+
+$$
+det_1(A) = \alpha , \quad det_2(A) = \alpha \delta - \beta \gamma
+$$
+
+needs to be non-zero.
+
+**Alternative LR-Decomposition**
+
+$$
+\text{LU:} \quad
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\;\xrightarrow{\;-\frac{c}{a}\;}
+\;
+\begin{pmatrix}
+a & b \\
+0 & d - \frac{bc}{a}
+\end{pmatrix}
+$$
+
+$$
+\Rightarrow
+L =
+\begin{pmatrix}
+1 & 0 \\
+\frac{c}{a} & 1
+\end{pmatrix}
+\quad \checkmark
+\qquad
+U =
+\begin{pmatrix}
+a & b \\
+0 & d - \frac{bc}{a}
+\end{pmatrix}
+\quad \checkmark
+$$
+
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+We have
+
+$$
+x^{k+1} = x^{k} = d^{k}
+$$
+
+whereby \(d^k\) is the solution of
+
+$$
+DF(x^k) d^k = -F(x^k)
+$$
+
+To calculate this efficiently, instead of caculatign the inverse of the matrix we use an LGS.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+The Problem: For very big x are the terms nearly identical big, as such it comes to destruction.
+
+To solve this we need to avoid subtracing two nmumbers that are nearly identical big
+
+$$
+\sqrt{x^2+1} - x = \left(\sqrt{x^2+1} - x\right) \frac{\sqrt{x^2+1} + x}{\sqrt{x^2+1} + x} = \frac{(x^2+1) - x^2}{\sqrt{x^2+1} + x} = \frac{1}{\sqrt{x^2+1} + x}
+$$
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+Advantages:
+- Less requirement, choelsky needs spd.
+
+Disadvantages:
+- LR Decomposition takes more operation i.e. more expensiver.
+
+{{< /details >}}
+
+{{< details "Solution f)" "false" >}}
+
+(i)
+in the inverse iteration we get one eigenvalue and its eigenvector. In QR-iteration we get the entire spectrum i.e. all eigenvalues in from of a matrix.
+
+(ii)
+We start with \(e^N\), that is the N-th unit vector.
+
+{{< /details >}}
+
+
+
+
+{{< addspace height="100px" >}}
 
 
 ## Problems with Non-Confirmed Solution
