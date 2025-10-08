@@ -4416,6 +4416,490 @@ We start with \(e^N\), that is the N-th unit vector.
 {{< /details >}}
 
 
+## Problem 51: Linear Curve fitting
+
+Given the Matrix
+
+$$
+A = \begin{pmatrix}
+1 & -5 \\
+2 & 0 \\
+2 & 1
+\end{pmatrix}
+$$
+
+and a vector \(\mathbf{b} \in \mathbb{R}^3\).
+
+a) Calculate the **QR-decomposition** of \(A\).
+*Hint: For \(Q\), it is sufficient to provide a formula.*
+
+b) Define the **linear least squares problem** for \(A\mathbf{x} = \mathbf{b}\) and check whether it has a **unique solution**.
+
+c) Explain how you could solve the least squares problem from part b) using the result from part a).
+
+
+{{< details "Solution a)" "false" >}}
+
+Step 1:
+
+$$
+a^1 =
+\begin{pmatrix}
+1 \\
+2 \\
+2
+\end{pmatrix}, \quad
+w^1 =
+\begin{pmatrix}
+1 \\
+2 \\
+2
+\end{pmatrix} + |a^1|_2 \cdot e^1 =
+\begin{pmatrix}
+4 \\
+2 \\
+2
+\end{pmatrix}
+$$
+
+Further \(|w_1|^2_2 = 24\), hence we become the householder matrix
+
+$$
+Q = I - 2 \frac{ww^T}{w^Tw} = I- \frac{1}{12}
+\begin{pmatrix}
+16 & 8 & 8 \\
+8 & 4 & 4 \\
+8 & 4 & 4
+\end{pmatrix} =
+\frac{1}{3}
+\begin{pmatrix}
+-1 & -2 & -2 \\
+-2 & 2 & -1 \\
+-2 & -1 & 2
+\end{pmatrix}
+$$
+
+We apply the householder matrix
+
+$$
+Q_1 \cdot A =
+\begin{pmatrix}
+-3 & 1 \\
+0 & 3 \\
+0 & 4
+\end{pmatrix}
+$$
+
+Step 2:
+
+$$
+a^2 =
+\begin{pmatrix}
+3 \\
+4 \\
+\end{pmatrix}, \quad
+w^2 =
+\begin{pmatrix}
+3 \\
+4 \\
+\end{pmatrix} + |a^2|_2 \cdot e^1 =
+\begin{pmatrix}
+9
+4
+\end{pmatrix}
+$$
+
+Further \(|w^2|^2_2 = 80\). We get the second housholder matrix
+
+$$
+\hat{Q}_2 = I - 2 \frac{ww^T}{w^Tw} = I- \frac{1}{40}
+\begin{pmatrix}
+64 & 32  \\
+32 & 16 \\
+\end{pmatrix} =
+\frac{1}{5}
+\begin{pmatrix}
+-3 & -4 & \\
+-4 & 3 & \\
+\end{pmatrix}
+$$
+
+And with
+
+$$
+Q_2 =
+\begin{pmatrix}
+1 & \\
+& \hat{Q}_2
+\end{pmatrix}
+$$
+
+We get
+
+$$
+R = Q_2 \cdot Q_1 \cdot A =
+\begin{pmatrix}
+-3 & 1 \\
+0 & - 5 \\
+0 & 0
+\end{pmatrix}
+$$
+
+And
+
+$$
+Q = Q_1 \cdot Q_2
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+The linear least square/curve fitting problem is defined as
+
+$$
+\min_x \ |Ax - b|_2
+$$
+
+This problem is then exact solvable when A has full rank. In our case, since the columns are linear independent this is the case and the problem has one unique solution.
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+From the lecture we know that the normal equation solves a linear least square problem
+
+$$
+A^TAb = A^Tb
+$$
+
+We can now use the QR-decomposition, by inserting them in our equation
+
+$$
+(QR)^T(QR)b = R^TQ^TQRb = R^TRb = A^Tb
+$$
+
+which can be solved using forward and backward substitution.
+
+{{< /details >}}
+
+
+## Problem 52: Polynomial Interpolation
+
+
+Given the table of values:
+
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+n & 0 & 1 & 2 & 3 \\
+\hline
+\xi_n & -3 & -1 & 1 & 2 \\
+\hline
+f_n & 3 & -1 & -5 & 12 \\
+\hline
+\end{array}
+$$
+
+a) Determine the **interpolation polynomial** \(P \in \mathbb{P}_3\) such that \(P(\xi_n) = f_n\) for \(n=0, 1, 2, 3\) in the **Newton form** (or **Newton basis**).
+
+b) **Extend** the interpolation polynomial by including the point \((\xi_4, f_4) = (0, 0)\).
+
+c) Briefly **justify** whether the calculated interpolation polynomials in parts a) and b) are **unique**.
+
+
+{{< details "Solution a)" "false" >}}
+
+The Neville Scheme is:
+
+$$
+\begin{array}{c|c|ccc}
+\xi_n & f_n & P_{0,1} & P_{0,1,2} & P_{0,1,2,3} \\
+\hline
+-3 & 3 & & & \\
+-1 & -1 & \frac{-1 - 3}{-1 - (-3)} = -2 & & \\
+1 & -5 & \frac{-5 - (-1)}{1 - (-1)} = -2 & \frac{-2 - (-2)}{1 - (-3)} = 0 & \\
+2 & 12 & \frac{12 - (-5)}{2 - (1)} = 17 & \frac{17 - (-2)}{2 - (-1)} = \frac{19}{3} & \frac{\frac{19}{3} - 0}{2 - (-3)} = \frac{19}{15} \\
+\end{array}
+$$
+
+Thus, the interpolation polynomial in **Newton form** is:
+
+$$P_1(t) = 3 - 2(t+3) + 0(t+3)(t+1) + \frac{19}{15}(t+3)(t+1)(t-1)$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+
+$$
+\begin{array}{c|c|cccc}
+\xi_n & f_n & \text{1st Diff.} & \text{2nd Diff.} & \text{3rd Diff.} & \text{4th Diff.} \\
+\hline
+-3 & 3 & & & & \\
+-1 & -1 & \frac{-1 - 3}{-1 - (-3)} = -2 & & & \\
+1 & -5 & \frac{-5 - (-1)}{1 - (-1)} = -2 & \frac{-2 - (-2)}{1 - (-3)} = 0 & & \\
+2 & 12 & \frac{12 - (-5)}{2 - (1)} = 17 & \frac{17 - (-2)}{2 - (-1)} = \frac{19}{3} & \frac{\frac{19}{3} - 0}{2 - (-3)} = \frac{19}{15} & \\
+\hline
+\mathbf{0} & \mathbf{0} & \mathbf{\frac{0 - 12}{0 - 2} = 6} & \mathbf{\frac{6 - 17}{0 - 1} = 11} & \mathbf{\frac{11 - \frac{19}{3}}{0 - (-1)} = \frac{14}{3}} & \mathbf{\frac{\frac{14}{3} - \frac{19}{15}}{0 - (-3)} = \frac{51}{45} \left(= \frac{17}{15}\right)} \\
+\end{array}
+$$
+
+Hence
+
+$$
+P_2(t) = P_1(t) + \frac{17}{15} (t + 3)(t + 1)(t -1)(t - 2)
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+Because the polynomial has n-th degree, it is uniquely determined by n-points, hence the solution is unique.
+
+{{< /details >}}
+
+
+## Problem 53: Quadratur
+
+
+We consider the interval \(I = [a, b]\) for \(a, b \in \mathbb{R}\) and \(a < b\).
+
+a) Given are the **nodes** \(\xi_0 = a, \xi_1 = b\) and the **weights** \(\omega_0 = \omega_1 = \frac{b-a}{2}\).
+
+(i) Show that the given **quadrature formula** is **exact** for all polynomials \(P \in \mathbb{P}_1\).
+
+(ii) Show that the given quadrature formula is **no longer exact** for polynomials \(P \in \mathbb{P}_2\).
+*Hint: A counterexample is sufficient.*
+
+b) Given are \(f \in C^2[a, b]\) as well as the **equidistant nodes**
+$$\xi_n = a + n h \quad \text{for } n = 0, \ldots, N, \quad h = \frac{b-a}{N}.$$
+
+The **composite (right-sided) rectangle rule** is defined by
+
+$$Q(f) = \sum_{n=1}^{N} h f(\xi_n).$$
+
+(i) Show the **error estimate**
+$$\left| \int_a^b f(t) \, dt - Q(f) \right| \leq \frac{b-a}{2} h \sup_{t \in [a, b]} |f'(t)|.$$
+
+(ii) Briefly **explain** how you can improve the **order of the error** of \(Q(\cdot)\) with the help of an additional function evaluation. Give the improved, composite quadrature formula explicitly and **name it**.
+
+
+{{< details "Solution a)" "false" >}}
+
+(i)
+Recall:
+
+$$
+Q_T(f) \sum_\xi w_\xi f(\xi)
+$$
+
+For the quadrature to be exact, the following needs to be true
+
+$$
+\forall P \in \mathbb{P}_1 : \int_a^b P(x) dx = Q_T(P)
+$$
+
+We can show that, by showing it for the monom base \(1, x  \in \mathbb{P}_1\)
+
+$$
+\int^b_a 1 dx = [x]^b_a = b - a = \frac{b - a}{2} (1 + 1) = Q_T(1)
+$$
+
+$$
+\int^b_a x dx = [\frac{1}{2}x^2]^b_a = \frac{b^2 - a^2}{2} = \frac{b - a}{2}(b - a)
+$$
+
+As such is \(Q_T\) exact for \(\mathbb{P}_1\).
+
+(ii)
+
+We choose \(a=0, b=1\) then
+
+$$
+\int^1_0 x^2 dx = [\frac{1}{3}x^3]^1_0 = \frac{1}{3} \neq \frac{1}{2} = \frac{1- 0}{2}(1^2 - 0^2) = Q_T(x^2)
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+(i)
+We do a taylor development for \(f\) with \(t_n \in [\xi_{n-1}, \xi_n]\)
+
+$$
+f(t) = f(\xi_n) +  f'(t_n)(t - \xi_n)
+$$
+
+With that we can begin
+
+$$
+\begin{align}
+\int^b_a f(t) dt - Q(f) &= \int^b_a f(t) dt - \sum_{n = 1}^{N} h f(\xi_n) \\
+&= \sum_{n = 1}^{N}(\int_{\xi_{n-1}}^{\xi_n} f(t) dt) - \sum_{n = 1}^{N} h f(\xi_n) \\
+&= \sum_{n = 1}^{N} (\int_{\xi_{n-1}}^{\xi_n} f(t)dt - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} (\int_{\xi_{n-1}}^{\xi_n} f(\xi_n) +  f'(t_n)(t - \xi_n)dt - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} (\int_{\xi_{n-1}}^{\xi_n} f(\xi_n) +  \int_{\xi_{n-1}}^{\xi_n} f'(t_n)(t - \xi_n)dt - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} ( f(t)[C]^{\xi_{n-1}}_{\xi_n} +  f'(t_n) [t - \xi_n]^{\xi_{n-1}}_{\xi_n} - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} ( hf(t) - f'(t_n) \frac{1}{2}h^2 - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} - f'(t_n) \frac{1}{2}h^2  \\
+&= -\frac{h}{2} \sum_{n = 1}^{N} \frac{b - a}{N}f'(t_n) \\
+&\leq -\frac{h}{2} \sum_{n = 1}^{N} \frac{b - a}{N} \sup_{t \in [a, b]}f'(t) \\
+&= \frac{h}{2} \sup_{t \in [a, b]}f'(t)  \sum_{n = 1}^{N} \frac{b - a}{N} \\
+&= \frac{b-a}{2}h \sup_{t \in [a, b]}f'(t)
+\end{align}
+$$
+
+Explanations:
+- From Line 1 to 2: Split the integral over \([a,b]\) into the sum of the integrals on the subintervals \([\xi_{n−1}, \xi_n]\).
+- From Line 2 to 3: Then group each subinterval's integral with the corresponding right-endpoint rectangle \(hf(\xi_n))\).
+- From Line 3 to 4: Insert the taylor development
+- From Line 4 to 7: Integrate the summands independent
+- From Line 7 to 8: \(hf(\xi)\) cancels each other out.
+- From Line 8 to 9: Replace one \(h\) by its definition, pull the other before the sum.
+
+
+(ii)
+We can do an additional evaluation, and get the summed trapezoid rule. From the lecture we know that its error order is 2.
+
+$$
+Q(f) = \frac{f(a) + f(b)}{2} + \sum_{n=1}^{N-1} h f(\xi_n)
+$$
+
+{{< /details >}}
+
+
+## Problem 54: Linear Iteration Method
+
+We consider the linear system of equations \(A\mathbf{x} = \mathbf{b}\) for \(A \in \mathbb{R}^{N \times N}\) and \(\mathbf{b} \in \mathbb{R}^N\).
+
+a) State the **formula (or prescription)** for a general **linear iterative method** and name the quantities involved.
+
+Let's now specifically consider
+
+$$
+A = \begin{pmatrix}
+\alpha & \beta \\
+\gamma & \delta
+\end{pmatrix}
+$$
+
+for \(\alpha, \beta, \gamma, \delta \in \mathbb{R}_{>0}\) (i.e., all entries are strictly positive).
+
+b) Determine the conditions on \(\alpha, \beta, \gamma, \delta\) such that, for arbitrary starting vectors \(\mathbf{x}^{(0)} \in \mathbb{R}^2\) and right-hand sides \(\mathbf{b} \in \mathbb{R}^2\):
+
+(i) the **Jacobi method** converges for \(A\).
+
+(ii) the **Gauss-Seidel method** converges for \(A\).
+
+
+
+{{< details "Solution a)" "false" >}}
+
+Let \(B\) be a pre-conditioning matrix, then the iteration method is given by
+
+$$
+x^{k+1} = x^k + B(b-Ax^k)
+$$
+
+where \(x^k\) the iterative is of the method.
+
+
+**Alternative:**
+
+1.  Choose \(\mathbf{x}^{(0)}\) and \(\varepsilon\).
+2.  While \(\Vert \mathbf{r}^{(k)} \Vert < \varepsilon \Vert \mathbf{b} \Vert\)
+3.  Calculate
+    $$
+    \begin{aligned}
+    \mathbf{c}^{(k)} &= B \mathbf{r}^{(k)} \\
+    \mathbf{x}^{(k+1)} &= \mathbf{x}^{(k)} + \mathbf{c}^{(k)} \\
+    \mathbf{r}^{(k+1)} &= \mathbf{r}^{(k)} - A \mathbf{c}^{(k)}
+    \end{aligned}
+    $$
+    where \(A = L + D + R\). E.g., in Jacobi: \(\mathbf{B} = \mathbf{D}^{-1}\). \(\mathbf{r}^{(k)}\) is the **residual**, \(\mathbf{x}^{(0)}\) is the **starting vector**, \(\varepsilon\) determines how large the error of our final result is.
+
+{{< /details >}}
+
+
+
+{{< details "Solution b)" "false" >}}
+
+From the Lecture we know a generel linear iteration method converges with start vector \(x^0\) when \(p(I - BA) \le 1\).
+
+(i)
+For Jacobi-Method we have \(B = D^{-1}\) and hence
+
+$$
+C_1 = I - BA = I -
+\begin{pmatrix}
+\alpha^{-1} & 0 \\
+0 & \delta^{-1}
+\end{pmatrix} A =
+\begin{pmatrix}
+0 & -\frac{\beta}{\alpha} \\
+-\frac{\gamma}{\delta} & 0
+\end{pmatrix}
+$$
+
+We calculate the characteristic polynomial
+
+$$
+det(\lambda I_N - C_1) =
+det(
+\begin{pmatrix}
+\lambda & \frac{\beta}{\alpha} \\
+\frac{\gamma}{\delta} & \lambda
+\end{pmatrix}
+) = \lambda^2 - \frac{\beta\gamma}{\alpha \delta}
+$$
+
+The roots of this are \(\lambda_{1,2} \pm \sqrt{\frac{\beta\gamma}{\alpha \delta}}\).
+
+This means for the method to converge \(|\lambda_{1,2}| < 1\) needs to be true, this is the case when \(\beta \gamma < \alpha \delta\).
+
+
+(ii)
+For Gauß-Seidel-Method we have \(B = (L + D)^{-1}\) and hence
+
+$$
+B =
+\begin{pmatrix}
+\alpha^{-1} & 0 \\
+-\frac{\gamma}{\delta} & \delta^{-1}
+\end{pmatrix}
+$$
+
+With this we have
+
+$$
+C_2 = I - BA =
+\begin{pmatrix}
+0 & -\frac{\beta}{\alpha}\\
+0 & \frac{\beta\gamma}{\alpha\delta}
+\end{pmatrix}
+$$
+
+We calculate the characteristic polynomial
+
+$$
+det(\lambda I_N - C_2) =
+det(
+\begin{pmatrix}
+\lambda & -\frac{\beta}{\alpha}\\
+0 & \lambda - \frac{\beta\gamma}{\alpha\delta}
+\end{pmatrix}
+) = \lambda(\lambda - \frac{\beta\gamma}{\alpha\delta})
+$$
+
+The roots of this are \(\lambda_{1} = 0 \) and \(\lambda_{2} = \frac{\beta\gamma}{\alpha\delta}\).
+
+This means for the method to converge \(|\lambda_{1,2}| < 1\) needs to be true, this is the case when \(\beta \gamma < \alpha \delta\).
+
+{{< /details >}}
+
+
 
 
 {{< addspace height="100px" >}}
@@ -4424,7 +4908,7 @@ We start with \(e^N\), that is the N-th unit vector.
 ## Problems with Non-Confirmed Solution
 
 
-### Problem 50: Iterations method
+### Problem 55: Iterations method
 
 Given
 
@@ -4461,7 +4945,7 @@ $$
 {{< /details >}}
 
 
-## Problem 51: Short tasks
+## Problem 56: Short tasks
 
 
 (a) Explain briefly why the evaluation of the term \(\sqrt{x + \frac{1}{x}} - \sqrt{x - \frac{1}{x}}\) on a computer with floating-point arithmetic is problematic for \(x \gg 1\). Transform the term so that this problem no longer occurs.
@@ -4564,7 +5048,7 @@ $$
 {{< /details >}}
 
 
-## Problem 52: Decompositions
+## Problem 57: Decompositions
 
 Given:
 $$A_{\alpha,\beta} = \begin{pmatrix} 4 & \beta & 1 \\ \alpha & 2 & 0 \\ 1 & 0 & 1 \end{pmatrix}, \quad \alpha, \beta \in \mathbb{R}, \quad \mathbf{b} = \begin{pmatrix} -4 \\ -6 \\ 2 \end{pmatrix}$$
@@ -4627,7 +5111,7 @@ with \(A = L + D + R\) and \(B = L + D\)
 {{< /details >}}
 
 
-## Problem 53: QR-Algorithm
+## Problem 58: QR-Algorithm
 
 We consider the \(QR\)-algorithm with variable shift for the simultaneous computation of all eigenvalues of a symmetric matrix \(A \in \mathbb{R}^{N \times N}\).
 
@@ -4687,7 +5171,7 @@ $$
 {{< /details >}}
 
 
-## Problem 54: Interpolation polynomial
+## Problem 59: Interpolation polynomial
 
 Let \(\xi_0 < \xi_1 < \dots < \xi_N\) and \(f_0, f_1, \dots, f_N \in \mathbb{R}\) be given.
 
@@ -4772,7 +5256,7 @@ $$P_3(t) = -1 + 2(\xi-1) - 1(\xi-1)(\xi-3/2) - \frac{1}{3}(\xi-1)(\xi-3/2)(\xi-2
 {{< /details >}}
 
 
-## Problem 55: Integrating
+## Problem 60: Integrating
 
 We consider an interval \([a, b] \subset \mathbb{R}\) and the integral \(\int_a^b f(t)dt\) for \(f: [a, b] \to \mathbb{R}\).
 
