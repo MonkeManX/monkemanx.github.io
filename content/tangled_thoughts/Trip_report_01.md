@@ -16,7 +16,7 @@ tags: ["Drugs"]
 - Offset: 20:00
 
 **Special**
-- Masturbation before intake extends duration of post-organism and euphoria.
+- Masturbation before intake extends duration of post-orgasm and euphoria.
 - Couldn't sleep until 04:00, recommend intake in the morning.
 
 ## Report
