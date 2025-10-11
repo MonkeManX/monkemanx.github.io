@@ -31,6 +31,11 @@ something completely unlike itself.
 >
 > ~ Door of Perception
 
+In other words
+
+> He too expected the “psychedelic” to be a purely visual revolution, but instead found the transformation to be primarily qualitative.
+> It points to how the psychedelic experience isn’t reducible to sense phenomena; it’s more about the mode of disclosure, the way Being presents itself.
+
 ## Report
 
 {{< embed-pdf url="/attachments/Trips/Trip_Report_01.pdf" width="70%" >}}
