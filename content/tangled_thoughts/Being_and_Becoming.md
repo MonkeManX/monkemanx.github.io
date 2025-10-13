@@ -1,7 +1,7 @@
 ---
 title: 'Being and Becoming'
 date: 2025-10-09 10:00:00
-tags: ["quotes"]
+tags: ["quotes", "Philosophy", "Door of Perception" ]
 ---
 
 >I was not looking now at an unusual flower arrangement. I was seeing what Adam had seen on the morning of his creation-the miracle, moment by moment, of naked existence.
