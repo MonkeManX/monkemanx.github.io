@@ -1,23 +1,23 @@
+{{ $link := .Get "link" }}
+{{ $embed := replace $link "watch?v=" "embed/" }}
+
 <div class="video-container">
   <iframe
-    src="{{ .Get "link" }}"
+    src="{{ $embed }}"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>
 
-
 <style>
 .video-container {
   width: 100%;
-  max-width: 600px; /* optional */
+  max-width: 600px;
   margin: 0 auto;
 }
-
 .video-container iframe {
   width: 100%;
-  /* height will follow the 16:9 ratio automatically */
   aspect-ratio: 16 / 9;
   display: block;
 }

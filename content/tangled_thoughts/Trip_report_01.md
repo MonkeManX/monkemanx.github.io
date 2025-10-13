@@ -6,19 +6,16 @@ tags: ["Drugs"]
 
 ## Metadata
 
-**Date:** 10.10.2025
-
-**Dosage:** 75ug
-
-**Duration:**
-- Intake: 15:00
-- Peak: 17:30
-- Offset: 20:00
-
-**Special**
-- Masturbation before intake extends duration of post-orgasm and euphoria.
-- Couldn't sleep until 04:00, recommend intake in the morning.
-- Not much visual effect, but very vivid imagination.
+- **Date:** 10.10.2025
+- **Dosage:** 75ug
+- **Duration:**
+    - Intake: 15:00
+    - Peak: 17:30
+    - Offset: 20:00
+- **Special**
+    - Masturbation before intake extends duration of post-orgasm and euphoria.
+    - Couldn't sleep until 04:00, recommend intake in the morning.
+    - Not much visual effect, but very vivid imagination.
 
 >  I am and, for as long as I can remember, I have always been a poor visualizer.
 > Words, even the pregnant words of poets, do not evoke pictures in my mind.

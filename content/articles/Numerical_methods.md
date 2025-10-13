@@ -5431,6 +5431,172 @@ $$
 
 {{< /details >}}
 
+### Problem 62
+
+1. What is the **Raleigh-Constant** ?<D-lt>
+
+{{< details "Solution" "false" >}}
+
+Is defined as
+
+$$
+r(A, x) = \frac{x^TAx}{x^Tx}
+$$
+
+it approximates eigenvalues.
+
+We can use it as startvalue in inverse iteration with shift.
+
+{{< /details >}}
+
+2. What is the **Kylov method**?
+
+{{< details "Solution" "false" >}}
+
+Also known as **cg** method. It is an iterative method to solve sparse LGS.
+
+{{< /details >}}
+
+3. What is a **matrixnorm**?
+
+{{< details "Solution" "false" >}}
+
+We have defined the associated matrixnorm as
+
+$$
+||X||_A = \sup{x \neq 0} \frac{ ||xX||_A}{||x||}
+$$
+
+A norm is general has three attributes
+
+1. Positive definite $||A|| > 0$
+2. Triangle inequality $$||AB|| > ||A||||B||$$$
+3. Homogeneous $||\lambdaA|| = |\lambda|||A||$
+
+{{< /details >}}
+
+4. Calculate for \(z = (1 \ -1 \ 1)^T\) the value of norm \(A\) with
+$$
+A LL^T, \quad L = \begin{pmatrix}
+1 & 0 & 0 \\
+-2 & 1 & 0 \\
+1 & 0 & 1
+\end{pmatrix}
+$$
+
+
+{{< details "Solution" "false" >}}
+
+It can be calculated with
+
+$$
+z^T LL^T z
+$$
+
+{{< /details >}}
+
+5. What is **Destruction**?
+
+
+{{< details "Solution" "false" >}}
+
+If we subtract two numbers from wach other which are nearly identical the most significant digits will become 0, while the least significant digits will counts, this leads to a result that is very inaccurate, the number explodes in size.
+
+{{< /details >}}
+
+
+5. What is **Singular Value Decomposition**?
+
+{{< details "Solution" "false" >}}
+
+If we have a matrix A then the singular value decomposition is
+
+$$
+A = V \sigma U^T, \quad \sigma = diag(\sigma_1, ..., \sigma_n), \quad \sigma_1 = \sqrt{\lambda_i}
+$$
+
+{{< /details >}}
+
+6. Determine the solution of the problem $$|Ax^* -b| = \min |Ax-b|$$ with the help of singular value decomposition
+
+{{< details "Solution" "false" >}}
+
+This can be solved using the normal equation
+
+$$
+A^TAx = A^Tb
+$$
+
+which we can express using the singular value decomposition
+
+$$
+(V \sigma U^T)^T (V \sigma U^T)x = (V \sigma U^T)^Tb \iff
+U \sigma V V \sigma Ux = U \sigma V b \iff
+x^* = U \sigma^{-1}
+$$
+
+{{< /details >}}
+
+7. What is the lagrange basis? And why are the solution always unique?
+
+{{< details "Solution" "false" >}}
+
+$$
+P(x) = \sum f_n L_n (x), \quad L_n = \prod_{n \neq m} \frac{x  - x_n}{x_n - x_m}
+$$
+
+They are always 0, except where the roots are, there they are 1, we multiply that than with the function value at that place.
+
+
+Suppose there are **two** polynomials ( p(x) ) and ( q(x) ) of degree ≤ n that both satisfy
+$$
+p(x_i) = q(x_i) = y_i \quad \forall i.
+$$
+
+Consider their **difference**:
+$$
+r(x) = p(x) - q(x).
+$$
+
+Then:
+
+* ( r(x) ) is also a polynomial of degree ≤ n,
+* and ( r(x_i) = 0 ) for all ( i = 0, \ldots, n. )
+
+So ( r(x) ) has ( n+1 ) **distinct roots** (since all ( x_i ) are distinct).
+But a nonzero polynomial of degree ≤ n can have **at most ( n )** roots.
+
+Therefore, ( r(x) ) must be the **zero polynomial**, i.e. ( p(x) = q(x) ).
+
+{{< /details >}}
+
+8. What solve methods did we learn in the lecture?
+
+{{< details "Solution" "false" >}}
+
+1. Newton-method: to solve non linear problems.
+2. Jacobi, Gauß-Seidel method: To solve linear problems.
+
+{{< /details >}}
+
+9. What is the QR Algorithm? Why do we do it? Can we speed it up?
+
+{{< details "Solution" "false" >}}
+
+We do it, because the convergence speed it bettert han cholesky but it has more requriemenst. Can be used to solve LGS or to determine eigenvalues like this
+
+$$
+A_k = QR
+A_{k+1} RQ
+$$
+
+We can speed up convergence speed, by starting with an hessian matrix and a shift. To get the hessenbergform we do
+
+$$
+H = Q^TAQ
+$$
+
+{{< /details >}}
 
 
 ## Conclusion
