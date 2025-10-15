@@ -5843,7 +5843,7 @@ $$
 from this we get \(X = (u, v) = (\pm \frac{1}{2}(1/\epsilon - \epsilon), 0)\).
 
 (iii)
-start value was badly choosen, because we are in two seperate convergens ranges, for \(\epsilon \to 0\) is the jacobi matrix not regular anymore and thus we cannot continue the method.
+start value was badly chosen, because we are in two separate convergent ranges, for \(\epsilon \to 0\) is the jacobi matrix not regular anymore and thus we cannot continue the method.
 
 {{< /details >}}
 
