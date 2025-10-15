@@ -5431,6 +5431,7 @@ $$
 
 {{< /details >}}
 
+
 ### Problem 62
 
 1. What is the **Raleigh-Constant** ?<D-lt>
@@ -5469,9 +5470,9 @@ $$
 
 A norm is general has three attributes
 
-1. Positive definite $||A|| > 0$
-2. Triangle inequality $$||AB|| > ||A||||B||$$$
-3. Homogeneous $||\lambdaA|| = |\lambda|||A||$
+1. Positive definite $$||A|| > 0$$
+2. Triangle inequality $$||AB|| > ||A||||B||$$
+3. Homogeneous $$||\lambda A|| = |\lambda|||A||$$
 
 {{< /details >}}
 
@@ -5595,6 +5596,254 @@ We can speed up convergence speed, by starting with an hessian matrix and a shif
 $$
 H = Q^TAQ
 $$
+
+{{< /details >}}
+
+
+### Problem 63
+
+What is the Tikhonov Regularization? How can it be solved?
+
+{{< details "Solution" "false" >}}
+
+When we have a least square problem \(|Ax - b| = min!\), we cab have the problem that \(A\) has bad condition, which leads to an increase of errors in the solution.
+To solve this we can use the Tikhonov Regularization, the problem is then formulated as
+
+$$
+\frac{1}{2}|Ax - b|^2_2 + \frac{1}{2}\alpha |x|^2_2, \quad \alpha > 0
+$$
+
+and the solution is
+
+$$
+x = (A^TA + \alpha I_n)^{-1}A^Tb
+$$
+
+When choosing \(\alpha\) keep in mind:
+- The bigger \(\alpha\), the bigger the approximations error.
+- The smaller \(\alpha\), the bigger the conditioning error.
+
+{{< /details >}}
+
+
+What is the trapezoid rule? What is the summed trapezoid rule? What is the general formula for the quadrature formula? For what are they used?
+
+{{< details "Solution" "false" >}}
+
+Trapezoid rule
+
+$$
+\frac{b-a}{2}(f(a) + f(b))
+$$
+
+Summed Trapezoid rule
+
+$$
+T_n(f) = \sum_{n=1}^{N} \frac{b-a}{2}(f(a) + f(b))
+$$
+
+General formula
+
+$$
+Q(f) = \sum w_x f(x)
+$$
+
+They ared use to numericaly solve integrals.
+
+{{< /details >}}
+
+
+What is the QR-Iteration? How does it work? What do we need to do that QR_iteration gives the same result as the ivnerse iteraiton with shift? What can we do to increase the speed of QR-iteration?
+
+{{< details "Solution" "false" >}}
+
+QR-Iteration is used to find out the eigenvalues.
+
+0. Choose \(\mu = A[n,n]\)
+1. $$
+A_k -\mu = Q_kR_k
+$$
+2. $$
+A_{k+1} = R_kQ_k
+$$
+
+In inverse shift choose \(v = e^N\).
+
+To increase the speed we transform our matrix \(A\) into hessenbergfrom using \(H = Q^TAQ\).
+
+{{< /details >}}
+
+
+### Problem 64
+
+What is a preconditioning matrix? What is the Jacobi preconditioning matrix? What is an example of a preconditioning matrix?
+
+{{< details "Solution" "false" >}}
+
+A preconditioning matrix \(B\), gets multiplied to our LGS in order to have better conditioning
+
+$$
+BAx = Bb
+$$
+
+Jacobi preconditioning is
+
+$$
+B = D^{-1}
+$$
+
+where \(A = L + D + R\).
+
+The identity matrix is a preconditioning matrix.
+
+{{< /details >}}
+
+
+What are Kylov-methods? What are they used for?
+
+{{< details "Solution" "false" >}}
+
+Examples include:
+- CG-method
+- GMRES-method
+
+They are used to so solve iterative LGS.
+
+{{< /details >}}
+
+
+How does a QR decomposition work? How is a householder transformation defined? What is another method to do the decomposition? What is the advantage of Givens compared to householder? What is the computation complexity of QR? What is the advnatage if A is tridiagonal(hessenberg)?
+
+{{< details "Solution" "false" >}}
+
+We decompose
+
+$$
+A = QR
+$$
+
+with \(Q\) and orthogonal matrix and \(R\) upper triangular matrix.
+We determine \(Q\) with the help of householder transformation and
+
+$$
+R = Q_N ... Q_2 Q_1 A
+$$
+
+and
+
+$$
+Q = Q_1 Q_2 ... Q_N
+$$
+
+A householder transformation is defined as follows
+
+$$
+Q = I - 2\frac{ww}{w^Tw}
+$$
+
+We can also use givens-rotations
+
+$$
+\begin{pmatrix}
+c & s \\
+-s & c
+\end{pmatrix}, \quad c^2 + s^2 = 1
+$$
+
+Givens is better in spare matrices. needs fewer operations.
+
+Computational complexit is \(\frac{4}{3}N^3\).
+
+If the matrix is tridiagonal we can calculate the QR-decomposition in N operations.
+
+{{< /details >}}
+
+
+Given a integral with a range of \(|b-a| >> 1\), how can this be approximated with a quadrature formuka? How does it formula look like? How does the error look when we double the number of roots? Which qudrature formula is the error otpimal?
+
+{{< details "Solution" "false" >}}
+
+We use a summed quadrature formula. H
+
+The formula for the summed quardture formula is
+
+$$
+I_N(f) h \sum_{m = 1} \sum_{n = 1} w_n f(\phi_m(\xi_n))
+$$
+
+When we double the number of roots, the error goes down.
+
+The Gauß quadrature is optimal.
+
+{{< /details >}}
+
+
+What happens during the lagrange format in polynomialinterpolation with äquidistant roots? How can we calculate a interpolationpolynomial? What is the name of the algorithm with which we calculate it?
+
+{{< details "Solution" "false" >}}
+
+The condition with äquidistant roots is bad, and with that also the condition of the interpolation polynomial.
+
+Newton-method.
+
+Neville Scheme.
+
+{{< /details >}}
+
+
+Given the non-linear system of equation
+
+$$
+-u^2  +v + 1 = 0, \quad uv = 0
+$$
+
+(i) determine the exact solution
+(ii) do the first step of the newton method on the start value \((u_0, v_0 = (\pm \epsilon, 0)^T\)
+(iii) discuss the choosens tart value.
+
+{{< details "Solution" "false" >}}
+
+(i)
+From \(uv = 0\), either \(u = 0\) or \(v =0\). If \(u=0\) then \(v=-1\) and with \(v=0\) then \(u= \pm 1\).
+
+(ii)
+$$
+F' =
+\begin{pmatrix}
+-2u & 1 \\
+u & v
+\end{pmatrix}
+$$
+
+insert start value
+
+$$
+F'(u^0, v^0) =
+\begin{pmatrix}
+\pm2\epsilon & 1 \\
+0 & \pm \epsilon
+\end{pmatrix}
+$$
+
+and
+
+$$
+F(u^0, v^0) = (1 - \epsilon^2 \ 0)
+$$
+
+we have thus the LGS
+
+$$
+\begin{pmatrix}
+\pm2\epsilon & 1 \\
+0 & \pm \epsilon
+\end{pmatrix} X  = (1 - \epsilon^2 \ 0)
+$$
+
+from this we get \(X = (u, v) = (\pm \frac{1}{2}(1/\epsilon - \epsilon), 0)\).
+
+(iii)
+start value was badly choosen, because we are in two seperate convergens ranges, for \(\epsilon \to 0\) is the jacobi matrix not regular anymore and thus we cannot continue the method.
 
 {{< /details >}}
 
