@@ -1,5 +1,5 @@
 ---
-title: "Audition 1999"
+title: "Audition (1999)"
 date: 2025-10-13 20:00:00
 tags: ["Movie"]
 ---
