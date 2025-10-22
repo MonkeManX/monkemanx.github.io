@@ -27,3 +27,7 @@ draft: True
         - Ego gets chemicaly diminished
 
 Result is always the same -> loss of self, non-duality, union with god, partaking with the holy.
+
+
+Mobies:
+- synnedoch new york: the self dissolves in creaiton, the self creates and creates until it looses itself in it
