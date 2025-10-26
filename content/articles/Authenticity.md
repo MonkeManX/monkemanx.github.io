@@ -24,3 +24,5 @@ Sources of inauthenticity:
 - performative emotion belief
     - ovwrl emotional music in movies tells you how to feel
     - holding same political belief as group
+
+- gifts, should be somethign that is given t osomeone withotu any expsctenctymcy of return, this includs the other beign thankfull for it or wanting to see some reaction from them for the gift, being thakful bcs society sepecty it is performative and not authnethic
