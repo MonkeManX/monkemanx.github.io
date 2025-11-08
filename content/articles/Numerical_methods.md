@@ -1,8 +1,7 @@
 ---
 title: 'Numerical Methods for Computer Scientist'
-date: 2025-09-09 09:00:00
+date: 2025-09-21 09:00:00
 tags: ["Mathematics"]
-draft: True
 ---
 
 The following is a sheet of numerical problems and their solutions. It is a mix of problems taken from old exams and practice sheets from the [KIT](https://www.kit.edu/english/) *"[Numerische Mathematik für die Fachrichtungen Informatik](https://www.math.kit.edu/ianm3/edu/numinfing2022s/de)"* lecture.
@@ -432,10 +431,10 @@ w^2 = a_2 + |a_2| e_1 = a_2 + e_1 =
 \end{pmatrix}
 $$
 
-We can now claulate \(Q_2\)
+We can now calculate \(Q_2\)
 
 $$
-\hat{Q_2} = = I_2 - 3/4
+\hat{Q_2} = I_2 - 3/4
 \begin{pmatrix}
 16/9 & -8 \sqrt{2}/9 \\
 -8 \sqrt{2}/9 & 8/9
@@ -518,7 +517,7 @@ But we need \(x^TAx \ge 0\), thus \(B\) needs to have full rank, because then \(
 {{< details "Solution b)" "false" >}}
 
 **Recap Cholesky Decomposition**
-The prerequisite for Cholesky decomposition to work is that our matrix $A$ is symmetric and positive definite. The decomposition is then $A = L \cdot L^T$, with $L$ a regular lower triangular matrix.
+The prerequisite for Cholesky decomposition to work is that our matrix \(A\) is symmetric and positive definite. The decomposition is then \(A = L \cdot L^T\), with \(L\) a regular lower triangular matrix.
 
 The idea behind it is as follows:
 1. Calculate Choleksy Decomposition \(A = L L^T\)
@@ -538,9 +537,9 @@ $$
 
 The first case in the formula is for the upper corner of the triangular matrix, which contains only 0 entries.
 
-The second case is for the diagonal running from the top-left corner to the bottom-right corner. What we do here is take the entry $a_{kk}$ that lies on the diagonal of matrix $A$, subtract from it the squared sum of all the entries in the same row (from the current matrix $L$), and then take the square root of the result.
+The second case is for the diagonal running from the top-left corner to the bottom-right corner. What we do here is take the entry \(a_{kk}\) that lies on the diagonal of matrix \(A\), subtract from it the squared sum of all the entries in the same row (from the current matrix \(L\)), and then take the square root of the result.
 
-The third case is for all the entries in the lower half of the matrix that are not on the diagonal. Here, we take the current entry $a_{ik}$ from matrix $A$, subtract the sum of the products of the corresponding entries that came before it in the same row and column (from matrix $L$), and divide the result by the diagonal entry $l_{kk}$ from the current matrix $L$.
+The third case is for all the entries in the lower half of the matrix that are not on the diagonal. Here, we take the current entry \(a_{ik}\) from matrix \(A\), subtract the sum of the products of the corresponding entries that came before it in the same row and column (from matrix \(L\), and divide the result by the diagonal entry \(l_{kk}\) from the current matrix \(L\).
 
 An example is in order:
 
@@ -591,7 +590,7 @@ Matrix \(A\) is symmetric, so we only need to calculate half of the matrix entri
 
 For each entry, we need to compute a factored sum of \(M\) terms, so in total we have \((N^2 + N) \cdot M\) operations.
 
-For the Cholesky decomposition itself, we need \(\frac{1}{3}N^3\) operations.
+For the Cholesky decomposition itself, we need \(\frac{1}{6}N^3\) operations.
 
 Thus, in total, to perform the computation we need:
 
@@ -653,7 +652,7 @@ det(A) &= \alpha - \beta^2 >^! 0 \implies \alpha >^! \beta^2
 \end{align}
 $$
 
-From this follows for A to be postivi definti \(\alpha > 0\) and \(\alpha > \beta^2).
+From this follows for A to be positive definite \(\alpha > 0\) and \(\alpha > \beta^2\).
 
 We are now doing with this a cholesky decompotion, that means \(A = LL^T\) with \(L\) a lower triangular matrix.
 
@@ -682,7 +681,7 @@ b = \beta/\sqrt{\alpha}
 b^2 + c^2 = 1 \implies c = \sqrt{1 - b^2} = \sqrt{1 - \beta^2/\alpha}
 $$
 
-Next we want to ivnestigate the stabiltiy, for this we need the inverse:
+Next we want to investigate the stabiltiy, for this we need the inverse:
 
 $$
 A^{-1} = \frac{1}{\alpha-\beta^2}
@@ -698,7 +697,7 @@ L^{-1} = \frac{1}{\sqrt{\alpha - \beta^2}}
 \end{pmatrix}
 $$
 
-With this we can calculate the codntion of both matrices to see if using cholesky decomposition introduces additional errors
+With this we can calculate the condition of both matrices to see if using cholesky decomposition introduces additional errors
 
 $$
 \begin{align}
@@ -771,12 +770,12 @@ $$
 Hence
 
 1. Calculate QR- Decomposition, Complexity: \(O(N^3)\).
-2. Cauclate \(Q^Tb\), Complexity: \(O(N^2)\)
+2. Calculate \(Q^Tb\), Complexity: \(O(N^2)\)
 3. Backward subsituion \(Rx = Q^Tb\). Complexity \(O(N^2)\)
 
 Total Complexity: \(O(N^3)\)
 
-For the stabiltiy/condition: \(K_2(A) = K_2(QR) = K_2(Q)K_2(R)\). Hence the QR -deocmpsotion is table.
+For the stability/condition: \(K_2(A) = K_2(QR) = K_2(Q)K_2(R)\). Hence the QR -decomposition is stable.
 
 {{< /details >}}
 
@@ -807,7 +806,7 @@ Here, \(\alpha\) is measured in the mathematically positive sense from the posit
 
 {{< details "Solution" "false" >}}
 
-Every tranmsiiton mats and its mobile phone togetehr build a line,  where the slope of the line is \(m_i = \tan(\alpha)\). For the slope we also have \(m_i = \frac{y - y_i}{x - x_i}\).
+Every transmission mast and its mobile phone together build a line, where the slope of the line is \(m_i = \tan(\alpha)\). For the slope we also have \(m_i = \frac{y - y_i}{x - x_i}\).
 The \(x_i, y_i\) we have given, but the \(x, y\) not, we thus want to rewrite it in such a way that the unknown variables are on one side. Hence
 
 $$
@@ -817,7 +816,7 @@ m_i x - y = m_i x_i - y_i \iff
 m_i x_i  - y_i =: b = m_i x - y
 $$
 
-With this we can now clauclate \(b\)
+With this we can now calculate \(b\)
 
 $$
 1 \cdot 8 - 0 = 8 \\
@@ -827,7 +826,7 @@ $$
 0 \cdot 13 - 10 = -10 \\
 $$
 
-and our \(A\) matrix weg et from \(m_i x - 1 \cdot y\), thus
+and our \(A\) matrix we get from \(m_i x - 1 \cdot y\), thus
 
 
 $$
@@ -850,7 +849,7 @@ b =
 \end{pmatrix}
 $$
 
-The leats quare problem is now
+The least quare problem is now
 
 $$
 ||Ax - b ||_2 = min!
@@ -1183,7 +1182,7 @@ $$
 &=|(I - V\begin{pmatrix} I & 0 \\ 0 & 0 \end{pmatrix})V^T)b| \\
 &=|(VIV^T - V\begin{pmatrix} I & 0 \\ 0 & 0 \end{pmatrix})V^T)b| \\
 &=|V(I - \begin{pmatrix} I & 0 \\ 0 & 0 \end{pmatrix}))V^Tb|\\
- &=^{V doesnt change length} |V(\begin{pmatrix} 0 & 0 \\ 0 & I \end{pmatrix}))V^Tb| \\
+ &=^{\text{V doesnt change length}} |V(\begin{pmatrix} 0 & 0 \\ 0 & I \end{pmatrix}))V^Tb| \\
 &= |\begin{pmatrix} 0 & 0 \\ 0 & I \end{pmatrix})V^Tb| \\
 &=|V^Tb : {u+ 1 : R}|
 \end{align}
@@ -1230,7 +1229,7 @@ A =
 \end{pmatrix}
 $$
 
-In this Problem the task is to caluclate the Eigenvalues of \(A\).
+In this Problem the task is to calculate the Eigenvalues of \(A\).
 
 a) Transform \(A\) into a Hessian-Matrix.
 
@@ -1511,7 +1510,7 @@ A_{k+1} &= R_kQ_k \mu I_n \\
 \end{align}
 $$
 
-Thsu we have shown for \(n=k+1\) that \(A_n\) is similar to \(A_k\). We continue inductively
+Thus we have shown for \(n=k+1\) that \(A_n\) is similar to \(A_k\). We continue inductively
 
 $$
 Q^TA_kQ_k =  Q_k^T Q_{k-1}^T \cdot \dots \cdot Q_0^T A_0 Q_0 \cdot \dots \cdot Q_{k-1} Q_{k}
@@ -1619,7 +1618,7 @@ b) That the Gauß-Seidel-Method diverges for \(A\)
 
 {{< info "Info" >}}
 
-To do lienar iteration with the **jacobi method**
+To do linear iteration with the **Jacobi method**
 
 1. decompose our matrix \(A\) into
 $$
@@ -1634,7 +1633,7 @@ Importantly our method converges if \(C = ||I_N - BA|| < 1\).
 
 {{< /info >}}
 
-We first cauclate thei nvers of the diaognal matrix
+We first calculate the inverse of the diaognal matrix
 
 $$
 B = D^{-1} =
@@ -1656,7 +1655,7 @@ c_1 = I_3 - BA = I_3 - \frac{1}{2}A =
 \end{pmatrix}
 $$
 
-We determien the eigenvvalues
+We determine the eigenvalues
 
 $$
 det(\lambda I_3 - C_1) det(
@@ -1666,6 +1665,8 @@ det(\lambda I_3 - C_1) det(
 2 & 2 & \lambda
 \end{pmatrix}
 ) =
+$$
+$$
 \lambda^3 - 2 + 2 - \lambda(1/4 + 4 - 4) =
 \lambda(\lambda^2 - 1/4) =
 \lambda(\lambda - 1/2)(\lambda + 1/2)
@@ -1673,7 +1674,7 @@ $$
 
 Thus the eigenvalues are \(\lambda_1 = 0, \lambda_2 = -1/2, \lambda_3 = 1/2\).
 
-Further \(p(c_1) = ||C_1|| = 1_2 < 1\), thus jacobi sentence converges.
+Further \(p(c_1) = ||C_1|| = 1_2 < 1\), thus Jacobi converges.
 
 {{< /details >}}
 
@@ -1725,7 +1726,7 @@ C_2 = I_3 - BA =
 \end{pmatrix}
 $$
 
-We claculate the eigenvalues
+We calculate the eigenvalues
 
 $$
 det(\lambda I_3 - C_2) =
@@ -1738,8 +1739,10 @@ det(\begin{pmatrix}
 det(
 \begin{pmatrix}
 \lambda - 1/4 & -3 \\
--1/2 & \lamda + 2
+-1/2 & \lambda + 2
 \end{pmatrix} =
+$$
+$$
 \lambda((\lambda - 1/2)(\lambda + 2) - 3/2) =
 \lambda(\lambda^2 + 7/4\lambda -2)
 )
@@ -1748,7 +1751,7 @@ $$
 We know that 2 eigenvalues exist with
 
 $$
-(\lambda - \lambda_1)(\lambda - \lambda_2) = lambda^2 + 7/4\lambda -2
+(\lambda - \lambda_1)(\lambda - \lambda_2) = \lambda^2 + 7/4\lambda -2
 $$
 
 And
@@ -1791,7 +1794,7 @@ b) Calculate 3 steps of the **CG-method** for the linear system of equations. Ch
 
 We can see from the matrix that \(2x_2 = 4 \iff x_2 = 2\).
 
-We can subtract teh first equation from the second and get
+We can subtract the first equation from the second and get
 
 $$
 2x_3 = 0 \iff x_3 = 0
@@ -1816,10 +1819,10 @@ $$
 its scalaproduct is
 
 $$
-<x,y>_A = x^TAy
+x^TAy
 $$
 
-The matrix A needs to be **symmetrical** and **positiv definit**. We can then proceed as following
+The matrix A needs to be **symmetrical** and **positive definite**. We can then proceed as following
 
 1. choose \(x_0 \in \mathbb{R}^n\). Calculate
 $$
@@ -1848,27 +1851,29 @@ d^{k+1} = w^k + p_k/p_k-1 d_k
 $$
 5. Go to Step 2
 
-Whereby \(B\) is an invertierable matrix called the **precondition** to solve \(Ax =b\) with \(BAx = Bb\), where B should be choosen so that \(BA\) condisiton is small.
+Whereby \(B\) is an invertierable matrix called the **precondition** to solve \(Ax =b\) with \(BAx = Bb\), where B should be chosen so that \(BA\) condisiton is small.
 
 {{< /info >}}
 
 Because \(B = I_3\) we get \(w^k = r^k\), further
 
-1. $$
+1. First
+$$
 \begin{align*}
 r^0 &= b -Ax^0 = b  \\
 p_0 &= (w^0)r^0 = |r_0|^2_2 = 48 > 0 \\
-d^k = r^0
+d^k &= r^0
 \end{align*}
 $$
 
-2. $$
+2. Then
+$$
 \begin{align*}
 u^1 &= (8 \ 8 \ 16)^T \\
 \alpha_1 &= 3/8 \\
-x^1 = (1 \ 1 \ -2) \\
-p_1 = 6 \\
-d_2 = (4/2 \ 3/2 \ -3/2)^T  \\
+x^1 &= (1 \ 1 \ -2) \\
+p_1 &= 6 \\
+d_2 &= (4/2 \ 3/2 \ -3/2)^T  \\
 \end{align*}
 $$
 
@@ -1968,7 +1973,7 @@ $$
 
 {{< /info >}}
 
-We first calculate the derivatice
+We first calculate the derivative
 
 $$
 DF(x) =
@@ -2051,8 +2056,10 @@ C = I_2 - B \cdot DF(x^*)  = I_2 -
 \sqrt{ln(e + 2)}(e+1) & \sqrt{ln(e +1)/2 \pi} \\
 0 & \sqrt{ln(e+1)}
 \end{pmatrix} =
+$$
+$$
 \begin{pmatrix}
-(\pie - \sqrt{ln(e+2)}(e+1))/\pie & * \\
+(\pi - \sqrt{ln(e+2)}(e+1))/\pi & * \\
 0 & 1 - \sqrt{ln(e+1)}
 \end{pmatrix} \
 $$
@@ -2060,7 +2067,7 @@ $$
 Thus
 
 $$
-p(C) \approx |(\pie - 1.15 - 3.7)/\pie| < 1
+p(C) \approx |(\pi - 1.15 - 3.7)/\pi| < 1
 $$
 
 {{< /details >}}
@@ -2091,7 +2098,7 @@ Hence \(P = Q\), there is only on poylnomial.
 
 {{< /details >}}
 
-## Problem 18: Schema of Neville
+### Problem 18: Schema of Neville
 
 Given the table of values:
 
@@ -2150,7 +2157,7 @@ The main diagonal are the coefficients of the newton polynomial.
 {{< /details >}}
 
 
-## Problem 19: Fast Cubic Spline
+### Problem 19: Fast Cubic Spline
 
 Given the nodes \(\xi_0 = -1, \xi_1 = 0\) and \(\xi_2 = 1\) on the interval \([-1, 1]\). Consider the function
 
@@ -2233,7 +2240,7 @@ In total we have \(f_2(t) = (1-t)^3 +7t + 1\).
 {{< /details >}}
 
 
-## Problem 20: Determining of Weights
+### Problem 20: Determining of Weights
 
 Determine the weights \(\omega_0, \omega_1, \omega_2\) for \(\xi_0 = -\frac{h}{2}, \xi_1 = 0\) and \(\xi_2 = \frac{h}{2}\), such that
 
@@ -2264,7 +2271,7 @@ From (2) follows \(w_0 = w_2\). In (3) we thus get \(\frac{h^2}{2}w_0 = \frac{2}
 {{< /details >}}
 
 
-## Problem 21: Composite (left-sided) rectangle rule
+### Problem 21: Composite (left-sided) rectangle rule
 
 Given is \(f \in C^1[a,b]\), as well as the equidistant nodes for \(n = 0, \dots, N\)
 $$\xi_n = a + nh \quad \text{and} \quad h = (b-a)/N.$$
@@ -2282,7 +2289,7 @@ $$ \left| \int_a^b f(t) \,dt - Q(f) \right| \leq \frac{b-a}{2} h \sup_{t \in [a,
 
 {{< details "Solution" "false" >}}
 
-From \([\xi_{n-1}, \xi_{n}]\) follows fro mthe taylor series development
+From \([\xi_{n-1}, \xi_{n}]\) follows from the taylor series development
 
 $$
 f(t) = f(\xi_{n-1})t + f(t_1)f(t - \xi_{n-1})
@@ -2305,7 +2312,7 @@ $$
 {{< /details >}}
 
 
-## Problem 22: Floating Numbers
+### Problem 22: Floating Numbers
 
 Given a base \(B \geq 2\), a minimal exponent \(e_{min} \in \mathbb{Z}\) and lengths \(L_m, L_e \in \mathbb{N}\).
 
@@ -2385,7 +2392,7 @@ $$
 {{< /details >}}
 
 
-## Problem 23: Interpolation Polynomials
+### Problem 23: Interpolation Polynomials
 
 Given the table of values:
 
@@ -2502,7 +2509,7 @@ If we choose aquidistant roots, so is the lebesgue constant very big and the app
 {{< /details >}}
 
 
-## Problem 24: Quadrature Formulas
+### Problem 24: Quadrature Formulas
 
 Let \((b_k, c_k)_{k=1,\dots,s}\) be a quadrature formula of order \(p\).
 
@@ -2527,7 +2534,7 @@ A a quadrature formula \((b_k, c_k)\) has the order \(p\) if for all polynomials
 
 {{< details "Solution b)" "false" >}}
 
-The lagrange Polynomial \(L_n\) arre determinted through the knots \(c_1, .., c_s\). For the order \(p \geq s\), follows with \(L_j(c_k) = \delta_{jk}\)
+The lagrange Polynomial \(L_n\) are determinted through the knots \(c_1, .., c_s\). For the order \(p \geq s\), follows with \(L_j(c_k) = \delta_{jk}\)
 
 $$
 \int_0^1 L_j(x) dx = \sum^s b_k L_j(ck) = b_j
@@ -2575,7 +2582,7 @@ $$
 
 
 
-## Problem 25: Matrices
+### Problem 25: Matrices
 
 Let \(A, B \in \mathbb{R}^{N \times N}\) and \(\|\cdot\|\) be an arbitrary norm on \(\mathbb{R}^N\).
 
@@ -2632,7 +2639,7 @@ $$
 \frac{||x - \hat{x}||}{||x||} \leq \frac{||A^{-1}||||b - \hat{b}||}{||x||} = \frac{||b||||A^{-1}||||b - \hat{b}||}{||x||||b||} = \frac{||b||||A^{-1}||}{||x||}\frac{||b - \hat{b}||}{||b||} \leq ||A||||A^{-1}|| \frac{||b - \hat{b}||}{||b||}
 $$
 
-For this approximation to be useful the error of \(|| \frac{||b - \hat{b}||/||b||\) needs to be small.
+For this approximation to be useful the error of \(\frac{||b - \hat{b}||}{||b||}\) needs to be small.
 
 If our condition number is small this approximation guarantees, that small errors in \(b\) lead to small innacuracies from \(x\).
 Is the condition number nig, so can even a small error lead to a big error in our solution, but it doesnt have to be, because the right side of the approximation is so loose.
@@ -2644,7 +2651,7 @@ Is the condition number nig, so can even a small error lead to a big error in ou
 
 Because \(e \neq 0\), is \(ee^T\) a Matrix with rang 1. Hence 0 is a eigenvalue with the multiplicity of \(N-1\).
 
-Next, \(Kern(ee^T) = \orth \span{e}\).
+Next, \(Kern(ee^T) = span\{e\}^T\).
 
 In addition we have the eigenvalue \(N > 0\) because \(ee^Te = e^Tee = Ne\). With that we have the spectrum.
 
@@ -2658,7 +2665,7 @@ $$
 
 
 
-## Problem 26: CG-Algorithm
+### Problem 26: CG-Algorithm
 
 Let \(A\) be a symmetrical positive definite matrix and \(x^*\) be the solution of the LGS \(Ax = b\).
 
@@ -2668,14 +2675,14 @@ What is the function \(\phi\), that the CG_Algorithm minimizes? What is the conn
 
 We have \(\phi(x) = \frac{1}{2}x^TAx - x^Tb\), which gets minimized by the CG-Algorithm.
 
-A necessary condition for the minima \(x^*\) is that \(\phi(x^*) = (Ax^* -b)^T = 0^T\). This condition is because of \(\phi''(x) = A\) symmetrical and positiv deifnit also sufficient.
+A necessary condition for the minima \(x^*\) is that \(\phi(x^*) = (Ax^* -b)^T = 0^T\). This condition is because of \(\phi''(x) = A\) symmetrical and positive definite also sufficient.
 
 Hence is \(x^*\) then the minima from \(\phi\), if \(x^*\) solves the LGS \(Ax = b\).
 
 {{< /details >}}
 
 
-## Problem 27: LR- and Cholesky-Decomposition
+### Problem 27: LR- and Cholesky-Decomposition
 
 (a) Solve \(Ly = b\) by forward substitution for
 $$L = \begin{pmatrix} 2 & 0 & 0 \\ -2 & -1 & 0 \\ 3 & 2 & 1 \end{pmatrix}, \quad b = \begin{pmatrix} 4 \\ -3 \\ 6 \end{pmatrix}.$$
@@ -2756,7 +2763,7 @@ $$
 \(A^TAx = A^Tb\)
 
 (ii)
-Is the rang of \(A\) maximal so is \(A^TA\) symmetrical and positive definite and can thus be sovles using the cholesky decomposition.
+Is the rang of \(A\) maximal so is \(A^TA\) symmetrical and positive definite and can thus be solves using the cholesky decomposition.
 
 The cholesky deocmpositon needs \(1/2 MN^2\) operation, but because \(N=M\) and it is symmetrcial, we need \(1/6 N^3\) operations.
 
@@ -2767,7 +2774,7 @@ We need to do 2 matrix-vector products, as such we need to do \(2NM\) operations
 {{< /details >}}
 
 
-## Problem 28: CG-Algorithm
+### Problem 28: CG-Algorithm
 
 Complete the following content (a) to (i).
 
@@ -2795,7 +2802,7 @@ Search direction
 N
 
 (g)
-\(Ad^k\) them atrix vector product
+\(Ad^k\) the matrix vector product
 
 (h)
 Preconditioning
@@ -2806,7 +2813,7 @@ sparse
 {{< /details >}}
 
 
-## Problem 29: Machine accuracy
+### Problem 29: Machine accuracy
 
 Explain the course of the graph in the plot, which was generated by evaluating the function \(\frac{(1+x)-1}{x}\) for \(0 < x \leq 10^{-15}\) with a machine precision of \(\text{eps} \approx 2.2 \cdot 10^{-16}\), by giving the exact reasoning:
 
@@ -2851,7 +2858,7 @@ When we reach \(3eps/2\) we have the same effect as in (a), but instead we get \
 {{< /details >}}
 
 
-## Problem 30: QR-Decomposition
+### Problem 30: QR-Decomposition
 
 Given a QR decomposition of the matrix \(A\).
 $$
@@ -2967,7 +2974,7 @@ $$
 {{< /details >}}
 
 
-## Problem 31: Splines
+### Problem 31: Splines
 
 (a) Let nodes \(a = x_0 < \dots < x_N = b\) and corresponding values \(y_0, \dots, y_N \in \mathbb{R}\) be given. Give the definition of a natural interpolating cubic spline for \((x_0, y_0), \dots, (x_N, y_N)\).
 
@@ -3053,7 +3060,7 @@ The solution of it, is \(\alpha=1, \beta=1, \gamma=-6\).
 
 {{< details "Solution c)" "false" >}}
 
-A Spline is periodic if and only if \(s'(a) = s'(b) \land s''(a) = s''(b)\) is fulfilled.
+A spline is periodic if and only if \(s'(a) = s'(b) \land s''(a) = s''(b)\) is fulfilled.
 
 $$
 S(0) = 1 \neq 11 = S(2)
@@ -3062,7 +3069,7 @@ $$
 {{< /details >}}
 
 
-## Problem 32:  Quadraturformula
+### Problem 32:  Quadraturformula
 
 (a) Let a quadrature formula with nodes \(c_k\) and weights \(b_k\), for \(k=1, \dots, s\), be given.
 (i) Give the definition of the order \(p\) of a quadrature formula.
@@ -3196,7 +3203,7 @@ $$
 {{< /details >}}
 
 
-## Problem 33: LR and QR-decomposition
+### Problem 33: LR and QR-decomposition
 
 Given the linear system of equations \(Mx = \mathbf{b}\) with a regular matrix
 $$
@@ -3290,7 +3297,7 @@ Then solve (i) using the first decomposition and (ii) using the second decompsot
 {{< /details >}}
 
 
-## Problem 34: Newton Method and Floating Numbers
+### Problem 34: Newton Method and Floating Numbers
 
 The goal is to approximate \(\sqrt{a}\) for \(a > 1\).
 
@@ -3360,7 +3367,7 @@ $$
 
 
 
-## Problem 35: Matrices and Norms
+### Problem 35: Matrices and Norms
 
 (a) Prove \(\|A\|_{\infty} = \max_{n=1,\dots,N} \sum_{m=1}^N |a_{nm}|\) for \(A \in \mathbb{R}^{N \times N}\).
 
@@ -3393,7 +3400,7 @@ where \(||x_m||_\infty = 1\).
 We have
 
 $$
-||Q||_2 = \max_{||x||_2 = 1\} ||Qx||_2 = 1
+||Q||_2 = \max_{||x||_2 = 1} ||Qx||_2 = 1
 $$
 
 Hence
@@ -3415,7 +3422,7 @@ $$
 
 
 
-## Problem 36: Quadrature formulas
+### Problem 36: Quadrature formulas
 
 Let a quadrature formula \((b_k, c_k)_{k=1,\ldots,s}\) be given.
 
@@ -3451,7 +3458,7 @@ Trapezrule \((a-b)(f(a)-f(b))/2\).
 
 
 
-## Problem 37: Short Questions
+### Problem 37: Short Questions
 
 (a) Given are the points \((t_n, y_n)\), \(n = 1, 2, 3, 4\), with
 $$\begin{array}{c|cccc} t_n & 0 & 1 & 2 & 3 \\ \hline y_n & -2 & -1 & 0 & 2 \end{array}.$$
@@ -3469,7 +3476,7 @@ Briefly explain why the \(*\)-structure is achieved this way.
 
 {{< details "Solution a)" "false" >}}
 
-Linear least quare problem:
+Linear least square problem:
 
 $$
 min ||A(\alpha \ \ \beta \ \ \gamma)^T - b||_2
@@ -3493,7 +3500,7 @@ A =
 \end{pmatrix}
 $$
 
-Normalequations:
+Normal equations:
 
 $$
 A^TAx = A^Tb
@@ -3531,7 +3538,7 @@ And because \(Qe^1 = e^1\) we have \(QAQ\) as in the task.
 
 {{< details "Solution c)" "false" >}}
 
-\(l_n\) is a cubic interpolation spline with the rotos \((x_n, y_n)\) with \(l_n'(a) = l_n(b) = 0\).
+\(l_n\) is a cubic interpolation spline with the roots \((x_n, y_n)\) with \(l_n'(a) = l_n(b) = 0\).
 
 And: \(s_n(x) = \sum y_n l_n(x_)\)
 
@@ -3546,7 +3553,7 @@ The identity matrix because its eigenvaleus are 1 and the square root of 1 is 1.
 {{< /details >}}
 
 
-## Problem 38: Cholesky
+### Problem 38: Cholesky
 
 Let \(A \in \mathbb{R}^{N \times N}\) be a symmetric positive definite matrix.
 
@@ -3629,7 +3636,7 @@ The matrix is exactly then positive definite if a cholesky decomposition exists.
 {{< /details >}}
 
 
-## Problem 39: Interpolation polynomial
+### Problem 39: Interpolation polynomial
 
 (a) Let the support points \((x_0, f_0), \ldots, (x_N, f_N)\) be given. Formulate the definition of the interpolation polynomial and prove that such a polynomial exists.
 
@@ -3663,7 +3670,7 @@ $$
 {{< /details >}}
 
 
-## Problem 40: Householder Transformations
+### Problem 40: Householder Transformations
 
 Let \(Q \in \mathbb{R}^{N \times N}\) be a Householder transformation.
 
@@ -3685,7 +3692,10 @@ Express \(B\) in terms of these transformations and \(A\).
 {{< details "Solution a)" "false" >}}
 
 $$
-QQ^T = (I - 2ww^T)(I-2ww^T)^T = (I - 2ww^T)(I - 2ww^T) = I^2 - 4ww^T + 4ww^Tww^T = I - 4ww^T + 4ww^T = I
+QQ^T = (I - 2ww^T)(I-2ww^T)^T = (I - 2ww^T)(I - 2ww^T) =
+$$
+$$
+I^2 - 4ww^T + 4ww^Tww^T = I - 4ww^T + 4ww^T = I
 $$
 
 {{< /details >}}
@@ -3735,7 +3745,7 @@ $$
 {{< /details >}}
 
 
-## Problem 41: QR
+### Problem 41: QR
 
 To approximately calculate the eigenvalues of a matrix \(A \in \mathbb{R}^{N \times N}\), we got to know the \(QR\)-algorithm. In this, the matrix \(A\) is first brought into Hessenberg form \(H = Q^T A Q\) by \(\boxed{\text{(a)}}\) many Householder transformations. For this, \(\boxed{\text{(b)}}\) operations are generally necessary. We understand an operation as \(\boxed{\text{(c)}}\). If the original matrix \(A\) is symmetric, then \(H\) is a \(\boxed{\text{(d)}}\) matrix.
 
@@ -3776,7 +3786,7 @@ doubling
 {{< /details >}}
 
 
-## Problem 42: Quadratur formula
+### Problem 42: Quadratur formula
 
 We consider quadrature formulas with weights and nodes \((b_k, c_k)_{k=1,\ldots,s}\), where the nodes are pairwise distinct.
 
@@ -3791,7 +3801,7 @@ then it has order \(p \ge s\).
 {{< details "Solution a)" "false" >}}
 
 $$
-L_n = \Prod_{j \neq k} \frac{x - c_j}{c_j - c_k}
+L_n = \prod_{j \neq k} \frac{x - c_j}{c_j - c_k}
 $$
 
 {{< /details >}}
@@ -3825,7 +3835,7 @@ $$
 
 
 
-## Problem 43: Short questions
+### Problem 43: Short questions
 
 (a) We consider the approximations \(\pi_n = \frac{n}{2} g_{2n}\) of \(\pi\) for \(n = 6, 12, 24, \ldots\), where we calculate \(g_{2n} = \sqrt{2 - \sqrt{4 - g_n^2}}\) with the starting value \(g_6 = 1\). The calculation is implemented in double-precision format of the IEEE standard.
 
@@ -3913,3 +3923,1938 @@ $$
 $$
 
 {{< /details >}}
+
+
+### Problem 44: Choleksy and LR
+
+Given:
+$$A_{\alpha,\beta} = \begin{pmatrix} 2 & \alpha & 1 \\ \beta & 4 & 0 \\ 1 & 0 & 2 \end{pmatrix}, \quad \alpha, \beta \in \mathbb{R}, \quad \mathbf{b} = \begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix}$$
+
+a) Determine all \(\alpha, \beta \in \mathbb{R}\) for which a Cholesky decomposition of \(A_{\alpha,\beta}\) exists. Use the principal minors criterion.
+
+b) For \(\alpha = 1, \beta = 4\), calculate the \(LR\)-decomposition of \(A_{1,4}\). Use the decomposition to find the solution of the linear system \(A_{1,4}\mathbf{x} = \mathbf{b}\).
+
+
+{{< details "Solution a)" "false" >}}
+
+For a cholesky matrix to exist it need to be symmetrical and positive definite. It is symmetrical when \(\alpha = \beta\).
+
+For positive definite we calculate the determinant of the main minors
+
+$$
+det_1(A) = 2, \quad det_2(A) = 8 - \alpha \beta, \quad det_3(A) = 2 det_2(A) + 1 \cdot (-4) = 12 - 2 \alpha \beta
+$$
+
+from (2) we get \(\alpha \beta < 8\), from (3) we get \(\alpha\beta < 6\). From this follows \(\alpha\beta = \alpha^2 < 6 \iff \alpha < \sqrt{6}\).
+
+Hence \(\alpha,\beta \in (-\sqrt{6}, \sqrt{6})\)
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We have
+
+$$
+A_{\alpha,\beta} =
+\begin{pmatrix} 2 & 1 & 1 \\ 4 & 4 & 0 \\ 1 & 0 & 2
+\end{pmatrix}
+$$
+
+Hence
+
+ {{< rawhtml >}}
+<figure>
+    <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="/attachments/numerical_methods/LR_decomposition_and_solve.png">
+</figure>
+{{< /rawhtml >}}
+
+{{< /details >}}
+
+
+### Problem 45: Short tasks
+
+(a) Let \(A \in \mathbb{R}^{N \times N}\) be a regular matrix. If the \(LR\)-decomposition of \(A\) exists, it is unique (\(L\) lower triangular matrix with 1s on the diagonal, \(R\) upper triangular matrix).
+
+(b) Let \(A \in \mathbb{R}^{N \times N}\) be a regular matrix. The \(QR\)-decomposition of \(A\) is unique (\(Q\) orthogonal matrix, \(R\) upper triangular matrix).
+
+(c) The CG method minimizes the residual in the Euclidean norm, while the GMRES method minimizes the energy norm.
+
+(d) The condition of a matrix \(A\) describes the amplification of the relative error of the input data.
+
+{{< details "Solution" "false" >}}
+
+(a)
+The LR-decomposition yields \(PA=LR\) with a permutation matrix \(P\). This can, for example, be different for \(LR\)-decomposition with and without column pivoting. However, one can also assume that a permutation matrix was excluded in this problem. In that case, the answer is "correct".
+
+(b)
+False, you flip the sign of a column in Q and the corresponding row in R, the product QR remains unchanged.
+
+(c)
+False, its exactly the opposite.
+
+(d)
+True
+
+{{< /details >}}
+
+
+### Problem 46: Least Square Problem
+
+Given are the 5 pairs of values:
+$$
+\begin{array}{c|ccccc}
+i & 0 & 1 & 2 & 3 & 4 \\
+\hline
+t_i & -1 & \tau & 1 & 2 & 4 \\
+y_i & 0 & 0 & 4 & 2 & 5
+\end{array}
+$$
+Let \(g(t) = at + b\) be a polynomial of degree 1 that minimizes the sum of squared errors \(\sum_{i=0}^4 (g(t_i) - y_i)^2\) at the 5 support points.
+
+a) Give the normal equations for this least squares problem, as well as the matrices used explicitly.
+
+b) Now calculate all \(\tau \in (-1,1)\) such that the minimizing line \(g(x)\) has a slope \(a = 1\).
+
+c) For the smallest of these \(\tau\), state the sum of squared errors.
+
+
+{{< details "Solution a)" "false" >}}
+
+The Normal equation is
+
+$$
+A^TAx = A^Tb
+$$
+
+where
+
+$$
+A =
+\begin{pmatrix}
+-1 & 1 \\
+\pi & 1 \\
+1 & 1 \\
+2 & 1 \\
+4 & 1
+\end{pmatrix}
+$$
+
+and
+
+$$
+A(a \ b)^T = b
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+We solve \(A^TAx = A^Tb\), hence
+
+$$
+\begin{pmatrix}
+22 + \pi & 6 + \pi \\
+6 + \pi & 5
+\end{pmatrix}
+\begin{pmatrix}
+1 \\
+b
+\end{pmatrix} =^!
+\begin{pmatrix}
+28 \\
+11
+\end{pmatrix}
+$$
+
+which is \(\pi \in \{0, 1/4\}\).
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+$$
+\sum^4 (g(t_i) - y_i)^2 = \sum^4 (t_i + 1 - y_i)^2 = 6
+$$
+
+{{< /details >}}
+
+
+### Problem 47: Polynomial interpolation
+
+Given the function \(f(t) = t - \cos(\pi t)\) and the support points \(t_0 = -1\), \(t_1 = 0\), \(t_2 = 1\), \(t_3 = 2\). Determine the third-degree interpolation polynomial \(P_3\) for \(f\) with respect to the support points.
+
+a) in Newton form
+
+In particular, specify the corresponding basis.
+
+{{< details "Solution a)" "false" >}}
+
+Given the values:
+$$f(t_0) = -1 - \cos(-\pi) = 0$$$$f(t_1) = 0 - \cos(0) = -1$$$$f(t_2) = 1 - \cos(\pi) = 2$$
+$$f(t_3) = 2 - \cos(2\pi) = 1$$
+
+In Newton form, the polynomial is given with respect to the **Newton basis**
+
+$$\{1, x-t_0, (x-t_0)(x-t_1), (x-t_0)(x-t_1)(x-t_2)\}$$
+
+The divided differences are calculated as follows:
+
+$$f[t_0] = 0$$$$f[t_0, t_1] = \frac{f[t_1] - f[t_0]}{t_1 - t_0} = \frac{-1 - 0}{0 - (-1)} = -1$$$$f[t_1, t_2] = \frac{f[t_2] - f[t_1]}{t_2 - t_1} = \frac{2 - (-1)}{1 - 0} = 3$$$$f[t_2, t_3] = \frac{f[t_3] - f[t_2]}{t_3 - t_2} = \frac{1 - 2}{2 - 1} = -1$$$$f[t_0, t_1, t_2] = \frac{f[t_1, t_2] - f[t_0, t_1]}{t_2 - t_0} = \frac{3 - (-1)}{1 - (-1)} = 2$$$$f[t_1, t_2, t_3] = \frac{f[t_2, t_3] - f[t_1, t_2]}{t_3 - t_1} = \frac{-1 - 3}{2 - 0} = -2$$$$f[t_0, t_1, t_2, t_3] = \frac{f[t_1, t_2, t_3] - f[t_0, t_1, t_2]}{t_3 - t_0} = \frac{-2 - 2}{2 - (-1)} = -\frac{4}{3}$$
+
+The interpolation polynomial in Newton form is therefore:
+
+$$ - (x+1) + 2(x+1)x - \frac{4}{3}(x+1)x(x-1)$$
+
+{{< /details >}}
+
+
+### Problem 48: Splines
+
+Given the function \(f(t) = \sin(\pi t)\) and the support points \(t_0 = -2, t_1 = -1, t_2 = 0, t_3 = 1, t_4 = 2\). Provide a cubic spline that interpolates this function at the support points. Show that your solution also satisfies the properties of an interpolating cubic spline.
+
+{{< details "Solution" "false" >}}
+
+The splines needs to fulfill
+
+$$
+p(x_n) = y_n, \quad p_{|x_n; x_{n+1}}
+$$
+
+We first calculate the function values
+
+$$
+f(-2) = f(-1) = f(0) = f(1) = f(2) = 0
+$$
+
+This means the \(f\) is interpolated by \(p(x)=0\), because \(f(x_n)=y_n\) and it can be derived two times.
+
+It fulfills the property of being periodic as \(f'(a) = f'(b) = 0\) and \(f''(a) = f''(b) = 0\).
+
+{{< /details >}}
+
+
+### Problem 49: QR-Decomposition
+
+Calculate the \(QR\)-decomposition of
+
+$$A = \begin{pmatrix} 1 & 2 \\ 1 & 2 \\ \sqrt{2} & \sqrt{2} \end{pmatrix}.$$
+
+In doing so, give all used Householder transformations \(Q\).
+
+
+{{< details "Solution" "false" >}}
+
+We start by defining our initial vector
+
+$$
+a^1 =
+\begin{pmatrix}
+1 \\
+1 \\
+\sqrt{2}
+\end{pmatrix}
+$$
+
+Next we calculate \(w\)
+
+$$
+w^1 = a^1 + |a^1|_2 e^1 = a^1 + 2 e^1 =
+\begin{pmatrix}
+3 \\
+1 \\
+\sqrt{2}
+\end{pmatrix}
+$$
+
+To get our householder transformation
+
+$$
+Q_1 = I - 2\frac{ww^T}{|ww^T|} = I - \frac{1}{6} ww^T = I -
+\begin{pmatrix}
+9 & 3 & 3\sqrt{2} \\
+3 & 1 & \sqrt{2} \\
+3\sqrt{2} & \sqrt{2} & 2
+\end{pmatrix} =
+\begin{pmatrix}
+-1/2 & -1/2 & -\sqrt{2}/2 \\
+-1/2 & 5/6 & -\sqrt{2}/6 \\
+-\sqrt{2}/2 & -\sqrt{2}/6 & 2/3
+\end{pmatrix}
+$$
+
+We apply the transformation
+
+$$
+Q_1 A =
+\begin{pmatrix}
+-2 & -3\\
+0 & 1/3\\
+0 & \frac{-2\sqrt{2}}{3}
+\end{pmatrix}
+$$
+
+We can now calculate the second householder transformation
+
+$$
+a^2 =
+\begin{pmatrix}
+1/3 \\
+\frac{-2\sqrt{2}}{3}
+\end{pmatrix}
+$$
+
+Next
+
+$$
+w^2 = a^2 + |a^2|_2 e^1 = a^2 + 1 e^1 =
+\begin{pmatrix}
+4/3 \\
+\frac{-2\sqrt{2}}{3}
+\end{pmatrix}
+$$
+
+We continue
+
+$$
+Q_1 = I - 2\frac{ww^T}{|ww^T|} = I - \frac{3}{4} ww^T =
+\begin{pmatrix}
+-1/3 & 2\sqrt{2}/3 \\
+2\sqrt{2}/3 & 1/3
+\end{pmatrix}
+$$
+
+We apply the second transformations
+
+$$
+Q_2 \cdot Q_1 \cdot A =
+\begin{pmatrix}
+-2 & -3 \\
+0 & -1 \\
+0 & 0
+\end{pmatrix} = R
+$$
+
+And
+
+$$
+Q = Q_1 \cdot Q_2
+$$
+
+{{< /details >}}
+
+
+### Problem 50: Short Answers
+
+a) We consider the norm \(\lVert \cdot \rVert_p\) on \(\mathbb{R}^{N \times N}\) for \(p \in [1, \infty]\). Give the definition for the condition number \(\kappa_p(A)\) and show that \(\kappa_p(A) \ge 1\).
+
+b) Given
+
+$$A = \begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix}$$
+
+State the conditions for \(\alpha, \beta, \gamma, \delta \in \mathbb{R}\) such that \(A\) possesses an **LR-decomposition (without pivoting)**. Determine the LR-decomposition in the case of its existence.
+
+c) Given a continuously differentiable function \(F: \mathbb{R}^N \to \mathbb{R}^N\). We consider the nonlinear system of equations \(F(x) = 0\) in \(\mathbb{R}^N\). Formulate one step of the **Newton iteration** and briefly discuss the efficient calculation of the **Newton correction**.
+
+d) Given the expression:
+
+$$\sqrt{x^2 + 1} - x \quad \text{for } x \gg 1.$$
+
+Explain and fix the problem when evaluating the expression.
+
+e) Name one **advantage** and one **disadvantage** of the **LR-decomposition** compared to the **Cholesky decomposition**.
+
+f) Iterative computation of eigenvalues:
+
+(i) Explain how the output of the **inverse iteration (with shift)** and the **QR-iteration (with shift)** differ after successful execution.
+
+(ii) State how in the inverse iteration one obtains the **same sequence of shifts \(\mu_k\)** as in the QR-iteration.
+
+
+{{< details "Solution a)" "false" >}}
+
+For regular matrices we have
+
+$$
+K_p(A) = ||A||_p ||A^{-1}||_p
+$$
+
+Next we show that \(K_p(A) \geq 1\)
+
+$$
+K_p(A) = ||A||_p ||A^{-1}||_p \geq ||AA^{-1}||_p = ||I_n||_p = 1
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+A LR-decomposition has the following structure
+
+$$
+L =
+\begin{pmatrix}
+1 & 0 \\
+l_{11} & 1
+\end{pmatrix}, \quad
+R =
+\begin{pmatrix}
+r_{11} & r_{12} \\
+0 & r_{22}
+\end{pmatrix}
+$$
+
+In our case \(r_{11} = \alpha, \ r_{12} = \beta, \ r_{22} = \delta - l_{21}\beta\) and from this follows the last element \(l_{21} = \frac{\gamma}{\alpha}\).
+
+Hence
+
+$$
+L =
+\begin{pmatrix}
+1 & 0 \\
+\frac{\gamma}{\alpha} & 1
+\end{pmatrix}, \quad
+R =
+\begin{pmatrix}
+\alpha & \beta \\
+0 & \delta - l_{21}\beta
+\end{pmatrix}
+$$
+
+And such a LR-decomposition exist if and only if main minors are ivnertible/regular, this is then the case when the determinant is non zero. Hence
+
+$$
+det_1(A) = \alpha , \quad det_2(A) = \alpha \delta - \beta \gamma
+$$
+
+needs to be non-zero.
+
+**Alternative LR-Decomposition**
+
+$$
+\text{LU:} \quad
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\;\xrightarrow{\;-\frac{c}{a}\;}
+\;
+\begin{pmatrix}
+a & b \\
+0 & d - \frac{bc}{a}
+\end{pmatrix}
+$$
+
+$$
+\Rightarrow
+L =
+\begin{pmatrix}
+1 & 0 \\
+\frac{c}{a} & 1
+\end{pmatrix}
+\quad \checkmark
+\qquad
+U =
+\begin{pmatrix}
+a & b \\
+0 & d - \frac{bc}{a}
+\end{pmatrix}
+\quad \checkmark
+$$
+
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+We have
+
+$$
+x^{k+1} = x^{k} = d^{k}
+$$
+
+whereby \(d^k\) is the solution of
+
+$$
+DF(x^k) d^k = -F(x^k)
+$$
+
+To calculate this efficiently, instead of caculatign the inverse of the matrix we use an LGS.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+The Problem: For very big x are the terms nearly identical big, as such it comes to destruction.
+
+To solve this we need to avoid subtracing two nmumbers that are nearly identical big
+
+$$
+\sqrt{x^2+1} - x = \left(\sqrt{x^2+1} - x\right) \frac{\sqrt{x^2+1} + x}{\sqrt{x^2+1} + x} = \frac{(x^2+1) - x^2}{\sqrt{x^2+1} + x} = \frac{1}{\sqrt{x^2+1} + x}
+$$
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+Advantages:
+- Less requirement, choelsky needs spd.
+
+Disadvantages:
+- LR Decomposition takes more operation i.e. more expensiver.
+
+{{< /details >}}
+
+{{< details "Solution f)" "false" >}}
+
+(i)
+in the inverse iteration we get one eigenvalue and its eigenvector. In QR-iteration we get the entire spectrum i.e. all eigenvalues in from of a matrix.
+
+(ii)
+We start with \(e^N\), that is the N-th unit vector.
+
+{{< /details >}}
+
+
+### Problem 51: Linear Curve fitting
+
+Given the Matrix
+
+$$
+A = \begin{pmatrix}
+1 & -5 \\
+2 & 0 \\
+2 & 1
+\end{pmatrix}
+$$
+
+and a vector \(\mathbf{b} \in \mathbb{R}^3\).
+
+a) Calculate the **QR-decomposition** of \(A\).
+*Hint: For \(Q\), it is sufficient to provide a formula.*
+
+b) Define the **linear least squares problem** for \(A\mathbf{x} = \mathbf{b}\) and check whether it has a **unique solution**.
+
+c) Explain how you could solve the least squares problem from part b) using the result from part a).
+
+
+{{< details "Solution a)" "false" >}}
+
+Step 1:
+
+$$
+a^1 =
+\begin{pmatrix}
+1 \\
+2 \\
+2
+\end{pmatrix}, \quad
+w^1 =
+\begin{pmatrix}
+1 \\
+2 \\
+2
+\end{pmatrix} + |a^1|_2 \cdot e^1 =
+\begin{pmatrix}
+4 \\
+2 \\
+2
+\end{pmatrix}
+$$
+
+Further \(|w_1|^2_2 = 24\), hence we become the householder matrix
+
+$$
+Q = I - 2 \frac{ww^T}{w^Tw} = I- \frac{1}{12}
+\begin{pmatrix}
+16 & 8 & 8 \\
+8 & 4 & 4 \\
+8 & 4 & 4
+\end{pmatrix} =
+\frac{1}{3}
+\begin{pmatrix}
+-1 & -2 & -2 \\
+-2 & 2 & -1 \\
+-2 & -1 & 2
+\end{pmatrix}
+$$
+
+We apply the householder matrix
+
+$$
+Q_1 \cdot A =
+\begin{pmatrix}
+-3 & 1 \\
+0 & 3 \\
+0 & 4
+\end{pmatrix}
+$$
+
+Step 2:
+
+$$
+a^2 =
+\begin{pmatrix}
+3 \\
+4 \\
+\end{pmatrix}, \quad
+w^2 =
+\begin{pmatrix}
+3 \\
+4 \\
+\end{pmatrix} + |a^2|_2 \cdot e^1 =
+\begin{pmatrix}
+9
+4
+\end{pmatrix}
+$$
+
+Further \(|w^2|^2_2 = 80\). We get the second housholder matrix
+
+$$
+\hat{Q}_2 = I - 2 \frac{ww^T}{w^Tw} = I- \frac{1}{40}
+\begin{pmatrix}
+64 & 32  \\
+32 & 16 \\
+\end{pmatrix} =
+\frac{1}{5}
+\begin{pmatrix}
+-3 & -4 & \\
+-4 & 3 & \\
+\end{pmatrix}
+$$
+
+And with
+
+$$
+Q_2 =
+\begin{pmatrix}
+1 & \\
+& \hat{Q}_2
+\end{pmatrix}
+$$
+
+We get
+
+$$
+R = Q_2 \cdot Q_1 \cdot A =
+\begin{pmatrix}
+-3 & 1 \\
+0 & - 5 \\
+0 & 0
+\end{pmatrix}
+$$
+
+And
+
+$$
+Q = Q_1 \cdot Q_2
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+The linear least square/curve fitting problem is defined as
+
+$$
+\min_x \ |Ax - b|_2
+$$
+
+This problem is then exact solvable when A has full rank. In our case, since the columns are linear independent this is the case and the problem has one unique solution.
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+From the lecture we know that the normal equation solves a linear least square problem
+
+$$
+A^TAb = A^Tb
+$$
+
+We can now use the QR-decomposition, by inserting them in our equation
+
+$$
+(QR)^T(QR)b = R^TQ^TQRb = R^TRb = A^Tb
+$$
+
+which can be solved using forward and backward substitution.
+
+{{< /details >}}
+
+
+### Problem 52: Polynomial Interpolation
+
+
+Given the table of values:
+
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+n & 0 & 1 & 2 & 3 \\
+\hline
+\xi_n & -3 & -1 & 1 & 2 \\
+\hline
+f_n & 3 & -1 & -5 & 12 \\
+\hline
+\end{array}
+$$
+
+a) Determine the **interpolation polynomial** \(P \in \mathbb{P}_3\) such that \(P(\xi_n) = f_n\) for \(n=0, 1, 2, 3\) in the **Newton form** (or **Newton basis**).
+
+b) **Extend** the interpolation polynomial by including the point \((\xi_4, f_4) = (0, 0)\).
+
+c) Briefly **justify** whether the calculated interpolation polynomials in parts a) and b) are **unique**.
+
+
+{{< details "Solution a)" "false" >}}
+
+The Neville Scheme is:
+
+$$
+\begin{array}{c|c|ccc}
+\xi_n & f_n & P_{0,1} & P_{0,1,2} & P_{0,1,2,3} \\
+\hline
+-3 & 3 & & & \\
+-1 & -1 & \frac{-1 - 3}{-1 - (-3)} = -2 & & \\
+1 & -5 & \frac{-5 - (-1)}{1 - (-1)} = -2 & \frac{-2 - (-2)}{1 - (-3)} = 0 & \\
+2 & 12 & \frac{12 - (-5)}{2 - (1)} = 17 & \frac{17 - (-2)}{2 - (-1)} = \frac{19}{3} & \frac{\frac{19}{3} - 0}{2 - (-3)} = \frac{19}{15} \\
+\end{array}
+$$
+
+Thus, the interpolation polynomial in **Newton form** is:
+
+$$P_1(t) = 3 - 2(t+3) + 0(t+3)(t+1) + \frac{19}{15}(t+3)(t+1)(t-1)$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+
+$$
+\begin{array}{c|c|cccc}
+\xi_n & f_n & \text{1st Diff.} & \text{2nd Diff.} & \text{3rd Diff.} & \text{4th Diff.} \\
+\hline
+-3 & 3 & & & & \\
+-1 & -1 & \frac{-1 - 3}{-1 - (-3)} = -2 & & & \\
+1 & -5 & \frac{-5 - (-1)}{1 - (-1)} = -2 & \frac{-2 - (-2)}{1 - (-3)} = 0 & & \\
+2 & 12 & \frac{12 - (-5)}{2 - (1)} = 17 & \frac{17 - (-2)}{2 - (-1)} = \frac{19}{3} & \frac{\frac{19}{3} - 0}{2 - (-3)} = \frac{19}{15} & \\
+\hline
+\mathbf{0} & \mathbf{0} & \mathbf{\frac{0 - 12}{0 - 2} = 6} & \mathbf{\frac{6 - 17}{0 - 1} = 11} & \mathbf{\frac{11 - \frac{19}{3}}{0 - (-1)} = \frac{14}{3}} & \mathbf{\frac{\frac{14}{3} - \frac{19}{15}}{0 - (-3)} = \frac{51}{45} \left(= \frac{17}{15}\right)} \\
+\end{array}
+$$
+
+Hence
+
+$$
+P_2(t) = P_1(t) + \frac{17}{15} (t + 3)(t + 1)(t -1)(t - 2)
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+Because the polynomial has n-th degree, it is uniquely determined by n-points, hence the solution is unique.
+
+{{< /details >}}
+
+
+### Problem 53: Quadratur
+
+
+We consider the interval \(I = [a, b]\) for \(a, b \in \mathbb{R}\) and \(a < b\).
+
+a) Given are the **nodes** \(\xi_0 = a, \xi_1 = b\) and the **weights** \(\omega_0 = \omega_1 = \frac{b-a}{2}\).
+
+(i) Show that the given **quadrature formula** is **exact** for all polynomials \(P \in \mathbb{P}_1\).
+
+(ii) Show that the given quadrature formula is **no longer exact** for polynomials \(P \in \mathbb{P}_2\).
+*Hint: A counterexample is sufficient.*
+
+b) Given are \(f \in C^2[a, b]\) as well as the **equidistant nodes**
+$$\xi_n = a + n h \quad \text{for } n = 0, \ldots, N, \quad h = \frac{b-a}{N}.$$
+
+The **composite (right-sided) rectangle rule** is defined by
+
+$$Q(f) = \sum_{n=1}^{N} h f(\xi_n).$$
+
+(i) Show the **error estimate**
+$$\left| \int_a^b f(t) \, dt - Q(f) \right| \leq \frac{b-a}{2} h \sup_{t \in [a, b]} |f'(t)|.$$
+
+(ii) Briefly **explain** how you can improve the **order of the error** of \(Q(\cdot)\) with the help of an additional function evaluation. Give the improved, composite quadrature formula explicitly and **name it**.
+
+
+{{< details "Solution a)" "false" >}}
+
+(i)
+Recall:
+
+$$
+Q_T(f) \sum_\xi w_\xi f(\xi)
+$$
+
+For the quadrature to be exact, the following needs to be true
+
+$$
+\forall P \in \mathbb{P}_1 : \int_a^b P(x) dx = Q_T(P)
+$$
+
+We can show that, by showing it for the monom base \(1, x  \in \mathbb{P}_1\)
+
+$$
+\int^b_a 1 dx = [x]^b_a = b - a = \frac{b - a}{2} (1 + 1) = Q_T(1)
+$$
+
+$$
+\int^b_a x dx = [\frac{1}{2}x^2]^b_a = \frac{b^2 - a^2}{2} = \frac{b - a}{2}(b - a)
+$$
+
+As such is \(Q_T\) exact for \(\mathbb{P}_1\).
+
+(ii)
+
+We choose \(a=0, b=1\) then
+
+$$
+\int^1_0 x^2 dx = [\frac{1}{3}x^3]^1_0 = \frac{1}{3} \neq \frac{1}{2} = \frac{1- 0}{2}(1^2 - 0^2) = Q_T(x^2)
+$$
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+(i)
+We do a taylor development for \(f\) with \(t_n \in [\xi_{n-1}, \xi_n]\)
+
+$$
+f(t) = f(\xi_n) +  f'(t_n)(t - \xi_n)
+$$
+
+With that we can begin
+
+$$
+\begin{align}
+\int^b_a f(t) dt - Q(f) &= \int^b_a f(t) dt - \sum_{n = 1}^{N} h f(\xi_n) \\
+&= \sum_{n = 1}^{N}(\int_{\xi_{n-1}}^{\xi_n} f(t) dt) - \sum_{n = 1}^{N} h f(\xi_n) \\
+&= \sum_{n = 1}^{N} (\int_{\xi_{n-1}}^{\xi_n} f(t)dt - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} (\int_{\xi_{n-1}}^{\xi_n} f(\xi_n) +  f'(t_n)(t - \xi_n)dt - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} (\int_{\xi_{n-1}}^{\xi_n} f(\xi_n) +  \int_{\xi_{n-1}}^{\xi_n} f'(t_n)(t - \xi_n)dt - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} ( f(t)[C]^{\xi_{n-1}}_{\xi_n} +  f'(t_n) [t - \xi_n]^{\xi_{n-1}}_{\xi_n} - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} ( hf(t) - f'(t_n) \frac{1}{2}h^2 - hf(\xi_n)) \\
+&= \sum_{n = 1}^{N} - f'(t_n) \frac{1}{2}h^2  \\
+&= -\frac{h}{2} \sum_{n = 1}^{N} \frac{b - a}{N}f'(t_n) \\
+&\leq -\frac{h}{2} \sum_{n = 1}^{N} \frac{b - a}{N} \sup_{t \in [a, b]}f'(t) \\
+&= \frac{h}{2} \sup_{t \in [a, b]}f'(t)  \sum_{n = 1}^{N} \frac{b - a}{N} \\
+&= \frac{b-a}{2}h \sup_{t \in [a, b]}f'(t)
+\end{align}
+$$
+
+Explanations:
+- From Line 1 to 2: Split the integral over \([a,b]\) into the sum of the integrals on the subintervals \([\xi_{n−1}, \xi_n]\).
+- From Line 2 to 3: Then group each subinterval's integral with the corresponding right-endpoint rectangle \(hf(\xi_n))\).
+- From Line 3 to 4: Insert the taylor development
+- From Line 4 to 7: Integrate the summands independent
+- From Line 7 to 8: \(hf(\xi)\) cancels each other out.
+- From Line 8 to 9: Replace one \(h\) by its definition, pull the other before the sum.
+
+
+(ii)
+We can do an additional evaluation, and get the summed trapezoid rule. From the lecture we know that its error order is 2.
+
+$$
+Q(f) = \frac{f(a) + f(b)}{2} + \sum_{n=1}^{N-1} h f(\xi_n)
+$$
+
+{{< /details >}}
+
+
+### Problem 54: Linear Iteration Method
+
+We consider the linear system of equations \(A\mathbf{x} = \mathbf{b}\) for \(A \in \mathbb{R}^{N \times N}\) and \(\mathbf{b} \in \mathbb{R}^N\).
+
+a) State the **formula (or prescription)** for a general **linear iterative method** and name the quantities involved.
+
+Let's now specifically consider
+
+$$
+A = \begin{pmatrix}
+\alpha & \beta \\
+\gamma & \delta
+\end{pmatrix}
+$$
+
+for \(\alpha, \beta, \gamma, \delta \in \mathbb{R}_{>0}\) (i.e., all entries are strictly positive).
+
+b) Determine the conditions on \(\alpha, \beta, \gamma, \delta\) such that, for arbitrary starting vectors \(\mathbf{x}^{(0)} \in \mathbb{R}^2\) and right-hand sides \(\mathbf{b} \in \mathbb{R}^2\):
+
+(i) the **Jacobi method** converges for \(A\).
+
+(ii) the **Gauss-Seidel method** converges for \(A\).
+
+
+
+{{< details "Solution a)" "false" >}}
+
+Let \(B\) be a pre-conditioning matrix, then the iteration method is given by
+
+$$
+x^{k+1} = x^k + B(b-Ax^k)
+$$
+
+where \(x^k\) the iterative is of the method.
+
+
+**Alternative:**
+
+1.  Choose \(\mathbf{x}^{(0)}\) and \(\varepsilon\).
+2.  While \(\Vert \mathbf{r}^{(k)} \Vert < \varepsilon \Vert \mathbf{b} \Vert\)
+3.  Calculate
+    $$
+    \begin{aligned}
+    \mathbf{c}^{(k)} &= B \mathbf{r}^{(k)} \\
+    \mathbf{x}^{(k+1)} &= \mathbf{x}^{(k)} + \mathbf{c}^{(k)} \\
+    \mathbf{r}^{(k+1)} &= \mathbf{r}^{(k)} - A \mathbf{c}^{(k)}
+    \end{aligned}
+    $$
+    where \(A = L + D + R\). E.g., in Jacobi: \(\mathbf{B} = \mathbf{D}^{-1}\). \(\mathbf{r}^{(k)}\) is the **residual**, \(\mathbf{x}^{(0)}\) is the **starting vector**, \(\varepsilon\) determines how large the error of our final result is.
+
+{{< /details >}}
+
+
+
+{{< details "Solution b)" "false" >}}
+
+From the Lecture we know a generel linear iteration method converges with start vector \(x^0\) when \(p(I - BA) \le 1\).
+
+(i)
+For Jacobi-Method we have \(B = D^{-1}\) and hence
+
+$$
+C_1 = I - BA = I -
+\begin{pmatrix}
+\alpha^{-1} & 0 \\
+0 & \delta^{-1}
+\end{pmatrix} A =
+\begin{pmatrix}
+0 & -\frac{\beta}{\alpha} \\
+-\frac{\gamma}{\delta} & 0
+\end{pmatrix}
+$$
+
+We calculate the characteristic polynomial
+
+$$
+det(\lambda I_N - C_1) =
+det(
+\begin{pmatrix}
+\lambda & \frac{\beta}{\alpha} \\
+\frac{\gamma}{\delta} & \lambda
+\end{pmatrix}
+) = \lambda^2 - \frac{\beta\gamma}{\alpha \delta}
+$$
+
+The roots of this are \(\lambda_{1,2} \pm \sqrt{\frac{\beta\gamma}{\alpha \delta}}\).
+
+This means for the method to converge \(|\lambda_{1,2}| < 1\) needs to be true, this is the case when \(\beta \gamma < \alpha \delta\).
+
+
+(ii)
+For Gauß-Seidel-Method we have \(B = (L + D)^{-1}\) and hence
+
+$$
+B =
+\begin{pmatrix}
+\alpha^{-1} & 0 \\
+-\frac{\gamma}{\delta} & \delta^{-1}
+\end{pmatrix}
+$$
+
+With this we have
+
+$$
+C_2 = I - BA =
+\begin{pmatrix}
+0 & -\frac{\beta}{\alpha}\\
+0 & \frac{\beta\gamma}{\alpha\delta}
+\end{pmatrix}
+$$
+
+We calculate the characteristic polynomial
+
+$$
+det(\lambda I_N - C_2) =
+det(
+\begin{pmatrix}
+\lambda & -\frac{\beta}{\alpha}\\
+0 & \lambda - \frac{\beta\gamma}{\alpha\delta}
+\end{pmatrix}
+) = \lambda(\lambda - \frac{\beta\gamma}{\alpha\delta})
+$$
+
+The roots of this are \(\lambda_{1} = 0 \) and \(\lambda_{2} = \frac{\beta\gamma}{\alpha\delta}\).
+
+This means for the method to converge \(|\lambda_{1,2}| < 1\) needs to be true, this is the case when \(\beta \gamma < \alpha \delta\).
+
+{{< /details >}}
+
+
+
+
+{{< addspace height="100px" >}}
+
+
+## Problems with Non-Confirmed Solution
+
+
+### Problem 55: Iterations method
+
+Given
+
+$$
+A =
+\begin{pmatrix}
+2 & 1 & 1 \\
+4 & 4 & 0 \\
+1 & 0 & 2
+\end{pmatrix}, \quad
+b =
+\begin{pmatrix}
+3 \\
+4 \\
+5
+\end{pmatrix}
+$$
+
+a) Give step for step the algorithm for the Geis-Seidel iteration algorithm.
+
+
+{{< details "Solution a)" "false" >}}
+
+0. \(A = L + D + R\) with \(B = L + D\)
+1. Choose \(\epsilon, x_0\)
+2. For as long \(||r^k|| < \epsilon ||b||\)
+3. Calculate
+$$
+Bc^k = r^k
+x^{k+1} = x^k + c^k
+r^{k+1} = r^k - Ac^k
+$$
+
+{{< /details >}}
+
+
+### Problem 56: Short tasks
+
+
+(a) Explain briefly why the evaluation of the term \(\sqrt{x + \frac{1}{x}} - \sqrt{x - \frac{1}{x}}\) on a computer with floating-point arithmetic is problematic for \(x \gg 1\). Transform the term so that this problem no longer occurs.
+
+(b) We consider the set of normalized floating-point numbers FL with base \(B\) and mantissa length \(M\). Give the floating-point representation of the number 1 in FL and the smallest number \(x \in \text{FL}\) with \(x > 1\).
+*Hint: Give the mantissa and the exponent explicitly in each case.*
+
+(c) Justify why the two given matrices \(A\) and \(B\) cannot be Givens rotations.
+$$A = \begin{pmatrix} 1/2 & \sqrt{3}/2 & 0 \\ -\sqrt{3}/2 & 1/2 & 0 \\ 0 & 0 & -1 \end{pmatrix}, \quad B = \begin{pmatrix} 1/2 & -\sqrt{3}/2 & 1/4 \\ -\sqrt{3}/2 & 1/2 & 1/4 \\ 1/2 & 1/2 & 1/2 \end{pmatrix}$$
+
+(d) Calculate \(\|A\|_{\infty}\) and \(\|A\|_1\) for \(A = \begin{pmatrix} 4 & -3 & -2 \\ -1 & 0 & 1 \\ -2 & 3 & 5 \end{pmatrix}\).
+
+(e) Let \(A \in \mathbb{R}^{N \times N}\) be regular and \(\alpha \in \mathbb{R} \setminus \{0\}\). Determine the condition \(\kappa(\alpha A)\) in dependence on \(\kappa(A)\).
+
+(f) Let \(A, B \in \mathbb{R}^{N \times N}\) be regular and let \(\mathbf{b} \in \mathbb{R}^N\). Show: If the iteration method \(\mathbf{x}^{k+1} = \mathbf{x}^k + B( \mathbf{b} - A\mathbf{x}^k)\) converges, then it converges against \(A^{-1}\mathbf{b}\). Additionally, state a sufficient condition for the linear convergence of the method.
+
+(g) Let \(f: \mathbb{R}^N \to \mathbb{R}\) be a twice continuously differentiable function. Formulate Newton's method for solving the minimization problem \(\min_{\mathbf{x} \in \mathbb{R}^N} f(\mathbf{x})\).
+
+
+{{< details "Solution a)" "false" >}}
+
+Because if \(x >> 1\), then the terms we subtract are nearly identical and it thus comes to extinction.
+
+$$
+\sqrt{x + \frac{1}{x}} - \sqrt{x - \frac{1}{x}} = \frac{(\sqrt{x + \frac{1}{x}} - \sqrt{x - \frac{1}{x}})(\sqrt{x + \frac{1}{x}} - \sqrt{x - \frac{1}{x}})}{(\sqrt{x + \frac{1}{x}} - \sqrt{x - \frac{1}{x}})} = \frac{2}{x(\sqrt{x + \frac{1}{x}} + \sqrt{x - \frac{1}{x}})}
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+Floating point number
+
+$$
+m \cdot B^e : m = \sum^{L_m} c_i B^{-l}, \ e = e_{min} + \sum^{L_e} a_l B^{l}
+$$
+
+1-Number : \((1 B^{-0})B^1\)
+
+Addition: Smallest positive number in general \(B^{e_{min} - 1}\)
+
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+A givens rotations looks like this
+
+$$
+\begin{pmatrix}
+c & c \\
+-s & c
+\end{pmatrix}
+$$
+
+and \(c^2 + s^2 = 1\) which is also fulfilled.
+
+But the matrices are not orthogonal \(E = Q^TQ\).
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+The sum of the first column is 7.
+The sum of the second column is 6.
+The sum of the third column is 8.
+
+Hence the result is 8.
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+$$
+K(\alpha A) = ||\alpha A|| ||\alpha^{-1} A^{-1} || = ||A|| ||A^{-1} || +K(A)
+$$
+
+{{< /details >}}
+
+{{< details "Solution f)" "false" >}}
+
+$$
+(b - Ax^k) = 0 \iff Ax^k = b \iff x^k A^{-1}b
+$$
+
+{{< /details >}}
+
+{{< details "Solution g)" "false" >}}
+
+$$
+x^{k+1} = x^k + d^k
+$$
+
+with
+
+$$
+f''(x)d^k = -f'(x)
+$$
+
+{{< /details >}}
+
+
+### Problem 57: Decompositions
+
+Given:
+$$A_{\alpha,\beta} = \begin{pmatrix} 4 & \beta & 1 \\ \alpha & 2 & 0 \\ 1 & 0 & 1 \end{pmatrix}, \quad \alpha, \beta \in \mathbb{R}, \quad \mathbf{b} = \begin{pmatrix} -4 \\ -6 \\ 2 \end{pmatrix}$$
+
+(a) Determine all \(\alpha, \beta \in \mathbb{R}\) for which a Cholesky decomposition of \(A_{\alpha,\beta}\) exists, using the principal minors criterion.
+
+(b) Calculate the \(LR\)-decomposition of \(A_{2,6}\). Give the matrices \(L\) and \(R\) explicitly with \(A_{2,6} = LR\).
+
+(c) Determine the solution of the linear system \(A_{4,0}\mathbf{x} = \mathbf{b}\) using \(A_{4,0} = LR\) with
+$$L = \begin{pmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ \frac{1}{4} & 0 & 1 \end{pmatrix}, \quad R = \begin{pmatrix} 4 & 0 & 1 \\ 0 & 2 & -1 \\ 0 & 0 & \frac{3}{4} \end{pmatrix}.$$
+
+(d) Give the general iteration formula for the single-step method (Gauss-Seidel method) in matrix notation.
+
+
+{{< details "Solution a)" "false" >}}
+
+Choleksy exist if spd, it is symmetrical when \(\alpha = \beta\).
+
+And positive definite if \(\alpha < \sqrt{6}\)
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+$$
+A = LR \iff
+\begin{pmatrix} 4 & 6 & 1 \\ 2 & 2 & 0 \\ 1 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 \\ \frac{1}{2} & 1 & 0 \\ \frac{1}{4} & \frac{3}{2} & 1 \end{pmatrix} \cdot \begin{pmatrix} 4 & 6 & 1 \\ 0 & -1 & -\frac{1}{2} \\ 0 & 0 & \frac{3}{2} \end{pmatrix}
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+* From the first row: \(1 \cdot y_1 = -4 \implies y_1 = -4\).
+* From the second row: \(1 \cdot y_1 + 1 \cdot y_2 = -6\). Substituting \(y_1 = -4\), we get \((-4) + y_2 = -6 \implies y_2 = -2\).
+* From the third row: \(\frac{1}{4} \cdot y_1 + 0 \cdot y_2 + 1 \cdot y_3 = 2\). Substituting \(y_1 = -4\), we get \(\frac{1}{4}(-4) + y_3 = 2 \implies -1 + y_3 = 2 \implies y_3 = 3\).
+
+So, the intermediate vector is \(\mathbf{y} = \begin{pmatrix} -4 \\ -2 \\ 3 \end{pmatrix}\).
+
+* From the third row: \(\frac{3}{4} \cdot x_3 = 3 \implies x_3 = 3 \cdot \frac{4}{3} = 4\).
+* From the second row: \(2 \cdot x_2 - 1 \cdot x_3 = -2\). Substituting \(x_3 = 4\), we get \(2x_2 - 4 = -2 \implies 2x_2 = 2 \implies x_2 = 1\).
+* From the first row: \(4 \cdot x_1 + 0 \cdot x_2 + 1 \cdot x_3 = -4\). Substituting \(x_3 = 4\), we get \(4x_1 + 4 = -4 \implies 4x_1 = -8 \implies x_1 = -2\).
+
+Therefore, the solution to the linear system \(A_{4,0}\mathbf{x} = \mathbf{b}\) is \(\mathbf{x} = \begin{pmatrix} -2 \\ 1 \\ 4 \end{pmatrix}\).
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+Do until \(||r^k|| < \epsilon ||b||\)
+
+$$
+Bc^k = r^k, \quad
+x^{k+1} = x^k + c^k, \quad
+r^{k+1} = r^k - Ac^k
+$$
+
+with \(A = L + D + R\) and \(B = L + D\)
+
+{{< /details >}}
+
+
+### Problem 58: QR-Algorithm
+
+We consider the \(QR\)-algorithm with variable shift for the simultaneous computation of all eigenvalues of a symmetric matrix \(A \in \mathbb{R}^{N \times N}\).
+
+(a) Explain how the starting matrix \(A_0\) is calculated and state the asymptotic computational cost (\(O(\cdot)\)) for this calculation.
+
+(b) State how, in one iteration, the matrix \(A_{k+1}\) is calculated from the matrix \(A_k\) and the shift \(\mu_k\).
+
+(c) Show that all iterates \(A_k\) in the \(QR\)-algorithm have the same eigenvalues.
+
+(d) Briefly explain why the starting matrix \(A_0\) used in the algorithm is advantageous compared to \(A\) for an efficient execution of the algorithm.
+
+(e) State the asymptotic computational cost of one step of the algorithm.
+
+
+{{< details "Solution a)" "false" >}}
+
+We transform \(A\) first into its Hessenbergform. The algorithm then takes \(O(N^3)\).
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+$$
+QR = A_k - \mu I
+$$
+
+and
+
+$$
+A_{k+1} = RQ + \mu I
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+$$
+A_{k+1} = RQ + \mu I = Q^T(R + \mu)Q_k + \mu I = Q^TAQ
+$$
+
+Thus we do in every step a orthogonal transformation, which leave eigenvalues intact.
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+Its faster.
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+$$
+O(N)
+$$
+
+{{< /details >}}
+
+
+### Problem 59: Interpolation polynomial
+
+Let \(\xi_0 < \xi_1 < \dots < \xi_N\) and \(f_0, f_1, \dots, f_N \in \mathbb{R}\) be given.
+
+(a) Formulate the interpolation problem for the data \((\xi_n, f_n), n=0, \dots, N\).
+
+(b) Give the Newton basis of \(\mathbb{P}_N\) for the nodes \(\xi_0, \dots, \xi_N\).
+
+(c) Use divided differences to compute the interpolation polynomial \(P_2(t)\) for the following data:
+$$
+\begin{array}{c|ccc}
+n & 0 & 1 & 2 \\
+\hline
+\xi_n & \frac{1}{2} & 1 & 2 \\
+f_n & -1 & 0 & \frac{1}{2}
+\end{array}
+$$
+*Hint: The monomial form of \(P_2(t)\) is not required.*
+
+(d) Instead of \(\xi_3 = 3\), an additional value \(f_3 = -1\) is given. Compute the new interpolation polynomial \(P_3(t)\).
+
+(e) Name two disadvantages of the Lagrange form of the solution to the interpolation problem.
+
+
+{{< details "Solution a)" "false" >}}
+
+We want to find a polynomial for that is
+
+$$
+p(x_n) = f_n
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+$$
+p(x) = \prod (x - x_i)
+$$
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+$$
+\begin{array}{c|c|c|cc}
+n & \xi_n & f_n \\
+\hline
+0 & 1 & -1 \\
+1 & 3/2 & 0 & f[\xi_0, \xi_1] = \frac{-1-0}{1-3/2} = 2 \\
+2 & 2 & 1/2 & f[\xi_1, \xi_2] = \frac{0-1/2}{3/2-2} = 1 & f[\xi_0, \xi_1, \xi_2] = \frac{2-1}{1-2} = -1
+\end{array}
+$$
+
+$$
+P_2(t) = -1 + 2(\xi-1) - 1(\xi-1)(\xi-3/2)
+$$
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+$$
+\begin{array}{c|c|c|ccc}
+n & \xi_n & f_n \\
+\hline
+0 & 1 & -1 \\
+1 & 3/2 & 0 & f[\xi_0, \xi_1] = \frac{-1-0}{1-3/2} = 2 \\
+2 & 2 & 1/2 & f[\xi_1, \xi_2] = \frac{0-1/2}{3/2-2} = 1 & f[\xi_0, \xi_1, \xi_2] = \frac{2-1}{1-2} = -1 \\
+3 & 3 & -1 & f[\xi_2, \xi_3] = \frac{1/2-(-1)}{2-3} = -\frac{3}{2} & f[\xi_1, \xi_2, \xi_3] = \frac{1-(-3/2)}{3/2-3} = -\frac{5}{3} & f[\xi_0, \xi_1, \xi_2, \xi_3] = \frac{-1-(-5/3)}{1-3} = -\frac{1}{3}
+\end{array}
+$$
+
+$$P_3(t) = -1 + 2(\xi-1) - 1(\xi-1)(\xi-3/2) - \frac{1}{3}(\xi-1)(\xi-3/2)(\xi-2)$$
+
+{{< /details >}}
+
+{{< details "Solution e)" "false" >}}
+
+- The evaluation is harder
+- if we get a new root point, we need to recalculate everything
+
+{{< /details >}}
+
+
+### Problem 60: Integrating
+
+We consider an interval \([a, b] \subset \mathbb{R}\) and the integral \(\int_a^b f(t)dt\) for \(f: [a, b] \to \mathbb{R}\).
+
+(a) Give the general form of a quadrature formula for the approximation of the integral.
+
+(b) State the formula from the lecture for calculating the weights and briefly explain the quantities that appear.
+
+(c) Explain why composite quadrature formulas, such as the composite trapezoidal rule, are used by referring to the error bound of the composite trapezoidal rule and the error bound from (c).
+
+
+{{< details "Solution a)" "false" >}}
+
+$$
+Q_n = (a-b) \sum b_k f(a + c_k(b-a))
+$$
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+$$
+\frac{1}{q} = \sum c^{q-1}b_k
+$$
+
+where \(q = p + 1\) with \(p\) the maixmal order.
+
+{{< /details >}}
+
+
+{{< details "Solution c)" "false" >}}
+
+Has a better error.
+
+{{< /details >}}
+
+
+
+
+{{< addspace height="100px" >}}
+
+## Oral Problems
+
+### Problem 61
+
+Let \(Ax = b\) a LGS with \(A \in \mathbb{R}^{n \times n}\) regular and \(b \in \mathbb{R}^{n}\).
+
+Let \(B \sim A^{-1}\) a pre-condition to \(A\). What is the iterations method of a LGS with pre condiiton.
+
+{{< details "Solution" "false" >}}
+
+Our LGS with pre condition is \(BA = Bb\) adn the iteration method
+
+$$
+x^{k+1} = x^k + B(b - Ax^k)
+$$
+
+{{< /details >}}
+
+Let \(Ax = b\) a LGS with \(A \in \mathbb{R}^{n \times n}\) regular and \(b \in \mathbb{R}^{n}\).
+
+Let concretely
+
+$$A = \begin{pmatrix} 3 & 1 & 0 \\ 1 & 2 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
+
+Investigate the **Jacobi method** applied to \(Ax=b\) with the given \(A\), arbitrary right-hand side \(b \in \mathbb{R}^N\) and arbitrary starting vector \(x^0 \in \mathbb{R}^N\) for **convergence** in the **Euclidean norm** \(|| \cdot ||_2\).
+
+{{< details "Solution" "false" >}}
+
+We have then linear convergence if
+
+$$
+p(I_N -BA) < 1
+$$
+
+Because we use Jacobi method \(A = L + D + R\) where \(B = D^{-1}\) with
+
+$$
+B =
+\begin{pmatrix}
+\frac{1}{3} & 0 & 0 \\
+0 & \frac{1}{2} & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+And
+
+$$
+C = I - BA =
+\begin{pmatrix}
+0 & -1/3 & 0 \\
+-1/2 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}
+$$
+
+Further
+
+$$
+det(\lambda I_n - C) = det(
+\begin{pmatrix}
+\lambda & -1/3 & 0 \\
+-1/2 & \lambda & 0 \\
+0 & 0 & \lambda
+\end{pmatrix}
+) = \lambda
+\begin{pmatrix}
+\lambda & -1/3 \\
+-1/2 & \lambda \\
+\end{pmatrix} = \lambda (\lambda^2 - 1/6)
+)
+$$
+
+We have \(\lambda_1 = 0, \lambda_{2,3} \pm \frac{1}{\sqrt{6}}\), which are all smaller as \(1\), thus it converges.
+
+{{< /details >}}
+
+
+
+**Rewrite**
+
+$$\frac{1}{1+2x} - \frac{1-x}{1+x} \quad \text{for } |x| \ll 1$$
+
+so that the expression is **well-conditioned** in **floating-point arithmetic**. Briefly **justify** why the new term is well-conditioned.
+
+{{< details "Solution" "false" >}}
+
+$$
+\frac{1}{1 + 2x} - \frac{1-x}{1 + x} = \frac{1+ x - (1-x)(1+ 2x)}{(1 + x)(1+2x)} = \frac{2x^2}{(1+x)(1+2x)}
+$$
+
+{{< /details >}}
+
+What is least quare problem?
+
+{{< details "Solution" "false" >}}
+
+It is defined as
+
+$$
+Search \ x \in \mathbb{R}^n \ with \ |Ax - b|_2 = min!
+$$
+
+We do this when we cant solve \(Ax = b\) directly and thus instead solve it approximately.
+
+{{< /details >}}
+
+How can we solve this?
+
+{{< details "Solution" "false" >}}
+
+Using the normal equation
+
+$$
+A^TAx = A^Tb
+$$
+
+we get this by taking our least square problem to the power of two.
+
+{{< /details >}}
+
+
+How can we solve the normal equation?
+
+{{< details "Solution" "false" >}}
+
+We can use the singular decomposition.
+
+$$
+A^TA = V \Sigma U^T
+$$
+
+{{< /details >}}
+
+
+### Problem 62
+
+1. What is the **Raleigh-Constant** ?<D-lt>
+
+{{< details "Solution" "false" >}}
+
+Is defined as
+
+$$
+r(A, x) = \frac{x^TAx}{x^Tx}
+$$
+
+it approximates eigenvalues.
+
+We can use it as startvalue in inverse iteration with shift.
+
+{{< /details >}}
+
+2. What is the **Kylov method**?
+
+{{< details "Solution" "false" >}}
+
+Also known as **cg** method. It is an iterative method to solve sparse LGS.
+
+{{< /details >}}
+
+3. What is a **matrixnorm**?
+
+{{< details "Solution" "false" >}}
+
+We have defined the associated matrixnorm as
+
+$$
+||X||_A = \sup{x \neq 0} \frac{ ||xX||_A}{||x||}
+$$
+
+A norm is general has three attributes
+
+1. Positive definite $$||A|| > 0$$
+2. Triangle inequality $$||AB|| > ||A||||B||$$
+3. Homogeneous $$||\lambda A|| = |\lambda|||A||$$
+
+{{< /details >}}
+
+4. Calculate for \(z = (1 \ -1 \ 1)^T\) the value of norm \(A\) with
+$$
+A LL^T, \quad L = \begin{pmatrix}
+1 & 0 & 0 \\
+-2 & 1 & 0 \\
+1 & 0 & 1
+\end{pmatrix}
+$$
+
+
+{{< details "Solution" "false" >}}
+
+It can be calculated with
+
+$$
+z^T LL^T z
+$$
+
+{{< /details >}}
+
+5. What is **Destruction**?
+
+
+{{< details "Solution" "false" >}}
+
+If we subtract two numbers from wach other which are nearly identical the most significant digits will become 0, while the least significant digits will counts, this leads to a result that is very inaccurate, the number explodes in size.
+
+{{< /details >}}
+
+
+5. What is **Singular Value Decomposition**?
+
+{{< details "Solution" "false" >}}
+
+If we have a matrix A then the singular value decomposition is
+
+$$
+A = V \sigma U^T, \quad \sigma = diag(\sigma_1, ..., \sigma_n), \quad \sigma_1 = \sqrt{\lambda_i}
+$$
+
+{{< /details >}}
+
+6. Determine the solution of the problem $$|Ax^* -b| = \min |Ax-b|$$ with the help of singular value decomposition
+
+{{< details "Solution" "false" >}}
+
+This can be solved using the normal equation
+
+$$
+A^TAx = A^Tb
+$$
+
+which we can express using the singular value decomposition
+
+$$
+(V \sigma U^T)^T (V \sigma U^T)x = (V \sigma U^T)^Tb \iff
+U \sigma V V \sigma Ux = U \sigma V b \iff
+x^* = U \sigma^{-1}
+$$
+
+{{< /details >}}
+
+7. What is the lagrange basis? And why are the solution always unique?
+
+{{< details "Solution" "false" >}}
+
+$$
+P(x) = \sum f_n L_n (x), \quad L_n = \prod_{n \neq m} \frac{x  - x_n}{x_n - x_m}
+$$
+
+They are always 0, except where the roots are, there they are 1, we multiply that than with the function value at that place.
+
+
+Suppose there are **two** polynomials ( p(x) ) and ( q(x) ) of degree ≤ n that both satisfy
+$$
+p(x_i) = q(x_i) = y_i \quad \forall i.
+$$
+
+Consider their **difference**:
+$$
+r(x) = p(x) - q(x).
+$$
+
+Then:
+
+* ( r(x) ) is also a polynomial of degree ≤ n,
+* and ( r(x_i) = 0 ) for all ( i = 0, \ldots, n. )
+
+So ( r(x) ) has ( n+1 ) **distinct roots** (since all ( x_i ) are distinct).
+But a nonzero polynomial of degree ≤ n can have **at most ( n )** roots.
+
+Therefore, ( r(x) ) must be the **zero polynomial**, i.e. ( p(x) = q(x) ).
+
+{{< /details >}}
+
+8. What solve methods did we learn in the lecture?
+
+{{< details "Solution" "false" >}}
+
+1. Newton-method: to solve non linear problems.
+2. Jacobi, Gauß-Seidel method: To solve linear problems.
+
+{{< /details >}}
+
+9. What is the QR Algorithm? Why do we do it? Can we speed it up?
+
+{{< details "Solution" "false" >}}
+
+We do it, because the convergence speed it bettert han cholesky but it has more requriemenst. Can be used to solve LGS or to determine eigenvalues like this
+
+$$
+A_k = QR
+A_{k+1} RQ
+$$
+
+We can speed up convergence speed, by starting with an hessian matrix and a shift. To get the hessenbergform we do
+
+$$
+H = Q^TAQ
+$$
+
+{{< /details >}}
+
+
+### Problem 63
+
+What is the Tikhonov Regularization? How can it be solved?
+
+{{< details "Solution" "false" >}}
+
+When we have a least square problem \(|Ax - b| = min!\), we cab have the problem that \(A\) has bad condition, which leads to an increase of errors in the solution.
+To solve this we can use the Tikhonov Regularization, the problem is then formulated as
+
+$$
+\frac{1}{2}|Ax - b|^2_2 + \frac{1}{2}\alpha |x|^2_2, \quad \alpha > 0
+$$
+
+and the solution is
+
+$$
+x = (A^TA + \alpha I_n)^{-1}A^Tb
+$$
+
+When choosing \(\alpha\) keep in mind:
+- The bigger \(\alpha\), the bigger the approximations error.
+- The smaller \(\alpha\), the bigger the conditioning error.
+
+{{< /details >}}
+
+
+What is the trapezoid rule? What is the summed trapezoid rule? What is the general formula for the quadrature formula? For what are they used?
+
+{{< details "Solution" "false" >}}
+
+Trapezoid rule
+
+$$
+\frac{b-a}{2}(f(a) + f(b))
+$$
+
+Summed Trapezoid rule
+
+$$
+T_n(f) = \sum_{n=1}^{N} \frac{b-a}{2}(f(a) + f(b))
+$$
+
+General formula
+
+$$
+Q(f) = \sum w_x f(x)
+$$
+
+They ared use to numericaly solve integrals.
+
+{{< /details >}}
+
+
+What is the QR-Iteration? How does it work? What do we need to do that QR_iteration gives the same result as the ivnerse iteraiton with shift? What can we do to increase the speed of QR-iteration?
+
+{{< details "Solution" "false" >}}
+
+QR-Iteration is used to find out the eigenvalues.
+
+0. Choose \(\mu = A[n,n]\)
+1. $$
+A_k -\mu = Q_kR_k
+$$
+2. $$
+A_{k+1} = R_kQ_k
+$$
+
+In inverse shift choose \(v = e^N\).
+
+To increase the speed we transform our matrix \(A\) into hessenbergfrom using \(H = Q^TAQ\).
+
+{{< /details >}}
+
+
+### Problem 64
+
+What is a preconditioning matrix? What is the Jacobi preconditioning matrix? What is an example of a preconditioning matrix?
+
+{{< details "Solution" "false" >}}
+
+A preconditioning matrix \(B\), gets multiplied to our LGS in order to have better conditioning
+
+$$
+BAx = Bb
+$$
+
+Jacobi preconditioning is
+
+$$
+B = D^{-1}
+$$
+
+where \(A = L + D + R\).
+
+The identity matrix is a preconditioning matrix.
+
+{{< /details >}}
+
+
+What are Kylov-methods? What are they used for?
+
+{{< details "Solution" "false" >}}
+
+Examples include:
+- CG-method
+- GMRES-method
+
+They are used to so solve iterative LGS.
+
+{{< /details >}}
+
+
+How does a QR decomposition work? How is a householder transformation defined? What is another method to do the decomposition? What is the advantage of Givens compared to householder? What is the computation complexity of QR? What is the advnatage if A is tridiagonal(hessenberg)?
+
+{{< details "Solution" "false" >}}
+
+We decompose
+
+$$
+A = QR
+$$
+
+with \(Q\) and orthogonal matrix and \(R\) upper triangular matrix.
+We determine \(Q\) with the help of householder transformation and
+
+$$
+R = Q_N ... Q_2 Q_1 A
+$$
+
+and
+
+$$
+Q = Q_1 Q_2 ... Q_N
+$$
+
+A householder transformation is defined as follows
+
+$$
+Q = I - 2\frac{ww}{w^Tw}
+$$
+
+We can also use givens-rotations
+
+$$
+\begin{pmatrix}
+c & s \\
+-s & c
+\end{pmatrix}, \quad c^2 + s^2 = 1
+$$
+
+Givens is better in spare matrices. needs fewer operations.
+
+Computational complexit is \(\frac{4}{3}N^3\).
+
+If the matrix is tridiagonal we can calculate the QR-decomposition in N operations.
+
+{{< /details >}}
+
+
+Given a integral with a range of \(|b-a| >> 1\), how can this be approximated with a quadrature formuka? How does it formula look like? How does the error look when we double the number of roots? Which qudrature formula is the error otpimal?
+
+{{< details "Solution" "false" >}}
+
+We use a summed quadrature formula. H
+
+The formula for the summed quardture formula is
+
+$$
+I_N(f) h \sum_{m = 1} \sum_{n = 1} w_n f(\phi_m(\xi_n))
+$$
+
+When we double the number of roots, the error goes down.
+
+The Gauß quadrature is optimal.
+
+{{< /details >}}
+
+
+What happens during the lagrange format in polynomialinterpolation with äquidistant roots? How can we calculate a interpolationpolynomial? What is the name of the algorithm with which we calculate it?
+
+{{< details "Solution" "false" >}}
+
+The condition with äquidistant roots is bad, and with that also the condition of the interpolation polynomial.
+
+Newton-method.
+
+Neville Scheme.
+
+{{< /details >}}
+
+
+Given the non-linear system of equation
+
+$$
+-u^2  +v + 1 = 0, \quad uv = 0
+$$
+
+(i) determine the exact solution
+(ii) do the first step of the newton method on the start value \((u_0, v_0 = (\pm \epsilon, 0)^T\)
+(iii) discuss the choosens tart value.
+
+{{< details "Solution" "false" >}}
+
+(i)
+From \(uv = 0\), either \(u = 0\) or \(v =0\). If \(u=0\) then \(v=-1\) and with \(v=0\) then \(u= \pm 1\).
+
+(ii)
+$$
+F' =
+\begin{pmatrix}
+-2u & 1 \\
+u & v
+\end{pmatrix}
+$$
+
+insert start value
+
+$$
+F'(u^0, v^0) =
+\begin{pmatrix}
+\pm2\epsilon & 1 \\
+0 & \pm \epsilon
+\end{pmatrix}
+$$
+
+and
+
+$$
+F(u^0, v^0) = (1 - \epsilon^2 \ 0)
+$$
+
+we have thus the LGS
+
+$$
+\begin{pmatrix}
+\pm2\epsilon & 1 \\
+0 & \pm \epsilon
+\end{pmatrix} X  = (1 - \epsilon^2 \ 0)
+$$
+
+from this we get \(X = (u, v) = (\pm \frac{1}{2}(1/\epsilon - \epsilon), 0)\).
+
+(iii)
+start value was badly chosen, because we are in two separate convergent ranges, for \(\epsilon \to 0\) is the jacobi matrix not regular anymore and thus we cannot continue the method.
+
+{{< /details >}}
+
+
+## Conclusion
+
+{{< rawhtml >}}
+<figure>
+    <img style="display: block; margin-left: auto; margin-right: auto; width:50%" src="/attachments/man_who_lost_it.jpg">
+    <figcaption style="margin-top: 20px">
+        My pain is constant and sharp and I do not hope for a better world for anyone, in fact I want my pain to be inflicted on others. I want no one to escape.
+    </figcaption>
+</figure>
+{{< /rawhtml >}}

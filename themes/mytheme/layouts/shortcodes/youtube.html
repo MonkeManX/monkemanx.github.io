@@ -1,23 +1,33 @@
+{{ $link := .Get "link" }}
+{{ $id := "" }}
+
+{{ if in $link "youtu.be" }}
+  {{ $id = (replace $link "https://youtu.be/" "") }}
+{{ else if in $link "watch?v=" }}
+  {{ $id = (index (split $link "watch?v=") 1) }}
+  {{ $id = (index (split $id "&") 0) }}
+{{ else if in $link "embed/" }}
+  {{ $id = (index (split $link "embed/") 1) }}
+  {{ $id = (index (split $id "?") 0) }}
+{{ end }}
+
 <div class="video-container">
   <iframe
-    src="{{ .Get "link" }}"
+    src="https://www.youtube.com/embed/{{ $id }}"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin">
   </iframe>
 </div>
-
 
 <style>
 .video-container {
   width: 100%;
-  max-width: 600px; /* optional */
   margin: 0 auto;
 }
-
 .video-container iframe {
   width: 100%;
-  /* height will follow the 16:9 ratio automatically */
   aspect-ratio: 16 / 9;
   display: block;
 }

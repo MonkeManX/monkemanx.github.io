@@ -4,11 +4,11 @@ date: 2025-06-27 12:00:00
 tags: ["paper-summary", "Neuromorphic"]
 ---
 
-**Paper Title:** Hardware Efficient Weight-Binarized Spiking Neural Networks  
-**Link to Paper:** https://ieeexplore.ieee.org/document/10136955  
-**Date:** 17. April 2023  
-**Paper Type:** SNN, Architetcurre, Hardware, FPGA  
-**Short Abstract:**  
+**Paper Title:** Hardware Efficient Weight-Binarized Spiking Neural Networks
+**Link to Paper:** https://ieeexplore.ieee.org/document/10136955
+**Date:** 17. April 2023
+**Paper Type:** SNN, Architetcurre, Hardware, FPGA
+**Short Abstract:**
 The author introduces a weight-binarized spiking neural network (WB-SNN), in which both the weights and spikes are represented using only binary values (0 or 1). This architecture is implemented on an FPGA, demonstrating significant memory savings.
 
 ## 1. Introduction
@@ -66,7 +66,6 @@ $$
 $$
 
 {{< rawhtml >}}
-
 <figure>
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/SNN_explanation.png">
 </figure>
@@ -84,7 +83,6 @@ The priority encoder is used to identify the index of an active neuron. The leas
 In addition to the PE, the system uses a *priority reset (PRI)* circuit, which prevents repeated encoding of the same bit. After the PE encodes the bit with the highest priority, the PRI clears that bit.
 
 {{< rawhtml >}}
-
 <figure>
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/SNN_priority_encoder.png">
 </figure>
@@ -100,7 +98,6 @@ If the input image contains many zero pixel values, the PE & PRI blocks are used
 These two scenarios help reduce inference latency while saving hardware resources.
 
 {{< rawhtml >}}
-
 <figure>
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:80%" src="/attachments/WB_SSN_input_layer.png">
 </figure>
@@ -120,7 +117,6 @@ For each active input, the index is used to read the corresponding weight \(w\) 
 Compared to conventional FC layers, only neurons with active outputs are selected and processed because of the PE & PRI blocks. This reduces energy consumption and inference latency.
 
 {{< rawhtml >}}
-
 <figure>
     <img loading="lazy" style="display: block; margin-left: auto; margin-right: auto; width:60%" src="/attachments/WB_SNN_FC_layer.png">
 </figure>

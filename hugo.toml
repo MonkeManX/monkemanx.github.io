@@ -1,6 +1,7 @@
 baseURL = 'https://monkemanx.github.io/'
 languageCode = 'en-us'
-theme = ["mytheme", "hugo-shortcode-gallery"]
+theme = ["mytheme", "hugo-shortcode-gallery", "hugo-embed-pdf-shortcode"]
+enableInlineShortcodes = true
 
 [Author]
   name = "MonkeMan"

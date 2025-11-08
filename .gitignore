@@ -1,7 +1,7 @@
-.*
-./*
 public/*
 !.gitignore
 *.Identifier
 .stfolder/*
+.stignore
+.hugo_build.lock
 number_words.py
