@@ -114,6 +114,7 @@ This leads to Putnam’s famous anti-skeptical conclusion:
 > If I were a brain in a vat, I could not truly say “I am a brain in a vat.”
 > Because in that scenario, my words wouldn’t refer to real brains or real vats.
 
+---
 
 ## My Thoughts
 
