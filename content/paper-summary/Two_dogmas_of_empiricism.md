@@ -296,6 +296,7 @@ To organize our experience and simplify predictions, we introduce **posits**: en
 
 These posits are **pragmatic fictions**, not proven truths, but useful tools for navigating experience.
 
+---
 
 ## Criticism
 

@@ -231,7 +231,7 @@ For instance:
 In both cases, you are practicing virtue. You are not reacting based on what you get from the world, but on how you choose to respond to it, based on a stable ethical orientation.
 
 
-### 3.2. How can we speak about control in a fully detemrisntic world?
+### 3.2. How can we speak about control in a fully deterministic world?
 
 One clarification I want to make is about what I mean when I say that virtue is “in our control.”
 
