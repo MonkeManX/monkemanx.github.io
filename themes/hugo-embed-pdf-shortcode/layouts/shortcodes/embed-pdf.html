@@ -1,0 +1,226 @@
+{{/* Only load shared CSS/JS once */}}
+{{- if not ($.Page.Scratch.Get "embed-pdf-count") -}}
+<script type="text/javascript" src='/js/pdf-js/build/pdf.js'></script>
+
+<style>
+  .embed-pdf-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .embed-pdf-container {
+    position: relative;
+    height: auto;
+    min-height: 20vh;
+  }
+
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+
+  .pdf-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s;
+  }
+
+  .pdf-nav:hover {
+    color: #000;
+  }
+
+  .pdf-nav-left {
+    left: -1.5em;
+  }
+
+  .pdf-nav-right {
+    right: -1.5em;
+  }
+
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width: clamp(1em, 2vw, 1.4em);
+  }
+
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+</style>
+{{- end -}}
+
+{{- $.Page.Scratch.Add "embed-pdf-count" 1 -}}
+
+{{/* Allow customizable arrow icons and optional FA loading */}}
+{{ $.Scratch.Add "arrow-left" (.Get "arrow-left" | default "fa-chevron-left") }}
+{{ $.Scratch.Add "arrow-right" (.Get "arrow-right" | default "fa-chevron-right") }}
+
+{{ if ne (.Get "no-fa") "true" }}
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+{{ end }}
+
+{{- $id := substr (.Get "url" | md5) 0 8 -}}
+{{- $width := .Get "width" | default "100%" -}}
+
+<div class="embed-pdf-wrapper" style="width: {{ $width }};">
+  <span class="pdf-nav pdf-nav-left nav fa {{ $.Scratch.Get "arrow-left" }} fa-3x" id="pdf-prev-{{ $id }}" aria-label="Previous page"></span>
+
+  <div class="embed-pdf-container" id="embed-pdf-container-{{ $id }}">
+      <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $id }}">
+          <div class="pdf-loading" id="pdf-loading-{{ $id }}"></div>
+      </div>
+
+      <div id="overlayText">
+        <a href="{{ .Get "url" }}" aria-label="Download" download>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+              <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+          </svg>
+        </a>
+      </div>
+
+      <canvas class="pdf-canvas" id="pdf-canvas-{{ $id }}"></canvas>
+
+      <div class="pdf-page-indicator" style="text-align:center; margin-top:4px;">
+        <span id="pdf-pagenum-{{ $id }}"></span> / <span id="pdf-pagecount-{{ $id }}"></span>
+      </div>
+  </div>
+
+  <span class="pdf-nav pdf-nav-right nav fa {{ $.Scratch.Get "arrow-right" }} fa-3x" id="pdf-next-{{ $id }}" aria-label="Next page"></span>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" href="{{ .Get "url" }}">here</a>.
+</noscript>
+
+<script type="text/javascript">
+(function(){
+  var url = '{{ .Get "url" }}';
+  var hideLoader = "{{ .Get "hideLoader" }}" === "true";
+  var selectedPageNum = parseInt("{{ .Get "renderPageNum" }}") || 1;
+
+  var pdfjsLib = window['pdfjs-dist/build/pdf'];
+  if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "{{.Site.BaseURL}}" + 'js/pdf-js/build/pdf.worker.js';
+
+  var pdfDoc = null,
+      pageNum = selectedPageNum,
+      pageRendering = false,
+      pageNumPending = null,
+      scale = 3,
+      canvas = document.getElementById('pdf-canvas-{{ $id }}'),
+      ctx = canvas.getContext('2d'),
+      loadingWrapper = document.getElementById('pdf-loadingWrapper-{{ $id }}');
+
+  showLoader();
+
+  function renderPage(num) {
+    pageRendering = true;
+    pdfDoc.getPage(num).then(function(page) {
+      var viewport = page.getViewport({scale: scale});
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+      var renderContext = { canvasContext: ctx, viewport: viewport };
+      var renderTask = page.render(renderContext);
+      renderTask.promise.then(function() {
+        pageRendering = false;
+        showContent();
+        if (pageNumPending !== null) {
+          renderPage(pageNumPending);
+          pageNumPending = null;
+        }
+      });
+    });
+    document.getElementById('pdf-pagenum-{{ $id }}').textContent = num;
+  }
+
+  function showContent() {
+    loadingWrapper.style.display = 'none';
+    canvas.style.display = 'block';
+  }
+
+  function showLoader() {
+    if(hideLoader) return;
+    loadingWrapper.style.display = 'flex';
+    canvas.style.display = 'none';
+  }
+
+  function queueRenderPage(num) {
+    if (pageRendering) pageNumPending = num;
+    else renderPage(num);
+  }
+
+  function onPrevPage() {
+    if (pageNum <= 1) return;
+    pageNum--;
+    queueRenderPage(pageNum);
+  }
+
+  function onNextPage() {
+    if (pageNum >= pdfDoc.numPages) return;
+    pageNum++;
+    queueRenderPage(pageNum);
+  }
+
+  document.getElementById('pdf-prev-{{ $id }}').addEventListener('click', onPrevPage);
+  document.getElementById('pdf-next-{{ $id }}').addEventListener('click', onNextPage);
+
+  pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+    pdfDoc = pdfDoc_;
+    var numPages = pdfDoc.numPages;
+    document.getElementById('pdf-pagecount-{{ $id }}').textContent = numPages;
+    if (pageNum > numPages) pageNum = numPages;
+    renderPage(pageNum);
+  });
+})();
+</script>
