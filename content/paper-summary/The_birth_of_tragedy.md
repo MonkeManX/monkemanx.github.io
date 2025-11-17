@@ -1,7 +1,7 @@
 ---
-title: 'The Birth of Tragedy'
+title: 'The Birth of Tragedy by Nitzsche'
 date: 2025-11-11 08:00:00
-tags: ["paper-summary", "philosophy"]
+tags: ["paper-summary", "philosophy", "Nitzsche"]
 ---
 
 **Paper Title:** The Birth of Tragedy
