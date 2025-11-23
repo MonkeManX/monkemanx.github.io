@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "3e90a205fff380b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "3cc0d48a60f98f51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d6648c75ccb0596",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/tangled_thoughts/Analytic_Idealism.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Analytic_Idealism"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0028604e5d84ee9",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e9795ce28901c8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7830c4b7e876e3ec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "47704f38aefef6d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5ff70e55e5b17309",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6ebbf8225689d374",
+    "type": "split",
+    "children": [
+      {
+        "id": "426bc4beefacb3bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03ab9a8d926f7934",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "399e680a6a263394",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "6f733cb73f4a5010",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "343a3a73b81f0a83",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "9d0f6c68a7af73b4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7d6648c75ccb0596",
+  "lastOpenFiles": [
+    "content/tangled_thoughts/Holy_Mountain.md",
+    "public/attachments/HolyMountain.png",
+    "content/tangled_thoughts/Analytic_Idealism.md",
+    "content/tangled_thoughts/Epictetus8.md",
+    "content/tangled_thoughts/Epictetus7.md",
+    "content/tangled_thoughts/Epictetus6.md",
+    "public/attachments/71Rv2ZETDRL.jpg",
+    "static/attachments/71Rv2ZETDRL.jpg",
+    "public/tags/idealism/index.xml",
+    "public/tags/idealism/index.html",
+    "public/tags/idealism",
+    "content/tangled_thoughts/Epictetus.md",
+    "public/tangled_thoughts/analytic_idealism/index.html",
+    "public/tangled_thoughts/analytic_idealism",
+    "public/tangled_thoughts/untitled/index.html",
+    "public/tangled_thoughts/untitled",
+    "public/attachments/devil-may-cry-netflix-anime.png",
+    "public/attachments/destruction_internet_table.png",
+    "public/attachments/desktop_size.jpg",
+    "public/attachments/deep_training_src.png",
+    "public/attachments/deepseek_r1_benchmark.png",
+    "public/attachments/debian_my_beloved.gif",
+    "public/attachments/deadpool_2.jpg",
+    "public/js/pdf-js/web/viewer.js.map",
+    "public/js/pdf-js/web/viewer.js",
+    "public/js/pdf-js/web/viewer.html",
+    "content/tangled_thoughts/Abnormal_Family.md",
+    "content/about.md"
+  ]
+}
