@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/tangled_thoughts/Analytic_Idealism.md",
+                "file": "content/articles/Dreaming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Analytic_Idealism"
+              "title": "Dreaming"
             }
           }
         ]
@@ -183,9 +183,11 @@
   },
   "active": "7d6648c75ccb0596",
   "lastOpenFiles": [
+    "public/media/index.html",
+    "public/media",
+    "content/tangled_thoughts/Analytic_Idealism.md",
     "content/tangled_thoughts/Holy_Mountain.md",
     "public/attachments/HolyMountain.png",
-    "content/tangled_thoughts/Analytic_Idealism.md",
     "content/tangled_thoughts/Epictetus8.md",
     "content/tangled_thoughts/Epictetus7.md",
     "content/tangled_thoughts/Epictetus6.md",
@@ -208,7 +210,6 @@
     "public/attachments/deadpool_2.jpg",
     "public/js/pdf-js/web/viewer.js.map",
     "public/js/pdf-js/web/viewer.js",
-    "public/js/pdf-js/web/viewer.html",
     "content/tangled_thoughts/Abnormal_Family.md",
     "content/about.md"
   ]

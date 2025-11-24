@@ -138,3 +138,34 @@ Nietzsche ends the book by calling Christianity the greatest of all imaginable c
 5. Priests are chandalas; anyone who associates with them should be ostracized and starved.
 6. What was formerly called “holy” and “God” is to be called criminal and cursed.
 7. “The rest follows from this.”
+
+
+---
+
+
+## Addition: Self-Actualization
+
+There is one more aspect that I did not touch on but that is of utmost importance: self-actualization. Many, if not most, things in *Antichrist* can be read as concerning self-actualization.
+
+When Nietzsche talks about how everything “good” is strong and everything “bad” is weak, “strong” means self-actualized, authentically living and being an individual, not following an ideology or party. Nietzsche thinks that whenever we follow a religion, ideology, or philosophy we compromise our own self-actualization, because instead of thinking for ourselves and relying on ourselves, we rely on someone else. For him, that is weakness. This is also what he means when he says “belief has a veto”: when we follow something, we believe in it, and when new insights come to light that conflict with what we follow, there are two options. Either the belief vetoes the new insight, or we reject what we follow. If we do the former, we are weak, slaves to others. This is what he means by “slave morality.” If we do the latter, we are strong, the *Übermensch*.
+
+Thus, all other criticism Nietzsche has of religion follows from this principle: that religions block self-actualization. Why does he care that religion gives us lies and fiction? Because they block self-actualization. Why does he think it is bad if priests have power? Because when we follow them and compromise our system of beliefs, i.e. our self-actualization.
+
+When Nietzsche talks about how the apostles made Jesus into a god out of revenge, one way of reading this is that the apostles were jealous of the authenticity and self-actualization of Christ. They wanted to be like him but could not. Their only way out was to make Jesus divine, because once he was divine they could say: “Naturally we cannot be as authentic as Christ, he was divine.” This is why Christianity’s foundation is resentment.
+
+The same is true for slave morality. Why is there a morality that protects the weak? Because the weak also want to be strong but cannot, so out of resentment they build a moral code to bind the strong and bring them down to their level.
+
+For Nietzsche, for every ideology, party, and religion, there was only ever one truly authentic person: the founder. Everything after that is derivative and inauthentic. There was only one true Christian: Jesus. Only one true Marxist: Marx. The reason is that only the founder expresses self-actualization; in them the ideology truly unfolds. Everyone who follows afterward does not act authentically.
+
+Nietzsche’s famous quote “God is dead” can also be read in this framework. Normally it is interpreted as meaning that with the advancement of science the metaphysics of religion dissolved, and since slave morality depended on that metaphysics, people are now directionless. But another interpretation is that “God” is the potential inside every human for self-actualization, and that through the domination of Christianity we have killed this self-actualizing part of ourselves.
+
+Another important aspect is that for Nietzsche suffering is a reality of our world, and religions differ in how they interpret it. In Christianity, suffering is interpreted through the fiction of sin, which encourages pity. But pity is bad, because it does not lead to self-actualization, it encourages the very condition that made one pitiable in the first place. That is why pity is life-denying.
+
+Buddhism, although he praises it in many places, also fails in this respect. It is resigned and fatalistic: it says we must accept suffering as it is, and the only way to escape it is by eliminating desire, but for Nietzsche, desires are a central part of what makes us human. In this way Buddhism, too, is life-denying.
+
+The question is not *“How do we eliminate suffering?”*
+But *“What type of person does our interpretation of suffering produce?”*
+
+Christianity → guilt-ridden, resentful, obedient
+Buddhism → passive, desireless, world-avoiding
+Nietzsche’s “higher type” → strong, self-shaping, creative, courageous
