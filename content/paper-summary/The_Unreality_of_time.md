@@ -65,3 +65,33 @@ In other words: time must apply to *events*, not objects. Objects merely have di
    * To define meta-time we need a meta-meta-time.
    * And so on.
 3. **Conclusion:** time is not real.
+
+---
+
+## Philosophy of Time
+
+### B-Theory
+
+* For B-theorists, the B-framework is a fully-fledged framework of time i.e. we can translate expression from the A-Theory to expression of the B-Theory.
+* B-theorists are **four-dimensionalists**: for them, time is merely another dimension alongside the three spatial dimensions.
+* The moment we single out with “now” or “present” is not privileged over other moments. All moments and their contents are equally real. B-theorists are **eternalists**.
+* B-theorists believe that time and **chang**e are closely related. However, it is not events that change, but **objects**. Objects come into being and pass away, gaining and losing properties.
+* Objects are never “fully present” at any one moment; rather, they are “spacetime worms,” extending across space and time. They have temporal parts, just as they have spatial parts.
+
+**Translation:**
+
+Another objection to McTaggart’s argument attempts to show that all “A-sentences” are semantically equivalent to “B-sentences.” Against McTaggart, this would mean that the A-framework is dispensable, and the B-framework by itself already constitutes a fully-fledged framework of time (B-theory).
+
+(1) It snowed yesterday. [Uttered on 27.12.2022]  (A-Theory Expression)
+(2) It snowed on 26.12.2022.  (B-Theory Expression)
+
+Or (token-reflexivity):
+(3) It is snowing presently. [Uttered on 26.12.2022]  (A-Theory Expression)
+(4) It is snowing simultaneously with this utterance.  (B-Theory Expression)
+
+
+### A-Theory
+
+* A-theorists deny that A-sentences can be reduced to B-sentences. In response to the translatability objection, they argue that sentences (1) and (2), as well as (3) and (4), are **not semantically equivalent**. For if they were, anyone who believes (1) and (3) would also have to believe (2) and (4).
+* **Coma case:** Someone wakes up on 31.12.2024 after three years in a coma, looks out of the hospital bed, and thinks, “It is snowing now.” The person does not know that they were in a coma, for how long, or even what date it is.
+* A-theorists believe that the present is “metaphysically privileged”—what is present is “more real” than what is past or future (**presentism**).

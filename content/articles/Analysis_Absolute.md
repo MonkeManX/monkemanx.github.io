@@ -1,0 +1,62 @@
+---
+title: 'Analysis of the Absolute'
+date: 2025-12-28 06:00:00
+tags: ["Philosophy"]
+draft: True
+---
+
+- Defintinons aboslute
+    - paul tillich
+    - rudolf otto
+    - plotinuis
+    - nitzsche
+- Is this purely rleigous tem? i.e. maybe this exist btu onyl for a few
+    - humanist, nationalist and s oon
+- Problems with the diefitnion: is it real?
+    - karnap papaer attack o nmetaphysics
+       - has a spoitns with that no strict analticla deifntion is psosible
+    - quins paper on analticial synthethic distincio: coherent web of beliv insetad
+- A quine look at abolsute, nmetaphysics
+    - peopel think is absoltuen ochanging statci
+    - its dynamci always hcnaign,
+- linguistic
+    - wittgenstein menaign as usage
+    - again quin paper analyitcla vs snyehtical
+        - maybe tehre is rela disiction there
+        - exmaple: bahcleors are unmaaried
+    - can be applied to aboslte
+    - counter: unciorn, linguistic illusion
+        - it may be menaingufl but ficitonal, i.e. them enaign is inside a ficiton not tsoemthign real
+        - unciorn absoltue are of ddffenre kind words, unciorn can clearly be dsesicbed abolsuten ot
+        - if lingusitic doenst work maybe emepricial liek we wil lsee next seciton.
+- Expeirentieal evidence
+    - absolute as mdoe of cocnisouness:
+        - loss of subejct obejct discitonciton
+        - feeling of unity or menaing
+        - heightened feelign for commitment
+        - doubt
+        - emotion and reaosn
+    - Nitszche emxpale greek ethaethre
+    - other exmaples
+- Differnetp citures of absolute
+    - (A) realist (tillich): rfers to soemthign real i nthe world
+    - (B) Phenomenological: refers to a specific kind of expeirnce
+        - ultimate does not mena ifninite
+        - its mena "that which i canno avoid takign seirously to the fulelst extend"
+    - (C) Fcitionalsit(carnap): term is menaingless
+- aye paper claims of philsophy
+    - why this is not rebuutal to aoslute
+    - ayers coutner menaing which uses telos
+    - tillich menaign is nto telos but eixtential
+- Phenomenology as the onyl acess
+    - meantal is what is real
+- Parfit papaer on identiy:
+    - identiy is a bundle of things
+    - disciton
+        - hig hway
+        - low way
+    - maybe bosltue alos bundles of differen things
+    - Exploring ultimate using a way
+    - explorugn ultimate b way
+    - what is correct way ot use ?
+    - if lwo way is correct shoud lwe sotp carign about sboalute

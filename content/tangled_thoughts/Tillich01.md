@@ -8,4 +8,4 @@ tags: ["quotes", "Tillich"]
 On the other hand, if ultimacy is manifest and excersises its fascinating attraction, one realizes at the same time the infinite distance of the finite from the infinite and, consequently, the negative judgment over any finite attempts to reach the infinite.
 > The feeling of being consumed in the presence of the divine is a profound expression of man's relation to the holy. It is implied in every genuine act of faith, in every state of ultimate concern.
 >
-> ~ Paul Tillich, Dynamics of Faith, §4
+> ~ Paul Tillich, Dynamics of Faith, Chapter 2 §4

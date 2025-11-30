@@ -21,4 +21,4 @@ tags: ["quotes", "Tillich"]
 >
 > Certainly, the life of a community of faith is a continuous risk, if faith itself is understood as a risk. But this is the character of the dynamic of faith.
 >
-> ~ Paul Tillich, Dynamics of Faith, §5-6
+> ~ Paul Tillich, Dynamics of Faith, Chapter 1 §5-6
