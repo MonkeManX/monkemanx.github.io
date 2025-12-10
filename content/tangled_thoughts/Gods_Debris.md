@@ -1,6 +1,6 @@
 ---
 title: "Gods Debris"
-date: 2025-12-03 08:00:00
+date: 2025-12-10 08:00:00
 tags: ["Book"]
 ---
 
