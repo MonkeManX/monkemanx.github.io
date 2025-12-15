@@ -10,7 +10,7 @@ tags: ["paper-summary", "Neuromorphic"]
 
 **Date:** 01 July 2025
 
-**Paper Type:** Training, Neuromorphics, Noise, Internet-of-Things, Data-Augmentation
+**Paper Type:** Neuromorphics, Circuits, Fault Detection
 
 **Short Abstract:**
 In this paper, the authors propose using surrogate modeling of analog neuromorphic circuits combined with gradient-based methods for Automatic Test Pattern Generation (ATPG) to detect manufacturing faults in circuits.
