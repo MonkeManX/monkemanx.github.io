@@ -12,6 +12,7 @@ tags: ["quotes", "augustine"]
 > principle of exegesis: ‘The letter kills, the spirit gives life’ (2 Cor. 3: 6).8 Those
 > texts which, taken literally, seemed to contain perverse teaching he would
 > expound spiritually, removing the mystical veil
+>
 > ~ Saint Augustine, Confession, VI (6)
 
 Also see [Dynamics of Faith](tangled_thoughts/dynamics_of_faith/).
