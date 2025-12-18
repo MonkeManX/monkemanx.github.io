@@ -1,5 +1,5 @@
 ---
-title: 'The Letter Kills, the Spirit gives Life'
+title: 'Same, Augustine, Same'
 date: 2025-12-17 15:00:00
 tags: ["quotes", "augustine"]
 ---
