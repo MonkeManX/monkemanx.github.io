@@ -32,3 +32,5 @@ Paul Tillich’s notion of faith, as described in The Dynamics of Faith, is used
 > a Pope who doubts. Let Him grant us
 > a Pope who sins and asks for
 > forgiveness. And carries on
+
+**7/10**
