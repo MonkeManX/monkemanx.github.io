@@ -40,6 +40,11 @@ I reject this notion completely. One could call me a **non-essentialist**. This 
 
 I do not want to give an exhaustive argument here for why I think essences do not exist. I have already written about this from a Heideggerian perspective in *[The Eiffel Tower Is NOT in Paris!](/articles/where_the_eiffel_tower_is_is_not_obejctive/)*. Beyond that, meditation or psychedelic experiences can provide an *empirical* (rather than purely rational) route to this insight. Similar ideas also appear in other philosophical traditions, most notably in Buddhism, where the concept of *[Śūnyatā, or emptiness](https://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81)*, expresses precisely the idea that objects and concepts lack an inner essence or hidden ultimate reality.
 
+> According to the theory of emptiness, any belief in an objective reality grounded in the assumption of intrinsic, independent existence is simply untenable.
+> All things and events, whether 'material', mental or even abstract concepts like time, are devoid of objective, independent existence ... [T]hings and events are 'empty' in that they can never possess any immutable essence, intrinsic reality or absolute 'being' that affords independence.
+>
+> ~ 14th Dalai Lama
+
 {{< img src="/attachments/chudda.webp" width="50%" figcaption="<b>Figure 2:</b> A so called Chuddha.">}}
 
 But if objects and concepts cannot be understood in terms of essence, how are we meant to do philosophy at all? Do we need to get rid of all *“What is X?”* questions? And if so, what remains?
