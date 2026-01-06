@@ -17,6 +17,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 **Metaphilosophy**
 - Why care about philosophy? A: [Philosophical assumptions and better conversations](/articles/metaphilosophy)
 - What is the aim of philosophy? A: [Philosophy as a model](/articles/metaphilosophy)
+- Do philosophical concepts have essences? A: [No essences, only relations](/articles/against_essentialism/)
 
 **Value Theory**
 - What deserves *moral consideration*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/) and [Capacity to experience Suffering](/tangled_thoughts/philosophical_ramblings_pain_conciousness_animals/)
