@@ -10,7 +10,7 @@ The last time I updated this article was on 05.02.2025. Some of the content I no
 
 {{< warning "Warning" >}}
 
-Update 21.06.205: [My Metaethical Position](#my-metaethical-position) still holds, but I have expanded it see [Philosophical Ramblings #05: Morality and Intentions ](/tangled_thoughts/philosophical_ramblings_morality/).
+Update 21.06.2025: [My Metaethical Position](#my-metaethical-position) still holds, but I have expanded it see [Philosophical Ramblings #05: Morality and Intentions ](/tangled_thoughts/philosophical_ramblings_morality/).
 
 {{< /warning >}}
 

@@ -6,7 +6,34 @@ created: 2023-12-18 06:24:57Z
 
 This is a selection of various media, I most recently enjoyed or found interesting enough to highlight here.
 
-## Movies 
+## Movies
+
+
+{{< media "/attachments/AngelsEgg1985.jpg" "Angles Egg (1985)" "https://en.wikipedia.org/wiki/Angel%27s_Egg" >}}
+See <a href="/tangled_thoughts/angles_egg/">review here</a>.
+{{< /media >}}
+
+
+{{< media "/attachments/sirat-3573757048.jpg" "Sirāt (2025) " "https://en.wikipedia.org/wiki/Sir%C4%81t" >}}
+See <a href="/tangled_thoughts/sirat/">review here</a>.
+{{< /media >}}
+
+
+{{< media "/attachments/Ichithekillerposter.jpg" "Ichi the Killer (2001)" "https://en.wikipedia.org/wiki/Ichi_the_Killer_(film)" >}}
+See <a href="/tangled_thoughts/ichi_the_killer/">review here</a>.
+{{< /media >}}
+
+
+{{< media "/attachments/Lilya_4-ever_poster.jpg" "Lilya 4 Ever (2002)" "https://en.wikipedia.org/wiki/Lilya_4-ever" >}}
+See <a href="/tangled_thoughts/lilya_4_ever/">review here</a>.
+{{< /media >}}
+
+
+{{< details "Old" "false" "nomd" >}}
+
+{{< media "/attachments/frida_images.jpeg" "Frida (2002)" "https://www.imdb.com/title/tt0120679/" >}}
+See <a href="/tangled_thoughts/frida/">review here</a>.
+{{< /media >}}
 
 {{< media "/attachments/synnedoch_new_york.jpg" "Synecdoche in New York" "https://www.imdb.com/title/tt0383028/" >}}
 A surrealist movie with the central theme of identity, it branches out to explore various other topics such as love, living, death, and the decisions one makes or doesn't make. It's an awesome movie, though it's not easy to understand and requires active participation to be fully enjoyed.
@@ -15,20 +42,6 @@ A surrealist movie with the central theme of identity, it branches out to explor
 {{< media "/attachments/lola_runs.jpg" "Run Lola Run" "https://en.wikipedia.org/wiki/Run_Lola_Run" >}}
 A little bit of representation for German movie making. It's a very chaotic movie which is a lot of fun, the main theme the movie explores is the topic of free will and how small encounters or actions can shape one's life in the most unforeseen consequences. But the movie doesn't say "You have no control of your life", instead it shows that through your own actions you can succeed.
 {{< /media >}}
-
-
-{{< media "/attachments/frida_images.jpeg" "Frida (2002)" "https://www.imdb.com/title/tt0120679/" >}}
-See <a href="/tangled_thoughts/frida/">review here</a>.
-{{< /media >}}
-
-
-{{< media "/attachments/AngelsEgg1985.jpg" "Angles Egg (1985)" "https://en.wikipedia.org/wiki/Angel%27s_Egg" >}}
-See <a href="/tangled_thoughts/angles_egg/">review here</a>.
-{{< /media >}}
-
-
-
-{{< details "Old" "false" "nomd" >}}
 
 {{< media "/attachments/beu_is_afraid.jpg" "Beu is Afraid" "https://www.imdb.com/title/tt13521006/" >}}
 
@@ -56,6 +69,10 @@ Legion follows the story of David, a man diagnosed with schizophrenia who has sp
 {{< /media >}}
 
 
+{{< media "/attachments/fAZpwffGhMQvk8SrrMnILcXtbQH-2833300379.jpg" "True Detective" "https://www.imdb.com/title/tt2356777/" >}}
+All seasons are excellent (except season 2, which is merely good). Each season is stylistically and thematically unique, and every season has at least one moment where I thought: this is so unique, I’ve never seen anyone do something like this before.
+{{< /media >}}
+
 ## Anime
 
 {{< media "/attachments/Hinamatsuri.jpg" "Hinamatsuri" "https://myanimelist.net/anime/36296/Hinamatsuri" >}}
@@ -63,7 +80,7 @@ A hilarious slice-of-life anime that is also incredibly cute. It’s about a yak
 {{< /media >}}
 
 
-## Books 
+## Books
 
 
 {{< media "/attachments/The_Things_They_Carried.jpg" "The Thing They Carried" "https://www.goodreads.com/book/show/133518.The_Things_They_Carried" >}}
@@ -86,7 +103,7 @@ See <a href="/tangled_thoughts/stoner/">review here</a>.
 {{< /media >}}
 
 
-## Short stories/Fables 
+## Short stories/Fables
 
 {{< media "/attachments/IHaveNoMouth.jpg" "I Have No Mouth, and I Must Scream" "https://www.goodreads.com/book/show/415459.I_Have_No_Mouth_I_Must_Scream" >}}
 Is about technological misuse and the human resilience in the face of existential horror.
@@ -94,7 +111,7 @@ Is about technological misuse and the human resilience in the face of existentia
 
 
 {{< media "/attachments/lastquestion.jpg" "The Last Question" "https://users.ece.cmu.edu/~gamvrosi/thelastq.html" >}}
-Explores the limits of scientific advancement and knowledge. 
+Explores the limits of scientific advancement and knowledge.
 {{< /media >}}
 
 

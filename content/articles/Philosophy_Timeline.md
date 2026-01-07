@@ -421,7 +421,7 @@ Most widely known for developing the theory of *Utilitarianism*, the belief that
 
 **1889 CE [Martin Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger)**<br>
 **Media:** [My Dinner with Andre](/tangled_thoughts/dinner_with_andre/)<br>
-**Articles:** [The Eiffel Tower is NOT in Paris!](articles/where_the_eiffel_tower_is_is_not_obejctive/)<br>
+**Articles:** [The Eiffel Tower is NOT in Paris!](/articles/where_the_eiffel_tower_is_is_not_obejctive/)<br>
 **Summary:**
 Although Heidegger himself was not an existentialist, existentialism can be seen as a child of his philosophy. He borrowed concepts from Kierkegaard but reformulated them in a unique way. Heidegger’s greatest work, *Being and Time*, focuses on the fundamental question: what does "being" mean? Instead of looking outward at the external world, he approached the problem by turning inward, focusing on human experience.
 

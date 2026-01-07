@@ -1,5 +1,5 @@
 ---
-title: 'Quest of Fire'
+title: 'Quest of Fire (1981)'
 date: 2025-12-18 20:00:00
 tags: ["Movie"]
 ---
