@@ -10,8 +10,7 @@ tags: ["paper-summary", "philosophy"]
 
 **Deate:** January 2023
 
-**Paper Type:** Philosophy, Philosophy of Politics, ideology, Political Epistemology i
-
+**Paper Type:** Philosophy, Philosophy of Politics, ideology, Political Epistemology
 
 **Short Abstract:**
 Populism is a highly contested term. This term makes two contributions: first, it offers a way to evaluate contested concepts like populism; second, it proposes that populism can be understood as a coherent ideology adhering to four foundational principles.
