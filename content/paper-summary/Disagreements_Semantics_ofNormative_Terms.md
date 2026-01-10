@@ -13,10 +13,7 @@ tags: ["paper-summary", "philosophy"]
 **Paper Type:**  Conceptual Engineering, Meta-Ethics, Moral Expressivism, Moral Language
 
 **Short Abstract:**
-
 This paper argues that genuine disagreement in normative terms (such as *good*) does not automatically imply that speakers share the same meaning. Instead, it claims that many disagreements are cases of **metalinguistic negotiation**, where speakers put forward different definitions or standards for a term because they want others to adopt them.
-
----
 
 ## **0. Introduction**
 
