@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #06: Heidegger, Beliefs and Choosing Ones Values"
 date: 2025-07-03 16:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 ## 1. What is Belief?

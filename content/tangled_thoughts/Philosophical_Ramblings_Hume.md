@@ -1,7 +1,7 @@
 ---
 title: 'Philosophical Ramblings #02: David Hume and Empiricism'
 date: 2025-03-24 15:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 David Hume is an empiricist who believes that all of our knowledge stems from experience. I did a summary of parts of his book [here](/paper-summary/enquiry_human_understanding/).

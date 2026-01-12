@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #00: On Being a Stoic"
 date: 2025-02-15 20:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 Being a Stoic in its true sense—rather than the crude distortion of pop culture—is difficult, not because of the practice itself, but because you can never be certain whether you truly are one or merely masquerading as one.
