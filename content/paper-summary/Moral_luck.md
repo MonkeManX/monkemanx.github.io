@@ -4,6 +4,11 @@ date: 2026-01-12 14:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
+{{< warning "Warning">}}
+Do not read this paper summary it is ass, read the paper instead or not. Because I do think the paper is ass too, not particular because of the execution but the topic.
+{{< /warning>}}
+
+
 **Paper Title:** Moral Luck
 
 **Link to Paper:** https://philpapers.org/rec/WILMLP-3
