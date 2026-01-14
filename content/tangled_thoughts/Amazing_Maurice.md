@@ -1,7 +1,7 @@
 ---
 title: "The Amazing Maurice and His Educated Rodents"
 date: 2025-07-15 10:00:00
-tags: ["Book"]
+tags: ["Book", "Discworld"]
 ---
 
 {{< book image="/attachments/amazing_maurice.jpg" >}}
