@@ -17,3 +17,5 @@ Maybe it was a kind of dream all along, like the terrorist being some kind of mu
 Maybe it’s a psychological thriller, like it’s all in his mind like the movie Boes is afraid? Also, am I the only one who thinks it has Dark Souls elements, with the huge samurai and the little guys with baby masks, holding chains in their hands? What is this ending?????
 
 Oh, okay. It’s a tragedy. That makes it a lot better than the apparently happy ending where they drive off with their truck into nature. **7/10**
+
+**Edit:** I feel like the movie lends itself very much to a Nietzschean lens of interpretation. Maybe I’ll formalize this someday in more detail, but rapid-fire, some themes: Sam’s dream life as a slave-revolt of the imaginary; Jill as alter/inversion/value-transvaluation; bureaucracy as late-modern Apollo; ressentiment; Brazil’s bureaucracy as a Nietzschean “decadent culture.”
