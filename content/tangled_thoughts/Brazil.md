@@ -19,3 +19,23 @@ Maybe it’s a psychological thriller, like it’s all in his mind like the movi
 Oh, okay. It’s a tragedy. That makes it a lot better than the apparently happy ending where they drive off with their truck into nature. **7/10**
 
 **Edit:** I feel like the movie lends itself very much to a Nietzschean lens of interpretation. Maybe I’ll formalize this someday in more detail, but rapid-fire, some themes: Sam’s dream life as a slave-revolt of the imaginary; Jill as alter/inversion/value-transvaluation; bureaucracy as late-modern Apollo; ressentiment; Brazil’s bureaucracy as a Nietzschean “decadent culture.”
+
+
+> Brazil
+> When hearts were entertained in June
+> We stood beneath an amber moon
+> And softly whispered ‘some day soon’
+>
+> We kissed and clung together
+> Then
+> Tomorrow was another day
+> The morning found me miles away
+> With still a million things to say
+>
+> Now
+> When twilight beams the skies above
+> Recalling thrills of our love
+> There’s one thing I’m certain of
+>
+> Return I will
+> To old Brazil
