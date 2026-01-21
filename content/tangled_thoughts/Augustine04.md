@@ -29,4 +29,4 @@ tags: ["quotes", "augustine"]
 > easier to doubt whether I was myself alive than that there is no truth ‘understood
 > from the things that are made’ (Rom. 1: 20).
 >
-> Confession, VII (16)
+> ~ Confession, VII (16)
