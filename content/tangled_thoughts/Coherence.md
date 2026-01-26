@@ -7,8 +7,6 @@ tags: ["Movie"]
 {{< thought_image image="/attachments/coherence.jpg" >}}
 
 
-
-
 **Stream of consciousness, ending spoiler:**
 What a garbage movie. Amateurish acting, shit cinematography, no cool visuals. Shot like a cheap horror movie: oh look, even the classic eerie music is there, hooray. Also, we’re in a horror movie, so let’s all separate and go our separate ways; this won’t go wrong, surely.
 
