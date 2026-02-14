@@ -1,5 +1,5 @@
 ---
-title: "Lord of War(2005)"
+title: "Lord of War (2005)"
 date: 2026-02-02 22:00:00
 tags: ["Movie"]
 ---
