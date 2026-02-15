@@ -30,6 +30,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 **Epistemology**
 - What is *knowledge*? A: [Contextualism](/articles/what_is_knowledge/)
+- Wat is truth? A: [Human made myths](/paper-summary/truth_lies_in_nonmoral_sense/)
 
 **Metaphysics**
 - Do we have *free will*? A: [No](/articles/about_freedom/#4-what-about-free-will)
