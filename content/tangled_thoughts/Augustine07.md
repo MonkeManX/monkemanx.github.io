@@ -1,5 +1,5 @@
 ---
-title: 'Augsutine on what was before God'
+title: 'Augustine on what was before God'
 date: 2026-02-19 12:00:00
 tags: ["quotes", "augustine"]
 ---
