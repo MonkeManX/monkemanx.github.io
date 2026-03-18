@@ -12,13 +12,13 @@ Since my last article on my [Homelab](/articles/homelab_upgrade/), my Homelab ha
 
 With the increasing size of my homelab, I decided it was no longer acceptable for all my equipment to just lie around loosely connected with each other. Instead, I wanted to tidy things up by having one central place where I could put all my equipment securely mounted, but also easily movable if needed.
 
-Thus, I decided that I needed a network/server rack — basically a closet where one can mount all their equipment. But sadly, I don’t have the time or money for a big, beautiful server rack (there’s a joke in there somewhere). So, something small was needed. I first looked around on Amazon and then AliExpress for something affordable but still big enough to fit my SFF (small form factor) server PC. Most options were either too expensive or not big enough. I found something on [AliExpress](https://shorturl.at/Ctl7q), but then decided against it because even though I was already paying nearly 80 bucks, this looked too cheap.
+Thus, I decided that I needed a network/server rack: basically a closet where one can mount all their equipment. But sadly, I don’t have the time or money for a big, beautiful server rack (there’s a joke in there somewhere). So, something small was needed. I first looked around on Amazon and then AliExpress for something affordable but still big enough to fit my SFF (small form factor) server PC. Most options were either too expensive or not big enough. I found something on [AliExpress](https://shorturl.at/Ctl7q), but then decided against it because even though I was already paying nearly 80 bucks, this looked too cheap.
 
 
 {{< img src="/attachments/server_rack_meme.jpg" width="60%" >}}
 
 
-This is when I came across the [DIY Lack Rack](https://wiki.eth0.nl/index.php/LackRack), an invention more than 20 years old and a trusty friend of every networking enthusiast. The more I read about it, the more I realized that building one’s first baby Lack Rack is almost a rite of passage for any homelabbing zealot. I needed to build one — everything in my life had led up to this point; it was my imperative.
+This is when I came across the [DIY Lack Rack](https://wiki.eth0.nl/index.php/LackRack), an invention more than 20 years old and a trusty friend of every networking enthusiast. The more I read about it, the more I realized that building one’s first baby Lack Rack is almost a rite of passage for any homelabbing zealot. I just needed to build one.
 
 So, what is a DIY Lack Rack? Despite how fancy it sounds, it is quite simple: multiple side tables from IKEA called LACK, stacked together. Why these particular tables from IKEA? They have two benefits: first, they are cheap; second, the space between the legs of the table is exactly 19 inches, which is the standard width for most server and networking equipment.
 
@@ -66,7 +66,7 @@ We are almost done! Now, we can add the wheels to the rack to make the whole thi
 {{< img src="/attachments/DIY_Lack_Rack_6.jpg" width="70%"  >}}
 
 
-Lastly, we can add all of our equipment to the rack. If you have server-mounted equipment, you can screw it into the legs, but be careful — the legs are only really stable enough to hold weight at the top. So, if you want to screw multiple devices into the rack, either use more tables and always screw [them in at the top](https://bakerstreetforensics.com/2022/02/28/diy-home-network-rack-the-lack-rack/), or screw them in from the bottom up so they rest on top of each other to support the weight.
+Lastly, we can add all of our equipment to the rack. If you have server-mounted equipment, you can screw it into the legs, but be careful the legs are only really stable enough to hold weight at the top. So, if you want to screw multiple devices into the rack, either use more tables and always screw [them in at the top](https://bakerstreetforensics.com/2022/02/28/diy-home-network-rack-the-lack-rack/), or screw them in from the bottom up so they rest on top of each other to support the weight.
 
 Since I don’t have any rack-mounted equipment, I just used tape to securely stick everything to the tables.
 

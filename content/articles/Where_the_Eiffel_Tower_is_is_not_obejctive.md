@@ -16,9 +16,9 @@ Also important is, [*On Sense and Reference*](/paper-summary/on_senses_and_refer
 
 A few days ago, I had an argument with fellow students about whether the statement *“The Eiffel Tower is in Paris”* is subjective or not. Most of them said it was an objective sentence, while I argued that it has subjective characteristics. Unfortunately, I wasn’t really able to convince them; partly because my argument was rather unstructured, even though I still believe it holds.
 
-I want to take the opportunity in this article to explain why this statement and other statements that at first glance appear entirely objective—actually contain elements of subjectivity. More broadly, the central thesis of this article is:
+I want to take the opportunity in this article to explain why this statement and other statements that at first glance appear entirely objective, actually contain elements of subjectivity. More broadly, the central thesis of this article is:
 
-> *Dasein*, i.e., human existence—this special form of subjectivity—is a necessary condition for all meaning and purpose. Meaning and purpose do not make sense in a context devoid of *Dasein*; *Dasein* precedes them.
+> *Dasein*, i.e., human existence, this special form of subjectivity, is a necessary condition for all meaning and purpose. Meaning and purpose do not make sense in a context devoid of *Dasein*; *Dasein* precedes them.
 
 Before I begin the actual argument, I want to clarify that I do **not** think the statement *“The Eiffel Tower is in Paris”* is purely subjective. On the contrary, I would say that it is **mostly** objective. What I’m arguing is simply that it is **not purely** objective, and that there is some inherent subjectivity embedded in it. Even if you already agree with that point, I believe the broader argument I make here is still interesting and worth considering.
 
@@ -31,7 +31,7 @@ One more note: Throughout this text, I use terms like *meaning*, *purpose*, *fun
 
 I want to begin with a simple example that most people would likely agree with, and then work my way toward the main argument.
 
-When we look at a knife and ask ourselves what its function is, most people would say that its function is to cut things. We use knives to cut bread, tomatoes, and much more—and this is indeed their typical function. But we can also use a knife to open a beer by levering off the cap. We might even (though unwisely) use it as a hammer to drive a nail into the wall, or as a wedge to stabilize a wobbly chair. Still, these use cases are clearly suboptimal and not the *true* function of a knife. Why?
+When we look at a knife and ask ourselves what its function is, most people would say that its function is to cut things. We use knives to cut bread, tomatoes, and much more and this is indeed their typical function. But we can also use a knife to open a beer by levering off the cap. We might even (though unwisely) use it as a hammer to drive a nail into the wall, or as a wedge to stabilize a wobbly chair. Still, these use cases are clearly suboptimal and not the *true* function of a knife. Why?
 
 Because if we had wanted a tool to open beer bottles, we would have created a bottle opener. If we had wanted to hammer nails, we would have designed a hammer. And if we wanted something to stabilize a chair, we definitely wouldn’t have made it sharp and dangerous.
 
@@ -41,9 +41,9 @@ I think most people are open to this kind of argument and would agree that other
 
 We can see this more clearly if we imagine a future in which humanity is extinct and a new intelligent alien species, very different from us—has evolved on Earth. If they were to conduct archaeology and find a knife, isolated from all context, and ask themselves what it was for, it’s unlikely they’d deduce its exact purpose without reference to human existence.
 
-They might think humans were 20 meters tall and used knives as toothpicks. They could believe it was a musical instrument or even an idol used in rituals. A very clever alien archaeologist might guess that it was used for cutting—but they would never know, independently of *Dasein*, exactly *what* we cut with it, or the full scope of its meaning and cultural significance. For instance, they wouldn’t know we used it in the “knife game,” where one places the palm on the table and rapidly stabs between the fingers (and how would they, if they don’t even know we *had* fingers?).
+They might think humans were 20 meters tall and used knives as toothpicks. They could believe it was a musical instrument or even an idol used in rituals. A very clever alien archaeologist might guess that it was used for cutting, but they would never know, independently of *Dasein*, exactly *what* we cut with it, or the full scope of its meaning and cultural significance. For instance, they wouldn’t know we used it in the “knife game,” where one places the palm on the table and rapidly stabs between the fingers (and how would they, if they don’t even know we *had* fingers?).
 
-This is because a knife’s function isn’t simply what it was designed for in isolation—it includes its associations and uses within the broader context of human life. As Wittgenstein puts it:
+This is because a knife’s function isn’t simply what it was designed for in isolation, it includes its associations and uses within the broader context of human life. As Wittgenstein puts it:
 
 > For a large class of cases—though not for all—in which we employ the word 'meaning' it can be defined thus: the meaning of a word is its use in the language.
 >
@@ -67,7 +67,7 @@ We can think of subjectivity and objectivity not as binary categories but as poi
 
 So just as we cannot understand the meaning or function of a knife apart from *Dasein*, we also cannot understand the meaning or purpose of consciousness if we abstract it from its foundation: human existence.
 
-This leads to a profound implication: If we investigate the world and our lives purely through the subject-object lens, we will not find meaning or purpose. Only through *Dasein*—through subjective, lived experience, embedded in culture, language, and context, does meaning emerge.
+This leads to a profound implication: If we investigate the world and our lives purely through the subject-object lens, we will not find meaning or purpose. Only through *Dasein*: through subjective, lived experience, embedded in culture, language, and context, does meaning emerge.
 
 Which leads us to the conclusion:
 
@@ -86,7 +86,7 @@ This difference can partly be traced back to historical context. During the Roma
 
 This example shows clearly how the **meaning of language arises from the subjective and historical context of its speakers**.
 
-The influence of *Dasein* on language is also evident in more recent developments. Words like “internet” or “computer” only came into use because the corresponding technologies were invented. Interestingly, the word “computer” originally referred to any device capable of computation—including calculators. Today, we reserve the term for desktops or laptops, and calling a simple calculator a “computer” feels outdated or strange. What defines a word’s meaning is its use and that use is shaped by people, by *Dasein*.
+The influence of *Dasein* on language is also evident in more recent developments. Words like “internet” or “computer” only came into use because the corresponding technologies were invented. Interestingly, the word “computer” originally referred to any device capable of computation, including calculators. Today, we reserve the term for desktops or laptops, and calling a simple calculator a “computer” feels outdated or strange. What defines a word’s meaning is its use and that use is shaped by people, by *Dasein*.
 
 That language is deeply subjective is also evident in poetry. Some people love certain poets, while others find their work dull or inaccessible. We can analyze a poem through an objective-subjective lens, examining literary devices, meter, symbolism, and cultural references. For example, trochaic meter is often associated with ominous or serious tones due to its falling rhythm, while anapestic meter feels more playful because of its rising rhythm.
 
@@ -126,7 +126,7 @@ If we take the objection more seriously, it likely appeals to the *principle of 
 
 In this case, the more complex, subjectivist account offers **greater explanatory power**. That is, it explains phenomena that a purely objective model cannot, especially the ambiguity, flexibility, and context-dependence inherent in how we use language.
 
-Recall the earlier example of poetry: If language were purely objective, we would be unable to explain why a technically well-crafted poem can be experienced as dull, while a structurally “weaker” poem can move someone deeply. This discrepancy is only understandable when we acknowledge the subjective component of linguistic meaning. The same logic applies, albeit to a lesser extent, even to factual, seeming sentences like “The Eiffel Tower is in Paris.” As I argued earlier, the **formulation**, **interpretation**, and **context** of such a sentence involve human choices and human experience — i.e., Dasein.
+Recall the earlier example of poetry: If language were purely objective, we would be unable to explain why a technically well-crafted poem can be experienced as dull, while a structurally “weaker” poem can move someone deeply. This discrepancy is only understandable when we acknowledge the subjective component of linguistic meaning. The same logic applies, albeit to a lesser extent, even to factual, seeming sentences like “The Eiffel Tower is in Paris.” As I argued earlier, the **formulation**, **interpretation**, and **context** of such a sentence involve human choices and human experience i.e. Dasein.
 
 ### The Fregean Distinction: Sense and Reference
 
@@ -152,9 +152,9 @@ To that, I would answer: **yes**. Concepts like “Eiffel Tower,” “Paris,”
 
 When we say “is in,” we are not describing a neutral, mathematical spatial relation. The phrase carries **pragmatic, embodied, and lived meanings**: how we name things, how we orient ourselves in space, and most importantly, how we **navigate** and **inhabit** space.
 
-Now imagine an alien species radically different from us—not only in appearance, but in sensory apparatus, internal structure, and existential mode. Perhaps they perceive the world through smell, magnetic fields, or air pressure gradients. Maybe they’re not even three-dimensional, or exist as distributed cosmic network, —a kind of non-localized, fluid presence that doesn’t recognize “here” and “there” in any meaningful way.
+Now imagine an alien species radically different from us, not only in appearance, but in sensory apparatus, internal structure, and existential mode. Perhaps they perceive the world through smell, magnetic fields, or air pressure gradients. Maybe they’re not even three-dimensional, or exist as distributed cosmic network, a kind of non-localized, fluid presence that doesn’t recognize “here” and “there” in any meaningful way.
 
-For such beings, the very concept of “Paris” might not exist. Nor would “Eiffel Tower.” Even the relation “is in” might be meaningless. Perhaps their entire spatial logic is topological, or vibrational—totally alien to us.
+For such beings, the very concept of “Paris” might not exist. Nor would “Eiffel Tower.” Even the relation “is in” might be meaningless. Perhaps their entire spatial logic is topological instead, totally alien to us.
 
 If a member of this species were to say, “The Eiffel Tower is *not* in Paris,” while we say, “It *is*,” we wouldn’t necessarily say one of us is wrong. Rather, we would recognize that their **mode of being**, their *Dasein*, discloses a different world. The meaning of “is in” depends on the existential structure of the being using it. **Space**, then, is not an absolute container, but something interpreted and understood from within a particular mode of existence.
 
@@ -168,13 +168,13 @@ But this does not make the ant wrong and us right, it simply reveals a different
 
 So just as reason is grounded in *Dasein*, so too are spatial relations. There is no neutral, God’s eye view from which to assess what space “really” is. No disembodied place from which to say definitively whether a tower is “in” a city.
 
-Thus, even the matter of fact—“The Eiffel Tower is in Paris”—is dependent on **our human mode of being**, on our way of perceiving, naming, navigating, and disclosing the world. There are no facts outside of a *world*, and there is no world that is not already for a *whom*—a being for whom things appear meaningfully.
+Thus, even the matter of fact “The Eiffel Tower is in Paris” is dependent on **our human mode of being**, on our way of perceiving, naming, navigating, and disclosing the world. There are no facts outside of a *world*, and there is no world that is not already for a *whom*—a being for whom things appear meaningfully.
 
 
 ## Conclusion
 
-To put it simply: **“The Eiffel Tower is in Paris” seems objective**, but it only makes sense within a world in which landmarks, places, and spatial relations show up as meaningful. That world is disclosed through *Dasein*—through human existence.
+To put it simply: **“The Eiffel Tower is in Paris” seems objective**, but it only makes sense within a world in which landmarks, places, and spatial relations show up as meaningful. That world is disclosed through *Dasein, through human existence.
 
-Different kinds of beings, aliens, ants—disclose different worlds, in which even concepts like “location” or “fact” may not appear at all. And if what counts as a “fact” depends on the kind of being, then there are no pure matters of fact. There is only **meaning**, grounded in the structures of the respective being.
+Different kinds of beings, aliens, ants disclose different worlds, in which even concepts like “location” or “fact” may not appear at all. And if what counts as a “fact” depends on the kind of being, then there are no pure matters of fact. There is only **meaning**, grounded in the structures of the respective being.
 
 {{< img src="/attachments/1747932875065233.jpg" width="70%" >}}

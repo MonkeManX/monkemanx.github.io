@@ -20,7 +20,7 @@ Finally, I should mention that I am more familiar with the Greek philosophical t
 
 [Meister Eckhart](https://en.wikipedia.org/wiki/Meister_Eckhart) was a 13th-century German theologian, Catholic priest, and member of the [Dominican Order](https://en.wikipedia.org/wiki/Dominican_Order).
 
-He is best known for his sermons, which he delivered in German to lay audiences—an unusual choice at a time when Latin was the standard language of the clergy. His sermons are deeply mystical, characterized by rich and often poetic language. Although he was accused of heresy by the Church, many of the charges were later dropped.
+He is best known for his sermons, which he delivered in German to lay audiences; an unusual choice at a time when Latin was the standard language of the clergy. His sermons are deeply mystical, characterized by rich and often poetic language. Although he was accused of heresy by the Church, many of the charges were later dropped.
 
 
 ## Sermon 9
@@ -80,7 +80,7 @@ If I take a segment of time, it is neither today nor yesterday. But if I take th
 
 
 
-Eckhart states: *"He is in all creatures, He is also beyond them;"* — what does he mean by that?
+Eckhart states: *"He is in all creatures, He is also beyond them;"*, what does he mean by that?
 
 Eckhart believes that God is fundamentally different from everything else that exists. Asking questions like "Where does God exist?" (Place) or "Did God always exist?" (Time) doesn’t make any sense. It's like asking, *"Is the number four blue?"* — a [category error](https://en.wikipedia.org/wiki/Category_mistake). Just as numbers and colors belong to different categories, so too do God, time, and space. God is beyond all of them.
 
