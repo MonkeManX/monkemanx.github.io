@@ -17,7 +17,7 @@ enableInlineShortcodes = true
 
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime"]

@@ -18,16 +18,16 @@
 
        {{ if eq .Section "articles" }}
           <div class="pinned-content">
-              
+
             {{ .Summary }}
 
             <a class="read-more-link" href="{{ .RelPermalink }}">Read more</a>
- 
-          </div>  
+
+          </div>
         {{ else if eq .Section "tangled_thoughts"}}
           <div class="pinned-content">
             {{ .Content }}
-          </div>  
+          </div>
         {{ end }}
 
         <div class="pinned-tags">
@@ -41,6 +41,314 @@
     {{ end }}
   </ul>
 
+
+<section class="kg-shell">
+  <div class="kg-header">
+    <h1>Knowledge Graph</h1>
+  </div>
+
+  <div class="kg-graph-wrap">
+    <div class="kg-toolbar">
+      <button id="kg-zoom-in" class="kg-icon-btn" type="button" aria-label="Zoom in" title="Zoom in">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v14M5 12h14" />
+        </svg>
+      </button>
+      <button id="kg-zoom-out" class="kg-icon-btn" type="button" aria-label="Zoom out" title="Zoom out">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h14" />
+        </svg>
+      </button>
+      <button id="kg-popout" class="kg-icon-btn" type="button" aria-label="Pop out" title="Pop out">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14 3h7v7M21 3l-8 8" />
+          <path d="M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="knowledge-graph"></div>
+  </div>
+</section>
+
+<div id="kg-backdrop" class="kg-backdrop" hidden></div>
+
+<script src="https://unpkg.com/cytoscape@3.30.3/dist/cytoscape.min.js"></script>
+<script>
+(async () => {
+  const res = await fetch("{{ "/index.json" | relURL }}");
+  const graphData = await res.json();
+
+  const graphEl = document.getElementById("knowledge-graph");
+  const backdropEl = document.getElementById("kg-backdrop");
+  const popoutBtn = document.getElementById("kg-popout");
+  const zoomInBtn = document.getElementById("kg-zoom-in");
+  const zoomOutBtn = document.getElementById("kg-zoom-out");
+
+  let isPopout = false;
+
+  const cy = cytoscape({
+    container: graphEl,
+    elements: [...graphData.nodes, ...graphData.edges],
+    wheelSensitivity: 0.2,
+    minZoom: 0.3,
+    maxZoom: 2.5,
+    layout: {
+        name: "cose",
+        animate: false,
+        fit: true,
+        padding: 120,
+        nodeRepulsion: 1000000,
+        idealEdgeLength: 320,
+        edgeElasticity: 120,
+        gravity: 0.0005,
+        numIter: 3000
+    },
+    style: [
+      {
+        selector: "node",
+        style: {
+          "background-color": "#6b7280",
+          "label": "data(label)",
+          "color": "#111827",
+          "font-size": 30,
+          "width": 40,
+          "height": 40,
+          "text-outline-width": 3,
+          "text-outline-color": "#ffffff",
+          "border-width": 2,
+          "border-color": "#ffffff",
+          "text-background-color": "#ffffff",
+          "text-background-opacity": 1,
+          "text-background-padding": 2
+        }
+      },
+      {
+        selector: "edge",
+        style: {
+          "width": 5,
+          "line-color": "rgba(107, 114, 128, 0.45)",
+          "curve-style": "bezier",
+          "opacity": 0.9
+        }
+      },
+      {
+        selector: "node.focus",
+        style: {
+          "background-color": "#f59e0b",
+          "width": 50,
+          "height": 50,
+          "font-size": 45,
+          "font-weight": 700,
+          "text-valign": "top",
+          "text-margin-y": -18
+        }
+      },
+      {
+        selector: "node.neighbor",
+        style: {
+          "background-color": "#93c5fd",
+          "width": 44,
+          "height": 44,
+          "font-size": 35
+        }
+      },
+      {
+        selector: "edge.edge-highlight",
+        style: {
+          "line-color": "#f59e0b",
+          "width": 8
+        }
+      },
+      {
+        selector: ".faded",
+        style: {
+          "opacity": 0.12
+        }
+      }
+    ]
+      });
+
+  function clearHighlight() {
+    cy.elements().removeClass("faded focus neighbor edge-highlight");
+  }
+
+  function highlightNeighborhood(node) {
+    clearHighlight();
+
+    const neighborhood = node.closedNeighborhood();
+    const neighbors = node.neighborhood().nodes();
+
+    cy.elements().difference(neighborhood).addClass("faded");
+    node.addClass("focus");
+    neighbors.addClass("neighbor");
+    node.connectedEdges().addClass("edge-highlight");
+  }
+
+  function refreshGraph() {
+    cy.resize();
+    cy.fit(undefined, 80);
+  }
+
+  function setPopout(open) {
+    isPopout = open;
+    document.body.classList.toggle("kg-popout-open", open);
+    backdropEl.hidden = !open;
+    popoutBtn.classList.toggle("is-active", open);
+
+    requestAnimationFrame(() => {
+      refreshGraph();
+    });
+  }
+
+  zoomInBtn.addEventListener("click", () => {
+    cy.zoom({ level: cy.zoom() * 1.2, renderedPosition: { x: cy.width() / 2, y: cy.height() / 2 } });
+  });
+
+  zoomOutBtn.addEventListener("click", () => {
+    cy.zoom({ level: cy.zoom() / 1.2, renderedPosition: { x: cy.width() / 2, y: cy.height() / 2 } });
+  });
+
+  popoutBtn.addEventListener("click", () => {
+    setPopout(!isPopout);
+  });
+
+  backdropEl.addEventListener("click", () => {
+    setPopout(false);
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isPopout) setPopout(false);
+  });
+
+  window.addEventListener("resize", refreshGraph);
+
+  cy.on("tap", "node", (evt) => {
+    const url = evt.target.data("url");
+    if (url) window.location.href = url;
+  });
+
+  cy.on("mouseover", "node", (evt) => {
+    highlightNeighborhood(evt.target);
+  });
+
+  cy.on("mouseout", "node", () => {
+    clearHighlight();
+  });
+
+  cy.on("tap", (evt) => {
+    if (evt.target === cy) clearHighlight();
+  });
+})();
+</script>
+
+<style>
+  .kg-shell {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background: #ffffff;
+  }
+
+  .kg-header h1,
+  .kg-header p {
+    color: #111827;
+  }
+
+  .kg-graph-wrap {
+    position: relative;
+  }
+
+  #knowledge-graph {
+    width: 100%;
+    height: min(85vh, 1100px);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .kg-toolbar {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 20;
+    display: flex;
+    gap: 8px;
+    pointer-events: auto;
+  }
+
+  .kg-icon-btn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(17, 24, 39, 0.12);
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #111827;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .kg-icon-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .kg-icon-btn.is-active {
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .kg-icon-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .kg-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  body.kg-popout-open {
+    overflow: hidden;
+  }
+
+  body.kg-popout-open #knowledge-graph {
+    position: fixed;
+    inset: 10%;
+    z-index: 999;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.18);
+  }
+
+  body.kg-popout-open .kg-toolbar {
+    position: fixed;
+    top: 36px;
+    left: 36px;
+    z-index: 1000;
+  }
+</style>
+
+
+
+
+
   <h2> Most Recent </h2>
   <div class="combined-div">
     {{ range first 3 (where .Site.RegularPages "Type" "in" (slice "articles" "paper-summary" "tangled_thoughts")).ByPublishDate.Reverse }}
@@ -48,4 +356,5 @@
     {{ end }}
   </div>
 </div>
-{{ end }}  
+
+{{ end }}

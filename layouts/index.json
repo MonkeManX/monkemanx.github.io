@@ -1,0 +1,39 @@
+{{- $edges := slice -}}
+{{- $connected := dict -}}
+
+{{- range $source := .Site.RegularPages -}}
+  {{- $sourceID := $source.RelPermalink -}}
+  {{- $raw := $source.RawContent | default "" -}}
+
+  {{- range $target := .Site.RegularPages -}}
+    {{- $targetID := $target.RelPermalink -}}
+
+    {{- if and (ne $sourceID $targetID) (in $raw $targetID) -}}
+      {{- $edges = $edges | append (dict
+        "data" (dict
+          "source" $sourceID
+          "target" $targetID
+        )
+      ) -}}
+
+      {{- $connected = merge $connected (dict $sourceID true $targetID true) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $nodes := slice -}}
+{{- range .Site.RegularPages -}}
+  {{- $id := .RelPermalink -}}
+  {{- if index $connected $id -}}
+    {{- $nodes = $nodes | append (dict
+      "data" (dict
+        "id" $id
+        "label" .Title
+        "url" .RelPermalink
+        "tags" (default (slice) .Params.tags)
+      )
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- dict "nodes" $nodes "edges" $edges | jsonify -}}
