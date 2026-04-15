@@ -2,7 +2,7 @@
 title: 'A Commentary on the 9th Sermon of Meister Eckhart'
 date: 2025-05-23 08:00:00
 tags: ["Philosophy", "Theology"]
-pinned: True
+pinned: false
 ---
 
 {{< info "Info">}}

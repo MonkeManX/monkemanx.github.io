@@ -79,9 +79,14 @@ To improve clarity and grammar, some of the texts on this site have been proofre
 
 # Contact
 
-Feel free to contact me, I am happy about every email I receive: monkeman@cock.li
+Feel free to contact me, I am happy about every email I receive: monkeman@pissmail.com
 
-If you want to encrypt your email use my
+{{< details "Old Contact Data" "false" >}}
+My old contact data, both the email and its associated PGP key, are no longer valid.
+My old email was monkeman@cock.li, and the PGP key was:
+
 {{< rawhtml >}}
 <a download href="/monkeman_public.asc">public PGP Key</a>.
 {{</ rawhtml >}}
+
+{{< /details >}}
