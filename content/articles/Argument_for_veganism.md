@@ -259,6 +259,6 @@ The following story illustrates this idea. It should not be taken literally, but
 ---
 
 Summary:
-- The normative force morality has over to you that means the pwoer morality has to bring you to do certain things or not, this normatvie force is determiend by your desire to be moral
-- This desire to be moral can be changed, you can have the seocnd order desire to not be moral i.e. the desire to not desire to be moral
-- There is no objective criteria of why one should be moral
+- The normative force that morality has over you, that is the power morality has to motivate you to do (or not do) certain things, is determined by your desire to be moral.
+- This desire to be moral can be changed. You can have a second-order desire not to be moral (i.e., the desire not to desire to be moral).
+- There is no objective criterion for why one should be moral, that is there is no norm for choosing norms.
