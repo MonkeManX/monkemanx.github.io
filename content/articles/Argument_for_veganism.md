@@ -254,3 +254,11 @@ The following story illustrates this idea. It should not be taken literally, but
 > very skill in means.
 >
 > ~ Upāyakauśalya Sūtra, Murder with Skill in Means: the Story of the Compassionate Ship’s Captain
+
+
+---
+
+Summary:
+- The normative force morality has over to you that means the pwoer morality has to bring you to do certain things or not, this normatvie force is determiend by your desire to be moral
+- This desire to be moral can be changed, you can have the seocnd order desire to not be moral i.e. the desire to not desire to be moral
+- There is no objective criteria of why one should be moral

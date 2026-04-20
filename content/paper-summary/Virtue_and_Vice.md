@@ -15,7 +15,7 @@ tags: ["paper-summary", "philosophy"]
 **Short Abstract**
 This paper offers a description of what virtue is, as a corrective toward human passion. It argues that virtue does not operate as virtue when turned toward a bad end.
 
-## 1.
+## 1. Virtue and Vice in Moral Philosophy
 
 In recent years, the topic of virtues and vices has been neglected in analytical moral philosophy. But this has been changing recently. Nonetheless, virtues and vices go back to Aristotle and Aquinas, where Aquinas largely followed Aristotle but is often more detailed and accurate, especially in his *Summa Theologica*.
 
