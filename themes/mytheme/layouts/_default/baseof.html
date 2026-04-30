@@ -6,20 +6,27 @@
       {{ end }}
       <a id="top"></a>
       <meta charset="utf-8">
-      <meta name="viewport" 
+      <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
       <title>{{ .Site.Params.Title }}</title>
-      
+
       {{ with .Site.Params.favicon }}
         <link rel="icon" href="{{ . | absURL }}" sizes="64x64" type="image/png">
       {{ end }}
-      
-      <link rel="stylesheet" href="{{ "styles/style.css" | relURL }}">  
+
+      <link rel="stylesheet" href="{{ "styles/style.css" | relURL }}">
 
       <link rel="stylesheet" href="/css/syntax.css">
       {{ partialCached "math.html" . }}
+
+      {{ if .Page.Store.Get "hasMermaid" }}
+        <script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+          mermaid.initialize({ startOnLoad: true });
+        </script>
+      {{ end }}
   </head>
-  <body> 
+  <body>
     {{- partial "header.html" . -}}
     <div id="content">
     {{- block "main" . }}{{- end }}

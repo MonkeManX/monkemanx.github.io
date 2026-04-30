@@ -1,10 +1,10 @@
 ---
-title: 'The Unrelitiy of Time'
+title: 'The Unreality of Time'
 date: 2025-11-21 10:00:00
 tags: ["paper-summary", "philosophy"]
 ---
 
-**Paper Title:** The Unrelitiy of Time
+**Paper Title:** The Unreality of Time
 
 **Link to Paper:** https://en.wikipedia.org/wiki/The_Unreality_of_Time
 
