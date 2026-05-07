@@ -1,7 +1,7 @@
 ---
 title: 'Automatic Test Pattern Generation and Compaction for Deep Neural Networks'
 date: 2026-04-20 10:00:00
-tags: ["paper-summary"]
+tags: ["paper-summary", "ATPG"]
 ---
 
 **Paper Title:** Automatic Test Pattern Generation and Compaction for Deep Neural Networks
@@ -133,7 +133,18 @@ $$
 Generated test inputs do not need to resemble real data or remain close to existing samples. This provides greater flexibility and makes them more effective for:
 
 * Fault detection
-* Test pattern compression and efficiency
+* Test pattern compression and efficiencay
+
+**During Inference**
+After generating the test pattern \(x*\), the tester also stores the expected response:
+
+$$
+y*=Net(x*)
+$$
+
+So the test actually consists of a pair: \((x*,y*)\), where: \(x*\) = test input
+and \(y*\) = expected output of a healthy network.
+So during inference a healthy network will produce the ouput \(Net(x*) \approx y*\) and a unheatlhy network will produce \(Net(x*) \neq y*\).
 
 ### 3.3 Test Pattern Compression
 

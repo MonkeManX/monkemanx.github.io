@@ -121,6 +121,112 @@ flowchart LR
 	style n1 fill:#FFDE59
 ```
 
-### 1. Section
+
+
+# 1. Section
+
+## First Sentence
+
+The first sentence of the first section is:
+
+> Es ist überall nichts in der Welt, ja überhaupt auch außer derselben zu denken möglich, was ohne **Einschränkung** für **gut** könnte gehalten werden, als allein ein **guter Wille**.
+> Immanuel Kant: *Grundlegung zur Metaphysik der Sitten*, 393
+
+Some interpreters of Kant consider this sentence extremely important, seeing it as already containing the core of Kant’s entire project. Others, however, see it as more of a rhetorical or introductory remark. In any case, as the opening sentence, it carries interpretive weight. The key question is therefore what it actually means.
+
+To understand this, we need to clarify what Kant means by *“uneingeschränkt”*, *“guter Wille”*, and *“gut”*. Each of these terms has multiple possible interpretations.
+
+## Possible interpretations of “uneingeschränkt” (without restriction)
+
+### 1. The highest good
+
+One plausible interpretation is that “uneingeschränkt gut” refers to the highest good: the best thing a human being can aim for in life, that which ultimately matters in a complete sense. In this reading, Kant would be engaging with the ancient tradition of the *summum bonum*.
+
+### 2. Completely / purely good
+
+Here “uneingeschränkt” means *fully*, *purely*, or *without any admixture*. Similar to how a service can be “uneingeschränkt empfehlenswert” (unreservedly recommendable). A good will would then be something flawless or pure, good “without any caveats.”
+
+### 3. Highest form of value or esteem
+
+In this interpretation, the emphasis is not on ontological purity but on evaluation: a good will is what deserves the highest praise and recognition.
+
+### 4. Absolutely / unconditionally good
+
+Here “uneingeschränkt” means *always and everywhere*, *under all conditions*, or *intrinsically*. The goodness of the will does not depend on external circumstances. It is good in itself. One variant of this reading even claims that it is the only thing that is good in an absolute sense, not merely relative to something else.
+
+In the *Grundlegung*, textual support can be found for all of these interpretations in different passages (e.g. 394, 396, 403, 428, 437).
+
+
+## Textual support for “highest value / highest good”
+
+> Dieser Wille darf also zwar nicht das einzige und das ganze, aber er muß doch das höchste Gut, und zu allem übrigen, selbst allem Verlangen nach Glückseligkeit, die Bedingung sein (396)
+
+> Allerdings! gerade da hebt der Wert des Charakters an, der moralisch und ohne alle Vergleichung der höchste ist, nämlich dass er wohltue, nicht aus Neigung, sondern aus Pflicht. (398f.)
+
+> Man könne nun meinen, dass „Achtung fürs praktische Gesetz dasjenige sei, was die Pflicht ausmacht, der jeder andere Beweggrund weichen muss, weil sie die Bedingung eines an sich guten Willens ist, dessen Wert über alles geht. (403)
+
+
+## Textual support for “highest esteem / highest evaluative rank”
+
+> Um aber den Begriff eines an sich selbst hochzuschätzenden und ohne weitere Absicht guten Willens, […] diesen Begriff, der in der Schätzung des ganzen Werts unserer Handlungen immer obenan steht und die Bedingung alles übrigen ausmacht, zu entwickeln […] (397)
+
+> Der gute Wille ist […] an sich gut, und, für sich selbst betrachtet, ohne Vergleich weit höher zu schätzen, als alles … (394)
+
+> “…die Hochschätzung, die man übrigens mit Recht für sie trägt, einschränkt, und es nicht erlaubt, sie für schlechthin gut zu halten.” (393)
+
+## Textual support for “unconditional / absolute goodness”
+
+> Einige Eigenschaften sind sogar diesem guten Willen selbst beförderlich und können sein Werk sehr erleichtern, haben aber demungeachtet keinen inneren unbedingten Wert […] (394)
+
+> Wir können nunmehr da endigen, von wo wir im Anfange ausgingen, nämlich dem Begriffe eines unbedingt guten Willens. (437)
+
+> Gesetzt aber, es gäbe etwas, dessen Dasein an sich selbst einen absoluten Wert hat […], so würde in ihm, und nur in ihm allein, der Grund eines möglichen kategorischen Imperativs, d. i. praktischen Gesetzes, liegen. (428)
+
+
+## What could “good will” refer to?
+
+There are several possible referents:
+
+### 1. Actions
+
+The good will refers to intentions, motives, or principles behind actions.
+
+### 2. Character
+
+The good will refers not to isolated actions, but to a person’s overall moral disposition or character.
+
+### 3. A faculty or capacity
+
+Humans, unlike animals, have a rational nature: a free will or autonomy. In this sense, “will” refers to a capacity to act according to reasons. This capacity is what makes morality possible—and simultaneously makes us subject to it.
+
+## Interpretation space
+
+From this, one can derive a large number of interpretive combinations (often up to 24 depending on how one disambiguates each term). Not all are equally plausible, but many have been defended in the literature.
+
+For example:
+
+> Kant nimmt im ersten Satz der Grundlegung die antike Grundfrage der Ethik nach dem höchsten Gut auf und beantwortet sie im Sinne dessen, was ihm die allgemein verbreitete Auffassung zu sein scheint. […] Wie nun die folgenden Sätze zeigen, meint Kant mit einem »guten Willen« weder bloß vereinzelte gute Absichten noch einzelne Charaktereigenschaften, sondern gute moralische Grundsätze überhaupt, d.h. eine gute Gesinnung, einen guten Charakter (der sich natürlich in guten Willensakten äußern wird). Fragt man also einen Menschen mit gesundem moralischen Menschenverstand danach, was er für die überhaupt beste Sache hält, die er sich denken kann, so erhält man die Antwort, dies sei ein Wesen, das rundum moralisch gut ist.
+> Jens Timmermann (Hg.): *Grundlegung zur Metaphysik der Sitten*, 91
+
+> Nur der gute Wille und, mit Blick auf den Menschen, die Achtung vor dem moralischen Gesetz haben uneingeschränkten moralischen Wert.
+> Dieter Schönecker & Allen Wood: *Kants Grundlegung zur Metaphysik der Sitten*, 40
+
+
+## Kant’s “jewel passage” (central clarification)
+
+> Der **gute Wille** ist nicht durch das, was er bewirkt, oder ausrichtet, nicht durch seine Tauglichkeit zur Erreichung irgend eines vorgesetzten Zweckes, sondern **allein durch das Wollen, d.i. an sich, gut**, und, für sich selbst betrachtet, ohne Vergleich weit höher zu schätzen, als alles, was durch ihn zu Gunsten irgend einer Neigung, ja, wenn man will, der Summe aller Neigungen, nur immer zu Stande gebracht werden könnte. [...]
+
+This passage is crucial because it shows Kant’s core idea: the good will has value independently of consequences. Even if it achieves nothing, it still has full worth—like a jewel.
+
+Here Kant also implicitly introduces a criterion:
+
+A will is *uneingeschränkt gut* if it cannot be used for evil purposes. Virtue, health, or wealth fail this test because they can be used for bad ends. Only the good will passes it, because it is good in itself.
+
+
+## Final argument: teleology critique
+
+Finally, Kant offers a teleological argument: if nature had designed humans for happiness, then reason would often be counterproductive. Reason frequently produces moral reflection that conflicts with desire (e.g., questioning whether eating meat is permissible).
+
+Since reason often reduces happiness rather than increasing it, the purpose of nature cannot be simply to make us happy. This supports Kant’s rejection of happiness as the ultimate end of human rational nature.
 
 ### 2. Section
