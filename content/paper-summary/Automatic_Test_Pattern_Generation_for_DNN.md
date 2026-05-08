@@ -1,7 +1,7 @@
 ---
 title: 'Automatic Test Pattern Generation and Compaction for Deep Neural Networks'
 date: 2026-04-20 10:00:00
-tags: ["paper-summary", "ATPG"]
+tags: ["paper-summary", "Project-ATPG"]
 ---
 
 **Paper Title:** Automatic Test Pattern Generation and Compaction for Deep Neural Networks

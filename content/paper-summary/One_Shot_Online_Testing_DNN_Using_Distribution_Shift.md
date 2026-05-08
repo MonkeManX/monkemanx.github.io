@@ -1,7 +1,7 @@
 ---
 title: 'One-Shot Online Testing of Deep Neural Networks Based on Distribution Shift Detection'
 date: 2026-05-07 14:00:00
-tags: ["paper-summary", "Neuromorphic", "ATPG"]
+tags: ["paper-summary", "Neuromorphic", "Project-ATPG"]
 ---
 
 **Paper Title:** One-Shot Online Testing of Deep Neural Networks Based on Distribution Shift Detection

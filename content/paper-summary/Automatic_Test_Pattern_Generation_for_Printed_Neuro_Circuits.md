@@ -1,7 +1,7 @@
 ---
 title: 'Automatic Test Pattern Generation for Printed Neuromorphic Circuits'
 date: 2026-05-07 10:00:00
-tags: ["paper-summary", "Neuromorphic", "ATPG"]
+tags: ["paper-summary", "Neuromorphic", "Project-ATPG"]
 ---
 
 **Paper Title:** Automatic Test Pattern Generation for Printed Neuromorphic Circuits
