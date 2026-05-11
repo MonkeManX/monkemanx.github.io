@@ -82,7 +82,7 @@ The choice of \( v \) depends on the activation function. Typical values include
 
 The same concept applies to convolutional filters in CNNs, where an entire output channel can be treated as “stuck” at a constant value.
 
- {{< rawhtml >}}
+{{< rawhtml >}}
 <figure>
     <img style="display: block; margin-left: auto; margin-right: auto; width: 80%;" src="/attachments/Failure_modeling.png">
 </figure>
