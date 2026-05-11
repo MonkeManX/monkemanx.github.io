@@ -153,3 +153,16 @@ Results:
 ## Some Thoughts
 
 - Accelerators need to be designed with this in mind i.e. works only on Hardware specifically designed with this in mind.
+
+
+- The problem and motivation that papers address
+    - Faults in Accelerators for DNN
+- What fault model is used
+    - Stuck-at-faults, bit flips, calualiton errors
+- Is it about detection, localization, or both?
+    - Both
+- What method and metrics are used?
+    - Test Coverage, Area Increase, Additional Computation Overhead
+- What is one limitation or open question? (gap)
+    - Only works on Accs designed with this in mind
+    - Doesnt work on desktop pc, everyday devices
