@@ -181,3 +181,20 @@ Compared to other test pattern generation methods, the proposed approach perform
 ## 5. Conclusion
 
 The method appears to be effective in detecting faults in DNNs while keeping the number of required test patterns manageable.
+
+----
+
+### Thoughts
+
+
+- What is one limitation or open question? (gap)
+    - stuck neuron fault maybe unrelaistic
+    - is this scalable
+    - does htis work with different arhcitetcures
+    - metric poor
+        - fault might change configdence without chaning top a classs
+        - alternatve kl divergence
+        - sth latent space
+    - not all faults are equal, for safety critical system, can we prioritize important faults
+    - does this work in other domain nlp, speech, reifnrocement learning, multimodal systems
+    - how deos faults generaiton interact with robustenss tehcnique e.g. dropout

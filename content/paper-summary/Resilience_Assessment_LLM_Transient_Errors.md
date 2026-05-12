@@ -90,3 +90,23 @@ They found that:
 * Pre-training objectives had little consistent effect, except for models trained on random objectives, which showed uniform behavior regardless of size.
 
 The paper concludes that while LLMs are surprisingly fault-tolerant overall, transient hardware faults can still cause subtle and dangerous semantic errors, especially in safety-critical applications like translation, medicine, or code generation.
+
+
+----
+
+## Thoughts
+
+- The problem and motivation that papers address
+    - LLMs becoming more popular, how do faults effect them?
+- What fault model is used
+    - Transient, bit flips
+- Is it about detection, localization, or both?
+    - Neither, analying the result of faults
+- What method and metrics are used?
+    - SDC rate, fraction of inejcted fault that result in missprediction
+    - Cosine similarity, how distant the corrupted fault is
+- What is one limitation or open question? (gap)
+   - permanent faults
+   - more metrics
+   - are there certain reigon that lead to worse or better misspreidction
+   - the stduy doesnt tell mcuch, is not that insightfull

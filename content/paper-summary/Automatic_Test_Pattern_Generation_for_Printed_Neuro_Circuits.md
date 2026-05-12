@@ -317,3 +317,25 @@ The gradient-based algorithm achieved over 90% fault coverage across multiple da
     <img style="display: block; margin-left: auto; margin-right: auto; width: 100%;" src="/attachments/table_pnc_faults_coverage.png">
 </figure>
 {{< /rawhtml >}}
+
+
+----
+
+## Stuff
+
+- The problem and motivation that papers address
+- What fault model is used
+    - crossbar, p-tanh, invererter weights
+    - gate-drain short, gate-source short, drain-source short, and gate open
+- Is it about detection, localization, or both?
+    - detection
+- What method and metrics are used?
+    - fault coverage per error type, runtime
+- What is one limitation or open question? (gap)
+    - single fault assumption
+    - aging fault model
+    - entirely simualtion based
+    - repalce covergae metric with output distributence diverene, energy consumption shift, confidence margin
+    - can this mehtod scale to larger networkds
+    - gardeint optimiaztion might miss errors
+    - is this method generizliabiltiy across arhcitetcurs?

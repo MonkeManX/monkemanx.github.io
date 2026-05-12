@@ -138,3 +138,21 @@ Main findings:
     <img style="display: block; margin-left: auto; margin-right: auto; width: 100%;" src="/attachments/one_shot_online_testing_table_coverage_bit_flips.png">
 </figure>
 {{< /rawhtml >}}
+
+----
+
+
+### Stuff
+
+- The problem and motivation that papers address
+    - NN accelerator testing
+- What fault model is used
+    - noise
+    - bit flips
+- Is it about detection, localization, or both?
+    - detection
+- What method and metrics are used?
+    - fault coverage,
+- What is one limitation or open question? (gap)
+    - mroe precise threath model
+    - localization

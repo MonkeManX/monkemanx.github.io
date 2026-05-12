@@ -153,8 +153,6 @@ Results:
 ## Some Thoughts
 
 - Accelerators need to be designed with this in mind i.e. works only on Hardware specifically designed with this in mind.
-
-
 - The problem and motivation that papers address
     - Faults in Accelerators for DNN
 - What fault model is used
