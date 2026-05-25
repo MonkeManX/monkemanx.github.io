@@ -1,0 +1,331 @@
+---
+title: 'An Interpretation of Kants Work "Grundlegung zur Metaphysik der Sitten"'
+date: 2026-04-27 10:00:00
+tags: ["Philosophy"]
+draft: True
+---
+
+{{< info "Info" >}}
+This interpretation is not my own but based on a seminar I heard at the University of KIT where this work was treated. Further, the text passages I will cite are in german, mabye I will translate this but probably not.
+{{< /info >}}
+
+
+# 0. Introduction
+
+## 0.1 Preface
+
+One of the first things that we get in the preface is a strcuture of the different fields of philsophy like kant envions thems
+
+```mermaid
+flowchart TD
+    A["Knowledge"]
+
+    A --> B["formal<br/>concerns itself with the form of understanding,<br/>with knowledge itself, and the general rules of thinking"]
+    A --> C["material<br/>concerns itself with objects;<br/>has object(s) as its content"]
+
+    %% Formal branch
+    B --> D["Logic<br/>philosophia rationalis<br/>Laws of thought"]
+    D --> D1["a priori"]
+
+    %% Material branch
+    C --> E["Physics (Natural Philosophy)<br/>philosophia naturalis<br/>Laws of nature"]
+    C --> F["Ethics (Moral Philosophy)<br/>philosophia moralis<br/>Laws of freedom"]
+
+    %% Physics sub-branches
+    E --> E1["a priori<br/>Metaphysics of nature"]
+    E --> E2["empirical<br/>Actual physics"]
+
+    %% Ethics sub-branches
+    F --> F1["a priori<br/>Metaphysics of morals"]
+    F --> F2["empirical<br/>Practical anthropology"]
+
+    %% Works (Physics side)
+    E1 --> G["Critique of Pure Reason"]
+    E1 --> G1["Prolegomena to Any Future Metaphysics"]
+    E1 --> G2["Metaphysical Foundations of Natural Science"]
+
+    %% Works (Ethics side)
+    F1 --> H["Groundwork of the Metaphysics of Morals"]
+    F1 --> H2["Metaphysics of Morals"]
+
+```
+
+And as we can see the work which this article is about can be categorized to the Ethical purely a priori branch. This categorication is not new and is alreday done similar with aristotele, what is new is how kant talks about these branches as laws.
+
+The next passages highlight this:
+
+> ob man nicht meine, daß es von der **äußersten Notwendigkeit** sei, einmal eine reine Moralphilosophie zu bearbeiten, die von allem, was nur empirisch sein mag und zur Anthropologie gehört, völlig gesäubert wäre; denn, daß es eine solche geben müsse, leuchtet von selbst aus der gemeinen Idee der Pflicht und der sittlichen Gesetze ein. Jedermann muß eingestehen, daß ein Gesetz, wenn es moralisch, d.i. als Grund einer Verbindlichkeit, gelten soll, **absolute Notwendigkeit** bei sich führen müsse;
+
+When Kant talks about morlaity he mean laws, that are nessecarily and a priori true and not jsut practical rules that one does because they are beneficial, they are not contingent on us humans i.e. they are not ruels unqiue to us human but apply to all being with rationality.
+
+> daß mithin der **Grund der Verbindlichkeit** hier nicht in der Natur des Menschen oder den Umständen in der Welt, darin er gesetzt ist, gesucht werden müsse, sondern **a priori** lediglich in Begriffen der reinen Vernunft,
+
+Anf furtehr every other rule is can maybe called a pratical rule but never a moral law. Morlaity needs nessecaity, withotu nessecarity we do not have a moral law.
+
+> **daß jede andere Vorschrift**, die sich auf Prinzipien der bloßen Erfahrung gründet, und sogar eine in gewissem Betracht allgemeine Vorschrift, so fern sie sich dem mindesten Teile, vielleicht nur einem Bewegungsgrunde nach, auf empirische Gründe stützt, **zwar eine praktische Regel, niemals aber ein moralisches Gesetz heißen kann**.
+
+Hence the argument in the preface goes in very short as follows:
+1. Morality is connected with lawfulness.
+2. Laws hold (in contrast to regularities) with necessity.
+3. Necessity can only be recognized a priori.
+4. The discipline that proceeds purely a priori is called metaphysics.
+5. Therefore, a “metaphysics of morals” is necessarily required.
+
+> **Eine Metaphysik der Sitten ist also unentbehrlich notwendig**, nicht bloß aus einem Bewegungsgrunde der Spekulation, um die Quelle der a priori in unserer Vernunft liegenden praktischen Grundsätze zu erforschen, sondern **weil die Sitten selber allerlei Verderbnis unterworfen bleiben, so lange jener Leitfaden und oberste Norm ihrer richtigen Beurteilung fehlt.** Denn bei dem, was moralisch gut sein soll, ist es nicht genug, daß es dem sittlichen Gesetze gemäß sei, sondern es muß auch um desselben willen geschehen; widrigenfalls ist jene Gemäßheit nur sehr zufällig und mißlich, weil der unsittliche Grund zwar dann und wann gesetzmäßige, mehrmalen aber gesetzwidrige Handlungen hervorbringen wird. **Nun ist aber das sittliche Gesetz in seiner Reinigkeit und Echtheit (woran eben im Praktischen am meisten gelegen ist) nirgend anders als in einer reinen Philosophie zu suchen, also muß diese (Metaphysik) vorangehen, und ohne sie kann es überall keine Moralphilosophie geben;**
+
+## 0.2. Structure of the Work
+
+The Grundlegung zur Metaphysik der Sitten" is structured in multiple sections:
+1. Preface
+2. Common moral rational knowledge -> Philosophical moral knowledge
+3. Popular moral philosophy -> Metaphysics of Morals
+4. Metaphysics of Morals → Critique of Practical Reason
+
+It is important to know the purpose of the each section. The preface gives an overview of the field of philsophy and place thsi work inside it, further it desicbes the strcuture of kants work and what his goal is.
+Next The second and thrid section are both seciton with the goal of ivnestiation the highest law of morality, by starting at soemwhere and then deriving this law, but both ection start with a differnet entry poind, the seocnd section starts with the common moral udnerstanding of the common man and tries do deive the highest law, whiel the thrid seciton start mroe philsophical with more rigor for ma philsophcia lview point. both sction can be seen at different attemt usign different routes to derives the hgihest law, the secodn section is more appraochable for the common man, whiel the htrid is mroe philsophcial rigorious.
+In the last section, after he has derived the heighest aklw i nthe preivous seciton he now needs to show that this law is not innert btu actual is active and exist this is the goal of this section.
+
+```mermaid
+flowchart LR
+
+    B
+    D
+
+    subgraph GMS_III["Festsetzung"]
+		n1["GMS III"]
+        direction LR
+        E["Metaphysik der Sitten<br/>Metaphysics of Morals"] --> F["Kritik der praktischen Vernunft<br/>Critique of Practical Reason"]
+    end
+
+    style GMS_III fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+	GMS_III
+	Aufsuchung
+	A
+	GMS_I --- A
+	B
+	GMS_I
+	C
+	GMS_II --- C
+    subgraph "Aufsuchung"
+		GMS_II["GMS II"]
+		GMS_I["GMS I"]
+        direction TB
+        A["Gemeine sittliche Vernunfterkenntnis<br/>Common Moral Rational Cognition"] --> B["Philosophische sittliche Vernunfterkenntnis<br/>Philosophical Moral Rational Cognition"]
+        C["Populäre sittliche Weltweisheit<br/>Popular Moral Wisdom"] --> D["Metaphysik der Sitten<br/>Metaphysics of Morals"]
+    end
+	style C color:#000000,fill:#7ED957
+	style GMS_II fill:#7ED957
+	style D color:#000000,fill:#7ED957
+	style Aufsuchung fill:#D9D9D9
+	style E fill:#FFDE59
+	style F fill:#FFDE59
+	E
+	n1 --- E
+	style n1 fill:#FFDE59
+```
+
+# 1. The First Section 
+
+## 1.1 Structure of the First Section 
+
+The first section of this work is structured as follows:
+* **The First Sentence of Section I**
+* **The Good Will**
+  * Opening thesis: Only the good will is unconditionally good
+  * Alternatives are not always good
+  * “Jewel” passage: The good will, by contrast, is always good, regardless of its consequences
+  * The teleological argument
+* **Duty**
+  * Acting from duty
+  * Maxims and the three propositions concerning duty
+  * The concept of respect
+  * First derivation of the Categorical Imperative
+* **The Natural Dialectic and the Task of Philosophy**
+
+
+## 1.1 First Sentence of Section 1 
+
+The first sentence of the first section is:
+
+> Es ist überall nichts in der Welt, ja überhaupt auch außer derselben zu denken möglich, was ohne **Einschränkung** für **gut** könnte gehalten werden, als allein ein **guter Wille**.
+> Immanuel Kant: *Grundlegung zur Metaphysik der Sitten*, 393
+
+Some interpreters of Kant consider this sentence extremely important, seeing it as already containing the core of Kant’s entire project. Others, however, see it as more of a rhetorical or introductory remark. In any case, as the opening sentence, it carries interpretive weight. The key question is therefore what it actually means.
+
+To understand this, we need to clarify what Kant means by *“uneingeschränkt”*, *“guter Wille”*, and *“gut”*. Each of these terms has multiple possible interpretations.
+
+### 1.1.1 Possible interpretations of “uneingeschränkt” (without restriction)
+
+##### 1.1.1.1 The highest good
+
+One plausible interpretation is that “uneingeschränkt gut” refers to the highest good: the best thing a human being can aim for in life, that which ultimately matters in a complete sense. In this reading, Kant would be engaging with the ancient tradition of the *summum bonum*.
+
+#### 1.1.1.2. Completely / purely good
+
+Here “uneingeschränkt” means *fully*, *purely*, or *without any admixture*. Similar to how a service can be “uneingeschränkt empfehlenswert” (unreservedly recommendable). A good will would then be something flawless or pure, good “without any caveats.”
+
+#### 1.1.1.3. Highest form of value or esteem
+
+In this interpretation, the emphasis is not on ontological purity but on evaluation: a good will is what deserves the highest praise and recognition.
+
+#### 1.1.1.4. Absolutely / unconditionally good
+
+Here “uneingeschränkt” means *always and everywhere*, *under all conditions*, or *intrinsically*. The goodness of the will does not depend on external circumstances. It is good in itself. One variant of this reading even claims that it is the only thing that is good in an absolute sense, not merely relative to something else.
+
+In the *Grundlegung*, textual support can be found for all of these interpretations in different passages (e.g. 394, 396, 403, 428, 437).
+
+
+#### 1.1.1.5 Textual support for “highest value / highest good”
+
+> Dieser Wille darf also zwar nicht das einzige und das ganze, aber er muß doch das höchste Gut, und zu allem übrigen, selbst allem Verlangen nach Glückseligkeit, die Bedingung sein (396)
+
+> Allerdings! gerade da hebt der Wert des Charakters an, der moralisch und ohne alle Vergleichung der höchste ist, nämlich dass er wohltue, nicht aus Neigung, sondern aus Pflicht. (398f.)
+
+> Man könne nun meinen, dass „Achtung fürs praktische Gesetz dasjenige sei, was die Pflicht ausmacht, der jeder andere Beweggrund weichen muss, weil sie die Bedingung eines an sich guten Willens ist, dessen Wert über alles geht. (403)
+
+
+#### 1.1.1.6 Textual support for “highest esteem / highest evaluative rank”
+
+> Um aber den Begriff eines an sich selbst hochzuschätzenden und ohne weitere Absicht guten Willens, […] diesen Begriff, der in der Schätzung des ganzen Werts unserer Handlungen immer obenan steht und die Bedingung alles übrigen ausmacht, zu entwickeln […] (397)
+
+> Der gute Wille ist […] an sich gut, und, für sich selbst betrachtet, ohne Vergleich weit höher zu schätzen, als alles … (394)
+
+> “…die Hochschätzung, die man übrigens mit Recht für sie trägt, einschränkt, und es nicht erlaubt, sie für schlechthin gut zu halten.” (393)
+
+#### 1.1.1.7 Textual support for “unconditional / absolute goodness”
+
+> Einige Eigenschaften sind sogar diesem guten Willen selbst beförderlich und können sein Werk sehr erleichtern, haben aber demungeachtet keinen inneren unbedingten Wert […] (394)
+
+> Wir können nunmehr da endigen, von wo wir im Anfange ausgingen, nämlich dem Begriffe eines unbedingt guten Willens. (437)
+
+> Gesetzt aber, es gäbe etwas, dessen Dasein an sich selbst einen absoluten Wert hat […], so würde in ihm, und nur in ihm allein, der Grund eines möglichen kategorischen Imperativs, d. i. praktischen Gesetzes, liegen. (428)
+
+
+### 1.1.2 What could “good will” refer to?
+
+There are several possible referents:
+
+##### 1.1.2.1 Actions
+
+The good will refers to intentions, motives, or principles behind actions.
+
+#### 1.1.2.2. Character
+
+The good will refers not to isolated actions, but to a person’s overall moral disposition or character.
+
+#### 1.1.2.3. A faculty or capacity
+
+Humans, unlike animals, have a rational nature: a free will or autonomy. In this sense, “will” refers to a capacity to act according to reasons. This capacity is what makes morality possible—and simultaneously makes us subject to it.
+
+### 1.1.3 Interpretation space
+
+From this, one can derive a large number of interpretive combinations (often up to 24 depending on how one disambiguates each term). Not all are equally plausible, but many have been defended in the literature.
+
+For example:
+
+> Kant nimmt im ersten Satz der Grundlegung die antike Grundfrage der Ethik nach dem höchsten Gut auf und beantwortet sie im Sinne dessen, was ihm die allgemein verbreitete Auffassung zu sein scheint. […] Wie nun die folgenden Sätze zeigen, meint Kant mit einem »guten Willen« weder bloß vereinzelte gute Absichten noch einzelne Charaktereigenschaften, sondern gute moralische Grundsätze überhaupt, d.h. eine gute Gesinnung, einen guten Charakter (der sich natürlich in guten Willensakten äußern wird). Fragt man also einen Menschen mit gesundem moralischen Menschenverstand danach, was er für die überhaupt beste Sache hält, die er sich denken kann, so erhält man die Antwort, dies sei ein Wesen, das rundum moralisch gut ist.
+> Jens Timmermann (Hg.): *Grundlegung zur Metaphysik der Sitten*, 91
+
+> Nur der gute Wille und, mit Blick auf den Menschen, die Achtung vor dem moralischen Gesetz haben uneingeschränkten moralischen Wert.
+> Dieter Schönecker & Allen Wood: *Kants Grundlegung zur Metaphysik der Sitten*, 40
+
+
+## 1.2 The Alternatives Canidates for the Good 
+
+In the first senetcne of the text kant alreday defined what the good is for him and that is the good will, but in this text passage he now goes through plausible candiates that have been propsoed for what is good and epxlains why they are not truely good.
+
+In order to text wetehr these candiates are truely purely good, he proposed a test, that is whetehr something bad can be done in junjunction with them or not.
+
+The first canidate he identifies are Glücksgaben or Gifts of fortune such as health, wealth, pwoer and so on, and when he goes with hsi test through them one can see that they are not purely good, for when they are paired with a abd wil lthey can result in bad aciton e.g. a villain can be very healthy and do heinious action, same is true for power just ebcause one is pwoerful does not mean one does purely good action, same with wealth. Thus kant concldues that tehse gifts of forutne cannot be purely good.
+
+> **Verstand, Witz, Urteilskraft, und wie die Talente des Geistes** sonst heißen mögen, oder **Mut, Entschlossenheit, Beharrlichkeit** im Vorsatze, als Eigenschaften des Temperaments, sind ohne Zweifel in mancher Absicht gut und wünschenswert; aber sie können auch äußerst böse und schädlich werden, wenn der Wille, der von diesen **Naturgaben** Gebrauch machen soll und dessen eigentümliche Beschaffenheit darum Charakter heißt, nicht gut ist. Mit den **Glücksgaben** ist es eben so bewandt. **Macht, Reichtum, Ehre, selbst Gesundheit, und das ganze Wohlbefinden und Zufriedenheit mit seinem Zustande, unter dem Namen der Glückseligkeit**, machen Mut und hiedurch öfters auch Übermut, wo nicht ein guter Wille da ist, der den Einfluß derselben aufs Gemüt, und hiemit auch das ganze Prinzip zu handeln, berichtige und allgemein-zweckmäßig mache; ohne zu erwähnen, daß ein vernünftiger unparteiischer Zuschauer sogar am Anblicke eines ununterbrochenen Wohlergehens eines Wesens, das kein Zug eines reinen und guten Willens zieret, nimmermehr ein Wohlgefallen haben kann, und so der gute Wille die unerlaßliche Bedingung selbst der Würdigkeit, glücklich zu sein, auszumachen scheint.
+
+The next canidate he identifies are what he calls naturgaben i.e. gift of nature or mroe commonly known as virute hailed by the ancooent greek a the prue good these virutes incldue bravery, justic and much more. But just with gift of forutne, when these virutes are paired with a bad will they hcan have bad consequences, someone can do bravely a very bad action, or be very charitbile towards bad organiaztion. From this kant concludes tha virtue alone cannnot be purely good.
+
+> Einige Eigenschaften sind sogar diesem guten Willen selbst beförderlich und können sein Werk sehr erleichtern, haben 
+> aber dem ungeachtet keinen innern unbedingten Wert, sondern setzen immer noch einen guten Willen voraus, der die Hochschätzung, die man übrigens mit Recht für sie trägt, einschränkt, und es nicht erlaubt, sie für schlechthin gut zu halten. **Mäßigung in Affekten und Leidenschaften, Selbstbeherrschung und nüchterne Überlegung** sind nicht allein in vielerlei Absicht gut, sondern scheinen sogar einen Teil vom innern Werte der Person auszumachen; allein es fehlt viel daran, um sie ohne Einschränkung für gut zu erklären **(so unbedingt sie auch von den Alten gepriesen worden)**. Denn ohne Grundsätze eines guten Willens können sie höchst böse werden, und das kalte Blut eines Bösewichts macht ihn nicht allein weit gefährlicher, sondern auch unmittelbar in unsern Augen noch verabscheuungswürdiger, als er ohne dieses dafür 
+> würde gehalten werden.
+
+What kant is looking for when he searhcing for what is good, is what later phsilopsher mroore calls intrinsic good, that is somethign that is good not because it helps you to get somethign else like moeny, but simpley itslef is good.
+
+
+## 1.3 Kant’s “jewel passage”
+
+> Der **gute Wille** ist nicht durch das, was er bewirkt, oder ausrichtet, nicht durch seine Tauglichkeit zur Erreichung irgend eines vorgesetzten Zweckes, sondern **allein durch das Wollen, d.i. an sich, gut**, und, für sich selbst betrachtet, ohne Vergleich weit höher zu schätzen, als alles, was durch ihn zu Gunsten irgend einer Neigung, ja, wenn man will, der Summe aller Neigungen, nur immer zu Stande gebracht werden könnte. [...]
+
+This passage is crucial because it shows Kant’s core idea: the good will has value independently of consequences. Even if it achieves nothing, it still has full worth—like a jewel.
+
+Here Kant also implicitly introduces a criterion:
+
+A will is *uneingeschränkt gut* if it cannot be used for evil purposes. Virtue, health, or wealth fail this test because they can be used for bad ends. Only the good will passes it, because it is good in itself.
+
+
+## 1.4 Teleology Argument
+
+Finally, Kant offers a teleological argument: if nature had designed humans for happiness, then reason would often be counterproductive. Reason frequently produces moral reflection that conflicts with desire (e.g., questioning whether eating meat is permissible).
+
+Since reason often reduces happiness rather than increasing it, the purpose of nature cannot be simply to make us happy. This supports Kant’s rejection of happiness as the ultimate end of human rational nature.
+
+
+
+# 2. Actions out of Duty 
+
+In the last section we have learned what is truely good that is the good will and what is not truely good that is, gift of nature and gift of fortune. 
+But we still do not know exatcly what this good will is, in roder to see this kant now moves on to the cocnept of dtuy that needs to be undertstood first to make sense of the good will.
+
+> **Um aber den Begriff eines** an sich selbst hochzuschätzenden und ohne weitere Absicht **guten Willens**, so wie er schon dem natürlichen gesunden Verstande beiwohnt und nicht sowohl gelehrt als vielmehr nur aufgeklärt zu werden bedarf, diesen Begriff, der in der Schätzung des ganzen Werts unserer Handlungen immer obenan steht und die Bedingung alles übrigen ausmacht, **zu entwickeln: wollen wir den Begriff der Pflicht vor uns nehmen, der den eines guten Willens**, obzwar unter gewissen subjektiven Einschränkungen und Hindernissen, **enthält**, die aber doch, weit gefehlt, daß sie ihn verstecken und unkenntlich machen sollten, ihn vielmehr durch Abstechung heben und desto heller hervorscheinen lassen. (397)
+
+
+## 2.1 Differentiation of Duties 
+
+Kant things every aciton can be vlassified the ofllowing way:
+- Acion which go aginst duty 
+- Action that go with Duty
+    - Action out of Inclination
+        - Action out of direct Inclinaiton 
+        - Action out of indirect Inclination 
+    - Action out of Duty 
+
+## 2.2 Acting out of Inclination 
+
+> [Ü]berdem gibt es manche so teilnehmend gestimmte Seelen, daß sie, auch ohne einen andern Bewegungsgrund der Eitelkeit, oder des Eigennutze, ein inneres Vergnügen daran finden, Freude um sich zu verbreiten, und die sich an der Zufriedenheit anderer, so fern sie ihr Werk ist, ergötzen können. **Aber ich behaupte, daß in solchem Falle dergleichen Handlung, so pflichtgemäß, so liebenswürdig sie auch ist, dennoch keinen wahren sittlichen Wert habe**, sondern mit andern Neigungen zu gleichen Paaren gehe, z. B. der Neigung nach Ehre, die, wenn sie glücklicherweise auf das trifft, was in der Tat gemeinnützig und pflichtmäßig, mithin ehrenwert ist, Lob und Aufmunterung, aber nicht Hochschätzung verdient; denn der Maxime fehlt der sittliche Gehalt, nämlich solche Handlungen nicht aus Neigung, sondern aus Pflicht zu tun. (GMS: 398)
+
+For Kant, action that stem out of inclination do not have any any moral value, even if tehy have a good conseuqene. 
+To make clear what thsi means look at oen exmaple, lets say we have a person called Mother Theresa Plus and Mother Theressa Plaus loves to help all kinds of people, veryday from mornign to evening she slaves away helping person after person always with a smile on her face, and not only she does this evry day she does it because she loves to help, she helps simply because she lvoes it.
+For Kant what mother theresa does is not moraly praiseworthy, why? Because she helps out oof inclination, because she lieks to help, hence not mroaly good.
+
+
+Kant distinguishes between acting *aus Neigung* (“from inclination”) and acting *mit Neigung* (“with inclination”). For him, truly moral action is acting *mit Neigung*: one does the right thing because it is right, even if one also happens to enjoy it. The problem with Mother Teresa, in this interpretation, is that she helps others because she enjoys doing so. That would be acting *aus Neigung*, from inclination, rather than acting because it is morally right.
+
+What goes wrong with Mother Teresa, then, is that she does not reflect critically on the basis of her action. She simply takes an inclination as her reason for acting. In that sense, she is not self-determined, because she is governed by her inclinations rather than by rational self-legislation. Her desires and inclinations steer her actions instead of her autonomous will.
+
+## 2.3 Do Action need to be done without joy to be mroaly worth?
+
+The german poet schiller wrote a poem as response to this exampel of mother theresa plus, where he asks if someoen want to do soemhing moraly worthful and out of duty if this action needs to be done without joy, if one should loathe other and then help them so that one does not act without incliantion.
+
+> Gerne dien ich den Freunden,
+> doch tu ich es leider mit Neigung,
+> und so wurmt mir oft,
+> daß ich nicht tugendhaft bin
+> Decisium: Da ist kein anderer Rat,
+> du mußt suchen, sie zu verachten,
+> und mit Abscheu alsdann tun, 
+> was die Pflicht dir gebeut
+>
+> ~ Schiller 
+
+Kant provides an answer to shciller 
+
+> Herr Prof. Schiller mißbilligt in seiner mit Meisterhand verfaßten Abhandlung (Thalia 1793, 3tes Stück) über Anmuth und Würde in der Moral diese Vorstellungsart der Verbindlichkeit, **als ob sie eine kartäuserartige Gemüthsstimmung bei sich führe**; allein ich kann, da wir in den wichtigsten Principien einig sind, auch in diesem keine Uneinigkeit statuiren, wenn wir uns nur unter einander verständlich machen können. - Ich gestehe gern: daß ich dem Pflichtbegriffe gerade um seiner Würde willen keine Anmuth beigesellen kann. Denn er enthält unbedingte Nöthigung, womit Anmuth in geradem Widerspruch steht. Die Majestät des Gesetzes (gleich dem auf Sinai) flößt Ehrfurcht ein (nicht Scheu, welche zurückstößt, auch nicht Reiz, der zur Vertraulichkeit einladet), welche Achtung des Untergebenen gegen seinen Gebieter, in diesem Fall aber, da dieser in uns selbst liegt, **ein Gefühl des Erhabenen unserer eigenen Bestimmung erweckt**, was uns mehr hinreißt als alles Schöne. - Aber die Tugend, d. i. die fest gegründete Gesinnung seine Pflicht genau zu erfüllen, ist in ihren Folgen auch wohlthätig, mehr wie alles, was Natur oder Kunst in der Welt leisten mag; 
+> 
+> […] Die letztere sklavische Gemüthsstimmung kann nie ohne einen verborgenen Haß des Gesetzes statt finden, und **das fröhliche Herz in Befolgung seiner Pflicht** (nicht die Behaglichkeit in Anerkennung desselben) ist ein Zeichen der Ächtheit tugendhafter Gesinnung, selbst in der Frömmigkeit, die nicht in der Selbstpeinigung des reuigen Sünders (welche sehr zweideutig ist und gemeiniglich nur innerer Vorwurf ist, wider die Klugheitsregel verstoßen zu haben), sondern im festen Vorsatz es künftig besser zu machen besteht, der, durch den guten Fortgang angefeuert, **eine fröhliche Gemüthsstimmung** bewirken muß, ohne welche man nie gewiß ist, das Gute auch lieb gewonnen, d. i. es in seine Maxime aufgenommen zu haben. (Rel: 23)
+
+So for Kant moral action can be done and we can have joy in them, what is improtant is the reaosn for why we do the aciton we should not do aiton because we have joy in them but because tehy are moraly right. And then its aslo okay when joy coems with it, so we do aciton because tehy are right and from this joy devlops. What he cricticzes is not that aciton bring us joy, but when action are done out of joy.
+
+## 2.4 Are Inclinaion bad?
+
+> Die Neigungen selber aber, als Quellen des Bedürfnisses, haben so wenig einen absoluten Wert, um sie selbst zu wünschen, daß vielmehr gänzlich davon frei zu sein, der allgemeine Wunsch eines jeden vernünftigen Wesens sein muß. (GMS: 428)
+
+> Natürliche Neigungen sind, an sich selbst betrachtet, gut, d. i. unverwerflich, und es ist nicht allein vergeblich, sondern es wäre auch schädlich und tadelhaft, sie ausrotten zu wollen; man muß sie vielmehr nur bezähmen, damit sie sich untereinander nicht selbst aufreiben, sondern zur Zusammenstimmung in einem Ganzen, Glückseligkeit genannt, gebracht werden können. (Rel: 58)
+
+Are inclinations themselves stupid or evil? In his writings on religion, Kant argues that inclinations simply exist as part of human nature; they are not evil in themselves, but they must be disciplined or restrained. 

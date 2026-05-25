@@ -1,7 +1,7 @@
 ---
 title: "Eric by Terry Pratchet"
 date: 2025-05-22 17:00:00
-tags: ["Book"]
+tags: ["Book", "Discworld"]
 ---
 
 {{< book image="/attachments/eric_book.jpg" >}}
@@ -19,7 +19,7 @@ One of the funniest parts was this:
 > Interestingly enough, the gods of the Disc have never bothered much about judging the souls of the
 > dead, and so people only go to hell if that’s where they believe, in their deepest
 > heart, that they deserve to go.
-> Which they won't do if they don’t know about it. 
+> Which they won't do if they don’t know about it.
 >
 > This explains why it is important to shoot missionaries on sight.
 
@@ -30,4 +30,3 @@ Also great:
 > cornered in their own pit of boiling oil. Soon it would have to follow its master, but it didn’t have to rush.
 
 {{< /book >}}
-

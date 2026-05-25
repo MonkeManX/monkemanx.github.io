@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #08: What to value?"
 date: 2025-07-09 09:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 It follows a simple argument about what I think is a good idea to value (I'm deliberately avoiding the words [*should* or *ought*](/articles/the_meaning_of_ought/)):

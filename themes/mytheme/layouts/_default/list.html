@@ -8,6 +8,39 @@
     {{ end }}
   </ul>
 
+{{ else if and (eq .Kind "term") (eq .Type "tags") }}
+  <h1>Writing on "{{ .Title }}"</h1>
+  These are all the writings that I tagged with "{{ .Title }}". If you want to see more writings on a specific topic, check out the <a href="/tags/">tags page</a>.
+  <div class="combined-div">
+    {{ if .Site.BuildDrafts }}
+      <h2>Drafts</h2>
+      <ul class="list-ul">
+        {{ range .Pages }}
+          {{ if .Draft }}
+            {{ partial "list_element.html" . }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ $currentYear := "" }}
+    {{ range .Pages.ByPublishDate.Reverse }}
+      {{ if not .Draft }}
+        {{ $postYear := .PublishDate.Format "2006" }}
+        {{ if ne $postYear $currentYear }}
+          {{ if ne $currentYear "" }}
+            </ul> <!-- Close the previous year's list -->
+          {{ end }}
+          <h2>{{ $postYear }}</h2>
+          <ul class="list-ul">
+          {{ $currentYear = $postYear }}
+        {{ end }}
+        {{ partial "list_element.html" . }}
+      {{ end }}
+    {{ end }}
+    </ul> <!-- Close the last year's list -->
+  </div>
+
 {{ else if eq .Section "tangled_thoughts"}}
 
   <ul class="thought-list">

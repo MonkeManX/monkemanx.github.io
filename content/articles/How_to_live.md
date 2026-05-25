@@ -43,7 +43,7 @@ For other beings, their mode of existence, their Dasein, is different. A fish, f
 So when I speak of a “mode of existence,” I mean that a being exists in the world with certain physical and experiential structures, and these structures shape what beliefs are even available to it. From this, it follows that what we value and what we find meaningful also stems from this unique mode of being.
 
 
-### 1.2. We can change our Beleifs
+### 1.2. We can change our Beliefs
 
 The second point relates to [**Doxastic Voluntarism**](https://plato.stanford.edu/entries/doxastic-voluntarism/), the view that we can [change our beliefs](/tangled_thoughts/philosophical_ramblings_what_is_belief/) through either direct or indirect means.
 

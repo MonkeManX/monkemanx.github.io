@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #01: Stoicism and Further Ranting"
 date: 2025-02-28 18:30:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 Maybe I just picked up the mantle of stoicism as an excuse for my total lack of interest in the mundane, and when I speak about the mundane, I mean the fleeting elements of the world, as opposed to the eternal.

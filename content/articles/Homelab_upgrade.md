@@ -2,9 +2,10 @@
 title: 'Server Upgrade or Documentation of my new Homelab'
 date: 2024-10-05 21:00:00
 tags: ["homelab", "proxmox", "zfs"]
+pinned: false
 markup:
   tableOfContents:
-    startLevel: 1 
+    startLevel: 1
     endLevel: 2
 Description: "This article details my homelab upgrade, in which I transitioned from a Raspberry Pi 3B to a dedicated server. I share my thought process behind selecting the new server, along with the configurations and software I installed on it."
 ---
@@ -12,13 +13,13 @@ Description: "This article details my homelab upgrade, in which I transitioned f
 
 {{< toc >}}
 
-## 0. Changes 
+## 0. Changes
 
 List of Changes Made of This Article:
 
-**15.10.24:** Fixed Typo.  
-**23.01.25:** Added a Spacer to the Article.  
-**23.05.25:** Added a new Section to Notification Managment.  
+**15.10.24:** Fixed Typo.
+**23.01.25:** Added a Spacer to the Article.
+**23.05.25:** Added a new Section to Notification Managment.
 **28.05.25:** Added a small Section for Quality Control of Radarr.
 
 ## 1. Introduction
@@ -26,7 +27,7 @@ List of Changes Made of This Article:
 For a while now I have been running a Homelab (:= A server that is running at home, often with low budget hardware, hosting several applications.) using a weak Raspberry 3b, originally I was using it to better [regulate my sleep schedule](/articles/my_homelab_part_0_prologue/) using HomeAssistant. But over time the motivation for running my Homelab changed, I wanted to experiment more, learn about various new technologies and more philosophical I wanted to be less dependented on centralized services -- Like, google drive for backups, netflix for entertainment, one drive for syncing devices and many more.
 
 And with this change of motivation my demand for my Homelab increased no longer did I want to run a single application, I wanted to run several applications all at once all containerized and virtualized, my two meager external hard drives dangling of my Rasperry Pi was not adequate anymore for my storage need, I wanted more drives and I wanted them in a
-RAID setup for redudancy and with ZFS to prevent bit rot.  
+RAID setup for redudancy and with ZFS to prevent bit rot.
 Sadly, my trusted Rasberry 3b was no longer powerfull enough to fullfill my needs, so it was time to upgarde my Homelab to something more powerfull.
 
 This post is a documentation of this upgrading undertaking, first going over the acquirement of the hardware of my homelab, then the proces of choosing a operating system, and finally through the different applications that I selfhosted with it and the different technologies they interface with.
@@ -43,7 +44,7 @@ This allowed me to balance, my nice-to-have features with the cost of including 
 
 I've already touched on some of my server requirements in the introduction. Now, I would like to explore them in more detail. Below is a list of factors, along with related question, that shaped my final requirements:
 
-- Size of the Computer: USFF, SFF, DT 
+- Size of the Computer: USFF, SFF, DT
     - How many disks fit into the case?
 - Motherboard
     - How many SATA connectors do I need?
@@ -61,13 +62,13 @@ I've already touched on some of my server requirements in the introduction. Now,
 - RAM
     - How much RAM?
     - Do I need ECC?
-- Power Usage 
+- Power Usage
 
 {{< addspace height="70px" >}}
 
 ### 2.1 Storage Requirements
 
-Using the server as a [NAS](https://en.wikipedia.org/wiki/Network-attached_storage) and as a media center for streaming movies and TV shows to all my devices were two key factors that prompted me to upgrade my Homelab. With the NAS demanding significant storage capacity and the media center needing a more powerful processor than the one I currently had. 
+Using the server as a [NAS](https://en.wikipedia.org/wiki/Network-attached_storage) and as a media center for streaming movies and TV shows to all my devices were two key factors that prompted me to upgrade my Homelab. With the NAS demanding significant storage capacity and the media center needing a more powerful processor than the one I currently had.
 As such I will analyze the requirements of these two functionalities first.
 
 {{< img src="/attachments/it_server.jpg" width="50%" >}}
@@ -135,8 +136,8 @@ Which will return in the following output:
 As you can see, there are multiple issues: for one we have two weird columns titld `unamed: 0` and `unamed 7` and second our first row is also weird, we should remove both.
 
 ```python
-df = df.dropna(how="all", axis="columns") # drops the columns 
-df = df.drop(0) # drops the first column 
+df = df.dropna(how="all", axis="columns") # drops the columns
+df = df.drop(0) # drops the first column
 df.head()
 ```
 
@@ -148,7 +149,7 @@ Which will result in the following output:
 There are still one issue persisting, we have whitespaces in the column names and in the data fields, you can see that through the following command:
 
 
-```python 
+```python
 df.columns
 ```
 
@@ -164,7 +165,7 @@ Index([' Movie Name                         ', ' Year ', ' Movie Length ',
 In order to remove the white-spaces we can do the following:
 
 ```python
-df = df.rename(columns=lambda x : x.strip()) # strips whitespaces from the columns 
+df = df.rename(columns=lambda x : x.strip()) # strips whitespaces from the columns
 df = df.apply(lambda x: x.str.strip() if x.dtype=="object" else x) # Remove white spaces in the dataframes
 ```
 
@@ -179,8 +180,8 @@ We get:
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 24 entries, 1 to 24
 Data columns (total 6 columns):
- #   Column         Non-Null Count  Dtype 
----  ------         --------------  ----- 
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
  0   Movie Name     24 non-null     object
  1   Year           24 non-null     object
  2   Movie Length   24 non-null     object
@@ -232,7 +233,7 @@ With the previous calculation we get the following table:
 {{< /table >}}
 
 
-As we can see, the size increase from higher resolution movies is substantial, which makes sense since 4K contains `4` times more pixels than 1080p. Although I haven't personally measured it, with reasonable quality presets, we can expect `x265` encoding to save up to [50%](https://cloudinary.com/guides/video-formats/decoding-the-future-x264-vs-x265) bitrate compared to `x264`. 
+As we can see, the size increase from higher resolution movies is substantial, which makes sense since 4K contains `4` times more pixels than 1080p. Although I haven't personally measured it, with reasonable quality presets, we can expect `x265` encoding to save up to [50%](https://cloudinary.com/guides/video-formats/decoding-the-future-x264-vs-x265) bitrate compared to `x264`.
 
 Assuming my estimates are accurate, this means we can store roughly 198 movies in 1080p or about 35 movies in 4K per terabyte of disk space. Since I currently don't have any 4K-capable devices, I’ll go with the 1080p estimate.
 
@@ -250,7 +251,7 @@ For my processor, there were three important aspects that I needed to consider:
 
 I quickly decided that the processor should be from Intel. Intel processors are great for media streaming due to [Quick Sync Video (QSV)](https://en.wikipedia.org/wiki/Intel_Quick_Sync_Video), Intel's video encoding and decoding engine, which excels at handling video formats like movies. Another reason is that Intel processors come with integrated graphics cards, which QSV uses for the encoding/decoding process. Additionally, Intel’s i3 and i5 processors, particularly from the later generations, are very power efficient—perhaps not as efficient as ARM processors, but still quite close.
 
-It was also fairly easy to decide on which generation of CPU I wanted. Anything beyond the 13th generation was a no-go due to [instability issues](https://www.xda-developers.com/intel-13th-gen-14th-gen-crashes/) with the newer models. Anything older than the 5th generation was out of the question because they don’t support QSV. The 9th generation was ideal, as it was the first to support HVEC codecs, making any generation beyond that a solid choice. 
+It was also fairly easy to decide on which generation of CPU I wanted. Anything beyond the 13th generation was a no-go due to [instability issues](https://www.xda-developers.com/intel-13th-gen-14th-gen-crashes/) with the newer models. Anything older than the 5th generation was out of the question because they don’t support QSV. The 9th generation was ideal, as it was the first to support HVEC codecs, making any generation beyond that a solid choice.
 
 An added benefit of processors from the 8th generation onwards is that the default number of cores increased from 4 to 6, which improves performance a lot for multi task workloads. The 9th generation processors use the UHD 630 as their integrated graphics chip, with the next major performance jump arriving in the 11th generation. For more details on codec support for Intel CPUs, you can refer to the [Media Capabilities Supported by Intel Hardware List](https://www.intel.com/content/www/us/en/docs/onevpl/developer-reference-media-intel-hardware/1-1/overview.html#ENCODE-OVERVIEW-9TH).
 
@@ -267,7 +268,7 @@ A quick note on the size of the computer: I wanted a server that had enough spac
 
 ### 2.4 RAM Requirements
 
-Regarding RAM, there isn’t much to say—you only need as much memory as you actually use (unless you're doing something extreme like using [ZFS Deduplication](https://www.truenas.com/docs/references/zfsdeduplication/)). I'll start with a modest amount and buy more when needed. Scalability isn’t a big concern, as most modern motherboards have four slots for RAM sticks. 
+Regarding RAM, there isn’t much to say—you only need as much memory as you actually use (unless you're doing something extreme like using [ZFS Deduplication](https://www.truenas.com/docs/references/zfsdeduplication/)). I'll start with a modest amount and buy more when needed. Scalability isn’t a big concern, as most modern motherboards have four slots for RAM sticks.
 
 One thing worth mentioning is that having [ECC RAM](https://www.truenas.com/docs/references/zfsdeduplication/) would be nice, but it’s not essential, especially for a small home setup like mine and it is rather expensive.
 
@@ -344,7 +345,7 @@ However, this setup comes with a downside: you sacrifice 50% of your storage cap
 
 {{< img src="/attachments/RAID_1.png" width="30%" >}}
 
-RAID-0 and RAID-1 can be combined into a setup called **RAID-01**, which provides both the redundancy of mirroring and the performance gains of striping. RAID-01 works by first striping the data across disks and then mirroring those striped sets. 
+RAID-0 and RAID-1 can be combined into a setup called **RAID-01**, which provides both the redundancy of mirroring and the performance gains of striping. RAID-01 works by first striping the data across disks and then mirroring those striped sets.
 
 With RAID-01, the performance improvement is even greater than with RAID-0 because now you can read from four disks simultaneously and write to two disks at the same time. This results in 4x read access and 2x write access.
 
@@ -362,7 +363,7 @@ There are many more RAID systems than the ones I’ve introduced, but these are 
 
 ### 5.2 The Magical Filesystem: ZFS
 
-There are many file systems available to choose from, ranging from long-established ones like EXT4 and Windows-compatible NTFS to more modern options like Btrfs and the relatively new [drama-infested](https://www.phoronix.com/news/Linus-Torvalds-Bcachefs-Regrets) file system, Bcachefs. Each of these file systems has its own strengths and weaknesses. 
+There are many file systems available to choose from, ranging from long-established ones like EXT4 and Windows-compatible NTFS to more modern options like Btrfs and the relatively new [drama-infested](https://www.phoronix.com/news/Linus-Torvalds-Bcachefs-Regrets) file system, Bcachefs. Each of these file systems has its own strengths and weaknesses.
 
 However, I want to briefly discuss a special file system called **Zettabyte File System (ZFS)**. ZFS has been around in some shape or form since 2001, but it only became widely available on Linux in 2010. It offers some really powerful features. While I won’t provide a comprehensive overview, there are many guides that do a far better job than I ever could, I want like to highlight some of its cool features:
 - **Natively supports RAID storage.**
@@ -496,7 +497,7 @@ The first thing you should do is change the default password. Click on the perso
 
 {{< img src="/attachments/omv_file_system.jpg" width="80%" >}}
 
-Next, we want to create a user who will be able to access the data on the file system over the network. To do this, navigate to `Users -> Create`. 
+Next, we want to create a user who will be able to access the data on the file system over the network. To do this, navigate to `Users -> Create`.
 
 Once you've created the user, we can finally set up a shared folder, which will allow access to its data as long as you are connected to the network. Go to: `Storage -> Shared Folders -> Create`, give it a name, and select the new file system.
 
@@ -526,19 +527,19 @@ Similar to the OpenMediaVault virtual machine, you can double-click the new Ngin
 
 You can use [DuckDns](https://www.duckdns.org/) to make your service accessible via a domain name like `myverycoolserver.duckdns.org`. However, to use this with Nginx Proxy Manager, you first need to install its dependencies. You can do this by accessing the container's shell and typing: `pip install certbot_dns_duckdns`.
 
-At this point, you have two options: 
+At this point, you have two options:
 1. You can make your services (currently just Nginx, but later we’ll install more) accessible from anywhere on the internet.
 2. You can restrict access to your services so they are only available on your local network.
 
 I chose the second option. Making your services accessible over the internet can be risky, as it allows attackers to potentially infiltrate your home network. I recommend doing this only if you're confident in securing your setup.
 
-To proceed with the second option, go to DuckDns (although you can also use a purchased domain or another free domain name service, but for this guide, I’ll use DuckDns). Once logged in, create a new domain by entering a name in the `subdomains` field. 
+To proceed with the second option, go to DuckDns (although you can also use a purchased domain or another free domain name service, but for this guide, I’ll use DuckDns). Once logged in, create a new domain by entering a name in the `subdomains` field.
 
 After creating the domain, it will point to your **external IP address**. Since we only want to access the service on the local network, you’ll need to change this to the **local IP address** of your Nginx Proxy Manager. This is the same IP you used to access Nginx through your browser. For example, my local IP address follows the format `192.168.xxx.xxx`, but this may vary for you.
 
 {{< img src="/attachments/duckdns.jpg" width="80%" >}}
 
-We can now make Proxmox and Nginx Proxy Manager accessible through your newly created domain. If you want your service to be accessible via `https` (instead of just `http`), you can use [Let’s Encrypt](https://letsencrypt.org/), which provides free certificates for your domain using ACME challenges. Fortunately, Nginx can handle this automatically. 
+We can now make Proxmox and Nginx Proxy Manager accessible through your newly created domain. If you want your service to be accessible via `https` (instead of just `http`), you can use [Let’s Encrypt](https://letsencrypt.org/), which provides free certificates for your domain using ACME challenges. Fortunately, Nginx can handle this automatically.
 
 Go to the Nginx web interface and navigate to `SSL Certificates -> Add SSL Certificate`. Choose `Let’s Encrypt`, and for the domain name, enter two entries: `<your_domain>` and `*.<your_domain>` from DuckDns. The `*` in front of your domain is called a *wildcard* and allows you to secure subdomains like `proxmox.<your_domain>`, which is very useful for all the services we will add here later on.
 
@@ -565,7 +566,7 @@ Vaultwarden can be easily installed using the [Proxmox Helper Scripts by tteck](
 
 [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) is a protocol used for news aggregation. Websites can offer an RSS feed that users can subscribe to, allowing newly released information on the feed to be forwarded directly to the user's RSS client. The content of an RSS feed can vary widely, though most of it is text-based. It can also notify users of new podcast episodes, among other updates. [FreshRSS](https://github.com/FreshRSS/FreshRSS) is one of these RSS clients, that is selfhosted free and open source.
 
-**Why use RSS?**  
+**Why use RSS?**
 Nowadays, more and more platforms use automated [recommendation systems](https://www.nvidia.com/en-us/glossary/recommendation-system/) to suggest new content. Whether it's social media like Facebook, or even worse, TikTok—where all content is driven by recommendation algorithms—or the news pages on Android phones or Windows machines, the trend is the same.
 I believe that, on a large scale, these recommendation systems are unhealthy for society. They are optimized for user retention, which often leads to the promotion of more extreme content. *AlmostFridayTv* has a great semi-related [sketch on this](https://www.youtube.com/watch?v=jZkGqlq8xwE), which I highly recommend.
 This is where RSS comes in. It gives people the power to take control back from the algorithm by allowing them to curate their own news feed, free from the influence of any recommendation system.
@@ -596,7 +597,7 @@ services:
     environment:
       TZ: Europe/Berlin
       CRON_MIN: '3,33'
-    ports:      
+    ports:
       - "8080:80"
 ```
 
@@ -667,7 +668,7 @@ To add a service to Homarr, click on the *Edit Mode* button in the top-right cor
 ## 13. Torrenting All the Media You Want with the Arr-Stack
 
 {{< info "Info" >}}
-**Torrenting** is the act of downloading and uploading files through the BitTorrent network. Instead of downloading from a central server, users download and upload files to each other in a process called peer-to-peer (P2P) file sharing. Each torrent has a `.torrent` file associated with it, which contains metadata about the files and folders being shared, as well as a list of *trackers* that help participants find each other.  
+**Torrenting** is the act of downloading and uploading files through the BitTorrent network. Instead of downloading from a central server, users download and upload files to each other in a process called peer-to-peer (P2P) file sharing. Each torrent has a `.torrent` file associated with it, which contains metadata about the files and folders being shared, as well as a list of *trackers* that help participants find each other.
 
 **Torrent Trackers** are a special type of server that assist in the communication between peers. They keep track of where file copies reside on peer machines, which ones are available, and help coordinate the transmission and reassembly of the files being shared.
 {{< /info >}}
@@ -690,7 +691,7 @@ I won’t go into too much detail since there are already many excellent guides 
 - [Plex and the *ARR stack](https://sysblob.com/posts/plex/)
 - [Docker Compose Arr Stack](https://mafyuh.com/posts/docker-arr-stack-guide/)
 
-As a basic overview, Jellyseerr provides a Netflix-like interface where users can request media (movies or TV shows). These requests are forwarded to Radarr for movies and to Sonarr for TV shows. These tools, in turn, forward the requests to Prowlarr (or Jackett), which searches for torrents and sends them to the torrent client (in my case, qBittorrent, though Transmission is another option). Once the torrent is downloaded, the media becomes available in Jellyfin for consumption. 
+As a basic overview, Jellyseerr provides a Netflix-like interface where users can request media (movies or TV shows). These requests are forwarded to Radarr for movies and to Sonarr for TV shows. These tools, in turn, forward the requests to Prowlarr (or Jackett), which searches for torrents and sends them to the torrent client (in my case, qBittorrent, though Transmission is another option). Once the torrent is downloaded, the media becomes available in Jellyfin for consumption.
 
 Everything runs inside a Docker container with Gluetun, which tunnels all network activity from qBittorrent through the VPN. If downloading `.torrent` files is illegal in your country, you should also route the network activity of Prowlarr, Sonarr, and Radarr through the VPN.
 
@@ -790,7 +791,7 @@ services:
       # Server list updater
       # See https://github.com/qdm12/gluetun-wiki/blob/main/setup/servers.md#update-the-vpn-servers-list
       - UPDATER_PERIOD=24h
-  
+
     qbittorrent:
         image: lscr.io/linuxserver/qbittorrent:latest
         container_name: qbittorrent
@@ -842,11 +843,11 @@ services:
           - /mnt/media_root:/media_root/
         restart: unless-stopped
 
-    
+
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:latest
     container_name: prowlarr
-    env_file: arr-stack.env 
+    env_file: arr-stack.env
     ports:
       - 9696:9696 # prowlarr
     volumes:
@@ -923,7 +924,7 @@ docker compose up -f arr-stack-compose.yaml up -d
 {{< img src="/attachments/500days.jpg" width="50%" figcaption="<i>Completly unrelated, another cool movie poster.</i>" >}}
 
 
-## 13.3 Quality Control 
+## 13.3 Quality Control
 
 Maybe you have already requested some movies using *Radarr* and have noticed that the files you are downloading are rather large—exceeding your requirements, especially if your storage is limited, like mine.
 
@@ -956,7 +957,7 @@ Jellyfin integrates smoothly with the *arr-stack*, which is responsible for the 
 
 Just like with previously installed software like *Tandoor* or *Homarr*, we can use a [Tteck script](https://tteck.github.io/Proxmox/#jellyfin-media-server-lxc) to easily install Jellyfin. However, setting up Jellyfin is a bit more complicated than in these two previous cases.
 
-The first thing to note is that an unprivileged container **should** work, but you may encounter issues with hardware encoding. Personally, I opted for a privileged container because it simplifies the setup process for hardware acceleration and allows for direct mounting of Samba devices. 
+The first thing to note is that an unprivileged container **should** work, but you may encounter issues with hardware encoding. Personally, I opted for a privileged container because it simplifies the setup process for hardware acceleration and allows for direct mounting of Samba devices.
 
 If you prefer to use an unprivileged container, it is still possible to mount the Samba drive on the host machine (`pve`) and utilize [LXC bind mounts](https://pve.proxmox.com/wiki/Linux_Container#_bind_mount_points) to make it available in Jellyfin. I will demonstrate this technique for other software later in this article. Alternatively, you can check out [this forum post](https://forum.proxmox.com/threads/tutorial-unprivileged-lxcs-mount-cifs-shares.101795/) for more information.
 
@@ -991,9 +992,9 @@ nano /etc/modules
 Add the following modules:
 
 ```bash
-vfio 
-vfio_iommu_type1 
-vfio_pci 
+vfio
+vfio_iommu_type1
+vfio_pci
 vfio_virqfd
 ```
 
@@ -1128,7 +1129,7 @@ When creating your media library, you should enable the `NFO` option, which will
 
 ## 15. Synchronize Files Across Multiple Devices with Syncthing
 
-I already talked about [Syncthing](/articles/my_homelab_part_6_syncthing/) in a prior post, which I recommend checking out for more information. 
+I already talked about [Syncthing](/articles/my_homelab_part_6_syncthing/) in a prior post, which I recommend checking out for more information.
 
 To recap, Syncthing is a synchronization service that allows you to sync files across multiple devices. I personally use it to synchronize my written notes across all my devices.
 
@@ -1138,7 +1139,7 @@ To recap, Syncthing is a synchronization service that allows you to sync files a
 
 As luck would have it, there is a [TTeck script](https://tteck.github.io/Proxmox/#syncthing-lxc) that we can use for the installation process.
 
-After this, we need to change one last thing. We created the *local* SSD ZFS dataset and the *data* HDD ZFS dataset to separate where we save our software and their associated configuration files (on the *local* dataset) from where we save the actual data (on the *data* dataset), e.g., movies in the case of the Arr-Stack. 
+After this, we need to change one last thing. We created the *local* SSD ZFS dataset and the *data* HDD ZFS dataset to separate where we save our software and their associated configuration files (on the *local* dataset) from where we save the actual data (on the *data* dataset), e.g., movies in the case of the Arr-Stack.
 
 We want to do the same with Syncthing, where we save our data on an SMB share of OMV, while the software itself is stored on the *local* dataset. To achieve this, during the installation process, choose to use the *local* dataset for installation.
 
@@ -1180,21 +1181,21 @@ You should now be able to add your sync folder and syncrhonize them across devic
 
 ## 16. Document Management with Paperless-NGX
 
-> Are your shelves overflowing with paper documents like car insurance, health insurance forms, or bank statements? Do you find yourself spending too much time rummaging through stacks of folders, hopelessly searching for that one important document? Worse yet, are you tired of manually copying details from physical papers to your digital files?  
+> Are your shelves overflowing with paper documents like car insurance, health insurance forms, or bank statements? Do you find yourself spending too much time rummaging through stacks of folders, hopelessly searching for that one important document? Worse yet, are you tired of manually copying details from physical papers to your digital files?
 >
-> Introducing [Paperless-Ngx](https://docs.paperless-ngx.com/), the open-source solution designed to simplify your document management. Say goodbye to the clutter of physical paperwork and the headache of searching through piles of folders.  
+> Introducing [Paperless-Ngx](https://docs.paperless-ngx.com/), the open-source solution designed to simplify your document management. Say goodbye to the clutter of physical paperwork and the headache of searching through piles of folders.
 >
-> With Paperless-Ngx, you can automatically import documents from various sources, converting them into neatly organized, searchable PDFs that are stored securely on your own server—completely free from third-party access. No more data being transmitted elsewhere!  
+> With Paperless-Ngx, you can automatically import documents from various sources, converting them into neatly organized, searchable PDFs that are stored securely on your own server—completely free from third-party access. No more data being transmitted elsewhere!
 >
-> Our powerful OCR (Optical Character Recognition) feature ensures that even scanned images are transformed into fully searchable text, allowing you to find exactly what you need, when you need it. Supporting over 100 languages, Paperless-Ngx ensures global functionality, so you’ll never be left searching aimlessly again.  
+> Our powerful OCR (Optical Character Recognition) feature ensures that even scanned images are transformed into fully searchable text, allowing you to find exactly what you need, when you need it. Supporting over 100 languages, Paperless-Ngx ensures global functionality, so you’ll never be left searching aimlessly again.
 >
-> Ready to regain control over **your** documents? Download Paperless-Ngx today.Completely free and see how easy it is to take back your space and sanity.  
+> Ready to regain control over **your** documents? Download Paperless-Ngx today.Completely free and see how easy it is to take back your space and sanity.
 
 {{< img src="/attachments/documents-smallcards-dark.png" width="100%" >}}
 
 ### 16.1 Paperless-Ngx: Installation
 
-Installation is very easy thanks to the [TTeck script](https://tteck.github.io/Proxmox/#paperless-ngx-lxc). 
+Installation is very easy thanks to the [TTeck script](https://tteck.github.io/Proxmox/#paperless-ngx-lxc).
 
 If, after installation, you encounter the error: "`CSRF verification failed`", it could be due to your reverse proxy. To fix this, go to `/opt/paperless/paperless.conf` and set `PAPERLESS_URL` to your reverse proxy URL.
 
@@ -1276,7 +1277,7 @@ For more information refer to my [prior article](/articles/my_homelab_part_4_wir
 
 In addition to both of these software, I will use [Readarr](https://github.com/Readarr/Readarr), *Prowlarr*, *gluetune*, and *qBittorrent* to create a setup similar to my *Arr-Stack. This will allow me to automatically torrent e-books and audiobooks, streamlining the process just like I do with other media.
 
-### 18.1 Calibre-Web Automated and Audiobookshelf: Installation 
+### 18.1 Calibre-Web Automated and Audiobookshelf: Installation
 
 Just like with *WG-Easy*, there isn't a direct TTeck script available for this. Instead, we’ll use the [TTeck Docker script](https://tteck.github.io/Proxmox/#docker-lxc) and install the software via Docker.
 
@@ -1348,7 +1349,7 @@ services:
       - ./qbittorrent/appdata:/config
       - ./qbittorrent/downloads:/downloads #optional
     restart: unless-stopped
-  
+
   audiobookshelf:
     image: ghcr.io/advplyr/audiobookshelf:latest
     # ABS runs on port 13378 by default. If you want to change
@@ -1391,7 +1392,7 @@ services:
 ```
 {{< /details >}}
 
-Make sure to configure the VPN settings for Gluetun or remove Gluetun from the Docker Compose file. Additionally, double-check the volumes to ensure they match your setup if you're not using the same configuration as mine. 
+Make sure to configure the VPN settings for Gluetun or remove Gluetun from the Docker Compose file. Additionally, double-check the volumes to ensure they match your setup if you're not using the same configuration as mine.
 I set the version of qBittorrent to 4.6.6 because I was using [MyAnonamouse](https://www.myanonamouse.net/), a [private tracker](https://www.reddit.com/r/torrents/comments/174b1d/what_are_private_trackers_and_how_do_they_work/) that, at the time, didn't allow higher qBittorrent versions. I highly recommend myanommouse, it's not very hard to get into and offers a wide range of books. If you don’t plan on joining MyAnonamouse, you can replace `image: lscr.io/linuxserver/qbittorrent:4.6.6` with `image: lscr.io/linuxserver/qbittorrent:latest` in the Docker Compose file.
 
 {{< warning "Warning">}}
@@ -1418,7 +1419,7 @@ The last step is to ensure that books and audiobooks are downloaded to the corre
 </figure>
 {{< /rawhtml >}}
 
-Once completed, you should see these categories on the sidebar in qBittorrent. For the audiobook category, set the download folder to `/audiobooks`, and for books, choose `/downloads`. Books saved in the `cwa-ingest` folder will be imported and deleted automatically, which means they can't be seeded. 
+Once completed, you should see these categories on the sidebar in qBittorrent. For the audiobook category, set the download folder to `/audiobooks`, and for books, choose `/downloads`. Books saved in the `cwa-ingest` folder will be imported and deleted automatically, which means they can't be seeded.
 
 To ensure books are moved to the correct folder after downloading, go to qBittorrent's settings and add an external program to run when downloads are finished: `cp -r "%F" "/cwa-book-ingest"`. This will automatically copy the book to Calibre while still allowing you to seed it in qBittorrent.
 
@@ -1523,13 +1524,13 @@ Here’s a comment that explains this well:
 > If your home server were in a house fire, a backup would be used to restore your data.
 >
 > If both hard drives failed before the rebuild finished, a backup would restore your data.
-> 
+>
 > If you accidentally opened a file that encrypted your data, a backup would restore your data.
-> 
+>
 > If your home server was dropped during a move, a backup would restore your data.
-> 
+>
 > If you were editing a video and overwrote the original, a backup would recover the original file.
-> 
+>
 > If a hacker got in and destroyed your data, you’d need the backup.
 >
 > If a family member messed things up, you’d need the backup.
@@ -1618,7 +1619,7 @@ To implement my backup strategy, follow these steps:
 9. **Restore and Test:**
    To verify that everything is working, pick a random container, shut it down, and go to the backup tab to restore it. Afterward, check that the restored container is functioning correctly.
 
-10. **Congratulations!**  
+10. **Congratulations!**
     You now have a working backup strategy!
 
 {{< img src="/attachments/30year_old_saver.png" width="70%" >}}
@@ -1643,10 +1644,10 @@ echo "powersave" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
 When the server is idle and not performing any tasks, it consumes approximately 20 watts of power (with the powersave scaling governor). With minor workloads like torrenting, the consumption goes up to 30 watts. Under full load, the power usage increases even more.
 
-We can use any of the many [electricity calculators online](https://www.rapidtables.com/calc/electric/energy-cost-calculator.html) to estimate the cost of running the server. For example, using the following parameters: 
+We can use any of the many [electricity calculators online](https://www.rapidtables.com/calc/electric/energy-cost-calculator.html) to estimate the cost of running the server. For example, using the following parameters:
 
-- **Power consumption**: 30 watts  
-- **Operating time**: 24 hours per day  
+- **Power consumption**: 30 watts
+- **Operating time**: 24 hours per day
 - **Electricity price**: €0.40 per kWh (as of April 29th, Germany)
 
 This results in an annual energy cost of approximately **€105**. By reducing the server's operating time from 24 hours to 18 hours a day, the total cost drops to around **€80** per year.
@@ -1678,7 +1679,7 @@ To enable Wake-on-LAN, follow these steps:
 
 #### 21.5.2 Sending the Wake-on-LAN Packet
 
-To send the wake-up packet, I use my smartphone with the [WakeOnLan app](https://github.com/Florianisme/WakeOnLan). 
+To send the wake-up packet, I use my smartphone with the [WakeOnLan app](https://github.com/Florianisme/WakeOnLan).
 
 The configuration of *WakeOnLan* app should look similar to this:
 {{< img src="/attachments/wake_on_lan.png" width="30%" >}}

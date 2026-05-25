@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #05: Morality and Intentions"
 date: 2025-06-21 18:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 I believe the only moral dimension of an action lies in its intention. In other words, every action and every outcome is morally neutral; only the intention is not.

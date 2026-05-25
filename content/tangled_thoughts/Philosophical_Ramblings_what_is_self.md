@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #09: What is the self?"
 date: 2025-07-11 07:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 One interesting question is: *What is the self?* By that, we mean identity: what defines who you are. This question has interesting consequences depending on which model of identity you adopt. So, what models exist?

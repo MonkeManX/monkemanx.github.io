@@ -1,7 +1,7 @@
 ---
 title: "Light Fantastic by Terry Pratchet"
 date: 2025-05-29 16:00:00
-tags: ["Book"]
+tags: ["Book", "Discworld"]
 ---
 
 {{< book image="/attachments/TLF.cover.jpg" >}}

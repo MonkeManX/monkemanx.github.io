@@ -64,7 +64,7 @@ The fundamental question before us is none other than: **"What is a human?"** An
 
 The ancient Greeks, particularly the Stoics, believed that the world was embedded with a *telos*, a purpose or reason for being. By examining what made one thing unique compared to another, one could discover its *telos*, and through that, its meaning. For example, what makes a fisherman uniquely special? It is that he fishes. Thus, the job, goal, *telos*, and meaning of a fisherman is to fish. Similarly, a construction worker's *telos* is to build.
 
-We can apply this reasoning to ourselves: what makes humans uniquely special when compared to everything else in nature? Whatever that is would point us to our *telos*. For the ancient Greeks, what made us special was *reason*—we were the only beings in nature capable of rational thought.
+We can apply this reasoning to ourselves: what makes humans uniquely special when compared to everything else in nature? Whatever that is would point us to our *telos*. For the ancient Greeks, what made us special was *reason*, we were the only beings in nature capable of rational thought.
 
 But as we’ve seen, even this has been eroded by the rise of large language models. LLMs now regularly outperform humans in many [reasoning benchmarks](https://ai.meta.com/blog/meta-llama-3/), they are even better than us in judging [social situations](https://www.nature.com/articles/s41598-024-79048-0).
 
@@ -80,7 +80,7 @@ Yet this too has now been challenged. LLMs have become so skilled in conversatio
 ## My Perspective
 
 
-I believe this is one of the greatest things that could have happened to us as a species—not because of the scientific and material progress AI promises to deliver, but because it breaks the illusion that humans occupy a uniquely special place in the cosmos once and for all. There are no more comforting lies to hide behind. Now, each of us must confront the existential angst head-on.
+I believe this is one of the greatest things that could have happened to us as a species, not because of the scientific and material progress AI promises to deliver, but because it breaks the illusion that humans occupy a uniquely special place in the cosmos once and for all. There are no more comforting lies to hide behind. Now, each of us must confront the existential angst head-on.
 
 If humans are no longer uniquely special, then we are left with two possibilities: either *everything* is special, or *nothing* is.
 

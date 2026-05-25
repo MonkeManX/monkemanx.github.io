@@ -2,27 +2,27 @@
 title: 'The Gem of Africa'
 date: 2025-03-25 12:00:00
 tags: ["Travel"]
-pinned: true
+pinned: false
 ---
 
-A year ago, a friend of mine had the idea to visit Namibia—often referred to as the "Gems of Africa" because of its diversity of animals and biomes. I’m not entirely sure how he came up with the idea. Maybe it was due to the country’s connection to Germany during its colonial period, or perhaps some algorithmic push from the "machine gods" in his feed. Whatever the reason, he asked our friend group if we were up for joining him. Another friend said yes, but I couldn’t go because it overlapped with some exams I had to take at university. However, I promised him that next semester, I would choose modules that allowed me to have some free time, which would overlap with theirs.
+A year ago, a friend of mine had the idea to visit Namibia, often referred to as the "Gems of Africa" because of its diversity of animals and biomes. I’m not entirely sure how he came up with the idea. Maybe it was due to the country’s connection to Germany during its colonial period, or perhaps some algorithmic push from the "machine gods" in his feed. Whatever the reason, he asked our friend group if we were up for joining him. Another friend said yes, but I couldn’t go because it overlapped with some exams I had to take at university. However, I promised him that next semester, I would choose modules that allowed me to have some free time, which would overlap with theirs.
 
-Luckily, our friend group is relatively small—just me and the other two. We go back to kindergarten, all being from the same village, so synchronizing our schedules was easier. Still, there were some problems because the others are at different universities, meaning our semesters don’t neatly overlap. Their exam phase finishes before mine even starts, and by the time my exams are over, they’re already a few weeks into their next semester.
+Luckily, our friend group is relatively small; just me and the other two. We go back to kindergarten, all being from the same village, so synchronizing our schedules was easier. Still, there were some problems because the others are at different universities, meaning our semesters don’t neatly overlap. Their exam phase finishes before mine even starts, and by the time my exams are over, they’re already a few weeks into their next semester.
 
-So, my plan was to move one major exam to my final semester, which would also be the time I’d be writing my bachelor’s thesis. In this semester, I would have two early exams and a few later ones, with a big break in between that I could use for the holiday. My second early exam was on Thursday, and we would fly out on Friday. We spent two weeks in Namibia and flew back. This second exam was in Optimization Theory (see *[Optimization Theory](/articles/optimization_theory/)* and *[More Optimization Problems](/articles/optimization_problems/)*), which I had already failed once. This exam became my “last try,” and it would come back to bite me—more on that later.
+So, my plan was to move one major exam to my final semester, which would also be the time I’d be writing my bachelor’s thesis. In this semester, I would have two early exams and a few later ones, with a big break in between that I could use for the holiday. My second early exam was on Thursday, and we would fly out on Friday. We spent two weeks in Namibia and flew back. This second exam was in Optimization Theory (see *[Optimization Theory](/articles/optimization_theory/)* and *[More Optimization Problems](/articles/optimization_problems/)*), which I had already failed once. This exam became my “last try,” and it would come back to bite me, more on that later.
 
 Back to Namibia. The plan was to rent a car and drive in a big circle around the country, checking out all the important sights along the way. We decided to rent an automatic 4x4. Our selection criteria were simple: cheap, reliable, and with a rooftop tent for safety, as Namibia is famous for its wildlife. For food, we stocked the car’s included mini-fridge with cans and bought some [game meat](https://en.wikipedia.org/wiki/Game_(hunting)) from a local butcher. We also bought water in bulk (about 40 liters, calculating 5 liters per person per day), as it’s not safe to drink in most places. We spent most nights at rented campsites, where we could grill the game meat and canned food in the evening. For dinner, we often had bread and cheese. When we were in a city, we took the opportunity to stay in a hotel and eat at a restaurant.
 
 Before the trip, we had some preparations to do, the most important being a visit to the travel medicine consultation. These can be found in major cities, such as [Karlsruhe](https://www.landkreis-karlsruhe.de/Service-Verwaltung/Themen-Projekte/Gesundheit/Reisemedizinische-Sprechstunde/), and they’ll tell you what you need to know about medical precautions. For example, they recommended vaccinations like rabies, typhus, hepatitis A, tetanus, whooping cough, and diphtheria. Some of these cost money, but my health insurance reimbursed me for the ones that did.
 
-We also bought the meat in advance, rented the car, and booked accommodation for the busier spots, like the Etosha National Park and the city of Swakopmund. It’s important to note that we traveled in the off-season. While this made many things cheaper and less crowded, it also meant fewer animals to see. This is because, in the off-season, there’s a lot of rain, which spreads the animals out. In the peak season, it’s drier, so the animals gather around the waterholes, making it easier to see them—you just have to wait at the waterhole for them to come.
+We also bought the meat in advance, rented the car, and booked accommodation for the busier spots, like the Etosha National Park and the city of Swakopmund. It’s important to note that we traveled in the off-season. While this made many things cheaper and less crowded, it also meant fewer animals to see. This is because, in the off-season, there’s a lot of rain, which spreads the animals out. In the peak season, it’s drier, so the animals gather around the waterholes, making it easier to see them, you just have to wait at the waterhole for them to come.
 
 
 ## Day 0: The Flight
 
 Our plane took off in the evening, flying directly from Frankfurt to Windhoek, the capital city of Namibia, taking approximately 10 hours. We arrived a bit early, giving us enough time to grab something to eat and, of course, enjoy a beer.
 
-The plane wasn’t large; it could host maybe a hundred people. As this was my first flight, I was a bit nervous, and the turbulence—though not major—didn't help. To make matters worse, I got the worst seat possible, right in the middle. To my left were my two friends, and to my right was a stranger. This meant that, if I wanted to stand up, I had to either ask the person next to me or get both of my friends to stand up. Before the in-flight meal, this wasn’t much of a problem, but afterward, both my friends and the stranger quickly fell asleep, leaving me to deal with the rest of the night. I spent it trying to suppress the urge to pee and debating whether to wake someone up to use the toilet. I do have a weak bladder, so I barely slept—only about an hour—which would catch up with me the next day.
+The plane wasn’t large; it could host maybe a hundred people. As this was my first flight, I was a bit nervous, and the turbulence, though not major, didn't help. To make matters worse, I got the worst seat possible, right in the middle. To my left were my two friends, and to my right was a stranger. This meant that, if I wanted to stand up, I had to either ask the person next to me or get both of my friends to stand up. Before the in-flight meal, this wasn’t much of a problem, but afterward, both my friends and the stranger quickly fell asleep, leaving me to deal with the rest of the night. I spent it trying to suppress the urge to pee and debating whether to wake someone up to use the toilet. I do have a weak bladder, so I barely slept (around a hour) which would catch up with me the next day.
 
 Aside from that, the flight was rather uneventful, and we arrived safely the following morning.
 
@@ -51,7 +51,7 @@ We arrived at 9 o'clock in the morning. The sun was shining at full force, and i
 
 An interesting note about the airport: first, it was crawling with some kind of beetle-like insect; second, right next to the check-in counter was a shrine for Namibia's first president, who had passed away just two weeks prior to our arrival. He was famous for leading Namibia to independence from South Africa. The shrine included a picture of him, some candles, and a book where people could write messages for him. We would encounter many such shrines during our travels, and hear once more about the complicated relationship between Namibia and South Africa from a local.
 
-The first thing we did was exchange some money for Namibian dollars and buy some water. Here’s a funny thing: there were two local money exchanges right next to each other, with one offering a better rate than the other. How does that work? The company from which we rented the jeep had sent someone to pick us up from the airport, which is a common practice for car rental companies in Namibia. After all, how are you supposed to get to your car otherwise? They don’t have public transportation, and the airport is over an hour’s drive from the next major city, Windhoek. So, we and a bunch of other travelers got onto a bus, which drove us toward the rental company. The bus was speeding down the road, which we later learned is more the norm than the exception. While zipping across the landscape, we took in our first views of Namibia’s scenery, all while the bus driver blasted some kind of African music—lots of dynamic drums. The coolest thing I saw (though I didn't manage to take a photo) was a monkey sitting on top of a city sign, eating some kind of fruit.
+The first thing we did was exchange some money for Namibian dollars and buy some water. Here’s a funny thing: there were two local money exchanges right next to each other, with one offering a better rate than the other. How does that work? The company from which we rented the jeep had sent someone to pick us up from the airport, which is a common practice for car rental companies in Namibia. After all, how are you supposed to get to your car otherwise? They don’t have public transportation, and the airport is over an hour’s drive from the next major city, Windhoek. So, we and a bunch of other travelers got onto a bus, which drove us toward the rental company. The bus was speeding down the road, which we later learned is more the norm than the exception. While zipping across the landscape, we took in our first views of Namibia’s scenery, all while the bus driver blasted some kind of African music, lots of dynamic drums. The coolest thing I saw (though I didn't manage to take a photo) was a monkey sitting on top of a city sign, eating some kind of fruit.
 
 As we entered a more urban environment, it became clear that this is a low-trust society. Every so often, you could spot a neighborhood watch sign. Every property was walled in, often with metal spikes or barbed wire on top of the walls—no ordinary barbed wire, but the NATO-style wire with sharp metal blades instead of spikes.
 
@@ -147,7 +147,7 @@ After encountering the C14, we drove to a small village called "Solitaire." As y
     loadJQuery=true
 >}}
 
-When we got on the C19 road, it was the first time I drove the car—before that, my friends had been driving. It took me a while to get used to it since I had never driven an automatic car before. But after a while, it basically drove itself. The roads were in pretty good condition, and we drove for tens of kilometers without turning. We blasted some music, for which we had started collecting songs a year prior specifically for a Namibia road trip playlist. During the 2 hours I drove, I saw five cars (I counted).
+When we got on the C19 road, it was the first time I drove the car before that, my friends had been driving. It took me a while to get used to it since I had never driven an automatic car before. But after a while, it basically drove itself. The roads were in pretty good condition, and we drove for tens of kilometers without turning. We blasted some music, for which we had started collecting songs a year prior specifically for a Namibia road trip playlist. During the 2 hours I drove, I saw five cars (I counted).
 
 
 {{< rawhtml >}}
@@ -201,7 +201,7 @@ Before going to bed, we had to lock everything up in the campsite, because appar
 
 ## Day 3: Sossusvlei, Inside the Namib Desert
 
-The plan for the day was to visit the Namibian desert, famous for its towering dunes. As such, we left the campsite as early as possible—the later we went, the hotter it would get. We woke up at 6 a.m., followed the C19 to Sesriem, and were at the dunes by 9 a.m.
+The plan for the day was to visit the Namibian desert, famous for its towering dunes. As such, we left the campsite as early as possible the later we went, the hotter it would get. We woke up at 6 a.m., followed the C19 to Sesriem, and were at the dunes by 9 a.m.
 
 {{< rawhtml >}}
 <figure>
@@ -282,7 +282,7 @@ When we returned to our campsite from the day before, we relaxed in the pool, gr
 
 This was mostly a driving day. We took the C14, stopped briefly in Solitaire for another slice of apple pie, and then continued all the way up to Walvis Bay.
 
-On our way, we saw various animals such as gnus, oryx, and a Cape fox. We passed through two mountain passes again, though the views weren't as spectacular as the first mountain pass we drove through on Day 2. The remaining route was the most monotonous drive so far—tens of kilometers of nothing but a flat landscape scattered with small stones. Every hill became exciting because we thought maybe something new would be behind it, but it never was. We dubbed this terrain the "void."
+On our way, we saw various animals such as gnus, oryx, and a Cape fox. We passed through two mountain passes again, though the views weren't as spectacular as the first mountain pass we drove through on Day 2. The remaining route was the most monotonous drive so far, tens of kilometers of nothing but a flat landscape scattered with small stones. Every hill became exciting because we thought maybe something new would be behind it, but it never was. We dubbed this terrain the "void."
 
 
 {{< rawhtml >}}
@@ -311,7 +311,7 @@ What struck me was that just a day before, we were in the desert, and now we wer
 </figure>
 {{< /rawhtml >}}
 
-As I mentioned earlier, just before flying to Namibia, I had an optimization theory exam. When I checked the status of the exam, I found that I had failed it—for the second time. This meant I would have to take an oral re-examination, or I would be kicked out of university. Furthermore, I saw that the deadline to register for the insight (where you can check that the examiner didn't miss anything or make a mistake) had already passed, and the professor had threatened that if I didn’t respond within the next few days, I would be expelled. So, I hastily wrote an email explaining my situation—being on holiday and having missed the email. Even though I knew it was now out of my hands and, as the Stoics say, "if it concerns anything beyond our power, be prepared to say that it is nothing to you," it still cast a shadow over the rest of the day.
+As I mentioned earlier, just before flying to Namibia, I had an optimization theory exam. When I checked the status of the exam, I found that I had failed it, for the second time. This meant I would have to take an oral re-examination, or I would be kicked out of university. Furthermore, I saw that the deadline to register for the insight (where you can check that the examiner didn't miss anything or make a mistake) had already passed, and the professor had threatened that if I didn’t respond within the next few days, I would be expelled. So, I hastily wrote an email explaining my situation—being on holiday and having missed the email. Even though I knew it was now out of my hands and, as the Stoics say, "if it concerns anything beyond our power, be prepared to say that it is nothing to you," it still cast a shadow over the rest of the day.
 
 
 {{< rawhtml >}}
@@ -387,7 +387,7 @@ In the evening, we took a walk around the old parts of Swakopmund, visiting plac
 
 ## Day 6: Skeleton Coast and Spitzkoppe
 
-Remember the issue with my optimization theory exam? I finally got a response email from the professor, who graciously allowed me to attend the insight session for the exam, even though I had missed the deadline. Things were looking up—great news to start the day with.
+Remember the issue with my optimization theory exam? I finally got a response email from the professor, who graciously allowed me to attend the insight session for the exam, even though I had missed the deadline. Things were looking up, great news to start the day with.
 
 It was time to continue our journey, so we packed up and said goodbye to Swakopmund. We drove along the C34 from Swakopmund to Henties Bay. This route was a pleasure to drive as it runs along the Skeleton Coast, a stretch of coastline famous for its harsh conditions. The area got its name because of the many shipwrecks that occurred due to frequent fog and the treacherous, sharp coastline. Ships would often crash, and if they survived and managed to make landfall, all they would find was endless desert with no access to food or water. Survival chances were slim. The coast is still littered with the remains of these wrecks, many of which have never been removed. We stopped at one wreck to take some photos, but as soon as we left the car, we were swarmed by a group of locals trying to sell us items, which made us leave quickly.
 
@@ -397,11 +397,11 @@ It was time to continue our journey, so we packed up and said goodbye to Swakopm
 </figure>
 {{< /rawhtml >}}
 
-The day before, the kayaking guide had warned us about the gravel roads due to the rain, but we completely forgot his advice. While driving, we came across a closed gate, which is common in Namibia as protection against wild animals. From what we heard, when you encounter a gate like this, you should leave it as you found it—so we closed it after going through.
+The day before, the kayaking guide had warned us about the gravel roads due to the rain, but we completely forgot his advice. While driving, we came across a closed gate, which is common in Namibia as protection against wild animals. From what we heard, when you encounter a gate like this, you should leave it as you found it, so we closed it after going through.
 
 Soon after, a man came out of his house, walking toward us and shouting. We weren’t sure what he wanted, so we waited for him to approach. He introduced himself as a local and began telling us how poor he was and how hard he had worked as a miner. We weren’t sure what he was expecting from us, but we offered some coins, which he declined. Just then, another car drove through the gate, distracting him long enough for us to quickly drive away.
 
-The road was muddy, but we kept going. As you might expect, we got stuck. We tried maneuvering the car, but it wouldn’t budge. We got out to assess the situation, and sure enough, the car was stuck in the mud. I used the shovel to dig around the tires, but we couldn’t get it free. Thankfully, another car that just had driven past us was occupied by tourists from South Africa. They had traction boards—these are boards that can be placed under tires to give them more grip. Further the local helped us dig, and once the car was free, the South African tourists used the boards to pull us out of the mud. Afterward, we thanked them, and as we re-inflated the tires, the local man—who had helped—started telling us his life story.
+The road was muddy, but we kept going. As you might expect, we got stuck. We tried maneuvering the car, but it wouldn’t budge. We got out to assess the situation, and sure enough, the car was stuck in the mud. I used the shovel to dig around the tires, but we couldn’t get it free. Thankfully, another car that just had driven past us was occupied by tourists from South Africa. They had traction boards—these are boards that can be placed under tires to give them more grip. Further the local helped us dig, and once the car was free, the South African tourists used the boards to pull us out of the mud. Afterward, we thanked them, and as we re-inflated the tires, the local man (who had helped) started telling us his life story.
 
 {{< rawhtml >}}
 <figure>
@@ -456,7 +456,7 @@ In the evening, we sat on the aforementioned rock by our campsite, drank some ap
 
 Today was a driving day, and it was a crazy one at that. One of the main roads, the B1, was undergoing renovation. The goal was to add new lanes, but the old lanes were still accessible. Being a major highway, it was packed with cars. The speed limit was 60 km/h, and overtaking was prohibited. Despite this, we saw regular cars overtaking and speeding, which was especially dangerous because the road was narrow. If you veered too far to the left, you’d fall off a 30 cm cliff where the new lane was supposed to be. One wrong move, and you wouldn’t be able to get back up.
 
-For example, we saw one truck trying to overtake another, speeding, and the overtaking maneuver itself took almost a minute. We also witnessed, separately, a police car, a city council member’s car (it was clearly marked with giant letters on the side), and a military truck overtaking and speeding. It was clear that overtaking was forbidden and the speed limit was posted everywhere—every 100 meters or so—but they still went ahead with it.
+For example, we saw one truck trying to overtake another, speeding, and the overtaking maneuver itself took almost a minute. We also witnessed, separately, a police car, a city council member’s car (it was clearly marked with giant letters on the side), and a military truck overtaking and speeding. It was clear that overtaking was forbidden and the speed limit was posted everywhere—every 100 meters or so, but they still went ahead with it.
 
 The situation was made even crazier by humans standing every kilometer or so on the side of the road, waving flags to indicate "danger." I’m not sure how much it helped, given the way people were driving. The situation was made even worse by the road markings, which were all over the place. There were lines directing you toward the edge of the road, where the cliff was, lines that appeared and disappeared unpredictably, and lines leading into oncoming traffic.
 
@@ -464,7 +464,7 @@ The danger of this construction zone was not just theoretical; it was real. In t
 
 All of this chaos was summed up perfectly by a billboard we saw along the way, which read in big letters: "Please choose to obey the speed limit."
 
-One last thing about traffic that I couldn’t leave out: Not far from the construction zone, we saw a jeep in front of us that was overloaded with electrical scrap—things like fridges and air conditioners. When I say overloaded, I mean that the back was so packed with scrap that you couldn’t even see the driver’s seat, and everything was loosely held together with a few straps. Imagine if even one item fell off—fatalities behind the jeep would be certain. To make matters even crazier, the jeep was overtaken by a small truck. My friend, who was driving, asked if we should overtake too. I could only respond with, "When in Namibia, do like the Namibians do" (or, as they say, "When in Rome, do like the Romans do").
+One last thing about traffic that I couldn’t leave out: Not far from the construction zone, we saw a jeep in front of us that was overloaded with electrical scrap, things like fridges and air conditioners. When I say overloaded, I mean that the back was so packed with scrap that you couldn’t even see the driver’s seat, and everything was loosely held together with a few straps. Imagine if even one item fell off—fatalities behind the jeep would be certain. To make matters even crazier, the jeep was overtaken by a small truck. My friend, who was driving, asked if we should overtake too. I could only respond with, "When in Namibia, do like the Namibians do" (or, as they say, "When in Rome, do like the Romans do").
 
 As we drove, the landscape changed once again. It shifted from desert to rocky terrain, then back to the greenery we saw at the start of the trip in Windhoek. The landscape was also dotted with pointed dirt hills, some almost as tall as trees. My guess is that these were termite mounds.
 
@@ -532,13 +532,13 @@ On our way to Namutoni, we encountered various animals, including ostriches, zeb
     loadJQuery=true
 >}}
 
-We also explored the campsite, which has a notable structure—Fort Namutoni, a fort built in the early 1900s by the Germans during their colonial rule. The fort was destroyed after locals attacked it. It was restored in the 1950s and now serves as a lodge and viewpoint for visitors.
+We also explored the campsite, which has a notable structure, Fort Namutoni, a fort built in the early 1900s by the Germans during their colonial rule. The fort was destroyed after locals attacked it. It was restored in the 1950s and now serves as a lodge and viewpoint for visitors.
 
 Later in the night, the washroom area became a nightmare. Someone had left the door open, the lights on, and it was swarming with insects. There were so many grasshoppers in front of the door that they started jumping on us the moment we tried to enter. Inside, the place was filled with various creepy and dead insects. It was so bad, it still haunts my dreams.
 
 A key tip for Etosha is to start driving early in the morning and take a break around noon. Animals don’t move much during the peak heat of the day. On our first day, from noon until about 3 p.m., we didn’t see much. On the second day, we got started earlier ans as such seen much more.
 
-In the afternoon of the second day. We saw our second Big Five animal—a herd of elephants crossing the road right in front of us. It was an incredible sight!
+In the afternoon of the second day. We saw our second Big Five animal, a herd of elephants crossing the road right in front of us. It was an incredible sight!
 
 {{< gallery2
     globalMatch="/namibia/etosha2/*"
@@ -573,7 +573,7 @@ Our stop for the third day was the [Sachsenheim Guest Farm](https://www.sachsenh
 
 ## Day 12-13: Waterberg Plateau
 
-We’ve reached the final major section of our Namibia trip: the Waterberg Plateau, a landscape marked by table mountains. These are distinctive, flat, elevated landforms, nearly level at the top. The plateau is home to many plant species, abundant birdlife, and another Big Five animal—the buffalo.
+We’ve reached the final major section of our Namibia trip: the Waterberg Plateau, a landscape marked by table mountains. These are distinctive, flat, elevated landforms, nearly level at the top. The plateau is home to many plant species, abundant birdlife, and another Big Five animal, the buffalo.
 
 {{< rawhtml >}}
 <figure>
@@ -618,7 +618,7 @@ If you decide to visit, I'd recommend being cautious: don’t take too much mone
 
 On the way into Windhoek, we couldn’t help but notice the big billboards with humorous traffic safety tips, like "Do not speed" or "Do not drink and drive." I wish I could’ve gotten a picture of them.
 
-In Windhoek, we finally checked off something we had missed on the first day: visiting [Joe's Beerhouse](https://joesbeerhouse.com/) for lunch. It's one of the most famous restaurants in the city, known for its distinct atmosphere—full of rustic old items hanging around. And I mean that in the best way possible. The food was fantastic. I had lasagna, but with a twist: it was made with game meat. I highly recommend visiting this place. When we went for lunch, it was fairly empty, but by evening, it became quite busy.
+In Windhoek, we finally checked off something we had missed on the first day: visiting [Joe's Beerhouse](https://joesbeerhouse.com/) for lunch. It's one of the most famous restaurants in the city, known for its distinct atmosphere, full of rustic old items hanging around. And I mean that in the best way possible. The food was fantastic. I had lasagna, but with a twist: it was made with game meat. I highly recommend visiting this place. When we went for lunch, it was fairly empty, but by evening, it became quite busy.
 
 {{< rawhtml >}}
 <figure>

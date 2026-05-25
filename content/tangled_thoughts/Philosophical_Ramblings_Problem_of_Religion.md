@@ -1,7 +1,7 @@
 ---
 title: "Philosophical Ramblings #04: The Problem of Religion"
 date: 2025-06-17 18:00:00
-tags: ["Philosophy", "Theology"]
+tags: ["Philosophy", "Theology", "Philosophical-Ramblings"]
 ---
 
 

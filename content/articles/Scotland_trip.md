@@ -10,7 +10,7 @@ The following is a travel journal in which I describe my trip to Scotland. Befor
 
 {{< details "Philosophical Reasoning" "true" >}}
 
-I think the following words from [Seneca’s 28th letter](/Moral_letters_to_Lucilius/Letter_28) are important:
+I think the following words from [Seneca’s 28th letter](https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_28) are important:
 
 > What pleasure is there in seeing new lands? Or in surveying cities and spots of interest? All your bustle is useless.
 > Do you ask why such flight does not help you? It is because you flee along with yourself. You must lay aside the burdens of the mind; until you do this, no place will satisfy you.
@@ -35,7 +35,7 @@ Since he didn’t have any strict appointments for a while, and I didn’t eithe
 
 Early in the morning of July 30th I made my way from my small hometown to Stuttgart, where my flight was departing. For that I used public transport. This is especially practical thanks to the recently introduced *Deutschlandticket*, which costs roughly 50 euros per month and allows you to use almost all public transport in Germany (trains, buses, trams), with the exception of high-speed trains.
 
-During the train ride I found myself in a particular mood. The main reason why I wrote [my article *How to Live*](https://monkemanx.github.io/articles/how_to_live/), and more broadly why I became interested in philosophy in the first place, is that I struggle with the meaning of life, or rather its aapparent lack of it. Many people, when faced with such a question, turn to God, or they try to live a distracted life so as not to face the question again. But that was not good enough for me. I wanted the meaning of my life to be more grounded.
+During the train ride I found myself in a particular mood. The main reason why I wrote [my article *How to Live*](https://monkemanx.github.io/articles/how_to_live/), and more broadly why I became interested in philosophy in the first place, is that I struggle with the meaning of life, or rather its apparent lack of it. Many people, when faced with such a question, turn to God, or they try to live a distracted life so as not to face the question again. But that was not good enough for me. I wanted the meaning of my life to be more grounded.
 
 Thus, I began my philosophical inquiry, which I outlined in that article (though the system is not yet complete, I still want to build on Paul Tillich’s account of *Grund*, Nietzsche’s overcoming of *ressentiment*, and the Buddhist account of desire). And although I believe my argument in that article is sound, and on an intellectual level I hold to it, emotions do not always keep pace with reason. In other words, sometimes the emotional reality does not correspond to the intellectual reality.
 

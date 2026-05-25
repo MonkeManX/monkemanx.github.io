@@ -1,7 +1,7 @@
 ---
 title: 'Philosophical Ramblings #10: Against "Eat the Rich"'
 date: 2025-07-20 08:00:00
-tags: ["Philosophy"]
+tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
 "Eat the rich" is a slogan often used in left-wing circles as a rallying cry to redistribute wealth from the rich to the poor, in order to alleviate issues like extreme poverty. The exact interpretation varies,for example some argue that billionaires shouldn't exist at all.
