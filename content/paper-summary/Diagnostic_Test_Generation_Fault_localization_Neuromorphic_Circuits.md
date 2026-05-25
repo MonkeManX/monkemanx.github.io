@@ -16,7 +16,6 @@ tags: ["paper-summary", "Project-ATPG"]
 Printed electronics enable cheap, flexible, and lightweight devices, but their unreliable manufacturing process makes them prone to defects. This paper proposes a diagnostic testing framework for printed neuromorphic circuits that not only detects faults but also localizes them more effectively, achieving significantly higher diagnostic coverage and reducing undetectable subcircuits compared to traditional methods.
 
 
-
 # 1. Preliminaries
 
 ## 1.1. Background: What are printed neuromorphic circuits?

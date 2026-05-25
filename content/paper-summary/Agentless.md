@@ -5,14 +5,18 @@ tags: ["paper-summary", "LLM", "Code"]
 ---
 
 **Paper Title:** Agentless: Demystifying LLM-based Software Engineering Agents   
+
 **Link to Paper:** https://arxiv.org/abs/2407.01489    
+
 **Date:** 1. July 2024   
+
 **Paper Type:** LLM, Code-generation   
+
 **Short Abstract:**     
 Recently, there have been made many advancements in the field of autonomous software development using large language models (LLMs). Most of this progress has been driven by *agents*. These agents are equipped with tools that allow them to run commands, observe the codebase, and plan future actions. However, these agents come with significant complexity. This paper poses the question: *Do we really need all this complexity?*
 *Agentless* is an approach to solving software development tasks without the use of agents. It operates in a two-phase process: identifying the buggy code and then repairing it. *Agentless* is cost-effective to execute and achieves a high score of 27% on SWE-Bench.
 
-# 1. Introduction  
+## 1. Introduction  
 
 For quite some time, LLMs have been the default choice for code generation, with models like GPT-4 and Claude-3.5 demonstrating high proficiency in generating code snippets. However, applying them at the codebase level for software projects—specifically to fix issues and develop new features—has not been extensively studied until recently, with the introduction of the SWE-Bench dataset. SWE-Bench is a dataset that consists of GitHub issues from popular python projects and the corresponding git patches from the pull requests that fixed those issues.
 

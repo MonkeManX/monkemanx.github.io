@@ -89,3 +89,29 @@ In Chapter 19, Augustine concludes that evil does not truly exist for God, nor f
 
 
 ## City of God XI: 2-4, 6 and Letter 120, 2-5: Knowledge, God and Time
+
+
+### Summary of *City of God* XI 2-4, 6
+
+In *City of God*, Augustine begins in the second chapter by describing that humans cannot know God through sensory perception, but only internally through truth and the mind. However, because the human mind is weakened by errors and desires, it requires faith and Christ as a mediator—who is simultaneously God and man—in order to even be able to find the path to God.
+In the third chapter, he elaborates further that Christ, as the mediator, revealed God's truth first through the prophets, then through himself, and finally through the apostles, and that this revelation was recorded in the Bible with the highest authority. Just as one trusts eyewitnesses when it comes to visible things, one should believe those who saw spiritual truths in the "inner light" of God when it comes to spiritual matters.
+In the fourth chapter, Augustine argues that the world is visible and God is invisible, but that through the order and beauty of creation, one can recognize that God created the world. Furthermore, he defends the view that the world has a temporal beginning without God's eternal will changing in the process, and he criticizes the concept of an eternal, beginningless world as contradictory.
+Finally, in the sixth chapter, he explains that time can only exist where there is change and movement, which is why there could have been no time before creation. Therefore, God did not create the world within time, but rather simultaneously with time itself, since movement, change, and thus time only emerged alongside the created world.
+
+### Summary of *Letter 120* (Paragraphs 2–5)
+
+In *Letter 120*, Augustine criticizes Consentius in the second section for saying that faith is more important than reason, while simultaneously demanding a rational explanation of the Trinity, even though the authority of faith should actually take precedence in this area.
+In the third section, however, he emphasizes that faith and reason belong together: faith often comes first so that a human can understand at all, but what is believed should later also be comprehended through reason.
+In the fourth section, he explains that a person should remain in faith but must simultaneously strive for understanding by arriving at an ever-deeper insight step by step. Finally, in the fifth section, he states that some divine truths and miracles are difficult or even impossible to fully explain rationally, but they nonetheless serve an important function because they awaken faith and guide humans toward the truth.
+
+### Critique
+
+In *City of God*, Augustine argues in the third chapter that a trustworthy mediator is needed, but he does not really explain why Jesus or the Bible itself should be considered trustworthy. This foundation is presupposed rather than justified.
+
+At the end of Chapter 4, he simply asserts that the world is created and not eternal, but he provides no compelling argument for this. It would at least be conceivable that the universe is not eternal or does not originate from God, and he does not offer a truly independent justification against this, but rather a theological assumption.
+
+In his argument about the soul in Chapter 4, he also presupposes its existence instead of justifying it.
+
+Furthermore, in the letter, he argues that rationality only comes after faith. But this raises the question of how one is supposed to arrive at faith at all if not through some form of rationality.
+
+Additionally, it seems somewhat contradictory: in the letter, he states that divine matters are ultimately not fully comprehensible to humans, yet in *City of God*, he nevertheless describes quite concretely how God created the world and how eternity and time function, which is strange.
