@@ -186,15 +186,15 @@ The method appears to be effective in detecting faults in DNNs while keeping the
 
 ### Thoughts
 
+* What is one limitation or open question? (Gap)
+  * The stuck-neuron fault model may be unrealistic.
+  * Is this approach scalable?
+  * Does this work with different architectures?
+  * The evaluation metric may be poor:
+    * A fault might change the confidence without changing the top class.
+    * Alternatives such as KL divergence could be explored.
+    * Latent-space-based metrics could also be considered.
+  * Not all faults are equally important. For safety-critical systems, can we prioritize more critical faults?
+  * Does this approach generalize to other domains such as NLP, speech, reinforcement learning, or multimodal systems?
+  * How does fault generation interact with robustness techniques such as dropout?
 
-- What is one limitation or open question? (gap)
-    - stuck neuron fault maybe unrelaistic
-    - is this scalable
-    - does htis work with different arhcitetcures
-    - metric poor
-        - fault might change configdence without chaning top a classs
-        - alternatve kl divergence
-        - sth latent space
-    - not all faults are equal, for safety critical system, can we prioritize important faults
-    - does this work in other domain nlp, speech, reifnrocement learning, multimodal systems
-    - how deos faults generaiton interact with robustenss tehcnique e.g. dropout
