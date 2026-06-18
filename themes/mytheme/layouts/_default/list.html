@@ -12,8 +12,7 @@
   <h1>Writing on "{{ .Title }}"</h1>
   These are all the writings that I tagged with "{{ .Title }}". If you want to see more writings on a specific topic, check out the <a href="/tags/">tags page</a>.
   <div class="combined-div">
-    {{ if .Site.BuildDrafts }}
-      <h2>Drafts</h2>
+    <h2>Drafts</h2>
       <ul class="list-ul">
         {{ range .Pages }}
           {{ if .Draft }}
@@ -21,7 +20,6 @@
           {{ end }}
         {{ end }}
       </ul>
-    {{ end }}
 
     {{ $currentYear := "" }}
     {{ range .Pages.ByPublishDate.Reverse }}
@@ -86,8 +84,7 @@
       I recommend reading the papers instead for the complete picture.</p>
     {{ end }}
 
-    {{/* DRAFTS SECTION (only when built with --buildDrafts) */}}
-    {{ if .Site.BuildDrafts }}
+    {{/* DRAFTS SECTION (only shown when built with --buildDrafts — draft pages aren't in .Pages otherwise) */}}
       <h2>Drafts</h2>
       <ul class="list-ul">
         {{ range .Pages }}
@@ -96,7 +93,6 @@
           {{ end }}
         {{ end }}
       </ul>
-    {{ end }}
 
     {{/* PUBLISHED POSTS SECTION */}}
     {{ $currentYear := "" }}
