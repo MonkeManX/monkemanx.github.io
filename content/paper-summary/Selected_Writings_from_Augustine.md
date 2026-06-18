@@ -115,3 +115,13 @@ In his argument about the soul in Chapter 4, he also presupposes its existence i
 Furthermore, in the letter, he argues that rationality only comes after faith. But this raises the question of how one is supposed to arrive at faith at all if not through some form of rationality.
 
 Additionally, it seems somewhat contradictory: in the letter, he states that divine matters are ultimately not fully comprehensible to humans, yet in *City of God*, he nevertheless describes quite concretely how God created the world and how eternity and time function, which is strange.
+
+
+## Confession XI.xii.14 - XI.xxiv.24 
+
+Augustine begins by addressing the question of what God was doing before the creation of heaven and earth. He rejects a sarcastic reply, that God was preparing hells for those who pry into such mysteries, preferring honest ignorance over ridicule. Instead, he asserts that God was not idle, nor was He "doing" anything, because **time itself did not exist** prior to creation. Since God created time along with the world, He cannot be subject to it. God exists in an eternal "Today," distinct from the successive passing of human years, where He precedes all things past and transcends all things future.
+
+Augustine then turns to a philosophical investigation into the nature of time. He observes that while we use the concept of time constantly, it is difficult to define. He argues that strictly speaking, the past no longer exists and the future does not yet exist; only the present exists. However, the present has no duration because it is fleeting. If the present stayed still, it would be eternity, not time. Therefore, time only exists insofar as it is moving toward non-existence.
+
+This leads to a paradox regarding how we measure "long" or "short" periods of time, since neither the past nor the future actually exists to be measured. Augustine resolves this by locating time in the **human mind**. He argues that past events persist as **memories** and future events exist as **expectations** or predictions based on present causes. While the events themselves are not yet future or still past, they exist in the present as mental images. Thus, time is a distention of the mind, allowing us to measure what is not physically there.
+
