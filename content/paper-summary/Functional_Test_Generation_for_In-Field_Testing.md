@@ -1,6 +1,6 @@
 ---
 title: 'Functional Test Generation for In-Field Testing of Deep Learning Models with Test Storage Constraints'
-date: 2026-06-18 11:00:00 +02:00
+date: 2026-06-19 14:00:00
 tags: ["paper-summary", "Project-ATPG"]
 ---
 

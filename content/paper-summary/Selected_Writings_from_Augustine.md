@@ -125,3 +125,39 @@ Augustine then turns to a philosophical investigation into the nature of time. H
 
 This leads to a paradox regarding how we measure "long" or "short" periods of time, since neither the past nor the future actually exists to be measured. Augustine resolves this by locating time in the **human mind**. He argues that past events persist as **memories** and future events exist as **expectations** or predictions based on present causes. While the events themselves are not yet future or still past, they exist in the present as mental images. Thus, time is a distention of the mind, allowing us to measure what is not physically there.
 
+
+
+## Letter 157. 1-15: Gods Grace 
+
+In 414 or 415 Augustine replied to the previous letter from Hilary, who had asked
+Augustine a series of questions about various Pelagian teachings. Augustine
+begins by praising Hilary's zeal for the word of God (paragraph 1 ). If, Augustine
+points out, some people claim that they can be without sin in this life, they should
+be confronted with the words of Saint John, who said that they are deceiving
+themselves, as well as with the fact that even Daniel prayed for the forgiveness of
+his sins (paragraph 2). With God's help one can refrain from serious sins, but not
+from daily lesser sins, for which we must daily ask forgiveness (paragraph 3).
+Those who claim that some persons live without sin are perhaps tolerable, but
+those who say that free choice is sufficient for observing the commandments,
+even without God's help, must be condemned (paragraph 4). With the help of
+God's grace free choice can perform good works, but without his help it will not
+attain righteousness, as the petitions of the Lord's prayer show (paragraph 5).
+The benefit of the law lies in its leading us to ask for the grace to fulfill what the
+law commands (paragraph 6). Those who reject the medicine of Christ's grace
+are like sick people who are so deranged that they reject the help of a doctor
+(paragraph 7). Our free will is freer to the extent that it is healthier, and it is
+healthier to the extent that it is subject to grace (paragraph 8). Without grace the
+law makes sin abound, but God gives his grace that we may fulfill his command
+ments (paragraph 9). Grace does not take away our will but helps it (paragraph
+10).
+
+The Pelagian claim that infants who die without baptism cannot be lost because
+they are born without sin runs counter to the words of the apostle (paragraph 1 1 ).
+Paul teaches that all human beings contract sin from Adam by birth, not by imita
+tion of his sin (paragraph 1 2). As no one is born except under condemnation
+because of Adam, so no one is reborn for righteousness except through Christ
+(paragraph 13). The righteous men and women of the Old Testament were set
+free through faith in Christ who was to come, just as we are set free through faith
+in Christ who has come (paragraph 14). Through the law human beings became
+not merely sinners but transgressors, but the grace of Christ sets them free from
+all kinds of sin (paragraph 15).

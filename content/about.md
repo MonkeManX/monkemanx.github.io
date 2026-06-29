@@ -79,14 +79,12 @@ To improve clarity and grammar, some of the texts on this site have been proofre
 
 # Contact
 
-Feel free to contact me, I am happy about every email I receive: monkeman@pissmail.com
-
-{{< details "Old Contact Data" "false" >}}
-My old contact data, both the email and its associated PGP key, are no longer valid.
-My old email was monkeman@cock.li, and the PGP key was:
-
+Feel free to contact me, I am happy about every email I receive: monkeman@cock.li and 
 {{< rawhtml >}}
 <a download href="/monkeman_public.asc">public PGP Key</a>.
 {{</ rawhtml >}}
+
+{{< details "Old Contact Data" "false" >}}
+I am really unlucky with mails, monkeman@pissmail.com, is deprecated.
 
 {{< /details >}}
