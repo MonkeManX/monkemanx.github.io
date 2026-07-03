@@ -161,3 +161,137 @@ free through faith in Christ who was to come, just as we are set free through fa
 in Christ who has come (paragraph 14). Through the law human beings became
 not merely sinners but transgressors, but the grace of Christ sets them free from
 all kinds of sin (paragraph 15).
+
+
+
+## City of God XIV: 1-4, 6, 13
+
+### Chapter 1 
+
+Augustine argues that humanity was originally created by God as one family, meant to live in harmony and without death, but this condition was lost when the first humans disobeyed God. Their sin didn’t just affect them personally, it corrupted human nature itself, so that all their descendants inherit a tendency toward sin and mortality. Because of this, humanity is also under the threat of eternal punishment, the “second death,” unless rescued by God’s grace, which saves some undeservedly.
+
+From this, Augustine concludes that despite all cultural differences in language, customs, and nations, humanity is ultimately divided into two spiritual “cities.” One is made up of those who live oriented toward earthly and bodily desires, while the other consists of those who orient their lives toward God and spiritual truth. These two cities are not separate societies in a physical sense but two ways of loving and living that run through all of human history.
+
+### Chapter 2 
+
+Augustine is trying to clarify what Scripture means by “living according to the flesh,” and he warns that it is easy to misunderstand this expression. One might think it simply refers to bodily indulgence, things like pleasure, sexuality, or physical excess, so that philosophers like Epicureans would count as “fleshly,” while others who value the soul, like Stoics, would seem “spiritual.” But Augustine argues that this is not what Scripture means.
+
+Instead, he explains that the Bible uses the word “flesh” in a broader symbolic sense, often meaning the whole human person, not just the body. Just as Scripture sometimes uses “flesh” to mean “human being” in general, “living according to the flesh” refers to a whole orientation of life, not just bodily behavior. To support this, he points to Paul’s list of “works of the flesh,” which includes not only bodily sins like sexual immorality and drunkenness, but also inner sins like hatred, jealousy, anger, and division. These are clearly not physical actions in themselves but states of the soul.
+
+From this Augustine concludes that “living according to the flesh” means living in a disordered way as a whole person, body and soul together, where one is governed by vice, pride, and distorted desire. Even someone who avoids bodily pleasures can still be “carnal” if their inner life is filled with hatred, envy, or spiritual error. So for Augustine, the key distinction is not between body and soul, but between rightly ordered and wrongly ordered love within the whole human being.
+
+### Chapter 3
+
+Augustine is arguing against the idea that the body (the “flesh”) is the source of sin. He acknowledges that the body, in its present corrupt state, does weigh down the soul and makes human life more difficult and prone to temptation. This condition is linked to humanity’s fallen state, described elsewhere as a punishment following the first sin. However, he insists that this corruption of the body is not the *cause* of sin, but itself a *result* of sin. In other words, it is not the body that makes the soul sinful; rather, the soul’s original turning away from God brought disorder into human nature, including the body.
+
+To support this, Augustine draws on Christian scripture, especially Paul’s idea that the “corruptible body” burdens the soul, but he interprets this carefully: the body itself is not evil, only its corrupted condition is. Therefore, the proper aim is not to escape the body altogether, but to have it transformed into an incorruptible, immortal state.
+
+He then strengthens his argument by pointing out that many sins are clearly not bodily in nature. Hatred, pride, envy, and strife are spiritual or psychological vices, yet Scripture still calls them “works of the flesh.” This shows that “flesh” does not literally mean the physical body, but refers more broadly to the whole human being living in a disordered way.
+
+To make the point even sharper, Augustine notes that even the devil, who has no body, exhibits the worst of these vices, especially pride and envy. Therefore, sin cannot originate from the body, since purely spiritual beings can also sin. Instead, sin originates in the will: in the choice to turn away from God and live “according to oneself.” The body is involved in the consequences of sin, but the root cause lies in the corrupted will of the soul.
+
+
+### Chapter 4 
+
+Augustine is clarifying what it means to “live according to man” versus “live according to God,” and he pushes his earlier distinction even further. To live according to man is to live in a way that is turned inward, relying on oneself rather than on God. For Augustine, this is not just morally flawed but fundamentally false, he calls it a kind of “lie.” The reason is that human beings were created to depend on God for their good and happiness, not to be self-sufficient. So when a person tries to secure happiness by their own direction, apart from God, they are acting against their created nature, and this misalignment is what he calls sin.
+
+Living according to God, by contrast, means living in truth, because God is truth itself. It is to align one’s will with God’s will rather than one’s own isolated desires. Augustine even connects this to the idea that sin is a kind of “falsehood”: it promises happiness but actually leads to misery, because true happiness can only come from God.
+
+He then ties this back to his earlier language of “flesh” and “spirit.” Scripture sometimes calls this distinction “carnal” versus “spiritual,” but Augustine says these are not separate groups of people in a physical sense. Instead, they are different ways of living as a whole person. “Carnal” or “animal” man simply means human beings who live according to themselves, while “spiritual” man is one who lives according to God.
+
+To support this, he points out that Scripture often uses parts of a human being, like “flesh” or “soul”, to mean the whole person. So when Paul says “you are carnal” or “you are men,” he is not making different categories of human nature, but saying the same thing in different ways: you are living as merely human, rather than as oriented toward God. And for Augustine, the striking implication is that to truly live according to God is to be elevated beyond mere humanity, participating in a higher mode of existence he even describes as a kind of “divine” life.
+
+### Chapter 6 
+
+Augustine is explaining how all human emotions ultimately come from the will, meaning the basic direction or orientation of a person’s inner life. He argues that feelings like desire, joy, fear, and sadness are not separate forces that control us, but different expressions of the will depending on how it relates to things. Desire and joy are forms of the will when it agrees with or seeks what it wants, while fear and sadness are forms of the will when it resists or rejects what it does not want. In this sense, emotions are not neutral happenings in the soul; they reflect what the will is set toward.
+
+From this, Augustine draws an ethical conclusion: the moral quality of all these emotions depends entirely on whether the will itself is rightly ordered. If the will is directed toward God, what he calls “living according to God”, then the emotions are rightly ordered and become good. If the will is turned away from God and toward itself, then the emotions become distorted and lead to vice.
+
+He then applies this to how we relate to other people. Since no human being is evil by nature but only through vice, a rightly ordered will must distinguish between the person and their wrongdoing. We should reject and “hate” the vice, meaning the moral corruption, but still love the person as God’s creation. In Augustine’s view, a properly ordered love does not confuse moral judgment with hatred of persons; it aims at the restoration of what is good while rejecting only what is disordered.
+
+### Chapter 13 
+
+Augustine is arguing that the first sin of Adam and Eve was not a sudden, isolated act, but the result of a prior inner corruption of the will. Before they disobeyed God outwardly, their will had already turned inward in a hidden way. The root of this turning is pride, which Augustine defines as the desire for undue self-exaltation, when a creature stops seeking fulfillment in God and instead tries to become its own center and source of satisfaction.
+
+For Augustine, this is a fundamental distortion of human nature. Human beings are created to find their good in God, who is the highest and unchanging good. When the will turns away from God and toward the self, it does not gain true independence but actually diminishes itself, because it is abandoning the source of its own fullness. This inward turning is already a kind of “fall,” even before any external action happens. The visible act of eating the forbidden fruit is therefore only the outward expression of an already existing inner disorder.
+
+He connects this to the deeper structure of the “two cities”: the city of God is formed by love of God and humility, while the city of the devil is formed by love of self and pride. Pride is what defines this fallen orientation, because it replaces dependence on God with self-sufficiency. But this self-sufficiency is an illusion, by trying to become “like God” through its own power, the creature actually becomes less than it was, drifting toward non-being and disorder.
+
+Augustine also emphasizes that this fall is not something imposed from outside but arises from the will itself. That is why he says the devil could only tempt humanity because humanity had already begun to “live for itself.” The temptation succeeds because the desire to be self-directed was already present internally.
+
+Finally, Augustine draws a moral lesson: even painful failure and shame can be healing if they expose this hidden pride. An obvious sin can break the illusion of self-sufficiency and lead a person back to humility and dependence on God. In this way, humility is not weakness but the true ordering of the soul toward its highest good, while pride is a self-destructive turning inward that constitutes the essence of sin.
+
+
+## City of God XV: 1-7
+
+### Chapter 1
+
+
+Augustine is now laying out the grand historical structure of his whole work: human history is the unfolding of two “lines” or “cities” that begin with Cain and Abel and continue until the end of time. These two cities are not physical nations but two communities defined by their orientation of love, one toward God and one toward the self.
+
+He explains that Cain represents the “earthly city,” the community of those who live according to man, while Abel represents the “city of God,” those who live according to God. This pattern is not random but reflects a deeper spiritual logic that also appears in every individual life: in each person, the “carnal” or self-centered orientation comes first, and only later (if at all) is it transformed into a spiritual orientation through grace.
+
+Augustine emphasizes that all humans begin from a “condemned mass” of fallen humanity, meaning that no one is naturally part of the city of God by their own effort. Membership in the city of God is therefore entirely dependent on divine grace, which transforms and “grafts” a person into a new life in Christ. He uses Paul’s image of the potter shaping vessels from the same lump of clay: some are formed for dishonor, others for honor, not by human merit but by God’s will.
+
+Importantly, Augustine stresses that this ordering does not mean everyone will become good, but that no one becomes good except by first being in a fallen condition. The city of God begins small and hidden in history, often appearing weak or alien in the world, but it grows through grace and ultimately reaches its fulfillment in the resurrection and eternal reign with God.
+
+Cain’s building of a city symbolizes the earthly city’s focus on temporal stability, power, and self-sufficiency, while Abel’s lack of a city represents the pilgrim nature of the righteous, who do not settle permanently in this world. The city of God, though present in history, is ultimately “above”, its true home is not in earthly structures but in eternal communion with God.
+
+### Chapter 2
+
+Augustine is extending his “two cities” framework by interpreting the story of Abraham’s two sons, Hagar’s son Ishmael and Sarah’s son Isaac, as an allegory of two kinds of humanity. He explains that Scripture often works on more than one level: certain historical communities or institutions can function as symbols pointing beyond themselves to deeper spiritual realities.
+
+In this reading, Ishmael, born from the slave woman Hagar, represents life “according to the flesh”, that is, life rooted in human effort, natural generation, and attachment to earthly structures. Isaac, born to the free woman Sarah through God’s promise, represents life “according to the spirit,” meaning life that exists through divine grace rather than human achievement. Paul’s interpretation in Galatians is, for Augustine, authoritative proof that these two births symbolize the two covenants and ultimately the two cities: the earthly city and the city of God.
+
+Augustine emphasizes that even within the “earthly city” there is a symbolic role in salvation history. The historical city of Jerusalem, and even parts of the old covenant community, function as “images” or “shadows” pointing toward the true, heavenly Jerusalem. But these images are not ultimate in themselves, they exist to signify something higher that is only fully revealed in the city of God.
+
+He also stresses the difference in origin between the two cities. Citizens of the earthly city are born through fallen human nature (“vitiated nature”), while citizens of the heavenly city are born through grace, which heals and elevates nature. This is why he uses Paul’s language of “vessels of wrath” and “vessels of mercy”: the distinction is not primarily cultural or moral achievement, but whether a person remains in natural fallen condition or is transformed by divine grace.
+
+So the core idea is that human history contains both literal societies and symbolic meanings, but underneath them all runs the deeper division between self-generated life and grace-given life—the earthly city versus the heavenly city.
+
+### Chapter 3
+
+Augustine uses Sarah’s barrenness and the birth of Isaac to contrast human nature with divine grace. Sarah’s inability to have children represents fallen human nature, which on its own cannot produce true spiritual life. Ishmael is born through ordinary human means, so he symbolizes what comes “according to the flesh”, not evil in itself, but tied to natural effort and human initiative.
+
+Isaac, however, is born only because God intervenes when nature has reached its limit. He therefore represents grace: what God gives freely rather than what humans can achieve. For Augustine, this shows that citizens of the city of God are not self-made but “given,” formed by divine gift rather than natural capacity.
+
+### Chapter 4
+
+
+Augustine describes the “earthly city” as a community that seeks its good in this world: peace, security, and material satisfaction. This kind of peace is real and even a gift from God, but it is limited and fragile because it is tied to temporal things.
+
+Because its goods are limited, the earthly city is often divided within itself: groups compete, fight wars, and struggle for control. Even its victories are unstable, if it becomes proud, it becomes morally worse; if it remains aware of its fragility, it still cannot secure lasting peace.
+
+For Augustine, the key point is that the earthly city is not evil in itself. Its pursuit of peace and order is a genuine good, but it is an imperfect one. The problem arises when it treats these temporary goods as ultimate, forgetting the higher, eternal peace of the city of God. When that happens, its desires become disordered, and its conflicts and misery inevitably increase.
+
+### Chapter 5
+
+Augustine uses the story of Cain and Abel, and the Roman myth of Romulus and Remus, to illustrate the nature of the “earthly city.” Its founding principle, he argues, is not harmony but rivalry rooted in pride and envy. Cain, the first “founder” of the earthly city, kills his brother Abel out of envy, symbolizing the hatred of the good simply because it is good. This act becomes an archetype for all later earthly political foundations.
+
+He then draws a parallel with Rome: Romulus kills his brother Remus, showing that even the great earthly empire is founded on the same logic of conflict and exclusion. The desire to have sole glory leads to violence, because shared greatness is rejected in favor of individual dominance.
+
+Augustine contrasts this with the city of God, where goods like virtue and goodness are not diminished but increased when shared. In the earthly city, however, rivalry for limited glory leads to division, war, and instability, even within individuals, where conflicting desires struggle against each other.
+
+Ultimately, he extends the idea beyond history into psychology: conflict exists not only between people and cities, but within each person, where flesh and spirit are in tension. The earthly city is therefore marked by layered conflict: between individuals, within societies, and within the human soul itself.
+
+### Chapter 6
+
+Augustine is emphasizing that even the citizens of the city of God are not yet free from weakness and inner struggle while they live in this world. The disobedience and corruption that afflict human nature are not part of how humans were originally created, but are punishments for the first sin. Because of this fallen condition, even those who belong to God still experience temptation, conflict, and moral weakness during their earthly life.
+
+However, Augustine stresses that these weaknesses are meant to be healed, not ignored. The Christian life is therefore a process of mutual support, forgiveness, correction, and patience among believers. He draws heavily on biblical teachings that emphasize bearing one another’s burdens, forgiving offenses, and restoring those who fall into sin gently. The goal of these practices is to preserve peace within the community, which reflects the deeper peace of the city of God.
+
+A key idea here is that moral healing is not achieved by human effort alone. External teaching and correction are not sufficient unless God’s inner grace also works within the soul. Augustine distinguishes between external influences (like preaching or moral instruction) and the internal action of the Holy Spirit, who transforms the will itself.
+
+He also connects this to his doctrine of grace and predestination: God distinguishes between those who ultimately accept grace and those who do not, though this happens through a hidden and just divine plan. In this life, even the redeemed still struggle with sin, but when grace fully heals the soul, it is gradually freed from domination by sinful desire. Ultimately, this healing will be completed in the eternal peace of the city of God, where the soul will no longer be capable of sin and will exist in perfect harmony with God.
+
+### Chapter 7
+
+Augustine interprets the story of Cain as a case study in how sin works internally before it becomes an external act. Cain’s murder of Abel does not arise suddenly; it grows out of an already disordered heart marked by envy. When God rejects Cain’s sacrifice but accepts Abel’s, Cain becomes angry and jealous. Augustine reads God’s warning as an attempt to expose and correct this inner disorder before it becomes action.
+
+He focuses especially on God’s mysterious instruction that Cain must “rule over” sin. Augustine explains that this does not mean ruling over Abel, but over the inner movement of sinful desire itself, especially envy. Sin, in this sense, is something that first stirs within the soul, but can still be resisted if the will is rightly ordered. If it is not resisted, it grows and eventually leads to outward evil actions, as it does with Cain.
+
+From this, Augustine draws a general moral psychology: sin is not primarily external behavior but an internal misordering of desire, where the lower part of the self (concupiscence or impulse) tries to dominate the rational will. Virtue consists in the will governing these impulses rather than being ruled by them.
+
+Cain, however, refuses this divine correction. Instead of turning inward in repentance, he allows envy to grow until it results in murder. Augustine then interprets Cain as the archetype of the earthly city: a life driven by pride, envy, and refusal of correction. He even extends this typologically to the Jews’ rejection of Christ, though he signals this as an allegorical level of interpretation.
+
+Overall, the chapter emphasizes that sin begins as an internal resistance to God’s guidance, and that divine warning is always given before outward destruction occurs, but can be refused through the will’s pride.
