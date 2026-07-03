@@ -2,7 +2,6 @@
 title: 'Existence Before Essence: What the Slogan Actually Means'
 date: 2026-07-02 16:00:00
 tags: ["Philosophy", "Metaphysics"]
-draft: True
 ---
 
 ## 1. Introduction
