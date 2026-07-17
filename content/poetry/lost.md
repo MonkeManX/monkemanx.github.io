@@ -557,3 +557,24 @@ There is a tiny Glimmer in it, a world beyond the outer and the inner, but it sh
 Is it brigh enough? To see proper and clear?
 
 {{< /poem >}}
+
+
+{{< poem >}}
+
+The droning of the bus.
+The smell of manure.
+The smear of flies on the windshield.
+The scorching sun.
+The parched taste of dry air.
+
+The whining of the power lines.
+The smell of old plastic.
+The ants dismantling an insect.
+The sticky film of sweat.
+The taste of old chewing gum.
+
+A quiet delight.
+
+~ Taking Up Space
+
+{{< /poem >}}
