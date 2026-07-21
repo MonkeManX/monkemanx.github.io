@@ -1,5 +1,5 @@
 ---
-title: "Philosophical Ramblings #14: A Rejection of Amorality"
+title: "Philosophical Ramblings #14: A Rejection of Morality"
 date: 2026-07-21 16:00:00
 tags: ["Philosophy", "Philosophical-Ramblings"]
 pinned: True
