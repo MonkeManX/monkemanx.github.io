@@ -6,7 +6,7 @@ tags: ["Philosophy", "Aesthetics", "Book"]
 
 {{< info "Info" >}}
 
-Also see: [Love and Faith](/tangled_thoughts/tillich05/).
+Also see: [Love and Faith](/tangled_thoughts/quotes_tillich05/).
 
 {{< /info >}}
 

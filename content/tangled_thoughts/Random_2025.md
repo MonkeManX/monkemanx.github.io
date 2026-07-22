@@ -4,7 +4,7 @@ date: 2025-12-31
 tags: ["Random"]
 ---
 
-Like [last year](/tangled_thoughts/2024/) a short reflection on this year.
+Like [last year](/tangled_thoughts/random_2024/) a short reflection on this year.
 
 
 ## Media

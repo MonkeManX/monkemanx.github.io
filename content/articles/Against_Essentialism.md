@@ -81,7 +81,7 @@ Thus, to understand what something is, we must understand it **relationally**, a
 
 What remains of philosophy if we reject essentialism? Surprisingly, almost everything. Anti-essentialism only denies that things have intrinsic, context-independent natures that determine what they are in all possible worlds. It does not deny that things exist or matter. Instead, things are what they are in virtue of relations, roles, practices, and structures.
 
-We can still talk about qualia or phenomenal consciousness, but not as possessing a fixed “[Is-ness](/tangled_thoughts/being_and_becoming/).” What something is depends on embodiment, form of life, capacities, contrasts, attention, and framing. Nagel’s claim in *[What Is It Like to Be a Bat?](/paper-summary/what_it_is_like_to_be_a_bat/)* still holds: there is something it is like to be a bat, but this “something” is not an isolable essence. It is [disclosed through being-in-the-world](https://en.wikipedia.org/wiki/World_disclosure).
+We can still talk about qualia or phenomenal consciousness, but not as possessing a fixed “[Is-ness](/tangled_thoughts/quotes_being_and_becoming/).” What something is depends on embodiment, form of life, capacities, contrasts, attention, and framing. Nagel’s claim in *[What Is It Like to Be a Bat?](/paper-summary/what_it_is_like_to_be_a_bat/)* still holds: there is something it is like to be a bat, but this “something” is not an isolable essence. It is [disclosed through being-in-the-world](https://en.wikipedia.org/wiki/World_disclosure).
 
 The same holds for metaphysics. It does not disappear; it changes its questions:
 

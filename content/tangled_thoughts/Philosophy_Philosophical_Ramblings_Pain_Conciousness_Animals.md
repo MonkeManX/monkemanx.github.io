@@ -4,7 +4,7 @@ date: 2025-07-08 12:00:00
 tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
-In light of recent articles — [The Eiffel Tower is NOT in Paris!](/articles/where_the_eiffel_tower_is_is_not_obejctive/) and [Philosophical Ramblings #06: Heidegger, Beliefs and Choosing One’s Values](/tangled_thoughts/philosophical_ramblings_what_is_belief/) — I want to add an addendum to [What is a person? Or when is a person?](/articles/when_does_a_something_deserve_moral_considerations/) and [Killing Dream People!](/articles/killing_dream_people/).
+In light of recent articles — [The Eiffel Tower is NOT in Paris!](/articles/where_the_eiffel_tower_is_is_not_obejctive/) and [Philosophical Ramblings #06: Heidegger, Beliefs and Choosing One’s Values](/tangled_thoughts/philosophy_philosophical_ramblings_what_is_belief/) — I want to add an addendum to [What is a person? Or when is a person?](/articles/when_does_a_something_deserve_moral_considerations/) and [Killing Dream People!](/articles/killing_dream_people/).
 
 In the former article, I proposed a definition of personhood i.e. being a moral agent, where "personhood" or "moral agent" is shorthand for “something deserving moral consideration”, as *the capability to deploy human consciousness*. In the latter article, I critiqued alternative definitions of personhood and what it means to deserve moral consideration.
 

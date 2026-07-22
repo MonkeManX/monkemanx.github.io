@@ -4,7 +4,7 @@ date: 2026-03-17 08:00:00
 tags: ["Philosophy", "Philosophical-Ramblings"]
 ---
 
-A while ago I read the book [Dynamics of Faith by Paul Tillich](/tangled_thoughts/dynamics_of_faith/). The major aim of this book is to answer the question: What is faith? It proposes the answer: Faith is the state of being ultimately concerned. I do not want to go into much more detail about what this means here; for that, I recommend the book.
+A while ago I read the book [Dynamics of Faith by Paul Tillich](/tangled_thoughts/book_dynamics_of_faith/). The major aim of this book is to answer the question: What is faith? It proposes the answer: Faith is the state of being ultimately concerned. I do not want to go into much more detail about what this means here; for that, I recommend the book.
 
 But let’s say we accept this definition. Let’s say we have something in which we have faith, an ultimate lens through which we see reality, be it God, science, or something else.
 

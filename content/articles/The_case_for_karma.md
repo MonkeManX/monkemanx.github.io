@@ -42,7 +42,7 @@ In the rest of the article I want to go through these two main assumption and sh
 
 ## 1. The Two Assumptions
 
-The first assumption of the not universal self I have already explored in [a preivous article](/tangled_thoughts/philosophical_ramblings_what_is_self/).
+The first assumption of the not universal self I have already explored in [a preivous article](/tangled_thoughts/philosophy_philosophical_ramblings_what_is_self/).
 
 
 While the later I have already epxlroed to some extend in the article [How to live?](/articles/how_to_live/) and [What to value?](/tangled_thoughts/philosophical_rambling_what_to_value/)

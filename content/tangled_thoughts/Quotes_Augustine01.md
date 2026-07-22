@@ -15,4 +15,4 @@ tags: ["quotes", "augustine"]
 >
 > ~ Saint Augustine, Confession, VI (6)
 
-Also see [Dynamics of Faith](tangled_thoughts/dynamics_of_faith/).
+Also see [Dynamics of Faith](tangled_thoughts/book_dynamics_of_faith/).

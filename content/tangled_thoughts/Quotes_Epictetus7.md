@@ -4,7 +4,7 @@ date: 2025-03-23 09:00:00
 tags: ["quotes", "epictetus"]
 ---
 
-> Observe yourselves thus in your actions and you will find out to what sect of the philosophers you belong. You will find that most of you are [Epicureans, some few Peripatetics](/tangled_thoughts/ancient_philosophy/), but these without any backbone; for wherein do you in fact show that you consider virtue equal to all things else, or even superior?   
+> Observe yourselves thus in your actions and you will find out to what sect of the philosophers you belong. You will find that most of you are [Epicureans, some few Peripatetics](/tangled_thoughts/philosophy_ancient_philosophy/), but these without any backbone; for wherein do you in fact show that you consider virtue equal to all things else, or even superior?   
 > But as for a Stoic, show me one if you can! Where, or how? You can show me thousands who recite the petty arguments of the Stoics. Yes, but do these same men recite the petty arguments of the Epicureans any less well? Do they not handle with the same precision the petty arguments of the Peripatetics also? Who, then, is a Stoic?   
 > Show me a man who though sick is happy, though in danger is happy, though dying is happy, though condemned to exile is happy, though in disrepute is happy. Show him! By the gods, I would fain see a Stoic!  
 > But you cannot show me a man completely so fashioned; then show me at least one who is becoming so fashioned, one who has begun to tend in that direction; do me this favour; do not begrudge an old man the sight of that spectacle which to this very day I have never seen.   

@@ -1,4 +1,3 @@
-
 ---
 title: 'The Master who embraces Simplicity'
 date: 2026-07-03 18:00:00

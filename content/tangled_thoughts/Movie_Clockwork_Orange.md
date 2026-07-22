@@ -20,7 +20,7 @@ The central question the film poses is:
 
 The movie clearly leans toward saying that without choice, without the freedom to do wrong, being “good” becomes meaningless. Only through the contrast of being able to do evil and choosing not to, can goodness be considered praiseworthy or meaningful.
 
-There’s an interesting parallel here to the movie [*No Country for Old Men*](/tangled_thoughts/no_country_old_man/), which asks:
+There’s an interesting parallel here to the movie [*No Country for Old Men*](/tangled_thoughts/movie_no_country_old_man/), which asks:
 
 > Is virtue only worthwhile if it’s rewarded—or is its worth found in its very lack of reward?
 

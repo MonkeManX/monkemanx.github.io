@@ -20,7 +20,7 @@ The egg symbolizes the hope of faith in God and the coming of Jesus. In the fina
 
 
 **EDIT 3:**
-This can also be understood in light of [Paul Tillich’s Dynamics of Faith](/tangled_thoughts/dynamics_of_faith/), in which Tillich offers a definition of faith not as a low-probability belief, not as a purely intellectual activity, but also not as a mere emotion or feeling. It contains both. Just as in Nietzsche’s *Birth of Tragedy* the artist unites the Apollonian and the Dionysian, and just as in Buddhism during meditation the objective and subjective become one, so in Tillich’s account of faith the rational and the emotional come together: certainty and uncertainty. Faith needs to have both.
+This can also be understood in light of [Paul Tillich’s Dynamics of Faith](/tangled_thoughts/book_dynamics_of_faith/), in which Tillich offers a definition of faith not as a low-probability belief, not as a purely intellectual activity, but also not as a mere emotion or feeling. It contains both. Just as in Nietzsche’s *Birth of Tragedy* the artist unites the Apollonian and the Dionysian, and just as in Buddhism during meditation the objective and subjective become one, so in Tillich’s account of faith the rational and the emotional come together: certainty and uncertainty. Faith needs to have both.
 
 If we now apply this to the movie: the boy represents the rational side of faith, skepticism, doubt, and uncertainty, and shows how being purely rational leads to being left behind, because one cannot relate to anything. The ultimate skeptic who is certain of nothing is condemned to wander the world forever, never finding something he can call home.
 

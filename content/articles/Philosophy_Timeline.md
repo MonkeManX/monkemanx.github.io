@@ -77,7 +77,7 @@ Sophists would say they didn’t teach people *more true* knowledge but *more us
 
 
 **430 BC – [Plato](https://en.wikipedia.org/wiki/Plato)**<br>
-**Articles:** [What is Love?](/articles/symposium/), [Euthyphro Dilemma](/tangled_thoughts/euthyphro_dillema/)<br>
+**Articles:** [What is Love?](/articles/symposium/), [Euthyphro Dilemma](/tangled_thoughts/philosophy_euthyphro_dillema/)<br>
 **Summary:**<br>
 Student of Socrates. He founded the first philosophical academy, which, in some form, survived for around 900 years.
 Like Empedocles and Democritus, Plato thought that everything in the sensory world is in constant flux, but that there is still something infinite and unchangeable. For Plato, this unchanging reality was the *Forms* — leading to his famous *Theory of Forms*.
@@ -109,7 +109,7 @@ This time period begins with the conquests of Alexander the Great, during which 
 
 **400 BC – [Cynicism](https://en.wikipedia.org/wiki/Cynicism_(philosophy))**:<br>
 **Key Figures:** [Antisthenes](https://en.wikipedia.org/wiki/Antisthenes), [Diogenes](https://en.wikipedia.org/wiki/Diogenes), [Crates of Thebes](https://en.wikipedia.org/wiki/Crates_of_Thebes)<br>
-**Articles:** [[Lucian], The Cynic](https://lucianofsamosata.info/wiki/doku.php?id=home:texts_and_library:dialogues:the-cynic), [The Cynic Philosophers: From Diogenes to Julian](/tangled_thoughts/cynic03/)<br>
+**Articles:** [[Lucian], The Cynic](https://lucianofsamosata.info/wiki/doku.php?id=home:texts_and_library:dialogues:the-cynic), [The Cynic Philosophers: From Diogenes to Julian](/tangled_thoughts/book_cynic03/)<br>
 **Summary:**
 The Cynics believed that the only thing that mattered for a life well lived was *virtue*. Everything else — wealth, power, social status — should be rejected. In that vein, they also rejected social conventions and engaged in public displays of non-conformity, such as urination, masturbation, or even sex in public, to shock and challenge societal norms.
 
@@ -117,7 +117,7 @@ The Cynics believed that the only thing that mattered for a life well lived was 
 
 **300 BC – [Stoicism](https://en.wikipedia.org/wiki/Stoicism)**:<br>
 **Key Figures:** [Zeno of Citium](https://en.wikipedia.org/wiki/Zeno_of_Citium), [Chrysippus](https://en.wikipedia.org/wiki/Chrysippus), [Epictetus](https://en.wikipedia.org/wiki/Epictetus)<br>
-**Articles:** [Seneca on Trial: The Case of the Opulent Stoic](/paper-summary/seneca_on_trial/), [Ancient Greek Logic](/tangled_thoughts/logic/), [The Cambridge Companion to the Stoics](/tangled_thoughts/guide_of_stoicism/)<br>
+**Articles:** [Seneca on Trial: The Case of the Opulent Stoic](/paper-summary/seneca_on_trial/), [Ancient Greek Logic](/tangled_thoughts/philosophy_logic/), [The Cambridge Companion to the Stoics](/tangled_thoughts/book_guide_of_stoicism/)<br>
 **Summary:**<br>
 Inspired by the Cynics, the Stoics also believed that *virtue* was the highest good. However, unlike the Cynics, they did not reject worldly things like wealth or power — they viewed them with indifference. Having money was fine; not having money was also fine.
 Stoicism developed an elaborate systematic philosophy. They believed that the universe was guided by a universal reason called the [*Logos*](https://en.wikipedia.org/wiki/Logos), which consisted of an active principle acting upon a passive matter.
@@ -162,7 +162,7 @@ Christianity also brought a new worldview. The Greek tradition held a *cyclical*
 The medieval age began with the fall of the Roman Empire and was deeply shaped by Christianity.
 
 **350 CE — [Augustine of Hippo](https://en.wikipedia.org/wiki/Augustine_of_Hippo):**<br>
-**Media:** [KPop Demon Hunter](/tangled_thoughts/kpop_demon_hunter/)<br>
+**Media:** [KPop Demon Hunter](/tangled_thoughts/movie_kpop_demon_hunter/)<br>
 **Summary:**<br>
 One of the most famous Christian theologians, Augustine, in his book *Confessions*, described a proto-archetypical story of a sinner's journey toward redemption through Christianity. He also wrote extensively against what he deemed Christian heresies, two of the most important being Manichaeism and Pelagianism.
 
@@ -264,7 +264,7 @@ Through these ideas, Hume undermined the Enlightenment project of reconciling fa
 
 
 **1724 CE [Immanuel Kant](https://en.wikipedia.org/wiki/Immanuel_Kant)**<br>
-**Media:** [No Country for Old Men](/tangled_thoughts/no_country_old_man/)<br>
+**Media:** [No Country for Old Men](/tangled_thoughts/movie_no_country_old_man/)<br>
 **Summary:**<br>
 Coming after the era of empiricism and rationalism, one of Kant’s major projects was to resolve the dispute between the two camps. He argued that both reason and sensory experience are crucial for gaining knowledge of the world.
 Kant agreed with the empiricists that all knowledge originates in sensory experience, but he also argued that certain structures in our reason shape how we experience the world. He compared this to wearing colored sunglasses: the world itself remains the same, but the sunglasses (reason’s structures) tint everything we perceive.
@@ -373,7 +373,7 @@ The philosophers most influenced by Schopenhauer include Nietzsche, Freud, and W
 The Modern Age, spanning roughly from 1800 to 1950.
 
 **1813 CE [Søren Kierkegaard](https://de.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard)**<br>
-**Media:** [Angels Egg (1985)](/tangled_thoughts/angles_egg/)<br>
+**Media:** [Angels Egg (1985)](/tangled_thoughts/movie_angles_egg/)<br>
 **Summary:**<br>
 A Christian existential philosopher and partly Romantic. Kierkegaard was less concerned with this world, as most Romantics were, and more focused on the next world — the world of God. Passion, for him, was not for its own sake, but for God and faith. He responded to the Enlightenment's failure to reconcile faith and reason by choosing faith. A strong critic of European culture, particularly what he called "Sunday Christianity," Kierkegaard believed that true Christianity cannot be turned on and off; its message is so powerful that it must permeate one's whole life. Faith for him was like water and fire with reason — incompatible. He didn’t consider objective truth or reason to be very important. Instead, he focused on the truth of how one should live. For Kierkegaard, living well was the most important thing.
 
@@ -470,7 +470,7 @@ Sartre’s answer: we must live authentically, both individually and in relation
 
 
 **1913 CE [Albert Camus](https://en.wikipedia.org/wiki/Albert_Camus)**<br>
-**Media:** [Taste of Cherry](/tangled_thoughts/taste_cherry/), [Sunset Limited](/tangled_thoughts/sunset_limited/)<br>
+**Media:** [Taste of Cherry](/tangled_thoughts/movie_taste_cherry/), [Sunset Limited](/tangled_thoughts/movie_sunset_limited/)<br>
 **Summary:**<br>
 A French existentialist, Camus is nowadays most famous for his phrase: *"One must imagine Sisyphus happy."*
 
@@ -528,7 +528,7 @@ This model allowed Leibniz to preserve both scientific determinism and theologic
 
 
 **1806 CE [Max Stirner](https://en.wikipedia.org/wiki/Max_Stirner)**<br>
-**Media:** [Rope](/tangled_thoughts/rope/)<br>
+**Media:** [Rope](/tangled_thoughts/movie_rope/)<br>
 **Summary:**<br>
 Max Stirner is a German philosopher. His central thesis—and what he is most famous for—comes from his work *The Ego and Its Own*, where he presents the concept of egoism: "each human being should only care about themselves."
 

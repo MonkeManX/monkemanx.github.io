@@ -1,4 +1,4 @@
- ---
+---
 title: One Flew Over the Cuckoo's Nest (1975)
 date: 2025-01-24 23:00:00
 tags: ["Movie"]

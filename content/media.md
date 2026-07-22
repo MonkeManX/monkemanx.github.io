@@ -10,29 +10,29 @@ This is a selection of various media, I most recently enjoyed or found interesti
 
 
 {{< media "/attachments/AngelsEgg1985.jpg" "Angles Egg (1985)" "https://en.wikipedia.org/wiki/Angel%27s_Egg" >}}
-See <a href="/tangled_thoughts/angles_egg/">review here</a>.
+See <a href="/tangled_thoughts/movie_angles_egg/">review here</a>.
 {{< /media >}}
 
 
 {{< media "/attachments/sirat-3573757048.jpg" "Sirāt (2025) " "https://en.wikipedia.org/wiki/Sir%C4%81t" >}}
-See <a href="/tangled_thoughts/sirat/">review here</a>.
+See <a href="/tangled_thoughts/movie_sirat/">review here</a>.
 {{< /media >}}
 
 
 {{< media "/attachments/Ichithekillerposter.jpg" "Ichi the Killer (2001)" "https://en.wikipedia.org/wiki/Ichi_the_Killer_(film)" >}}
-See <a href="/tangled_thoughts/ichi_the_killer/">review here</a>.
+See <a href="/tangled_thoughts/movie_ichi_the_killer/">review here</a>.
 {{< /media >}}
 
 
 {{< media "/attachments/Lilya_4-ever_poster.jpg" "Lilya 4 Ever (2002)" "https://en.wikipedia.org/wiki/Lilya_4-ever" >}}
-See <a href="/tangled_thoughts/lilya_4_ever/">review here</a>.
+See <a href="/tangled_thoughts/movie_lilya_4_ever/">review here</a>.
 {{< /media >}}
 
 
 {{< details "Old" "false" "nomd" >}}
 
 {{< media "/attachments/frida_images.jpeg" "Frida (2002)" "https://www.imdb.com/title/tt0120679/" >}}
-See <a href="/tangled_thoughts/frida/">review here</a>.
+See <a href="/tangled_thoughts/movie_frida/">review here</a>.
 {{< /media >}}
 
 {{< media "/attachments/synnedoch_new_york.jpg" "Synecdoche in New York" "https://www.imdb.com/title/tt0383028/" >}}
@@ -99,7 +99,7 @@ It's a collection of silly poems about cats. Fun to read.
 
 
 {{< media "/attachments/stoner_book.jpg" "Stoner" "https://www.goodreads.com/book/show/166997.Stoner" >}}
-See <a href="/tangled_thoughts/stoner/">review here</a>.
+See <a href="/tangled_thoughts/book_stoner/">review here</a>.
 {{< /media >}}
 
 
@@ -157,7 +157,7 @@ Another web-serial that subverts the classical Xianxia tropes, where our protago
 
 
 {{< media "/attachments/c4jerujfelw50c11fo23xv1u.webp" "I'm an Infinite Regressor, But I've Got Stories to Tell" "https://www.novelupdates.com/series/im-an-infinite-regressor-but-ive-got-stories-to-tell/" >}}
-See <a href="/tangled_thoughts/infinite_regressor/">review here</a>.
+See <a href="/tangled_thoughts/book_infinite_regressor/">review here</a>.
 {{< /media >}}
 
 
@@ -173,15 +173,15 @@ The first 20 minutes of the album consist of a single repeated phrase: **"Düsse
 {{< /media >}}
 
 {{< media "/attachments/tamahime-jun-togawa.jpg" "戸川純 by Jun Togawa" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E7%8E%89%E5%A7%AB%E6%A7%98" >}}
-See <a href="/tangled_thoughts/tamahime_sama/">review here</a>.
+See <a href="/tangled_thoughts/music_tamahime_sama/">review here</a>.
 {{< /media >}}
 
 {{< media "/attachments/suki-suki-jun.jpg" "Suki-suki-daisuki" "https://rateyourmusic.com/release/album/%E6%88%B8%E5%B7%9D%E7%B4%94/%E5%A5%BD%E3%81%8D%E5%A5%BD%E3%81%8D%E5%A4%A7%E5%A5%BD%E3%81%8D/" >}}
-See <a href="/tangled_thoughts/suki_suki_daisuki/">review here</a>.
+See <a href="/tangled_thoughts/music_suki_suki_daisuki/">review here</a>.
 {{< /media >}}
 
 {{< media "/attachments/0016068366_10.jpg" "125 Rue Montmartre" "https://rateyourmusic.com/release/comp/125-rue-montmartre/discography/" >}}
-See <a href="/tangled_thoughts/125_rue_montmartre/">review here</a>.
+See <a href="/tangled_thoughts/music_125_rue_montmartre/">review here</a>.
 {{< /media >}}
 
 
@@ -251,12 +251,12 @@ See <a href="/articles/symposium/">review here</a>.
 
 
 {{< media "/attachments/epictetus_discourses.jpg" "Epictetus: Discourses and Selected Writings" "https://www.goodreads.com/book/show/4143812-discourses-and-selected-writings">}}
-See <a href="/tangled_thoughts/epictetus6/">review here</a>.
+See <a href="/tangled_thoughts/book_epictetus6/">review here</a>.
 {{< /media >}}
 
 
 {{< media "/attachments/sophis_world.jpg" "Sophie’s World" "https://www.goodreads.com/book/show/10959.Sophie_s_World">}}
-See <a href="/tangled_thoughts/sophies_world/">review here</a>.
+See <a href="/tangled_thoughts/book_sophies_world/">review here</a>.
 {{< /media >}}
 
 

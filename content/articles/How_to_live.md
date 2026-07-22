@@ -45,7 +45,7 @@ So when I speak of a “mode of existence,” I mean that a being exists in the 
 
 ### 1.2. We can change our Beliefs
 
-The second point relates to [**Doxastic Voluntarism**](https://plato.stanford.edu/entries/doxastic-voluntarism/), the view that we can [change our beliefs](/tangled_thoughts/philosophical_ramblings_what_is_belief/) through either direct or indirect means.
+The second point relates to [**Doxastic Voluntarism**](https://plato.stanford.edu/entries/doxastic-voluntarism/), the view that we can [change our beliefs](/tangled_thoughts/philosophy_philosophical_ramblings_what_is_belief/) through either direct or indirect means.
 
 **Direct belief control** refers to moments when we can decide what to believe, especially in cases of uncertainty. For example, if you leave your house in the morning and aren’t sure whether you locked the door, you might simply choose to believe you did, not based on new evidence, but out of practical necessity. In such uncertain situations, belief can sometimes be shaped by will.
 
@@ -64,7 +64,7 @@ This is what is called **long-range voluntary control**, the idea that we can de
 
 ### 1.3. The Stoic Principle of Control
 
-The third point comes from the [**Stoic principle of control**](/tangled_thoughts/epictetus8/), which holds that the only thing entirely within our power is *how we respond to things*.
+The third point comes from the [**Stoic principle of control**](/tangled_thoughts/quotes_epictetus8/), which holds that the only thing entirely within our power is *how we respond to things*.
 
 Why is this the case? Let’s examine a few external factors.
 
@@ -74,7 +74,7 @@ The same is true of power or even health, and many other external things. Health
 
 In short, *external things are always subject to luck*. That’s not to say we have *no* influence over them, just that they aren’t *entirely* up to us.
 
-Even things like memory are not guaranteed. You might develop Alzheimer’s later in life and lose access to your past. And your [past](https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_49) itself is already written, it cannot be changed, no matter how much you wish it could. The [future](/tangled_thoughts/seneca6/) is also beyond your direct control. It either unfolds as it will, or it doesn’t happen at all. Either way, you cannot fully determine it.
+Even things like memory are not guaranteed. You might develop Alzheimer’s later in life and lose access to your past. And your [past](https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_49) itself is already written, it cannot be changed, no matter how much you wish it could. The [future](/tangled_thoughts/quotes_seneca6/) is also beyond your direct control. It either unfolds as it will, or it doesn’t happen at all. Either way, you cannot fully determine it.
 
 > “Life is divided into three parts: what was, what is and what shall be. Of these three periods, the present is short, the future is doubtful and the past alone is certain.”
 >
@@ -82,7 +82,7 @@ Even things like memory are not guaranteed. You might develop Alzheimer’s late
 
 So what is fully within our control?
 
-The Stoics would say: [*our response to any situation*](/tangled_thoughts/epictetus2/). That is, the thoughts, judgments, and actions that arise from our character.
+The Stoics would say: [*our response to any situation*](/tangled_thoughts/quotes_epictetus2/). That is, the thoughts, judgments, and actions that arise from our character.
 
 For example, suppose a friend asks to borrow money from you. You may not have the financial ability to help them, that part may be out of your control. But you still have complete control over how you respond: with kindness, with honesty, with frustration, with indifference, that's your decision. You could say, “I’m really sorry, I can’t help right now,” or “No, I don’t want to,” or even lash out in anger. But that choice belongs to you alone.
 
@@ -262,7 +262,7 @@ So: has something “bad” happened **to** this person?
 
 To a utilitarian: yes, because they value outcomes, even if they’re outside the person’s control. The fact that the person *couldn’t* press the button doesn't matter to the utilitarian’s system. Something bad still happened, even though the person had no agency.
 
-But to someone who follows the framework I’ve laid out, where only intentions and reactions are valued, [nothing bad has happened](/tangled_thoughts/seneca2/). Since the event was outside of their control, and since they had no intention of letting harm occur, their own life and value aren’t diminished. They stayed consistent with valuing only what’s in their power: their intentions.
+But to someone who follows the framework I’ve laid out, where only intentions and reactions are valued, [nothing bad has happened](/tangled_thoughts/quotes_seneca2/). Since the event was outside of their control, and since they had no intention of letting harm occur, their own life and value aren’t diminished. They stayed consistent with valuing only what’s in their power: their intentions.
 
 This is the core flaw in utilitarianism: it ties our value and happiness to *external things* we cannot fully control. And that makes it a fragile foundation for living a good life.
 

@@ -20,7 +20,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 - Do philosophical concepts have essences? A: [No essences, only relations](/articles/against_essentialism/)
 
 **Value Theory**
-- What deserves *moral consideration*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/) and [Capacity to experience Suffering](/tangled_thoughts/philosophical_ramblings_pain_conciousness_animals/)
+- What deserves *moral consideration*? A: [Capability to deploy consciousness](/articles/when_does_a_something_deserve_moral_considerations/) and [Capacity to experience Suffering](/tangled_thoughts/philosophy_philosophical_ramblings_pain_conciousness_animals/)
 - What do we *value*? A: [Value arises from Subjectivity](/articles/where_the_eiffel_tower_is_is_not_obejctive/).
 
 **Ethics**
@@ -34,7 +34,7 @@ This section is a work in progress, and I will add entries to it whenever I writ
 
 **Metaphysics**
 - Do we have *free will*? A: [No](/articles/about_freedom/#4-what-about-free-will)
-- What is the *self*? A: [There is no self](/tangled_thoughts/philosophical_ramblings_what_is_self/)
+- What is the *self*? A: [There is no self](/tangled_thoughts/philosophy_philosophical_ramblings_what_is_self/)
 
 **Aesthetics**
 - What is *love*? A: [The desire to attain beauty and goodness and preserve them forever](/articles/symposium/)

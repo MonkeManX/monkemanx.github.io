@@ -9,7 +9,7 @@ This post is incomplete, it doesn't hold every argument or consideration for eve
 {{< /info >}}
 
 {{< info "Info" >}}
-Addendum: [Philosophical Ramblings #07: Pain, Consciousnessand the Value of Animals](/tangled_thoughts/philosophical_ramblings_pain_conciousness_animals/)
+Addendum: [Philosophical Ramblings #07: Pain, Consciousnessand the Value of Animals](/tangled_thoughts/philosophy_philosophical_ramblings_pain_conciousness_animals/)
 {{< /info >}}
 
 It would not be a controversial statement to say, that a person deserves moral consideration i.e. when doing an action involving another person one must consider the morality of the action. For example most people would agree that murdering a person is wrong, because in general we think that each person has a right to live, which gets infringed through the action of murder.

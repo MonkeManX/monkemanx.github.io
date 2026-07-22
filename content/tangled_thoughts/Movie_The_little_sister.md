@@ -10,4 +10,4 @@ A coming-of-age story about a lesbian Muslim who comes to terms with her sexuali
 
 Vagueness is the death of meaning: something that refers to everything also refers to nothing, and I do feel like the movie lacks concreteness. We get many shots of her looking sad or thoughtful while smoking; But why exactly is she sad about? What is she thinking about? I just wish there was more insight into the exact nature of her struggle and how she resolves it. How does she harmonize her sexuality with her religion? How does her conservative family deal with it? And so on. It’s never made explicit.
 
-It reminded me a bit of the movie [Stalker](/tangled_thoughts/stalker/) in that way. **6/10.**
+It reminded me a bit of the movie [Stalker](/tangled_thoughts/movie_stalker/) in that way. **6/10.**

@@ -8,8 +8,8 @@ It follows a simple argument about what I think is a good idea to value (I'm del
 
 1. From Heidegger, we learn that [all purpose and meaning depend on *Dasein*](/articles/where_the_eiffel_tower_is_is_not_obejctive/): that is, our lived experience as human beings in the world.
 2. From Sartre and Heidegger, we learn that *Dasein* expresses itself through [authenticity](https://en.wikipedia.org/wiki/Authenticity_%28_philosophy%29): the degree to which a person's actions align with their values and desires, despite external pressures.
-3. I also believe in [long-range voluntary control](/tangled_thoughts/philosophical_ramblings_what_is_belief/): the idea that we can shape our beliefs by deliberately exposing ourselves to certain ideas or values over a long period of time.
-4. From the Stoic [principle of control](/tangled_thoughts/epictetus8/), we learn that the only thing truly in our control is how we respond to situations, that is our character or virtue. Everything else, health, wealth, reputation, is subject to luck and external forces.
+3. I also believe in [long-range voluntary control](/tangled_thoughts/philosophy_philosophical_ramblings_what_is_belief/): the idea that we can shape our beliefs by deliberately exposing ourselves to certain ideas or values over a long period of time.
+4. From the Stoic [principle of control](/tangled_thoughts/quotes_epictetus8/), we learn that the only thing truly in our control is how we respond to situations, that is our character or virtue. Everything else, health, wealth, reputation, is subject to luck and external forces.
 5. From these points, the following conclusions emerge:
    * From (1), value is not objective but grounded in lived, subjective experience.
    * From (2), our values are made real through authenticity, by living in alignment with them.
