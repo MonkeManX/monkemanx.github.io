@@ -1,0 +1,21 @@
+---
+title: "Philosophical Ramblings #15: Idealism and the Fragmented Mind"
+date: 2026-07-22 12:00:00
+tags: ["Philosophy", "Philosophical-Ramblings"]
+---
+
+One major argument in favour of idealism concerns epistemology: all knowledge of the external world is mediated through our senses, which we know from experience can be mistaken. On the other hand, our knowledge of our own mind appears to be direct and immediate. Our mind therefore seems to occupy a privileged epistemological position. Based on this assumption, thinkers such as Schopenhauer, Bernardo Kastrup, and Philip Goff develop their respective versions of idealism.
+
+However, I am somewhat suspicious of the claim that we have direct, unmediated access to our own mind. This is not yet a fully developed argument, but rather a stream of consciousness exploring an intuition. Some time ago, I read *Why Buddhism Is True*, which argues that the mind is not a unified entity but rather consists of many different modules, each with its own drives and goals. For example, there may be a module responsible for the desire to have children, another for hunger, another for achieving social status, and so on. These different modules can come into conflict with one another. When we repeatedly act according to the impulses of one module, that module becomes stronger.
+
+If we adopt this picture of the mind, it becomes less obvious that there is a single unified entity to which we have privileged access. Instead, we have to ask: who or what exactly is the thing that supposedly has this direct access?
+
+To develop this further, we can look at the famous experiments with split-brain patients. In these experiments, one hemisphere of the brain can be instructed to perform an action, and afterwards the other hemisphere is asked why the person performed that action. Surprisingly, the speaking hemisphere often does not answer "I don't know"; instead, it appears to construct an explanation after the fact. One interpretation of this phenomenon, also suggested in *Why Buddhism Is True*, is that the ego functions partly as a kind of public relations system.
+
+Humans have always lived in tribes and social groups, where it was important for others to understand and trust our behaviour. Someone who acts randomly is difficult to trust because if we cannot understand their reasons, we cannot predict whether they will follow plans, rules, social norms, morality, or any other framework. Furthermore, a narrative system that explains and justifies our actions can help convince others that our behaviour is reasonable and beneficial, thereby gaining their support.
+
+With this in mind, if I think of a triangle, it is not necessarily the case that there is one unified entity to which the triangle simply appears. Rather, there may be many different cognitive modules, each with its own interests, contributing to how the triangle is interpreted. In other words, the idea that everything appearing in consciousness is directly accessed by a unified observer may be a very naive understanding of how the brain functions.
+
+Instead, our conscious experience may emerge from many interacting feedback loops that continuously modify and reinterpret what enters awareness. There is not simply something that appears to us and is then directly known; rather, there is a constant process of interpretation and reconstruction. We can observe something similar when we consider how our perception of things changes depending on our mood or our current mental state. The same object can appear differently depending on which cognitive systems are dominant at a given moment—not necessarily in its raw visual appearance, though this would also be an interesting empirical question, but certainly in its meaning and significance.
+
+Therefore, I think modern cognitive neuroscience challenges some forms of idealism—not because it proves materialism, or because one can naively claim that the success of science demonstrates that materialism must be true, but because the more we understand the complexity of the brain, the less plausible a simple, unified, transparent mind becomes. Instead, we discover that our minds are far more fragmented, dynamic, and constructed than traditional philosophical pictures often assume.
