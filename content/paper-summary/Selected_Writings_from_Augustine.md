@@ -1,8 +1,7 @@
 ---
 title: 'Selected Writings from Saint Augustine'
-date: 2026-04-25 10:00:00
+date: 2026-07-23 14:00:00
 tags: ["paper-summary", "Philosophy", "Theology"]
-draft: True
 ---
 
 This summary and critic was created in the context of the seminar “Introduction to Saint Augustine,” which I attended at the *Karlsruhe Institute of Technology*. It is not a summary of a single work, but rather a summary of selected chapters from various works by him, such as *The City of God* or *Confession*.
@@ -117,7 +116,7 @@ Furthermore, in the letter, he argues that rationality only comes after faith. B
 Additionally, it seems somewhat contradictory: in the letter, he states that divine matters are ultimately not fully comprehensible to humans, yet in *City of God*, he nevertheless describes quite concretely how God created the world and how eternity and time function, which is strange.
 
 
-## Confession XI.xii.14 - XI.xxiv.24 
+## Confession XI.xii.14 - XI.xxiv.28: Time  
 
 Augustine begins by addressing the question of what God was doing before the creation of heaven and earth. He rejects a sarcastic reply, that God was preparing hells for those who pry into such mysteries, preferring honest ignorance over ridicule. Instead, he asserts that God was not idle, nor was He "doing" anything, because **time itself did not exist** prior to creation. Since God created time along with the world, He cannot be subject to it. God exists in an eternal "Today," distinct from the successive passing of human years, where He precedes all things past and transcends all things future.
 
@@ -164,7 +163,7 @@ all kinds of sin (paragraph 15).
 
 
 
-## City of God XIV: 1-4, 6, 13
+## City of God XIV 1-4, 6, 13: The two Cities I
 
 ### Chapter 1 
 
@@ -222,7 +221,7 @@ Augustine also emphasizes that this fall is not something imposed from outside b
 Finally, Augustine draws a moral lesson: even painful failure and shame can be healing if they expose this hidden pride. An obvious sin can break the illusion of self-sufficiency and lead a person back to humility and dependence on God. In this way, humility is not weakness but the true ordering of the soul toward its highest good, while pride is a self-destructive turning inward that constitutes the essence of sin.
 
 
-## City of God XV: 1-7
+## City of God XV 1-7: The Two Cities II 
 
 ### Chapter 1
 
@@ -295,3 +294,74 @@ From this, Augustine draws a general moral psychology: sin is not primarily exte
 Cain, however, refuses this divine correction. Instead of turning inward in repentance, he allows envy to grow until it results in murder. Augustine then interprets Cain as the archetype of the earthly city: a life driven by pride, envy, and refusal of correction. He even extends this typologically to the Jews’ rejection of Christ, though he signals this as an allegorical level of interpretation.
 
 Overall, the chapter emphasizes that sin begins as an internal resistance to God’s guidance, and that divine warning is always given before outward destruction occurs, but can be refused through the will’s pride.
+
+
+## City of God XIX 4-8, 10-11: The Highest Good 
+
+4: Augustine argues that the supreme good is not found in earthly pleasures, bodily goods, or human virtue alone, as philosophers claim, but in eternal life with God, which requires faith because human existence remains corrupted by suffering, sin, and inner conflict. Even the highest virtues of this life: prudence, temperance, justice, and courage, show humanity’s imperfection because they exist only to struggle against evils that cannot be fully overcome until the final salvation promised by God.
+ 
+5: Although human beings naturally need social life and community, earthly societies are filled with instability, conflict, and betrayal, making true and lasting peace impossible without God.
+
+6: Human justice is inevitably imperfect because judges cannot know hidden truths and are forced to risk harming the innocent, revealing the misery of earthly life even when people act with good intentions.
+
+7: Human society is plagued by division and suffering, from the barriers of language to the horrors of war, and even supposedly just wars are ultimately tragic because they arise from human wrongdoing and disorder.
+
+8: Even the best human friendships cannot provide complete security or lasting happiness because the dangers of earthly life threaten friends with suffering, betrayal, or death, leaving true consolation only in the hope of eternal life with God.
+
+10: The trials and anxieties of earthly life strengthen the saints’ longing for the perfect peace of eternal life, where the virtues no longer struggle against evil but receive their final reward in everlasting harmony with God.
+
+11: The ultimate end and highest good of the City of God is eternal peace, which is inseparable from eternal life and consists in the perfect, unchanging enjoyment of God without conflict or disturbance.
+
+
+## City of God XIX 12-17, 21: War and Peace 
+
+12: Augustine argues that all beings, even those who wage war or act unjustly, ultimately seek peace, because every creature desires some form of order and harmony, although only the just seek the true peace found in alignment with God rather than the selfish peace of domination.
+
+13: All forms of peace are expressions of the universal order established by God, and even suffering and punishment participate in this order because all creatures retain some goodness and are judged according to their alignment or disorder with divine law.
+
+14: Human peace is properly ordered when earthly desires are subordinated to rational knowledge and ultimately to obedience to God, leading people to love and serve others through just authority rather than domination.
+
+15: Human beings were created to rule only over irrational creatures, not over one another, and that slavery and domination arise from sin as a punishment for disorder, while true freedom consists in being free from sinful desires rather than merely being free from human masters.
+
+16: True authority is a form of loving responsibility rather than domination, as just rulers, including household heads, should guide and correct those under their care for their good, with domestic order serving as the foundation for the peace and order of society.
+
+17: The earthly and heavenly cities differ in their ultimate goals: the earthly city seeks temporal peace and worldly goods, while the heavenly city uses earthly peace only as a means toward eternal peace with God, obeying earthly laws unless they conflict with true worship.
+
+21: The Roman Republic, according to Cicero’s definition of a true republic as the common good of a people united by justice, never truly existed because Rome lacked true justice, which requires right relationship with God and therefore cannot exist in a society devoted to false gods.
+
+## Sermon 348, Letter 228: Augustine on the Vandal invasion of his Home
+
+In *Sermon 348*, Augustine argues that true courage does not consist in the absence of fear, but in the fear of God that leads a person toward love and ultimately perfect charity. Fear initially guides humans away from wrongdoing through concern for punishment, but as love of God becomes complete, this imperfect fear is replaced by a deeper confidence and freedom from anxiety. However, Augustine distinguishes this from prideful fearlessness, criticizing the Stoics and Epicureans for mistaking emotional hardness or self-sufficiency for true virtue. Genuine compassion and moral sensitivity, he argues, require a healthy soul animated by God, not the numbness of someone who feels no suffering. Finally, Augustine distinguishes the fear that charity removes, the fear of losing worldly goods or punishment, from the enduring “chaste fear of the Lord,” which is the reverent concern of remaining united with God forever.
+
+For the summary of Letter 228, I will just quote the summary of the book where I got the letter from:
+> In 429, after the beginning of the Vandal invasion, Augustine wrote to
+> Honoratus, the bishop of Thiave in Numidiu. who had consulted him about how
+> the Catholic clergy should behave under the threat of the imminent invasion.
+> Augustine tells Honoratus that he thought that he had said everything necessary
+> on the topic in a letter to Quodvultdeus, of which he had sent a copy to
+> Honoratus, namely, that the clergy should not deprive the people of God of the
+> ministry needed especially in a time of danger (paragraph 1 ). Augustine argues
+> that neither the words nor the example of Christ nor the actions of Saint Paul
+> justify the clergy's abandoning the churches of Christ (paragraph 2). The words
+> of Saint John, in fact, urge pastors to lay down their lives for their brothers and
+> sisters (paragraph 3). Augustine admits that pastors may flee if they are not
+> prevented by their duties to the Church (paragraph 4). He replies to Honoratus'
+> argument that it is useless for bishops to remain and to witness the slaughter of
+> the people by saying that, if all the people flee, the clergy may flee as well (para
+> graph 5). Augustine defends the action of Athanasius, the bishop of Alexandria,
+> who fled because he in particular was the object of Constantius' persecution, for
+> his flight did not deprive the people of ministers (paragraph 6). He reminds
+> Honoratus that the clergy ought to fear spiritual evils more than bodily sufferings
+> (paragraph 7), and he spells out the spiritual evils that the people of God suffer
+> when they are abandoned by the ministers of the Church (paragraph 8). Hence
+> Honoratus should now see what he had written that he did not see, namely, the
+> great good that the people of God derive in times of danger if they are not aban
+> doned by the ministers of Christ (paragraph 9). He explains the conditions under
+> which priests may flee, using the examples of Athanasius and King David (para
+> graph 10). But when clergy and laity face a common danger, the clergy may not
+> abandon the people of God (paragraph 1 1 ). If some of the clergy should flee and
+> some should remain with the people who cannot flee, they should be chosen by
+> lot (paragraph 12). Furthermore, the faithful should be informed of why the
+> clergy are not fleeing so that the people themselves do not think that they must
+> remain (paragraph 13). Finally, Augustine advises Honoratus that amid such
+> dangers it is best that we pray to God to show us his mercy (paragraph 14).
