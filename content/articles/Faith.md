@@ -1,5 +1,5 @@
 ---
-title: 'Unamed'
+title: 'Concepts in Religion Part 1: Faith'
 date: 2026-07-13 16:00:00
 tags: ["Philosophy", "Metaphysics"]
 Draft: True
