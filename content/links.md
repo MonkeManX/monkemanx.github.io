@@ -38,6 +38,7 @@ Gone is the era when each click to a website felt exciting and full of life, now
 - [Free Disk Space Arch](https://www.giorgosdimtsas.net/blog/how-to-free-up-disk-space-in-arch-linux/)
 - [Simulation Clicker](https://neal.fun/stimulation-clicker/) - This is horrible.
 - [Make Fuel Yourself](https://forthetrail.com/projects/dirtbags/fuel-guide) - An overview over cheap fueling option for endurance running, and how to make your own fuel.
+- [Buddhism for Vampires](https://buddhism-for-vampires.com/the-vetalis-gift) - Interesting Idea, I wish it had more chapters.
 
 ## Tools
 
