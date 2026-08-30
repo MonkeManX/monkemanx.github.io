@@ -41,6 +41,10 @@ For osem poeple itm ight jsut take a few second, for some it migth take minuets 
 The next thing that is beneficial for the meditaito nobejct to hae is soem dnamic, if its too static e.g. we jsut focus on a pen that is in fornt of us the mind drifting the midn becoems broed evry quickly and will start drifitng away.
 
 
+--- 
+
+Stimulus indepednent thinking(https://en.wikipedia.org/wiki/Mind-wandering#Happiness)
+https://pmc.ncbi.nlm.nih.gov/articles/PMC1821121/
 
 
 ----
