@@ -1,7 +1,7 @@
 ---
 title: "My 10-Day Vipassana Retreat at Dhamma Sampatti (Black Forest)"
 date: 2026-03-18 08:00:00
-tags: ["Meditation", "Travel"]
+tags: ["Meditation", "Travel", "Buddhism"]
 ---
 
 {{< info "Info" >}}

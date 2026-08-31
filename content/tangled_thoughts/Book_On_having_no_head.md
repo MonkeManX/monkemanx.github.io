@@ -1,7 +1,7 @@
 ---
 title: "On Having No Head: Zen and the Rediscovery of the Obvious"
 date: 2026-02-14 08:00:00
-tags: ["Book"]
+tags: ["Book", "Buddhism"]
 ---
 
 {{< book image="/attachments/having_no_head.jpg" >}}

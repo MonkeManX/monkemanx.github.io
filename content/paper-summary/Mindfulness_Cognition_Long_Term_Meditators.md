@@ -1,7 +1,7 @@
 ---
 title: 'Mindfulness, Cognition, and Long-Term Meditators: Toward a Science of Advanced Meditation'
 date: 2026-07-24 09:00:00
-tags: ["paper-summary", "Neuroscience", "Meditation"]
+tags: ["paper-summary", "Neuroscience", "Meditation", "Buddhism"]
 ---
 
 **Paper Title:** Mindfulness, Cognition, and Long-Term Meditators: Toward a Science of Advanced Meditation

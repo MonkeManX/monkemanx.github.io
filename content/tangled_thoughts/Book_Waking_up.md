@@ -1,7 +1,7 @@
 ---
 title: "Waking Up by Sam Harris"
 date: 2025-06-14 18:00:00
-tags: ["Book"]
+tags: ["Book", "Buddhism"]
 ---
 
 {{< book image="/attachments/waking_up_sam_harris.jpg" >}}

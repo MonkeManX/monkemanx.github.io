@@ -1,7 +1,7 @@
 ---
 title: 'Why Buddhism Is True'
 date: 2025-12-13 15:00:00
-tags: ["Book"]
+tags: ["Book", "Buddhism"]
 ---
 
 

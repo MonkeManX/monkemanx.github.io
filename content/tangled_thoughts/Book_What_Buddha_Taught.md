@@ -1,7 +1,7 @@
 ---
 title: "What the Buddha Taught"
 date: 2026-07-21 18:00:00
-tags: ["Book"]
+tags: ["Book", "Buddhism"]
 ---
 
 {{< book image="/attachments/what_buddha_taught.jpg" >}}
