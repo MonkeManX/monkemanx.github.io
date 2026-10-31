@@ -1,0 +1,33 @@
+<style>
+    .definition {
+        background: #f7f9fb;
+        border: 1px solid #d5dde5;
+        border-left: 5px solid #2c3e50;
+        border-radius: 4px;
+        padding: 12px 20px;
+        margin: 1.5em 10px;
+    }
+
+    .definition-title {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 18px;
+        margin-bottom: 0.6em;
+    }
+
+    .definition table {
+        margin: 0.5em auto;
+    }
+
+    .definition p {
+        margin: 0.6em 0;
+    }
+</style>
+
+{{ $kind := default "Definition" (.Get "kind") }}
+<div class="definition">
+    <div class="definition-title">{{ $kind }}{{ with .Get "number" }}&nbsp;{{ . }}{{ end }}{{ with .Get "name" }}&nbsp;({{ . | markdownify | safeHTML }}){{ end }}</div>
+    {{ $inner := .Inner | markdownify }}
+    {{ $inner := replace $inner "<table>" "<table class=\"latex_table\">" }}
+    {{ $inner | safeHTML }}
+</div>
