@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Repository-local Hugo with article narration. The system Hugo is unchanged.
+set -euo pipefail
+root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "$root"
+export HUGO_BINARY="${HUGO_BINARY:-$(type -P hugo || true)}"
+if [[ -z "$HUGO_BINARY" || "$HUGO_BINARY" -ef "$root/hugo" ]]; then
+  echo 'Cannot find the real Hugo binary. Set HUGO_BINARY to its absolute path.' >&2
+  exit 1
+fi
+python="$root/tools/tts/.venv-onnx/bin/python"
+if [[ ! -x "$python" ]]; then
+  echo "Run TTS setup first: cd tools/tts && nix-shell --run 'bash setup_onnx.sh'" >&2
+  exit 1
+fi
+printf -v command '%q ' "$python" "$root/tools/tts/hugo_local.py" "$@"
+if type -P nix-shell >/dev/null; then
+  exec nix-shell "$root/tools/tts/shell.nix" --run "exec $command"
+else
+  exec "$python" "$root/tools/tts/hugo_local.py" "$@"
+fi

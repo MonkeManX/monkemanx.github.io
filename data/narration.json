@@ -1,0 +1,29 @@
+{
+  "articles": {
+    "articles/In_defense_of_hating_things.md": {
+      "audio_sha256": "21953c512c380b522c89f9cbcb875763947ccb52def4a79f174efcc0c8797c76",
+      "duration_label": "6 min 42 sec",
+      "duration_seconds": 402.296,
+      "engine": {
+        "engine": "Audio8-Preview-0.1B-ONNX-INT8",
+        "onnxruntime": "1.23.2",
+        "runtime_and_voice_sha256": "c9f2668955ab8ba238722e3f3ef86f38a83d4067d36f26c947519aa4567ad455",
+        "weights_revision": "317c12d4e0da83847b594fcf8bd74bf2c76615ec"
+      },
+      "fingerprint": "f16a56215c7a932f1f510471433336c28aaa3fbaf34b74f44ebebf40ceffa1b9",
+      "settings": {
+        "bitrate": "96k",
+        "chunk_chars": 300,
+        "max_frames": 1024,
+        "pause_ms": 300,
+        "seed": 42,
+        "threads": 8,
+        "voice": "default"
+      },
+      "source_sha256": "83ccf0dc6c658893ac12eeb3926537cc43cd9599f51b45e0e96bb5fc24043c88",
+      "speech_sha256": "9ba0c67e8172622f05fbde8fdc43dff94e4cc5263d9f7dbaf419feded9d84f99",
+      "src": "audio/articles/In_defense_of_hating_things.mp3"
+    }
+  },
+  "version": 1
+}

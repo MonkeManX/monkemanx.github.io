@@ -2,6 +2,7 @@
 title: 'In Defense of Hating Things'
 date: 2026-11-01 10:00:00
 tags: ["Philosophy"]
+audio: true
 ---
 
 I had an interesting conversation with a friend of mine. I told him that I like to hate things, and he was of the opinion that this is bad and that instead we should let things go and not waste energy on them.
