@@ -12,8 +12,9 @@
 *~
 .DS_Store
 Thumbs.db
+.obsidian/
 
-# Local environments, dependencies, and tool caches
+#Local environments, dependencies, and tool caches
 .venv*/
 venv/
 .cache/
