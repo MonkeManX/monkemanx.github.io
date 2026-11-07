@@ -64,6 +64,153 @@ pre code { white-space: pre-wrap; }
   color: #ccc;  /* Lighter separator color */
 }
 
+/*
+* Article audio player
+* -----------------------------------
+*/
+.article-audio {
+  margin: 1.5em 0 2em;
+  padding: 0.9em 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.87em;
+  background: #fff;
+}
+
+.article-audio-pending {
+  border: none;
+  padding: 0.5em 0;
+  color: #555;
+}
+
+.article-audio-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  margin-bottom: 0.7em;
+}
+
+.article-audio-title {
+  font-weight: bold;
+}
+
+.article-audio-meta {
+  color: #555;
+  white-space: nowrap;
+}
+
+/* Native controls only show when JavaScript is unavailable */
+.article-audio audio {
+  display: block;
+  width: 100%;
+  margin-top: 0.75em;
+}
+
+.article-audio.enhanced audio {
+  display: none;
+}
+
+.article-audio-player {
+  display: none;
+}
+
+.article-audio.enhanced .article-audio-player {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.article-audio-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 2.3em;
+  height: 2.3em;
+  padding: 0;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.article-audio-toggle:hover {
+  background: #333;
+  color: #fff;
+}
+
+.article-audio-toggle svg {
+  display: block;
+  width: 0.85em;
+  height: 0.85em;
+  fill: currentColor;
+}
+
+.article-audio-icon-pause {
+  display: none;
+}
+
+.article-audio.is-playing .article-audio-icon-pause {
+  display: block;
+}
+
+.article-audio.is-playing .article-audio-icon-play {
+  display: none;
+}
+
+.article-audio-track {
+  position: relative;
+  flex: 1;
+  height: 0.8em;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.article-audio-track-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background: #333;
+  pointer-events: none;
+}
+
+.article-audio-time {
+  flex: none;
+  color: #555;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.article-audio-speed {
+  flex: none;
+  font: inherit;
+  padding: 0.2em 0.55em;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.article-audio-speed:hover {
+  background: #333;
+  color: #fff;
+}
+
+.article-audio-toggle:focus-visible,
+.article-audio-track:focus-visible,
+.article-audio-speed:focus-visible {
+  outline: 1px solid #000;
+  outline-offset: 2px;
+}
+
 
 /*
 * For Navigation
