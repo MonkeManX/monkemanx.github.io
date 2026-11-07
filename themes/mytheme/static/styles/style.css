@@ -757,3 +757,190 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
   font-style: italic;
 }
 
+/*
+* Article audio player
+* -----------------------------
+*/
+figure.article-audio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 1.5em 0;
+  padding: 12px 16px 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.article-audio-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2px 12px;
+}
+
+.article-audio-title {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #333;
+}
+
+.article-audio-meta {
+  font-size: 0.75em;
+  color: #888;
+}
+
+.article-audio-player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.article-audio-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #222;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.article-audio-toggle:hover,
+.article-audio.is-playing .article-audio-toggle {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+.article-audio-toggle svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.article-audio-icon-pause {
+  display: none;
+}
+
+.article-audio.is-playing .article-audio-icon-play {
+  display: none;
+}
+
+.article-audio.is-playing .article-audio-icon-pause {
+  display: block;
+}
+
+/*
+* Waveform seek bar: gray bars for the unplayed part, black bars for the
+* played part. The fill div overlays the track and repeats the same bar
+* pattern from the same left edge, so both patterns stay aligned while
+* the fill grows. The script sets the fill width inline.
+*/
+.article-audio-track {
+  position: relative;
+  flex: 1;
+  min-width: 140px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.article-audio-track::before {
+  content: "";
+  width: 100%;
+  height: 16px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #c2c2c2 0,
+    #c2c2c2 2px,
+    transparent 2px,
+    transparent 5px
+  );
+  transition: transform 0.15s ease;
+}
+
+.article-audio-track:focus-visible {
+  outline: 1px solid #222;
+  outline-offset: 3px;
+}
+
+.article-audio-track-fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 16px;
+  transform: translateY(-50%);
+  width: 0%;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #222 0,
+    #222 2px,
+    transparent 2px,
+    transparent 5px
+  );
+  transition: transform 0.15s ease;
+}
+
+.article-audio-track:hover .article-audio-track-fill {
+  transform: translateY(-50%) scaleY(1.25);
+}
+
+.article-audio-track:hover::before {
+  transform: scaleY(1.25);
+}
+
+.article-audio-time {
+  flex-shrink: 0;
+  font-size: 0.75em;
+  font-variant-numeric: tabular-nums;
+  color: #777;
+  white-space: nowrap;
+}
+
+.article-audio-speed {
+  flex-shrink: 0;
+  padding: 2px 9px;
+  font-family: inherit;
+  font-size: 0.75em;
+  color: #555;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.article-audio-speed:hover {
+  background-color: #222;
+  border-color: #222;
+  color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  figure.article-audio {
+    padding: 10px 12px 8px;
+  }
+
+  .article-audio-track {
+    order: 1;
+    flex-basis: 100%;
+    min-width: 0;
+  }
+
+  .article-audio-time {
+    margin-left: auto;
+  }
+}
