@@ -1,0 +1,11 @@
+# CLI inference only; no server, PyTorch, Transformers, or ROCm.
+# Ranges follow upstream onnx_runtime_0_1b_int8/requirements.txt.
+numpy>=1.24,<3
+onnxruntime>=1.22,<1.24
+tokenizers>=0.20,<0.23
+soundfile>=0.12,<1
+huggingface-hub>=0.34,<2
+# Article parsing (front matter, Markdown, footnotes, and math).
+pyyaml>=6,<7
+markdown-it-py>=3,<5
+mdit-py-plugins>=0.4,<0.7

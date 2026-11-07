@@ -1,0 +1,154 @@
+{{- if and .File (eq (printf "%T" .Params.audio) "bool") .Params.audio -}}
+  {{- $key := .File.Path -}}
+  {{- $record := dict -}}
+  {{- with hugo.Data.narration -}}
+    {{- with index .articles $key -}}
+      {{- $record = . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $src := printf "audio/%s.mp3" (strings.TrimSuffix (path.Ext $key) $key) -}}
+  {{- $sourceHash := crypto.SHA256 (os.ReadFile (printf "content/%s" $key)) -}}
+  {{- $ready := and (eq $record.src $src) (eq $record.source_sha256 $sourceHash) (os.FileExists (printf "static/%s" $src)) -}}
+  {{- if $ready -}}
+    {{- $total := "0:00" -}}
+    {{- with $record.duration_seconds -}}
+      {{- $secs := int (math.Round .) -}}
+      {{- $total = printf "%d:%02d" (div $secs 60) (mod $secs 60) -}}
+    {{- end -}}
+    <figure class="article-audio"{{ with $record.duration_seconds }} data-duration="{{ . }}"{{ end }}>
+      <div class="article-audio-head">
+        <span class="article-audio-title">Listen to this article</span>
+        <span class="article-audio-meta">AI narration · {{ $record.duration_label }}</span>
+      </div>
+      <div class="article-audio-player">
+        <button type="button" class="article-audio-toggle" aria-label="Play narration">
+          <svg class="article-audio-icon-play" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 1.5 L10.5 6 L3 10.5 Z"></path></svg>
+          <svg class="article-audio-icon-pause" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 2 H5.4 V10 H3 Z M6.6 2 H9 V10 H6.6 Z"></path></svg>
+        </button>
+        <div class="article-audio-track" role="slider" tabindex="0" aria-label="Seek in narration" aria-valuemin="0"{{ with $record.duration_seconds }} aria-valuemax="{{ int (math.Round .) }}"{{ end }} aria-valuenow="0">
+          <div class="article-audio-track-fill"></div>
+        </div>
+        <span class="article-audio-time"><span class="article-audio-cur">0:00</span> / <span class="article-audio-total">{{ $total }}</span></span>
+        <button type="button" class="article-audio-speed" aria-label="Change playback speed">1×</button>
+      </div>
+      <audio preload="none" aria-label="{{ printf "Narration of %s" .Title }}">
+        <source src="{{ $src | relURL }}" type="audio/mpeg">
+        Your browser does not support audio playback.
+        <a href="{{ $src | relURL }}">Download the narration.</a>
+      </audio>
+    </figure>
+    <script>
+    (function () {
+      document.querySelectorAll('.article-audio:not(.enhanced)').forEach(function (fig) {
+        fig.classList.add('enhanced');
+        var audio = fig.querySelector('audio');
+        if (!audio) return;
+        var toggle = fig.querySelector('.article-audio-toggle');
+        var track = fig.querySelector('.article-audio-track');
+        var fill = fig.querySelector('.article-audio-track-fill');
+        var cur = fig.querySelector('.article-audio-cur');
+        var total = fig.querySelector('.article-audio-total');
+        var speedBtn = fig.querySelector('.article-audio-speed');
+        var speeds = [1, 1.25, 1.5, 2];
+        var speedIdx = 0;
+        var duration = parseFloat(fig.dataset.duration) || 0;
+
+        function fmt(t) {
+          if (!isFinite(t) || t < 0) t = 0;
+          var m = Math.floor(t / 60);
+          var s = Math.floor(t % 60);
+          return m + ':' + (s < 10 ? '0' : '') + s;
+        }
+
+        function setDuration(d) {
+          if (isFinite(d) && d > 0) {
+            duration = d;
+            total.textContent = fmt(d);
+            track.setAttribute('aria-valuemax', Math.round(d));
+          }
+        }
+
+        function render() {
+          var pct = duration > 0 ? Math.min((audio.currentTime / duration) * 100, 100) : 0;
+          fill.style.width = pct + '%';
+          track.setAttribute('aria-valuenow', Math.round(audio.currentTime));
+          cur.textContent = fmt(audio.currentTime);
+        }
+
+        setDuration(duration);
+
+        function setPlaying(playing) {
+          fig.classList.toggle('is-playing', playing);
+          toggle.setAttribute('aria-label', playing ? 'Pause narration' : 'Play narration');
+        }
+
+        toggle.addEventListener('click', function () {
+          if (audio.paused) {
+            var p = audio.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            audio.pause();
+          }
+        });
+
+        audio.addEventListener('play', function () { setPlaying(true); });
+        audio.addEventListener('pause', function () { setPlaying(false); });
+        audio.addEventListener('ended', function () { setPlaying(false); render(); });
+
+        audio.addEventListener('loadedmetadata', function () {
+          if (isFinite(audio.duration) && audio.duration > 0) setDuration(audio.duration);
+        });
+        audio.addEventListener('timeupdate', render);
+
+        function seekTo(clientX) {
+          var rect = track.getBoundingClientRect();
+          if (rect.width === 0 || duration <= 0) return;
+          var ratio = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+          audio.currentTime = ratio * duration;
+          render();
+        }
+
+        track.addEventListener('pointerdown', function (e) {
+          track.setPointerCapture(e.pointerId);
+          seekTo(e.clientX);
+          function move(ev) { seekTo(ev.clientX); }
+          function up() {
+            track.removeEventListener('pointermove', move);
+            track.removeEventListener('pointerup', up);
+            track.removeEventListener('pointercancel', up);
+          }
+          track.addEventListener('pointermove', move);
+          track.addEventListener('pointerup', up);
+          track.addEventListener('pointercancel', up);
+        });
+
+        track.addEventListener('keydown', function (e) {
+          if (duration <= 0) return;
+          if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            var step = e.shiftKey ? 30 : 5;
+            var next = audio.currentTime + (e.key === 'ArrowRight' ? step : -step);
+            audio.currentTime = Math.max(0, Math.min(duration, next));
+            render();
+          } else if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggle.click();
+          }
+        });
+
+        speedBtn.addEventListener('click', function () {
+          speedIdx = (speedIdx + 1) % speeds.length;
+          var s = speeds[speedIdx];
+          audio.playbackRate = s;
+          audio.defaultPlaybackRate = s;
+          speedBtn.textContent = s + '×';
+        });
+      });
+    })();
+    </script>
+  {{- else if hugo.IsServer -}}
+    <p class="article-audio article-audio-pending">Audio narration is not ready yet. If generation fails, check the local TTS log.</p>
+  {{- else -}}
+    {{- warnf "Narration for %s is missing or outdated. Run ./hugo before publishing the audio files and data/narration.json." $key -}}
+  {{- end -}}
+{{- end -}}

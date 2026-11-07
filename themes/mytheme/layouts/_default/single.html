@@ -19,8 +19,9 @@
   {{ end }}
 </p>
   
-  {{ .Content }}
+  {{ partial "article-audio.html" . }}
 
+  {{ .Content }}
 
 {{ if or (eq .Section "articles") (eq .Section "paper-summary") }}
 

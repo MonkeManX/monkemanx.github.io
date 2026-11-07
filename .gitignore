@@ -1,7 +1,50 @@
-public/*
-!.gitignore
-*.Identifier
-.stfolder/*
+# Hugo build output and regenerable resource cache
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Local editor settings
+/.obsidian/
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local environments, dependencies, and tool caches
+.venv*/
+venv/
+.cache/
+.direnv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+/result
+/result-*
+
+# Local configuration and logs; keep example configuration files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.log
+*.tmp
+
+# Sync metadata and downloaded-file metadata
+.stfolder/
 .stignore
-.hugo_build.lock
+*.Identifier
+
+# Existing local helper
 number_words.py
+
+# Published narration belongs in Git:
+# static/audio/**/*.mp3 and data/narration.json are deliberately NOT ignored.
