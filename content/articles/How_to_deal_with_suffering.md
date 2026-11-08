@@ -2,6 +2,7 @@
 title: 'Meditation and the Art of Non-Reactivity'
 date: 2026-11-05 16:00:00
 tags: ["Philosophy"]
+audio: True
 ---
 
 Life contains a great deal of suffering. And when I say suffering, I mean it in the broadest sense imaginable, including everything that could be described as unpleasantness, unease, or unsatisfactoriness. This includes major life events such as the loss of a loved one, illness, accidents, or the loss of one's job, but also less severe experiences such as having an argument with a friend, failing an exam, or being disappointed. It even encompasses mundane experiences such as discovering that your favourite ice cream flavour is sold out at the supermarket, stubbing your toe, or playing an especially beautiful song on your guitar while simultaneously feeling uncomfortable about the fact that it will soon come to an end. And, of course, there are countless other examples.

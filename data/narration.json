@@ -1,5 +1,29 @@
 {
   "articles": {
+    "articles/How_to_deal_with_suffering.md": {
+      "audio_sha256": "d40150987cf6fc4bce20d33fe2400c95664a9705235e5d84d2e2688aa47ed54f",
+      "duration_label": "11 min 53 sec",
+      "duration_seconds": 712.856,
+      "engine": {
+        "engine": "Audio8-Preview-0.1B-ONNX-INT8",
+        "onnxruntime": "1.23.2",
+        "runtime_and_voice_sha256": "c9f2668955ab8ba238722e3f3ef86f38a83d4067d36f26c947519aa4567ad455",
+        "weights_revision": "317c12d4e0da83847b594fcf8bd74bf2c76615ec"
+      },
+      "fingerprint": "960054e5c7c1fcf7bafa38339a78c656a4b220e71cba9944e2f458303f4239e8",
+      "settings": {
+        "bitrate": "96k",
+        "chunk_chars": 300,
+        "max_frames": 1024,
+        "pause_ms": 300,
+        "seed": 42,
+        "threads": 8,
+        "voice": "default"
+      },
+      "source_sha256": "c7300b8dd673431379697d71ef18ce65d8b827f5d1ad730d8bbbd4db9f5cb9ba",
+      "speech_sha256": "a086134168bf628cca408aa6c3e372377e1e4a30eada9756befc739fa4fbd94c",
+      "src": "audio/articles/How_to_deal_with_suffering.mp3"
+    },
     "articles/In_defense_of_hating_things.md": {
       "audio_sha256": "21953c512c380b522c89f9cbcb875763947ccb52def4a79f174efcc0c8797c76",
       "duration_label": "6 min 42 sec",
