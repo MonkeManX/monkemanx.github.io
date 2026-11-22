@@ -252,7 +252,7 @@ R_2 =
 \end{pmatrix}
 $$
 
-Calculate the quaternion $q$ that describes the rotation given by \(R_2\).
+Calculate the quaternion \(q\) that describes the rotation given by \(R_2\).
 
 {{< details "Solution" "false" >}}
 
@@ -324,7 +324,7 @@ $$
 
 We need to solve this system of equation
 
-Step 1: Eliminate $x_3$
+Step 1: Eliminate \(x_3\)
 
 $$
 \begin{aligned}
@@ -342,9 +342,9 @@ $$
 x_1=c
 $$
 
-Step 2: Calculate $x_2$
+Step 2: Calculate \(x_2\)
 
-Substitute $x_1=c$ into equation (2):
+Substitute \(x_1=c\) into equation (2):
 
 $$
 \begin{aligned}
@@ -354,9 +354,9 @@ x_2 &= -\frac{0.8}{0.4}c \\
 \end{aligned}
 $$
 
-Step 3: Calculate $x_3$
+Step 3: Calculate \(x_3\)
 
-Substitute $x_1=c$ and $x_2=-2c$ into equation (3):
+Substitute \(x_1=c\) and \(x_2=-2c\) into equation (3):
 
 $$
 \begin{aligned}
@@ -396,7 +396,7 @@ $$
 \end{aligned}
 $$
 
-Step 2: Solve for $c$
+Step 2: Solve for \(c\)
 
 $$
 c=\pm\frac{1}{3}
@@ -429,7 +429,7 @@ $$
 \mathbf{v}'=R\cdot\mathbf{v}
 $$
 
-The rotation angle between $\mathbf{v}$ and $\mathbf{v}'$ is:
+The rotation angle between \(\mathbf{v}\) and \(\mathbf{v}'\) is:
 
 $$
 \cos(\alpha)=
@@ -439,7 +439,7 @@ $$
 
 1. Choose a vector perpendicular to the rotation axis
 
-Given $\mathbf{v}\in\mathbb{R}^3$, with $\mathbf{v}\neq\mathbf{0}$ and $\mathbf{v}\cdot\mathbf{x}=0$, i.e. $\mathbf{v}\perp\mathbf{x}$:
+Given \(\mathbf{v}\in\mathbb{R}^3\), with \(\mathbf{v}\neq\mathbf{0}\) and \(\mathbf{v}\cdot\mathbf{x}=0\), i.e. \(\mathbf{v}\perp\mathbf{x}\):
 
 $$
 \mathbf{x}=\frac{1}{3}
@@ -548,8 +548,8 @@ $$
 a) Which rotation does the following quaternion describe? 𝐪 = 0, 0,1,0
 
 b) Do the quaternions corresponding to the following angle-axis rotations differ?
-- $0^\circ$ rotation around $(0,0,1)$
-- $0^\circ$ rotation around $\left(0,\frac{1}{2},\frac{1}{2}\right)$
+- \(0^\circ\) rotation around \((0,0,1)\)
+- \(0^\circ\) rotation around \(\left(0,\frac{1}{2},\frac{1}{2}\right)\)
 
 c) What is the unit quaternion corresponding to a rotation by 60° around (0,4,3) ⊤?
 
@@ -601,7 +601,7 @@ $$
 \right)
 $$
 
-In both cases: $\alpha=0$, thus
+In both cases: \(\alpha=0\), thus
 
 $$
 \cos\frac{\alpha}{2}=1
@@ -609,7 +609,7 @@ $$
 \sin\frac{\alpha}{2}=0
 $$
 
-For any $\mathbf{x}$:
+For any \(\mathbf{x}\):
 
 $$
 \mathbf{x}\cdot 0=\mathbf{0}
@@ -702,7 +702,7 @@ $$
 
 ### Exercise 4 (Homogeneous Matrices)
 
-Let $T\in SE(3)$ be a homogeneous transformation matrix and $\mathbf{p}=(1,2,3)^\top$ be a position vector, with
+Let \(T\in SE(3)\) be a homogeneous transformation matrix and \(\mathbf{p}=(1,2,3)^\top\) be a position vector, with
 
 $$
 T=
@@ -714,16 +714,16 @@ T=
 \end{pmatrix}
 $$
 
-a) Describe the transformation represented by $T$.
+a) Describe the transformation represented by \(T\).
 
-b) Apply the transformation described by $T$ to $\mathbf{p}$.
+b) Apply the transformation described by \(T\) to \(\mathbf{p}\).
 
-c) Determine the inverse transformation matrix $T^{-1}$.
+c) Determine the inverse transformation matrix \(T^{-1}\).
 
 
 {{< details "Solution a)" "false" >}}
 
-Rotation by $90^\circ$ around the y-axis:
+Rotation by \(90^\circ\) around the y-axis:
 
 $$
 R_y(\alpha)=
@@ -875,7 +875,7 @@ R^\top & -R^\top\cdot\mathbf{t}\\
 }
 $$
 
-Determine $T^{-1}$ for the given transformation
+Determine \(T^{-1}\) for the given transformation
 
 Given:
 
@@ -964,7 +964,7 @@ $$
 
 ### Exercise 5 (Concatenation of Coordinate Transformations)
 
-Consider a service robot with a holonomic platform. The robot's $x$-axis points forward, and the $z$-axis points upward. The $y$-axis is chosen such that the coordinate system is right-handed.
+Consider a service robot with a holonomic platform. The robot's \(x\)-axis points forward, and the \(z\)-axis points upward. The \(y\)-axis is chosen such that the coordinate system is right-handed.
 
 The initial pose of the robot in the base coordinate system (BCS) is given by:
 
@@ -980,18 +980,18 @@ $$
 
 The following commands are sent to the robot and executed in sequence:
 
-1. Rotate about the $z$-axis by $90^\circ$.
-2. Drive straight ahead by $4$ units.
-3. Drive straight ahead by $2$ units and $3$ units to the right, and finally rotate about the $z$-axis by $-45^\circ$.
+1. Rotate about the \(z\)-axis by \(90^\circ\).
+2. Drive straight ahead by \(4\) units.
+3. Drive straight ahead by \(2\) units and \(3\) units to the right, and finally rotate about the \(z\)-axis by \(-45^\circ\).
 
 Calculate the transformation matrices for the individual commands as well as the final pose of the robot in the BCS.
 
 
 {{< details "Solution" "false" >}}
 
-1. First Transformation: Rotation by $90^\circ$
+1. First Transformation: Rotation by \(90^\circ\)
 
-The robot rotates around its local $z$-axis by $90^\circ$.
+The robot rotates around its local \(z\)-axis by \(90^\circ\).
 
 $$
 {}^{init}T_1 =
@@ -1005,7 +1005,7 @@ $$
 
 2. Second Transformation: Drive Forward by 4 Units
 
-The robot moves 4 units forward along its local $x$-axis.
+The robot moves 4 units forward along its local \(x\)-axis.
 
 $$
 {}^1T_2 =
@@ -1020,9 +1020,9 @@ $$
 3. Third Transformation: Translation and Rotation
 
 The robot performs the following movements:
-- Moves 2 units forward along its local $x$-axis.
-- Moves 3 units to the right along its local negative $y$-axis.
-- Rotates around its local $z$-axis by $-45^\circ$.
+- Moves 2 units forward along its local \(x\)-axis.
+- Moves 3 units to the right along its local negative \(y\)-axis.
+- Rotates around its local \(z\)-axis by \(-45^\circ\).
 
 The rotation matrix is:
 
@@ -1091,7 +1091,7 @@ $$
 
 ### Exercise 6 (Distance Between Poses)
 
-The current pose $T_{\text{TCP}}$ and the target pose $T_{\text{Goal}}$ of an end effector are given as:
+The current pose \(T_{\text{TCP}}\) and the target pose \(T_{\text{Goal}}\) of an end effector are given as:
 
 Current pose:
 
@@ -1239,13 +1239,13 @@ $$
 \phi=90^\circ.
 $$
 
-a) Represent the point $\mathbf p$ as a quaternion $\mathbf v$.
+a) Represent the point \(\mathbf p\) as a quaternion \(\mathbf v\).
 
-b) Determine the rotation quaternion $\mathbf q$ and its conjugate $\mathbf q^*$.
+b) Determine the rotation quaternion \(\mathbf q\) and its conjugate \(\mathbf q^*\).
 
-c) Rotate the point using quaternion multiplication and determine $\mathbf p'$.
+c) Rotate the point using quaternion multiplication and determine \(\mathbf p'\).
 
-d) Derive the SLERP interpolation between two given quaternions and calculate it for $t=\frac12$.
+d) Derive the SLERP interpolation between two given quaternions and calculate it for \(t=\frac12\).
 
 
 {{< details "Solution a)" "false" >}}
@@ -1272,7 +1272,7 @@ $$
 \left(\cos\frac{\phi}{2},\mathbf a\sin\frac{\phi}{2}\right)
 $$
 
-Substituting $\phi=90^\circ$ and $\mathbf a=(0,0,1)$:
+Substituting \(\phi=90^\circ\) and \(\mathbf a=(0,0,1)\):
 
 $$
 \mathbf q=(\cos45^\circ,0,0,\sin45^\circ)
@@ -1363,9 +1363,9 @@ $$
 \frac{\sin(t\theta)}{\sin\theta}\mathbf q_2
 $$
 
-For these quaternions, $\theta=\frac{\pi}{2}$.
+For these quaternions, \(\theta=\frac{\pi}{2}\).
 
-Substituting $t=0.5$:
+Substituting \(t=0.5\):
 
 $$
 =\frac{\sin(\pi/4)}{\sin(\pi/2)}\mathbf q_1
@@ -1391,4 +1391,149 @@ Final result$$
 }
 $$
 
+{{< /details >}}
+
+
+### Exercise 8 (Transformations)
+
+In this task, the root pose of a robot and its relation to the base coordinate system (BCS) is considered. In a second step, the relation to a target pose is included.
+
+#### 8.1. Interpretation of a Pose
+
+Let the initial root pose of the robot, described in the BCS, be given as
+
+$$
+{}^{BCS}T_{root}=
+\begin{bmatrix}
+\frac{1}{2}\sqrt{3} & -\frac{1}{2} & 0 & 3 \\
+\frac{1}{2} & \frac{1}{2}\sqrt{3} & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+a) Which transformation does \({}^{BCS}T_{root}\) describe?
+
+b) At which position is the robot’s root located? Draw the position in the BCS.
+
+To describe the orientation of the robot, we use the orthonormal basis vectors of the local coordinate system tied to the robot’s root. We define the x-axis as pointing into the direction of motion, the y-axis to point left, and the z-axis to point upwards.
+
+c) Write down the end points of the orthonormal basis vectors \({}^{root}v_{x}\), \({}^{root}v_{y}\) and \({}^{root}v_{z}\) and the vector of the origin \({}^{root}v_{o}\).
+
+d) Calculate the representation of these vectors in BCS. Use the result to draw the robot’s root coordinate system in the BCS.
+
+
+{{< details "Solution a)" "false" >}}
+
+A homogeneous transformation matrix consists of two parts:
+
+\\[ T = \begin{pmatrix} R & \mathbf{t}\\\ \mathbf{0}^T & 1 \end{pmatrix} \\]
+
+The transformation consists of:
+
+- Translation: 3 units along the global x-axis.
+- Rotation: \\(60^\circ\\) counterclockwise around the global z-axis.
+
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_8_1_ii.png" width="70%" >}}
+
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+
+- ts origin is at \((0,0,0)\).
+- Its forward direction (x-axis) is \((1,0,0)\).
+- Its left direction (y-axis) is \((0,1,0)\).
+- Its upward direction (z-axis) is \((0,0,1)\).
+
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
+
+To clauclate teh rperesnetation in BCS we ned to apply the trnfoamrtion matrix to our vecotrs in lcoal presnetation, because them atrix is homogenous i.e has also a translation component we need to add a 1 to them 
+
+$$
+{}^{BCS}\mathbf{v}_i = {}^{BCS}T_{root} \begin{pmatrix} \mathbf{v}_i\\1 \end{pmatrix}
+$$
+
+So this means
+
+$$
+{}^{BCS}\mathbf{v}_x =  \begin{pmatrix} 3+\frac{\sqrt{3}}{2}\\ \frac{1}{2}\\ 0\\ 1 \end{pmatrix}
+$$
+
+$$
+{}^{BCS}\mathbf{v}_y = \begin{pmatrix} 3-\frac{1}{2}\\ \frac{\sqrt{3}}{2}\\ 0\\ 1 \end{pmatrix}
+$$
+
+$$
+{}^{BCS}\mathbf{v}_z = \begin{pmatrix} 3\\ 0\\ 1\\ 1 \end{pmatrix}
+$$
+
+$$
+{}^{BCS}\mathbf{v}_o = \begin{pmatrix} 3\\ 0\\ 0\\ 1 \end{pmatrix}
+$$
+
+{{< img src="/attachments/robotics/robotics_excerise_8_1_iv.png" width="70%" >}}
+
+{{< /details >}}
+
+
+#### 8.2. Conversion Between Coordinate Systems
+
+A target pose \({}^{BCS}T_{root}\) is given as
+
+$$
+{}^{BCS}T_{root}=
+\begin{bmatrix}
+0 & -1 & 0 & 3+\sqrt{3} \\
+1 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+a) Draw the target pose in the BCS.
+
+b) Calculate the pose of the target in the robot’s root coordinate system.
+
+c) Calculate the pose of the robot root in the target coordinate system.
+
+
+{{< details "Solution a)" "false" >}}
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+{{< /details >}}
+
+
+#### 8.3. Local and Global Transformation
+
+Whether a transformation is applied from the left or from the right is important.
+
+a) Write down a transformation \(T\) that corresponds to a \(60^\circ\) rotation around the z-axis.
+
+b) Apply \(T\) to \({}^{BCS}T_{root}\) from the left. Draw the resulting coordinate system \({}^{BCS}T_{trans, L}\).
+
+c) Apply \(T\) to \({}^{BCS}T_{root}\) from the right. Draw the resulting coordinate system \({}^{BCS}T_{trans, R}\).
+
+d) Which of both transformations corresponds to a rotation around local axes, and which one around global axes?
+
+
+{{< details "Solution a)" "false" >}}
+{{< /details >}}
+
+{{< details "Solution b)" "false" >}}
+{{< /details >}}
+
+{{< details "Solution c)" "false" >}}
+{{< /details >}}
+
+{{< details "Solution d)" "false" >}}
 {{< /details >}}
