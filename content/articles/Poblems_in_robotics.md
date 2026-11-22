@@ -1432,7 +1432,7 @@ A homogeneous transformation matrix consists of two parts:
 The transformation consists of:
 
 - Translation: 3 units along the global x-axis.
-- Rotation: \\(60^\circ\\) counterclockwise around the global z-axis.
+- Rotation around the z-axis of the BCS by 30°
 
 {{< /details >}}
 
@@ -1442,9 +1442,10 @@ The transformation consists of:
 
 {{< /details >}}
 
+
 {{< details "Solution c)" "false" >}}
 
-- ts origin is at \((0,0,0)\).
+- Its origin is at \((0,0,0)\).
 - Its forward direction (x-axis) is \((1,0,0)\).
 - Its left direction (y-axis) is \((0,1,0)\).
 - Its upward direction (z-axis) is \((0,0,1)\).
@@ -1504,12 +1505,43 @@ c) Calculate the pose of the robot root in the target coordinate system.
 
 
 {{< details "Solution a)" "false" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_8_2_i.png" width="70%" >}}
+
 {{< /details >}}
 
 {{< details "Solution b)" "false" >}}
+
+The target pose is given in the base coordinate system (BCS). To express the target pose in the robot's root coordinate system, the transformation between the BCS and the root coordinate system must be inverted and multiplied by the target transformation.
+
+The known relation is:
+
+\\[ {}^{\text{BCS}}T\_{\text{root}} \cdot {}^{\text{root}}T\_{\text{target}} = {}^{\text{BCS}}T\_{\text{target}} \\]
+
+Rearranging yields:
+
+\\[ {}^{\text{root}}T\_{\text{target}} = ({}^{\text{BCS}}T\_{\text{root}})^{-1} \cdot {}^{\text{BCS}}T\_{\text{target}} \\]
+
+First, the inverse transformation is calculated:
+
+\\[ {}^{\text{BCS}}T\_{\text{root}}^{-1} = \begin{bmatrix} \frac{1}{2} & \frac{3}{2} & -\frac{1}{2} & 3\\\ -\frac{1}{2} & \frac{1}{2} & 0 & 0\\\ 0 & 0 & 1 & 0\\\ 0 & 0 & 0 & 1 \end{bmatrix} \\]
+
+Substituting the matrices into the equation gives:
+
+\\[ {}^{\text{root}}T\_{\text{target}} = \begin{bmatrix} \frac{1}{2} & \frac{3}{2} & -\frac{1}{2} & 3\\\ -\frac{1}{2} & \frac{1}{2} & 0 & 0\\\ 0 & 0 & 1 & 0\\\ 0 & 0 & 0 & 1 \end{bmatrix} \cdot \begin{bmatrix} 0 & -1 & 0 & 3\\\ 1 & 0 & 0 & 1\\\ 0 & 0 & 1 & 0\\\ 0 & 0 & 0 & 1 \end{bmatrix} \\]
+
+Performing the matrix multiplication results in:
+
+\\[ \boxed{ {}^{\text{root}}T\_{\text{target}} = \begin{bmatrix} \frac{1}{2} & -\frac{1}{2} & \frac{3}{2} & 3\\\ \frac{1}{2} & \frac{3}{2} & 0 & 0\\\ 0 & 0 & 1 & 0\\\ 0 & 0 & 0 & 1 \end{bmatrix} } \\]
+
+This matrix describes the target pose relative to the robot's root coordinate system.
+
 {{< /details >}}
 
 {{< details "Solution c)" "false" >}}
+
+See b)
+
 {{< /details >}}
 
 
@@ -1527,13 +1559,562 @@ d) Which of both transformations corresponds to a rotation around local axes, an
 
 
 {{< details "Solution a)" "false" >}}
+
+The homogeneous transformation matrix for a rotation of \\(60^\circ\\) around the z-axis is given by:
+
+\\[ T = \begin{bmatrix} \cos(60^\circ) & -\sin(60^\circ) & 0 & 0\\\ \sin(60^\circ) & \cos(60^\circ) & 0 & 0\\\ 0 & 0 & 1 & 0\\\ 0 & 0 & 0 & 1 \end{bmatrix} \\]
+
+Using
+
+\\[ \cos(60^\circ)=\frac{1}{2}, \qquad \sin(60^\circ)=\frac{\sqrt{3}}{2} \\]
+
+the resulting transformation matrix is:
+
+\\[ \boxed{ T = \begin{bmatrix} \frac{1}{2} & -\frac{\sqrt{3}}{2} & 0 & 0\\\ \frac{\sqrt{3}}{2} & \frac{1}{2} & 0 & 0\\\ 0 & 0 & 1 & 0\\\ 0 & 0 & 0 & 1 \end{bmatrix} } \\]
+ 
+{{< /details >}}
+
+{{< details "Solution b-d)" "false" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_8_3.png" width="70%" >}}
+
+{{< /details >}}
+
+### Exercise 9 (Denavit Hartenberg)
+
+#### Task 9.1 
+
+Transform the given right-handed coordinate frames into new coordinate frames using the provided Denavit-Hartenberg (DH) parameters.
+
+Sketch the solution, including all auxiliary coordinate frames and the parameters that lead to the final result.
+
+{{< img src="/attachments/robotics/robotics_excerise_9_1.png" width="100%" >}}
+
+
+{{< details "Solution a)" "false" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_9_1_a_1.png" width="80%" >}}
+{{< img src="/attachments/robotics/robotics_excerise_9_1_a_2.png" width="80%" >}}
+{{< img src="/attachments/robotics/robotics_excerise_9_1_a_3.png" width="80%" >}}
+{{< img src="/attachments/robotics/robotics_excerise_9_1_a_4.png" width="80%" >}}
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_9_1_b_1.png" width="80%" >}}
+{{< img src="/attachments/robotics/robotics_excerise_9_1_b_2.png" width="80%" >}}
+{{< img src="/attachments/robotics/robotics_excerise_9_1_b_3.png" width="80%" >}}
+{{< img src="/attachments/robotics/robotics_excerise_9_1_b_4.png" width="80%" >}}
+
+{{< /details >}}
+
+
+#### Task 9.2 
+
+The following schematic representation of a robot arm is given. The base coordinate
+system (BCS, frame 0) is defined by (x0, y0, z0). For a joint angle of θ2 = 0, the robot
+arm is horizontal. Determine the DH parameters of joints 1–3, using the BCS, and fill
+in the following table:
+
+
+{{< img src="/attachments/robotics/robotics_excerise_9_2.png" width="80%" >}}
+
+{{< details "Solution a)" "false" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_9_2_1.png" width="80%" >}}
+
+{{< img src="/attachments/robotics/robotics_excerise_9_2_2.png" width="80%" >}}
+
+{{< /details >}}
+
+
+### Exercise 10 (Jacobian Matrix)
+
+
+Consider the following crane with one revolute joint at its base and two prismatic joints along the crane boom.
+
+
+{{< img src="/attachments/robotics/robotics_excerise_10.png" width="60%" >}}
+
+The base coordinate system (BCS, frame 0) is located at the foot of the tower. The \\(z_0\\)-axis points upwards, and for \\(\theta_1 = 0\\), the crane boom points in the direction of the \\(x_0\\)-axis.
+
+The homogeneous transformation of the end-effector pose relative to the BCS is given by:
+
+\\[ {}^0T_3 = \begin{pmatrix} \cos(\theta_1+90^\circ) & \sin(\theta_1+90^\circ) & 0 & \sin(\theta_1+90^\circ)d_2\\\ \sin(\theta_1+90^\circ) & -\cos(\theta_1+90^\circ) & 0 & -\cos(\theta_1+90^\circ)d_2\\\ 0 & 0 & -1 & -d_3+20\\\ 0 & 0 & 0 & 1 \end{pmatrix} \\]
+
+a). Determine the Jacobian matrix of the end-effector. Describe its orientation using roll-pitch-yaw angles \\((\alpha,\beta,\gamma)\\), as introduced in the lecture.
+
+
+b) The following configurations \\(q_A\\) and \\(q_B\\), as well as the joint velocities, are given. The distances \\(d_2\\) and \\(d_3\\) are given in meters. Joint velocities are given in rad/s for joint 1 and m/s for joints 2 and 3.
+
+*Joint configurations:*
+
+\\[ q_A = \begin{pmatrix} 90^\circ\\\ 10\\\ 10 \end{pmatrix} \qquad q_B = \begin{pmatrix} 180^\circ\\\ 3\\\ 15 \end{pmatrix} \\]
+
+*Joint velocities:*
+
+\\[ \dot q_1 = \begin{pmatrix} 1\\\ 1\\\ 1 \end{pmatrix} \qquad \dot q_2 = \begin{pmatrix} -1\\\ -1\\\ 0 \end{pmatrix} \qquad \dot q_3 = \begin{pmatrix} 2\\\ -1\\\ 2 \end{pmatrix} \\]
+
+*i.)* \\(q_A,\ \dot q_1\\)
+
+*ii.)* \\(q_A,\ \dot q_2\\)
+
+*iii.)* \\(q_B,\ \dot q_2\\)
+
+*iv.)* \\(q_B,\ \dot q_3\\)
+
+{{< details "Solution a)" "false" >}}
+
+
+The Jacobian matrix describes the relationship between the joint velocities and the end-effector velocities. Each column corresponds to one joint variable.
+
+The joint configuration is defined as
+
+\\[ q = \begin{pmatrix} \theta_1\\\ d_2\\\ d_3 \end{pmatrix} \\]
+
+The Jacobian is defined as
+
+\\[ J = \frac{\partial f}{\partial q} = \begin{pmatrix} \frac{\partial f}{\partial \theta_1} & \frac{\partial f}{\partial d_2} & \frac{\partial f}{\partial d_3} \end{pmatrix} \in \mathbb{R}^{6\times 3} \\]
+
+where the end-effector pose is described by
+
+\\[ f(\theta_1,d_2,d_3) = \begin{pmatrix} x\\\y\\\z\\\\\alpha\\\\\beta\\\\\gamma \end{pmatrix} \\]
+
+### **1. Determine the end-effector position**
+
+The homogeneous transformation is given as
+
+\\[ {}^0T_3 = \begin{pmatrix} \cos(\theta_1+90^\circ) & \sin(\theta_1+90^\circ) & 0 & \sin(\theta_1+90^\circ)d_2\\\ \sin(\theta_1+90^\circ) & -\cos(\theta_1+90^\circ) & 0 & -\cos(\theta_1+90^\circ)d_2\\\ 0 & 0 & -1 & -d_3+20\\\ 0 & 0 & 0 & 1 \end{pmatrix} \\]
+
+Extracting the position coordinates gives
+
+\\[ \begin{aligned} x &= \sin(\theta_1+90^\circ)d_2\\\ y &= -\cos(\theta_1+90^\circ)d_2\\\ z &= -d_3+20 \end{aligned} \\]
+
+### **2. Determine the end-effector orientation (RPY)**
+
+The rotation matrix is described using the roll-pitch-yaw convention:
+
+\\[ R = R_z(\gamma)R_y(\beta)R_x(\alpha) \\]
+
+The corresponding rotation matrix is
+
+\\[ R = \begin{pmatrix} c\_\beta c\_\gamma & s\_\alpha s\_\beta c\_\gamma-c\_\alpha s\_\gamma & s\_\alpha s\_\gamma+c\_\alpha s\_\beta c\_\gamma\\\ c\_\beta s\_\gamma & s\_\alpha s\_\beta s\_\gamma+c\_\alpha c\_\gamma & c\_\alpha s\_\beta s\_\gamma-s\_\alpha c\_\gamma\\\ -s\_\beta & s\_\alpha c\_\beta & c\_\alpha c\_\beta \end{pmatrix} \\]
+
+where \\(c_x=\cos(x)\\) and \\(s_x=\sin(x)\\).
+
+Comparing this with the rotation part of the given transformation matrix:
+
+\\[ R = \begin{pmatrix} \cos(\theta_1+90^\circ) & \sin(\theta_1+90^\circ) & 0\\\ \sin(\theta_1+90^\circ) & -\cos(\theta_1+90^\circ) & 0\\\ 0 & 0 & -1 \end{pmatrix} \\]
+
+we can determine the individual angles.
+
+**Determine&#x20;**\\(\beta\\)**:**
+
+Using the element in the third row and first column:
+
+\\[ -\sin(\beta)=0 \\]
+
+\\[ \boxed{\beta=0} \\]
+
+**Determine&#x20;**\\(\alpha\\)**:**
+
+Using the elements in the third row:
+
+\\[ \sin(\alpha)\cos(\beta)=0 \\]
+
+\\[ \cos(\alpha)\cos(\beta)=-1 \\]
+
+Since \\(\beta=0\\), this gives
+
+\\[ \sin(\alpha)=0,\qquad \cos(\alpha)=-1 \\]
+
+Therefore,
+
+\\[ \boxed{\alpha=\pi} \\]
+
+**Determine&#x20;**\\(\gamma\\)**:**
+
+Using the elements in the first column:
+
+\\[ \cos(\beta)\cos(\gamma)=\cos(\theta_1+90^\circ) \\]
+
+\\[ \cos(\beta)\sin(\gamma)=\sin(\theta_1+90^\circ) \\]
+
+Since \\(\beta=0\\):
+
+\\[ \boxed{\gamma=\theta_1+90^\circ} \\]
+
+Thus, the complete end-effector pose is described by
+
+\\[ f(\theta_1,d_2,d_3)= \begin{pmatrix} \sin(\theta_1+90^\circ)d_2\\\ -\cos(\theta_1+90^\circ)d_2\\\ -d_3+20\\\ \pi\\\ 0\\\ \theta_1+90^\circ \end{pmatrix} \\]
+
+### **3. Calculate the Jacobian matrix**
+
+The Jacobian consists of the partial derivatives of the end-effector pose with respect to each joint variable.
+
+**Column 1: Partial derivatives with respect to&#x20;**\\(\theta_1\\)
+
+\\[ \frac{\partial f}{\partial \theta_1} = \begin{pmatrix} \frac{\partial x}{\partial \theta_1}\\\ \frac{\partial y}{\partial \theta_1}\\\ \frac{\partial z}{\partial \theta_1}\\\ \frac{\partial \alpha}{\partial \theta_1}\\\ \frac{\partial \beta}{\partial \theta_1}\\\ \frac{\partial \gamma}{\partial \theta_1} \end{pmatrix} \\]
+
+Evaluating the derivatives:
+
+\\[ \begin{aligned} \frac{\partial x}{\partial \theta_1} &=\cos(\theta_1+90^\circ)d_2\\\ \frac{\partial y}{\partial \theta_1} &=\sin(\theta_1+90^\circ)d_2\\\ \frac{\partial z}{\partial \theta_1} &=0\\\ \frac{\partial \alpha}{\partial \theta_1} &=0\\\ \frac{\partial \beta}{\partial \theta_1} &=0\\\ \frac{\partial \gamma}{\partial \theta_1} &=1 \end{aligned} \\]
+
+Therefore,
+
+\\[ \boxed{ \frac{\partial f}{\partial \theta_1} = \begin{pmatrix} \cos(\theta_1+90^\circ)d_2\\\ \sin(\theta_1+90^\circ)d_2\\\ 0\\\ 0\\\ 0\\\ 1 \end{pmatrix} } \\]
+
+**Column 2: Partial derivatives with respect to&#x20;**\\(d_2\\)
+
+\\[ \frac{\partial f}{\partial d_2} = \begin{pmatrix} \frac{\partial x}{\partial d_2}\\\ \frac{\partial y}{\partial d_2}\\\ \frac{\partial z}{\partial d_2}\\\ \frac{\partial \alpha}{\partial d_2}\\\ \frac{\partial \beta}{\partial d_2}\\\ \frac{\partial \gamma}{\partial d_2} \end{pmatrix} \\]
+
+Evaluating the derivatives:
+
+\\[ \begin{aligned} \frac{\partial x}{\partial d_2} &=\sin(\theta_1+90^\circ)\\\ \frac{\partial y}{\partial d_2} &=-\cos(\theta_1+90^\circ)\\\ \frac{\partial z}{\partial d_2} &=0\\\ \frac{\partial \alpha}{\partial d_2} &=0\\\ \frac{\partial \beta}{\partial d_2} &=0\\\ \frac{\partial \gamma}{\partial d_2} &=0 \end{aligned} \\]
+
+Therefore,
+
+\\[ \boxed{ \frac{\partial f}{\partial d_2} = \begin{pmatrix} \sin(\theta_1+90^\circ)\\\ -\cos(\theta_1+90^\circ)\\\ 0\\\ 0\\\ 0\\\ 0 \end{pmatrix} } \\]
+
+**Column 3: Partial derivatives with respect to&#x20;**\\(d_3\\)
+
+\\[ \frac{\partial f}{\partial d_3} = \begin{pmatrix} \frac{\partial x}{\partial d_3}\\\ \frac{\partial y}{\partial d_3}\\\ \frac{\partial z}{\partial d_3}\\\ \frac{\partial \alpha}{\partial d_3}\\\ \frac{\partial \beta}{\partial d_3}\\\ \frac{\partial \gamma}{\partial d_3} \end{pmatrix} \\]
+
+Evaluating the derivatives:
+
+\\[ \begin{aligned} \frac{\partial x}{\partial d_3}&=0\\\ \frac{\partial y}{\partial d_3}&=0\\\ \frac{\partial z}{\partial d_3}&=-1\\\ \frac{\partial \alpha}{\partial d_3}&=0\\\ \frac{\partial \beta}{\partial d_3}&=0\\\ \frac{\partial \gamma}{\partial d_3}&=0 \end{aligned} \\]
+
+Therefore,
+
+\\[ \boxed{ \frac{\partial f}{\partial d_3} = \begin{pmatrix} 0\\\ 0\\\ -1\\\ 0\\\ 0\\\ 0 \end{pmatrix} } \\]
+
+### **4. Assemble the Jacobian matrix**
+
+Combining all three columns gives the final Jacobian matrix:
+
+\\[ \boxed{ J = \begin{pmatrix} \cos(\theta_1+90^\circ)d_2 & \sin(\theta_1+90^\circ) & 0\\\ \sin(\theta_1+90^\circ)d_2 & -\cos(\theta_1+90^\circ) & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} } \\]
+
+This is the \\(6\times3\\) Jacobian matrix mapping the joint velocities to the end-effector linear velocities and RPY angle rates:
+
+\\[ \dot f = J\dot q \\]
+
+Note: For differentiation, \\(\theta_1\\) is measured in radians, so that \\(\partial\gamma/\partial\theta_1=1\\). The given \\(90^\circ\\) is equivalent to \\(\pi/2\\).
+
 {{< /details >}}
 
 {{< details "Solution b)" "false" >}}
+
+
+The end-effector velocity is calculated by multiplying the Jacobian matrix with the corresponding joint velocity vector:
+
+\\[ \dot{\mathbf{x}} = J(\mathbf{q}) \cdot \dot{\mathbf{q}} \\]
+
+The resulting velocity vector contains the linear velocities and the RPY angular rates:
+
+\\[ \dot{\mathbf{x}} = \begin{pmatrix} \dot{x}\\\ \dot{y}\\\ \dot{z}\\\ \dot{\alpha}\\\ \dot{\beta}\\\ \dot{\gamma} \end{pmatrix} \\]
+
+### **i.) Configuration&#x20;**\\(q_A\\)**&#x20;and joint velocity&#x20;**\\(\dot{q}\_1\\)
+
+Given:
+
+\\[ q_A = \begin{pmatrix} 90^\circ\\\10\\\10 \end{pmatrix}, \qquad \dot{q}\_1 = \begin{pmatrix} 1\\\1\\\1 \end{pmatrix} \\]
+
+First, evaluate the Jacobian at \\(q_A\\):
+
+\\[ \theta_1+90^\circ=180^\circ \\]
+
+\\[ \cos(180^\circ)=-1, \qquad \sin(180^\circ)=0 \\]
+
+Substituting these values into the Jacobian gives:
+
+\\[ J(q_A)= \begin{pmatrix} -10 & 0 & 0\\\ 0 & 1 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \\]
+
+Multiplying by the joint velocity vector:
+
+\\[ \dot{\mathbf{x}} = \begin{pmatrix} -10 & 0 & 0\\\ 0 & 1 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \begin{pmatrix} 1\\\1\\\1 \end{pmatrix} \\]
+
+The resulting end-effector velocity is:
+
+\\[ \boxed{ \dot{\mathbf{x}}= \begin{pmatrix} -10\\\ 1\\\ -1\\\ 0\\\ 0\\\ 1 \end{pmatrix} } \\]
+
+### **ii.) Configuration&#x20;**\\(q_A\\)**&#x20;and joint velocity&#x20;**\\(\dot{q}\_2\\)
+
+Given:
+
+\\[ q_A = \begin{pmatrix} 90^\circ\\\10\\\10 \end{pmatrix}, \qquad \dot{q}\_2 = \begin{pmatrix} -1\\\\-1\\\0 \end{pmatrix} \\]
+
+The Jacobian for \\(q_A\\) has already been calculated:
+
+\\[ J(q_A)= \begin{pmatrix} -10 & 0 & 0\\\ 0 & 1 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \\]
+
+Multiplying by the joint velocity vector:
+
+\\[ \dot{\mathbf{x}} = \begin{pmatrix} -10 & 0 & 0\\\ 0 & 1 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \begin{pmatrix} -1\\\\-1\\\0 \end{pmatrix} \\]
+
+The resulting end-effector velocity is:
+
+\\[ \boxed{ \dot{\mathbf{x}}= \begin{pmatrix} 10\\\ -1\\\ 0\\\ 0\\\ 0\\\ -1 \end{pmatrix} } \\]
+
+### **iii.) Configuration&#x20;**\\(q_B\\)**&#x20;and joint velocity&#x20;**\\(\dot{q}\_2\\)
+
+Given:
+
+\\[ q_B = \begin{pmatrix} 180^\circ\\\3\\\15 \end{pmatrix}, \qquad \dot{q}\_2 = \begin{pmatrix} -1\\\\-1\\\0 \end{pmatrix} \\]
+
+First, evaluate the Jacobian at \\(q_B\\):
+
+\\[ \theta_1+90^\circ=270^\circ \\]
+
+\\[ \cos(270^\circ)=0, \qquad \sin(270^\circ)=-1 \\]
+
+Substituting these values into the Jacobian gives:
+
+\\[ J(q_B)= \begin{pmatrix} 0 & -1 & 0\\\ -3 & 0 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \\]
+
+Multiplying by the joint velocity vector:
+
+\\[ \dot{\mathbf{x}} = \begin{pmatrix} 0 & -1 & 0\\\ -3 & 0 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \begin{pmatrix} -1\\\\-1\\\0 \end{pmatrix} \\]
+
+The resulting end-effector velocity is:
+
+\\[ \boxed{ \dot{\mathbf{x}}= \begin{pmatrix} 1\\\ 3\\\ 0\\\ 0\\\ 0\\\ -1 \end{pmatrix} } \\]
+
+### **iv.) Configuration&#x20;**\\(q_B\\)**&#x20;and joint velocity&#x20;**\\(\dot{q}\_3\\)
+
+Given:
+
+\\[ q_B = \begin{pmatrix} 180^\circ\\\3\\\15 \end{pmatrix}, \qquad \dot{q}\_3 = \begin{pmatrix} 2\\\\-1\\\2 \end{pmatrix} \\]
+
+The Jacobian for \\(q_B\\) has already been calculated:
+
+\\[ J(q_B)= \begin{pmatrix} 0 & -1 & 0\\\ -3 & 0 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \\]
+
+Multiplying by the joint velocity vector:
+
+\\[ \dot{\mathbf{x}} = \begin{pmatrix} 0 & -1 & 0\\\ -3 & 0 & 0\\\ 0 & 0 & -1\\\ 0 & 0 & 0\\\ 0 & 0 & 0\\\ 1 & 0 & 0 \end{pmatrix} \begin{pmatrix} 2\\\\-1\\\2 \end{pmatrix} \\]
+
+The resulting end-effector velocity is:
+
+\\[ \boxed{ \dot{\mathbf{x}}= \begin{pmatrix} 1\\\ -6\\\ -2\\\ 0\\\ 0\\\ 2 \end{pmatrix} } \\]
+
 {{< /details >}}
+
+
+## Exercise 11 (Inverse Kinematics)
+
+Given is a SCARA robot with one prismatic joint \\(d_1\\) and two revolute joints \\(\theta_2\\) and \\(\theta_3\\).
+
+The forward kinematics are defined as:
+
+\\[ f(q)= \begin{pmatrix} -500\sin(\theta_2)\cos(\theta_3) -500\cos(\theta_2)\sin(\theta_3) -500\sin(\theta_2) \\\ 500\cos(\theta_2)\cos(\theta_3) -500\sin(\theta_2)\sin(\theta_3) +100+500\cos(\theta_2) \\\ d_1 \end{pmatrix} \\]
+
+All lengths are given in mm, all angles in radians, and all velocities in mm/s (translation) or rad/s (rotation).
+
+The robot configuration is:
+
+\\[ q= \begin{pmatrix} d_1\\\ \theta_2\\\ \theta_3 \end{pmatrix} \\]
+
+The joint velocity, based on the inverse Jacobian, is given by:
+
+\\[ \dot{q}=J^{-1}(q)\dot{x} \\]
+
+*a). Determine the Inverse Jacobian*
+
+Determine the inverse Jacobian matrix \\(J^{-1}(q)\\) for the given SCARA robot. The orientation of the end-effector can be ignored.
+
+**b). Determine the Joint Velocities*
+
+Determine the joint velocity \\(\dot{q}\\) that results in the following end-effector velocity:
+
+\\[ \dot{x}= \begin{pmatrix} 1000\\\ 0\\\ 0 \end{pmatrix} \\]
+
+The robot configuration is:
+
+\\[ q= \begin{pmatrix} 1\\\ 0\\\ \frac{\pi}{2} \end{pmatrix} \\]
+
+*c). Determine the Singularities*
+
+In which robot configurations do singularities occur? Identify the corresponding joint configurations and explain the conditions under which the inverse Jacobian becomes undefined.
+
+
+{{< details "Solution a)" "false" >}}
+
+The forward kinematics of the SCARA robot are
+
+\\[ \mathbf{f}(\mathbf{q})= \begin{pmatrix} -500\sin(\theta_2+\theta_3)-500\sin(\theta_2)\\\ 500\cos(\theta_2+\theta_3)+100+500\cos(\theta_2)\\\ d_1 \end{pmatrix}, \\]
+
+with the joint configuration
+
+\\[ \mathbf{q}= \begin{pmatrix} d_1\\\ \theta_2\\\ \theta_3 \end{pmatrix}. \\]
+
+The relationship between Cartesian and joint velocities is
+
+\\[ \dot{\mathbf{x}}=J(\mathbf{q})\dot{\mathbf{q}}. \\]
+
+Therefore, the inverse Jacobian is required to calculate the joint velocities from Cartesian velocities:
+
+\\[ \dot{\mathbf{q}}=J^{-1}(\mathbf{q})\dot{\mathbf{x}}. \\]
+
+### **1. Calculate the Jacobian**
+
+The Jacobian is obtained by differentiating the forward kinematics with respect to the joint variables:
+
+\\[ J(\mathbf{q})= \frac{\partial\mathbf{f}}{\partial\mathbf{q}}. \\]
+
+The partial derivatives are
+
+\\[ \begin{aligned} \frac{\partial x}{\partial d_1}&=0, & \frac{\partial x}{\partial\theta_2} &=-500\cos(\theta_2+\theta_3)-500\cos(\theta_2), & \frac{\partial x}{\partial\theta_3} &=-500\cos(\theta_2+\theta_3), \\\\[2mm] \frac{\partial y}{\partial d_1}&=0, & \frac{\partial y}{\partial\theta_2} &=-500\sin(\theta_2+\theta_3)-500\sin(\theta_2), & \frac{\partial y}{\partial\theta_3} &=-500\sin(\theta_2+\theta_3), \\\\[2mm] \frac{\partial z}{\partial d_1}&=1, & \frac{\partial z}{\partial\theta_2}&=0, & \frac{\partial z}{\partial\theta_3}&=0. \end{aligned} \\]
+
+Thus, the Jacobian matrix is
+
+\\[ \boxed{ J(\mathbf{q})= \begin{pmatrix} 0 & -500\cos(\theta_2+\theta_3)-500\cos(\theta_2) & -500\cos(\theta_2+\theta_3) \\\ 0 & -500\sin(\theta_2+\theta_3)-500\sin(\theta_2) & -500\sin(\theta_2+\theta_3) \\\ 1&0&0 \end{pmatrix}. } \\]
+
+### **2. Calculate the determinant**
+
+To calculate the inverse, we first determine the determinant of the Jacobian.
+
+Expanding along the first column gives
+
+\\[ \begin{aligned} \det J(\mathbf{q}) ={}&250000 \left(\cos(\theta_2+\theta_3)+\cos(\theta_2)\right) \sin(\theta_2+\theta_3) \\\ &-250000\cos(\theta_2+\theta_3) \left(\sin(\theta_2+\theta_3)+\sin(\theta_2)\right). \end{aligned} \\]
+
+After expanding and cancelling the common terms:
+
+\\[ \begin{aligned} \det J(\mathbf{q}) =250000\big[& \cos(\theta_2)\sin(\theta_2+\theta_3) \\\ &-\cos(\theta_2+\theta_3)\sin(\theta_2) \big]. \end{aligned} \\]
+
+Using the trigonometric identity
+
+\\[ \sin(a-b)=\sin(a)\cos(b)-\cos(a)\sin(b), \\]
+
+we obtain
+
+\\[ \begin{aligned} \det J(\mathbf{q}) &=250000\sin((\theta_2+\theta_3)-\theta_2)\\\ &=250000\sin(\theta_3). \end{aligned} \\]
+
+Therefore,
+
+\\[ \boxed{\det J(\mathbf{q})=500^2\sin(\theta_3).} \\]
+
+### **3. Calculate the inverse Jacobian**
+
+The inverse of a square matrix is calculated using its adjugate and determinant:
+
+\\[ J^{-1}(\mathbf{q}) = \frac{1}{\det J(\mathbf{q})} \operatorname{adj}(J(\mathbf{q})). \\]
+
+Since the first column of the Jacobian is \\((0,0,1)^T\\), its inverse can be calculated by inverting the upper-left \\(2\times2\\) block.
+
+Let
+
+\\[ B= \begin{pmatrix} -500\cos(\theta_2+\theta_3)-500\cos(\theta_2) & -500\cos(\theta_2+\theta_3) \\\ -500\sin(\theta_2+\theta_3)-500\sin(\theta_2) & -500\sin(\theta_2+\theta_3) \end{pmatrix}. \\]
+
+For a \\(2\times2\\) matrix
+
+\\[ B= \begin{pmatrix} a&b\\\ c&d \end{pmatrix}, \\]
+
+the inverse is
+
+\\[ B^{-1} = \frac{1}{ad-bc} \begin{pmatrix} d&-b\\\ -c&a \end{pmatrix}. \\]
+
+Applying this formula gives
+
+\\[ \begin{aligned} B^{-1} =\frac{1}{250000\sin(\theta_3)} \begin{pmatrix} -500\sin(\theta_2+\theta_3) & 500\cos(\theta_2+\theta_3) \\\ 500\sin(\theta_2+\theta_3)+500\sin(\theta_2) & -500\cos(\theta_2+\theta_3)-500\cos(\theta_2) \end{pmatrix}. \end{aligned} \\]
+
+Including the prismatic joint \\(d_1\\), the complete inverse Jacobian is
+
+\\[ \boxed{ J^{-1}(\mathbf{q})= \begin{pmatrix} 0&0&1\\\\[2mm] -\dfrac{\sin(\theta_2+\theta_3)}{500\sin(\theta_3)} & \dfrac{\cos(\theta_2+\theta_3)}{500\sin(\theta_3)} &0\\\\[4mm] \dfrac{\sin(\theta_2+\theta_3)+\sin(\theta_2)} {500\sin(\theta_3)} & -\dfrac{\cos(\theta_2+\theta_3)+\cos(\theta_2)} {500\sin(\theta_3)} &0 \end{pmatrix}. } \\]
+
+This is the required inverse Jacobian. It maps Cartesian velocities to joint velocities according to
+
+\\[ \boxed{ \dot{\mathbf{q}}=J^{-1}(\mathbf{q})\dot{\mathbf{x}}. } \\]
+
+{{< /details >}}
+
+
+{{< details "Solution b)" "false" >}}
+
+We are given the Cartesian velocity
+
+\\[ \dot{\mathbf{x}}= \begin{pmatrix} 1000\\\ 0\\\ 0 \end{pmatrix} \\]
+
+and the joint configuration
+
+\\[ \mathbf{q}= \begin{pmatrix} d_1\\\ \theta_2\\\ \theta_3 \end{pmatrix} = \begin{pmatrix} 1\\\ 0\\\ \frac{\pi}{2} \end{pmatrix}. \\]
+
+The goal is to determine the corresponding joint velocities \\(\dot{\mathbf{q}}\\).
+
+### **1. Inverse Jacobian**
+
+From Exercise 4.1, the inverse Jacobian is
+
+\\[ J^{-1}(\mathbf{q})= \begin{pmatrix} 0&0&1\\\\[2mm] -\dfrac{\sin(\theta_2+\theta_3)}{500\sin(\theta_3)} & \dfrac{\cos(\theta_2+\theta_3)}{500\sin(\theta_3)} &0\\\\[4mm] \dfrac{\sin(\theta_2+\theta_3)+\sin(\theta_2)} {500\sin(\theta_3)} & -\dfrac{\cos(\theta_2+\theta_3)+\cos(\theta_2)} {500\sin(\theta_3)} &0 \end{pmatrix}. \\]
+
+The joint velocities are calculated using
+
+\\[ \dot{\mathbf{q}}=J^{-1}(\mathbf{q})\dot{\mathbf{x}}. \\]
+
+### **2. Evaluate the inverse Jacobian**
+
+Substitute the given joint configuration:
+
+\\[ \theta_2=0, \qquad \theta_3=\frac{\pi}{2}. \\]
+
+The required trigonometric values are
+
+\\[ \begin{aligned} \sin(\theta_2+\theta_3) &=\sin\left(\frac{\pi}{2}\right)=1,\\\ \cos(\theta_2+\theta_3) &=\cos\left(\frac{\pi}{2}\right)=0,\\\ \sin(\theta_2)&=\sin(0)=0,\\\ \cos(\theta_2)&=\cos(0)=1,\\\ \sin(\theta_3)&=\sin\left(\frac{\pi}{2}\right)=1. \end{aligned} \\]
+
+Substituting these values into the inverse Jacobian gives
+
+\\[ \begin{aligned} J^{-1}(\mathbf{q}) &= \begin{pmatrix} 0&0&1\\\\[2mm] -\dfrac{1}{500}&0&0\\\\[3mm] \dfrac{1+0}{500}& -\dfrac{0+1}{500}&0 \end{pmatrix}\\\\[2mm] &= \boxed{ \begin{pmatrix} 0&0&1\\\ -\frac{1}{500}&0&0\\\ \frac{1}{500}&-\frac{1}{500}&0 \end{pmatrix}. } \end{aligned} \\]
+
+### **3. Calculate the joint velocities**
+
+Now multiply the inverse Jacobian by the given Cartesian velocity:
+
+\\[ \begin{aligned} \dot{\mathbf{q}} &=J^{-1}(\mathbf{q})\dot{\mathbf{x}}\\\\[2mm] &= \begin{pmatrix} 0&0&1\\\ -\frac{1}{500}&0&0\\\ \frac{1}{500}&-\frac{1}{500}&0 \end{pmatrix} \begin{pmatrix} 1000\\\ 0\\\ 0 \end{pmatrix}\\\\[3mm] &= \begin{pmatrix} 0\cdot1000+0\cdot0+1\cdot0\\\ -\frac{1}{500}\cdot1000\\\ \frac{1}{500}\cdot1000-\frac{1}{500}\cdot0 \end{pmatrix}\\\\[3mm] &= \begin{pmatrix} 0\\\ -2\\\ 2 \end{pmatrix}. \end{aligned} \\]
+
+Therefore, the resulting joint velocities are
+
+\\[ \boxed{ \dot{\mathbf{q}}= \begin{pmatrix} \dot d_1\\\ \dot\theta_2\\\ \dot\theta_3 \end{pmatrix} = \begin{pmatrix} 0\ \mathrm{mm/s}\\\ -2\ \mathrm{rad/s}\\\ 2\ \mathrm{rad/s} \end{pmatrix}. } \\]
+
+The prismatic joint remains stationary, while the two revolute joints rotate in opposite directions.
+
+{{< /details >}}
+
 
 {{< details "Solution c)" "false" >}}
-{{< /details >}}
 
-{{< details "Solution d)" "false" >}}
+A square matrix \\(A\in\mathbb{R}^{n\times n}\\) has full rank if and only if its determinant is non-zero:
+
+\\[ \boxed{ \operatorname{rank}(A)=n \iff \det(A)\neq 0. } \\]
+
+For the SCARA robot, the Jacobian is
+
+\\[ J(\mathbf{q})= \begin{pmatrix} 0 & -500\cos(\theta_2+\theta_3)-500\cos(\theta_2) & -500\cos(\theta_2+\theta_3)\\\ 0 & -500\sin(\theta_2+\theta_3)-500\sin(\theta_2) & -500\sin(\theta_2+\theta_3)\\\ 1 & 0 & 0 \end{pmatrix}. \\]
+
+Its determinant is
+
+\\[ \boxed{ \det J(\mathbf{q})=500^2\sin(\theta_3). } \\]
+
+A singular configuration \\(\mathbf{q}\_{\mathrm{sing}}\\) occurs when the Jacobian is not of full rank. Therefore,
+
+\\[ \det J(\mathbf{q}\_{\mathrm{sing}})=0. \\]
+
+Substituting the determinant gives
+
+\\[ \begin{aligned} 500^2\sin(\theta_3)&=0,\\\ \sin(\theta_3)&=0. \end{aligned} \\]
+
+The sine function is zero for integer multiples of \\(\pi\\). Thus,
+
+\\[ \boxed{ \theta_3=k\pi,\qquad k\in\mathbb{Z}. } \\]
+
+Considering the joint range \\(0\leq\theta_3<2\pi\\), the possible singular configurations are
+
+\\[ \theta_3=0 \qquad\text{or}\qquad \theta_3=\pi. \\]
+
+Consequently, the singular configurations are
+
+\\[ \boxed{ \mathbf{q}\_{\mathrm{sing},1}= \begin{pmatrix} d_1\\\ \theta_2\\\ 0 \end{pmatrix}, \qquad \mathbf{q}\_{\mathrm{sing},2}= \begin{pmatrix} d_1\\\ \theta_2\\\ \pi \end{pmatrix}. } \\]
+
+Here, \\(d_1\\) and \\(\theta_2\\) can take arbitrary admissible values. The singularities occur when the two revolute links are aligned, either in the fully extended configuration (\\(\theta_3=0\\)) or in the fully folded configuration (\\(\theta_3=\pi\\)).
+
 {{< /details >}}
